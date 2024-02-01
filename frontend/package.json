@@ -11,6 +11,7 @@
     "data": "^0.6.1",
     "i": "^0.3.7",
     "jwt-decode": "^3.1.2",
+    "leaflet": "^1.9.4",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
@@ -19,6 +20,9 @@
     "react-scripts": "^5.0.1",
     "table": "^6.8.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^1.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

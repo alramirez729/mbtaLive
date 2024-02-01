@@ -7,7 +7,7 @@ function Vehicles() {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios.get('https://api-v3.mbta.com/vehicles?page%5Boffset%5D=0&filter%5Bdirection_id%5D=0&filter%5Broute_type%5D=2&filter%5Brevenue%5D=REVENUE', {
+      const result = await axios.get('https://api-v3.mbta.com/vehicles?filter%5Broute_type%5D=1', {
         headers: {
           accept: "application/vnd.api+json"
         }
@@ -26,7 +26,7 @@ function Vehicles() {
           outline
           color="success"
           className="mx-1 my-2"
-          bg="success"
+          bg="primary"
           style={{ width: "15rem" }}
         >
           <Card.Body>
