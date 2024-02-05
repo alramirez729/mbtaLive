@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import customMarkerIcon from '/Users/thomasmosychukjr/Repository/se24MBTA/frontend/src/components/mbta.png';
+import customMarkerIcon from './mbta.png';
 import axios from 'axios';
 
 function LiveMap() {
@@ -50,7 +50,7 @@ function LiveMap() {
     // Set up an interval to refresh data every 60 seconds (adjust as needed)
     const refreshInterval = setInterval(() => {
       fetchData();
-    }, 20000);
+    }, 10000);
 
     // Clean up the interval when the component unmounts
     return () => {
