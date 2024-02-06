@@ -66,7 +66,7 @@ function LiveMap() {
           map.removeLayer(layer);
         }
       });
-  
+
       // Add markers for each vehicle
       vehicles.forEach((vehicle) => {
         const { latitude, longitude, label } = vehicle.attributes || {};
@@ -84,12 +84,10 @@ function LiveMap() {
       });
     }
   }, [map, vehicles, stops, description]);
-  
-  
 
   return (
-    <div>
-      <div id="map" style={{ height: '500px' }}></div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div id="map" style={{ height: '500px', width: '80%', border: '2px solid #ccc', borderRadius: '10px' }}></div>
     </div>
   );
 }
