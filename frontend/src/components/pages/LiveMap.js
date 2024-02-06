@@ -60,23 +60,31 @@ function LiveMap() {
 
   useEffect(() => {
     if (map) {
+      // Remove existing markers
+      map.eachLayer(layer => {
+        if (layer instanceof L.Marker) {
+          map.removeLayer(layer);
+        }
+      });
+  
       // Add markers for each vehicle
       vehicles.forEach((vehicle) => {
         const { latitude, longitude, label } = vehicle.attributes || {};
-        if (latitude && longitude) {
-          const stopName = stops[vehicle.relationships.stop.data.id] || 'Unknown Stop';
-          const stopDescription = description[vehicle.relationships.stop.data.id] || 'No Description';
-
+        if (latitude && longitude && vehicle.relationships.stop && vehicle.relationships.stop.data) {
+          const stopId = vehicle.relationships.stop.data.id;
+          const stopName = stops[stopId] || 'Unknown Stop';
+          const stopDescription = description[stopId] || 'No Description';
+      
           // Create a custom marker with the custom icon
           const customMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: customMarkerIcon, iconSize: [32, 32] }) });
-
+      
           // Add the custom marker to the map
           customMarker.addTo(map).bindPopup(`Vehicle: #${label}<br/>Stop: ${stopName}<br/>Description: ${stopDescription.replace(`${stopName} - `, '')}`);
-          ;
         }
       });
     }
   }, [map, vehicles, stops, description]);
+  
   
 
   return (
