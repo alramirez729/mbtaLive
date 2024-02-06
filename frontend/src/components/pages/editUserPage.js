@@ -33,8 +33,14 @@ const EditUserPage = () =>{
   // initialize form values and get userId on render
   const [form, setValues] = useState({userId : "", username: "", email: "", password: "" })
   useEffect(() => {
-    setValues({userId : getUserInfo().id})
-  }, [])
+    const userInfo = getUserInfo();
+    if (userInfo && userInfo.id) {
+      setValues({ userId: userInfo.id });
+    } else {
+      // User is not authenticated, handle accordingly
+      navigate("/login"); // Redirect to login page
+    }
+  }, []);
 
   // handle form field changes
   const handleChange = ({ currentTarget: input }) => {
