@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import customMarkerIcon from './mbta.png';
+import customMarkerIcon from '../images/mbta.png';
 import axios from 'axios';
 
 function LiveMap() {
