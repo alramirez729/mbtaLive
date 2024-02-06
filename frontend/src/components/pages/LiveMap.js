@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import customMarkerIcon from '/Users/thomasmosychukjr/Repository/se24MBTA/frontend/src/components/mbta.png';
+import customMarkerIcon from '../images/mbta.png';
 import axios from 'axios';
+import ReactDOM from 'react-dom/client';
 
 function LiveMap() {
   const [vehicles, setVehicles] = useState([]);
@@ -50,7 +51,7 @@ function LiveMap() {
     // Set up an interval to refresh data every 60 seconds (adjust as needed)
     const refreshInterval = setInterval(() => {
       fetchData();
-    }, 20000);
+    }, 10000);
 
     // Clean up the interval when the component unmounts
     return () => {
@@ -60,28 +61,37 @@ function LiveMap() {
 
   useEffect(() => {
     if (map) {
+      // Remove existing markers
+      map.eachLayer(layer => {
+        if (layer instanceof L.Marker) {
+          map.removeLayer(layer);
+        }
+      });
+
       // Add markers for each vehicle
       vehicles.forEach((vehicle) => {
         const { latitude, longitude, label } = vehicle.attributes || {};
-        if (latitude && longitude) {
-          const stopName = stops[vehicle.relationships.stop.data.id] || 'Unknown Stop';
-          const stopDescription = description[vehicle.relationships.stop.data.id] || 'No Description';
-
+        if (latitude && longitude && vehicle.relationships.stop && vehicle.relationships.stop.data) {
+          const stopId = vehicle.relationships.stop.data.id;
+          const stopName = stops[stopId] || 'Unknown Stop';
+          const stopDescription = description[stopId] || 'No Description';
+      
           // Create a custom marker with the custom icon
           const customMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: customMarkerIcon, iconSize: [32, 32] }) });
-
+      
           // Add the custom marker to the map
           customMarker.addTo(map).bindPopup(`Vehicle: #${label}<br/>Stop: ${stopName}<br/>Description: ${stopDescription.replace(`${stopName} - `, '')}`);
-          ;
         }
       });
     }
   }, [map, vehicles, stops, description]);
-  
 
   return (
-    <div>
-      <div id="map" style={{ height: '500px' }}></div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div style={{ border: '5px solid grey', borderRadius: '10px', width: '80%' }}>
+        <p style={{ textAlign: 'center' }}>Live Site Under Construction!</p>
+        <div id="map" style={{ height: '500px', borderRadius: '8px' }}></div>
+      </div>
     </div>
   );
 }
