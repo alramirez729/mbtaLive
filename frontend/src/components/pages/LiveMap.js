@@ -3,6 +3,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import customMarkerIcon from '../images/mbta.png';
 import axios from 'axios';
+import ReactDOM from 'react-dom/client';
 
 function LiveMap() {
   const [vehicles, setVehicles] = useState([]);
@@ -87,7 +88,10 @@ function LiveMap() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <div id="map" style={{ height: '500px', width: '80%', border: '2px solid #ccc', borderRadius: '10px' }}></div>
+      <div style={{ border: '5px solid grey', borderRadius: '10px', width: '80%' }}>
+        <p style={{ textAlign: 'center' }}>Live Site Under Construction!</p>
+        <div id="map" style={{ height: '500px', borderRadius: '8px' }}></div>
+      </div>
     </div>
   );
 }
