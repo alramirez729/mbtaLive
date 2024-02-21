@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import customMarkerIcon from '../images/mbta.png';
+import blueLineMarkerIcon from '../images/blue_line.png';
+import greenLineMarkerIcon from '../images/green_line.png';
+import redLineMarkerIcon from '../images/red_line.png';
+import orangeLineMarkerIcon from '../images/orange_line.png';
 import axios from 'axios';
 import ReactDOM from 'react-dom/client';
 
@@ -75,10 +79,33 @@ function LiveMap() {
           const stopId = vehicle.relationships.stop.data.id;
           const stopName = stops[stopId] || 'Unknown Stop';
           const stopDescription = description[stopId] || 'No Description';
-      
-          // Create a custom marker with the custom icon
-          const customMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: customMarkerIcon, iconSize: [32, 32] }) });
-      
+          
+          // Initialize a custom marker with the default icon
+          let markerIcon = customMarkerIcon;
+          let markerSize = [32, 32];
+          console.log(stopId);
+          // Update marker icon and size based on stop description
+          //console.log("Stop Description:", stopDescription);
+          const routeId = vehicle.relationships.route.data.id;
+          switch (routeId) {
+              case "Blue":
+                  markerIcon = blueLineMarkerIcon;
+                  break;
+              case "Red":
+                  markerIcon = redLineMarkerIcon;
+                  break;
+              case "Green":
+                  markerIcon = greenLineMarkerIcon;
+                  break;
+              case "Orange":
+                  markerIcon = orangeLineMarkerIcon;
+                  break;
+              // Add more cases for other lines if needed
+            }
+
+          // Create a custom marker with the appropriate icon and size
+          const customMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: markerIcon, iconSize: markerSize }) });
+
           // Add the custom marker to the map
           customMarker.addTo(map).bindPopup(`Vehicle: #${label}<br/>Stop: ${stopName}<br/>Description: ${stopDescription.replace(`${stopName} - `, '')}`);
         }
