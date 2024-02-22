@@ -33,14 +33,14 @@ const App = () => {
       <Navbar />
       <UserContext.Provider value={user}>
         <Routes>
-          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/" element={<MbtaLiveMapPage />} />
           <Route exact path="/home" element={<HomePage />} />
-          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/loginPage" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
           <Route path="/privateUserProfile" element={<PrivateUserProfile />} />
           <Route exact path="/mbtaAlerts" element={<MbtaAlertsPage />} />
           <Route exact path="/editUserPage" element={<EditUserPage />} />
-          
+          <Route exact path="/registerPage" element={<Signup />} />
           <Route exact path="/LiveMap" element={<MbtaLiveMapPage />} />
           <Route exact path="/Stop" element={<MbtaStopPage />} />
         </Routes>
