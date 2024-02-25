@@ -9,12 +9,12 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/user/login
+POST http://localhost:8081/user/login
 Content-Type: application/json 
 
 {
-    "username" : "tochiamanze",
-    "password" : "tochi12345"
+    "username" : "thomasthomas",
+    "password" : "12345678"
 }
 
 ###
@@ -27,9 +27,9 @@ POST http://localhost:8081/user/editUser
 Content-Type: application/json 
 
 {
-    "userId" : "635ab8dfc407faf9f73deaf2",
-    "username" : "Tochi Edit",
-    "password" : "dwwrwr"
+    "userId" : "65a960879cb3aa65f0723e2b",
+    "username" : "thomasthomas",
+    "password" : "12345678"
 }
 
 ###
@@ -37,7 +37,7 @@ GET  http://localhost:8081/user/getUserById
 Content-Type: application/json 
 
 {
-    "userId" : "635ab8dfc407faf9f73deaf1"
+    "userId" : "65a960879cb3aa65f0723e2b"
 }
 
 ###
@@ -45,7 +45,7 @@ GET  http://localhost:8081/user/getUserById
 Content-Type: application/json 
 
 {
-    "userId" : "634edb2a16710b2cda6fb370"
+    "userId" : "65a960879cb3aa65f0723e2b"
 }
 
 ###

@@ -1,0 +1,8 @@
+###
+GET  http://localhost:8081/user/getUserById
+Content-Type: application/json 
+
+{
+    "userId" : "65a960879cb3aa65f0723e2b"
+}
+
