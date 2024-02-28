@@ -23,7 +23,7 @@ const HomePage = () => {
             <div>
                 <h3>
                     Welcome
-                    <span className='username'> @{username}</span>
+                    <span className='username'> {username}</span>
                 </h3>
                 <h3>
                     Your userId in mongo db is
