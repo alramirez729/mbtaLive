@@ -4,10 +4,10 @@ const z = require('zod')
 const { newUserValidation } = require('../models/userValidator')
 const noteModel = require('../models/noteModel')
 
-router.post('/postNote', async (req, res) => {
-    const { error } = newUserValidation(req.body);
-    console.log(error)
-    if (error) return res.status(400).send({ message: error.errors[0].message });
+router.post('/postUserNote', async (req, res) => {
+    //const { error } = newUserValidation(req.body);
+    //console.log(error)
+    //if (error) return res.status(400).send({ message: error.message });
     
     const { userId, stationId, note } = req.body
 

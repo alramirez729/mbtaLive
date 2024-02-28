@@ -5,7 +5,7 @@ const noteModel = require('../models/noteModel')
 const { newUserValidation } = require('../models/userValidator');
 const { generateAccessToken } = require('../utilities/generateToken');
 
-router.post('/editNote', async (req, res) =>
+router.post('/editUserNote', async (req, res) =>
 {
     // don't know if i need this
     const { error } = newUserValidation(req.body);

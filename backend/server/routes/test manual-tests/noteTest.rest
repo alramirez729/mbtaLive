@@ -1,0 +1,19 @@
+POST http://localhost:8081/note/postUserNote
+Content-Type: application/json 
+
+{
+    "userId" : "123",
+    "stationId" : "456",
+    "note" : "Hello world!"
+}
+
+###
+POST http://localhost:8081/user/login
+Content-Type: application/json 
+
+{
+    "username" : "tochiamanze",
+    "password" : "tochi12345"
+}
+
+###
