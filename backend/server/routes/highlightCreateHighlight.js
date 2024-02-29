@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const UserHighlight = require('../models/userHighlights');
+const userHighlight = require('../models/userHighlights');
 
 // Route to create or update a highlight
 router.post('/createHighlight', async (req, res) => {
@@ -8,7 +8,7 @@ router.post('/createHighlight', async (req, res) => {
 
     try {
         // Create a new highlight using the UserHighlight model
-        const newHighlight = new UserHighlight({ userId, lineId, stationId });
+        const newHighlight = new userHighlight({ userId, lineId, stationId });
         // Save the new highlight to the database
         await newHighlight.save();
         // Return the newly created highlight as JSON response

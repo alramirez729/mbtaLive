@@ -10,7 +10,9 @@ const editUser = require('./routes/userEditUser')
 const deleteUser = require('./routes/userDeleteAll')
 const favoriteGetAllById = require('./routes/favoriteGetAllById');
 const editUserNote = require("./routes/editUserNote")
-const postUserNote = require("./routes/postUserNote")
+const postUserNote = require("./routes/postUserNote");
+const createHighlight = require("./routes/highlightCreateHighlight");
+const highlightGetAll = require("./routes/highlightGetAll");
 
 require('dotenv').config();
 const SERVER_PORT = 8081
@@ -27,6 +29,9 @@ app.use('/user', deleteUser)
 app.use('/favorites', favoriteGetAllById)
 app.use('/note', editUserNote)
 app.use('/note', postUserNote);
+app.use('/highlight', createHighlight);
+app.use('/highlight', highlightGetAll);
+
 
 
 app.listen(SERVER_PORT, (req, res) => {

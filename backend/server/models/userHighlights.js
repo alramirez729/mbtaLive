@@ -9,11 +9,11 @@ const userHighlightSchema = new mongoose.Schema(
     },
     lineId: {
       type: String,
-      required: false,
+      //required: false,
     },
     stationId: {
       type: String,
-     required: false,
+      //required: false,
     },
   },
   { collection: "highlights" }
