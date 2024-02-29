@@ -1,21 +1,29 @@
 const mongoose = require("mongoose");
 
-const newFavSchema = new mongoose.Schema(
-    {
-        username: { //by userID not username
-            type: String,
-            required: true,
-            label: "username",
-        },
-        favoriteLine: {
-            type: String,
-            required: false,
-            label: "favorite Line",
-        },
-        favoriteStation: {
-            type: String,
-            required: false, 
-            label: "favorite Station",
-        }
-    }  
-)
+//user schema/model
+const favSchema = new mongoose.Schema(
+  {
+    userID: {
+      type: String,
+      required: true,
+      label: "userID",
+    },
+    line: {
+      type: String,
+      required: true,
+      label: "line",
+    },
+    station: {
+        type: String,
+        required: true,
+        label: "station",
+      },
+    date: {
+      type: Date,
+      default: Date.now,
+    },
+  },
+  { collection: "favorites" }
+);
+
+module.exports = mongoose.model('favorites', favSchema)

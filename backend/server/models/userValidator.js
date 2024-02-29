@@ -20,5 +20,8 @@ const userLoginValidation = data => {
   return loginValidationSchema.safeParse(data)
 };
 
+
+
+
 module.exports.newUserValidation = newUserValidation;
 module.exports.userLoginValidation = userLoginValidation;

@@ -1,46 +1,30 @@
 const express = require("express");
 const router = express.Router();
-const z = require('zod')
-const bcrypt = require("bcrypt");
-const userNotesModel = require('../models/noteModel')
-const { newUserValidation } = require('../models/userValidator');
+const z = require('zod');
+const noteModel = require('../models/noteModel');
 const { generateAccessToken } = require('../utilities/generateToken');
 
-router.post('/editUser', async (req, res) =>
+router.post('/editUserNote', async (req, res) =>
 {
-    // validate new user information
-    const { error } = newUserValidation(req.body);
-    if (error) return res.status(400).send({ message: error.errors[0].message });
+    const {userId, stationId, note} = req.body
 
-    // store new user information
-    const {userId, username, email, password} = req.body
+    const {userNoteId} = await noteModel.findOne({ userId: userId });
 
-    // check if username is available
-    const user = await newUserModel.findOne({ username: username })
-    if (user) userIdReg = JSON.stringify(user._id).replace(/["]+/g, '')
-    if (user && userIdReg !== userId) return res.status(409).send({ message: "Username is taken, pick another" })
-
-    // generates the hash
-    const generateHash = await bcrypt.genSalt(Number(10))
-
-    // parse the generated hash into the password
-    const hashPassword = await bcrypt.hash(password, generateHash)
-
-    // find and update user using stored information
-    newUserModel.findByIdAndUpdate(userId, {
-        username : username, 
-        email : email, 
-        password : hashPassword
-    } ,function (err, user) {
+    noteModel.updateOne(userNoteId, 
+    {
+        userId : userId, 
+        stationId : stationId, 
+        note : note
+    } ,function (err, noteInfo) {
     if (err){
         console.log(err);
     } else {
         // create and send new access token to local storage
-        const accessToken = generateAccessToken(user._id, email, username, hashPassword)  
+        const accessToken = generateAccessToken(userId, stationId, note)  
         res.header('Authorization', accessToken).send({ accessToken: accessToken })
     }
     });
-
 })
+
 
 module.exports = router;

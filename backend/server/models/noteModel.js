@@ -5,18 +5,15 @@ const userNoteSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
-      required: true,
-      label: "userId",
+      required: true,      
     },
     stationId: {
       type: String,
-      required: true,
-      label: "stationId",
+      required: true,      
     },
     note: {
       type: String,
-      required: true,
-      label : "note",
+      required: true,      
     },    
   },
   { collection: "userNotes" }
