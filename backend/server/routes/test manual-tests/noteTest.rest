@@ -17,3 +17,13 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:8081/note/editUserNote
+Content-Type: application/json 
+
+{
+    "userId" : "123",
+    "stationId" : "7890",
+    "note" : "Hello world!"
+}
+
+###
