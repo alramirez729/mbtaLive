@@ -1,0 +1,8 @@
+POST http://localhost:8081/highlight/createHighlight
+Content-Type: application/json
+
+{
+    "userId": "12315832",
+    "lineId": "Blue",
+    "stationId": "Orient Heights"
+}
