@@ -5,18 +5,15 @@ const favSchema = new mongoose.Schema(
   {
     userID: {
       type: String,
-      required: true,
-      label: "userID",
+      required: false,
     },
     line: {
       type: String,
-      required: true,
-      label: "line",
+      required: false,
     },
     station: {
         type: String,
-        required: true,
-        label: "station",
+        required: false,
       },
     date: {
       type: Date,
