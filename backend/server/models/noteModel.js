@@ -8,13 +8,9 @@ const userNoteSchema = new mongoose.Schema(
       required: true,      
     },
     stationId: {
-      type: String,
+      type: Array,
       required: true,      
-    },
-    note: {
-      type: String,
-      required: true,      
-    },    
+    },       
   },
   { collection: "userNotes" }
 );

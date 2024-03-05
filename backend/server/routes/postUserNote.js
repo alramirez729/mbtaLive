@@ -9,12 +9,11 @@ router.post('/postUserNote', async (req, res) => {
     //console.log(error)
     //if (error) return res.status(400).send({ message: error.message });
     
-    const { userId, stationId, note } = req.body
+    const { userId, stationId} = req.body
 
     const postNote = new noteModel({
         userId: userId, 
         stationId: stationId,
-        note: note,
     });
 
     try {

@@ -1,10 +1,9 @@
 POST http://localhost:8081/note/postUserNote
 Content-Type: application/json 
 
-{
+{    
     "userId" : "123",
-    "stationId" : "456",
-    "note" : "Hello world!"
+    "stationId" : 456[{"Hello World!"}]
 }
 
 ###
