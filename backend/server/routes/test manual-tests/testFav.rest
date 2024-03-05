@@ -1,0 +1,25 @@
+POST http://localhost:8081/favorite
+Content-Type: application/json
+
+{
+  "userID": "65a960879cb3aa65f0723e2b",
+  "line": "Magenta",
+  "station": "West Station"
+}
+
+###
+
+GET http://localhost:8081/favorite/favoriteGetAll
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8081/favorite/updateFavorite
+Content-Type: application/json
+
+{
+    "userID": "65e0ccc3994cf3e208168a58",
+    "line": "7890",
+    "station": "Hello world!"
+}
+
