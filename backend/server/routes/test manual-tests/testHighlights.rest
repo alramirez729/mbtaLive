@@ -6,3 +6,12 @@ Content-Type: application/json
     "lineId": "Blue",
     "stationId": "Orient Heights"
 }
+
+### 
+GET http://localhost:8081/highlight/getAll
+Content-Type: application/json 
+
+### /deleteAll for testing/demonstration purposes
+POST http://localhost:8081/highlight/deleteAll
+Content-Type: application/json
+
