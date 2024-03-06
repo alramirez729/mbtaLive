@@ -3,8 +3,8 @@ Content-Type: application/json
 
 {
   "userID": "65a960879cb3aa65f0723e2b",
-  "line": "Green",
-  "station": "North Station"
+  "line": "Orange",
+  "station": "Wonderland"
 }
 
 ###
@@ -12,12 +12,18 @@ GET http://localhost:8081/favorite/getAll
 Content-Type: application/json
 
 ###
-PUT http://localhost:8081/favorite/updateFavorite
-Content-Type: application/json
+POST http://localhost:8081/favorite/editFavorite
+Content-Type: application/json 
 
 {
-    "userID": "65e0ccc3994cf3e208168a58",
-    "line": "7890",
-    "station": "Hello world!"
+    "userID": "65a960879cb3aa65f0723e2b",
+    "_id" : "65e7e312fe35d93ff17a101d",
+    "line" : "Ron Burgandy",
+    "station" : "Whiskey"
 }
 
+
+###
+POST http://localhost:8081/favorite/deleteAll
+
+###

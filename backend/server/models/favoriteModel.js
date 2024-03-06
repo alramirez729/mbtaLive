@@ -5,7 +5,7 @@ const favSchema = new mongoose.Schema(
   {
     userID: {
       type: String,
-      required: false,
+      required: true,
     },
     line: {
       type: String,
