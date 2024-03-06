@@ -18,6 +18,7 @@ const createHighlightRoute = require("./routes/highlightCreateHighlight");
 const highlightGetAllRoute = require("./routes/highlightGetAll");
 const addNewFavoriteRoute = require('./routes/addNewFavorite');
 const favoriteGetAllFavRoute = require('./routes/favoriteGetAllFav');
+const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
 
 // Load environment variables
 dotenv.config();
@@ -40,6 +41,7 @@ app.use('/highlight', createHighlightRoute);
 app.use('/highlight', highlightGetAllRoute);
 app.use('/favorite', addNewFavoriteRoute);
 app.use('/favorite', favoriteGetAllFavRoute);
+app.use('/favorite', deleteAllFavoriteRoute);
 
 // Start the server
 app.listen(SERVER_PORT, () => {
