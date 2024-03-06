@@ -7,9 +7,11 @@ Content-Type: application/json
     "stationId": "Orient Heights"
 }
 
-###
+### 
 GET http://localhost:8081/highlight/getAll
-Content-type: application/json 
+Content-Type: application/json 
 
-
+### /deleteAll for testing/demonstration purposes
+POST http://localhost:8081/highlight/deleteAll
+Content-Type: application/json
 

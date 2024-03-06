@@ -16,10 +16,13 @@ const editUserNoteRoute = require("./routes/editUserNote");
 const postUserNoteRoute = require("./routes/postUserNote");
 const createHighlightRoute = require("./routes/highlightCreateHighlight");
 const highlightGetAllRoute = require("./routes/highlightGetAll");
+const highlightDeleteAllRoute = require("./routes/highlightDeleteAll");
 const addNewFavoriteRoute = require('./routes/addNewFavorite');
 const favoriteGetAllFavRoute = require('./routes/favoriteGetAllFav');
 const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
 const editFavoriteRoute = require('./routes/editFavorite');
+
+
 
 // Load environment variables
 dotenv.config();
@@ -40,6 +43,7 @@ app.use('/note', editUserNoteRoute);
 app.use('/note', postUserNoteRoute);
 app.use('/highlight', createHighlightRoute);
 app.use('/highlight', highlightGetAllRoute);
+app.use('/highlight', highlightDeleteAllRoute);
 app.use('/favorite', addNewFavoriteRoute);
 app.use('/favorite', favoriteGetAllFavRoute);
 app.use('/favorite', deleteAllFavoriteRoute);
