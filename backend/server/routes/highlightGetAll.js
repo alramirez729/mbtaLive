@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const newUserModel = require('../models/userHighlights')
+const allHighlight = require('../models/userHighlights')
 
-router.get('/highlightGetAll', async (req, res) => {
-    const highlights = await userHighlights.find();
-    return res.json(highlights)
+router.get('/getAll', async (req, res) => {
+    const highlights = await allHighlight.find();
+    return res.json(highlights);
   })
 
   module.exports = router;
