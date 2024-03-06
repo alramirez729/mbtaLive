@@ -10,7 +10,7 @@ const userNoteSchema = new mongoose.Schema(
     stationId: {
       type: Array,
       required: true,      
-    },       
+    },
   },
   { collection: "userNotes" }
 );

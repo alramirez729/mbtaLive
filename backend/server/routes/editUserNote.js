@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const z = require('zod');
 const noteModel = require('../models/noteModel');
 const { generateAccessToken } = require('../utilities/generateToken');
 
 router.post('/editUserNote', async (req, res) =>
 {
-    const {userId, stationId, note} = req.body
+    const {userId, stationId, stationName} = req.body
 
     const {userNoteId} = await noteModel.findOne({ userId: userId });
 
@@ -14,7 +13,7 @@ router.post('/editUserNote', async (req, res) =>
     {
         userId : userId, 
         stationId : stationId, 
-        note : note
+        stationName : stationName
     } ,function (err, noteInfo) {
     if (err){
         console.log(err);

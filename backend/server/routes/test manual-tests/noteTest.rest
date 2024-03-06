@@ -3,7 +3,9 @@ Content-Type: application/json
 
 {    
     "userId" : "123",
-    "stationId" : 456[{"Hello World!"}]
+    "stationId" : {
+        "Orient lows" : "Spooky station"
+    }
 }
 
 ###
@@ -21,8 +23,9 @@ Content-Type: application/json
 
 {
     "userId" : "123",
-    "stationId" : "7890",
-    "note" : "Hello world!"
+    "stationId" : {
+        "Orient Heights" : "Dirty station2"
+    }
 }
 
 ###
