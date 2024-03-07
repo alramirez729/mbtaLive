@@ -7,7 +7,7 @@ router.get('/getAll', async (req, res) => {
   try{
     const highlights = await allHighlight.find();
     const presentHighlightStatus = await allHighlight.findOne();
-    if(presentHighlightStatus = null)
+    if(presentHighlightStatus == null)
     {
       return res.json({string: "No highlights to get"});
     }

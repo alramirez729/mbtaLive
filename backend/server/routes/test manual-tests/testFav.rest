@@ -16,10 +16,10 @@ POST http://localhost:8081/favorite/editFavorite
 Content-Type: application/json 
 
 {
-    "_id" : "65e9d8d1dcf0ca799002a398",
+    "_id" : "65e9ed829ddb8b4c045fcb31",
     "userID" : "65e949535182ee96077b6362",
-    "line" : "Yellow",
-    "station" : "East Station"
+    "line" : "Green",
+    "station" : "North Station"
 }
 
 
