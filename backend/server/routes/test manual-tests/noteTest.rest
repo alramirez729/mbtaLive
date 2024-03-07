@@ -4,7 +4,18 @@ Content-Type: application/json
 {    
     "userId" : "123",
     "stationId" : {
-        "Orient lows" : "Spooky station"
+        "OrientLows" : "little station"
+    }
+}
+
+###
+POST http://localhost:8081/note/postUserNote
+Content-Type: application/json 
+
+{    
+    "userId" : "123",
+    "stationId" : {
+        "North Station" : "filthy station"
     }
 }
 

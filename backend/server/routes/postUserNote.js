@@ -4,11 +4,11 @@ const noteModel = require('../models/noteModel')
 
 router.post('/postUserNote', async (req, res) => {
     
-    const { userId, stationId} = req.body
+    var { userId, stationId} = req.body
 
-    const {userNoteId} = await noteModel.findOne({ userId: userId }).catch((err)=>{console.log(err);})    
+    var userNoteId = await noteModel.findOne({ userId: userId })
 
-    if (userNoteId == null){
+    if (userNoteId == null){        
         const postNote = new noteModel({
             userId: userId, 
             stationId: stationId,
@@ -22,19 +22,43 @@ router.post('/postUserNote', async (req, res) => {
         }
     }
     else {        
+        
+        //console.log(userNoteId.stationId[Object.keys(stationId)[0]])
+        //console.log(stationId)
+        //console.log(Object.keys(stationId)[0])
+        
+        //userNoteId.stationId[Object.keys(stationId)[0]] = Object.values(stationId)[0]
+
+        //console.log(userNoteId.stationId)        
+
+        //stationId = userNoteId.stationId
+        
+        //console.log(stationId)
+
+        
+        //console.log(Object.keys(stationId)[0])                
+
+
+        const checkForStation = await noteModel.findOne({ userId: userId, stationId: stationId })
+
+        
+
+        if (checkForStation == null){
+            stationId = userNoteId.stationId.concat(stationId)
+        }
+        else{
+            res.status(401).send({ message: "Error station note exists go to edit." })
+        }        
+        
+
 
         noteModel.updateOne(userNoteId, 
         {
             userId : userId, 
-            stationId : stationId, 
-            stationName : stationName
+            stationId : stationId
         } ,function (err, noteInfo) {
         if (err){
             console.log(err);
-        } else {
-            // create and send new access token to local storage
-            const accessToken = generateAccessToken(userId, stationId, note)  
-            res.header('Authorization', accessToken).send({ accessToken: accessToken })
         }
         })
     }
