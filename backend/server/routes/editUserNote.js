@@ -17,7 +17,7 @@ router.post('/editUserNote', async (req, res) =>
     if (err){
         console.log(err);
     } else {
-        // create and send new access token to local storage
+        
         const accessToken = generateAccessToken(userId, stationId)  
         res.header('Authorization', accessToken).send({ accessToken: accessToken })
     }

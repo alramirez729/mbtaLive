@@ -13,16 +13,16 @@ const editFavoriteSchema = z.object({
 
 router.post('/editFavorite', async (req, res) => {
   try {
-    // Validate request body
+    
     const { error, data } = editFavoriteSchema.safeParse(req.body);
     if (error) {
       return res.status(400).json({ message: error.message });
     }
 
-    // Extract data from request body
+    
     const { _id, line, station } = data;
 
-    // Find the favorite by _id and update if found
+    
     const favorite = await FavoriteModel.findOneAndUpdate({ _id }, { line, station }, { new: true });
 
     if (!favorite) {

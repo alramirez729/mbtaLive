@@ -18,8 +18,8 @@ Content-Type: application/json
 {
     "_id" : "65e9d8d1dcf0ca799002a398",
     "userID" : "65e949535182ee96077b6362",
-    "line" : "Rainbow",
-    "station" : "Moonbeam"
+    "line" : "Yellow",
+    "station" : "East Station"
 }
 
 
