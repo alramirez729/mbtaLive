@@ -2,24 +2,24 @@ POST http://localhost:8081/favorite
 Content-Type: application/json
 
 {
-  "userID": "65a960879cb3aa65f0723e2b",
+  "userID": "65e949535182ee96077b6362",
   "line": "Orange",
-  "station": "Wonderland"
+  "station": "Park Street"
 }
 
 ###
 GET http://localhost:8081/favorite/getAll
 Content-Type: application/json
 
-### 
+###
 POST http://localhost:8081/favorite/editFavorite
 Content-Type: application/json 
 
 {
-    "userID": "65a960879cb3aa65f0723e2b",
-    "_id" : "65e7e312fe35d93ff17a101d",
-    "line" : "Ron Burgandy",
-    "station" : "Whiskey"
+    "_id" : "65e9d8d1dcf0ca799002a398",
+    "userID" : "65e949535182ee96077b6362",
+    "line" : "Rainbow",
+    "station" : "Moonbeam"
 }
 
 
