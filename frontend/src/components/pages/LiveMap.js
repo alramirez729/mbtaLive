@@ -7,6 +7,7 @@ import greenLineMarkerIcon from '../images/green_line.png';
 import redLineMarkerIcon from '../images/red_line.png';
 import orangeLineMarkerIcon from '../images/orange_line.png';
 import axios from 'axios';
+import Alerts from './mbtaAlerts';
 import ReactDOM from 'react-dom/client';
 
 function LiveMap() {
@@ -114,11 +115,13 @@ function LiveMap() {
   }, [map, vehicles, stops, description]);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <div style={{ border: '5px solid grey', borderRadius: '10px', width: '80%' }}>
-        <p style={{ textAlign: 'center' }}>Live Site Under Construction!</p>
-        <div id="map" style={{ height: '500px', borderRadius: '8px' }}></div>
-      </div>
+    <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
+       <div style={{ border: '5px solid grey', borderRadius: '10px', width: '50%' }}>
+       <div id="map" style={{ height: '500px', borderRadius: '8px' }}></div>
+       </div>
+       <div style={{ marginLeft: '20px', border: '5px solid grey', borderRadius: '10px', width: '30%', maxHeight: '500px', overflowY: 'auto' }}>
+         <Alerts /> {/* Include the Alerts component */}
+       </div>
     </div>
   );
 }
