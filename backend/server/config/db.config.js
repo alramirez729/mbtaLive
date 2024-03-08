@@ -7,6 +7,10 @@ module.exports = async () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     };
+    
+    // Set the strictQuery option before establishing the connection
+    mongoose.set('strictQuery', true); // Set to false if you prefer the non-strict behavior
+
     try {
         await mongoose.connect(process.env.DB_URL, databaseParams);
         console.log("The backend has connected to the MongoDB database.");
