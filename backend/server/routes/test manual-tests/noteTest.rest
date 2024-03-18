@@ -15,7 +15,7 @@ Content-Type: application/json
 {    
     "userId" : "123",
     "stationId" : {
-        "North Station" : "filthy station"
+        "South Station" : "Clean station"
     }
 }
 
