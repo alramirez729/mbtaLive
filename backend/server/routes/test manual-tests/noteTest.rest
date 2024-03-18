@@ -1,4 +1,4 @@
-POST http://localhost:8081/note/postUserNote
+POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8081/note/postUserNote
+POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
@@ -20,22 +20,25 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8081/user/login
-Content-Type: application/json 
-
-{
-    "username" : "tochiamanze",
-    "password" : "tochi12345"
-}
-
-###
-POST http://localhost:8081/note/editUserNote
+PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {
     "userId" : "123",
     "stationId" : {
-        "Orient Heights" : "Dirty station2"
+        "OrientLows" : "silly station"
+    }
+}
+
+###
+
+PUT http://localhost:8081/note
+Content-Type: application/json 
+
+{
+    "userId" : "123",
+    "stationId" : {
+        "North Station" : "billy station"
     }
 }
 

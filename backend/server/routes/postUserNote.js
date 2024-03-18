@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel')
 
-router.post('/postUserNote', async (req, res) => {
+router.post('', async (req, res) => {
     
     var { userId, stationId} = req.body
 
-    var userNoteId = await noteModel.findOne({ userId: userId })
+    const userNoteId = await noteModel.findOne({ userId: userId })
 
     if (userNoteId == null){        
         const postNote = new noteModel({
@@ -22,45 +22,31 @@ router.post('/postUserNote', async (req, res) => {
         }
     }
     else {        
-        
-        //console.log(userNoteId.stationId[Object.keys(stationId)[0]])
-        //console.log(stationId)
-        //console.log(Object.keys(stationId)[0])
-        
-        //userNoteId.stationId[Object.keys(stationId)[0]] = Object.values(stationId)[0]
+        stationArray = Object.keys(userNoteId.stationId)
 
-        //console.log(userNoteId.stationId)        
+        if (!stationArray.includes(Object.keys(stationId)[0])){
+            Object.assign(stationId, userNoteId.stationId)
+            
 
-        //stationId = userNoteId.stationId
-        
-        //console.log(stationId)
-
-        
-        //console.log(Object.keys(stationId)[0])                
-
-
-        const checkForStation = await noteModel.findOne({ userId: userId, stationId: stationId })
-
-        
-
-        if (checkForStation == null){
-            stationId = userNoteId.stationId.concat(stationId)
+            noteModel.updateOne(userNoteId, 
+                {
+                    stationId : stationId
+                } ,function (err, noteInfo) {
+                if (err){
+                    console.log(err);
+                }
+                else{
+                    res.status(200).send({ message: "Successfully posted note" })
+                }
+                })        
         }
         else{
-            res.status(401).send({ message: "Error station note exists go to edit." })
+            res.status(409).send({ message: "Error station note exists go to edit." })
         }        
         
 
 
-        noteModel.updateOne(userNoteId, 
-        {
-            userId : userId, 
-            stationId : stationId
-        } ,function (err, noteInfo) {
-        if (err){
-            console.log(err);
-        }
-        })
+        
     }
 
 })

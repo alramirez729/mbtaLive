@@ -8,7 +8,7 @@ const userNoteSchema = new mongoose.Schema(
       required: true,      
     },
     stationId: {
-      type: Array,
+      type: Object,
       required: true,      
     },
   },
