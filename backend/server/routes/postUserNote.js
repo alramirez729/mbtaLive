@@ -41,7 +41,7 @@ router.post('', async (req, res) => {
                 })        
         }
         else{
-            res.status(409).send({ message: "Error station note exists go to edit." })
+            res.status(409).send({ message: "Error: station note already exists, please go to edit." })
         }        
         
 

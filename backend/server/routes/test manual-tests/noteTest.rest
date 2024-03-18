@@ -4,6 +4,17 @@ Content-Type: application/json
 {    
     "userId" : "123",
     "stationId" : {
+        "Orient Heights" : "That station"
+    }
+}
+
+###
+POST http://localhost:8081/note
+Content-Type: application/json 
+
+{    
+    "userId" : "123",
+    "stationId" : {
         "OrientLows" : "little station"
     }
 }
