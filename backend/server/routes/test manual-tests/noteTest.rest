@@ -65,3 +65,11 @@ Content-Type: application/json
 }
 
 ###
+GET http://localhost:8081/note/byId
+Content-Type: application/json 
+
+{
+    "userId" : "123"    
+}
+
+###
