@@ -2,29 +2,31 @@ const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel');
 
-
-router.put('', async (req, res) => {
+router.delete('', async (req, res) => {
 
     var {userId, stationId} = req.body
 
-    const userNoteId = await noteModel.findOne({ userId: userId })    
+    const userNoteId = await noteModel.findOne({ userId: userId })
+    const stationKey = Object.keys(stationId)[0]
+    
 
-    if (userNoteId != null){
-               
+    if (userNoteId != null){        
 
-        if (Object.keys(userNoteId.stationId).indexOf(Object.keys(stationId)[0]) > -1){
+        if (Object.keys(userNoteId.stationId).indexOf(stationKey) > -1){
 
-            Object.assign(userNoteId.stationId,stationId)
-            //stationId = userNoteId.stationId
+            stationId = userNoteId.stationId
+            delete stationId[stationKey]
+            
+                        
             
             noteModel.findByIdAndUpdate(userNoteId._id, 
             {
-                stationId : userNoteId.stationId
+                stationId : stationId
             } ,function (err, noteInfo) {
             if (err){
                 console.log(err);
             } else {
-                res.status(200).send({ message: "Note edited successfully"})
+                res.status(200).send({ message: "Note deleted successfully"})
             }
             });
         }

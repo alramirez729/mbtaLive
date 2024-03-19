@@ -54,3 +54,14 @@ Content-Type: application/json
 }
 
 ###
+DELETE http://localhost:8081/note
+Content-Type: application/json 
+
+{
+    "userId" : "123",
+    "stationId" : {
+        "Orient Heights" : "That station"
+    }
+}
+
+###
