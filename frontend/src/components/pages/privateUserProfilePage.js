@@ -1,40 +1,45 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios"; // If using axios
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useNavigate } from "react-router-dom";
 import getUserInfo from "../../utilities/decodeJwt";
 
-
-//link to service
-//http://localhost:8096/privateUserProfile
-
 const PrivateUserProfile = () => {
   const [show, setShow] = useState(false);
-  const [user, setUser] = useState({})
+  const [user, setUser] = useState({});
+  const [favorites, setFavorites] = useState([]);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const navigate = useNavigate();
 
-
-  // handle logout button
-  const handleLogout = (async) => {
+  const handleLogout = async () => {
     localStorage.clear();
     navigate("/");
   };
 
   useEffect(() => {
-    setUser(getUserInfo())
+    setUser(getUserInfo());
+    fetchFavorites();
   }, []);
 
+  const fetchFavorites = async () => {
+    try {
+      const response = await axios.get("http://localhost:8081/favorite/getAll");
+      setFavorites(response.data);
+    } catch (error) {
+      console.error("Error fetching favorites:", error);
+    }
+  };
 
-  // 	<span><b>{<FollowerCount username = {username}/>}</b></span>&nbsp;
-  // <span><b>{<FollowingCount username = {username}/>}</b></span>;
-  if (!user) return (<div><h4>Log in to view this page.</h4></div>)
+  if (!user) return <div><h4>Log in to view this page.</h4></div>;
+
   return (
-    <div class="container">
-      <div class="col-md-12 text-center">
+    <div className="container">
+      <div className="col-md-12 text-center">
         <h1>{user && user.username}</h1>
-        <div class="col-md-12 text-center">
+        <div className="col-md-12 text-center">
           <>
             <Button className="me-2" onClick={handleShow}>
               Log Out
@@ -60,6 +65,14 @@ const PrivateUserProfile = () => {
             </Modal>
           </>
         </div>
+        <div>
+  <h2>Favorites</h2>
+  <ul>
+    {favorites.map((favorite) => (
+      <li key={favorite._id}>{favorite.line} - {favorite.station}</li>
+    ))}
+  </ul>
+</div>
       </div>
     </div>
   );
