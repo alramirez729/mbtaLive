@@ -18,4 +18,19 @@ router.get("/byId", async (req, res) => {
   });
 });
 
+router.get("/byStationId", async (req, res) => {
+  var { userId, stationId } = req.body;
+
+  const userNoteId = await noteModel.findOne({ userId: userId })
+  const note = userNoteId.stationId[stationId]
+
+  if (note == null){ 
+    res.status(404).send("userId does not exist.");
+  }
+  else {
+    return res.json(note);
+  }
+
+});
+
 module.exports = router;
