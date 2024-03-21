@@ -38,7 +38,7 @@ const PrivateUserProfile = () => {
   return (
     <div className="container">
       <div className="col-md-12 text-center">
-        <h1>{user && user.username}</h1>
+        <h1>Welcome back {user && user.username}</h1>
         <div className="col-md-12 text-center">
           <>
             <Button className="me-2" onClick={handleShow}>
@@ -69,7 +69,7 @@ const PrivateUserProfile = () => {
   <h2>Favorites</h2>
   <ul>
     {favorites.map((favorite) => (
-      <li key={favorite._id}>{favorite.line} - {favorite.station}</li>
+      <li key={favorite._id}>{favorite.line} Line - {favorite.station}</li>
     ))}
   </ul>
 </div>
