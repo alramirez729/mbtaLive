@@ -1,23 +1,17 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios"; // If using axios
+import axios from "axios";
 import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import getUserInfo from "../../utilities/decodeJwt";
 
 const PrivateUserProfile = () => {
-  const [show, setShow] = useState(false);
   const [user, setUser] = useState({});
   const [favorites, setFavorites] = useState([]);
+  const [editingId, setEditingId] = useState(null); 
+  const [editFormData, setEditFormData] = useState({ line: "", station: "" }); 
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const navigate = useNavigate();
-
-  const handleLogout = async () => {
-    localStorage.clear();
-    navigate("/");
-  };
 
   useEffect(() => {
     setUser(getUserInfo());
@@ -33,49 +27,82 @@ const PrivateUserProfile = () => {
     }
   };
 
+  const handleEdit = (favorite) => {
+    setEditingId(favorite._id);
+    setEditFormData({ line: favorite.line, station: favorite.station });
+  };
+
+  const handleEditChange = (e) => {
+    setEditFormData({
+      ...editFormData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleEditSave = async (id) => {
+    try {
+      
+      const response = await axios.put(`http://localhost:8081/favorite/editFavorite/${id}`, { 
+        line: editFormData.line, 
+        station: editFormData.station 
+      });
+      
+      setFavorites(favorites.map(fav => fav._id === id ? response.data.favorite : fav));
+      setEditingId(null);
+      
+    } catch (error) {
+      console.error("Error updating favorite:", error);
+    }
+  };
+
+
+  const handleLogout = async () => {
+    localStorage.clear();
+    navigate("/");
+  };
+
   if (!user) return <div><h4>Log in to view this page.</h4></div>;
 
   return (
     <div className="container">
       <div className="col-md-12 text-center">
         <h1>Welcome back {user && user.username}</h1>
-        <div className="col-md-12 text-center">
-          <>
-            <Button className="me-2" onClick={handleShow}>
-              Log Out
-            </Button>
-            <Modal
-              show={show}
-              onHide={handleClose}
-              backdrop="static"
-              keyboard={false}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title>Log Out</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>Are you sure you want to Log Out?</Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleLogout}>
-                  Yes
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </>
-        </div>
-        <div>
-  <h2>Favorites</h2>
-  <ul>
-    {favorites.map((favorite) => (
-      <li key={favorite._id}>{favorite.line} Line - {favorite.station}</li>
-    ))}
-  </ul>
-</div>
+        <h2>Favorites</h2>
+        <ul>
+          {favorites.map((favorite) => (
+            <li key={favorite._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+              {editingId === favorite._id ? (
+                <div style={{ flex: 1 }}>
+                  <Form.Control
+                    type="text"
+                    name="line"
+                    value={editFormData.line}
+                    onChange={handleEditChange}
+                    style={{ width: "auto", display: "inline-block", marginRight: '10px' }}
+                  />
+                  <Form.Control
+                    type="text"
+                    name="station"
+                    value={editFormData.station}
+                    onChange={handleEditChange}
+                    style={{ width: "auto", display: "inline-block", marginRight: '10px' }}
+                  />
+                  <Button onClick={() => handleEditSave(favorite._id)}>Save</Button>
+                </div>
+              ) : (
+                <>
+                  <span>{favorite.line} Line - {favorite.station}</span>
+                  <Button onClick={() => handleEdit(favorite)}>Edit</Button>
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+        <Button onClick={handleLogout}>Log Out</Button>
       </div>
     </div>
   );
+  
 };
 
 export default PrivateUserProfile;

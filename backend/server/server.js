@@ -12,12 +12,10 @@ const registerRoute = require('./routes/userSignUp');
 const getUserByIdRoute = require('./routes/userGetUserById');
 const editUserRoute = require('./routes/userEditUser');
 const deleteUserRoute = require('./routes/userDeleteAll');
-
 const editUserNoteRoute = require("./routes/editUserNote");
 const postUserNoteRoute = require("./routes/postUserNote");
 const deleteUserNoteRoute = require("./routes/deleteUserNote");
 const getUserNoteRoute = require("./routes/getUserNote");
-
 const createHighlightRoute = require("./routes/highlightCreateHighlight");
 const highlightGetAllRoute = require("./routes/highlightGetAll");
 const highlightDeleteAllRoute = require("./routes/highlightDeleteAll");

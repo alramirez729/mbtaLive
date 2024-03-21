@@ -3,8 +3,8 @@ Content-Type: application/json
 
 {
   "userID": "65f9c28635b60239e139abbb",
-  "line": "Orange",
-  "station": "South Station"
+  "line": "Red",
+  "station": "Alewife"
 }
 
 ###
