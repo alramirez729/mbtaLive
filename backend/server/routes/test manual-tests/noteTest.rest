@@ -2,7 +2,7 @@ POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
-    "userId" : "123",
+    "userId" : "1234567890",
     "stationId" : {
         "Orient Heights" : "That station"
     }
@@ -13,7 +13,7 @@ POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
-    "userId" : "123",
+    "userId" : "1234567890",
     "stationId" : {
         "OrientLows" : "little station"
     }
@@ -24,7 +24,7 @@ POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
-    "userId" : "123",
+    "userId" : "1234567890",
     "stationId" : {
         "South Station" : "Clean station"
     }
@@ -35,7 +35,7 @@ PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {
-    "userId" : "123",
+    "userId" : "1234567890",
     "stationId" : {
         "OrientLows" : "silly station"
     }
@@ -47,7 +47,7 @@ PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {
-    "userId" : "123",
+    "userId" : "1234567890",
     "stationId" : {
         "North Station" : "billy station"
     }
@@ -58,19 +58,19 @@ DELETE http://localhost:8081/note
 Content-Type: application/json 
 
 {
-    "userId" : "123",
+    "userId" : "1234567890",
     "stationId" : {
         "Orient Heights" : "That station"
     }
 }
 
 ###
-GET http://localhost:8081/note/byId
+GET http://localhost:8081/note/byId?userId=123
 Content-Type: application/json 
 
-{
-    "userId" : "123"    
-}
+###
+GET http://localhost:8081/note/byId?userId=1234567890
+Content-Type: application/json 
 
 ###
 GET http://localhost:8081/note/byStationId
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 {
     "userId" : "123",
-    "stationId" : "South Station"
+    "stationId" : "OrientLows"
 }
 
 ###

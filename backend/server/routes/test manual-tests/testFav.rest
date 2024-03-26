@@ -2,7 +2,7 @@ POST http://localhost:8081/favorite
 Content-Type: application/json
 
 {
-  "userID": "65f9c28635b60239e139abbb",
+  "userID": "65dcf2711a6692aa2995777e",
   "line": "Red",
   "station": "Alewife"
 }
