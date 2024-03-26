@@ -12,15 +12,14 @@ const registerRoute = require('./routes/userSignUp');
 const getUserByIdRoute = require('./routes/userGetUserById');
 const editUserRoute = require('./routes/userEditUser');
 const deleteUserRoute = require('./routes/userDeleteAll');
-
 const editUserNoteRoute = require("./routes/editUserNote");
 const postUserNoteRoute = require("./routes/postUserNote");
 const deleteUserNoteRoute = require("./routes/deleteUserNote");
 const getUserNoteRoute = require("./routes/getUserNote");
-
 const createHighlightRoute = require("./routes/highlightCreateHighlight");
 const highlightGetAllRoute = require("./routes/highlightGetAll");
 const highlightDeleteAllRoute = require("./routes/highlightDeleteAll");
+const highlightUpdate = require("./routes/highlightUpdate");
 const addNewFavoriteRoute = require('./routes/addNewFavorite');
 const favoriteGetAllFavRoute = require('./routes/favoriteGetAllFav');
 const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
@@ -50,6 +49,7 @@ app.use('/note', getUserNoteRoute);
 app.use('/highlight', createHighlightRoute);
 app.use('/highlight', highlightGetAllRoute);
 app.use('/highlight', highlightDeleteAllRoute);
+app.use('/highlight', highlightUpdate);
 app.use('/favorite', addNewFavoriteRoute);
 app.use('/favorite', favoriteGetAllFavRoute);
 app.use('/favorite', deleteAllFavoriteRoute);

@@ -6,6 +6,15 @@ Content-Type: application/json
     "lineId": "Blue",
     "stationId": "Orient Heights"
 }
+###
+POST http://localhost:8081/highlight/createHighlight
+Content-Type: application/json
+
+{
+    "userId": "dude_bro44",
+    "lineId": "Blue",
+    "stationId": "Orient Heights"
+}
 
 ### 
 GET http://localhost:8081/highlight/getAll
@@ -14,4 +23,15 @@ Content-Type: application/json
 ### /deleteAll for testing/demonstration purposes
 POST http://localhost:8081/highlight/deleteAll
 Content-Type: application/json
+
+###
+PUT http://localhost:8081/highlight/update
+Content-Type: application/json
+
+{
+    "_id" : "65fc64c34180359a69056c4e",
+    "userId": "dude_bro44",
+    "lineId": "Orange",
+    "stationId": "98765"
+}
 
