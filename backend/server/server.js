@@ -24,6 +24,7 @@ const addNewFavoriteRoute = require('./routes/addNewFavorite');
 const favoriteGetAllFavRoute = require('./routes/favoriteGetAllFav');
 const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
 const editFavoriteRoute = require('./routes/editFavorite');
+const deleteFavorite = require('./routes/deleteFavorite');
 
 
 
@@ -54,6 +55,7 @@ app.use('/favorite', addNewFavoriteRoute);
 app.use('/favorite', favoriteGetAllFavRoute);
 app.use('/favorite', deleteAllFavoriteRoute);
 app.use('/favorite', editFavoriteRoute);
+app.use('/favorite', deleteFavorite);
 
 // Start the server
 app.listen(SERVER_PORT, () => {
