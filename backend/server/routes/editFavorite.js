@@ -3,16 +3,14 @@ const router = express.Router();
 const FavoriteModel = require('../models/favoriteModel');
 const z = require('zod');
 
-// Define the schema for a favorite edit
 const editFavoriteSchema = z.object({
   line: z.string(),
   station: z.string(),
 });
 
-// Use PUT method for updating existing resources
 router.put('/editFavorite/:id', async (req, res) => {
   try {
-    const { id } = req.params; // Extracting ID from URL parameters
+    const { id } = req.params;
 
     const { error, data } = editFavoriteSchema.safeParse(req.body);
     if (error) {
@@ -25,7 +23,6 @@ router.put('/editFavorite/:id', async (req, res) => {
       return res.status(404).json({ message: 'Favorite not found' });
     }
 
-    // Send back the updated favorite as confirmation
     return res.json({ message: 'Favorite updated successfully', favorite });
   } catch (error) {
     console.error('Error editing favorite:', error);
