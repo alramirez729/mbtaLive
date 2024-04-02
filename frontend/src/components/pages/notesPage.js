@@ -32,8 +32,7 @@ const Notes = () => {
   return (
     <div className = "container">
       <div className = "col-md-12 text-center">
-        <h1>Notes of {user.username}</h1>
-        <h2>No {Object.keys(notes)}</h2>
+        <h1>Notes of {user.username}</h1>        
         <div class="col-md-12 text-center">
           <ul>            
           {Object.keys(notes).map(noteId => (
