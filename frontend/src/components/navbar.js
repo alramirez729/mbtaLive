@@ -27,6 +27,7 @@ export default function Navbar() {
         <Nav.Link href="/privateUserProfile">Profile</Nav.Link>
         <Nav.Link href="/Stop">Stop</Nav.Link>
         <Nav.Link href="/notesPage">Notes</Nav.Link>
+        <Nav.Link href="/highlights">Highlights</Nav.Link>
       </Nav>
       <Nav className="ml-auto">
         <Nav.Link href="/registerPage">Register</Nav.Link>
