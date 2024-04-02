@@ -4,12 +4,15 @@ const noteModel = require('../models/noteModel');
 
 router.get("/byId", async (req, res) => {  
   var { userId } = req.query;
+  if (!userId) {
+    var {userId} = req.body;
+  }
   
   noteModel.findOne({userId : userId}, function (err, user) {
     if (err) {
       console.log(err);
       return res.status(500).send("Internal server error");
-    }
+    }    
     if (!user) {
       res.status(404).send("userId does not exist.");
     } 

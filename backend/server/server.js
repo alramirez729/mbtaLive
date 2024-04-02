@@ -20,10 +20,12 @@ const createHighlightRoute = require("./routes/highlightCreateHighlight");
 const highlightGetAllRoute = require("./routes/highlightGetAll");
 const highlightDeleteAllRoute = require("./routes/highlightDeleteAll");
 const highlightUpdate = require("./routes/highlightUpdate");
+const getUserHighlightRoute = require ("./routes/getUserHighlight");
 const addNewFavoriteRoute = require('./routes/addNewFavorite');
 const favoriteGetAllFavRoute = require('./routes/favoriteGetAllFav');
 const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
 const editFavoriteRoute = require('./routes/editFavorite');
+const deleteFavorite = require('./routes/deleteFavorite');
 
 
 
@@ -50,10 +52,12 @@ app.use('/highlight', createHighlightRoute);
 app.use('/highlight', highlightGetAllRoute);
 app.use('/highlight', highlightDeleteAllRoute);
 app.use('/highlight', highlightUpdate);
+app.use('/highlight', getUserHighlightRoute);
 app.use('/favorite', addNewFavoriteRoute);
 app.use('/favorite', favoriteGetAllFavRoute);
 app.use('/favorite', deleteAllFavoriteRoute);
 app.use('/favorite', editFavoriteRoute);
+app.use('/favorite', deleteFavorite);
 
 // Start the server
 app.listen(SERVER_PORT, () => {
