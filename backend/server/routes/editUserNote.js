@@ -5,17 +5,21 @@ const noteModel = require('../models/noteModel');
 
 router.put('', async (req, res) => {
 
-    var {userId, stationId} = req.body
+    var {userId} = req.query
+    if (!userId) {
+            var {userId} = req.body
+    }
+    var {stationId} = req.body
+    
 
-    const userNoteId = await noteModel.findOne({ userId: userId })    
+    const userNoteId = await noteModel.findOne({ userId: userId })
 
-    if (userNoteId != null){
+    if (userNoteId){
                
 
         if (Object.keys(userNoteId.stationId).indexOf(Object.keys(stationId)[0]) > -1){
 
-            Object.assign(userNoteId.stationId,stationId)
-            //stationId = userNoteId.stationId
+            Object.assign(userNoteId.stationId,stationId)            
             
             noteModel.findByIdAndUpdate(userNoteId._id, 
             {
