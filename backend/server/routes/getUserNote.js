@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel');
 
-router.get("/byId", async (req, res) => {  
+router.get("/byId/", async (req, res) => {  
   var { userId } = req.query;
   if (!userId) {
     var {userId} = req.body;
@@ -22,7 +22,7 @@ router.get("/byId", async (req, res) => {
   });
 });
 
-router.get("/byStationId", async (req, res) => {
+router.get("/byStationId/", async (req, res) => {
   var { userId, stationId } = req.body;
 
   const userNoteId = await noteModel.findOne({ userId: userId })

@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel');
 
-router.delete('', async (req, res) => {
+router.delete('/', async (req, res) => {
 
     var {userId} = req.query
     if (!userId) {
