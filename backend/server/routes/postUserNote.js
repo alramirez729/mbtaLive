@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel')
 
-router.post('/', async (req, res) => {
+router.post('', async (req, res) => {
     
     var { userId, stationId} = req.body
 

@@ -3,13 +3,8 @@ const router = express.Router();
 const noteModel = require('../models/noteModel');
 
 
-router.put('/', async (req, res) => {
-
-    var {userId} = req.query
-    if (!userId) {
-            var {userId} = req.body
-    }
-    var {stationId} = req.body
+router.put('', async (req, res) => {
+    var {userId ,stationId} = req.body
     
 
     const userNoteId = await noteModel.findOne({ userId: userId })

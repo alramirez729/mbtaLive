@@ -79,7 +79,7 @@ const PrivateUserProfile = () => {
             <li key={favorite._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
               {editingId === favorite._id ? (
                 <>
-                  <Form.Select
+                  <Form
                     name="line"
                     value={editFormData.line}
                     onChange={handleEditChange}
@@ -89,7 +89,7 @@ const PrivateUserProfile = () => {
                     {allowedLines.map((line) => (
                       <option key={line} value={line}>{line}</option>
                     ))}
-                  </Form.Select>
+                  </Form>
                   <Form.Control
                     type="text"
                     name="station"

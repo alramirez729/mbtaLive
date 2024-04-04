@@ -2,13 +2,9 @@ const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel');
 
-router.delete('/', async (req, res) => {
+router.delete('', async (req, res) => {
 
-    var {userId} = req.query
-    if (!userId) {
-            var {userId} = req.body
-    }
-    var {stationId} = req.body
+    var {userId ,stationId} = req.body
 
     const userNoteId = await noteModel.findOne({ userId: userId })
     const stationKey = Object.keys(stationId)[0]

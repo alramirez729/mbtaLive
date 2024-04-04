@@ -1,4 +1,4 @@
-POST http://localhost:8081/note/
+POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8081/note/
+POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8081/note/
+POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:8081/note/
+PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {
@@ -42,10 +42,11 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:8081/note/?userId=TestUser
+PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {
+    "userId" :  "TestUser"
     "stationId" : {
         "OrientLows" : "janky station"
     }
@@ -53,7 +54,7 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:8081/note/
+PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {
@@ -64,7 +65,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8081/note/
+DELETE http://localhost:8081/note
 Content-Type: application/json 
 
 {
