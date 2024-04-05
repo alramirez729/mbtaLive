@@ -4,22 +4,21 @@ const { z } = require('zod');
 const Favorite = require("../models/favoriteModel");
 
 const createFavoriteSchema = z.object({
-  userID: z.string().nonempty(),
+  userId: z.string().nonempty(),
   line: z.string(),
   station: z.string(),
 });
 
 router.post("/", async (req, res) => {
   try {
-    const { userID, line, station } = createFavoriteSchema.parse(req.body);
-
-    const existingFavorite = await Favorite.findOne({ userID, line, station });
+    const { userId, line, station } = createFavoriteSchema.parse(req.body);
+    const existingFavorite = await Favorite.findOne({ userId, line, station });
     if (existingFavorite) {
       return res.status(400).json({ error: 'Favorite already exists' });
     }
 
     const newFavorite = new Favorite({
-      userID,
+      userId,
       line,
       station,
     });

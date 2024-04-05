@@ -26,6 +26,7 @@ const favoriteGetAllFavRoute = require('./routes/favoriteGetAllFav');
 const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
 const editFavoriteRoute = require('./routes/editFavorite');
 const deleteFavorite = require('./routes/deleteFavorite');
+const getAllByUserIdRoute = require('./routes/getAllByUserId');
 
 
 
@@ -55,6 +56,7 @@ app.use('/highlight', highlightUpdate);
 app.use('/highlight', getUserHighlightRoute);
 app.use('/favorite', addNewFavoriteRoute);
 app.use('/favorite', favoriteGetAllFavRoute);
+app.use('/favorite', getAllByUserIdRoute);
 app.use('/favorite', deleteAllFavoriteRoute);
 app.use('/favorite', editFavoriteRoute);
 app.use('/favorite', deleteFavorite);

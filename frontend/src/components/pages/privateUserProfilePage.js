@@ -46,7 +46,8 @@ const PrivateUserProfile = () => {
 
   const fetchFavorites = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/favorite/getAll");
+      const userInfo = getUserInfo();
+      const response = await axios.get(`http://localhost:8081/favorite/getByUserId?userId=${userInfo.username}`);
       setFavorites(response.data);
     } catch (error) {
       console.error("Error fetching favorites:", error);
@@ -65,11 +66,10 @@ const PrivateUserProfile = () => {
 
   const handleAddSubmit = async (e) => {
     e.preventDefault();
-    // Assuming getUserInfo() and hardcoding userID for testing
-    const userInfo = { userID: "hardcodedUserIDForTesting" }; // For debugging
+    const userInfo = getUserInfo();
     const payload = {
       ...addFormData,
-      userID: userInfo.userID,
+      userId: userInfo.username,
     };
   
     console.log("Sending payload:", payload); // Log to verify
@@ -88,9 +88,6 @@ const PrivateUserProfile = () => {
       console.error("Error adding favorite:", error.response ? error.response.data : error);
     }
   };
-  
-  
-  
 
   const handleEdit = (favorite) => {
     setEditingId(favorite._id);
@@ -106,20 +103,29 @@ const PrivateUserProfile = () => {
 
   const handleEditSave = async (id) => {
     try {
-      await axios.put(`http://localhost:8081/favorite/editFavorite/${id}`, editFormData);
-      const newFavorites = favorites.map((fav) => (fav._id === id ? { ...fav, ...editFormData } : fav));
+      const userInfo = getUserInfo();
+      await axios.put(`http://localhost:8081/favorite/editFavorite/${id}`, {
+        ...editFormData,
+        userId: userInfo.username,
+      });
+      const newFavorites = favorites.map((fav) =>
+        fav._id === id ? { ...fav, ...editFormData } : fav
+      );
       setFavorites(newFavorites);
       setEditingId(null); // Exit editing mode
     } catch (error) {
       console.error("Error updating favorite:", error);
     }
   };
-
+  
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8081/favorite/deleteFavorite/${id}`);
+      const userInfo = getUserInfo();
+      await axios.delete(`http://localhost:8081/favorite/deleteFavorite/${id}`, {
+        data: { userId: userInfo.username },
+      });
       // Update state to reflect the deletion
-      setFavorites(favorites.filter(fav => fav._id !== id));
+      setFavorites(favorites.filter((fav) => fav._id !== id));
     } catch (error) {
       console.error("Error deleting favorite:", error);
       // Handle error (e.g., display an error message)
