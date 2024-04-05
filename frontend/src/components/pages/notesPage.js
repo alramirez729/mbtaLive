@@ -12,20 +12,36 @@ const Notes = () => {
   const [editFormData, setEditFormData] = useState({ station: "", note: "" });
     
     
-  useEffect(() => {
-    setUser(getUserInfo());    
-  }, []);
   
-  const fetchNotes = async () => {
-    try {
-      const response = await axios.get(`http://localhost:8081/note/byId/?userId=${user.username}`);      
+  
+  const fetchNotes = async (username) => {    
+    try {      
+      let response = await axios.get(`http://localhost:8081/note/byId/?userId=${username}`);
+      if(!response.data.stationId){
+        response.data.stationId = {}
+      }
       setNotes(response.data.stationId);
     } catch (error) {
       console.error("Error fetching notes", error);
     }
   };
   
-  fetchNotes();
+  useEffect(() => {
+    const initializeNotes = async () => {
+      const userInfo = getUserInfo();      
+      if (userInfo && userInfo.username) {
+        setUser(userInfo);
+        await fetchNotes(userInfo.username);
+      } else {
+        console.error("User information is not available.");
+      }
+    };
+  
+    initializeNotes();
+  }, []);
+
+  
+  
 
   const handleEdit = (stationKey) => {    
     setEditingId(stationKey);
@@ -39,31 +55,40 @@ const Notes = () => {
     });
   };
 
-  const handleEditSave = async (stationKey) => {
+
+  const handleEditSave = async (userId, stationId) => {    
     try {      
-      await axios.put(`http://localhost:8081/note`,{
-        userId: user.username, 
-        stationId: {
-          stationKey: notes[stationKey]
-        }
+      const response = await axios.put(`http://localhost:8081/note`,{
+            userId: userId,
+            stationId: stationId
       });
-      fetchNotes()
+      const updatedNotes = { ...notes }
+      updatedNotes[Object.keys(stationId)[0]] = Object.values(stationId)[0]
+      setNotes(updatedNotes);
       setEditingId(null); // Exit editing mode
+      //localStorage.setItem("stationNotes", JSON.stringify(updatedNotes));
     } catch (error) {
       console.error("Error editing note:", error);
     }
   };
 
-  const handleDelete = async (userId, stationKey) => {
-    const station = {};
-    station[stationKey] = ""
+  const handleDelete = async (userId, stationId) => {    
     try {
-            await axios.delete(`http://localhost:8081/note`, {
-              userId: userId,
-              stationId: station    
-            });
-      // Update state to reflect the deletion
-      setNotes(notes.filter(note => user.username !== userId));
+          await axios.delete(`http://localhost:8081/note`, {
+            data: {userId: userId,
+            stationId: stationId}
+          });
+          // Update state to reflect the deletion
+          const updatedNotes = { ...notes };
+          delete updatedNotes[Object.keys(stationId)[0]];
+          setNotes(updatedNotes);
+          console.log(updatedNotes)
+          if (updatedNotes == {}){
+            //localStorage.removeItem("statiionNotes")
+          }
+          else {
+            //localStorage.setItem("stationNotes", JSON.stringify(updatedNotes))
+          }
     } catch (error) {
       console.error("Error deleting note:", error);
       // Handle error (e.g., display an error message)
@@ -83,28 +108,28 @@ const Notes = () => {
             <li key={stationKey} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
               {editingId === stationKey ? (
                 <>
-                  <Form.Select
-                    name="Station"
+                  <Form
+                    name="station"
                     value={editFormData.station}
                     readOnly
                     style={{ marginRight: '10px' }}
                   >
                   <option value="">{stationKey}</option>
-                  </Form.Select>
+                  </Form>
                   <Form.Control
                     type="text"
-                    name="Note"
+                    name="note"
                     value={editFormData.note}
                     onChange={handleEditChange}
                     style={{ marginRight: '10px' }}
                   />
-                  <Button variant="success" onClick={() => handleEditSave(user.username, {stationKey: notes[stationKey]})} style={{ marginRight: '10px' }}>Save</Button>
+                  <Button variant="success" onClick={() => handleEditSave(user.username, {[stationKey]: editFormData.note})} style={{ marginRight: '10px' }}>Save</Button>
                 </>
               ) : (
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <span style={{ marginRight: '10px' }}>{stationKey} - {notes[stationKey]}</span>
-                  <Button onClick={() => handleEdit(stationKey)} style={{ marginRight: '10px' }}>Edit</Button>                   
-                  <Button variant="danger" onClick={() => handleDelete(user.username, stationKey)}>Delete</Button>
+                  <Button onClick={() => handleEdit(stationKey)} style={{ marginRight: '10px' }}>Edit</Button>                  
+                  <Button variant="danger" onClick={() => handleDelete(user.username, {[stationKey]: ""})}>Delete</Button>
                 </div>
               )}
             </li>

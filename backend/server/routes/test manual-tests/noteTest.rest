@@ -65,6 +65,17 @@ Content-Type: application/json
 }
 
 ###
+PUT http://localhost:8081/note
+Content-Type: application/json 
+
+{
+    "userId" : "TestUser",
+    "stationId" : {
+        "South Station" : "billy station"
+    }
+}
+
+###
 DELETE http://localhost:8081/note
 Content-Type: application/json 
 

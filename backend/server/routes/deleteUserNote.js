@@ -4,7 +4,7 @@ const noteModel = require('../models/noteModel');
 
 router.delete('', async (req, res) => {
 
-    var {userId ,stationId} = req.body
+    var {userId ,stationId} = req.body    
 
     const userNoteId = await noteModel.findOne({ userId: userId })
     const stationKey = Object.keys(stationId)[0]

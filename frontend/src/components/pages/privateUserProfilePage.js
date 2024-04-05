@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { useNavigate } from "react-router-dom";
 import getUserInfo from "../../utilities/decodeJwt";
 
@@ -13,17 +10,12 @@ const PrivateUserProfile = () => {
   const [favorites, setFavorites] = useState([]);
   const [editingId, setEditingId] = useState(null);
   const [editFormData, setEditFormData] = useState({ line: "", station: "" });
-  const [showAddModal, setShowAddModal] = useState(false);
-  const [addFormData, setAddFormData] = useState({ line: "", station: "" });
   const navigate = useNavigate();
 
   useEffect(() => {
-    const userInfo = getUserInfo();
-    console.log("User Info:", userInfo); // This should log the user info to the console
-    setUser(userInfo);
+    setUser(getUserInfo());
     fetchFavorites();
   }, []);
-  
 
   const fetchFavorites = async () => {
     try {
@@ -33,45 +25,6 @@ const PrivateUserProfile = () => {
       console.error("Error fetching favorites:", error);
     }
   };
-
-  const handleAddShow = () => setShowAddModal(true);
-  const handleAddClose = () => setShowAddModal(false);
-
-  const handleAddChange = (e) => {
-    setAddFormData({
-    ...addFormData,
-    [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleAddSubmit = async (e) => {
-    e.preventDefault();
-    // Assuming getUserInfo() and hardcoding userID for testing
-    const userInfo = { userID: "hardcodedUserIDForTesting" }; // For debugging
-    const payload = {
-      ...addFormData,
-      userID: userInfo.userID,
-    };
-  
-    console.log("Sending payload:", payload); // Log to verify
-  
-    try {
-      const response = await axios.post("http://localhost:8081/favorite", payload, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      console.log("Response:", response); // Log response to verify
-      setFavorites([...favorites, response.data.favorite]);
-      setAddFormData({ line: "", station: "" }); // Reset form data
-      handleAddClose(); // Close the modal
-    } catch (error) {
-      console.error("Error adding favorite:", error.response ? error.response.data : error);
-    }
-  };
-  
-  
-  
 
   const handleEdit = (favorite) => {
     setEditingId(favorite._id);
@@ -121,13 +74,12 @@ const PrivateUserProfile = () => {
       <div className="col-md-12 text-center">
         <h1>Welcome back {user && user.username}</h1>
         <h2>Favorites</h2>
-        <Button onClick={handleAddShow} className="mb-3">Add Favorite</Button>
         <ul>
           {favorites.map((favorite) => (
             <li key={favorite._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
               {editingId === favorite._id ? (
                 <>
-                  <Form
+                  <Form.Select
                     name="line"
                     value={editFormData.line}
                     onChange={handleEditChange}
@@ -137,7 +89,7 @@ const PrivateUserProfile = () => {
                     {allowedLines.map((line) => (
                       <option key={line} value={line}>{line}</option>
                     ))}
-                  </Form>
+                  </Form.Select>
                   <Form.Control
                     type="text"
                     name="station"
@@ -159,38 +111,8 @@ const PrivateUserProfile = () => {
         </ul>
         <Button onClick={handleLogout}>Log Out</Button>
       </div>
-  
-      {/* Add Favorite Modal */}
-      <Modal show={showAddModal} onHide={handleAddClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>Add Favorite</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <Form onSubmit={handleAddSubmit}>
-          <Form.Group as={Row} controlId="line">
-            <Form.Label column sm={3}>Line</Form.Label>
-            <Col sm={9}>
-              <Form.Control as="select" name="line" value={addFormData.line} onChange={handleAddChange} required>
-                <option value="">Select Line</option>
-                {allowedLines.map((line) => (
-                  <option key={line} value={line}>{line}</option>
-                ))}
-              </Form.Control>
-            </Col>
-          </Form.Group>
-          <Form.Group as={Row} controlId="station" className="mt-2">
-            <Form.Label column sm={3}>Station</Form.Label>
-            <Col sm={9}>
-              <Form.Control type="text" name="station" value={addFormData.station} onChange={handleAddChange} required />
-            </Col>
-          </Form.Group>
-          <div className="text-end mt-3">
-            <Button variant="primary" type="submit">Add</Button>
-          </div>
-        </Form>
-      </Modal.Body>
-    </Modal>
     </div>
   );
 };
+
 export default PrivateUserProfile;
