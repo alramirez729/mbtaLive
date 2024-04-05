@@ -10,6 +10,7 @@ import getUserInfo from "../../utilities/decodeJwt";
 
 const PrivateUserProfile = () => {
   const [user, setUser] = useState({});
+  const [stations, setStations] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [editingId, setEditingId] = useState(null);
   const [editFormData, setEditFormData] = useState({ line: "", station: "" });
@@ -19,10 +20,28 @@ const PrivateUserProfile = () => {
 
   useEffect(() => {
     const userInfo = getUserInfo();
-    console.log("User Info:", userInfo); // This should log the user info to the console
+    console.log("User Info:", userInfo);
     setUser(userInfo);
+    fetchStations();
     fetchFavorites();
   }, []);
+
+  const fetchStations = async () => {
+    try {
+      const response = await fetch(
+        "https://api-v3.mbta.com/stops?filter[route_type]=1"
+      );
+      const data = await response.json();
+      setStations(
+        data.data.map((station) => ({
+          id: station.id,
+          name: station.attributes.name,
+        }))
+      );
+    } catch (error) {
+      console.error("Error fetching stations:", error);
+    }
+  };
   
 
   const fetchFavorites = async () => {
@@ -127,26 +146,33 @@ const PrivateUserProfile = () => {
             <li key={favorite._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
               {editingId === favorite._id ? (
                 <>
-                  <Form.Select
-                    name="line"
-                    value={editFormData.line}
-                    onChange={handleEditChange}
-                    style={{ marginRight: '10px' }}
-                  >
-                    <option value="">Select Line</option>
-                    {allowedLines.map((line) => (
-                      <option key={line} value={line}>{line}</option>
-                    ))}
-                  </Form.Select>
-                  <Form.Control
-                    type="text"
-                    name="station"
-                    value={editFormData.station}
-                    onChange={handleEditChange}
-                    style={{ marginRight: '10px' }}
-                  />
-                  <Button variant="success" onClick={() => handleEditSave(favorite._id)} style={{ marginRight: '10px' }}>Save</Button>
-                </>
+                <Form.Select
+                  name="line"
+                  value={editFormData.line}
+                  onChange={handleEditChange}
+                  style={{ marginRight: '10px' }}
+                >
+                  <option value="">Select Line</option>
+                  {allowedLines.map((line) => (
+                    <option key={line} value={line}>{line}</option>
+                  ))}
+                </Form.Select>
+                <Form.Select
+                  name="station"
+                  value={editFormData.station}
+                  onChange={handleEditChange}
+                  style={{ marginRight: '10px' }}
+                >
+                  <option value="">Select a station</option>
+                  {stations.map((station) => (
+                    <option key={station.id} value={station.name}>
+                      {station.name}
+                    </option>
+                  ))}
+                </Form.Select>
+                <Button variant="success" onClick={() => handleEditSave(favorite._id)} style={{ marginRight: '10px' }}>Save</Button>
+              </>
+              
               ) : (
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <span style={{ marginRight: '10px' }}>{favorite.line} Line - {favorite.station}</span>
@@ -162,34 +188,42 @@ const PrivateUserProfile = () => {
   
       {/* Add Favorite Modal */}
       <Modal show={showAddModal} onHide={handleAddClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>Add Favorite</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <Form onSubmit={handleAddSubmit}>
-          <Form.Group as={Row} controlId="line">
-            <Form.Label column sm={3}>Line</Form.Label>
-            <Col sm={9}>
-              <Form.Control as="select" name="line" value={addFormData.line} onChange={handleAddChange} required>
-                <option value="">Select Line</option>
-                {allowedLines.map((line) => (
-                  <option key={line} value={line}>{line}</option>
-                ))}
-              </Form.Control>
-            </Col>
-          </Form.Group>
-          <Form.Group as={Row} controlId="station" className="mt-2">
-            <Form.Label column sm={3}>Station</Form.Label>
-            <Col sm={9}>
-              <Form.Control type="text" name="station" value={addFormData.station} onChange={handleAddChange} required />
-            </Col>
-          </Form.Group>
-          <div className="text-end mt-3">
-            <Button variant="primary" type="submit">Add</Button>
-          </div>
-        </Form>
-      </Modal.Body>
-    </Modal>
+  <Modal.Header closeButton>
+    <Modal.Title>Add Favorite</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <Form onSubmit={handleAddSubmit}>
+      <Form.Group as={Row} controlId="line">
+        <Form.Label column sm={3}>Line</Form.Label>
+        <Col sm={9}>
+          <Form.Control as="select" name="line" value={addFormData.line} onChange={handleAddChange} required>
+            <option value="">Select Line</option>
+            {allowedLines.map((line) => (
+              <option key={line} value={line}>{line}</option>
+            ))}
+          </Form.Control>
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} controlId="station" className="mt-2">
+        <Form.Label column sm={3}>Station</Form.Label>
+        <Col sm={9}>
+          <Form.Control as="select" name="station" value={addFormData.station} onChange={handleAddChange} required>
+            <option value="">Select a station</option>
+            {stations.map((station) => (
+              <option key={station.id} value={station.name}>
+                {station.name}
+              </option>
+            ))}
+          </Form.Control>
+        </Col>
+      </Form.Group>
+      <div className="text-end mt-3">
+        <Button variant="primary" type="submit">Add</Button>
+      </div>
+    </Form>
+  </Modal.Body>
+</Modal>
+
     </div>
   );
 };
