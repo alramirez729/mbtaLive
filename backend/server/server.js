@@ -1,6 +1,7 @@
 // Import necessary modules and routes
 const express = require("express");
 const app = express();
+const bodyParser = require('body-parser');
 const cors = require('cors');
 const dbConnection = require('./config/db.config');
 const dotenv = require('dotenv');
@@ -27,6 +28,8 @@ const deleteAllFavoriteRoute = require('./routes/deleteAllFavorite');
 const editFavoriteRoute = require('./routes/editFavorite');
 const deleteFavorite = require('./routes/deleteFavorite');
 const getAllByUserIdRoute = require('./routes/getAllByUserId');
+const postImageRoute = require('./routes/postImage');
+const getImageRoute = require('./routes/getImage');
 
 
 
@@ -36,6 +39,8 @@ const SERVER_PORT = process.env.SERVER_PORT || 8081;
 
 dbConnection();
 
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(cors({ origin: '*' }));
 app.use(express.json());
 
@@ -60,6 +65,8 @@ app.use('/favorite', getAllByUserIdRoute);
 app.use('/favorite', deleteAllFavoriteRoute);
 app.use('/favorite', editFavoriteRoute);
 app.use('/favorite', deleteFavorite);
+app.use('/image', postImageRoute);
+app.use('/image', getImageRoute);
 
 // Start the server
 app.listen(SERVER_PORT, () => {

@@ -16,6 +16,7 @@ const PrivateUserProfile = () => {
   const [editFormData, setEditFormData] = useState({ line: "", station: "" });
   const [showAddModal, setShowAddModal] = useState(false);
   const [addFormData, setAddFormData] = useState({ line: "", station: "" });
+  const [imageData, setImageData] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,7 +25,20 @@ const PrivateUserProfile = () => {
     setUser(userInfo);
     fetchStations();
     fetchFavorites();
+    fetchImage();
   }, []);
+
+  const fetchImage = async () => {
+    try {
+      const response = await axios.get('http://localhost:8081/image/getByName/testImage3');
+      const base64Image = response.data.imageData;
+      const imageUrl = `data:image/png;base64,${base64Image}`;
+      setImageData(imageUrl);
+    } catch (error) {
+      console.error('Error fetching image:', error);
+    }
+  };
+  
 
   const fetchStations = async () => {
     try {
@@ -140,11 +154,21 @@ const PrivateUserProfile = () => {
   if (!user) return <div><h4>Log in to view this page.</h4></div>;
 
   const allowedLines = ["Blue", "Red", "Green", "Orange"];
+  
 
   return (
     <div className="container">
       <div className="col-md-12 text-center">
         <h1>Welcome back {user && user.username}</h1>
+        {imageData && (
+        <div className="user-profile-image">
+          <img
+            src={imageData}
+            alt="Test"
+            style={{ maxWidth: '500px', borderRadius: '50%', marginBottom: '20px' }}
+          />
+        </div>
+      )}
         <h2>Favorites</h2>
         <Button onClick={handleAddShow} className="mb-3">Add Favorite</Button>
         <ul>
@@ -225,6 +249,7 @@ const PrivateUserProfile = () => {
       </Form.Group>
       <div className="text-end mt-3">
         <Button variant="primary" type="submit">Add</Button>
+        <Button variant="secondary" type="close">Close</Button>
       </div>
     </Form>
   </Modal.Body>
