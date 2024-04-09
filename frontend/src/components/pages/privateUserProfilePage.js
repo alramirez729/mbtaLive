@@ -30,7 +30,7 @@ const PrivateUserProfile = () => {
 
   const fetchImage = async () => {
     try {
-      const response = await axios.get('http://localhost:8081/image/getByName/testImage3');
+      const response = await axios.get('http://localhost:8081/image/getByName/testImage4');
       const base64Image = response.data.imageData;
       const imageUrl = `data:image/png;base64,${base64Image}`;
       setImageData(imageUrl);
