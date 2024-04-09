@@ -12,9 +12,9 @@
             "type": "node-terminal"
         },
         {
-            "cwd": "${workspaceFolder}/post/server",
+            "cwd": "${workspaceFolder}/frontend",
             "command": "npm start",
-            "name": "post: npm start",
+            "name": "frontend",
             "request": "launch",
             "type": "node-terminal"
         },
