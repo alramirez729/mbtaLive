@@ -11,6 +11,7 @@ import Alerts from './mbtaAlerts';
 
 function LiveMap() {
   const [vehicles, setVehicles] = useState([]);
+  const [stations, setStations] = useState([]);
   const [stops, setStops] = useState({});
   const [description, setDescription] = useState({});
   const [map, setMap] = useState(null);
@@ -29,19 +30,32 @@ function LiveMap() {
         const vehicleResult = await axios.get('https://api-v3.mbta.com/vehicles?filter%5Broute_type%5D=1');
         setVehicles(vehicleResult.data.data);
 
-        const stopResult = await axios.get('https://api-v3.mbta.com/stops?filter%5Broute_type%5D=1');
-        const stopsData = stopResult.data.data.reduce((acc, stop) => {
+        const stopResult = await axios.get('https://api-v3.mbta.com/stops?filter%5Broute_type%5D=1');        
+        const stopsData = await stopResult.data.data.reduce((acc, stop) => {
           acc[stop.id] = stop.attributes.name;
           return acc;
         }, {});
         setStops(stopsData);
-
+                
         const descriptionResult = await axios.get('https://api-v3.mbta.com/stops?filter%5Broute_type%5D=1');
         const descriptionData = descriptionResult.data.data.reduce((acc, stop) => {
           acc[stop.id] = stop.attributes.description;
           return acc;
         }, {});
         setDescription(descriptionData);
+      
+      
+        const stationResult = await fetch("https://api-v3.mbta.com/stops?filter[route_type]=1");
+
+        const stationData = await stationResult.json();
+        setStations(stationData.data.map((station) => ({
+          name: station.attributes.name,
+          longitude: station.attributes.longitude,
+          latitude: station.attributes.latitude,
+          description: station.attributes.description
+        })));
+
+      
       } catch (error) {
         console.error('Error fetching data', error);
       }
@@ -62,6 +76,20 @@ function LiveMap() {
       map.eachLayer(layer => {
         if (layer instanceof L.Marker) {
           map.removeLayer(layer);
+        }
+      });
+
+      stations.forEach((station) => {
+        const { latitude, longitude, name, description } = station || {};
+        if (latitude && longitude) {
+          const stationName = name || 'Unknown Stop';
+          const stationDescription = description || 'No Description';          
+          
+          let markerSize = [35, 35];          
+          
+          const stationMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: customMarkerIcon, iconSize: markerSize }) });
+
+          stationMarker.addTo(map).bindPopup(`${stationName}<br/>Description: ${stationDescription.replace(`${stationName} - `, '')}`);
         }
       });
 
@@ -97,8 +125,12 @@ function LiveMap() {
           customMarker.addTo(map).bindPopup(`Vehicle: #${label}<br/>Stop: ${stopName}<br/>Description: ${stopDescription.replace(`${stopName} - `, '')}`);
         }
       });
+      
     }
-  }, [map, vehicles, stops, description]);
+
+
+
+  }, [map, vehicles, stops, description, stations]);
 
   return (
     <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
