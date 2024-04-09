@@ -35,13 +35,9 @@ const Notes = () => {
       } else {
         console.error("User information is not available.");
       }
-    };
-  
+    };  
     initializeNotes();
-  }, []);
-
-  
-  
+  }, []);  
 
   const handleEdit = (stationKey) => {    
     setEditingId(stationKey);
@@ -65,8 +61,7 @@ const Notes = () => {
       const updatedNotes = { ...notes }
       updatedNotes[Object.keys(stationId)[0]] = Object.values(stationId)[0]
       setNotes(updatedNotes);
-      setEditingId(null); // Exit editing mode
-      //localStorage.setItem("stationNotes", JSON.stringify(updatedNotes));
+      setEditingId(null); // Exit editing mode      
     } catch (error) {
       console.error("Error editing note:", error);
     }
@@ -81,14 +76,7 @@ const Notes = () => {
           // Update state to reflect the deletion
           const updatedNotes = { ...notes };
           delete updatedNotes[Object.keys(stationId)[0]];
-          setNotes(updatedNotes);
-          console.log(updatedNotes)
-          if (updatedNotes == {}){
-            //localStorage.removeItem("statiionNotes")
-          }
-          else {
-            //localStorage.setItem("stationNotes", JSON.stringify(updatedNotes))
-          }
+          setNotes(updatedNotes);          
     } catch (error) {
       console.error("Error deleting note:", error);
       // Handle error (e.g., display an error message)

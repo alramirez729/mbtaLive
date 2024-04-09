@@ -39,3 +39,13 @@ Content-Type: application/json
 GET http://localhost:8081/highlight/byId?userId=dude_bro44
 Content-Type: application/json
 
+###
+POST http://localhost:8081/highlight/createHighlight
+Content-Type: application/json
+
+{
+    "userId": "TestUser",
+    "lineId": "Blue",
+    "stationId": "Orient Heights"
+}
+###
