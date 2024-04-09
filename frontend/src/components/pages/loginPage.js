@@ -35,10 +35,11 @@ const Login = () => {
   };
 
   useEffect(() => {
-
-    const obj = getUserInfo(user)
+    const obj = getUserInfo()
     setUser(obj)
+  },[]);
 
+  useEffect(() => {
     if (light) {
       setBgColor("white");
       setBgText('Dark mode')
@@ -53,9 +54,8 @@ const Login = () => {
     try {
       const { data: res } = await axios.post(url, data);
       const { accessToken } = res;
-      //store token in localStorage
       localStorage.setItem("accessToken", accessToken);
-      navigate("/home");
+      navigate("/privateUserProfile");
     } catch (error) {
       if (
         error.response &&
@@ -68,7 +68,7 @@ const Login = () => {
   };
 
   if(user) {
-    navigate('/home')
+    navigate('/privateUserProfile')
     return
   }
 

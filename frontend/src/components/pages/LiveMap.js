@@ -8,7 +8,6 @@ import redLineMarkerIcon from '../images/red_line.png';
 import orangeLineMarkerIcon from '../images/orange_line.png';
 import axios from 'axios';
 import Alerts from './mbtaAlerts';
-import ReactDOM from 'react-dom/client';
 
 function LiveMap() {
   const [vehicles, setVehicles] = useState([]);
@@ -17,17 +16,14 @@ function LiveMap() {
   const [map, setMap] = useState(null);
 
   useEffect(() => {
-    // Create a Leaflet map centered around Boston when the component mounts
     const leafletMap = L.map('map').setView([42.3601, -71.0589], 13);
 
-    // Add a TileLayer for the map
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors',
     }).addTo(leafletMap);
 
     setMap(leafletMap);
 
-    // Fetch data when the component mounts
     const fetchData = async () => {
       try {
         const vehicleResult = await axios.get('https://api-v3.mbta.com/vehicles?filter%5Broute_type%5D=1');
@@ -53,27 +49,22 @@ function LiveMap() {
 
     fetchData();
 
-    // Set up an interval to refresh data every 60 seconds (adjust as needed)
     const refreshInterval = setInterval(() => {
       fetchData();
     }, 10000);
-
-    // Clean up the interval when the component unmounts
     return () => {
       clearInterval(refreshInterval);
     };
-  }, []); // Empty dependency array to run only once when the component mounts
+  }, []); 
 
   useEffect(() => {
     if (map) {
-      // Remove existing markers
       map.eachLayer(layer => {
         if (layer instanceof L.Marker) {
           map.removeLayer(layer);
         }
       });
 
-      // Add markers for each vehicle
       vehicles.forEach((vehicle) => {
         const { latitude, longitude, label } = vehicle.attributes || {};
         if (latitude && longitude && vehicle.relationships.stop && vehicle.relationships.stop.data) {
@@ -81,12 +72,10 @@ function LiveMap() {
           const stopName = stops[stopId] || 'Unknown Stop';
           const stopDescription = description[stopId] || 'No Description';
           
-          // Initialize a custom marker with the default icon
           let markerIcon = customMarkerIcon;
           let markerSize = [32, 32];
           console.log(stopId);
-          // Update marker icon and size based on stop description
-          //console.log("Stop Description:", stopDescription);
+          
           const routeId = vehicle.relationships.route.data.id;
           switch (routeId) {
               case "Blue":
@@ -101,13 +90,10 @@ function LiveMap() {
               case "Orange":
                   markerIcon = orangeLineMarkerIcon;
                   break;
-              // Add more cases for other lines if needed
             }
 
-          // Create a custom marker with the appropriate icon and size
           const customMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: markerIcon, iconSize: markerSize }) });
 
-          // Add the custom marker to the map
           customMarker.addTo(map).bindPopup(`Vehicle: #${label}<br/>Stop: ${stopName}<br/>Description: ${stopDescription.replace(`${stopName} - `, '')}`);
         }
       });

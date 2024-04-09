@@ -2,7 +2,7 @@ POST http://localhost:8081/favorite
 Content-Type: application/json
 
 {
-  "userID": "65dcf2711a6692aa2995777e",
+  "userId": "jnatola",
   "line": "Red",
   "station": "Alewife"
 }
@@ -12,12 +12,15 @@ GET http://localhost:8081/favorite/getAll
 Content-Type: application/json
 
 ###
+GET http://localhost:8081/favorite/getByUserId?userId=jnatola
+Content-Type: application/json
+###
 POST http://localhost:8081/favorite/editFavorite
 Content-Type: application/json 
 
 {
     "_id" : "65e9ed829ddb8b4c045fcb31",
-    "userID" : "65e949535182ee96077b6362",
+    "userI" : "65e949535182ee96077b6362",
     "line" : "Green",
     "station" : "North Station"
 }

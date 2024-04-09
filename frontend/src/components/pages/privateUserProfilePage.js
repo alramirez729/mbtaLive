@@ -16,6 +16,7 @@ const PrivateUserProfile = () => {
   const [editFormData, setEditFormData] = useState({ line: "", station: "" });
   const [showAddModal, setShowAddModal] = useState(false);
   const [addFormData, setAddFormData] = useState({ line: "", station: "" });
+  const [imageData, setImageData] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,7 +25,20 @@ const PrivateUserProfile = () => {
     setUser(userInfo);
     fetchStations();
     fetchFavorites();
+    fetchImage();
   }, []);
+
+  const fetchImage = async () => {
+    try {
+      const response = await axios.get('http://localhost:8081/image/getByName/testImage3');
+      const base64Image = response.data.imageData;
+      const imageUrl = `data:image/png;base64,${base64Image}`;
+      setImageData(imageUrl);
+    } catch (error) {
+      console.error('Error fetching image:', error);
+    }
+  };
+  
 
   const fetchStations = async () => {
     try {
@@ -46,7 +60,8 @@ const PrivateUserProfile = () => {
 
   const fetchFavorites = async () => {
     try {
-      const response = await axios.get("http://localhost:8081/favorite/getAll");
+      const userInfo = getUserInfo();
+      const response = await axios.get(`http://localhost:8081/favorite/getByUserId?userId=${userInfo.username}`);
       setFavorites(response.data);
     } catch (error) {
       console.error("Error fetching favorites:", error);
@@ -65,32 +80,30 @@ const PrivateUserProfile = () => {
 
   const handleAddSubmit = async (e) => {
     e.preventDefault();
-    // Assuming getUserInfo() and hardcoding userID for testing
-    const userInfo = { userID: "hardcodedUserIDForTesting" }; // For debugging
+    const userInfo = getUserInfo();
     const payload = {
       ...addFormData,
-      userID: userInfo.userID,
+      userId: userInfo.username,
     };
-  
-    console.log("Sending payload:", payload); // Log to verify
-  
+    console.log("Sending payload:", payload);
     try {
       const response = await axios.post("http://localhost:8081/favorite", payload, {
         headers: {
           'Content-Type': 'application/json',
         },
       });
-      console.log("Response:", response); // Log response to verify
+      console.log("Response:", response);
       setFavorites([...favorites, response.data.favorite]);
-      setAddFormData({ line: "", station: "" }); // Reset form data
-      handleAddClose(); // Close the modal
+      setAddFormData({ line: "", station: "" });
+      handleAddClose();
     } catch (error) {
-      console.error("Error adding favorite:", error.response ? error.response.data : error);
+      if (error.response && error.response.data && error.response.data.error === 'Favorite already exists') {
+        alert('That favorite already exists');
+      } else {
+        console.error("Error adding favorite:", error.response ? error.response.data : error);
+      }
     }
   };
-  
-  
-  
 
   const handleEdit = (favorite) => {
     setEditingId(favorite._id);
@@ -106,23 +119,30 @@ const PrivateUserProfile = () => {
 
   const handleEditSave = async (id) => {
     try {
-      await axios.put(`http://localhost:8081/favorite/editFavorite/${id}`, editFormData);
-      const newFavorites = favorites.map((fav) => (fav._id === id ? { ...fav, ...editFormData } : fav));
+      const userInfo = getUserInfo();
+      await axios.put(`http://localhost:8081/favorite/editFavorite/${id}`, {
+        ...editFormData,
+        userId: userInfo.username,
+      });
+      const newFavorites = favorites.map((fav) =>
+        fav._id === id ? { ...fav, ...editFormData } : fav
+      );
       setFavorites(newFavorites);
-      setEditingId(null); // Exit editing mode
+      setEditingId(null);
     } catch (error) {
       console.error("Error updating favorite:", error);
     }
   };
-
+  
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8081/favorite/deleteFavorite/${id}`);
-      // Update state to reflect the deletion
-      setFavorites(favorites.filter(fav => fav._id !== id));
+      const userInfo = getUserInfo();
+      await axios.delete(`http://localhost:8081/favorite/deleteFavorite/${id}`, {
+        data: { userId: userInfo.username },
+      });
+      setFavorites(favorites.filter((fav) => fav._id !== id));
     } catch (error) {
       console.error("Error deleting favorite:", error);
-      // Handle error (e.g., display an error message)
     }
   };
 
@@ -134,12 +154,22 @@ const PrivateUserProfile = () => {
   if (!user) return <div><h4>Log in to view this page.</h4></div>;
 
   const allowedLines = ["Blue", "Red", "Green", "Orange"];
-
+  
   return (
     <div className="container">
       <div className="col-md-12 text-center">
         <h1>Welcome back {user && user.username}</h1>
+        {imageData && (
+        <div className="user-profile-image">
+          <img
+            src={imageData}
+            alt="Test"
+            style={{ maxWidth: '175px', borderRadius: '50%', marginBottom: '20px' }}
+          />
+        </div>
+      )}
         <h2>Favorites</h2>
+        <p>You can find your favorite lines and stations right below!</p>
         <Button onClick={handleAddShow} className="mb-3">Add Favorite</Button>
         <ul>
           {favorites.map((favorite) => (
@@ -171,13 +201,13 @@ const PrivateUserProfile = () => {
                   ))}
                 </Form.Select>
                 <Button variant="success" onClick={() => handleEditSave(favorite._id)} style={{ marginRight: '10px' }}>Save</Button>
+                <Button variant="danger" onClick={() => handleDelete(favorite._id)}>Delete</Button>
               </>
               
               ) : (
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <span style={{ marginRight: '10px' }}>{favorite.line} Line - {favorite.station}</span>
                   <Button onClick={() => handleEdit(favorite)} style={{ marginRight: '10px' }}>Edit</Button>
-                  <Button variant="danger" onClick={() => handleDelete(favorite._id)}>Delete</Button>
                 </div>
               )}
             </li>
@@ -187,7 +217,7 @@ const PrivateUserProfile = () => {
       </div>
   
       {/* Add Favorite Modal */}
-      <Modal show={showAddModal} onHide={handleAddClose}>
+<Modal show={showAddModal} onHide={handleAddClose}>
   <Modal.Header closeButton>
     <Modal.Title>Add Favorite</Modal.Title>
   </Modal.Header>
@@ -219,6 +249,7 @@ const PrivateUserProfile = () => {
       </Form.Group>
       <div className="text-end mt-3">
         <Button variant="primary" type="submit">Add</Button>
+        <Button variant="secondary" onClick={handleAddClose}>Close</Button>
       </div>
     </Form>
   </Modal.Body>

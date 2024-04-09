@@ -45,8 +45,9 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data: res } = await axios.post(url, data);
-      const {accessToken} = res
-      navigate("/login");
+      localStorage.setItem('token', res.token); 
+      
+      navigate("/privateUserProfile");
     } catch (error) {
       if (
         error.response &&

@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 //user schema/model
 const favSchema = new mongoose.Schema(
   {
-    userID: {
+    userId: {
       type: String,
       required: true,
     },
