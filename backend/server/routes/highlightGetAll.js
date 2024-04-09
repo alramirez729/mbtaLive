@@ -1,24 +1,20 @@
 const express = require("express");
 const router = express.Router();
-const allHighlight = require('../models/userHighlights')
+const highlightModel = require('../models/userHighlights');
 
 router.get('/getAll', async (req, res) => {
-  
-  try{
-    const highlights = await allHighlight.find();
-    const presentHighlightStatus = await allHighlight.findOne();
-    if(presentHighlightStatus == null)
-    {
-      return res.json({string: "No highlights to get"});
+  const { userId } = req.query;
+
+  try {
+    const highlights = await highlightModel.find({ userId: userId });
+    if (highlights.length === 0) {
+      return res.status(404).json({ message: "No highlights found for the user" });
     }
-
     return res.json(highlights);
-    
-  }catch (error){
-      console.error('Error getting all highlights:', error);
-      return res.status(500).json({error: 'Failed to get all highlights/'});
+  } catch (error) {
+    console.error('Error getting all highlights:', error);
+    return res.status(500).json({ error: 'Failed to get all highlights' });
   }
-    
-  })
+});
 
-  module.exports = router;
+module.exports = router;

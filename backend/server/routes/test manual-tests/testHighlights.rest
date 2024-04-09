@@ -17,12 +17,16 @@ Content-Type: application/json
 }
 
 ### 
-GET http://localhost:8081/highlight/getAll
+GET http://localhost:8081/highlight/getAll?userId=dude_bro44
 Content-Type: application/json 
 
 ### /deleteAll for testing/demonstration purposes
 POST http://localhost:8081/highlight/deleteAll
 Content-Type: application/json
+
+### delete by id
+POST http://localhost:8081/highlight/delete/66100816d6119c28d66bb3ce
+Content-type: application/json
 
 ###
 PUT http://localhost:8081/highlight/update
