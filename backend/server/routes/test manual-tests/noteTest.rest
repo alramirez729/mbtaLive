@@ -2,7 +2,7 @@ POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
-    "userId" : "TestUser",
+    "userId" : "TestUser2",
     "stationId" : {
         "Orient Heights" : "That station"
     }
@@ -13,7 +13,7 @@ POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
-    "userId" : "TestUser",
+    "userId" : "TestUser2",
     "stationId" : {
         "OrientLows" : "little station"
     }
@@ -24,7 +24,7 @@ POST http://localhost:8081/note
 Content-Type: application/json 
 
 {    
-    "userId" : "TestUser",
+    "userId" : "TestUser2",
     "stationId" : {
         "South Station" : "Clean station"
     }

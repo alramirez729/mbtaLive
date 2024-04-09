@@ -96,11 +96,11 @@ const Notes = () => {
             <li key={stationKey} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
               {editingId === stationKey ? (
                 <>
-                  <Form
+                  <Form 
                     name="station"
                     value={editFormData.station}
                     readOnly
-                    style={{ marginRight: '10px' }}
+                    style={{ marginRight: '10px'}}
                   >
                   <option value="">{stationKey}</option>
                   </Form>
