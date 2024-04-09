@@ -8,7 +8,6 @@ import redLineMarkerIcon from '../images/red_line.png';
 import orangeLineMarkerIcon from '../images/orange_line.png';
 import axios from 'axios';
 import Alerts from './mbtaAlerts';
-import ReactDOM from 'react-dom/client';
 
 function LiveMap() {
   const [vehicles, setVehicles] = useState([]);

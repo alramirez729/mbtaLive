@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
-import getUserInfo from '../utilities/decodeJwt';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import ReactNavbar from 'react-bootstrap/Navbar';
 
 export default function Navbar() {
-  const [user, setUser] = useState({})
-
-  useEffect(() => {
-    setUser(getUserInfo())
-  }, [])
 
   const customStyle = `
     .navbar-custom {
@@ -27,7 +20,6 @@ export default function Navbar() {
           <Nav className="me-auto">
             <Nav.Link href="/LiveMap">Home</Nav.Link>
             <Nav.Link href="/privateUserProfile">Profile</Nav.Link>
-            <Nav.Link href="/Stop">Stop</Nav.Link>
             <Nav.Link href="/notesPage">Notes</Nav.Link>
             <Nav.Link href="/highlights">Highlights</Nav.Link>
           </Nav>
