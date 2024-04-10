@@ -4,6 +4,7 @@ import axios from 'axios';
 
 function Alerts() {
   const [alerts, setAlerts] = useState([]);
+  const [filter, setFilter] = useState('All');
 
   useEffect(() => {
     async function fetchData() {
@@ -15,10 +16,21 @@ function Alerts() {
     fetchData();
   }, []);
 
+  const filteredAlerts = filter === 'All' ? alerts : alerts.filter(alert => alert.attributes.severity === parseInt(filter));
+
   return (
     <div className="alerts-container ml-3 border border-secondary rounded p-3" style={{ width: '100%', maxHeight: '500px', overflowY: 'auto' }}>
       <h4 className="text-center">MBTA Alerts</h4>
-      {alerts.map(alert => (
+      <label>
+        Filter by Severity:
+        <select value={filter} onChange={(e) => setFilter(e.target.value)}>
+          <option value="All">All</option>
+          <option value="1">Minor</option>
+          <option value="7">Major</option>
+          <option value="10">Critical</option>
+        </select>
+      </label>
+      {filteredAlerts.map(alert => (
         <Card
           body
           outline
