@@ -8,6 +8,11 @@ import redLineMarkerIcon from '../images/red_line.png';
 import orangeLineMarkerIcon from '../images/orange_line.png';
 import axios from 'axios';
 import Alerts from './mbtaAlerts';
+import Button from 'react-bootstrap/Button'; 
+import Draggable from 'react-draggable';
+import { ResizableBox } from 'react-resizable';
+import 'react-resizable/css/styles.css'; // Import the styles
+
 
 function LiveMap() {
   const [vehicles, setVehicles] = useState([]);
@@ -15,6 +20,8 @@ function LiveMap() {
   const [stops, setStops] = useState({});
   const [description, setDescription] = useState({});
   const [map, setMap] = useState(null);
+  const [showAlerts, setShowAlerts] = useState(true); 
+  const [selectedLines, setSelectedLines] = useState(['Blue', 'Red', 'Orange']); 
 
   useEffect(() => {
     const leafletMap = L.map('map').setView([42.3601, -71.0589], 13);
@@ -131,17 +138,38 @@ function LiveMap() {
 
 
   }, [map, vehicles, stops, description, stations]);
-
+  const toggleAlerts = () => setShowAlerts(!showAlerts);
+  
   return (
-    <div style={{ marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
-       <div style={{ border: '5px solid grey', borderRadius: '10px', width: '50%' }}>
-       <div id="map" style={{ height: '500px', borderRadius: '8px' }}></div>
-       </div>
-       <div style={{ marginLeft: '20px', border: '5px solid grey', borderRadius: '10px', width: '30%', maxHeight: '500px', overflowY: 'auto' }}>
-         <Alerts /> {/* Include the Alerts component */}
-       </div>
+    <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
+        <div id="map" style={{ height: '100%', width: '100%' }}></div>
+        <div style={{
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            zIndex: 1000 // Ensure the button is above everything else
+        }}>
+            <Button onClick={toggleAlerts} style={{ marginBottom: '10px' }}>Toggle Alerts</Button>
+        </div>
+        {showAlerts && (
+            <div style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                maxHeight: '90%',
+                width: '400px',
+                overflowY: 'auto',
+                border: '5px solid grey',
+                borderRadius: '10px',
+                backgroundColor: 'white', // Ensure the alerts box is readable
+                zIndex: 1000 // Make sure the alerts box is above the map
+            }}>
+                <Button onClick={toggleAlerts} style={{ width: '100%' }}>Toggle Alerts</Button>
+                <Alerts />
+            </div>
+        )}
     </div>
-  );
+);
 }
 
 export default LiveMap;
