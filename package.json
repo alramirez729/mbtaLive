@@ -2,6 +2,7 @@
   "dependencies": {
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.4.0",
+    "react-scripts": "^5.0.1",
     "sharp": "^0.33.3"
   }
 }
