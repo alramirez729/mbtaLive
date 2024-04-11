@@ -47,7 +47,7 @@ const Register = () => {
       const { data: res } = await axios.post(url, data);
       localStorage.setItem('token', res.token); 
       
-      navigate("/privateUserProfile");
+      navigate("/loginPage");
     } catch (error) {
       if (
         error.response &&

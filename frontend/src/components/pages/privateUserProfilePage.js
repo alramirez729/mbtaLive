@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { useNavigate } from "react-router-dom";
 import getUserInfo from "../../utilities/decodeJwt";
 
 const PrivateUserProfile = () => {
@@ -17,7 +16,6 @@ const PrivateUserProfile = () => {
   const [showAddModal, setShowAddModal] = useState(false);
   const [addFormData, setAddFormData] = useState({ line: "", station: "" });
   const [imageData, setImageData] = useState('');
-  const navigate = useNavigate();
 
   useEffect(() => {
     const userInfo = getUserInfo();
@@ -146,11 +144,6 @@ const PrivateUserProfile = () => {
     }
   };
 
-  const handleLogout = async () => {
-    localStorage.clear();
-    navigate("/");
-  };
-
   if (!user) return <div><h4>Log in to view this page.</h4></div>;
 
   const allowedLines = ["Blue", "Red", "Green", "Orange"];
@@ -213,7 +206,6 @@ const PrivateUserProfile = () => {
             </li>
           ))}
         </ul>
-        <Button onClick={handleLogout}>Log Out</Button>
       </div>
 
       {/* Add Favorite Modal */}
