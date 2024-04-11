@@ -28,7 +28,7 @@ const PrivateUserProfile = () => {
 
   const fetchImage = async () => {
     try {
-      const response = await axios.get('http://localhost:8081/image/getByName/testImage4');
+      const response = await axios.get('http://localhost:8081/image/getByName/testImage3');
       const base64Image = response.data.imageData;
       const imageUrl = `data:image/png;base64,${base64Image}`;
       setImageData(imageUrl);
@@ -207,8 +207,6 @@ const PrivateUserProfile = () => {
           ))}
         </ul>
       </div>
-
-      {/* Add Favorite Modal */}
       <Modal show={showAddModal} onHide={handleAddClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add Favorite</Modal.Title>
