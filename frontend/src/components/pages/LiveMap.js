@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import customMarkerIcon from '../images/mbta.png';
-import blueLineMarkerIcon from '../images/blue_line.png';
+import customMarkerIcon from '../images/Capture.JPG';
+import blueLineMarkerIcon from '../images/blueLine.png';
 import greenLineMarkerIcon from '../images/green_line.png';
-import redLineMarkerIcon from '../images/red_line.png';
-import orangeLineMarkerIcon from '../images/orange_line.png';
+import redLineMarkerIcon from '../images/redLine.png';
+import orangeLineMarkerIcon from '../images/orangeLine.png';
 import axios from 'axios';
 import Alerts from './mbtaAlerts';
 import Button from 'react-bootstrap/Button'; 
