@@ -9,9 +9,6 @@ import orangeLineMarkerIcon from '../images/orangeLine.png';
 import axios from 'axios';
 import Alerts from './mbtaAlerts';
 import Button from 'react-bootstrap/Button'; 
-import Draggable from 'react-draggable';
-import { ResizableBox } from 'react-resizable';
-import 'react-resizable/css/styles.css'; // Import the styles
 import getUserInfo from "../../utilities/decodeJwt";
 
 
