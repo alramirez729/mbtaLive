@@ -5,7 +5,9 @@ import Form from "react-bootstrap/Form";
 import getUserInfo from "../../utilities/decodeJwt";
 
 
+
 const Notes = () => {  
+  const url = process.env.REACT_APP_BACKEND_SERVER_URI
   const [user, setUser] = useState({});
   const [notes, setNotes] = useState({});
   const [editingId, setEditingId] = useState(null);
@@ -16,7 +18,7 @@ const Notes = () => {
   
   const fetchNotes = async (username) => {    
     try {      
-      let response = await axios.get(`http://localhost:8081/note/byId/?userId=${username}`);
+      let response = await axios.get(`${url}/note/byId/?userId=${username}`);
       if(!response.data.stationId){
         response.data.stationId = {}
       }
@@ -54,7 +56,7 @@ const Notes = () => {
 
   const handleEditSave = async (userId, stationId) => {    
     try {      
-      const response = await axios.put(`http://localhost:8081/note`,{
+      await axios.put(`${url}/note`,{
             userId: userId,
             stationId: stationId
       });
@@ -69,7 +71,7 @@ const Notes = () => {
 
   const handleDelete = async (userId, stationId) => {    
     try {
-          await axios.delete(`http://localhost:8081/note`, {
+          await axios.delete(`${url}/note`, {
             data: {userId: userId,
             stationId: stationId}
           });

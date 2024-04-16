@@ -12,6 +12,8 @@ import Button from 'react-bootstrap/Button';
 import Draggable from 'react-draggable';
 import { ResizableBox } from 'react-resizable';
 import 'react-resizable/css/styles.css'; // Import the styles
+import getUserInfo from "../../utilities/decodeJwt";
+
 
 
 function LiveMap() {
@@ -21,9 +23,34 @@ function LiveMap() {
   const [description, setDescription] = useState({});
   const [map, setMap] = useState(null);
   const [showAlerts, setShowAlerts] = useState(true); 
-  const [selectedLines, setSelectedLines] = useState(['Blue', 'Red', 'Orange']); 
+  const [selectedLines, setSelectedLines] = useState(['Blue', 'Red', 'Orange']);
+  const [user, setUser] = useState({});
+  const [notes, setNotes] = useState({});
+
+  const fetchNotes = async (username) => {    
+    try {      
+      let response = await axios.get(`http://localhost:8081/note/byId/?userId=${username}`);
+      if(!response.data.stationId){
+        response.data.stationId = {}
+      }
+      setNotes(response.data.stationId);
+    } catch (error) {
+      console.error("Error fetching notes", error);
+    }
+  };
 
   useEffect(() => {
+    const initializeNotes = async () => {
+      const userInfo = getUserInfo();      
+      if (userInfo && userInfo.username) {
+        setUser(userInfo);
+        await fetchNotes(userInfo.username);
+      } else {
+        console.error("User information is not available.");
+      }
+    };  
+    initializeNotes();
+
     const leafletMap = L.map('map').setView([42.3601, -71.0589], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -87,16 +114,17 @@ function LiveMap() {
       });
 
       stations.forEach((station) => {
-        const { latitude, longitude, name, description } = station || {};
+        const { latitude, longitude, name, description } = station || {};                
         if (latitude && longitude) {
           const stationName = name || 'Unknown Stop';
-          const stationDescription = description || 'No Description';          
+          const stationDescription = description || 'No Description';
+          const note = notes[stationName] || "No note "
           
           let markerSize = [35, 35];          
           
           const stationMarker = L.marker([latitude, longitude], { icon: L.icon({ iconUrl: customMarkerIcon, iconSize: markerSize }) });
 
-          stationMarker.addTo(map).bindPopup(`${stationName}<br/>Description: ${stationDescription.replace(`${stationName} - `, '')}`);
+          stationMarker.addTo(map).bindPopup(`${stationName}<br/>Description: ${stationDescription.replace(`${stationName} - `, '')}<br/>Note: ${note}`);
         }
       });
 
