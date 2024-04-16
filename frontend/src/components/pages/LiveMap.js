@@ -17,6 +17,7 @@ import getUserInfo from "../../utilities/decodeJwt";
 
 
 function LiveMap() {
+  const url = process.env.REACT_APP_BACKEND_SERVER_URI
   const [vehicles, setVehicles] = useState([]);
   const [stations, setStations] = useState([]);
   const [stops, setStops] = useState({});
