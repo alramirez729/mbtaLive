@@ -12,6 +12,7 @@ function Highlights() {
   const [newHighlight, setNewHighlight] = useState({ lineId: "", stationId: "" });
   const [stations, setStations] = useState([]);
   const allowedLines = ["Blue", "Red", "Green", "Orange"];
+  const url = process.env.REACT_APP_BACKEND_SERVER_URI;
 
   useEffect(() => {
     const userInfo = getUserInfo();
@@ -24,7 +25,7 @@ function Highlights() {
 
   const fetchHighlights = async (userId) => {
     try {
-      const response = await axios.get(`http://localhost:8081/highlight/getAll?userId=${userId}`);
+      const response = await axios.get(`${url}/highlight/getAll?userId=${userId}`);
       setHighlights(response.data);
     } catch (error) {
       if (error.response && error.response.status === 404) {
@@ -66,7 +67,7 @@ function Highlights() {
         return;
       }
       const userId = user.id;
-      await axios.post('http://localhost:8081/highlight/createHighlight', { userId, ...newHighlight });
+      await axios.post(`${url}/highlight/createHighlight`, { userId, ...newHighlight });
       setNewHighlight({ lineId: "", stationId: "" });
       setShowModal(false);
       fetchHighlights(userId); // Update highlights after adding a new one
@@ -77,7 +78,7 @@ function Highlights() {
 
   const handleDelete = async (highlightId) => {
     try {
-      await axios.delete(`http://localhost:8081/highlight/delete/${highlightId}`);
+      await axios.delete(`${url}/highlight/delete/${highlightId}`);
       fetchHighlights(user.id); // Update highlights after deleting one
     } catch (error) {
       console.error("Error deleting highlight", error);
