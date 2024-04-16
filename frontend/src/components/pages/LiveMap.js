@@ -26,10 +26,11 @@ function LiveMap() {
   const [selectedLines, setSelectedLines] = useState(['Blue', 'Red', 'Orange']);
   const [user, setUser] = useState({});
   const [notes, setNotes] = useState({});
+  const url = process.env.REACT_APP_BACKEND_SERVER_URI;
 
   const fetchNotes = async (username) => {    
     try {      
-      let response = await axios.get(`http://localhost:8081/note/byId/?userId=${username}`);
+      let response = await axios.get(`${url}/note/byId/?userId=${username}`);
       if(!response.data.stationId){
         response.data.stationId = {}
       }
