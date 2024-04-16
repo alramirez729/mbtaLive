@@ -8,6 +8,7 @@ import Col from "react-bootstrap/Col";
 import getUserInfo from "../../utilities/decodeJwt";
 
 const PrivateUserProfile = () => {
+  const url = process.env.REACT_APP_BACKEND_SERVER_URI;
   const [user, setUser] = useState({});
   const [stations, setStations] = useState([]);
   const [favorites, setFavorites] = useState([]);
@@ -28,7 +29,7 @@ const PrivateUserProfile = () => {
 
   const fetchImage = async () => {
     try {
-      const response = await axios.get('http://localhost:8081/image/getByName/testImage3');
+      const response = await axios.get(`${url}/image/getByName/testImage3`);
       const base64Image = response.data.imageData;
       const imageUrl = `data:image/png;base64,${base64Image}`;
       setImageData(imageUrl);
@@ -59,7 +60,7 @@ const PrivateUserProfile = () => {
   const fetchFavorites = async () => {
     try {
       const userInfo = getUserInfo();
-      const response = await axios.get(`http://localhost:8081/favorite/getByUserId?userId=${userInfo.username}`);
+      const response = await axios.get(`${url}/favorite/getByUserId?userId=${userInfo.username}`);
       setFavorites(response.data);
     } catch (error) {
       console.error("Error fetching favorites:", error);
@@ -85,7 +86,7 @@ const PrivateUserProfile = () => {
     };
     console.log("Sending payload:", payload);
     try {
-      const response = await axios.post("http://localhost:8081/favorite", payload, {
+      const response = await axios.post(`${url}/favorite`, payload, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -118,7 +119,7 @@ const PrivateUserProfile = () => {
   const handleEditSave = async (id) => {
     try {
       const userInfo = getUserInfo();
-      await axios.put(`http://localhost:8081/favorite/editFavorite/${id}`, {
+      await axios.put(`${url}/favorite/editFavorite/${id}`, {
         ...editFormData,
         userId: userInfo.username,
       });
@@ -135,7 +136,7 @@ const PrivateUserProfile = () => {
   const handleDelete = async (id) => {
     try {
       const userInfo = getUserInfo();
-      await axios.delete(`http://localhost:8081/favorite/deleteFavorite/${id}`, {
+      await axios.delete(`${url}/favorite/deleteFavorite/${id}`, {
         data: { userId: userInfo.username },
       });
       setFavorites(favorites.filter((fav) => fav._id !== id));
