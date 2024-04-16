@@ -17,17 +17,15 @@ import getUserInfo from "../../utilities/decodeJwt";
 
 
 function LiveMap() {
-  const url = process.env.REACT_APP_BACKEND_SERVER_URI
+  const url = process.env.REACT_APP_BACKEND_SERVER_URI;
   const [vehicles, setVehicles] = useState([]);
   const [stations, setStations] = useState([]);
   const [stops, setStops] = useState({});
   const [description, setDescription] = useState({});
   const [map, setMap] = useState(null);
   const [showAlerts, setShowAlerts] = useState(true); 
-  const [selectedLines, setSelectedLines] = useState(['Blue', 'Red', 'Orange']);
-  const [user, setUser] = useState({});
-  const [notes, setNotes] = useState({});
-  const url = process.env.REACT_APP_BACKEND_SERVER_URI;
+  const [selectedLines, setSelectedLines] = useState(['Blue', 'Red', 'Orange']);  
+  const [notes, setNotes] = useState({}); 
 
   const fetchNotes = async (username) => {    
     try {      
@@ -44,8 +42,7 @@ function LiveMap() {
   useEffect(() => {
     const initializeNotes = async () => {
       const userInfo = getUserInfo();      
-      if (userInfo && userInfo.username) {
-        setUser(userInfo);
+      if (userInfo && userInfo.username) {        
         await fetchNotes(userInfo.username);
       } else {
         console.error("User information is not available.");
