@@ -25,6 +25,7 @@ function LiveMap() {
   const [showAlerts, setShowAlerts] = useState(true);
   const [notes, setNotes] = useState({});
 
+
   const fetchNotes = async (username) => {
     try {
       let response = await axios.get(`${url}/note/byId/?userId=${username}`);

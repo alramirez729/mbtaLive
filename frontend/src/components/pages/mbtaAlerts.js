@@ -92,9 +92,8 @@ function Alerts() {
                         key={alert.id}
                     >
                         <Card.Body>
-                            <Card.Title className="fs-6">Alert</Card.Title>
+                            <Card.Title className="fs-6"><b>{alert.attributes.header}</b></Card.Title>
                             <Card.Text className="fs-6">
-                                {alert.attributes.header}
                                 {alert.attributes.description}
                             </Card.Text>
                         </Card.Body>
