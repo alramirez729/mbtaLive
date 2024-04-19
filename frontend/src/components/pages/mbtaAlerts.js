@@ -54,6 +54,32 @@ function Alerts() {
         return matchesSeverity && matchesHighlight;
     });
 
+    // Function to determine the border color and thickness based on the line ID
+    const getCardStyle = (alert) => {
+        const lineId = alert.attributes.informed_entity[0]?.route || "";
+        let borderColor = "grey";
+        let borderWidth = "2px";  // Default border width
+        switch(lineId) {
+            case "Blue":
+                borderColor = "blue";
+                borderWidth = "6px";  // Thicker border for visibility
+                break;
+            case "Red":
+                borderColor = "red";
+                borderWidth = "6px";  // Thicker border for visibility
+                break;
+            case "Orange":
+                borderColor = "orange";
+                borderWidth = "6px";  // Thicker border for visibility
+                break;
+            default:
+                borderColor = "grey";
+                borderWidth = "3px";  // Default border width
+                break;
+        }
+        return { borderColor: borderColor, borderWidth: borderWidth, borderStyle: 'solid' };
+    };
+
     return (
         <div className="alerts-container ml-3 border border-secondary rounded p-3" style={{ width: '100%', maxHeight: '500px', overflowY: 'auto' }}>
             <h4 className="text-center">MBTA Alerts</h4>
@@ -88,7 +114,7 @@ function Alerts() {
                         outline
                         color="success"
                         className="mx-auto my-2"
-                        style={{ maxWidth: '100%' }}
+                        style={{ maxWidth: '100%', ...getCardStyle(alert) }}  // Apply dynamic style here
                         key={alert.id}
                     >
                         <Card.Body>
