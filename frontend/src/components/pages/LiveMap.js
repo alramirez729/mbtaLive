@@ -27,7 +27,6 @@ function LiveMap() {
   const [showAlerts, setShowAlerts] = useState(true);
   const [notes, setNotes] = useState({});
   const [user, setUser] = useState({});
-
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({});
   const [newNote, setNewNote] = useState({ userId: "", stationId: {} });
@@ -37,7 +36,9 @@ function LiveMap() {
 
   useEffect(() => {
     const userInfo = getUserInfo() || {username : "Guest"}
-    setUser(userInfo.username);
+    console.log(userInfo.username)
+    setUser(userInfo.username)
+    console.log(user)
   }, []); 
   
   
@@ -66,7 +67,7 @@ function LiveMap() {
     e.preventDefault();
     const updatedNotes = {[modalContent.stationName]: newNote };    
     setNotes(user); // Update the local notes state
-    postNote(user, updatedNotes)
+    postNote(user, updatedNotes)    
     fetchNotes(user)
     stationMarkerGenerator()
     setIsEditMode(false); // Exit edit mode
@@ -112,8 +113,7 @@ function LiveMap() {
     }
   };
 
-  initializeNotes();
-
+  
   const stationMarkerGenerator = () => {    
     stations.forEach((station) => {
       const { latitude, longitude, name, description } = station || {};
@@ -164,12 +164,11 @@ function LiveMap() {
         });
       }
     });
-  }
+  } 
 
-
-
-  useEffect(() => {    
+  useEffect(() => {
     initializeNotes();
+    
 
     const leafletMap = L.map('map').setView([42.3601, -71.0589], 13);
 
@@ -204,7 +203,6 @@ function LiveMap() {
         console.error('Error fetching data', error);
       }
     };    
-
 
     fetchData();
 
@@ -264,7 +262,7 @@ function LiveMap() {
 
     }
 
-  }, [map, vehicles, stops, description, stations, newNote]);
+  }, [map, vehicles, stops, description, newNote]);
   const toggleAlerts = () => setShowAlerts(!showAlerts);
 
   return (
