@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import getUserInfo from "../../utilities/decodeJwt";
+import trainImage from '../images/stylishTrain01.JPG';
+
 
 function Alerts() {
     const [alerts, setAlerts] = useState([]);
@@ -54,7 +56,6 @@ function Alerts() {
         return matchesSeverity && matchesHighlight;
     });
 
-    // Function to determine the border color and thickness based on the line ID
     const getCardStyle = (alert) => {
         const lineId = alert.attributes.informed_entity[0]?.route || "";
         let borderColor = "grey";
@@ -82,11 +83,15 @@ function Alerts() {
 
     return (
         <div className="alerts-container ml-3 border border-secondary rounded p-3" style={{ width: '100%', maxHeight: '500px', overflowY: 'auto' }}>
-            <h4 className="text-center">MBTA Alerts</h4>
+            {/* Include the image next to the header */}
+            <div className="text-center">
+                <h4 style={{ display: 'inline-block', marginLeft: '10px' }}>MBTA Alerts</h4>
+                <img src={trainImage} alt="Stylish Train" style={{ position: 'absolute', left: '260px', top: '50px', width: '130px', verticalAlign: 'middle' }} />
+            </div>
             <div>
                 <label>
                     Filter by Severity:
-                    <select value={filter} onChange={(e) => setFilter(e.target.value)}>
+                    <select style= {{position: 'absolute', top:'90px', left:'145px'}} value={filter} onChange={(e) => setFilter(e.target.value)}>
                         <option value="All">All</option>
                         <option value="1">Minor</option>
                         <option value="7">Major</option>
@@ -98,7 +103,6 @@ function Alerts() {
                 <label>
                     Filter by Alert Preference:
                     <select onChange={handleHighlightChange} value={selectedHighlight?._id || ''}>
-                        <option value="">Select Saved Preference</option>
                         {userHighlights.map((highlight) => (
                             <option key={highlight._id} value={highlight._id}>
                                 {getStationNameById(highlight.stationId)} - {highlight.lineId}
@@ -107,33 +111,23 @@ function Alerts() {
                     </select>
                 </label>
             </div>
-            {filteredAlerts.length > 0 ? (
-                filteredAlerts.map((alert) => (
-                    <Card
-                        body
-                        outline
-                        color="success"
-                        className="mx-auto my-2"
-                        style={{ maxWidth: '100%', ...getCardStyle(alert) }}  // Apply dynamic style here
-                        key={alert.id}
-                    >
-                        <Card.Body>
-                            <Card.Title className="fs-6"><b>{alert.attributes.header}</b></Card.Title>
-                            <Card.Text className="fs-6">
-                                {alert.attributes.description}
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                ))
-            ) : (
-                <div className="text-center mt-3">
-                    {filter === 'All' ? (
-                        <p>No alerts found for subways.</p>
-                    ) : (
-                        <p>No {filter === '1' ? 'minor' : filter === '7' ? 'major' : 'critical'} alerts for subways!</p>
-                    )}
-                </div>
-            )}
+            {filteredAlerts.map((alert) => (
+                <Card
+                    body
+                    outline
+                    color="success"
+                    className="mx-auto my-2"
+                    style={{ maxWidth: '100%', ...getCardStyle(alert) }}  // Apply dynamic style here
+                    key={alert.id}
+                >
+                    <Card.Body>
+                        <Card.Title className="fs-6"><b>{alert.attributes.header}</b></Card.Title>
+                        <Card.Text className="fs-6">
+                            {alert.attributes.description}
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            ))}
         </div>
     );
 }
