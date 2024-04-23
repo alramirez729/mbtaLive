@@ -4,7 +4,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dbConnection = require('./config/db.config');
-const dotenv = require('dotenv');
 
 
 const loginRoute = require('./routes/userLogin');
@@ -35,10 +34,8 @@ const getImageRoute = require('./routes/getImage');
 
 
 // Load environment variables
-dotenv.config();
-const SERVER_PORT = process.env.SERVER_PORT || 8081;
-
-dbConnection();
+require('dotenv').config();
+const SERVER_PORT = 8081
 
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
@@ -70,7 +67,18 @@ app.use('/favorite', deleteFavorite);
 app.use('/image', postImageRoute);
 app.use('/image', getImageRoute);
 
-// Start the server
-app.listen(SERVER_PORT, () => {
-    console.log(`The backend service is running on port ${SERVER_PORT} and waiting for requests.`);
-});
+console.log(`The node environment is: ${process.env.NODE_ENV}`);
+
+
+// Production environment: connect to the database and start listening for requests
+if (process.env.NODE_ENV !=="test") {
+    dbConnection();
+    app.listen(SERVER_PORT, () => {
+      setTimeout(() => {
+        console.log(`All services are running on port: ${SERVER_PORT}`);
+      }, 1000); // Add a 1-second delay
+    });
+}
+
+
+module.exports = app; // Export the app instance for unit testing via supertest.
