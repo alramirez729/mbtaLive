@@ -96,9 +96,9 @@ function Alerts() {
             </div>
             <div style={{ marginTop: '10px' }}>
                 <label>
-                    Filter by Highlight:
+                    Filter by Alert Preference:
                     <select onChange={handleHighlightChange} value={selectedHighlight?._id || ''}>
-                        <option value="">Select Highlight</option>
+                        <option value="">Select Saved Preference</option>
                         {userHighlights.map((highlight) => (
                             <option key={highlight._id} value={highlight._id}>
                                 {getStationNameById(highlight.stationId)} - {highlight.lineId}
