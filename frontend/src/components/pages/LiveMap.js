@@ -33,9 +33,10 @@ function LiveMap() {
   const [newNote, setNewNote] = useState({ userId: "", stationId: {} });
   const [isEditMode, setIsEditMode] = useState(false);
   const [editedNote, setEditedNote] = useState('');
+  
 
   useEffect(() => {
-    const userInfo = getUserInfo()    
+    const userInfo = getUserInfo() || {username : "Guest"}
     setUser(userInfo.username);
   }, []); 
   
@@ -113,8 +114,7 @@ function LiveMap() {
 
   initializeNotes();
 
-  const stationMarkerGenerator = () => {
-
+  const stationMarkerGenerator = () => {    
     stations.forEach((station) => {
       const { latitude, longitude, name, description } = station || {};
       if (latitude && longitude) {
@@ -134,11 +134,23 @@ function LiveMap() {
           });
         };
         
+        var noteButton = ''
+        //console.log(user)
+        if (user == "Guest") {
+          noteButton = ''          
+
+        }
+        else {
+          noteButton ='<button id="openModal-${stationName}" class="open-modal">Add/Edit Note</button>'
+        }
+        //console.log(noteButton)
+        
+        
         stationMarker.addTo(map).bindPopup(`
           <strong>${stationName}</strong><br/>
           Description: ${stationDescription.replace(`${stationName} - `, '')}<br/>
           Note: ${existingNote || 'No Note'}<br/>
-          <button id="openModal-${stationName}" class="open-modal">Add/Edit Note</button>
+          ${noteButton}
         `);
 
         stationMarker.on('popupopen', () => {
