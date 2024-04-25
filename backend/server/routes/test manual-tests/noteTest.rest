@@ -48,7 +48,7 @@ Content-Type: application/json
 {
     "userId" : "TestUser",
     "stationId" : {
-        "OrientLows" : "silly station"
+        "Central" : "silly station"
     }
 }
 
