@@ -117,7 +117,7 @@ function Alerts() {
                 ))
             ) : (
                 <div className="text-center mt-3">
-                    <p>No {filter === 'All' ? 'alerts found for subways.' : `${filter === '1' ? 'minor' : filter === '7' ? 'major' : 'critical'} alerts found for subways!`}</p>
+                    <b><p>No {filter === 'All' ? 'alerts found for subways.' : `${filter === '1' ? 'minor' : filter === '7' ? 'major' : 'critical'} alerts found for subways!`}</p></b>
                 </div>
             )}
         </div>
