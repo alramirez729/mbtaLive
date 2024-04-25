@@ -13,9 +13,6 @@ const Notes = () => {
   const [editingId, setEditingId] = useState(null);
   const [editFormData, setEditFormData] = useState({ station: "", note: "" });
     
-    
-  
-  
   const fetchNotes = async (username) => {    
     try {      
       let response = await axios.get(`${url}/note/byId/?userId=${username}`);

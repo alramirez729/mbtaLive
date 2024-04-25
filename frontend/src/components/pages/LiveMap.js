@@ -24,7 +24,7 @@ function LiveMap() {
   const [stops, setStops] = useState({});
   const [description, setDescription] = useState({});
   const [map, setMap] = useState(null);
-  const [showAlerts, setShowAlerts] = useState(true);
+  const [showAlerts, setShowAlerts] = useState(false);
   const [notes, setNotes] = useState({});
   const [user, setUser] = useState({});
   const [showModal, setShowModal] = useState(false);
@@ -168,7 +168,6 @@ function LiveMap() {
 
   useEffect(() => {
     initializeNotes();
-    
 
     const leafletMap = L.map('map').setView([42.3601, -71.0589], 13);
 
@@ -177,7 +176,7 @@ function LiveMap() {
     }).addTo(leafletMap);
 
     setMap(leafletMap);
-    
+
     const fetchData = async () => {
       try {
         const vehicleResult = await axios.get('https://api-v3.mbta.com/vehicles?filter%5Broute_type%5D=1');
@@ -189,7 +188,7 @@ function LiveMap() {
           return acc;
         }, {});
         setStops(stopsData);
-
+            
         const descriptionResult = await axios.get('https://api-v3.mbta.com/stops?filter%5Broute_type%5D=1');
         const descriptionData = descriptionResult.data.data.reduce((acc, stop) => {
           acc[stop.id] = stop.attributes.name;
@@ -222,7 +221,7 @@ function LiveMap() {
         }
       });
 
-      stationMarkerGenerator()
+      stationMarkerGenerator();
 
       vehicles.forEach((vehicle) => {
         const { latitude, longitude, current_status } = vehicle.attributes || {};
@@ -256,7 +255,7 @@ function LiveMap() {
             })
           });
 
-          customMarker.addTo(map).bindPopup(`${routeId} Line is<br/>Currently ${formattedStatus}<br/>${stopName}`);
+          customMarker.addTo(map).bindPopup(`${routeId} <b>Line<br/>Currently ${formattedStatus}<br/>${stopName}`);
         }
       });
 
