@@ -12,20 +12,61 @@ const PrivateUserProfile = () => {
   const [user, setUser] = useState({});
   const [stations, setStations] = useState([]);
   const [favorites, setFavorites] = useState([]);
-  const [editingId, setEditingId] = useState(null);
-  const [editFormData, setEditFormData] = useState({ line: "", station: "" });
+  const [highlights, setHighlights] = useState([]);
+  const [imageData, setImageData] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [newHighlight, setNewHighlight] = useState({ lineId: "", stationId: "" });
   const [showAddModal, setShowAddModal] = useState(false);
   const [addFormData, setAddFormData] = useState({ line: "", station: "" });
-  const [imageData, setImageData] = useState('');
+  const [editingId, setEditingId] = useState(null);
+  const [editFormData, setEditFormData] = useState({ line: "", station: "" });
+  const allowedLines = ["Blue", "Red", "Green", "Orange"];
 
   useEffect(() => {
     const userInfo = getUserInfo();
-    console.log("User Info:", userInfo);
     setUser(userInfo);
-    fetchStations();
-    fetchFavorites();
-    fetchImage();
+    if (userInfo && userInfo.username) {
+      fetchStations();
+      fetchFavorites(userInfo.username);
+      fetchHighlights(userInfo.username);
+      fetchImage();
+    }
   }, []);
+
+  const fetchHighlights = async (username) => {
+    try {
+      const response = await axios.get(`${url}/highlight/getAll`, {
+        params: { userId: username }
+      });
+      setHighlights(response.data);
+    } catch (error) {
+      console.error("Error fetching highlights:", error);
+      setHighlights([]);
+    }
+  };
+
+  const handleAddHighlight = async (e) => {
+    e.preventDefault();
+    try {
+      const userId = user.username;
+      await axios.post(`${url}/highlight/createHighlight`, { ...newHighlight, userId });
+      setNewHighlight({ lineId: "", stationId: "" });  // Reset form after submission
+      setShowModal(false);  // Close modal after submission
+      fetchHighlights(userId);  // Refresh highlights list
+    } catch (error) {
+      console.error("Error creating highlight:", error);
+    }
+  };
+
+  const handleDeleteHighlight = async (highlightId) => {
+    try {
+      await axios.delete(`${url}/highlight/delete/${highlightId}`);
+      fetchHighlights(user.username);  // Refresh highlights list
+    } catch (error) {
+      console.error("Error deleting highlight:", error);
+    }
+  };
+
 
   const fetchImage = async () => {
     try {
@@ -57,10 +98,11 @@ const PrivateUserProfile = () => {
   };
 
 
-  const fetchFavorites = async () => {
+  const fetchFavorites = async (username) => {
     try {
-      const userInfo = getUserInfo();
-      const response = await axios.get(`${url}/favorite/getByUserId?userId=${userInfo.username}`);
+      const response = await axios.get(`${url}/favorite/getByUserId`, {
+        params: { userId: username }
+      });
       setFavorites(response.data);
     } catch (error) {
       console.error("Error fetching favorites:", error);
@@ -147,8 +189,6 @@ const PrivateUserProfile = () => {
 
   if (!user) return <div><h4>Log in to view this page.</h4></div>;
 
-  const allowedLines = ["Blue", "Red", "Green", "Orange"];
-
   return (
     <div className="container">
       <div className="col-md-12 text-center">
@@ -157,7 +197,7 @@ const PrivateUserProfile = () => {
           <div className="user-profile-image">
             <img
               src={imageData}
-              alt="Test"
+              alt="User Profile"
               style={{ maxWidth: '175px', borderRadius: '50%', marginBottom: '20px' }}
             />
           </div>
@@ -197,13 +237,24 @@ const PrivateUserProfile = () => {
                   <Button variant="success" onClick={() => handleEditSave(favorite._id)} style={{ marginRight: '10px' }}>Save</Button>
                   <Button variant="danger" onClick={() => handleDelete(favorite._id)}>Delete</Button>
                 </>
-
               ) : (
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <span style={{ marginRight: '10px' }}>{favorite.line} Line - {favorite.station}</span>
                   <Button onClick={() => handleEdit(favorite)} style={{ marginRight: '10px' }}>Edit</Button>
                 </div>
               )}
+            </li>
+          ))}
+        </ul>
+        <h2>Alert Preferences</h2>
+        <Button onClick={() => setShowModal(true)} className="mb-3">Add Highlight</Button>
+        <ul>
+          {highlights.map((highlight) => (
+            <li key={highlight._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <span style={{ marginRight: '10px' }}>{highlight.lineId} Line - {highlight.stationId}</span>
+                <Button variant="danger" onClick={() => handleDeleteHighlight(highlight._id)}>Delete</Button>
+              </div>
             </li>
           ))}
         </ul>
@@ -245,6 +296,43 @@ const PrivateUserProfile = () => {
           </Form>
         </Modal.Body>
       </Modal>
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+  <Modal.Header closeButton>
+    <Modal.Title>Add New Highlight</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <Form onSubmit={handleAddHighlight}>
+      <Form.Group as={Row} controlId="lineId">
+        <Form.Label column sm={3}>Line ID</Form.Label>
+        <Col sm={9}>
+          <Form.Control as="select" name="lineId" value={newHighlight.lineId} onChange={(e) => setNewHighlight({...newHighlight, lineId: e.target.value})} required>
+            <option value="">Select Line ID</option>
+            {allowedLines.map((line) => (
+              <option key={line} value={line}>{line}</option>
+            ))}
+          </Form.Control>
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} controlId="stationId">
+        <Form.Label column sm={3}>Station</Form.Label>
+        <Col sm={9}>
+          <Form.Control as="select" name="stationId" value={newHighlight.stationId} onChange={(e) => setNewHighlight({...newHighlight, stationId: e.target.value})} required>
+            <option value="">Select a station</option>
+            {[...new Set(stations.map(station => station.name))].sort().map((stationName) => (
+              <option key={stationName} value={stationName}>
+                {stationName}
+              </option>
+            ))}
+          </Form.Control>
+        </Col>
+      </Form.Group>
+      <div className="text-end mt-3">
+        <Button variant="primary" type="submit">Add</Button>
+        <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
+      </div>
+    </Form>
+  </Modal.Body>
+</Modal>
 
     </div>
   );

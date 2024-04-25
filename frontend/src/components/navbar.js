@@ -36,7 +36,6 @@ export default function Navbar() {
           <Nav className="me-auto">
             <Nav.Link href="/LiveMap">Home</Nav.Link>
             <Nav.Link href="/notesPage">Notes</Nav.Link>
-            <Nav.Link href="/highlights">Highlights</Nav.Link>
           </Nav>
           {user ? (
             <Nav className="ml-auto">
