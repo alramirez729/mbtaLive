@@ -1,4 +1,4 @@
-POST http://localhost:8081/note
+PUT http://localhost:8081/note
 Content-Type: application/json 
 
 {    

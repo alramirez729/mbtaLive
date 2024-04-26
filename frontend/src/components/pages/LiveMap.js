@@ -12,12 +12,14 @@ import Alerts from './mbtaAlerts';
 import Button from 'react-bootstrap/Button';
 import getUserInfo from "../../utilities/decodeJwt";
 import Form from 'react-bootstrap/Form';
+const MINLIMIT = 3
+const MAXLIMIT = 100
 
 function formatStatus(status) {
   return status.toLowerCase().replace(/_/g, ' ');
 }
 
-function LiveMap() {
+function LiveMap() {  
   const url = process.env.REACT_APP_BACKEND_SERVER_URI;
   const [vehicles, setVehicles] = useState([]);
   const [stations, setStations] = useState([]);
@@ -29,70 +31,97 @@ function LiveMap() {
   const [user, setUser] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({});
-  const [newNote, setNewNote] = useState({ userId: "", stationId: {} });
+  const [newNote, setNewNote] = useState('');
   const [isEditMode, setIsEditMode] = useState(false);
   const [editedNote, setEditedNote] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');  
   
-
-  useEffect(() => {
-    const userInfo = getUserInfo() || {username : "Guest"}
-    console.log(userInfo.username)
-    setUser(userInfo.username)
-    console.log(user)
-  }, []); 
-  
-  
+      
   const openModal = (content) => {
     setModalContent(content);
     setIsEditMode(false); // Reset edit mode
     setShowModal(true);
   };
-  
+
+  const handleCloseModal = () => {
+    if (!errorMessage) {
+      setShowModal(false);
+    }
+  };
+    
+
   const handleEdit = () => {
     setEditedNote(modalContent.existingNote); // Load the existing note into the edit field    
-    setIsEditMode(true); // Switch to edit mode
+    setIsEditMode(true); // Switch to edit mode    
   };
 
   const postNote = async (userId, stationId) => {
     try{
       await axios.post(`${url}/note`, {userId: userId, stationId: stationId})
+      setNewNote(null)
     }
     catch (error) {
       console.error("Error posting note:", error);
     }
   };
 
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    const updatedNotes = {[modalContent.stationName]: newNote };    
-    setNotes(user); // Update the local notes state
-    postNote(user, updatedNotes)    
-    fetchNotes(user)
-    stationMarkerGenerator()
-    setIsEditMode(false); // Exit edit mode
-    setShowModal(false); // Close the modal
+  const editNote = async (userId, stationId) => {
+    try{
+      await axios.put(`${url}/note`, {userId: userId, stationId: stationId})
+      setEditedNote(null)
+    }
+    catch (error) {
+      console.error("Error editing note:", error);
+    }
   };
 
-  const fetchNotes = async (username) => {
-    try {
+  
+  const handleFormChange = (e) => {     
+    const value = e.target.value 
+    if (value.length < MINLIMIT) {
+      setErrorMessage(`Input must be at least ${MINLIMIT} characters.'`);
+    } else if (value.length > MAXLIMIT) {
+      setErrorMessage(`Input must be at most ${MAXLIMIT} characters.`);
+    } else {
+      setErrorMessage('');
+    }
+  }
+    
+  const handleFormSubmit = (e) => {    
+    e.preventDefault();    
+    const note = isEditMode ? editedNote : newNote;
+    if (!note || note.length < 3) {      
+      setErrorMessage('Input must be at least 3 characters.');
+      return
+    }    
+    const updatedNotes = {[modalContent.stationName]: note };
+    if (isEditMode){
+      editNote(user, updatedNotes)
+    }
+    else {      
+      postNote(user, updatedNotes)    
+    }    
+    stationMarkerGenerator()
+    setIsEditMode(false); // Exit edit mode    
+    handleCloseModal(); // Close the modal
+  };
+
+  const fetchNotes = async (username) => {    
+    try {      
       let response = await axios.get(`${url}/note/byId/?userId=${username}`);
       if (!response.data.stationId) {
         response.data.stationId = {}
-      }
+      }      
       setNotes(response.data.stationId);      
     } catch (error) {
       console.error("Error fetching notes", error);
     }
   };
 
-
   const fetchStations = async () => {
     try {
-
       const stationResult = await fetch("https://api-v3.mbta.com/stops?filter[route_type]=1");
-
-      const stationData = await stationResult.json();
+      const stationData = await stationResult.json();      
       setStations(stationData.data.map((station) => ({
         name: station.attributes.name,
         longitude: station.attributes.longitude,
@@ -101,29 +130,21 @@ function LiveMap() {
       })));
 
     } catch (error) {
-      console.error('Error fetching data', error);
+      console.error('Error fetching station data', error);
     }
   }
-
-  const initializeNotes = async () => {      
-    if (user) {
-      await fetchNotes(user);
-    } else {
-      console.error("User information is not available.");
-    }
-  };
-
-  
-  const stationMarkerGenerator = () => {    
+    
+  const stationMarkerGenerator = () => {
+    fetchNotes(user)
     stations.forEach((station) => {
       const { latitude, longitude, name, description } = station || {};
       if (latitude && longitude) {
         const stationName = name || 'Unknown Stop';
         const stationDescription = description || 'No Description';
         const existingNote = notes[stationName] || '';
-
+        
         const stationMarker = L.marker([latitude, longitude], {
-          icon: L.icon({ iconUrl: customMarkerIcon, iconSize: [35, 35] }),
+          icon: L.icon({ iconUrl: customMarkerIcon, iconSize: [25, 25] }),
         });
 
         const openPopupModal = () => {
@@ -134,18 +155,14 @@ function LiveMap() {
           });
         };
         
-        var noteButton = ''
-        //console.log(user)
-        if (user == "Guest") {
-          noteButton = ''          
-
+        var noteButton = ''        
+        if (!user) {
+          noteButton = ''
         }
         else {
-          noteButton ='<button id="openModal-${stationName}" class="open-modal">Add/Edit Note</button>'
-        }
-        //console.log(noteButton)
-        
-        
+          noteButton = `<button id="openModal-${stationName}" class="open-modal">Add/Edit Note</button>`
+        }        
+                
         stationMarker.addTo(map).bindPopup(`
           <strong>${stationName}</strong><br/>
           Description: ${stationDescription.replace(`${stationName} - `, '')}<br/>
@@ -166,8 +183,23 @@ function LiveMap() {
     });
   } 
 
+  const initializeNotes = async () => {      
+    const userInfo = getUserInfo();
+    if (userInfo && userInfo.username) {
+      setUser(userInfo.username)        
+      await fetchNotes(userInfo.username);
+    } else {
+      console.error("User information is not available.");
+      setUser(null)
+    }
+  };
+
   useEffect(() => {
-    initializeNotes();
+    fetchStations();
+  }, [])
+
+  useEffect(() => {
+    initializeNotes()
 
     const leafletMap = L.map('map').setView([42.3601, -71.0589], 13);
 
@@ -182,7 +214,7 @@ function LiveMap() {
         const vehicleResult = await axios.get('https://api-v3.mbta.com/vehicles?filter%5Broute_type%5D=1');
         setVehicles(vehicleResult.data.data);
 
-        const stopResult = await axios.get('https://api-v3.mbta.com/stops?filter%5Broute_type%5D=1');
+        const stopResult = await axios.get('https://api-v3.mbta.com/stops?filter%5Broute_type%5D=1');        
         const stopsData = await stopResult.data.data.reduce((acc, stop) => {
           acc[stop.id] = stop.attributes.name;
           return acc;
@@ -194,9 +226,7 @@ function LiveMap() {
           acc[stop.id] = stop.attributes.name;
           return acc;
         }, {});
-        setDescription(descriptionData);
-
-        fetchStations()
+        setDescription(descriptionData);      
 
       } catch (error) {
         console.error('Error fetching data', error);
@@ -261,7 +291,7 @@ function LiveMap() {
 
     }
 
-  }, [map, vehicles, stops, description, newNote]);
+  }, [map, vehicles, stops, description, newNote, user, editedNote]);
   const toggleAlerts = () => setShowAlerts(!showAlerts);
 
   return (
@@ -276,7 +306,7 @@ function LiveMap() {
         <Button onClick={toggleAlerts} style={{ marginBottom: '10px' }}>Toggle Alerts</Button>
       </div>
       <div>
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Station Information</Modal.Title>
         </Modal.Header>
@@ -286,14 +316,17 @@ function LiveMap() {
           {isEditMode ? (
             <Form onSubmit={handleFormSubmit}>
               <Form.Group>
-                <Form.Label>Edit Note</Form.Label>
+                <Form.Label>Edit Note</Form.Label>                
                 <Form.Control
                   type="text"
                   value={editedNote}
-                  onChange={(e) => setEditedNote(e.target.value)}
+                  onChange={(e) => { setEditedNote(e.target.value);
+                   handleFormChange(e)
+                  }}
                   placeholder="Edit your note"
                 />
               </Form.Group>
+              {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
               <Button variant="primary" type="submit">Submit</Button>
             </Form>
           ) : (
@@ -309,10 +342,13 @@ function LiveMap() {
                 <Form.Label>New Note</Form.Label>
                 <Form.Control
                   type="text"                  
-                  onChange={(e) => setNewNote(e.target.value)}
+                  onChange={(e) => {setNewNote(e.target.value);
+                    handleFormChange(e)
+                  }}
                   placeholder="Enter a new note"
                 />
               </Form.Group>
+              {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
               <Button variant="primary" type="submit">Submit</Button>
             </Form>
               )}
