@@ -90,7 +90,7 @@ function LiveMap() {
   const handleFormSubmit = (e) => {    
     e.preventDefault();    
     const note = isEditMode ? editedNote : newNote;
-    if (!note || note.length < 3) {      
+    if (!note || note.length < MINLIMIT) {      
       setErrorMessage('Input must be at least 3 characters.');
       return
     }    

@@ -6,6 +6,8 @@ import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import getUserInfo from "../../utilities/decodeJwt";
+const MINLIMIT = 3
+const MAXLIMIT = 100
 
 const PrivateUserProfile = () => {
   const url = process.env.REACT_APP_BACKEND_SERVER_URI;
@@ -20,6 +22,8 @@ const PrivateUserProfile = () => {
   const [addFormData, setAddFormData] = useState({ line: "", station: "" });
   const [editingId, setEditingId] = useState(null);
   const [editFormData, setEditFormData] = useState({ line: "", station: "" });
+  const [notes, setNotes] = useState({});
+  const [errorMessage, setErrorMessage] = useState('');
   const allowedLines = ["Blue", "Red", "Green", "Orange"];
 
   useEffect(() => {
@@ -27,12 +31,28 @@ const PrivateUserProfile = () => {
     setUser(userInfo);
     if (userInfo && userInfo.username) {
       fetchStations();
+      fetchNotes(userInfo.username);
       fetchFavorites(userInfo.username);
       fetchHighlights(userInfo.username);
       fetchImage();
     }
+    else{
+      console.error("User information is not available.");
+    }
   }, []);
 
+  const fetchNotes = async (username) => {    
+    try {      
+      let response = await axios.get(`${url}/note/byId/?userId=${username}`);
+      if(!response.data.stationId){
+        response.data.stationId = {}
+      }
+      setNotes(response.data.stationId);
+    } catch (error) {
+      console.error("Error fetching notes", error);
+    }
+  };
+  
   const fetchHighlights = async (username) => {
     try {
       const response = await axios.get(`${url}/highlight/getAll`, {
@@ -187,6 +207,62 @@ const PrivateUserProfile = () => {
     }
   };
 
+  const handleEditNote = (stationKey) => {    
+    setEditingId(stationKey);
+    setEditFormData({ station: stationKey, note: notes[stationKey] });
+  };
+
+  const handleNoteChange = (e) => {    
+    setEditFormData({
+      ...editFormData,
+      [e.target.name]: e.target.value,
+    });
+    if (e.target.value.length < MINLIMIT) {
+      setErrorMessage(`Input must be at least ${MINLIMIT} characters.'`);
+    } else if (e.target.value.length > MAXLIMIT) {
+      setErrorMessage(`Input must be at most ${MAXLIMIT} characters.`);
+    } else {
+      setErrorMessage('');      
+    }    
+  };
+
+
+  const handleNoteSave = async (userId, stationId) => {    
+      try {      
+        const note = editFormData
+        if (!note || note.length < MINLIMIT) {      
+          setErrorMessage('Input must be at least 3 characters.');
+          return
+        }
+        await axios.put(`${url}/note`,{
+              userId: userId,
+              stationId: stationId
+        });
+        const updatedNotes = { ...notes }
+        updatedNotes[Object.keys(stationId)[0]] = Object.values(stationId)[0]
+        setNotes(updatedNotes);
+        setEditingId(null); // Exit editing mode
+      } catch (error) {
+        console.error("Error editing note:", error);
+      }    
+  };
+
+  const handleDeleteNote = async (userId, stationId) => {    
+    try {
+          await axios.delete(`${url}/note`, {
+            data: {userId: userId,
+            stationId: stationId}
+          });
+          // Update state to reflect the deletion
+          const updatedNotes = { ...notes };
+          delete updatedNotes[Object.keys(stationId)[0]];
+          setNotes(updatedNotes);          
+    } catch (error) {
+      console.error("Error deleting note:", error);
+      // Handle error (e.g., display an error message)
+    }
+  };
+
   if (!user) return <div><h4>Log in to view this page.</h4></div>;
 
   return (
@@ -259,6 +335,42 @@ const PrivateUserProfile = () => {
           ))}
         </ul>
       </div>
+      <div className="col-md-12 text-center">
+        <h2>Notes</h2>
+        <ul>
+          {Object.keys(notes).map((stationKey) => (
+            <li key={stationKey} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>              
+              {editingId === stationKey ? (
+                <>
+                  <Form 
+                    name="station"
+                    value={editFormData.station}
+                    readOnly
+                    style={{ marginRight: '10px'}}
+                  >
+                  <option value="">{stationKey}</option>
+                  <option>{errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}</option>
+                  </Form>
+                  <Form.Control
+                    type="text"
+                    name="note"
+                    value={editFormData.note}
+                    onChange={handleNoteChange}
+                    style={{ marginRight: '10px' }}
+                  />
+                  <Button variant="success" onClick={() => handleNoteSave(user.username, {[stationKey]: editFormData.note})} style={{ marginRight: '10px' }}>Save</Button>
+                  <Button variant="danger" onClick={() => handleDeleteNote(user.username, {[stationKey]: ""})}>Delete</Button>
+                </>
+              ) : (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <span style={{ marginRight: '10px' }}>{stationKey} - {notes[stationKey]}</span>
+                  <Button onClick={() => handleEditNote(stationKey)} style={{ marginRight: '10px' }}>Edit</Button>                  
+                </div>
+              )}              
+            </li>
+          ))}
+        </ul>        
+      </div>
       <Modal show={showAddModal} onHide={handleAddClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add Favorite</Modal.Title>
@@ -297,44 +409,43 @@ const PrivateUserProfile = () => {
         </Modal.Body>
       </Modal>
       <Modal show={showModal} onHide={() => setShowModal(false)}>
-  <Modal.Header closeButton>
-    <Modal.Title>Add New Highlight</Modal.Title>
-  </Modal.Header>
-  <Modal.Body>
-    <Form onSubmit={handleAddHighlight}>
-      <Form.Group as={Row} controlId="lineId">
-        <Form.Label column sm={3}>Line ID</Form.Label>
-        <Col sm={9}>
-          <Form.Control as="select" name="lineId" value={newHighlight.lineId} onChange={(e) => setNewHighlight({...newHighlight, lineId: e.target.value})} required>
-            <option value="">Select Line ID</option>
-            {allowedLines.map((line) => (
-              <option key={line} value={line}>{line}</option>
-            ))}
-          </Form.Control>
-        </Col>
-      </Form.Group>
-      <Form.Group as={Row} controlId="stationId">
-        <Form.Label column sm={3}>Station</Form.Label>
-        <Col sm={9}>
-          <Form.Control as="select" name="stationId" value={newHighlight.stationId} onChange={(e) => setNewHighlight({...newHighlight, stationId: e.target.value})} required>
-            <option value="">Select a station</option>
-            {[...new Set(stations.map(station => station.name))].sort().map((stationName) => (
-              <option key={stationName} value={stationName}>
-                {stationName}
-              </option>
-            ))}
-          </Form.Control>
-        </Col>
-      </Form.Group>
-      <div className="text-end mt-3">
-        <Button variant="primary" type="submit">Add</Button>
-        <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
-      </div>
-    </Form>
-  </Modal.Body>
-</Modal>
-
+        <Modal.Header closeButton>
+          <Modal.Title>Add New Highlight</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={handleAddHighlight}>
+            <Form.Group as={Row} controlId="lineId">
+              <Form.Label column sm={3}>Line ID</Form.Label>
+              <Col sm={9}>
+                <Form.Control as="select" name="lineId" value={newHighlight.lineId} onChange={(e) => setNewHighlight({...newHighlight, lineId: e.target.value})} required>
+                  <option value="">Select Line ID</option>
+                    {allowedLines.map((line) => (
+                      <option key={line} value={line}>{line}</option>
+                    ))}
+                </Form.Control>
+              </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="stationId">
+              <Form.Label column sm={3}>Station</Form.Label>
+              <Col sm={9}>
+                <Form.Control as="select" name="stationId" value={newHighlight.stationId} onChange={(e) => setNewHighlight({...newHighlight, stationId: e.target.value})} required>
+                  <option value="">Select a station</option>
+                    {[...new Set(stations.map(station => station.name))].sort().map((stationName) => (
+                      <option key={stationName} value={stationName}>
+                      {stationName}</option>
+                    ))}
+                </Form.Control>
+              </Col>
+            </Form.Group>
+            <div className="text-end mt-3">
+              <Button variant="primary" type="submit">Add</Button>
+              <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
+            </div>
+          </Form>
+        </Modal.Body>
+      </Modal>      
     </div>
+
   );
 };
 export default PrivateUserProfile;

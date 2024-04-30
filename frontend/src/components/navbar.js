@@ -34,8 +34,7 @@ export default function Navbar() {
       <ReactNavbar className="navbar-custom" variant="light">
         <Container>
           <Nav className="me-auto">
-            <Nav.Link href="/LiveMap">Home</Nav.Link>
-            <Nav.Link href="/notesPage">Notes</Nav.Link>
+            <Nav.Link href="/LiveMap">Home</Nav.Link>            
           </Nav>
           {user ? (
             <Nav className="ml-auto">

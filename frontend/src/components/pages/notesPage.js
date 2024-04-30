@@ -38,12 +38,12 @@ const Notes = () => {
     initializeNotes();
   }, []);  
 
-  const handleEdit = (stationKey) => {    
+  const handleEditNote = (stationKey) => {    
     setEditingId(stationKey);
     setEditFormData({ station: stationKey, note: notes[stationKey] });
   };
 
-  const handleEditChange = (edit) => {
+  const handleNoteChange = (edit) => {
     setEditFormData({
       ...editFormData,
       [edit.target.name]: edit.target.value,
@@ -51,7 +51,7 @@ const Notes = () => {
   };
 
 
-  const handleEditSave = async (userId, stationId) => {    
+  const handleNoteSave = async (userId, stationId) => {    
     try {      
       await axios.put(`${url}/note`,{
             userId: userId,
@@ -66,7 +66,7 @@ const Notes = () => {
     }
   };
 
-  const handleDelete = async (userId, stationId) => {    
+  const handleDeleteNote = async (userId, stationId) => {    
     try {
           await axios.delete(`${url}/note`, {
             data: {userId: userId,
@@ -107,16 +107,16 @@ const Notes = () => {
                     type="text"
                     name="note"
                     value={editFormData.note}
-                    onChange={handleEditChange}
+                    onChange={handleNoteChange}
                     style={{ marginRight: '10px' }}
                   />
-                  <Button variant="success" onClick={() => handleEditSave(user.username, {[stationKey]: editFormData.note})} style={{ marginRight: '10px' }}>Save</Button>
+                  <Button variant="success" onClick={() => handleNoteSave(user.username, {[stationKey]: editFormData.note})} style={{ marginRight: '10px' }}>Save</Button>
                 </>
               ) : (
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <span style={{ marginRight: '10px' }}>{stationKey} - {notes[stationKey]}</span>
-                  <Button onClick={() => handleEdit(stationKey)} style={{ marginRight: '10px' }}>Edit</Button>                  
-                  <Button variant="danger" onClick={() => handleDelete(user.username, {[stationKey]: ""})}>Delete</Button>
+                  <Button onClick={() => handleEditNote(stationKey)} style={{ marginRight: '10px' }}>Edit</Button>                  
+                  <Button variant="danger" onClick={() => handleDeleteNote(user.username, {[stationKey]: ""})}>Delete</Button>
                 </div>
               )}
             </li>

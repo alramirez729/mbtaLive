@@ -8,7 +8,6 @@ import LandingPage from "./components/pages/landingPage";
 import HomePage from "./components/pages/homePage";
 import Login from "./components/pages/loginPage";
 import Signup from "./components/pages/registerPage";
-import NotesPage from "./components/pages/notesPage";
 import PrivateUserProfile from "./components/pages/privateUserProfilePage";
 import getUserInfo from "./utilities/decodeJwt";
 import MbtaAlertsPage from "./components/pages/mbtaAlerts";
@@ -40,8 +39,7 @@ const App = () => {
           <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/loginPage" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
-          <Route path="/privateUserProfile" element={<PrivateUserProfile />} />
-          <Route exact path="/notesPage" element={<NotesPage />} />
+          <Route path="/privateUserProfile" element={<PrivateUserProfile />} />          
           <Route exact path="/mbtaAlerts" element={<MbtaAlertsPage />} />
           <Route exact path="/highlights" element={<Highlights />} />
           <Route exact path="/editUserPage" element={<EditUserPage />} />

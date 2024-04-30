@@ -4,7 +4,7 @@ Content-Type: application/json
 {    
     "userId" : "TestUser",
     "stationId" : {
-        "Maverick" : "Tdsfsdfsdf"
+        "South Station" : "1"
     }
 }
 

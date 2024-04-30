@@ -1,14 +1,16 @@
 const express = require("express");
 const router = express.Router();
 const noteModel = require('../models/noteModel')
+const MINLIMIT = 3
+const MAXLIMIT = 100
 
-router.post('', async (req, res) => {
-    
+router.post('', async (req, res) => {    
     var { userId, stationId} = req.body
 
     const userNoteId = await noteModel.findOne({ userId: userId })
+    note = stationId[Object.keys(stationId)[0]]
 
-    if(stationId[Object.keys(stationId)[0] != ""]){
+    if(note && note.length >= MINLIMIT && note.length <= MAXLIMIT){
         if (userNoteId == null){        
             const postNote = new noteModel({
                 userId: userId, 
@@ -51,7 +53,7 @@ router.post('', async (req, res) => {
         }
     }
     else {
-        res.status(404).send({ message: "Error: blank post found." })
+        res.status(404).send({ message: "Error: input too long or short." })
     }
 
 })
