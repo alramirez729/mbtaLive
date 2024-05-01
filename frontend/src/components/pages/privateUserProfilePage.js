@@ -74,9 +74,15 @@ const PrivateUserProfile = () => {
       setShowModal(false);  // Close modal after submission
       fetchHighlights(userId);  // Refresh highlights list
     } catch (error) {
-      console.error("Error creating highlight:", error);
+      if (error.response && error.response.data && error.response.data.error === 'User highlight already exists') {
+        alert('That highlight already exists');
+      } else {
+        console.error("Error adding highlight:", error.response ? error.response.data : error);
+      }
     }
   };
+
+
 
   const handleDeleteHighlight = async (highlightId) => {
     try {
