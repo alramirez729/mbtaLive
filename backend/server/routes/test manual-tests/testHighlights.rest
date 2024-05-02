@@ -29,7 +29,7 @@ POST http://localhost:8081/highlight/delete/66100816d6119c28d66bb3ce
 Content-type: application/json
 
 ###
-PUT http://localhost:8081/highlight/update
+PUT http://localhost:8081/highlight/update/?userId=dude_bro44
 Content-Type: application/json
 
 {

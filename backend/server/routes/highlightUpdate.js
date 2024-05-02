@@ -1,27 +1,22 @@
 const express = require('express');
 const router = express.Router();
 const userHighlights = require('../models/userHighlights');
-const { newUserValidation } = require('../models/userValidator');
-const { generateAccessToken } = require('../utilities/generateToken');
 
-router.put('/update', async (req, res) => {
-    
-    // Store new highlight information
-    const { userId, lineId, stationId } = req.body;
+router.put('/update/:id', async (req, res) => {
+    const { id } = req.params;
+    const { lineId, stationId } = req.body;
 
     try {
-        const userHighlight = await userHighlights.findOne({ userId: userId });
-        if (!userHighlight) {
-            return res.status(404).send({ message: 'User not found' });
-        }
-
-        // Update user highlight
-        userHighlights.findByIdAndUpdate(userHighlight._id, {
+        const updatedHighlight = await userHighlights.findByIdAndUpdate(id, {
             lineId: lineId,
             stationId: stationId
-        }); 
+        }, { new: true });
 
-        return res.send({message: "Highlight updated Successfully"})
+        if (!updatedHighlight) {
+            return res.status(404).send({ message: 'Highlight not found' });
+        }
+
+        res.send({ message: "Highlight updated successfully", highlight: updatedHighlight });
     } catch (err) {
         console.error(err);
         res.status(500).send({ message: 'Internal server error' });

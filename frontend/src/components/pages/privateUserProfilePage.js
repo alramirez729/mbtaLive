@@ -75,13 +75,32 @@ const PrivateUserProfile = () => {
       fetchHighlights(userId);  // Refresh highlights list
     } catch (error) {
       if (error.response && error.response.data && error.response.data.error === 'User highlight already exists') {
-        alert('That highlight already exists');
+        alert('That Alert Preference already exists');
       } else {
         console.error("Error adding highlight:", error.response ? error.response.data : error);
       }
     }
   };
 
+  const handleEditHighlight = (highlight) => {
+    setEditingId(highlight._id);
+    setEditFormData({ lineId: highlight.lineId, stationId: highlight.stationId });
+  };
+
+  const handleHighlightSave = async (highlightId) => {
+    try {
+        const response = await axios.put(`${url}/highlight/update/${highlightId}`, {
+            lineId: editFormData.lineId,
+            stationId: editFormData.stationId
+        });
+        console.log("Save response:", response.data);
+        fetchHighlights(user.username); // Refresh the highlights list
+        setEditingId(null); // Exit edit mode
+        setShowModal(false); // Close the modal
+    } catch (error) {
+        console.error("Error updating highlight:", error.response ? error.response.data : error);
+    }
+};
 
 
   const handleDeleteHighlight = async (highlightId) => {
@@ -104,7 +123,6 @@ const PrivateUserProfile = () => {
       console.error('Error fetching image:', error);
     }
   };
-
 
   const fetchStations = async () => {
     try {
@@ -329,18 +347,35 @@ const PrivateUserProfile = () => {
           ))}
         </ul>
         <h2>Alert Preferences</h2>
-        <Button onClick={() => setShowModal(true)} className="mb-3">Add Highlight</Button>
-        <ul>
-          {highlights.map((highlight) => (
-            <li key={highlight._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+      <Button onClick={() => setShowModal(true)} className="mb-3">Add Alert Preference</Button>
+      <ul>
+        {highlights.map((highlight) => (
+          <li key={highlight._id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+            {editingId === highlight._id ? (
+              <>
+                <Form.Select name="lineId" value={editFormData.lineId} onChange={handleEditChange} style={{ marginRight: '10px' }}>
+                  <option value="">Select Line</option>
+                  {allowedLines.map((line) => <option key={line} value={line}>{line}</option>)}
+                </Form.Select>
+                <Form.Select name="stationId" value={editFormData.stationId} onChange={handleEditChange} style={{ marginRight: '10px' }}>
+                  <option value="">Select a station</option>
+                  {[...new Set(stations.map(station => station.name))].sort().map((stationName) => (
+                    <option key={stationName} value={stationName}>{stationName}</option>
+                  ))}
+                </Form.Select>
+                <Button variant="success" onClick={() => handleHighlightSave(highlight._id)} style={{ marginRight: '10px' }}>Save</Button>
+                <Button variant="danger" onClick={() => handleDeleteHighlight(highlight._id)}>Delete</Button>
+              </>
+            ) : (
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <span style={{ marginRight: '10px' }}>{highlight.lineId} Line - {highlight.stationId}</span>
-                <Button variant="danger" onClick={() => handleDeleteHighlight(highlight._id)}>Delete</Button>
+                <Button onClick={() => handleEditHighlight(highlight)} style={{ marginRight: '10px' }}>Edit</Button>
               </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
       <div className="col-md-12 text-center">
         <h2>Notes</h2>
         <ul>
