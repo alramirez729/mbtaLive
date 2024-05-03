@@ -4,6 +4,7 @@ import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import getUserInfo from "../../utilities/decodeJwt";
+import trainImage from '../images/stylishTrain00.png';
 
 const PRIMARY_COLOR = "#cc5c99";
 const SECONDARY_COLOR = '#0c0c1f'
@@ -13,9 +14,6 @@ const Login = () => {
   const [user, setUser] = useState(null)
   const [data, setData] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
-  const [light, setLight] = useState(false);
-  const [bgColor, setBgColor] = useState(SECONDARY_COLOR);
-  const [bgText, setBgText] = useState('Light Mode')
   const navigate = useNavigate();
 
   let labelStyling = {
@@ -23,11 +21,10 @@ const Login = () => {
     fontWeight: "bold",
     textDecoration: "none",
   };
-  let backgroundStyling = { background: bgColor };
   let buttonStyling = {
     background: PRIMARY_COLOR,
     borderStyle: "none",
-    color: bgColor,
+    color: SECONDARY_COLOR,
   };
 
   const handleChange = ({ currentTarget: input }) => {
@@ -37,17 +34,7 @@ const Login = () => {
   useEffect(() => {
     const obj = getUserInfo()
     setUser(obj)
-  },[]);
-
-  useEffect(() => {
-    if (light) {
-      setBgColor("white");
-      setBgText('Dark mode')
-    } else {
-      setBgColor(SECONDARY_COLOR);
-      setBgText('Light mode')
-    }
-  }, [light]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -67,7 +54,7 @@ const Login = () => {
     }
   };
 
-  if(user) {
+  if (user) {
     navigate('/privateUserProfile')
     return
   }
@@ -77,8 +64,13 @@ const Login = () => {
       <section className="vh-100">
         <div className="container-fluid h-custom vh-100">
           <div
-            className="row d-flex justify-content-center align-items-center h-100 "
-            style={backgroundStyling}>
+            className="row d-flex justify-content-center align-items-center h-100"
+            style={{
+              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(${trainImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
             <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -104,24 +96,13 @@ const Login = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                   <Form.Text className="text-muted pt-1">
-                    Dont have an account?
+                    Don't have an account?
                     <span>
                       <Link to="/signup" style={labelStyling}> Sign up
                       </Link>
                     </span>
                   </Form.Text>
                 </Form.Group>
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="flexSwitchCheckDefault"
-                    onChange={() => { setLight(!light) }}
-                  />
-                  <label class="form-check-label" for="flexSwitchCheckDefault" className='text-muted'>
-                    {bgText}
-                  </label>
-                </div>
                 {error && <div style={labelStyling} className='pt-3'>{error}</div>}
                 <Button
                   variant="primary"
