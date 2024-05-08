@@ -50,3 +50,35 @@ Content-Type: application/json
 
 ###
 POST  http://localhost:8081/user/deleteAll
+
+###
+POST http://localhost:8081/highlight/createHighlight
+Content-Type: application/json
+
+{
+    "userId": "dude_bro44",
+    "lineId": "Blue",
+    "stationId": "Orient Heights"
+}
+
+###
+POST http://localhost:8081/note
+Content-Type: application/json 
+
+{    
+    "userId" : "TestUser",
+    "stationId" : {
+        "Orient Heights" : "That station"
+    }
+}
+
+###
+POST http://localhost:8081/favorite
+Content-Type: application/json
+
+{
+  "userId": "jnatola",
+  "line": "Red",
+  "station": "Alewife"
+}
+
