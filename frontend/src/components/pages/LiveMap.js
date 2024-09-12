@@ -285,7 +285,7 @@ function LiveMap() {
             })
           });
 
-          customMarker.addTo(map).bindPopup(`${routeId} <b>Line<br/>Currently ${formattedStatus}<br/>${stopName}`);
+          customMarker.addTo(map).bindPopup(`<b>${routeId} Line<br/>Currently ${formattedStatus}<br/>${stopName}`);
         }
       });
 
