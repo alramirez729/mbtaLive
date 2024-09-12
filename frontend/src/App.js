@@ -51,6 +51,5 @@ const App = () => {
   );
 };
 
-sdfasdfasdfa
 
 export default App
