@@ -11,7 +11,6 @@ import Signup from "./components/pages/registerPage";
 import PrivateUserProfile from "./components/pages/privateUserProfilePage";
 import getUserInfo from "./utilities/decodeJwt";
 import MbtaAlertsPage from "./components/pages/mbtaAlerts";
-//import MbtaVehiclePage from "./components/pages/apiVehicles";
 import MbtaLiveMapPage from "./components/pages/LiveMap";
 import MbtaStopPage from "./components/pages/Stop";
 import EditUserPage from "./components/pages/editUserPage";
@@ -52,6 +51,6 @@ const App = () => {
   );
 };
 
-
+sdfasdfasdfa
 
 export default App
