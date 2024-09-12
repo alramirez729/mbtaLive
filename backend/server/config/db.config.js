@@ -8,12 +8,12 @@ module.exports = async () => {
         useUnifiedTopology: true,
     };
     
-    // Set the strictQuery option before establishing the connection
-    mongoose.set('strictQuery', true); // Set to false if you prefer the non-strict behavior
+    mongoose.set('strictQuery', true);
 
     try {
+        // Use the DB_URL from the .env file
         await mongoose.connect(process.env.DB_URL, databaseParams);
-        console.log("The backend has connected to the MongoDB database.");
+        console.log("Connected to the mbtaLive database.");
     } catch (error) {
         console.error(`Database connection error: ${error}`);
     }

@@ -19,4 +19,4 @@ const userHighlightSchema = new mongoose.Schema(
   { collection: "highlights" }
 );
 
-module.exports = mongoose.model('Highlight', userHighlightSchema);
+module.exports = mongoose.model('highlights', userHighlightSchema);

@@ -15,4 +15,4 @@ const userNoteSchema = new mongoose.Schema(
   { collection: "userNotes" }
 );
 
-module.exports = mongoose.model('userNotes', userNoteSchema)
+module.exports = mongoose.model('notes', userNoteSchema)
