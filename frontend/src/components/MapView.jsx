@@ -13,6 +13,12 @@ const DEFAULT_ZOOM = 12;
 // only the vehicles show.
 const BUS_ROUTE_MIN_ZOOM = 14;
 
+// One step tighter than the bus geometry gate, because names need more room than
+// lines do. At 14 the Green Line surface stops through Brookline and Longwood are
+// only a couple of hundred metres apart and their labels pile onto each other; at
+// 15 they separate cleanly.
+const STATION_LABEL_MIN_ZOOM = 15;
+
 // Movement smaller than this is GPS noise rather than travel, and animating it
 // makes stationary trains shimmer.
 const MIN_ANIMATED_METRES = 4;
@@ -150,6 +156,9 @@ export default function MapView({
   // Points to frame when the selection changes. Without this, picking a route
   // that runs through Chelsea leaves you staring at Brookline.
   fitPoints,
+  // Reveal station names once zoomed in. Rail station names are short enough to
+  // sit beside a dot; bus stop names ("Massachusetts Ave opp Holyoke St") are not.
+  stationLabels = false,
   // The bus page draws one route at a time, which is legible at any zoom. The
   // gate exists for the region-wide view, not for a single route.
   alwaysShowRoutes = false,
@@ -520,17 +529,39 @@ export default function MapView({
       const keys = station.lineKeys ?? [];
       if (keys.length && !keys.some((key) => activeLines.has(key))) continue;
 
-      L.circleMarker([station.latitude, station.longitude], {
+      const marker = L.circleMarker([station.latitude, station.longitude], {
         radius: 4,
         weight: 2,
         color: lineColor(keys[0]),
         fillColor: '#ffffff',
         fillOpacity: 1,
-      })
-        .bindPopup(stationPopup(station))
-        .addTo(layer);
-    }
-  }, [stations, activeLines, showStations]);
+      }).bindPopup(stationPopup(station));
 
-  return <div ref={containerRef} className="map" aria-label="Map of live MBTA train positions" />;
+      if (stationLabels) {
+        // Bound once and shown or hidden in CSS by zoom, rather than rebuilding
+        // every marker each time the zoom changes.
+        marker.bindTooltip(station.name, {
+          permanent: true,
+          direction: 'right',
+          offset: [7, 0],
+          className: 'station-label',
+          // Leaflet writes this straight onto the element's style attribute, and
+          // it defaults to 0.9. Setting it to 1 keeps a map label crisp.
+          opacity: 1,
+        });
+      }
+
+      marker.addTo(layer);
+    }
+  }, [stations, activeLines, showStations, stationLabels]);
+
+  const labelsVisible = stationLabels && zoom >= STATION_LABEL_MIN_ZOOM;
+
+  return (
+    <div
+      ref={containerRef}
+      className={`map ${labelsVisible ? 'is-labeled' : ''}`}
+      aria-label="Map of live MBTA train positions"
+    />
+  );
 }

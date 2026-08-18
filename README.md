@@ -104,6 +104,28 @@ Two upstream quirks worth knowing:
   diversion, and MBTA attaches them to the line they replace, so including them
   drew an Orange Line shape along the roads a shuttle happened to use.
 
+## Station labels
+
+Station names appear beside their dots on `/subway` once you zoom past 15, the same
+progressive-disclosure idea as the bus geometry gate. Below that they are hidden;
+without the gate 232 names collide into mush at region scale.
+
+The threshold is one step tighter than the bus gate (15 against 14) because names
+need more room than lines do. At 14 the Green Line surface stops through Brookline
+and Longwood sit a couple of hundred metres apart and their labels pile onto each
+other.
+
+Labels are permanent Leaflet tooltips bound once and shown or hidden in CSS, rather
+than markers being rebuilt on every zoom change. Two details worth knowing if you
+touch them:
+
+- **Leaflet writes tooltip opacity as an inline style**, so hiding them needs
+  `!important`. No selector specificity can outrank an inline style.
+- They are `pointer-events: none`, so a click belongs to the dot underneath.
+
+Bus stops deliberately get no labels: names like "Massachusetts Ave opp Holyoke St"
+are far too long to sit beside a dot.
+
 ## Motion
 
 Vehicle records only refresh upstream every ~18 seconds, and 74% of consecutive

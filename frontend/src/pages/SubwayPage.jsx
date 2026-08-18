@@ -96,6 +96,7 @@ export default function SubwayPage() {
         showRoutes={layers.showRoutes}
         showMotion={layers.showMotion}
         motionDurationMs={VEHICLE_INTERVAL_MS}
+        stationLabels
       />
 
       <div className="hud hud--top-left">

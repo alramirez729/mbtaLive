@@ -910,3 +910,37 @@ body {
   border-color: var(--line);
   color: var(--ink-soft);
 }
+
+/* ---------- station labels ---------- */
+
+/* Leaflet tooltips are boxes by default. A map label wants to be text on the map,
+   so the box is stripped and legibility comes from a white halo instead. */
+.station-label.leaflet-tooltip {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  /* Labels are decoration; a click belongs to the dot underneath. */
+  pointer-events: none;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff, 0 0 1px #fff;
+  transition: opacity 0.15s ease;
+}
+
+/* The tooltip's little pointer makes no sense without a box. */
+.station-label.leaflet-tooltip::before {
+  display: none;
+}
+
+/* Bound once, revealed by zoom. Hiding in CSS avoids rebuilding 232 markers on
+   every zoom change.
+   !important is needed, not sloppiness: Leaflet writes tooltip opacity as an
+   inline style, which no amount of selector specificity can outrank. */
+.map:not(.is-labeled) .station-label.leaflet-tooltip {
+  opacity: 0 !important;
+}
