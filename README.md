@@ -15,7 +15,7 @@ backend/server/      Express caching proxy for the MBTA API
   data/stations.json   committed station snapshot (see below)
   data/shapes.json     committed track geometry snapshot
   .env                 MBTA_API_KEY lives here (see .env.example)
-api/[[...path]].js   Vercel entry point; hands the same Express app to a function
+api/[path].js   Vercel entry point; hands the same Express app to a function
 _archive/            the old user accounts feature, kept for reference only
 ```
 
@@ -102,10 +102,10 @@ the last known positions.
 | Route | Cache | Notes |
 | --- | --- | --- |
 | `GET /api/health` | none | Status and whether an API key is configured |
-| `GET /api/mbta/vehicles` | 2.5s | Normalized live positions |
-| `GET /api/mbta/alerts` | 60s | Alerts currently in effect |
-| `GET /api/mbta/stations` | 24h | Served from the committed snapshot, no upstream call |
-| `GET /api/mbta/shapes` | 24h | Track geometry as encoded polylines, also from a snapshot |
+| `GET /api/vehicles` | 2.5s | Normalized live positions |
+| `GET /api/alerts` | 60s | Alerts currently in effect |
+| `GET /api/stations` | 24h | Served from the committed snapshot, no upstream call |
+| `GET /api/shapes` | 24h | Track geometry as encoded polylines, also from a snapshot |
 
 Responses are normalized, so the browser never parses JSON:API relationships.
 Each endpoint also sets `s-maxage`, which lets Vercel's CDN serve most repeat hits.

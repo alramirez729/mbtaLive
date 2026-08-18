@@ -1,7 +1,7 @@
 // The app always calls its own origin. Vite proxies /api to the local proxy in
 // development; on Vercel the same path hits the serverless function.
 
-const BASE = '/api/mbta';
+const BASE = '/api';
 
 class ApiError extends Error {
   constructor(status, message) {

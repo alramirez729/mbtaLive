@@ -24,7 +24,7 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-app.use('/api/mbta', mbtaRouter);
+app.use('/api', mbtaRouter);
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Not found', path: req.path });
