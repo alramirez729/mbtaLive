@@ -104,6 +104,26 @@ Two upstream quirks worth knowing:
   diversion, and MBTA attaches them to the line they replace, so including them
   drew an Orange Line shape along the roads a shuttle happened to use.
 
+## The first view
+
+`/subway` opens focused on the Blue Line with the Filters panel showing, rather than
+on the whole network with everything closed. Six lines and 110 trains at once does
+not explain itself; one line, framed, sitting next to the highlighted control that
+framed it does. "All lines" expands to the full network.
+
+Blue is the pick because it is the shortest and simplest line, so the framing reads
+clearly and nothing overlaps.
+
+Two things this needed:
+
+- A panel that starts open counts as **pinned**, otherwise the first stray pointer
+  movement across and away from it would dismiss it.
+- `fitBounds` had to learn what is covering the map. An open bottom sheet takes most
+  of a phone screen, and framing a line without accounting for it centred the Blue
+  Line underneath the sheet, leaving a new rider looking at an empty strip. The fit
+  now measures the open sheet and keeps the line above it, capped at 45% of the map
+  so the remaining strip stays tall enough to frame anything into.
+
 ## Focusing one line
 
 Clicking a line row on `/subway` isolates that line and frames the whole of it,

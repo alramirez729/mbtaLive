@@ -15,16 +15,23 @@ import { RAIL_LINES, RAIL_LINE_KEYS } from '../lib/lines';
 const VEHICLE_INTERVAL_MS = 5000;
 const ALERT_INTERVAL_MS = 60000;
 
+// A first visit opens focused on one line with the filters showing, rather than on
+// the whole network with everything closed. Six lines and 110 trains at once does
+// not explain itself; one line, framed, next to the control that did it does.
+// Blue is the pick because it is the shortest and simplest line, so the framing
+// reads clearly and nothing overlaps.
+const INTRO_LINE = 'Blue';
+
 function formatClock(timestamp) {
   if (!timestamp) return null;
   return new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
 export default function SubwayPage() {
-  const [activeLines, setActiveLines] = useState(() => new Set(RAIL_LINE_KEYS));
+  const [activeLines, setActiveLines] = useState(() => new Set([INTRO_LINE]));
   // Which line is isolated, and a counter so clicking the same line again
   // re-frames it rather than doing nothing.
-  const [focus, setFocus] = useState({ lineKey: null, nonce: 0 });
+  const [focus, setFocus] = useState({ lineKey: INTRO_LINE, nonce: 1 });
   const [layers, setLayers] = useState({
     showRoutes: true,
     showStations: true,
@@ -32,7 +39,7 @@ export default function SubwayPage() {
   });
   // Only one panel at a time: two open cards would cover most of a phone screen,
   // and on desktop the second would sit on top of the first.
-  const [openPanel, setOpenPanel] = useState(null);
+  const [openPanel, setOpenPanel] = useState('filters');
 
   const vehicles = usePolledResource(fetchVehicles, VEHICLE_INTERVAL_MS);
   const alerts = usePolledResource(fetchAlerts, ALERT_INTERVAL_MS);

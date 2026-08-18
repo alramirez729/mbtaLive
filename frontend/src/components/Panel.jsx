@@ -29,8 +29,10 @@ export default function Panel({
   const panelId = useId();
 
   // Distinguishes "open because the pointer is here" from "open because it was
-  // clicked", so moving the pointer away does not close a pinned panel.
-  const [pinned, setPinned] = useState(false);
+  // clicked", so moving the pointer away does not close a pinned panel. A panel
+  // that starts open counts as pinned, or the first stray pointer movement would
+  // dismiss it.
+  const [pinned, setPinned] = useState(open);
   const [dragOffset, setDragOffset] = useState(0);
   const dragRef = useRef(null);
   const rootRef = useRef(null);

@@ -462,7 +462,21 @@ export default function MapView({
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !fitPoints || fitPoints.length === 0) return;
-    map.fitBounds(L.latLngBounds(fitPoints), { padding: [60, 60], animate: true });
+
+    // An open bottom sheet covers most of a phone screen. fitBounds knows nothing
+    // about it, so framing a line would centre it underneath the sheet and the
+    // rider would see an empty strip of map. Measure whatever is covering the
+    // bottom and keep the line above it.
+    const sheet = document.querySelector('.panel--sheet.is-open .panel__body');
+    const mapHeight = map.getSize().y;
+    // Capped: past this the remaining strip is too short to frame anything into.
+    const covered = sheet ? Math.min(sheet.offsetHeight, mapHeight * 0.45) : 0;
+
+    map.fitBounds(L.latLngBounds(fitPoints), {
+      paddingTopLeft: [40, 60],
+      paddingBottomRight: [40, 40 + covered],
+      animate: true,
+    });
   }, [fitPoints]);
 
   // Show or hide whole line groups when the filter changes.
