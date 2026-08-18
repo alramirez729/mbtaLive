@@ -13,6 +13,12 @@ const DEFAULT_ZOOM = 12;
 // only the vehicles show.
 const BUS_ROUTE_MIN_ZOOM = 14;
 
+// How far unhighlighted geometry steps back while something else is emphasised.
+const DIMMED_OPACITY = 0.18;
+
+// Marks geometry shown only as a hover preview.
+const DASH_PREVIEW = '6 5';
+
 // One step tighter than the bus geometry gate, because names need more room than
 // lines do. At 14 the Green Line surface stops through Brookline and Longwood are
 // only a couple of hundred metres apart and their labels pile onto each other; at
@@ -39,6 +45,11 @@ const MAX_GLIDE_MS = 30000;
 // costs nothing because the next update retargets from wherever it has reached,
 // mid-glide and without a jump.
 const GLIDE_STRETCH = 1.8;
+
+/** Resting style for a shape. `muted` is the thin region-wide bus treatment. */
+function baseStyle(muted) {
+  return muted ? { weight: 2.5, opacity: 0.55 } : { weight: 4, opacity: 0.8 };
+}
 
 // Any value interpolated into popup or icon markup comes from the MBTA feed, so
 // it is escaped rather than trusted.
@@ -159,6 +170,10 @@ export default function MapView({
   // Reveal station names once zoomed in. Rail station names are short enough to
   // sit beside a dot; bus stop names ("Massachusetts Ave opp Holyoke St") are not.
   stationLabels = false,
+  // What the pointer is over in a panel, by line or by single route. The matching
+  // geometry is emphasised and everything else steps back.
+  highlightLineKey = null,
+  highlightRouteId = null,
   // The bus page draws one route at a time, which is legible at any zoom. The
   // gate exists for the region-wide view, not for a single route.
   alwaysShowRoutes = false,
@@ -170,11 +185,19 @@ export default function MapView({
   const vehicleLayersRef = useRef(new Map());
   const stationLayerRef = useRef(null);
   const routeLayerRef = useRef(null);
+  // Drawn polylines by shape id, so a highlight restyles them in place instead of
+  // rebuilding 176 of them on every pointer move.
+  const routeLayersRef = useRef(new Map());
+  // Geometry shown only because it is being hovered: a line that is switched off,
+  // or a bus route the zoom gate is holding back.
+  const previewLayerRef = useRef(null);
   // id -> marker plus its animation state, so each refresh retargets an existing
   // marker instead of clearing and re-creating every marker on the map.
   const markersRef = useRef(new Map());
   const frameRef = useRef(null);
   const [zoom, setZoom] = useState(DEFAULT_ZOOM);
+  // Set by hovering geometry on the map, as opposed to a row in a panel.
+  const [hoveredShape, setHoveredShape] = useState(null);
 
   // Track geometry in a planar frame, for snapping vehicles onto the rails.
   const trackIndex = useMemo(() => (shapes ? buildTrackIndex(shapes) : null), [shapes]);
@@ -215,6 +238,7 @@ export default function MapView({
     map.getPane('busVehicles').style.zIndex = 550;
 
     routeLayerRef.current = L.layerGroup().addTo(map);
+    previewLayerRef.current = L.layerGroup().addTo(map);
     stationLayerRef.current = L.layerGroup().addTo(map);
     mapRef.current = map;
 
@@ -234,6 +258,8 @@ export default function MapView({
       markersRef.current.clear();
       stationLayerRef.current = null;
       routeLayerRef.current = null;
+      routeLayersRef.current.clear();
+      previewLayerRef.current = null;
     };
   }, []);
 
@@ -497,6 +523,7 @@ export default function MapView({
     if (!layer) return;
 
     layer.clearLayers();
+    routeLayersRef.current.clear();
     if (!showRoutes || !shapes) return;
 
     const busVisible = alwaysShowRoutes || zoom >= BUS_ROUTE_MIN_ZOOM;
@@ -510,23 +537,86 @@ export default function MapView({
       decodedPaths.set(shape.id, path);
       if (path.length < 2) continue;
 
-      L.polyline(path, {
+      // Bus routes are thin and faint in the region-wide view, where there are far
+      // more of them and they are context behind the rail network. A single focused
+      // route is the subject, so it gets full weight.
+      const muted = isBus && !alwaysShowRoutes;
+
+      const polyline = L.polyline(path, {
         pane: 'routes',
         color: lineColor(shape.lineKey),
-        // Bus routes are thin and faint in the region-wide view, where there are
-        // far more of them and they are context behind the rail network. A single
-        // focused route is the subject, so it gets full weight.
-        weight: isBus && !alwaysShowRoutes ? 2.5 : 4,
-        opacity: isBus && !alwaysShowRoutes ? 0.55 : 0.8,
+        ...baseStyle(muted),
         // Branches share a trunk, so rounded joins keep the overlap from
         // showing hard corners where two colors meet.
         lineCap: 'round',
         lineJoin: 'round',
-      })
-        .bindPopup(routePopup(shape))
-        .addTo(layer);
+      }).bindPopup(routePopup(shape));
+
+      // Hovering the geometry itself highlights it too, not only a panel row.
+      polyline.on('mouseover', () =>
+        setHoveredShape({ lineKey: shape.lineKey, routeId: shape.routeId }),
+      );
+      polyline.on('mouseout', () => setHoveredShape(null));
+
+      polyline.addTo(layer);
+      routeLayersRef.current.set(shape.id, { polyline, shape, muted });
     }
   }, [shapes, activeLines, showRoutes, zoom, alwaysShowRoutes]);
+
+  const hotLineKey = highlightLineKey ?? hoveredShape?.lineKey ?? null;
+  const hotRouteId = highlightRouteId ?? hoveredShape?.routeId ?? null;
+
+  // Emphasise what is highlighted and step everything else back. This restyles in
+  // place; rebuilding on every pointer move would stutter with 176 bus shapes.
+  useEffect(() => {
+    const active = Boolean(hotLineKey || hotRouteId);
+
+    for (const { polyline, shape, muted } of routeLayersRef.current.values()) {
+      const base = baseStyle(muted);
+      if (!active) {
+        polyline.setStyle(base);
+        continue;
+      }
+      const isMatch = hotRouteId ? shape.routeId === hotRouteId : shape.lineKey === hotLineKey;
+      polyline.setStyle(
+        isMatch
+          ? { weight: base.weight + 2.5, opacity: 1 }
+          : { weight: base.weight, opacity: DIMMED_OPACITY },
+      );
+    }
+  }, [hotLineKey, hotRouteId, shapes, activeLines, zoom, alwaysShowRoutes, showRoutes]);
+
+  // Geometry that is not currently drawn but is being hovered, so pointing at a
+  // switched-off line or a zoomed-out bus route still shows its path.
+  useEffect(() => {
+    const layer = previewLayerRef.current;
+    if (!layer) return;
+
+    layer.clearLayers();
+    if (!showRoutes || !shapes || (!hotLineKey && !hotRouteId)) return;
+
+    for (const shape of shapes) {
+      const isMatch = hotRouteId ? shape.routeId === hotRouteId : shape.lineKey === hotLineKey;
+      if (!isMatch || routeLayersRef.current.has(shape.id)) continue;
+
+      const path = decodedPaths.get(shape.id) ?? decodePolyline(shape.polyline);
+      decodedPaths.set(shape.id, path);
+      if (path.length < 2) continue;
+
+      L.polyline(path, {
+        pane: 'routes',
+        color: lineColor(shape.lineKey),
+        weight: 4,
+        opacity: 0.9,
+        // Dashed, because this is a preview of something not currently switched on
+        // rather than part of the view.
+        dashArray: DASH_PREVIEW,
+        lineCap: 'round',
+        lineJoin: 'round',
+        interactive: false,
+      }).addTo(layer);
+    }
+  }, [hotLineKey, hotRouteId, shapes, showRoutes, zoom, alwaysShowRoutes, activeLines]);
 
   // Stations are fetched once and only rebuilt when the filter or the toggle
   // changes, never on a vehicle poll.

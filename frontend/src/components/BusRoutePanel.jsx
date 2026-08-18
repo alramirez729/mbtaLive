@@ -14,6 +14,7 @@ export default function BusRoutePanel({
   directionCounts,
   activeDirection,
   onDirectionChange,
+  onHover,
 }) {
   const [query, setQuery] = useState('');
 
@@ -125,7 +126,11 @@ export default function BusRoutePanel({
 
       <ul className="routelist">
         {matches.map((route) => (
-          <li key={route.id}>
+          <li
+            key={route.id}
+            onPointerEnter={() => onHover?.(route.id)}
+            onPointerLeave={() => onHover?.(null)}
+          >
             <button type="button" className="routelist__item" onClick={() => onSelect(route.id)}>
               <span
                 className="busroute__badge"

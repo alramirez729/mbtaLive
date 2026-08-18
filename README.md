@@ -104,6 +104,20 @@ Two upstream quirks worth knowing:
   diversion, and MBTA attaches them to the line they replace, so including them
   drew an Orange Line shape along the roads a shuttle happened to use.
 
+## Hover to highlight
+
+Pointing at a line in Filters, or a route in the bus directory, thickens that
+geometry and fades everything else back. Hovering the geometry on the map does the
+same, so the two directions agree.
+
+Hovering something that is not currently drawn shows it anyway, dashed: a line whose
+checkbox is off, or a bus route the zoom gate is holding back. That makes the bus
+directory browsable without committing to a route, since at region zoom no bus
+geometry is drawn at all.
+
+Highlighting restyles the existing polylines in place rather than rebuilding them.
+With 176 bus shapes, rebuilding on every pointer move would stutter.
+
 ## Help
 
 A `?` beside Filters and Alerts opens a panel explaining how to drive the map. It is

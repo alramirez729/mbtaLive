@@ -41,6 +41,8 @@ export default function SubwayPage() {
   // Only one panel at a time: two open cards would cover most of a phone screen,
   // and on desktop the second would sit on top of the first.
   const [openPanel, setOpenPanel] = useState('filters');
+  // Which line the pointer is over in the filter list.
+  const [hoveredLine, setHoveredLine] = useState(null);
 
   const vehicles = usePolledResource(fetchVehicles, VEHICLE_INTERVAL_MS);
   const alerts = usePolledResource(fetchAlerts, ALERT_INTERVAL_MS);
@@ -129,6 +131,7 @@ export default function SubwayPage() {
         motionDurationMs={VEHICLE_INTERVAL_MS}
         stationLabels
         fitPoints={fitPoints}
+        highlightLineKey={hoveredLine}
       />
 
       <div className="hud hud--top-left">
@@ -162,6 +165,7 @@ export default function SubwayPage() {
             onSetAll={setAllLines}
             onFocus={focusLine}
             focusedLine={focus.lineKey}
+            onHover={setHoveredLine}
             layers={layers}
             onLayerChange={setLayer}
           />

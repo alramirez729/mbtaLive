@@ -35,6 +35,8 @@ export default function BusPage() {
   const selectedId = searchParams.get('route');
   const [activeDirection, setActiveDirection] = useState(null);
   const [openPanel, setOpenPanel] = useState(null);
+  // Which route the pointer is over in the directory.
+  const [hoveredRoute, setHoveredRoute] = useState(null);
 
   const buses = usePolledResource(fetchBuses, VEHICLE_INTERVAL_MS);
   const alerts = usePolledResource(fetchAlerts, ALERT_INTERVAL_MS);
@@ -141,6 +143,7 @@ export default function BusPage() {
         // to be readable.
         alwaysShowRoutes={Boolean(selectedId)}
         fitPoints={fitPoints}
+        highlightRouteId={hoveredRoute}
       />
 
       <div className="hud hud--top-left">
@@ -176,6 +179,7 @@ export default function BusPage() {
             directionCounts={directionCounts}
             activeDirection={activeDirection}
             onDirectionChange={setActiveDirection}
+            onHover={setHoveredRoute}
           />
         </Panel>
 

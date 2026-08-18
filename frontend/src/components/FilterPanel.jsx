@@ -10,6 +10,7 @@ export default function FilterPanel({
   onSetAll,
   onFocus,
   focusedLine,
+  onHover,
   layers,
   onLayerChange,
 }) {
@@ -36,6 +37,8 @@ export default function FilterPanel({
                   className={`line ${isFocused ? 'line--focused' : ''}`}
                   data-active={isActive}
                   style={{ '--line-color': line.color }}
+                  onPointerEnter={() => onHover?.(line.key)}
+                  onPointerLeave={() => onHover?.(null)}
                 >
                   {/* Two separate actions on one row: the checkbox controls
                       whether the line is drawn, the row itself isolates it and
