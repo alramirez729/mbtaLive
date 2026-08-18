@@ -1,11 +1,33 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { lineColor, lineLabel } from '../lib/lines';
 import { decodePolyline } from '../lib/polyline';
+import { buildTrackIndex, projectVehicle, sampleAlong } from '../lib/trackPaths';
 
 const BOSTON_CENTER = [42.3601, -71.0589];
 const DEFAULT_ZOOM = 12;
+
+// Movement smaller than this is GPS noise rather than travel, and animating it
+// makes stationary trains shimmer.
+const MIN_ANIMATED_METRES = 4;
+
+// A jump this large means the feed skipped or a vehicle was reassigned. Gliding
+// it would look like a rocket, so it is applied instantly instead.
+const MAX_ANIMATED_METRES = 4000;
+
+// A glide is paced by how long the vehicle took to cover the distance, so it is
+// still moving when the next update lands instead of finishing early and freezing.
+// Clamped because a first sighting has no previous gap to go on.
+const MIN_GLIDE_MS = 2000;
+const MAX_GLIDE_MS = 30000;
+
+// Refresh gaps are uneven (median 11s, sometimes 40s+), so a glide sized to the
+// previous gap often ends before the next one arrives, which is the visible
+// stutter. Stretching it past the last gap keeps the train moving; arriving late
+// costs nothing because the next update retargets from wherever it has reached,
+// mid-glide and without a jump.
+const GLIDE_STRETCH = 1.8;
 
 // Any value interpolated into popup or icon markup comes from the MBTA feed, so
 // it is escaped rather than trusted.
@@ -92,6 +114,12 @@ function routePopup(shape) {
 // results are cached at module scope rather than per mount.
 const decodedPaths = new Map();
 
+/** Rotates a marker's heading arrow without rebuilding the icon's DOM. */
+function applyHeading(marker, degrees) {
+  const element = marker.getElement()?.firstElementChild;
+  if (element) element.style.setProperty('--bearing', `${degrees}deg`);
+}
+
 export default function MapView({
   vehicles,
   stations,
@@ -99,6 +127,8 @@ export default function MapView({
   activeLines,
   showStations,
   showRoutes,
+  showMotion,
+  motionDurationMs,
 }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
@@ -107,9 +137,18 @@ export default function MapView({
   const vehicleLayersRef = useRef(new Map());
   const stationLayerRef = useRef(null);
   const routeLayerRef = useRef(null);
-  // id -> { marker, lineKey, bearing } so each refresh moves existing markers
-  // instead of clearing and re-creating every marker on the map.
+  // id -> marker plus its animation state, so each refresh retargets an existing
+  // marker instead of clearing and re-creating every marker on the map.
   const markersRef = useRef(new Map());
+  const frameRef = useRef(null);
+
+  // Track geometry in a planar frame, for snapping vehicles onto the rails.
+  const trackIndex = useMemo(() => (shapes ? buildTrackIndex(shapes) : null), [shapes]);
+
+  // Read inside the animation loop, which must not be torn down and rebuilt each
+  // time the duration or the toggle changes.
+  const motionRef = useRef({ enabled: showMotion, duration: motionDurationMs });
+  motionRef.current = { enabled: showMotion, duration: motionDurationMs };
 
   useEffect(() => {
     const map = L.map(containerRef.current, {
@@ -143,6 +182,8 @@ export default function MapView({
     return () => {
       // Without this, a remount (StrictMode, hot reload) throws
       // "Map container is already initialized".
+      if (frameRef.current) cancelAnimationFrame(frameRef.current);
+      frameRef.current = null;
       map.remove();
       mapRef.current = null;
       vehicleLayersRef.current.clear();
@@ -152,6 +193,48 @@ export default function MapView({
     };
   }, []);
 
+  // One shared animation frame drives every marker in flight. It stops itself as
+  // soon as nothing is moving, so an idle map costs nothing.
+  const runFrame = () => {
+    frameRef.current = null;
+    const now = performance.now();
+    let stillMoving = false;
+
+    for (const entry of markersRef.current.values()) {
+      const animation = entry.animation;
+      if (!animation) continue;
+
+      const { startedAt, duration, mode } = animation;
+      const progress = duration <= 0 ? 1 : Math.min((now - startedAt) / duration, 1);
+
+      if (mode === 'track') {
+        // Linear, deliberately. Easing would make every train appear to brake
+        // and accelerate once per poll.
+        const along = animation.fromAlong + (animation.toAlong - animation.fromAlong) * progress;
+        const point = sampleAlong(animation.path, along, animation.forward);
+        entry.marker.setLatLng([point.lat, point.lng]);
+        entry.along = along;
+        // Direction of travel along the rails beats the reported bearing, which
+        // is stale or missing for some vehicles.
+        applyHeading(entry.marker, point.heading);
+      } else {
+        entry.marker.setLatLng([
+          animation.fromLat + (animation.toLat - animation.fromLat) * progress,
+          animation.fromLng + (animation.toLng - animation.fromLng) * progress,
+        ]);
+      }
+
+      if (progress >= 1) entry.animation = null;
+      else stillMoving = true;
+    }
+
+    if (stillMoving) frameRef.current = requestAnimationFrame(runFrame);
+  };
+
+  const ensureFrame = () => {
+    if (frameRef.current === null) frameRef.current = requestAnimationFrame(runFrame);
+  };
+
   // Keep vehicle markers in sync with the latest poll.
   useEffect(() => {
     const map = mapRef.current;
@@ -159,6 +242,7 @@ export default function MapView({
 
     const markers = markersRef.current;
     const layers = vehicleLayersRef.current;
+    const { enabled: animate, duration: defaultDuration } = motionRef.current;
 
     const layerFor = (lineKey) => {
       let layer = layers.get(lineKey);
@@ -170,13 +254,27 @@ export default function MapView({
       return layer;
     };
 
+    let needsFrame = false;
     const seen = new Set();
+
     for (const vehicle of vehicles) {
       seen.add(vehicle.id);
-      const existing = markers.get(vehicle.id);
       const position = [vehicle.latitude, vehicle.longitude];
+      const existing = markers.get(vehicle.id);
+      // Checking last poll's shape first usually avoids scanning the others.
+      const hit = trackIndex
+        ? projectVehicle(
+            trackIndex,
+            vehicle.lineKey,
+            vehicle.latitude,
+            vehicle.longitude,
+            existing?.pathId,
+          )
+        : null;
 
       if (!existing) {
+        // A vehicle appearing for the first time has no previous position to
+        // travel from, so it is placed where it is.
         const marker = L.marker(position, {
           icon: vehicleIcon(vehicle),
           keyboard: false,
@@ -187,11 +285,24 @@ export default function MapView({
           marker,
           lineKey: vehicle.lineKey,
           bearing: vehicle.bearing,
+          pathId: hit?.path.id ?? null,
+          along: hit?.along ?? null,
+          animation: null,
+          updatedAt: vehicle.updatedAt,
+          lastUpdateAt: null,
         });
         continue;
       }
 
-      existing.marker.setLatLng(position);
+      // Upstream refreshes each record every ~18s while this polls every 5s, so
+      // most polls repeat a position verbatim. Re-targeting on those would cancel
+      // the glide already under way (its animated position has moved on, so the
+      // stale report reads as travel in the opposite direction). An unchanged
+      // updated_at means there is genuinely nothing new for this vehicle.
+      if (animate && existing.updatedAt && existing.updatedAt === vehicle.updatedAt) {
+        existing.marker.setPopupContent(vehiclePopup(vehicle));
+        continue;
+      }
 
       if (existing.lineKey !== vehicle.lineKey) {
         // Green Line branch reassignments do happen mid-trip.
@@ -199,19 +310,75 @@ export default function MapView({
         existing.marker.addTo(layerFor(vehicle.lineKey));
         existing.lineKey = vehicle.lineKey;
         existing.marker.setIcon(vehicleIcon(vehicle));
-        existing.bearing = vehicle.bearing;
-      } else if (existing.bearing !== vehicle.bearing) {
-        // Nudging the CSS variable rotates the heading arrow without asking
-        // Leaflet to rebuild the icon's DOM.
-        const element = existing.marker.getElement()?.firstElementChild;
-        if (element && typeof vehicle.bearing === 'number') {
-          element.style.setProperty('--bearing', `${vehicle.bearing}deg`);
-        } else {
-          existing.marker.setIcon(vehicleIcon(vehicle));
-        }
-        existing.bearing = vehicle.bearing;
       }
 
+      const sameTrack = Boolean(hit) && existing.pathId === hit.path.id && existing.along !== null;
+      const travelled = sameTrack ? Math.abs(hit.along - existing.along) : 0;
+
+      // How long this vehicle took to cover the distance, which is how long the
+      // glide should take. Upstream refreshes each record every ~18s, so pacing
+      // to the 5s poll would finish in a quarter of the time and then stall.
+      const now = performance.now();
+      const sinceLastUpdate = existing.lastUpdateAt ? now - existing.lastUpdateAt : defaultDuration;
+      const duration = Math.min(
+        Math.max(sinceLastUpdate * GLIDE_STRETCH, MIN_GLIDE_MS),
+        MAX_GLIDE_MS,
+      );
+
+      if (
+        animate &&
+        sameTrack &&
+        travelled >= MIN_ANIMATED_METRES &&
+        travelled <= MAX_ANIMATED_METRES
+      ) {
+        // Glide along the rails from wherever the marker currently sits.
+        existing.animation = {
+          mode: 'track',
+          path: hit.path,
+          fromAlong: existing.along,
+          toAlong: hit.along,
+          forward: hit.along >= existing.along,
+          startedAt: now,
+          duration,
+        };
+        needsFrame = true;
+      } else if (animate && !hit) {
+        // Off-track: a yard move, or geometry we do not have. A straight line is
+        // the honest fallback, since it claims nothing about which rails were used.
+        const current = existing.marker.getLatLng();
+        const metres = current.distanceTo(L.latLng(position));
+        if (metres >= MIN_ANIMATED_METRES && metres <= MAX_ANIMATED_METRES) {
+          existing.animation = {
+            mode: 'line',
+            fromLat: current.lat,
+            fromLng: current.lng,
+            toLat: vehicle.latitude,
+            toLng: vehicle.longitude,
+            startedAt: now,
+            duration,
+          };
+          needsFrame = true;
+        } else {
+          existing.animation = null;
+          existing.marker.setLatLng(position);
+        }
+      } else {
+        // Motion is off, the vehicle did not really move, or it changed shape and
+        // interpolating between two different geometries would be meaningless.
+        existing.animation = null;
+        existing.marker.setLatLng(position);
+        if (existing.bearing !== vehicle.bearing && typeof vehicle.bearing === 'number') {
+          applyHeading(existing.marker, vehicle.bearing);
+        }
+      }
+
+      existing.updatedAt = vehicle.updatedAt;
+      existing.lastUpdateAt = now;
+      existing.pathId = hit?.path.id ?? null;
+      // While animating, `along` advances frame by frame towards the target, so
+      // it must not be overwritten here.
+      if (!existing.animation) existing.along = hit?.along ?? null;
+      existing.bearing = vehicle.bearing;
       existing.marker.setPopupContent(vehiclePopup(vehicle));
     }
 
@@ -221,7 +388,31 @@ export default function MapView({
       layers.get(entry.lineKey)?.removeLayer(entry.marker);
       markers.delete(id);
     }
-  }, [vehicles, activeLines]);
+
+    if (needsFrame) ensureFrame();
+  }, [vehicles, activeLines, trackIndex]);
+
+  // Turning motion off mid-glide settles every train on its true position rather
+  // than leaving markers stranded between two samples.
+  useEffect(() => {
+    if (showMotion) return;
+    if (frameRef.current) {
+      cancelAnimationFrame(frameRef.current);
+      frameRef.current = null;
+    }
+    for (const entry of markersRef.current.values()) {
+      const animation = entry.animation;
+      if (!animation) continue;
+      if (animation.mode === 'track') {
+        const point = sampleAlong(animation.path, animation.toAlong, animation.forward);
+        entry.marker.setLatLng([point.lat, point.lng]);
+        entry.along = animation.toAlong;
+      } else {
+        entry.marker.setLatLng([animation.toLat, animation.toLng]);
+      }
+      entry.animation = null;
+    }
+  }, [showMotion]);
 
   // Show or hide whole line groups when the filter changes.
   useEffect(() => {

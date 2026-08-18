@@ -6,11 +6,11 @@ import { usePolledResource } from './hooks/usePolledResource';
 import { fetchAlerts, fetchShapes, fetchStations, fetchVehicles } from './api/mbta';
 import { LINE_KEYS } from './lib/lines';
 
-// Vehicle positions update roughly every 5 seconds upstream, so polling faster
-// than this only burns rate limit. Alerts change on the order of minutes. Station
-// and track geometry are static, so they are fetched once per page load with no
-// interval at all.
-const VEHICLE_INTERVAL_MS = 10000;
+// Individual vehicle records refresh roughly every 18 seconds upstream, so most
+// polls return identical data and polling faster mainly shortens the wait for the
+// ones that did change. Alerts change on the order of minutes. Station and track
+// geometry are static, so they are fetched once per page load with no interval.
+const VEHICLE_INTERVAL_MS = 5000;
 const ALERT_INTERVAL_MS = 60000;
 
 function formatClock(timestamp) {
@@ -22,6 +22,7 @@ export default function App() {
   const [activeLines, setActiveLines] = useState(() => new Set(LINE_KEYS));
   const [showStations, setShowStations] = useState(true);
   const [showRoutes, setShowRoutes] = useState(true);
+  const [showMotion, setShowMotion] = useState(true);
   const [alertsOpen, setAlertsOpen] = useState(false);
 
   const vehicles = usePolledResource(fetchVehicles, VEHICLE_INTERVAL_MS);
@@ -107,6 +108,14 @@ export default function App() {
             />
             <span>Stations</span>
           </label>
+          <label className="toggle" title="Glide trains along the track between updates">
+            <input
+              type="checkbox"
+              checked={showMotion}
+              onChange={(event) => setShowMotion(event.target.checked)}
+            />
+            <span>Motion</span>
+          </label>
           <button
             type="button"
             className="button"
@@ -139,6 +148,8 @@ export default function App() {
           activeLines={activeLines}
           showStations={showStations}
           showRoutes={showRoutes}
+          showMotion={showMotion}
+          motionDurationMs={VEHICLE_INTERVAL_MS}
         />
         {alertsOpen && (
           <AlertsPanel

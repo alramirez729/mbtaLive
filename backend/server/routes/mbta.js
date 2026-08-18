@@ -7,8 +7,10 @@ const shapes = require('../data/shapes.json');
 
 const router = express.Router();
 
-// Vehicles move constantly, alerts change over minutes.
-const TTL = { vehicles: 5000, alerts: 60000 };
+// Vehicles move constantly, alerts change over minutes. The vehicle TTL sits
+// below the client's 5s poll so a poll is not repeatedly served a cache entry
+// that is about to expire, which would make the arrival of new data uneven.
+const TTL = { vehicles: 2500, alerts: 60000 };
 
 // Let Vercel's CDN serve most repeat hits, and keep serving the last good copy
 // while a refresh is in flight.
@@ -28,7 +30,7 @@ function handler(key, ttlMs, seconds, producer) {
   };
 }
 
-router.get('/vehicles', handler('vehicles', TTL.vehicles, 5, mbta.getVehicles));
+router.get('/vehicles', handler('vehicles', TTL.vehicles, 3, mbta.getVehicles));
 router.get('/alerts', handler('alerts', TTL.alerts, 60, mbta.getAlerts));
 
 // Served straight from the snapshots: no upstream call, no cache to warm.
