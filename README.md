@@ -104,6 +104,24 @@ Two upstream quirks worth knowing:
   diversion, and MBTA attaches them to the line they replace, so including them
   drew an Orange Line shape along the roads a shuttle happened to use.
 
+## Focusing one line
+
+Clicking a line row on `/subway` isolates that line and frames the whole of it,
+the same move as picking a bus route. Each row carries two actions, because the two
+are genuinely different questions:
+
+- **The row** isolates the line and zooms to fit it, from Bowdoin to Wonderland for
+  Blue, or out to Providence and Worcester for Commuter Rail.
+- **The checkbox** shows or hides that line without moving the map, so several
+  lines can be compared at once.
+
+Hand-picking with the checkboxes clears the focus highlight, since the view is then
+no longer focused on any one line. "All lines" restores everything.
+
+The extent comes from the stations already loaded, not from the geometry, and a
+counter in the focus state means clicking the same line again re-frames it rather
+than doing nothing.
+
 ## Station labels
 
 Station names appear beside their dots on `/subway` once you zoom past 15, the same

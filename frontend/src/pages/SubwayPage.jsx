@@ -22,6 +22,9 @@ function formatClock(timestamp) {
 
 export default function SubwayPage() {
   const [activeLines, setActiveLines] = useState(() => new Set(RAIL_LINE_KEYS));
+  // Which line is isolated, and a counter so clicking the same line again
+  // re-frames it rather than doing nothing.
+  const [focus, setFocus] = useState({ lineKey: null, nonce: 0 });
   const [layers, setLayers] = useState({
     showRoutes: true,
     showStations: true,
@@ -37,6 +40,8 @@ export default function SubwayPage() {
   const shapes = usePolledResource(fetchShapes);
 
   const toggleLine = useCallback((lineKey) => {
+    // Hand-picking lines means the view is no longer "focused on" any one of them.
+    setFocus({ lineKey: null, nonce: 0 });
     setActiveLines((previous) => {
       // A new Set each time, because the map effects key off identity.
       const next = new Set(previous);
@@ -46,7 +51,14 @@ export default function SubwayPage() {
     });
   }, []);
 
+  // Isolate one line and frame the whole of it, the way picking a bus route does.
+  const focusLine = useCallback((lineKey) => {
+    setActiveLines(new Set([lineKey]));
+    setFocus((previous) => ({ lineKey, nonce: previous.nonce + 1 }));
+  }, []);
+
   const setAllLines = useCallback((enabled) => {
+    setFocus({ lineKey: null, nonce: 0 });
     setActiveLines(enabled ? new Set(RAIL_LINE_KEYS) : new Set());
   }, []);
 
@@ -81,6 +93,17 @@ export default function SubwayPage() {
     ).length;
   }, [alerts.data, activeLines]);
 
+  // Every station on the focused line, which is what the map frames itself to.
+  const fitPoints = useMemo(() => {
+    if (!focus.lineKey || !stations.data) return null;
+    const points = stations.data
+      .filter((station) => station.lineKeys?.includes(focus.lineKey))
+      .map((station) => [station.latitude, station.longitude]);
+    return points.length ? points : null;
+    // nonce is in here so re-picking the same line re-frames it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [focus.lineKey, focus.nonce, stations.data]);
+
   const lastUpdated = formatClock(vehicles.updatedAt);
   const isStale = Boolean(vehicles.error && vehicles.data);
   const hiddenLines = RAIL_LINE_KEYS.length - activeLines.size;
@@ -97,6 +120,7 @@ export default function SubwayPage() {
         showMotion={layers.showMotion}
         motionDurationMs={VEHICLE_INTERVAL_MS}
         stationLabels
+        fitPoints={fitPoints}
       />
 
       <div className="hud hud--top-left">
@@ -128,6 +152,8 @@ export default function SubwayPage() {
             counts={counts}
             onToggle={toggleLine}
             onSetAll={setAllLines}
+            onFocus={focusLine}
+            focusedLine={focus.lineKey}
             layers={layers}
             onLayerChange={setLayer}
           />
