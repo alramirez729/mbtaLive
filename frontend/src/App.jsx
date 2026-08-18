@@ -4,8 +4,15 @@ import Panel from './components/Panel';
 import FilterPanel from './components/FilterPanel';
 import AlertsPanel from './components/AlertsPanel';
 import { usePolledResource } from './hooks/usePolledResource';
-import { fetchAlerts, fetchShapes, fetchStations, fetchVehicles } from './api/mbta';
-import { LINE_KEYS } from './lib/lines';
+import {
+  fetchAlerts,
+  fetchBuses,
+  fetchBusShapes,
+  fetchShapes,
+  fetchStations,
+  fetchVehicles,
+} from './api/mbta';
+import { BUS_LINE_KEYS, DEFAULT_LINE_KEYS, LINE_KEYS } from './lib/lines';
 
 // Individual vehicle records refresh roughly every 18 seconds upstream, so most
 // polls return identical data and polling faster mainly shortens the wait for the
@@ -20,7 +27,9 @@ function formatClock(timestamp) {
 }
 
 export default function App() {
-  const [activeLines, setActiveLines] = useState(() => new Set(LINE_KEYS));
+  // Rail only on a first visit; bus is opt-in because it is several times the
+  // fleet size and 176 more route shapes.
+  const [activeLines, setActiveLines] = useState(() => new Set(DEFAULT_LINE_KEYS));
   const [layers, setLayers] = useState({
     showRoutes: true,
     showStations: true,
@@ -30,10 +39,30 @@ export default function App() {
   // and on desktop the second would sit on top of the first.
   const [openPanel, setOpenPanel] = useState(null);
 
+  // Nothing bus-related is requested until a bus line is switched on.
+  const busEnabled = useMemo(
+    () => BUS_LINE_KEYS.some((key) => activeLines.has(key)),
+    [activeLines],
+  );
+
   const vehicles = usePolledResource(fetchVehicles, VEHICLE_INTERVAL_MS);
+  const buses = usePolledResource(fetchBuses, VEHICLE_INTERVAL_MS, busEnabled);
   const alerts = usePolledResource(fetchAlerts, ALERT_INTERVAL_MS);
   const stations = usePolledResource(fetchStations);
   const shapes = usePolledResource(fetchShapes);
+  const busShapes = usePolledResource(fetchBusShapes, 0, busEnabled);
+
+  // The map takes one list of each; which feed a vehicle came from stops
+  // mattering once it has a lineKey.
+  const allVehicles = useMemo(() => {
+    if (!buses.data) return vehicles.data;
+    return [...(vehicles.data ?? []), ...buses.data];
+  }, [vehicles.data, buses.data]);
+
+  const allShapes = useMemo(() => {
+    if (!busShapes.data) return shapes.data;
+    return [...(shapes.data ?? []), ...busShapes.data];
+  }, [shapes.data, busShapes.data]);
 
   const toggleLine = useCallback((lineKey) => {
     setActiveLines((previous) => {
@@ -59,11 +88,11 @@ export default function App() {
 
   const counts = useMemo(() => {
     const tally = new Map();
-    for (const vehicle of vehicles.data ?? []) {
+    for (const vehicle of allVehicles ?? []) {
       tally.set(vehicle.lineKey, (tally.get(vehicle.lineKey) ?? 0) + 1);
     }
     return tally;
-  }, [vehicles.data]);
+  }, [allVehicles]);
 
   const visibleVehicleCount = useMemo(() => {
     let total = 0;
@@ -87,9 +116,9 @@ export default function App() {
   return (
     <div className="app">
       <MapView
-        vehicles={vehicles.data}
+        vehicles={allVehicles}
         stations={stations.data}
-        shapes={shapes.data}
+        shapes={allShapes}
         activeLines={activeLines}
         showStations={layers.showStations}
         showRoutes={layers.showRoutes}
@@ -103,7 +132,10 @@ export default function App() {
           <span className="status__text">
             {vehicles.isLoading && !vehicles.data
               ? 'Connecting'
-              : `${visibleVehicleCount} train${visibleVehicleCount === 1 ? '' : 's'}`}
+              : // "trains" is wrong once buses are on the map.
+                `${visibleVehicleCount} ${busEnabled ? 'vehicle' : 'train'}${
+                  visibleVehicleCount === 1 ? '' : 's'
+                }`}
           </span>
           {lastUpdated && <span className="status__time">{lastUpdated}</span>}
         </div>
@@ -115,6 +147,7 @@ export default function App() {
           icon="☰"
           side="right"
           badge={hiddenLines}
+          badgeTitle={`${hiddenLines} line${hiddenLines === 1 ? '' : 's'} hidden`}
           open={openPanel === 'filters'}
           onOpenChange={(open) => setPanel('filters', open)}
         >
@@ -133,6 +166,7 @@ export default function App() {
           icon="!"
           side="right"
           badge={alertCount}
+          badgeTitle={`${alertCount} active alert${alertCount === 1 ? '' : 's'}`}
           open={openPanel === 'alerts'}
           onOpenChange={(open) => setPanel('alerts', open)}
         >

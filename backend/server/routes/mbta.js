@@ -1,9 +1,11 @@
 const express = require('express');
 const { cached } = require('../lib/cache');
 const mbta = require('../lib/mbta');
+const { RAIL_ROUTE_TYPES, BUS_ROUTE_TYPE } = require('../lib/lines');
 // Committed snapshots; see scripts/refresh-static.js for why these are not fetched.
 const stations = require('../data/stations.json');
 const shapes = require('../data/shapes.json');
+const busShapes = require('../data/bus-shapes.json');
 
 const router = express.Router();
 
@@ -30,7 +32,11 @@ function handler(key, ttlMs, seconds, producer) {
   };
 }
 
-router.get('/vehicles', handler('vehicles', TTL.vehicles, 3, mbta.getVehicles));
+router.get('/vehicles', handler('vehicles', TTL.vehicles, 3, () => mbta.getVehicles(RAIL_ROUTE_TYPES)));
+
+// Separate from /vehicles because bus is several times the fleet size and is off
+// by default, so a rail-only visitor never pays for it.
+router.get('/buses', handler('buses', TTL.vehicles, 3, () => mbta.getVehicles(BUS_ROUTE_TYPE)));
 router.get('/alerts', handler('alerts', TTL.alerts, 60, mbta.getAlerts));
 
 // Served straight from the snapshots: no upstream call, no cache to warm.
@@ -43,6 +49,13 @@ router.get('/stations', (req, res) => {
 router.get('/shapes', (req, res) => {
   edgeCache(res, 86400);
   res.json({ data: shapes });
+});
+
+// 149 bus routes, so this is much larger than the rail geometry and is only
+// requested once the rider turns a bus line on.
+router.get('/bus-shapes', (req, res) => {
+  edgeCache(res, 86400);
+  res.json({ data: busShapes });
 });
 
 module.exports = router;

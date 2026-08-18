@@ -1,0 +1,1234 @@
+[
+  {
+    "id": "010154",
+    "lineKey": "Bus",
+    "routeId": "1",
+    "name": "Nubian Station - Harvard Square",
+    "polyline": "qpjaGfqzpLJyB{@Mi@Ge@I]Gc@O_@e@??OO}@eAkAwAe@i@aA}@QQ??OMMKYOc@Ud@aA`@{@\\y@^cAPg@??HU^kAr@iCv@mDXcBKUkAyB??MSy@eB{@eBo@iA}@sAkAyAy@oASWc@j@??cFnG??QRgF`HeArA{@jA??mBfCaBtB{D`FcApAc@d@ST??cBdBiAfA]b@g@t@_@v@cCfEOT??CDIPqBfDKP??yAbCWf@eBtCIHSJsG~BQHkAb@??WJ}Al@oBv@_@Nu@VmAh@kC`A??WHeAb@mAf@E@iA`@wAl@gA`@mAd@KFo@V??QH{DvA_OzFwOfGs@VQFq@XqBv@u@Zu@\\_@RSJk@`@SR??EBu@v@_@f@mAjBo@lA}@jB??Wj@}@hBo@rAiA`Cm@fAeCxEi@dAQZ??EHEJc@|@aAlBg@jAa@z@Uf@sAlCy@~AgAvBc@x@??_@t@]h@IRiA`CuAlCc@x@Wf@??u@xAm@`Ai@bAg@~@i@~@CJe@bAGR{@zBWt@??m@fBu@jCa@|AEN??iAnEs@tCw@`AUZ??a@n@m@|@i@v@_AnAmChDSXWX??Y\\iAdBUx@?FQt@WxAMp@O|@"
+  },
+  {
+    "id": "040089",
+    "lineKey": "Bus",
+    "routeId": "4",
+    "name": "Design Center - North Station",
+    "polyline": "cmmaGn|ppL?[G{LiA{@Qf@??uAzD}AnEuAvD??KTo@d@_BrA{AnACBGPATDN_BjFw@jC}@tCu@|B}AfFkDxKYXk@rAc@`A??Wj@M\\}BxGkBbFa@fA??eC|GyFrNWb@_@h@GVkA~AO`@\\b@Xh@Tf@^dATl@??HRqCfC[Z??kCpCgDnD[^sAnA??A@UN[D_ARwAZ{@T??OFa@CmFbA_@H??iDr@w@\\s@ZGF??c@^k@f@s@n@UTS\\Qb@g@lBGb@If@o@~DaA`AuErF"
+  },
+  {
+    "id": "040096",
+    "lineKey": "Bus",
+    "routeId": "4",
+    "name": "Design Center - North Station via South Station",
+    "polyline": "ekmaGbyqpLaD~FqBrD??oAzB]p@GNqBnEq@~Ao@vA??}BlF_@`AgBbF??aAjCmBlFm@bCmCrH??GRmDpJm@dBwCnHYbA??M`@QSe@m@MUMUeAiCs@kBSg@??u@oBaCeGOY]c@GE??e@[_ASWGi@GeBO??GAcACm@?YBWBc@PIDOLUVc@\\YLoDn@q@LQB??e@H_ARy@TUJKFYNa@V_@Za@`@KN??]d@c@_@g@_@WYOUa@y@w@sBWc@USMEQIe@AkFJy@Bu@AoBAqBFo@Ba@Di@L_@LUHOHSNq@r@YZa@h@Wz@??IVa@xAa@vAYjASp@K^G\\Y~Am@vDOz@CT?R?TBVDPFLnA`C??LTR^rAfBdAxApAvCN\\b@dATp@"
+  },
+  {
+    "id": "070190",
+    "lineKey": "Bus",
+    "routeId": "7",
+    "name": "Otis St & Summer St - City Point",
+    "polyline": "{hoaGvrupLZZlAyBd@o@HMNUF]TcBLc@Na@b@kARq@b@yBf@eBPa@??dCmGl@eBlDqJx@aC??zAeEdAyBpByF????vCqI`@aABInDkI^}@??dCyFLYrEgI??@CxByDt@sA??HQjAwB^aAj@_AlAaCdByCd@m@TQROp@]b@M\\In@G~CE??vBCbCCdEC??P?tCC??L?dDCfAA??bBCEaLE{KAg@??C{I??AUEyK?y@??GuI???WkDBcDB_@@??eC@@`D@hDBbA???XDrH?nA??@V?dC@tE@H?h@"
+  },
+  {
+    "id": "080291",
+    "lineKey": "Bus",
+    "routeId": "8",
+    "name": "Kenmore Station - Harbor Point via South Bay Center",
+    "polyline": "}gnaGry|pL?SEOGGU?@pA@f@RvAFv@@v@L|@VBh@@D@DBHD\\`@n@n@??rDvDx@z@??LNhAlA`@\\h@f@tBzBvA~ARX??HHbChCZ^~@bA??xA~An@p@NNt@v@VZz@~@??p@t@lBpB~A~A|BbC??DDZ^vB|BlCvC`@{@??fBsDt@aBPg@Rq@l@uBAAFY??d@cBf@eBX{@OKQIMAGBGHe@Y??_@Sm@a@oD{BiBeAgDyB??AAKIGICGAQCWlA}An@gAh@y@f@_A^}@Vs@\\eAJc@DUBYPy@FQFMT[h@_Bd@sA`@iAZ_ADOLc@Pq@Jc@??@It@uCn@uB`@}A??H[DMb@}Af@aBp@oCX{@FSHWL[YWMG{@{@qAwAi@q@??W]q@cAw@sAMc@@WBQHOJINEL?LFJHPHPNRT??Tb@HL\\b@??`CbDfAvA`@`@PO`CiB\\QVU}AwD^QRQHMv@aBb@{@j@_A??JS`@_AvAsC??LU`@}@v@gBd@}@nAqB??NWbDdClA~@h@wAn@_BLKX`@TR\\XJqB??JyB{@Mi@Ge@I]Gc@O_@e@??OO}@eAkAwAe@i@aA}@QQ??OMMKYOc@UOGqBmAo@i@[a@s@cA}AaBGGsAeBa@k@??}C_EkAcB??OUKOwA{BaBeCQ]??iAgBcBiCmAqB??KQsC_FwAgCmAuB??S]q@kAp@gCXqANq@d@oCJNp@|@??JPxApBp@|@x@fApAbB??LNpAfBnAbBrBlC\\b@|@fAdDkE??\\c@~AuBbAxANVpB`DlArBRVh@u@??z@oAlAmBHg@|@iAb@u@`@e@h@i@vAoA??XWtBiBh@a@n@m@lByAvAgA`CkBpAcATO??hA_AxAkAd@_@FERSKc@K_@OY_@[gAk@e@SUCQ?UDoBtAyDuBaAg@{BoAKImB_AVqB??TwBFk@NWVGd@FLAJIFGFK@Q?gA?]???Y?e@Fe@FSFQLQb@a@`B_BVQNELCR?RDTDVJfFbCz@b@??vCzAVP^PDD??FF`@t@FP@PAXIn@V?NBPRh@nAJl@h@tAt@vBJIj@a@jBwAl@g@t@q@HI??lAeAfEgD|BeBrAeA??|@u@X[NU\\k@Rk@Lq@??Ji@Fe@Fo@FeAA_CEy@Eq@Em@U{AOo@[cAUs@c@_AIe@i@cBCI??M_@Om@Q}@OeAEu@CsBAi@AiDKg@AeC@u@@W@s@Bc@@OAQCQEQKQc@g@OWCM?I@KFMBGDGRDV@RAREVIX?LBNJLPDLDZg@hBB@FDXDbBy@b@x@f@lABPCRGLMHK@MIYEs@F??}@DMJOLKBMCMIKSBG^sARy@f@iB`@yAJYz@kCZmAJc@??~@cEnAaFv@gD??x@uDr@_DlA_FNm@??p@qC`B}G"
+  },
+  {
+    "id": "090262",
+    "lineKey": "Bus",
+    "routeId": "9",
+    "name": "Copley Station - City Point",
+    "polyline": "wnnaG`iypLCOsB{K??CSaAmFo@}DEU??w@kEq@oDIoAvAg@t@Y??NGrAe@bBg@~Ac@|@Qx@Ol@M??NE\\K`@Kx@SLGFCHEVQf@c@RUP]Fe@??T}AHi@v@uFVyB^aDNkA??BUt@mGb@qD??j@{EZHrErAhC|@d@{CF_@Lu@JcAVkENcDNyBLm@^_An@}@l@w@??DIhDgGzB_EXe@x@yAR_@??fAmBnA}BXi@\\i@dAqBNW??Ra@j@{@Ta@dBaDj@aAr@oAR_@??pDsGXe@??tEcI??^q@?q@EkF?Y??ImN???SCaH???]AsFCoF???WEoEAiD??ASEaLE{KAg@??C{I??AUEyK?y@??GuI???WkDBcDB_@@??eC@@`D@hDBbA???XDrH?nA??@V?dC@tE@H@hB@vBk@@Q?Q?@uE"
+  },
+  {
+    "id": "1000191",
+    "lineKey": "Bus",
+    "routeId": "100",
+    "name": "Wellington Station - Elm St",
+    "polyline": "wvxaG|~xpL@OIQYIKA??OC]CgAIe@BSHSD]p@Gj@Ad@ARE\\EPEFIFODq@?SA]D@qB@wAAo@??A[?aABWDUFIPDNJFTF~AC|@AlA?bB?bCAd@BnBCbAAn@Cv@GbAMtAWtBUrACVW|@Of@Yj@{AT_AXUJ??yBx@yAr@y@f@eAx@[V??OL_Ax@aCfBsAt@WL??m@XiBn@}A\\gAN}@Hg@Bo@@iAC]A??_@A{@Ku@Kq@MeDu@UEk@Mo@Kk@Gg@Aa@@m@Fs@Ps@ZaAp@??OJaBlAoAx@kAn@c@R_@N[L??E@[Ju@N{@H[Bc@?eAA]C??mGQgCIc@Bg@L]L??UJ[Rc@^c@h@a@d@a@t@Mn@Ef@Cl@Ev@CPQfAa@vAm@lAm@dAOb@CH??UbAMp@MvAKvACj@??EfAAZAzAEtBEh@Cd@MtAW|AOz@YvAUzAMhAK~AGhBAj@???VQhGMhCQbCYlB]pBQ`@Yt@???@_@v@e@n@g@f@k@V}@P}@HyBL]EIC??c@I{@Gc@G[Eq@@kBDgCeA[K??yDqAaCs@eCm@??WIcBQ_AGo@De@Li@`@a@\\w@TKBiAV"
+  },
+  {
+    "id": "100267",
+    "lineKey": "Bus",
+    "routeId": "10",
+    "name": "Arlington Station - City Point via South Bay Center",
+    "polyline": "wtnaGn}wpLXvAh@`Dr@xDd@nC??fAxGp@xEXjBJ`@??DRJZHRPFhDlE`@l@B@N@FEDGDQAWUoCe@_DvDyA??lHwCx@[jAe@??NGv@Yj@U|@[rCkA~B}@??NGTEXU\\c@d@m@tAgBJK??HMtA_BPUPWBGDMJa@Hi@??Js@PmAp@gCXqANq@d@oCJNp@|@??JPxApBp@|@x@fApAbB??LNpAfBnAbBTZ??|ApB\\b@|@fAdDkE??\\c@~AuBbAxANVpB`DlArBRVh@u@??z@oAlAmBHg@|@iAb@u@`@e@h@i@vAoA??XWtBiBh@a@n@m@lByAvAgA`CkBpAcATO??hA_AxAkAd@_@FERSn@c@tC_C`@Y??d@a@tBeBJIAc@s@eBSk@m@{@i@oAQSOCW?Ho@@YAQGQa@u@MMCA??[OWQmE}B??EAgFcCWKUESES?MBODWPaB~Ac@`@MPGPGRGd@?d@?b@???R?fAAPGJGFUG_@OGGIMGa@h@mE@ERcBP_BToBZkDDSl@kE}@BGICS?}A???gCd@?n@?Qk@KW??_AcCk@eBOa@iAaDKUEM??Um@Sa@]q@}@{AMUIQ??GKaAmBs@wA]q@y@cB??IQU_@OUCC_@s@_@{@i@eBOa@??]{@Oe@]{@i@aBs@gBM]??CGGOUq@o@_Bs@_B[_AMi@??CI?q@EkF?Y??ImN???SCaH???]AsFCoF???WEoEAiD??ASEaLE{KAg@??C{I??AUEyK?y@??GuI???WkDBcDB_@@??eC@@`D@hDBbA???XDrH?nA??@V?dC@tE@H@hB@vBk@@Q?Q?@uE"
+  },
+  {
+    "id": "1010374",
+    "lineKey": "Bus",
+    "routeId": "101",
+    "name": "Sullivan Square Station - Malden Center Station",
+    "polyline": "kcuaGx`ypLtA@FIBKi@}BWOm@CKAc@Cq@M}Ac@w@~B]t@g@j@wAhBmAxAILiA|A~@tCT^XNVPYrBo@hDUnAGX??CLYxAMd@Mr@AH_@lBYlAc@hB??I^UbAW~@i@bBQZ_@pAWr@_@`AM\\??IVgAtCWp@K^]`Ay@bCS`@mAhD}@zBg@nA??IRg@nAs@tAe@x@u@bA[f@??s@hAc@`A_@~@o@pAo@hBYn@a@bAm@tACB??e@jAm@tAa@`Ao@zAc@z@y@rB??ADkAz@g@Vk@d@_At@iAhAWX??mArA[^k@t@KLs@z@??ONqAhBu@bAg@r@o@hAq@pA??IRe@x@Yb@k@~@u@dAkBpC??U\\w@jAyArBmAfBq@`A??GHAF@J?FLt@gBh@_@Ra@Rs@TkBp@[L??A?uAh@eAb@q@R}Af@??QFoBr@]H}Af@uBl@[H??uA`@_Ct@_Bj@sBt@SD??ODmAh@qBf@gAT??QBuAZ_ANy@P]D??SD{@J}@F_ABw@?e@?a@Ag@C??OAyBMs@Ck@?K[IQEMOHa@JSDM?}@???oCAU?}@Kk@KSGwAu@e@]WSIMEOASb@_CRiA??RgAn@uCRaA`DjBp@aCBu@C[EUYe@??wAqA{@|CwAMa@E{@C??kAE@WSu@EIa@w@_@k@KOM]?U@QFYBMHSV[R]La@@W@{@C]I_@Yo@W_@KSKWK]Ga@QeBe@uAMa@??IS_@{@o@iB]}@a@}AOe@u@iC??_@mAmBaGKe@??YoAMcAMeAYgDGg@??Ks@MkAKoAMsAQcB[uASw@???ASm@g@eAgAiBYg@??OYWi@q@sAm@_AUe@sCcFSw@QiA[yB??E[EUG]g@_EGY??Im@McAW_Bg@oC_@cCa@aCSkAKiACWEk@AI??AWGqAYyE??AWe@oHS}CDc@??Fm@TgBT_A^gApA{CQc@eBk@"
+  },
+  {
+    "id": "1040162",
+    "lineKey": "Bus",
+    "routeId": "104",
+    "name": "Airport Station - Malden Center Station",
+    "polyline": "eisaGz{opLrAbARINI@AHKBUCq@]AmBMsAIc@MMIKK}CuDUYKS]s@IQY]mDoEyAq@]SUQoAnCcJeGkEqF{E_GOKKAQ?I@KFMJmApAc@a@m@a@]Sm@YcA]w@Qw@Ig@D}Al@aB~@_B|@qDvBOpAQbB??q@lGk@zEoBlQ??E^sAxHQx@Kn@??_AlF??GZu@`E[bBMhAkAc@g@Wa@MoBaAm@S{Aw@e@Q??i@Uu@oAa@iAEI}@oBm@Ck@l@i@j@S`@DRN^bCj@TFrBl@??NDNb@tD~H??HPxDbIkAjAcAfAWX??UVs@NgAP{AZwAXmAR??sATaC`@iBZl@nA??z@hBpAlC~@jBv@dB??dAxBiFxFkDtDqCpCi@j@??uE|EUVeDjDwA|AMJ??KJmArAiBpB}A|AY`@qDlFmBpCm@z@??q@`AmAjBaAvAWb@c@l@aAxA_ApA??QVkA`BiAdB}@tA{@hAiBeB??g@g@gAu@cA}@]WqAsAe@e@_@]??MMg@_@qAmAyAsAmBcBq@s@_CqBe@e@??MOa@[kBaByBqB??MMaBsAoAmAsAiAo@i@k@c@aAy@c@[gA{@gA}@UQk@f@_@\\??s@j@a@Re@Pu@L{@Tm@P[Tq@d@k@n@a@j@c@|@m@zA??IPWz@]~@kAzCy@vB[`A_@z@a@x@Sb@Qb@a@t@EN??Yv@Qb@WdAI^I^YlAEPw@fD?@??IXKl@Ql@Wv@ITw@~A_@j@??KN_@`Aa@jAg@pB{@jD??GVu@xCg@xBMf@StAKT??IPmBpDi@z@GF??UTg@\\eAp@{@j@e@\\YPVpAHfA???D?jAAtAKrC?pBElAAlBI|E??Aj@GrDExBCpBIrAKjAUpAcAWsAe@a@KcAIJh@Nl@~@X"
+  },
+  {
+    "id": "1050160",
+    "lineKey": "Bus",
+    "routeId": "105",
+    "name": "Sullivan Square Station - Malden Center Station",
+    "polyline": "geuaGtaypLxCBDGDKG_@i@}BWOm@CKAEAUKGKEOA_@^g@Te@N[DSRaAFo@D]@_@CYK[OSSMSMUGg@GwAOiAUQA??qAKmAM}BOcBWMCkAi@kJ{EiCeAiNoK??aHmF{AqA????q@k@kD}CeAcAiAaAaA_A??GEi@e@eAaAoAiAi@e@c@_@}@w@YUu@u@??MMqAiAaByAiAiA_@_@??KIc@u@]q@g@w@e@o@_@YMI}@]CCe@YKUSWSIQGQA[ASFWT]h@Mt@ILQZ_@VaAr@GFKTc@Nc@RMB??WF[Dc@Be@Di@@SD??QDWF]Pg@Xe@NOH[Hc@Fw@FuAH]B??]@iBDmBN_@BoBJ??S@gCTsAJ??QBaBZs@Ry@T??QFcBb@q@RiB`@iBZ]HM@??SDu@Pi@VmB`AeBbA??SJmDfBg@TUJcAT]D??UB{BJgBJ_BLIe@??Ku@Mi@Km@Kq@OcAUqAq@oB??GUSk@i@{Ae@oA_@kASk@??GSSe@Qe@k@sA_@_A??KSiAcBeB{CUW??m@u@aAsAcCcDeAwAs@aAU]??GIa@]g@YSIo@We@Uo@_@s@i@_Ai@m@c@`BeC??FI|AeCx@eAp@eAXa@??pAeBxAgC|@yAQY??S]GQ?WEyDAc@Yc@iBaDi@u@??SUFM@I?GCIGIGEE?SkFo@v@aAdB??Yd@mApB]h@qAjB}AxBOT??MNg@p@GFaAzAiA~AiAdBe@v@??MPt@hAd@n@pAlB??LN_@|@e@xAIt@Dx@R~A??Hl@j@zC??FTwAr@mClA`A|CL\\??d@tArCbIj@xA??HTj@bC\\tBNxB\\~AXd@f@\\l@Bj@Tj@vA`@dA??HXp@bBl@rAzClIZ~@\\tAFP??JVq@TeAb@k@ReAHgAD[A??o@AYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@h@a@JUBSB??O@yAJiAH_@fD??CVIpAAb@ErA?x@DnCNdDDf@??J`BNhCJh@Nh@Tf@PRl@j@n@P`AJ~@@Jh@Nl@~@X"
+  },
+  {
+    "id": "1060305",
+    "lineKey": "Bus",
+    "routeId": "106",
+    "name": "Wellington Station - Lebanon Loop",
+    "polyline": "wvxaGp`ypL@cAIQYIKA??OC]CgAIy@c@OOUMCIMOQ_@Kc@E}APoBRwAf@cDl@eEZqBPgAJo@Jc@J]N_@R_@Ve@bCkCr@mAKIKGIC]CUA]MMGOMKQKUOs@@UJoABW??Hw@Do@D}@FkB?eACeCKkEA]EcB?a@BiABs@Fm@J_@P]f@u@NQHGVc@DMBIDSBc@?]Ga@IYKUSWSIQGQA[ASFWT]h@Mt@ILQZ_@VaAr@GFKTc@Nc@RMB??WF[Dc@Be@Di@@SD??QDWF]Pg@Xe@NOH[Hc@Fw@FuAH]B??]@iBDmBN_@BoBJ??S@gCTsAJ??QBaBZs@Ry@T??QFcBb@q@RiB`@iBZ]HM@??SDu@Pi@VmB`AeBbA??SJmDfBg@TUJcAT]D??UB{BJgBJ_BL]F??a@Fq@NeC|@sAr@i@\\??OJkBnAs@\\WHUH??G@e@Fk@FeCDoAB??]@q@TeAb@k@ReAHgADkACYC?pBElAAlBI|E??Aj@GrDExBCpBIrAKjAUpAcAWsAe@a@KcAIJh@Nl@~@X??`AXNe@Ji@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@mBc@gBcAsD??GSu@_Cw@oB[{@q@cBm@wAsAkDMY??c@cAy@sBo@eBGO??IUk@cBs@uBOc@??Y{@Kk@UeAK_ACiA?wBDyCBcB???_@IuAG}@O}BOkCCg@??IcAw@{H[kBOc@??]aAEMk@oAo@_Bs@cBw@uC??GU_@wAW}@U_AK?QE??_@Is@Uo@Wy@_@s@YKCQE??OESEs@CUBI@a@TaArAaAlA[`@GHq@n@EB[Ps@VIB??YHiARa@JE@c@P_Ah@_BbAkAv@sA~@WZ??W\\g@f@m@Rc@BuCFQ@_@HIJMRBs@B_@i@WK^"
+  },
+  {
+    "id": "1080254",
+    "lineKey": "Bus",
+    "routeId": "108",
+    "name": "Wellington Station - Linden Square",
+    "polyline": "mwxaGb`ypL?a@CMEOMSOC]CgAIe@BSHSD]p@Gj@Ad@ARE\\EPEFIFODq@?SA]D@qB@wAAo@??A[?aABWDUFIPDNJFTF~AC|@AlA?bB?bCAd@BnBCbAAn@Cv@GbAMtAWtBUrACVW|@Of@Yj@{AT_AXUJ??yBx@yAr@y@f@eAx@[V??OL_Ax@aCfBsAt@WL??m@Xl@_FLcAZiCFe@??^aD`@uD??DWqAYeA[mAYs@S??QEqCs@wA_@??QE]Gc@Am@BcDPs@LoDR}ALO@??kAFkDV??G@}CRmDV??M@g@@eCA??S?yDA}A?s@D??QBiCXqBV??QBuAPaBRaCV??SBqBVe@Ji@DeCV_@B??}BPcCP??QBYyE??AWe@oHS}CDc@??Fm@TgBT_A^gApA{CZw@JYz@kDUGcAWsAe@a@KcAIJh@Nl@~@X??`AXNe@Ji@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@mBc@gBcAsD??GSu@_Cw@oB[{@q@cBm@wAsAkDMY??c@cAy@sBo@eBGO??IUk@cBs@uBOc@??Y{@Kk@UeAK_ACiA?wBDyCBcB???_@IuAG}@O}BOkCCg@??IcAw@{H[kBOc@??]aAEMk@oAo@_Bs@cBw@uC??GU_@wAW}@U_AKc@??CKC[OiBCSM{BA_@EgACwA??AWGiH?o@??CeCAiACsAIoAE_@AG??AQKiAOmACYCo@???GAgADgBT{CBuA?Y?M??EaBQcBa@_CIk@My@E[GoCImCGsB???IAKGcAC_@y@uF]cBU{@??c@}As@iBKSiAsBq@iA??KQU]}@cBy@qBYw@??ISEOQs@EUCc@Fq@\\uAj@sAjBqDJ_@La@Pm@d@wAFO??LYPDnBd@n@XFDPJ??NJPLp@r@l@n@tB`C??LLt@z@f@l@x@t@f@p@f@r@XZLV"
+  },
+  {
+    "id": "1090225",
+    "lineKey": "Bus",
+    "routeId": "109",
+    "name": "Harvard Station - Linden Square via Sullivan Square",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@G}@AM??Go@Ie@Qa@a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNLRDF`Bm@t@[bAULUDOBUAOEQOQ}@Oe@YUUMWKYEa@Ac@BMv@sGFs@B_@HcBFeB@aBoAG{AOy@OMy@E]??Ky@a@kCI{@a@cDi@uDMcA??a@iDMaAi@cEM}@UiBg@uDm@gFOw@??m@mD_@qBa@kCO{@IaAWsCEq@?[?o@@c@?E??JwABk@D{@A]Ae@IsAEo@K{B??AECw@GwAQmDG{A?e@BSJi@DM??\\gAbAmDi@Wa@YOUAa@?k@HaADqBAe@??AYKeAQkAw@uCBiC???S?YCUI_@OUOQs@]U]a@eAEMAMw@{DY{Ac@yC??CSK_AGm@UoCKmAKgB??Eg@S{CYgCMuAMwAEe@??KoAAMMwAKuCKuAAOE[??OiAUoAaAgD}@kDIYKi@w@_DGWw@Dm@CKA}@JE?CD??kAvBGZ?NFD\\Pz@f@h@A??`C?^CM{@G_@i@}BWOm@CKAEAUKGKEOA_@^g@Te@N[DSRaAFo@D]@_@CYK[OSSMSMUGg@GwAOiAUQA??qAKmAM}BOcBWMCkAi@kJ{EiCeAiNoK??aHmF{AqA????q@k@kD}CeAcAiAaAaA_A??GEi@e@eAaAoAiAi@e@c@_@}@w@YUu@u@??MMqAiAaByAiAiA_@_@??KIc@u@]q@g@w@e@o@_@YMI}@]CCe@YKUSWSIQGQA[AWIOGOKOSMOWg@[_@kBcBYU??_CyB{AyAaAy@YWiBeB??g@g@gAu@cA}@]WqAsAe@e@_@]??MMg@_@qAmAyAsAmBcBq@s@_CqBe@e@??MOa@[kBaByBqB??MMaBsAoAmAsAiAo@i@k@c@aAy@c@[gA{@q@k@??UQUQ}@u@{@m@o@i@SO??OK_BoAi@c@??WSy@m@eA{@aAu@SOc@a@??MMe@a@eB{AsAeASQ]WKI??OMiB_Ai@OkA]WEmA]oA]??QEq@S_D{@[I??k@Qu@Sm@OqA_@q@Og@O??mA]cGaBoDcAgAY??QEeFwA{@UeBe@w@SaASBi@??E}@IgAKcAk@}Im@oJCgAKiHAaAEsACs@???WIcCGaCCi@??GaCKaDCeAEcA??AWAi@KuAUqBMgAMg@AUAS@Q@G??@GJYc@{@c@gAk@eAhAmDRc@Je@BGGBOHGBIBcAD_@?Y?iAGUA??S?f@p@f@r@XZf@bABD"
+  },
+  {
+    "id": "1100238",
+    "lineKey": "Bus",
+    "routeId": "110",
+    "name": "Wellington Station - Wonderland Station",
+    "polyline": "wvxaGzaypL@mBIQYIKA??OC]CgAIy@c@OOUMCIMOQ_@Kc@E}APoBRwAf@cDl@eEZqBPgAJo@Jc@J]N_@R_@PN\\NNDP@X@p@STS`@a@Zi@H]Bg@AYCSIYKSKMGEKIKGIC]CUA]MMGOMKQKUOs@@UJoABW??Hw@Do@D}@FkB?eACeCKkEA]EcB?a@BiABs@Fm@J_@P]f@u@NQHGVc@DMBIDSBc@?]Ga@IYKUSWSIQGQA[AWIOGOKOSMOWg@[_@kBcBYU??_CyB{AyAaAy@YWiBeB??g@g@gAu@cA}@]Wj@gBz@kBN_@??j@qA|@sBx@sBTo@??BEXu@`@oAd@uA^kAd@wBJu@VqA\\wB\\cB??H_@BKHOFGBM@GCICGMEI@QAGAwA]cCaAwBw@c@Ok@S??e@QwBw@sBw@aCy@_AW??g@OmA[yB_@g@CaAE}@@mAAiA?k@@??Q@iA?e@@E?GMg@wAe@oAk@cBg@sAUu@EWE[C]@c@?G??@YB[RkABWDq@@W?_@?SGw@MoBEi@SsCYmDEi@Es@??OiBAQOuAMo@Me@Og@a@{@Ye@e@y@??QYi@}@SYGOGWWgAo@cCISCGCISmAG_A?e@?Y@G??@MLi@HYLi@ReARiAX_BHi@??FWxAgI??`@}BZcBPaATiATyAl@eD\\eB??PaAl@cDd@oC??DUX{ARkAX{AHe@??DWh@uCn@kDDY??h@uCd@mC??FWl@eDl@kDZ_B`AoFl@cD^mBJo@??DW\\kB\\gBeAo@??SM~BaH??vAaEvA}D@k@SmBYgBGc@]}A??EWMsACcA@m@HwAXaBV}AF}@@e@?i@??A}DNy@Zy@DKDU@O@]CWEWEOOYc@UWSMUIQo@qBSw@Uo@EK??KU[a@HcAFs@P{@XgAf@iB\\wAXmA??HWd@iBb@iBRgADs@DeAB}ABq@??DaAs@KgB_@gAS}ASsAGuA?kAB]Ac@Aa@C_@GQG?OEYEe@KQGImAQ"
+  },
+  {
+    "id": "110152",
+    "lineKey": "Bus",
+    "routeId": "11",
+    "name": "Chauncy St & Summer St - City Point",
+    "polyline": "kioaGhyupLCAKUGUCYAMhA_BlAyBd@o@HMNUF]TcBLc@Na@b@kARq@b@yBf@eBPa@??dCmGl@eBlDqJVHZBNAJCHIlAmBbCaEZRf@\\pBxATP??|AhAxB~A|@l@??@@ZXDD|GxEVRjBrAp@^jCpANFRRXXr@`AY|BEZ??G^q@jE_@bCM`AbACr@El@w@??DIhDgGzB_EXe@x@yAfAxAr@z@??NR`AnAh@p@??LNnAzAh@t@|BpCZk@??`@u@rA_Cl@kA??FKhB{CZi@t@sA??JS`@o@r@sAx@{Aj@iA??JQhB_Dj@gAd@y@??FKvBwD??T]h@dB^z@^r@BBNTT^`AeB??d@y@r@}Af@}@p@mA??JSz@aBAaAC{C?g@??EkE?g@??E}GAyA?i@??E_FAm@?oA?e@?sA???WAsBAsA?}A??AWAoCEsI???YCiDAkA?i@A{A???WAsCAyAAqC???W?cDCuBCgB???WEoEFqAi@wA??Qc@g@gBs@wBS{@]_B??GUWmAKm@]cB]_DFc@s@@oA@??qA@eDBoDBo@@??{B@cDB_@@??eC@@`D@hDBbA???XDrH?nA??@V?dC@tE@H@hB@vBk@@Q?Q?@uE"
+  },
+  {
+    "id": "1110276",
+    "lineKey": "Bus",
+    "routeId": "111",
+    "name": "Haymarket Station - Woodlawn",
+    "polyline": "g{paGxgupLDKTi@mAiC}@lBeAxBYj@}AhBqB|AYTQ@??e@B_BFgCJi@DiBFg@D[@QHc@TyNbJ{@j@eAv@]\\QRSVMVWf@Sh@IXs@jCs@vBUp@KV??MVOd@y@nB]|@KT\\XnAdAZRXNt@Tj@DV?d@I`@Q`@a@\\g@Pe@Je@Da@?e@Ai@Ee@Ks@Mo@Ok@i@_Bo@_BuAcCUc@qAqBqBmC}AwBgEiGgDmEgDgEcBqBwBeCqCwCuBuBgBaBkFqEeFsEoLcKaCuB??e@c@iHiG_EmDkAaAsBkCi@i@}AeBuAaBw@gAk@}@_@o@Uk@Q_AACJG\\W^YPO??~@u@U{@Qe@y@sBYk@??S_B_@_CWiBc@iCQcA??O}@QmA_@cBo@qE??M}@kAc@g@Wa@MoBaAm@S{Aw@e@Q??i@Uu@oAa@iAEI}@oBm@Cc@d@??GFi@j@S`@S`@kAg@aAc@]Oa@QKE_Ak@??QIa@YaA_Ak@g@m@o@??KK}@w@{@g@iAk@e@S??QGuAnAiBzBg@n@??MNsBdCsBjCUX??gEhFyAbB]v@AB??Ut@Kn@?JK@iA@o@G??OC_B_@e@KoBg@_AYDY@OAOAW??Ew@QyCUcEEg@??KgBSgDU}DOiC??AWcA[_Bg@[K??GAk@Gc@Ak@@qBN{AJ??QBeALyAZuAb@??QFm@Pk@Lw@Xc@^iBrBED[Vi@Z??MFC@[B[BUAiAEa@A??Q?a@Cc@Ey@GOAWAg@DSBSDSJSLkAz@u@d@m@VeAd@??IBwAd@IXMh@CT?D"
+  },
+  {
+    "id": "1120197",
+    "lineKey": "Bus",
+    "routeId": "112",
+    "name": "Wood Island Station - Wellington Station via Mystic Mall",
+    "polyline": "altaGdwnpL[Rc@VML~BnI??FVzA`E`AhDWd@??Q\\oA}Ai@o@U[i@m@[]k@q@mB_CSW??}BqCcEaFU]iAkAc@a@m@a@YQ??CAm@YcA]w@Qw@Ig@D}Al@aB~@_B|@qDvBOpAQbB??q@lGk@zEoBlQ??E^sAxHQx@Kn@??_AlF??GZu@`E[bBMhAkAc@g@Wa@MoBaAm@S{Aw@e@Q??i@Uu@oAa@iAEI}@oBm@Ck@l@i@j@S`@DRN^bCj@TFrBl@??NDNb@tD~H??HPxDbIkAjAcAfAWX??UVs@NgAP{AZwAXmAR??sATaC`@iBZl@nA??z@hBpAlC~@jBv@dB??dAxBzA|Ch@dAh@nA??HRZd@Xr@Np@Jz@@p@CrA?jADtBNfA\\I??REj@URYN_@d@gC^cC??DUT}AV{@`@i@X[TIp@O~@UbAQb@FVRLXJr@JlALrANl@RZBFZV??LJu@lBe@|@qBkAsAu@EE??g@[_Ae@gBaAe@xCe@fCO^SXk@T_@H??QDOgAEuB?kABsAAq@K{@Oq@Ys@MS??MQs@cBi@eA{A}CiFxFkDtD{A_Dy@aBEOAGAI@IBY_AG??yBQOdCAP@V@LBVNBPBLHFHLLJVxBzEpCqCjDuDhFyFaAsB??{@kB_AkBqAmCiByDgCf@_Dp@iATaAP??UFuCn@sCj@eAT??eFfAwA\\oATy@RA_@E}@E[I_@Mc@K[_@w@a@s@_@_@WSaA{@c@a@]][a@W_@OYKYK[I_@Gg@A[CcABmAJmC?}@~A^ZD??b@DhAAJA?KJo@Vy@\\w@g@Ws@M_@Ub@}@Vo@Q_DJy@??pB_P??PqA`AqGx@e@A[?I??@UZHH\\e@Ry@d@aApGoCjTP~CWn@c@|@^Tr@Lf@V]v@AB??Ut@Kn@?JK@iA@o@G??OC_B_@e@KAz@IpAEhAA\\@b@F|@Hv@FXJd@L^Rd@JRh@v@b@f@f@d@\\ZfA~@\\\\V`@Tf@L\\Nh@Hh@Df@?`@Ap@_Dr@??OD[@?z@@hA@X??@fB?|AAp@???XCj@]rFUpD??CVCx@KbA[|@Yj@KLKHA@IFi@ROJKHOFI@IFCJ?H@D@L@J?H[jC]vBKf@??Kh@Kt@e@vB_@jAe@tAa@nAWn@??ADYt@y@rBO\\??m@tA{@pB{@jBk@fB\\VRP??n@j@fAt@dCbC??JHXV`Ax@zAxAhC`C??NLjBbBZ^Vf@BXFz@?r@Mt@AV@VD`@J\\TZNt@Fb@?ZCxA?v@Dx@?`@DbB@\\JjEBdC?dAGjBE|@En@MnACP??G|@ATAT@TB\\Bl@?\\AJELY\\Sd@GVEZ}@bHa@tCs@dFq@tEo@lDIRML]n@GHETCV?`A@\\??@l@AvAApBp@Jp@@`@E~@[rAAbA@P?b@GPG??"
+  },
+  {
+    "id": "1140051",
+    "lineKey": "Bus",
+    "routeId": "114",
+    "name": "Maverick Station - Mystic Mall",
+    "polyline": "ifraG`}qpLk@_@qA_A_As@iCFqA@uDDm@?[@??_DBiDBwA?{@@O?_@@wA?[@??cC@uCFqCDyCB[???_C@oED??Q?{ABgAB}B@S???eBBuB?kDAmG@}CAaAAS@WCYGkEgBe@[A???aAi@sAu@aBaA??AAc@YEEcAiA_@cBo@qE??M}@kAc@g@Wa@MoBaAm@S{Aw@e@Q??i@Uu@oAa@iAEI}@oBm@Ck@l@i@j@S`@DRN^bCj@TFrBl@??NDNb@tD~H??HPxDbIkAjAcAfAWX??UVs@NgAP{AZwAXmAR??sATaC`@iBZl@nA??z@hBpAlC~@jB|B~EiFxFkDtD{A_Dy@aBEOAGAI@IBY_AG"
+  },
+  {
+    "id": "1160165",
+    "lineKey": "Bus",
+    "routeId": "116",
+    "name": "Maverick Station - Wonderland Station",
+    "polyline": "ifraG`}qpLk@_@qA_A_As@iCFqA@uDDm@?[@??_DBiDBwA?{@@O?_@@wA?[@??cC@uCFqCDyCB[???_C@oED??Q?{ABgAB}B@S???eBBuB?kDAmG@}CAaAAS@WCYGkEgBe@[A???aAi@sAu@aBaA??AAc@YEEcAiA_@cBo@qE??M}@kAc@g@Wa@MoBaAm@S{Aw@e@Q??i@Uu@oAa@iAEI_@y@DEyGmN??cGiMED_@u@uBoEsD_I_@u@??Wi@cCiF??KUk@mAkCaDcCwC_BiBu@}@??oDkEiAsA[_@w@_A??uBeCGGMQY]gC{Ca@c@]c@q@y@e@o@??MOuAaBaBoBqA{A??MOmBgA}BiAs@[k@YOG[S??c@Uq@_@aCsAaAg@a@SeAo@??SMwC}A{BoAqC}A{@c@w@c@aBaACA??aAg@kAs@aAi@o@]??u@a@g@[sBuAc@Y_C}AJqB@}AB{DBqABsA???CBiCFiE@_@By@?m@BuC?g@??@WIo@KU]k@sAo@}@a@??QIaBw@e@a@Oa@C?Iu@EsAAoAA}@C{A?s@Ag@???g@GuCA}CGoEAq@??AcBAgB?]Ak@AgB??Ag@EyDAwAl@@lAClBEnBEn@A`@F\\JDBt@\\|@d@|At@dD`BhB|@JF~BjA`@PZRXd@Th@FVDNHLNRTF^?RELKNURs@Ca@EYIWSWQG?OEYEe@KQGImAQ"
+  },
+  {
+    "id": "1190102",
+    "lineKey": "Bus",
+    "routeId": "119",
+    "name": "Beachmont Station - Northgate Shopping Center",
+    "polyline": "kzwaGfxhpLwCnFw@|AwA~AUTu@dA_@t@yAvCWd@o@fAg@~@k@zAGLi@rAIN??[r@_@l@c@r@]n@{@jA??QV_CtDwBbDSZi@~@GL??KVSj@Wz@q@rCER_@dBGTU`Aa@rAI\\GPQl@_@fB??w@fDe@lB??EPYhAs@pC}@vCo@pBi@nA??IR}@vAu@|@y@p@_An@oBvA[HQ\\e@dA??ITaAg@a@SeAo@??SMwC}A{BoAqC}A]hB??sAjHg@pCc@jCUjAKb@??}AxIYbBWpA??Kp@Mh@cAa@_@QmAa@mAm@EA??QIJm@Pc@FMXWHMn@e@j@]T]HMFO??J]Bq@As@a@oA_@Hc@L_@M[UKKa@WCTEf@Gf@EPAH??M~@S~@Qt@GNY~@Sf@KTICWKKESQMM??y@s@[f@??Yb@mAlC[fA}@pCo@xA??CHw@]i@a@kAy@gBaAkAq@cAm@mAw@k@Ii@???S?Q?OBaBF{@BM?u@@g@D[FQFA@QNCB??}@hAcArAW\\eApA??MP_BnBe@l@ILi@t@UZ??ORi@v@y@~AWd@uAfCq@hA??e@v@k@s@a@e@_@[OKOGQCm@@YF]LgCv@o@RgAZo@VSJ????WR[Z{@~@a@b@m@n@WVSPSPKFGBOHGBIBcAD_@?Y?iAGi@Af@p@f@r@XZLV??Xj@Zf@`AyC??FSRc@Je@BGPy@Nu@v@_Ed@oBR_A^uBF[@K??BOFaADg@Fc@H_@P_@^]b@Sd@Mh@EZIXO\\Uf@m@Pa@Rs@Hc@Do@?cAEeAKg@Iy@Ac@?a@B_@D]Lg@Pi@Va@rAaBC@p@}@rBoCzAmBtAeB|AqB|AsBjAwAV[OUo@_Ao@aAQW??MQuAkB]g@}CrGOB]d@KJoAbB"
+  },
+  {
+    "id": "1200184",
+    "lineKey": "Bus",
+    "routeId": "120",
+    "name": "Maverick Station - Orient Heights Station via Waldemar",
+    "polyline": "ifraG`}qpLk@_@qA_A_As@iCFqA@uDDm@?[@??_DBiDBwA?{@@?g@?KBMQK_@qA??sDiNI[??sCsKMc@??uCiKMa@??aC}I??Og@v@k@gC_DsAyE[kA??e@}A{@uDQc@IU??{AoFa@wAb@Wb@PFBD?l@WDG@MAQCIGEG?u@d@??[Rc@VaBoGSu@??{AwFUc@K_@????qCkKIY??wCsKI[??kAkEmDyNGW??aCcK??GYqFmU_@{A[qAZUDQAMYoAQs@??u@eDEKEGIE]JvAnG??Ln@H\\DNZpA^zAc@nBe@~AGLIZe@p@??mFlHm@z@??aBxB?ASX{AxB{@jAk@j@g@j@g@b@[T??YReBnAYS??}@s@iFyDmA_A?i@??FuKDkAB_@??@QH_ArA}J@G??NcAlBaE??n@sAIfAIrBAx@?vC?jC???jP???TAtBBVBHDFHFJ@LEJOjAeE^sAVeAd@wBL_A??RqAr@uGNwA??h@wFPeC@[?Y???AByAJsG??@g@FaHDk@???GF_@F[Ts@LUP]TOTETBRJLLHL??JPRf@`AdCNPNHBb@D`@Nn@H`@`A~DNx@Hh@D`@Bd@DfABXJt@FTLh@dB~HH\\DNZUDQAMYoAaAkE"
+  },
+  {
+    "id": "1210073",
+    "lineKey": "Bus",
+    "routeId": "121",
+    "name": "Maverick Station - Wood Island Station",
+    "polyline": "ifraG`}qpLk@_@qA_A_As@iCFqA@uDDm@?[@??_DBiDBwA?{@@O?_@@wA?[@??cC@uCFkCgK??GUyCyK??GUwCwK??GUwCsK??GUg@kBkCkJAA??EGICKA@kIn@_@HG??t@e@j@p@Z\\@i@AQCUl@oAZu@LWIU??{AoFa@wAb@Wb@PFBD?l@WDG@MAQCIGEG?u@d@"
+  },
+  {
+    "id": "1210075",
+    "lineKey": "Bus",
+    "routeId": "121",
+    "name": "Maverick Station - Eagle Square",
+    "polyline": "ifraG`}qpLk@_@qA_A_As@iCFqA@uDDm@?[@??_DBiDBwA?{@@O?_@@wA?[@??cC@uCFkCgK??GUyCyK??GUwCwK??GUwCsK??GUg@kBkCkJAA"
+  },
+  {
+    "id": "1310094",
+    "lineKey": "Bus",
+    "routeId": "131",
+    "name": "Malden Center - Melrose Highlands Station via Oak Grove",
+    "polyline": "ql}aGrrxpLx@TLEJi@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@h@a@JUBSB??O@yAJiAHsBPyBVu@Hq@JiBX??QB{Bf@q@Na@DK???Q@k@A_BCs@?aA?yBGeCKc@C??QAiACuAIc@?iAE[A??Q?]CYI]K_@Oc@]e@UKASEg@CcBE]A??sAAa@?a@Be@Dk@Li@NYNo@^u@ZwAd@??kA^g@Jk@Hs@BwEC_A???QA?vAEjBIbC@`@BJBFLHf@@nB@n@D~@JfAN`AFz@F|@Db@@h@Eh@E|AOrBU`C[~AONb@FFDBH@`ENF???BAFCDGHQBUgAW_@IQCQAM@U@OB}@LSD_BNaCZsBT}ANi@Di@Dc@A}@E{@GaAGgAO_AKo@EoBAg@AMICGCKAa@HcCDkB?wA{EA_CA??Q?kB?kC?s@CsA?E???gCAmFC]???kC@g@C{AW[Ii@Ou@Yy@e@y@a@??[OiAk@{C_B??OICsAEeBGmBAa@???WKaDAg@CgACk@??A[KaEEuBG}BE_BGyBCg@??GwBGgCe@sFEg@??YqDUqCEg@??Q}B]yDEg@??UqCMwA??Em@mDn@Eg@??c@kFOgB??m@cH??c@uF??CW]_E??CW}AXmAViCf@??QDu@NwDt@^xEN|ADf@??JrAZzDH|@??LzA\\~DLbBNxA??BVf@hFVtCDf@??RnBVfCZtDVlCJnADf@??J~ATlCJbALzAT~Bb@vBZjBVxA\\fBRjANdAB~@@R??Df@qBaA_CiA{@c@oDiB_@Q??OIoB_AeA_@aDcAKA??e@IWG}@CsAIg@CcEYmAI??IA]C}AImBQ??]EwJo@g@E??y@Ek@`DUlA]hB[|ASfAId@??Q~@c@tBs@~Ds@lEa@zBU`BCXEh@?j@@~@DvA@f@??@v@FtC?tBGn@Qv@AD??gAnDMf@e@zA[`AK\\??IRW`AU|@Mx@Q|AObB??AVjAD~@AbA@??P?jAAdC@??P?Uw@OoACaA@i@uBwAYQ"
+  },
+  {
+    "id": "1320119",
+    "lineKey": "Bus",
+    "routeId": "132",
+    "name": "Malden Center Station - Redstone Shopping Center",
+    "polyline": "_n}aGfxxpLmBo@Eq@e@Ko@U}@Wy@KY?S@YBgAPk@LiAP{AX??QBuCf@_BZuAT??QDCoDA_BAmACoBGi@]???gC?i@E[Ia@Se@We@K_@???oABkA@u@?iABm@_@g@UsAm@k@Q[Iu@YOC??c@Ki@EWAa@Cg@?q@Hy@RwBb@iBP??C@cBR??SBy@H}BVkBT_AH??_@Dm@FaCJc@Fm@?_AGQA??kKi@kAG??_AGkG]_@CQG??OEe@Ym@i@]_@e@a@a@a@YQWEGA??S?sF[??Q?mCM]EWI]Q{@[??QG_@jBe@|B]`BMn@??ET_@nBYpAWvAa@fBi@nCIb@??EVa@dBa@tB]|ASdA??ETeAtF_@jB??I\\]hBe@bC[xAUdA_@tBoApGIl@??EV_@lBEVMp@S~@g@xBUx@Ql@Ul@]x@a@p@eArA_@d@Wb@Wl@S|@Mn@Ep@@VEp@Gh@_@b@m@dAYl@Oh@UlAUv@Wd@W\\{@v@[\\[`@_@l@a@`@WT[Ri@NW@e@Ae@Gg@O_@Og@Wq@Wg@Kq@E_@@??Q@m@He@L]Na@XQd@o@bA]fAq@jDQlASfAObAKz@EbAElA?~BAn@Kt@Sp@_@z@Sf@U|@Ot@QzASlAc@nDa@rD[G??aG_Aw@Me@Ec@CwBTaEd@_CToAF??wAFcDL{@Fi@?sAEqBKgBImAG??QAg@CwBKeBMq@EsBK??OAeGa@{AIOA??wCQkB@oA@y@AwAEoA?uAA??Q?uA@kC?iAAiFAuBA??qA?[A_EGwAEy@@}AD??wCFqADsDFqBCuDJaAD??Q@{CDmAB}GX{DHS?@^?jA@b@@b@Dp@BPBZ?f@"
+  },
+  {
+    "id": "1340489",
+    "lineKey": "Bus",
+    "routeId": "134",
+    "name": "Wellington Station - North Woburn via Trade Center",
+    "polyline": "swxaGp~xpLCMMSOC]CgAIe@BSHSD]p@Gj@Ad@ARE\\EPEFIFODq@?SA]D@qB@wAAo@??A[?aABWDUFIPDNJFTF~AC|@AlA?bB?bCAd@BnBCbAAn@Cv@GbAMtAWtBUrACVW|@Of@Yj@{AT_AXUJ??yBx@yAr@y@f@eAx@[V??OL_Ax@aCfBsAt@eAf@Kp@]`BMb@??Sr@_@pAq@zAi@pAg@rAWdAO~@?\\??AXCfA?dB@jB??@X@xB?pA@R?H??@`C?dBrBZrBPjDT`@HRLPHHD??j@d@dCvBj@b@jAkD_GwE??KIy@zDSMa@IkDUsBQsB[En@WpBUlAOn@??ETe@tAo@fBY~@w@xB??GRg@xA[`AMb@??Sl@w@tBSf@u@xBO`@??KZy@xBk@xAc@lAm@~Aq@hB??IRuAnCo@vAw@hBc@jAw@xBmAnESv@IX??o@fC{@|CwAMa@EgCI@vBFvC??@V?j@PhBLlBXzAk@zCER??Kb@g@rDW|BOz@Sn@MZ??GP{@nBk@jAYr@kApC??KR[dAeCbIYbAMd@??CHUp@]t@??ABmA~AqDlEsAbB]`@yArB??MNeB~BaB|ByAxBSZ??A@e@t@eF~HOV??_BjCuAvCcAxB??GNuAvCwAtCg@dA??EFEDc@j@SViAhA_Av@m@b@sAl@eAf@gAl@??OHg@X_@PgBp@gA\\cB^aAP??WDeCb@aC`@s@JmDh@sBV}AT??WBiC`@{C`@o@RUJ??YTYTYZq@|@WVQNaA|@oGfFSLY@A???k@DYI[M]Mq@w@_@g@SU??IIo@c@c@Kk@CcCAa@E??QAw@GuB]{Es@i@Gc@@??e@?_CJ{AFuB?U???W?eC?u@l@wAvAkA|Ay@fAH`@z@dBAXUzAOx@If@GXGf@MPaEeA??i@ODw@@CKk@a@@KBYDEVEd@m@?aAXkA^u@VaAT??QBcDf@eBZcBT??sAPw@N]Ly@z@a@p@c@j@??WZk@l@m@^w@V_ATw@RiA\\s@T}@^q@d@g@b@??OJcBzASZCF[z@s@xAOXs@nAQVe@v@Wb@i@x@??KPQX]`@_@^i@b@]TqAx@_Ah@UN??IF_Al@{BlA_A^]Lu@`@a@Ru@`@g@j@UX??MN_@b@e@f@g@l@{@t@QLu@h@g@^g@\\uAp@??QHa@TgAl@WPw@d@aAv@kA`ASN??OHQLg@XOF_@F_@@a@Ge@OiAk@??IGECy@a@OMk@Yc@K[AI?sBHW@s@Fs@H??QBaAPqBl@s@X}BdAgBt@AB??QFQFmA`@_@N_Ab@}An@s@\\A???UHo@Ns@Jo@C[KSGWQMUSUc@a@KGCEqAk@[MQG??u@Yk@UUEYAS@SBQDSF_@NaAf@QJ]NWH_@FIDgBN]DQFUJi@`@OPYVMHSLWJQDUBQ?W?{@Gm@I??UEmAQi@Ea@@_@@a@Hg@LkBf@??ODiEpA_@J[Le@RqAp@[L??ULuAt@i@ViAj@o@\\_@L]Jc@DuAR??[Dw@PqAf@i@ZcAj@k@Vm@RQFqB^kBX_AN_En@o@Ju@Ny@FE@??KBUHMHYFe@TWDQASEg@SUKQEQAm@Bg@FuDn@_APUHQJKJGHEHIVENEPMx@Qf@U^YZoBbBFVFLFNFJFJJFLFPJVBX?hBY\\AT?TBh@LTHNLNTLXHf@XjBLz@N~@\\~CWD[h@ATF|@T|AJJ??LJZEPCo@oF]_DO_AM{@YkBIg@MYOUOMUIi@MUCU?]@iBXY?WCQKMGa@z@??EFYd@}@vAeEfF_@d@qA~AIH??MNg@f@y@n@GDm@^_@Ra@Lc@HS?I???IAa@Gs@Me@MKEyAm@_Ae@??OIi@]QQY]U]c@_Ao@aBU?a@@QBc@HYHu@\\aAd@UJYJ??IDkAZk@N}@Ng@H]DO@WAQAOEgAk@YK[Ka@IWE}@K??sBUy@CqAGaACw@Ba@Do@NUD??iCl@cAVWD]BO?SCc@GYM_@YkAkAWY??oHqHA???iCgCMIOEc@MeDYG?c@B_@H]Pg@b@Yx@CN"
+  },
+  {
+    "id": "1370191",
+    "lineKey": "Bus",
+    "routeId": "137",
+    "name": "Malden Center - Lincoln St @ Reading Depot",
+    "polyline": "ql}aGrrxpLx@TLEJi@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@h@a@JUBSB??O@yAJiAHsBPyBVu@Hq@JiBX??QB{Bf@q@Na@DK???Q@k@A_BCs@?aA?yBGeCKc@C??QAiACuAIc@?iAE[A??Q?]CYI]K_@Oc@]e@UKASEg@CcBE]A??sAAa@?a@Be@Dk@Li@NYNo@^u@ZwAd@??kA^g@Jk@Hs@BwEC_A???QA?vAEjBIbC@`@BJBFLHf@@nB@n@D~@JfAN`AFz@F|@Db@@h@Eh@E|AOrBU`C[~AONb@FFDBH@`ENF???BAFCDGHQBUgAW_@IQCQAM@U@OB}@LSD_BNaCZsBT}ANi@Di@Dc@A}@E{@GaAGgAO_AKo@EoBAg@AMICGCKAa@HcCDkB?wA{EA_CA??Q?kB?kC?s@CsA?E???gCAmFC]???kC@g@C{AW[Ii@Ou@Yy@e@y@a@??[OiAk@{C_B??OIm@[{@a@u@_@yC{A??OIeD_BeAk@??c@UqBaA_CiA{@c@oDiB_@Q??OIoB_AeA_@aDcAKA??e@IWG}@CsAIg@CcEYmAI??IA]C}AImBQ??]EwJo@g@E??y@EkAG}AKsBS{@EgAI]???w@AwA@mCDeCDg@?]@??iADk@@wA@yDF]???gBBo@Dk@Fc@JcBh@IB??SHqDjAqAd@i@P]J??iA^_A\\k@NeAf@YP??KFcAx@gA`Ao@f@y@l@a@\\i@^??UNcAt@y@h@o@d@mCjB_@X??o@d@YTgAdAeA~@mB|Ac@^k@\\YJED??sB~@aA`@aA^eAXkCp@eATeANsBT??g@FaAFoADiA?{@Cm@Ea@Go@Mu@Uq@Sw@Um@Me@Cq@@[F??_BVq@Hk@?q@AkAG_AEyAC_@?u@D]F??Q@oDr@sARo@Fk@Fa@BuABwBM??QA_CK_BBsANoA@{BK??QAy@Ew@?}@JcAXiCn@YN??aAf@gCfBa@XkAt@yA|@a@Fq@`@a@R[d@_@M_@Fu@L[@UAu@IkAQe@I}AWk@IkAS[[EE??GKK]Oq@i@_D[oBUqASkA??EWuBx@mA^uAd@uE~A[L??iA`@sDnAcA\\wAh@sA`@]H??[Hy@LkAPy@PcAJE{BEyAGyA??AWWaIM_EOwDBe@??@W]_@e@k@_@e@q@q@_As@SSUOGC??OIw@W}BdKoAjFUfAQdAUvAGd@??MjAOpAOrAO|A_@jDMjAU`BO`@??Md@}@tBMXgCxFo@rAm@tAi@hAoApCo@zAg@lA_@z@OP??UZg@z@[p@c@nA_@|@MNW^[\\ULWLSFSFK?I?SESIQIa@[i@WMA]@g@JUHsB`AQJIHMPU`@IVCLG`@AT?\\J|@`@xCRxAL~@Nx@P|AD|ABdABbA?T@`AAn@Ej@If@U|@Ux@Yx@Y|@??IR_@lAc@jAq@rBK`@Kd@??EVI~@AnADvFDvB@fABfA@b@???VDvCDhAD~C@f@??Bp@?fAA~@Ct@KfDCh@??C\\Ad@?n@Bh@N`ALh@V`Bh@`Dz@hFFXJ^Rn@z@xBbAp@t@f@NJNpAFr@Dd@Bf@???@DlAFdADlADj@F`@F^ZbATt@XbAP^\\l@PTh@z@x@lB|AvD`@z@v@tB^mA~@qCn@qBh@wAxC}IP`Dy@pCM`@Sn@[dASz@Yv@GR"
+  },
+  {
+    "id": "1370194",
+    "lineKey": "Bus",
+    "routeId": "137",
+    "name": "Oak Grove Busway - Lincoln St @ Reading Depot",
+    "polyline": "sl_bG~{wpLBAFCDGHQBUgAW_@IQCQAM@U@OB}@LSD_BNaCZsBT}ANi@Di@Dc@A}@E{@GaAGgAO_AKo@EoBAg@AMICGCKAa@HcCDkB?wA{EA_CA??Q?kB?kC?s@CsA?E???gCAmFC]???kC@g@C{AW[Ii@Ou@Yy@e@y@a@??[OiAk@{C_B??OIm@[{@a@u@_@yC{A??OIeD_BeAk@??c@UqBaA_CiA{@c@oDiB_@Q??OIoB_AeA_@aDcAKA??e@IWG}@CsAIg@CcEYmAI??IA]C}AImBQ??]EwJo@g@E??y@EkAG}AKsBS{@EgAI]???w@AwA@mCDeCDg@?]@??iADk@@wA@yDF]???gBBo@Dk@Fc@JcBh@IB??SHqDjAqAd@i@P]J??iA^_A\\k@NeAf@YP??KFcAx@gA`Ao@f@y@l@a@\\i@^??UNcAt@y@h@o@d@mCjB_@X??o@d@YTgAdAeA~@mB|Ac@^k@\\YJED??sB~@aA`@aA^eAXkCp@eATeANsBT??g@FaAFoADiA?{@Cm@Ea@Go@Mu@Uq@Sw@Um@Me@Cq@@[F??_BVq@Hk@?q@AkAG_AEyAC_@?u@D]F??Q@oDr@sARo@Fk@Fa@BuABwBM??QA_CK_BBsANoA@{BK??QAy@Ew@?}@JcAXiCn@YN??aAf@gCfBa@XkAt@yA|@a@Fq@`@a@R[d@_@M_@Fu@L[@UAu@IkAQe@I}AWk@IkAS[[EE??GKK]Oq@i@_D[oBUqASkA??EWuBx@mA^uAd@uE~A[L??iA`@sDnAcA\\wAh@sA`@]H??[Hy@LkAPy@PcAJE{BEyAGyA??AWWaIM_EOwDBe@??@W]_@e@k@_@e@q@q@_As@SSUOGC??OIw@W}BdKoAjFUfAQdAUvAGd@??MjAOpAOrAO|A_@jDMjAU`BO`@??Md@}@tBMXgCxFo@rAm@tAi@hAoApCo@zAg@lA_@z@OP??UZg@z@[p@c@nA_@|@MNW^[\\ULWLSFSFK?I?SESIQIa@[i@WMA]@g@JUHsB`AQJIHMPU`@IVCLG`@AT?\\J|@`@xCRxAL~@Nx@P|AD|ABdABbA?T@`AAn@Ej@If@U|@Ux@Yx@Y|@??IR_@lAc@jAq@rBK`@Kd@??EVI~@AnADvFDvB@fABfA@b@???VDvCDhAD~C@f@??Bp@?fAA~@Ct@KfDCh@??C\\Ad@?n@Bh@N`ALh@V`Bh@`Dz@hFFXJ^Rn@z@xBbAp@t@f@NJNpAFr@Dd@Bf@???@DlAFdADlADj@F`@F^ZbATt@XbAP^\\l@PTh@z@x@lB|AvD`@z@v@tB^mA~@qCn@qBh@wAxC}IP`Dy@pCM`@Sn@[dASz@Yv@GR"
+  },
+  {
+    "id": "140142",
+    "lineKey": "Bus",
+    "routeId": "14",
+    "name": "Heath St - Roslindale Square",
+    "polyline": "cdjaGho_qLx@mAVe@\\s@HUZqA^qALk@FSXe@d@{@Zs@??DGVeANy@Fg@@k@BcA?]???WAs@E{@IkASyCK{BC_@Ce@??A[EyA?_@?oA\\m@^g@??LQfAy@t@u@JOHG??TUJSLm@D]@WP}ApAXd@HZDN@@J@XJPVLn@PXj@`@Nt@TDB??`A\\RqDFk@F]y@@iFLO?UAg@Em@Ms@QFy@Be@@OAOAG??AKSYkAcA]Wo@a@w@[UK??OIoAc@{@a@}@g@k@Yo@a@[O??wAs@g@Ya@]KM[Ym@{@]o@a@s@O]Sy@UiAIe@??YoBSmBQcBRk@Pw@DM??\\uAFUBUH}@L}BFw@H{ARgC`@_FPmB??BWqASbAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABU`@sBJ]N_@RWVSPIVEXAp@?hAL`BHhCVn@Hn@KDA??r@S~F}ARG??hDu@xBi@zCu@ZG??vAWlAWnCg@JA??b@GT?h@@l@F`@Fb@LhBp@j@P??JDZLtAj@f@VhAj@dAd@f@@\\J??VHtCz@vBl@fAXb@H\\AfBM^CRE????RGp@SZU`Ak@x@]d@IT?VAF@??N@f@NRD^LjAZR@PAXEBA??r@]vAy@j@Yf@T`Al@r@Tp@d@rDzBb@Xj@^b@TXJ??PHd@Ll@Lr@Lb@Dt@F??H?`@D`@BpBTv@Lp@NpCp@\\H??~Cr@jB`@bB`@??`Dx@xEhAtCt@dARZXJVBF??Z`BNz@~@nGPnAd@~Bp@rCXv@Xd@PPXT|AbAlA|@??LH~DlClE~ChBbB??DBfAfAlAjA`AnAX`@dApBHTN`@Vx@XnAfDtOvAlG`AtEf@vBj@`Cv@lCnAjDz@pBdBnDbAnB??^t@v@zAfBjDdAxBd@v@????N^rBvDbBzC??DJjBzCtBdD|BxDv@pAp@~@|@|@^Zb@^fAt@nAj@r@T??NFdCp@VFrAb@ZDVDT@z@Ep@MFE??VItAkA^Wb@WbAUNA`AEpAB|AHnAF^Fh@Rl@`@lAz@j@`@??pAx@nBtAf@`@RTd@t@Xn@Rf@Jb@Db@?v@CpBBvAq@E??mLg@eAKkH}@a@E??_CYaEe@oC]uBUGRgC~H??GTm@lA{BzDw@rAYh@??i@`AiApBa@j@_@\\??MLMJi@Vo@Pq@Vg@Xw@r@o@x@??MNsAnBi@~@??IPcAnBaBzCyAhCaCwCgA_ApAxBPp@Ht@?VCbAAZAF??Kz@M^Yv@DZTfA`@bBDL"
+  },
+  {
+    "id": "150321",
+    "lineKey": "Bus",
+    "routeId": "15",
+    "name": "Ruggles Station - Fields Corner Station",
+    "polyline": "owkaGdr{pLDFBNNdAfAvA`@`@PO`CiB\\Q\\v@h@hAbCbFpBxEL\\|AjDZn@T\\`@f@nBvBBi@NuBDaADsB?i@???sBBaBF}B@Y??DaAJoAZoCLq@??TkAb@uBPm@Pg@j@cAfC{F??Te@bAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABUBa@Do@@MH_BHkCVuF?c@?C??AuAE_C?q@?qB@_@J{@XgAd@uAPg@Pe@h@eANU??bAyAh@q@pAeB`AuA??RY^k@\\Q|By@XKNG??hAc@`@Sf@_@l@c@lA_ALK??XWh@g@j@k@z@u@HGb@a@l@_@x@a@p@a@f@OZGXAPC??TAVEPIPMTQtBcCJK??~@eAl@g@l@i@NSP]To@Ru@`@_B??HW~@kDTu@n@kBLe@`@oAXw@FS??Ro@fA_DTk@^t@PT|BlB|@t@LS`@YTIf@M^IbA[ZGJE??^MxAq@zAu@VKv@[`@U^[VY??BGV_@T]`AgB^m@JSZc@dAiAf@k@NQ??FIr@KVAR@VFTNTTHRPd@L\\??HR^bAR`@VVPLvAVXJRN??FDV\\X^~@~@??d@d@zA~AZ\\??`@b@vBbC|AdB|@fAPRDH??t@fAbAzA~@zAzAdC\\j@??JNZl@Vt@Nh@d@|B??@@Rd@PNNFf@_AXq@n@kA`@}@n@qA??Zo@|@aBLYv@aB`AkBTi@JQ??Vg@l@mA`@{@v@yAVk@x@aBd@_A??HQh@eAh@gA_AkCS{@]eBa@w@}@qFGuAMqAF[HKN?LJHPAj@BZ\\tB"
+  },
+  {
+    "id": "160378",
+    "lineKey": "Bus",
+    "routeId": "16",
+    "name": "Andrew Station - Forest Hills Station via South Bay Center",
+    "polyline": "arjaGfmupL?gCd@?n@?^Jk@rFm@jEER[jDUnBQ~ASbBADi@lECV?TJRFPd@FLAJIFGFK@Q?gA?]???Y?e@Fe@FSFQLQb@a@`B_BVQNELCR?RDTDVJfFbCz@b@??vCzAVP^PDD??FF`@t@FP@PAXIn@V?NBPRh@nAJl@h@tAt@vBJIj@a@jBwAl@g@t@q@HI??lAeAfEgD|BeBrAeA??|@u@X[NUFb@Lb@JRXf@Zf@^f@\\^b@`@d@^d@ZxA~@??XNpBpAp@b@^\\r@`AXl@JV??Th@^t@PT|BlB|@t@n@f@d@`@zAjA|@l@??NHfD|ApBbAjAh@??PH\\ZtBbCbArA\\j@^v@N^??l@vAfAvCb@~@h@bA??JRrA`CXf@RXd@x@j@dAtA~Bt@nABD??^f@n@z@|AlBTX??LL|@fAt@jAj@bA\\t@Xx@Nl@F\\??DTFp@Z|BRrAPh@Vl@`@~@??HPP\\|@~AVh@v@xAh@|@\\j@??JRh@j@h@r@Xl@Nj@Ht@DjAA`A?b@FzAFj@Zz@f@fA??v@`BNZh@bAJRVf@Rb@f@hATv@Fp@Dh@?d@Cp@M|@Op@Uv@]`Ag@|@u@~@c@^_@Rw@`@qBhAc@Zg@b@Y`@u@pA_@~@W`AWfAMbACVA`A@n@Hp@??BNLh@`@z@N\\^r@Pb@ZdAn@vCTpAZvBP|AV`Ar@hBn@vAr@bBn@jArAhB\\^z@r@\\PnBd@RHPNNRHZBb@?@??@b@CZEd@]rBSvAGl@CjAHxBN`BVlABRFNJPb@p@o@~Ay@lBO^Sp@I^Ml@Ix@E`ACt@C`B??A|A?|@?l@?fANrF^f@lAn@KhAnBbA"
+  },
+  {
+    "id": "160399-2",
+    "lineKey": "Bus",
+    "routeId": "10",
+    "name": "Andrew Station - City Point",
+    "polyline": "arjaGfmupL???gCd@?n@?Qk@KW??_AcCk@eBOa@iAaDKUEM??Um@Sa@]q@}@{AMUIQ??GKaAmBs@wA]q@y@cB??IQU_@OUCC_@s@_@{@i@eBOa@??]{@Oe@]{@i@aBs@gBM]??CGGOUq@o@_Bs@_B[_AMi@??CI?q@EkF?Y??ImN???SCaH???]AsFCoF???WEoEAiD??ASEaLE{KAg@??C{I??AUEyK?y@??GuI???WkDBcDB_@@??eC@@`D@hDBbA???XDrH?nA??@V?dC@tE@H@hB@vBk@@Q?Q?@uE"
+  },
+  {
+    "id": "170127",
+    "lineKey": "Bus",
+    "routeId": "17",
+    "name": "Andrew Station - Fields Corner Station",
+    "polyline": "arjaGfmupL?gCd@?n@?^J^\\vBhAx@^??PHj@VbBl@h@PxAf@h@RpAb@nAb@`@J??jA^^JVJ??j@TVLRLbBhA~@l@??l@^~@j@bAr@n@`@`A^rA^ZH??x@P\\FT?f@Aj@EX?P@LFRVFb@Lb@JRXf@Zf@^f@\\^b@`@d@^d@ZxA~@??XNpBpAp@b@^\\r@`AXl@JV??Th@^t@PT|BlB|@t@LS`@YTIf@M^IbA[ZGJE??^MxAq@zAu@VKv@[`@U^[VY??BGV_@T]`AgB^m@JSZc@dAiAf@k@NQ??FIr@KVAR@VFTNTTHRPd@L\\??HR^bAR`@VVPLvAVXJRN??FDV\\X^~@~@??d@d@zA~AZ\\??`@b@vBbC|AdB|@fAPRDH??t@fAbAzA~@zAzAdC\\j@??JNZl@Vt@Nh@d@|B??@@Rd@PNNFf@_AXq@n@kA`@}@n@qA??Zo@|@aBLYv@aB`AkBTi@JQ??Vg@l@mA`@{@v@yAVk@x@aBd@_A??HQh@eAh@gA_AkCS{@]eBa@w@}@qFGuAMqAF[HKN?LJHPAj@BZ@D"
+  },
+  {
+    "id": "1710032",
+    "lineKey": "Bus",
+    "routeId": "171",
+    "name": "Nubian Station - Logan Airport Terminals",
+    "polyline": "qpjaGfqzpLJyB{@Mi@Ge@I]Gc@O_@e@??OO}@eAkAwAe@i@aA}@QQ??OMMKYOc@Ud@aA`@{@\\y@^cAPg@??HUMWiAmBeAqBuA{Be@w@c@o@o@cAwAaCg@u@g@w@q@cAOSi@}@i@q@c@m@eAyAqAiBMOdDkE??\\c@~AuBbAxANVpB`DlArBRVh@u@??z@oAlAmBHg@|@iAb@u@`@e@h@i@vAoA??XWtBiBh@a@Hg@@QCSWu@OWYi@??GK[c@][YQg@Yg@W]w@EK`@_Dj@yEj@{EVqB??TwBFk@BOBI@KHu@BWh@mE@ERcBP_BToBZkDDSl@kE}@BGICS?}A???gC_@?U?aB?cA@eCBkBB_B?uBB]AqEFeA?aMFy@O[I]K{@\\a@HcA?w@?U?uA@sC?cACi@gAe@m@[a@eAkAc@g@e@m@kAcBiAwAw@{@s@aAYYSSOGkCqAq@_@kBsAWS}GyEEE[Y_Ao@yB_BsB{AqByAg@][Se@]kCsBmA{@\\m@t@sAfAsBxJzGZN`@J^Fb@?ZC\\M^OZ]X_@yFcHy@cA_@sAIk@Ey@Ay@DeAF}AJeATeB`ByHdAmF`@kBT{ALmAFcABiA@eB?_BS_COqA[aBUiAe@wAc@qA_ByDs@{AcAmBeBoCoAeBm@w@q@u@u@w@}@{@}@w@cAy@{@m@aAk@}A}@yBmAaYaOoAm@o@Wm@Um@Wm@UoA_@m@O{AYw@M_JuAgDi@wAO_BOoDS[Aw@Am@?eBDs@FcAJq@Jm@LuG~AgBXa@Je@RMHONQVQXYx@G`@EZAd@?R@T@TFXFXJVLTXZHHLFXHXD\\?LCPEPGNKLK^i@HSNc@vAcF@ENe@rB{GPi@FSHg@DS`AkEDMFMFIJIRE`@@LALGHQHSpByF??Vs@Vy@HYF[@QAWDUBOVk@xBi@xGwA??nDu@HEFKFO@Q?OAOIUMMQGI?oCn@??qLlCY@YAUG[Is@u@WUoBcBSUQUOYIMKIICa@?EA_@B??iAFQBMFEBENYv@Ub@_@h@]^e@b@e@Ta@Nq@FQBM?[CWPORmBpF??{AfE?b@FXNd@??LTBFHLDN@J~@dF?r@?PALAREPSn@mAxCYj@e@p@q@dA_@n@[f@aObPSPQNUJSDSBU?c@C]AmBMEj@LH"
+  },
+  {
+    "id": "180093",
+    "lineKey": "Bus",
+    "routeId": "18",
+    "name": "Andrew Station - Ashmont Station",
+    "polyline": "arjaGfmupL?gCd@?n@?^J^Kv@AfBCfBAlDA??z@ArDCvBAlBAX???tBChCC\\???tCAjACnAA??P?tDAlD?bCE??TArA?`@?R?rBA??P?`@AtAAf@AdBA??P?zBCv@@r@Dn@Jv@JPB??VF~AT\\D??~@LfBV|Dh@\\D??F@|AXPeBPaBVD??H@dDf@p@H??RBS~CAN??EVpAPnBVbBVx@J??PB^DhANzAV??RBx@N|BX??PBbDd@hD`@??PBdBXzBXfARdAJzARVD??x@Nl@LlB\\|@T~@N@z@Aj@BZ@D??bAnGLh@Rh@nA|CZf@HL??LPv@yApAiC\\g@HU?KGg@Y}AMi@E]AW@SBQFM??DIDQrDn@??PDvAXjB\\JB??RDrAX`@F~@R??ND`B\\dB\\rAV\\H`@F??~@Nx@NdB\\f@J??f@JhCf@bBVbCd@NDrATF@??bCb@j@Ll@J??f@JRDn@Jv@L~AZ??NDdCb@PDz@L\\HvAVjATVDdB^t@LfAN@yA?a@A]CSGOKIOEO?SB_@P"
+  },
+  {
+    "id": "190365",
+    "lineKey": "Bus",
+    "routeId": "19",
+    "name": "Kenmore Station - Fields Corner Station",
+    "polyline": "}gnaGry|pL?SEOGGU?@pA@f@RvAFv@@v@L|@VBh@@D@DBHD\\`@n@n@??rDvDx@z@??LNhAlA`@\\h@f@tBzBvA~ARX??HHbChCZ^~@bA??xA~An@p@NNt@v@VZz@~@??p@t@lBpB~A~A|BbC??DDZ^vB|BlCvC`@{@??fBsDt@aBPg@Rq@l@uBAAFY??d@cBf@eBX{@OKQIMAGBGHe@Y??_@Sm@a@oD{BiBeAgDyB??AAKIGICGAQCWlA}An@gAh@y@f@_A^}@Vs@\\eAJc@DUBYPy@FQFMT[h@_Bd@sA`@iAZ_ADOLc@Pq@Jc@??@It@uCn@uB`@}A??H[DMb@}Af@aBp@oCX{@FSHWL[YWMG{@{@qAwAi@q@??W]q@cAw@sAMc@@WBQHOJINEL?LFJHPHPNRT??Tb@HLtAjB??hAzAfAvA`@`@PO`CiB\\QVU}AwD^QRQHMv@aBb@{@j@_A??JS`@_AvAsC??LU`@}@v@gBd@}@nAqB??NWbDdClA~@l@d@p@d@`BlAv@j@^IbAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABU`@sBJ]N_@RWVSPIVEXAp@?hAL`BHhCVn@Hn@KDA??r@S~F}ARG??hDu@xBi@zCu@ZG??vAWlAWnCg@JA??b@GT?h@@l@F`@Fb@LhBp@j@P??JDZLtAj@f@VhAj@dAd@f@@\\J??VHtCz@vBl@fAXb@H\\AfBM^CRE????RGp@SZU`Ak@x@]d@IT?VAF@??N@f@NRD^LjAZR@PAXEBA??r@]vAy@j@Yf@T`Al@r@Tp@d@XRV_@Ha@HMPQd@S??PIZQj@Yn@c@h@[HElAgAb@a@BE??j@q@~AoBV]??JQPSo@uAUq@Og@Ko@g@wEf@{@~@aBHQ\\o@N_@RiA??FUD]D_@@i@JkE@c@D_BB[DY??RwAT}APq@Nc@Zi@jA{AVS??x@o@PWNYf@_AXq@n@kA`@}@n@qA??Zo@|@aBLYv@aB`AkBTi@JQ??Vg@l@mA`@{@v@yAVk@x@aBd@_A??HQh@eAh@gA_AkCS{@]eBa@w@}@qFGuAMqAF[HKN?LJHPAj@BZ@D"
+  },
+  {
+    "id": "2010110",
+    "lineKey": "Bus",
+    "routeId": "201",
+    "name": "Fields Corner - Adams St & Gallivan Blvd via Neponset Ave",
+    "polyline": "gtdaGvjvpLFTRh@nA|CZf@HL??LPv@yApAiC\\g@HU?KGg@Y}AMi@E]AW@SBQFM??DIDQdEt@Ie@??Ki@a@kCa@wBs@eEa@iCYcB??EU`Ai@`Aq@j@_@V[??FG|@sAlAqB~@sAr@oAT[??`BaCpAuBp@cAd@y@R[??t@kAVa@n@u@Z[j@i@z@o@\\W??\\YvB}AzAoArAcAnDmChAy@JK??p@g@lAy@XYfBmA\\Y??rAeApA_Aj@e@X]Xe@Vq@d@_BbAeDZ}@La@??HWr@kBh@J`@NNFVRRNTVNVP\\^fAj@vA^fAf@zAl@nBb@`BHd@??VpAP~@PbBLbANjBJdCBl@??@h@NxFBp@??@VBr@BXF~@Hv@r@zGFd@"
+  },
+  {
+    "id": "2020083",
+    "lineKey": "Bus",
+    "routeId": "202",
+    "name": "Fields Corner Station - Keystone Apts via Adams St",
+    "polyline": "gtdaGvjvpLFTRh@nA|CZf@HL??LPv@yApAiC\\g@HU?KGg@Y}AMi@E]AW@SBQFM??DIDQdEt@Ie@??Ki@a@kCa@wBs@eEa@iCYcB??EU`Ai@rB[FARGNC??lASdAMxBe@j@I^CN@??R@H?XDfAh@dAj@`An@RHJH`Bl@h@HN@??pBFfB?P?j@IXK??PG`@Ud@a@ZYb@_@d@_@jAk@VM??NIzBgAd@M~@UnAYVM??NG|@q@t@k@j@]TMj@WXC??VAJ?XBJBdAZr@PtAd@\\Fz@V??HB^JnBj@dCh@??NDnAZl@J\\Cf@YbC{@??VIxE_BFEx@Y??NEhEmA??TGv@UEi@??OsBWaDWqCKoAA_@??AGCOYgAQ_AY}@[y@KW??OYi@eAeD}F??KSBATUTYd@oATDP@ZDXP`@\\HLTh@r@bAP\\X^"
+  },
+  {
+    "id": "2100125",
+    "lineKey": "Bus",
+    "routeId": "210",
+    "name": "Fields Corner Station - Quincy Center Station",
+    "polyline": "gtdaGvjvpLFTRh@nA|CZf@HL??LPv@yApAiC\\g@HU?KGg@Y}AMi@E]AW@SBQFM??DIDQdEt@Ie@??Ki@a@kCa@wBs@eEa@iCYcB??EU`Ai@`Aq@j@_@V[??FG|@sAlAqB~@sAr@oAT[??`BaCpAuBp@cAd@y@R[??t@kAVa@n@u@Z[j@i@z@o@\\W??\\YvB}AzAoArAcAnDmChAy@JK??p@g@lAy@XYfBmA\\Y??rAeApA_Aj@e@X]Xe@Vq@d@_BbAeDZ}@La@??HWr@kBRa@Pi@Pk@Ji@F_@F_@Ng@Ps@Pc@rDuI`@w@f@{@`@k@|@wA`BkBT[rAsBnAiBf@u@j@w@TYV_@ZWJEPAN?NBNDd@\\\\VXLPDB@??TFN@\\BN?PCf@I|@STIdAg@f@[^]n@g@h@u@Zg@??LUR[P]lEyHv@_BVg@t@mApBsDt@_Bj@{@V[^DN@NFx@^LCV]QSoAiBKQg@}@{@mAcAsAQd@?H?LDHDF??Vh@NCLGRYcAsAaAyAfAmA`BcBNMlBoBPO??pCsCBA??LM`@]P[lA}B`AmBxAsCLWv@}A??JSjA}BlA_C~@gB??HSpAaCv@}A??HSfAwBDGtAmC??N]bBaDxAyCBAZk@??`AoBt@wAvAoCn@Y??NIdB{@ZO??`D{A|BkA??NId@UTMvBiAlAo@v@_@xBiAnBaA^Q??NIhAu@|@y@p@m@n@u@TS`@[|@o@^Y??LMxAcAjA{@RM??`C}AXQ??NK|C{B~AmARM??lAy@bBmANK??dEkCVAl@o@x@}@z@k@ZWPj@R~@FLFJJLPDVCtAo@B?"
+  },
+  {
+    "id": "210138",
+    "lineKey": "Bus",
+    "routeId": "21",
+    "name": "Forest Hills Station - Ashmont Station",
+    "polyline": "yxdaGrj`qLl@ZR?Tc@w@a@wA_Ak@c@mAo@Ac@Ao@K}CCqCDaG???GDmAH{@Fi@Nw@VaApB}EFS??ZeALq@Hq@HcC@oAB{@De@Hc@Li@Ti@f@u@rAyAhBuBV[??zHqIdCcC~@cAt@u@zAcB`KoKr@i@FC??RK`@OxCiAdC{@~Bw@dBm@dFcBfC_A~Ak@XI??`@KzBu@jBe@VI??zDiA??b@M^OR]LOR]^y@f@kA^gAFa@LmA??^cDLkAHWJUTYZYPKj@QXG\\YXUJI??FG`@s@hAsBpAiBR]??Zi@j@eAP_@Po@Fy@f@iEPmA??DY|@sHJy@L_@`@w@??JOjAoBbAcBxAkCTk@ZiBJq@Hk@Fs@@a@??LoC\\qG@G??Bu@HkBRgD??Bi@Bg@FeDBiBAs@??A[GkBMmBYcC[yAs@{CUw@q@uC??GY_@aBSy@e@yBo@iDW}AkB[??qAWyCk@_AQ??QEc@GyCi@CA{Be@@yA?a@A]CSGOKIOEO?SB_@P"
+  },
+  {
+    "id": "2110157",
+    "lineKey": "Bus",
+    "routeId": "211",
+    "name": "Squantum - Quincy Center Station",
+    "polyline": "ycdaGpkmpLd@a@B[@k@Bg@?u@KwCAg@???MMqGIqCGsCEyB??AYGwCGyCEaC??AWg@BODID[Ny@r@QN_AlAsAbBMP??A?OTk@fAENeAtAcAvAM`@??MZ_@t@w@zCgA`E??GT\\TbAtAXj@VPTTRJJBPF\\BXJJHRLPPVZ????JPNVl@x@`@r@XX\\Ll@PpAP??P@b@\\DFTVt@pBBD??L^^vABF^bAb@dAx@rB??HRj@nAZf@dFhEp@d@f@Pn@LtEh@HBn@DlCVdBXx@P^NdDlARDpHtBfC`ALDXJTHLDJF??HFZPx@p@VXn@vAL`@LT??DHVLZ@@@p@I^E??b@EDAB?p@InBU~AO??PCbDa@xC]HAnAOd@EHA??PCLC`AM`@AVFJDRPNPfBzBFJDF??xAjB|@jAbDbE`@h@??JLBDLP\\Lp@LrBJb@?hARdAVh@J??v@L`AxAQd@?H?LDHDF??Vh@NCLGRYz@lAf@|@JPnAhBPRrA~A\\`@v@r@VJZJ??@@fA`@l@V^Nr@f@n@j@tDnD??LLPNr@`AT^h@~@`@~@??Tf@P`@zBvFz@bCThABJRbB@J???VhBaBpAqANO??fBkBrBwB??LMpBqB??BEHGuAwCgAeC??KSoC}F?AcAuB??KS{AyCy@eB??KQbFoF??LOxEiF??LOpF_G??LObEqElAdCnAdCLKJMhEyE??RUW}@Uk@Ug@QY{@cBuAiCQUY_@y@iA??MOcAuA[a@cB}Bk@w@q@gAo@cAm@iAvAkA??hCqCpBuBRQPQ??hAoAvCeDVW??pCcDrAuArB{BNO??nAsAhBkB??LOPS@?fAkAlAsAHG??LMXWh@_@\\KbBgAd@g@??LONS^{@FQNk@FUHQpByBPQZI?u@@g@DWDOLU??JQzAqCxGaNHSl@o@x@}@z@k@ZWPj@R~@FLFJJLPDVCtAo@B?"
+  },
+  {
+    "id": "2150238",
+    "lineKey": "Bus",
+    "routeId": "215",
+    "name": "Ashmont Station - Quincy Center Station",
+    "polyline": "asaaGttvpL}@`@a@b@SZ[PVDdB^t@LfANzBd@B@xCh@\\F??D?pAVxCj@`BZ??zAVMw@o@kDIc@??]aBS_AWoAaAsE??EW_@gBQy@EO_@oBm@uC??GWc@_CQcAYyAKg@??Y}A[eBK}@KcAEc@CqCbC{@??VIxE_BFEx@Y??NEhEmA??TGv@UzA_@v@Yh@WZWn@o@TUz@u@TQlCsB|EkEdBaBhBcBdEyDd@c@lAiAXe@x@k@tCkB??VOf@_@ZQ\\UtCgB^U|@]zI_D|EcBtAe@??NGj@UvEaB??DCdE}AdBo@\\K??vHoC??NGpBw@??`@QbAHVHHBHDhAf@|@`@bAb@\\JVCPMLM\\iB??H_@F_@Pc@DGDEFEt@a@~Aw@g@kBULKIMOEQ@y@NmA^mCD]@I??PcBPoAD]ZsBBG??DUBMjA}F`@sB??FWHa@VqAToAJe@Nu@ZoA??FUd@sBZoAXT??xE`E??LLxAnAXT??dEnDl@d@h@f@??dA`A??LLx@r@pAnAXU??|AsAf@]r@]~@g@|BqAXQ??RM`E{CTS^YBEn@e@ZWh@a@??NMz@q@xBgB??NMjA_Ap@k@|@w@??LKZSGi@CUScDAi@??AWAqB@iAH}AFcBHq@??BWHaATsAVkA??DWrAaG\\oA??FUXiA^}@b@s@f@e@\\YXe@XaA??@EFk@PeAXaCJyAJsAB}@NsERmE@O??P{EB}@HyA??D_ADyBBs@??@Wn@sEd@sC??BWHm@Hm@`@cCTeBHc@??NgA`AoGn@wD??BUx@sGHu@Bq@Ai@Ii@Qe@G[??GUwCaI]aAa@cAKc@]???M?w@EoAEeAGsAUm@G]OQMQSWy@??ISmAkDSk@q@oBkAeDCDi@T]JgC`Ak@P??SFaBf@_@PsAr@s@f@??ID{DjCq@\\k@T@b@Pv@\\p@??DJT`@r@v@t@`@qBp@q@TyAn@iAj@oAfAcAp@m@\\_@ToBfA??o@\\kCfB[Zi@gBM]Su@u@uBx@}@z@k@ZWPj@R~@FLFJJLPDVCtAo@ZM"
+  },
+  {
+    "id": "2160184",
+    "lineKey": "Bus",
+    "routeId": "216",
+    "name": "Quincy Center Station - Houghs Neck via Germantown",
+    "polyline": "yh{`GpdkpLJODO?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoBYS??gAs@We@g@aAeBmDsAgC{BoD??QWuEgH??MUYa@_A_AyAkAiBsAo@We@Sc@Ko@MiAGK@??w@B_AJw@FgAIw@S]SEEWMACg@_@KICC??c@e@k@q@iAkASW[i@Yu@mAmDUu@[}@Mk@WaAQgAIs@Ii@AOMqA??OoAYgCAm@?eA@_@FcATwD@w@?o@E]E{@S}C??IiAAq@?w@@g@D_@HgBd@eE??p@uGHk@H_@D[z@cD\\qAJa@??H_@XcAD_@@K@]t@Y??bAa@b@S^MdBs@NQT[R{@\\oAN{@??FWRoADa@LqAHiABQ@M??X_DTsCD]RcCFc@Po@Pm@Pi@??BMZ_AP[P]p@{@??LQd@q@j@s@tAgB??JO|CcEJY@E??FWBEFg@@aABy@Fk@Hc@Pa@^e@^WXILClCa@`AMh@I??`B[REr@?LDL@jBp@DBtA^??PDZ}F@Q??@[?c@Ii@GSKQUWa@]??QOz@gC^cA??JUzBdB^X??NJVC@WKOOD[FQG{BeBk@xAq@rB??IRKVSf@S\\IJGHmBjBIFIDE?QE??GAa@Ca@PCBIRG^CVA`@GXKPONC@??QHaALmC`@MBYH_@V_@d@Q`@Ib@Gj@Cx@A`ACT??CPCDI\\KX}CbE_@f@??aAnAk@r@]f@??GH_AlAQ\\QZ[~@EL??Oh@Ql@Qn@Gb@SbCE\\UrCWtC??CVCPIhAIx@??CVE`@SnAWrA]nASz@UZOPsAj@??QF_@Lc@R_A^??y@ZH}AF}BBcA?}@Aa@AQ??ASIQOm@eCaHMW[w@u@yAAA??IQqA}BGK_A_BaAgB{@yAi@q@??W[g@g@q@m@wAy@k@Qe@Q??GCo@YUK]W_@c@SYw@{AS}@Gm@?]AY?s@Bk@?K???SPqD@K??r@yO??@WNuDX}F??@WZgH?QAw@???CGuAEc@Ik@K[Q]??CE_@[c@[qDwBYWQMQWO[Ka@Ka@EW??_@iBOw@YaB]aBQcA]cBESO_A??Ki@WmAQ}@Qo@Uk@QYOO??EE[WMKSKOKa@QYK??QGUI_@EiBW]C??_BQWGOESQMYOc@Sm@KODk@a@HZ`@JNHT"
+  },
+  {
+    "id": "2170139",
+    "lineKey": "Bus",
+    "routeId": "217",
+    "name": "Ashmont Station - Quincy Center Station via North Quincy",
+    "polyline": "asaaGttvpL}@`@a@b@SZ[PVDdB^t@LfANzBd@B@xCh@\\F??D?pAVxCj@`BZ??zAVnAXhCb@rCj@??d@H~E~@bBZ??hCf@??PDxDp@tB^??PBbAPz@P`APzAT??b@BL?RE^Eb@DtAd@JBN@VA`@KvAg@??TInCy@hCm@??PEbImBz@Up@Y\\Sr@q@n@i@????Za@V[fCoE|@mA`@_@b@_@??FEXWn@u@d@o@PU|ByD`AgBXk@j@mARm@`AuFL_AH]H]??BOL_@Vy@d@kARs@dAcENs@Jw@@C??HoBHqAh@gGFqABw@A}@DiAFiAN{ABS@]?uBCK?G???_AASD{A@GJ{A@ALoBA_@AaAEm@??QmBGo@FW@c@`@wBJc@??`@iBBE~AuFZkA??HYPu@`@kB\\iB??H_@F_@Pc@DGDEFEt@a@~Aw@`@U^UjEeCnBeAlEkCnA{@NGnBk@tDy@fAM`AGdAMh@IfEq@j@K??PCSc@IKa@iACMISCGKSSWSWu@s@aAu@qAoAi@e@??OM}BwB]Y??OKoEwD??OMiAaA??OMqFwE??OM[nAqIwG}@zB{AcAkAy@??UQEEc@c@][Ws@GS??GUEKwBoHIY_AiE??GUGQQs@s@kCc@_Be@_BcAmD??IU}EnFKLMJoAeCeEnEkAcCMN??cFpF??MLyEhF??MNcFpF??MLt@zA??NZpAdC??HRnAhC?@dChF??HRrAxCjAbC??HRIFeBhB??OLsBvB??MLgBlB??OLqApAiB`BAc@?E??S}ACKUiAq@oB??IS{BwFQa@w@gB]m@??KQU_@s@aAQOWW??yCsC??QQo@k@s@g@_@Om@WgAa@KE??QGWKw@s@]a@sA_BQSoAiBKQg@}@{@mAcAsAQd@?H?LDHDF??Vh@NCLGRYnAoA~@cAX[??LOLM~@uALOrCaD??FIwAqDyA}Ci@cAi@gAc@{@??KSoAeCgAyB??KSoAcC??ACmAcCACc@aAm@mAYm@??KSQk@Mu@McAEiA?c@???WFuAd@kDd@cD??BW^{CZuBZsB??DW^qC^sCZeC??BWlFzA~@Z??NFlD`AvC|@pAX??NDhCd@D?PCLEJOVB??NB|ATdCb@tB\\??NBfCf@zAZ??NDfB\\tAX??\\Hn@Y??NIdB{@ZO??`D{A|BkA??NId@UTMvBiAlAo@v@_@xBiAnBaA^Q??NIhAu@|@y@p@m@n@u@TS`@[|@o@^Y??LMxAcAjA{@RM??`C}AXQ??NK|C{B~AmARM??lAy@bBmANK??dEkCVAl@o@x@}@z@k@ZWPj@R~@FLFJJLPDVCtAo@b@QNU@E"
+  },
+  {
+    "id": "2200141",
+    "lineKey": "Bus",
+    "routeId": "220",
+    "name": "Quincy Center - Station St - Hingham Depot",
+    "polyline": "qi{`G`ekpLRINUDO?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoBv@wE\\sBTiAJc@??lAoGTkAh@gCLk@PeA?a@?SEw@Cw@KgBCo@?c@???k@H{@@_@PmCVkDPaCFy@D_@??@WViD@ONcAFm@??BW\\_DD[JeBBeA???SGyCAQ?m@@O@e@De@PsALgA????DWb@sDZkCLcANcAFYv@mEf@oC??DWLy@^oBPcAZaBLw@v@uE\\oBPeA??p@}DXkBp@oEL}@Hc@RuA??`@kCTmBPUT_@V]^s@B_@E[AKGOIYCUA]Ei@\\{CLyAHk@^mGp@eHdAaH|@eDRoA^uAvAoEPu@X}@??FUHSZeALm@\\}BFgA@Q???YBiABsBDeB???K?y@?wACy@AgACo@GoDCgA??AWCuAE_BAw@??AWCw@MaGGiB??Aa@EqBGmBAg@??AWEy@CaAMoCC]Ky@s@aFOwAWaE?I??AWIqAOuEKyAIuBCi@??E{@IqCCk@??CWM}CEg@Ga@C[Y}A??SaACMc@}AW_ACIWqAOo@UaAO}@S{Aa@iB??Ia@[}Ae@wBq@wCOq@g@eCYuAe@sCUcBQcAMeA_@}C_@eCOcAOyA_@}BW_CUyBI}@S{BUwB??OqA[mBM{@??w@mEm@eDYeB[J_@LmBt@OQOAMT?NwAn@aA\\Q?OAQI}DcCMUISm@qEMy@Ku@I_ACu@?gA??AcEBi@Fe@N]P[X[J@f@A`C@tA?hB?hEEDoBDsB??LoEDmBFiC????BeA@m@CoA?s@KuDAe@??CgAK{CKqCCkAGkC@iA@u@FeAHmAZkGFeCAe@?a@?o@M{C??E{AOaDuBGUA??aBIyAC]A??{BI]C[Cc@ISGyBeA??_@Se@Uw@c@c@W{@a@u@c@cAm@o@i@o@s@e@g@w@}@g@m@gCwCUW??OOP_@`@aArCwG|CgH~@{Bt@cBFK??HQTi@LYPUNOvAmAb@_@z@s@t@k@xFuD??LI@Ax@c@DCPMTONOnCgBr@c@tAcA`DeCbEgDlA_Av@q@bAw@TSPQV]Ra@HMPc@BIFS????FYHc@\\mCFo@VqBJg@\\yAF_@@QR@VHVTJF??\\T\\V|A`ARPPNNRb@fARp@??J\\LV^[JQ?c@Gc@Wy@Uk@c@y@WSk@e@MSWaBEYAQ@I"
+  },
+  {
+    "id": "220277",
+    "lineKey": "Bus",
+    "routeId": "22",
+    "name": "Ruggles Station - Ashmont Station",
+    "polyline": "gxkaGds{pLp@|@fAvA`@`@PO`CiB\\Q\\v@h@hAbCbFpBxEL\\@@??zAhDZn@T\\`@f@nBvB\\\\??v@v@~@`Ad@d@h@f@h@b@p@`@rAt@tAv@`Ad@bAf@??TL`Bp@xCbA~Bl@|FvA??PDpAXd@HZDN@@J@XJPVLn@PXj@`@Nt@TDB??`A\\RqDFk@bDMJ?xFGfCA??j@AhBA~BCv@A|BA??xBCzDE\\?NAPEJCJIPSh@w@t@iAFI??HOhAgBr@iAr@gApAsBPU??`@m@h@aARg@XeAN_@LYTWXUd@S???Af@Mt@ErAQjA]t@a@f@c@p@s@pAgBR[??RYxBaDt@iAxBaDhBeCHK??JSz@_Bd@iAZ}@`@_A??JWXk@tAiCn@qAbAwBVs@`@g@LQPIPEPC~A@p@NpCp@\\H??~Cr@jB`@bB`@??`Dx@xEhAtCt@dAR|@RlAR??PDpFhAjDt@??j@LtAXD_@ZkAPw@Nk@v@cEF]??`AgFbAyEZeBd@sBHg@??|@uErAcH??Jk@p@eDj@mC@E??j@}C~@uENu@b@aC^kBBK??ZwAn@gDj@wCLm@??Li@DU?oAHeBB}@VcD??@UJg@X}BZqAFa@DQl@}Bj@gBPe@`@}@FK??f@{@b@s@|AeBx@o@t@k@bCgATI??RINEb@_@Hs@@IPDz@L\\HvAVjATVDdB^t@LfAN@yA?a@A]CSGOKIOEO?SB_@P"
+  },
+  {
+    "id": "2220128",
+    "lineKey": "Bus",
+    "routeId": "222",
+    "name": "Quincy Center Station - Pleasant St & Washington St",
+    "polyline": "qi{`G`ekpLRINUDO?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoBv@wE\\sBTiAJc@??lAoGTkAh@gCLk@PeA?a@?SEw@Cw@KgBCo@?c@???k@H{@@_@PmCVkDPaCFy@D_@??@WViD@ONcAFm@??BW\\_DD[JeBBeA???SGyCAQ?m@@O@e@De@PsALgA????DWb@sDZkCLcANcAFYv@mEf@oC??DWLy@^oBPcAZaBLw@v@uE\\oBPeA??p@}DXkBp@oEL}@Hc@RuA??`@kCTmBPUT_@V]^s@B_@E[AKGOIYCUA]Ei@\\{CLyAHk@^mGp@eHdAaH|@eDRoA^uAvAoEPu@X}@??FUHSZeALm@\\}BFgA@Q???YBiABsBDeB???K?y@?wACy@AgACo@GoDCgA??AWCuAE_BAw@??AWCw@MaGGiB??Aa@EqBGmBAg@??AWEy@CaAMoCC]Ky@Ty@Le@^eAl@iBPq@ZaA???CJa@DMLq@Ju@h@eF\\aDN}@??BWnALl@HnAP@???`ANf@Ll@Hx@RXJVFt@NT@VAfAMx@AR@XB??F?HBb@@^Af@E`@GnA]??NG`AUVId@Ib@Eb@A`@BXDp@Rb@R^P??NHz@`@j@N|@N`@FVD??RBlAd@j@Pl@RZFV@PANCLIHEb@ITAZCRGb@g@Pa@??HShAk@`@W`Cw@h@QpAg@LG??nAk@nAo@PIPKJKLIr@k@??LM`CuB~@w@xBeBxAkA??LMx@aAXa@f@_A\\[RM??LGn@Sv@CXBv@?h@C??PA^KpA]r@[\\Qt@g@??NKx@g@LEf@_@\\SbAq@dAq@jAi@z@e@dAg@??NI~Ay@JE|@Uv@Kh@?LCl@AX?n@Df@J??PDF{@FcBPoF???WDcBHoBBy@??@yA?YDqAF}@BQFg@??BWVuBBYVkCVyCNaB??BWTmBDg@N{@r@qE??DUVwA\\yBPu@??DURKXKn@KZCjAIP?LEb@AZ@h@DP?J@N?N?PAPCXCPELA|AWLE??\\KNAZILChBSdAI??NAn@Gz@Gf@?n@DVD`ATNHLDJFJHJDLBLDR@JBL?????N@|CBn@?R?LCb@Cj@IjA[TC??NAxA[z@Qf@?`@CjB?\\Dd@H??NBlDp@xBDxCIHAbAC~@C??H?b@CF@ZApAEDA`A?VBvA`@\\NrBlAVPDBNR??PT`@n@Xj@d@dARh@tBtEr@xAz@jB`@r@??DJZd@HNv@sCl@qB??z@wCj@yBQUs@s@y@}@o@o@i@m@????YWWU}A{@SEg@O]ISCc@Eg@CqCH"
+  },
+  {
+    "id": "2220130",
+    "lineKey": "Bus",
+    "routeId": "222",
+    "name": "Quincy Center Station - East Weymouth",
+    "polyline": "qi{`G`ekpLRINUDO?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoBv@wE\\sBTiAJc@??lAoGTkAh@gCLk@PeA?a@?SEw@Cw@KgBCo@?c@???k@H{@@_@PmCVkDPaCFy@D_@??@WViD@ONcAFm@??BW\\_DD[JeBBeA???SGyCAQ?m@@O@e@De@PsALgA????DWb@sDZkCLcANcAFYv@mEf@oC??DWLy@^oBPcAZaBLw@v@uE\\oBPeA??p@}DXkBp@oEL}@Hc@RuA??`@kCTmBPUT_@V]^s@B_@E[AKGOIYCUA]Ei@\\{CLyAHk@^mGp@eHdAaH|@eDRoA^uAvAoEPu@X}@??FUHSZeALm@\\}BFgA@Q???YBiABsBDeB???K?y@?wACy@AgACo@GoDCgA??AWCuAE_BAw@??AWCw@MaGGiB??Aa@EqBGmBAg@??AWEy@CaAMoCC]Ky@Ty@Le@^eAl@iBPq@ZaA???CJa@DMLq@Ju@h@eF\\aDN}@??BWnALl@HnAP@???`ANf@Ll@Hx@RXJVFt@NT@VAfAMx@AR@XB??F?HBb@@^Af@E`@GnA]??NG`AUVId@Ib@Eb@A`@BXDp@Rb@R^P??NHz@`@j@N|@N`@FVD??RBlAd@j@Pl@RZFV@PANCLIHEb@ITAZCRGb@g@Pa@??HShAk@`@W`Cw@h@QpAg@LG??nAk@nAo@PIPKJKLIr@k@??LM`CuB~@w@xBeBxAkA??LMx@aAXa@f@_A\\[RM??LGn@Sv@CXBv@?h@C??PA^KpA]r@[\\Qt@g@??NKx@g@LEf@_@\\SbAq@dAq@jAi@z@e@dAg@??NI~Ay@JE|@Uv@Kh@?LCl@AX?n@Df@J??PDF{@FcBPoF???WDcBHoBBy@??@yA?YDqAF}@BQFg@??BWVuBBYVkCVyCNaB??BWTmBDg@N{@r@qE??DUVwA\\yBPu@??DURKXKn@KZCjAIP?LEb@AZ@h@DP?J@N?N?PAPCXCPELA|AWLE??\\KNAZIQUMKSWs@a@_@M}@MYA??QAuAKy@S_@MSMMO"
+  },
+  {
+    "id": "2250187",
+    "lineKey": "Bus",
+    "routeId": "225",
+    "name": "Quincy Center Station - Weymouth Landing via Southern Artery",
+    "polyline": "kh{`GzckpLBI?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoB~B|ALAVE`CeANDp@Vj@Up@]zDkCd@[??VQrAs@^Q`Bg@~@YfCaA\\Kh@UBEN[BC??pBqDx@yA|@cB~@gB??JSPYrCkFVi@??HSwCkG??KSIO[{@]yAg@gCS_A??G[Eg@A}@@U???ED_@HWRc@Ve@^{@Lq@Bo@?e@GoA??CWGy@OqAEa@Ec@E_@w@qEI}@?o@Da@@E??@o@D}@LyAHk@Fg@V_BZoAL_@P]V[RK??NKXYj@Fh@Dz@?lA@b@@P???tDFvBDPBV@n@@??`@?nANVH\\JTg@Ta@??h@iAj@kA~BgFh@{@h@q@hAoA??TYbAwA~@qAz@kAzAoBv@kAbB_CVY??Zc@jAgBr@}@`B}Bp@aAdB_C??JQ~AyBtAkBpBqC|@oA??@Cf@u@z@gA`@k@v@iAjA}A??JOv@eA|@{@XS??JId@U`Ai@b@MtAe@??NGDCtCo@j@G|BQ??\\CxBMb@GBA`BK??PA~BMnBITB`Hf@v@N^D??P@\\CVI\\QPST[d@k@rBsCv@^??HDnBfAl@Vf@Dz@C|@E??PAf@ChACr@GdB]??PEvA]pA_@NE??JEBCh@SbBq@RG??r@WtA[dAS`FiAfAQt@E|@IpCObBYz@Qp@Q^OZUZY??BCn@g@^_@b@Uf@OpCQ|@IEe@??K{@QmAOmAQ{AeAgIm@aEGq@??CWKk@S}AMu@KaAq@oF??EWoA~@w@f@KF}Az@??GBqF`DeDpB??OHiBhAm@\\cB`Am@^KF??YPeGlDkAr@k@XY`@i@x@[f@"
+  },
+  {
+    "id": "2250191",
+    "lineKey": "Bus",
+    "routeId": "225",
+    "name": "Quincy Center Station - Weymouth Landing via Quincy Ave",
+    "polyline": "kh{`GzckpLBI?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoB~B|ALAVE`CeANDp@Vj@Up@]zDkCd@[??VQrAs@^Q`Bg@~@YfCaA\\Kh@UBEN[BC??pBqDx@yA|@cB~@gB??JSPYrCkFVi@??HSBE~@{Cl@aC??FU`@cBt@uDVmBPiA??BWj@oEFg@??j@gFNqAF[RmA\\cBr@kD???C@Et@_DZaAx@aCfAyCn@eBTg@Ta@??h@iAj@kA~BgFh@{@h@q@hAoA??TYbAwA~@qAz@kAzAoBv@kAbB_CVY??Zc@jAgBr@}@`B}Bp@aAdB_C??JQ~AyBtAkBpBqC|@oA??@Cf@u@z@gA`@k@v@iAjA}A??JOv@eA|@{@XS??JId@U`Ai@b@MtAe@??NGDCtCo@j@G|BQ??\\CxBMb@GBA`BK??PA~BMnBITB`Hf@v@N^D??P@\\CVI\\QPST[d@k@rBsCv@^??HDnBfAl@Vf@Dz@C|@E??PAf@ChACr@GdB]??PEvA]pA_@NE??JEBCh@SbBq@RG??r@WtA[dAS`FiAfAQt@E|@IpCObBYz@Qp@Q^OZUZY??BCn@g@^_@b@Uf@OpCQ|@IEe@??K{@QmAOmAQ{AeAgIm@aEGq@??CWKk@S}AMu@KaAq@oF??EWoA~@w@f@KF}Az@??GBqF`DeDpB??OHiBhAm@\\cB`Am@^KF??YPeGlDkAr@k@XY`@i@x@[f@"
+  },
+  {
+    "id": "2260047",
+    "lineKey": "Bus",
+    "routeId": "226",
+    "name": "Braintree Station - Columbian Square",
+    "polyline": "apr`GvljpLL@LGHODYE{BAqACYU@{BAsCDcBD{@SMMYo@mAqEG]CUCe@@YFg@Rc@Zu@A@PULa@Ne@Fi@@[Aa@G_@K_@KUQUSQWQ_@U[I]EmAUi@QECKKIKWe@IQGYGW??K_@KYa@eCUmA_@{BGWg@{CYmBQwAUwAY{@Yw@oBiDa@o@??MQw@cAgBsB}@_AcCoC}@_A_AeAy@_As@eA_BgCo@w@k@o@m@g@mAy@uB_Aq@a@YUe@m@_@o@ISEKOu@CQ??[aCS{AQyAO}@W}@mB{FU{@My@QyAMgBE_BIgB??AWG{AO_BOqBSuBKqAAk@?g@Bs@Hm@\\yAd@{B@m@Cw@Gq@?MEqA??AWEuB\\CVI\\QPST[d@k@rBsCdBeC??JQtAoBrDoF??JQ~C{E`@o@t@oALQ??|@uAh@y@Xa@j@YjAs@dGmDTM??NKl@_@bBaAl@]hBiAtD{BpFaDDC??~A{@JGv@g@nA_AhDiCJIv@m@Z[LQdAwA^o@~AiD??Te@@EZk@Xk@N[r@cBd@cAd@iAFKVi@Zu@??Vk@d@oAZu@\\}@Zu@JY^eA??@Gf@wAj@uANe@Rk@lA_DL[~@gC|AkE??FQd@qAv@aCl@\\jAd@n@Rt@L??VDtBNrA@`@@l@FXHXLJH\\`@\\p@r@bCr@jCX|@LX??HRXf@R^LLJLZ\\ZV`@V~@d@dAR^Bn@CzAWbAOj@Ab@@P@??P@FBpCn@fCl@vBd@r@Xb@Zt@h@^XXPXTPJLJ??RNXVp@z@d@n@lAjB@B??NTHHZt@JPFTBLVfAD\\FbA?HPlE?JH~@lACjBAbA?vBE??VAVApEI|ACrEKpBG??dBGzHS`BA|@Cz@?B???N@dAFlAD`CHH???jCDhABzB@z@@v@??E@EDg@Hm@Dc@@OJi@NgA??PmALi@J[LWN[^g@T[Z_@"
+  },
+  {
+    "id": "2300176",
+    "lineKey": "Bus",
+    "routeId": "230",
+    "name": "Quincy Center Station - Montello Station",
+    "polyline": "ei{`GzdkpLFCNUDO?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoB~B|ALAVE`CeANDp@Vj@Up@]zDkCd@[??VQrAs@^Q`Bg@~@YfCaA\\Kh@UBEf@vA??b@lAh@zA??FRRj@lAjD`@lAPRPL\\Nl@FrATdAFnADv@DX???P?nCW\\EVC??fBMzBMxA?r@F`@HJD??NHbBbAv@^??NHlAn@nBbAfB`A??TLr@Zn@\\l@XzAv@D@PH??`@Rt@TjAPjAHr@A??PAbAGjEs@??NCx@EzASbAOLC^Gl@IvBY??jFs@pAO??NCzFg@r@CJ?@?p@B^B|BVrBVbCLVBF???P?N@|A]~@Wh@O??PErAYzCy@D?vBc@PC??NC\\IlAURGlA]??NEn@OLEjAWn@QTGPCJC??PCr@Oh@C??TAX@X?`BFfAHF?NBHDLBVN^\\FFHN~@xALJ??LLHFLFl@N|@PB@??P@r@Lh@Fd@Db@Dz@@f@?bCS??PAv@E|AYl@OVIx@[XIDCz@WxAg@~@S|@I??PAt@ApAJXD??PBjDv@z@PFO?WAOCQQYY[QUWa@Q_@O]Oi@Mg@Mu@y@uF?y@Ou@De@FMFKvKM@XCFAHGBKBQEOCsGCO?KBEFEHANAjA?`@@PDFJHXDtBNn@FP@dC???L@LGHODYE{BAqACYU@{BAsCDcBDm@D]FSPH`@XlATz@x@tFLt@Lf@Nh@N\\P^V`@PTPf@DNF^Hf@tARp@FfCb@xATB?l@L??r@PD?^HRBnAV~@N??xATdALrB?dCCb@AjBBl@?jC@\\???lA@hA?jA@fD?hAAdA???P?jFCnAHR?t@Dp@Dv@J??p@HtBv@bG~A??NDHDrEjA??NDtB^bEx@hBZ\\D??RBxCb@hAVpBl@zGrBnAj@NJ??LLXT^\\VXHLd@n@dAbBdBjC`AvAZ`@hClDb@d@TX~@`A??LLjAbAt@j@B@f@`@f@\\\\XB@??NJvA|@n@\\|Ar@h@TND??PFx@Nx@@H?`AMbA[RG??FAdAWp@SlA]ZKb@Qp@WpAk@bAi@v@[l@[h@a@v@o@??@ADCnBaBvF}EtBiB??LMrAkAHGnBeB~AuAPQxAoAr@m@ZW??f@c@JKpAkAlAaAh@e@bAi@NGLG??VI`@Gz@I^At@?h@@dB@v@B??P@N?~CJ~A?lAEfBC??b@ATCfAEVCh@Kv@Ub@IZEl@I??BALAr@Ev@I~AMd@GRC\\???PA\\Cd@Ab@D|AJz@Rh@JxAh@ZP??NHLFh@\\DB~@|@hChCVVNJ`@^~@l@??BBJDVHN@JBR?L?ZAn@EhAMRE??PCDAd@EtAExA???N?vAEjBK@ArAE~AKB???P?n@EhA?f@@v@HXB??P@`BTz@N|@LvAJ??P@`BD|ACXCT?f@@dCCbCBV@??N@fAFv@JdAD~@FbA?`@E??PAzAMx@UtA]nA_@j@S~Ae@??PG^M~@]pCsAv@g@??@AJKNK^[^Ud@]j@Q@Al@ONC\\EvAIfAA??t@AhCA\\?|@LrAZJD^L??NDt@RnAf@`DrAf@L??NDh@PfF|ANFr@T??NDTHxAb@`B^l@HbDXN?D@\\B??vDVxAJx@Ld@Jl@Vb@b@HH??LN~AbDb@`AZd@PTFFTXZT^T^Rf@NRF??NFFDr@PpATj@Lz@NrAZRF??NFJDXVp@p@X\\n@x@V`@P`@Ph@JVRd@??Pf@Rf@DLFP|@fBnA|BhB|CV^JLFFNFTLTH^Hz@Ff@BdBLZB^LLFPJz@z@zBnCXb@t@rA\\p@Zf@Vj@NXFHV^PXt@v@fEtEv@v@~@hAt@`At@tA^j@f@j@n@`@XHZHv@Dt@K`Dg@hCa@RE|@QhAO|AWjDi@XCV?ZFLD@U@WFOFOLMRMpEuCXQZvAX|@VVh@U"
+  },
+  {
+    "id": "230244",
+    "lineKey": "Bus",
+    "routeId": "23",
+    "name": "Ruggles Station - Ashmont Station",
+    "polyline": "_ykaGfr{pLhAzAfAvA`@`@PO`CiB\\Q\\v@h@hAbCbFpBxEL\\|AjDZn@T\\`@f@nBvBBi@NuBDaADsB?i@???sBBaBF}B@Y??DaAJoAZoCLq@??TkAb@uBPm@Pg@j@cAfC{F??Te@bAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABU`@sBJ]N_@RWVSPIVEXAp@?hAL`BHhCVn@Hn@KDA??r@S~F}ARG??hDu@xBi@zCu@ZG??vAWlAWnCg@JA??b@GT?h@@l@F`@Fb@LhBp@j@P??JDZLtAj@f@VhAj@dAd@f@@\\J??VHtCz@vBl@fAXb@H\\AfBM^CRE????RGp@SZU`Ak@x@]d@IT?VAF@??N@f@NRD^LjAZR@PAXEBA??r@]vAy@j@Yf@T`Al@r@Tp@d@XRV_@Ha@HMPQd@S??PIZQj@Yn@c@h@[HElAgAb@a@BE??j@q@~AoBV]??JQPSNSfAwAx@gAT[rB_Bd@YfAu@^Wp@e@VO??^W\\UrAaATSVW\\c@xAwBj@w@T_@FM??L[FMDQf@qAh@wAZq@Zg@p@{@t@}@f@m@j@a@??ROj@[d@[JGVK`C}@d@SVK??^Kl@Sj@Kj@IzCUx@GP?r@G??j@GtAGd@C~AMt@E??`@Af@?tAIpBIx@C|@Gx@C??pAEbAAvAIHeBB}@VcD??@UJg@X}BZqAFa@DQl@}Bj@gBPe@`@}@FK??f@{@b@s@|AeBx@o@t@k@bCgATI??RINEb@_@Hs@@IPDz@L\\HvAVjATVDdB^t@LfAN@yA?a@A]CSGOKIOEO?SB_@P"
+  },
+  {
+    "id": "2360105",
+    "lineKey": "Bus",
+    "routeId": "236",
+    "name": "Quincy Center Station - South Shore Plaza",
+    "polyline": "kh{`GzckpLBI?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoB~B|ALAVE`CeANDp@Vj@Up@]zDkCd@[??VQrAs@^Q`Bg@~@YfCaA\\Kh@UBEf@vA??b@lAh@zA??FRRj@lAjD`@lAPRPL\\Nl@FrATdAFnADv@DX???P?nCW\\EVC??fBMzBMxA?r@F`@HZNdAs@XS??p@g@fA{@pB_BVQzBgBjAy@pAkAd@m@??JQxCwD??JO~@mA\\i@Tg@Zw@Lc@??Ha@p@eEPqA??DWH{@D[L{@Rw@R]|A}Bd@s@j@u@??JOn@s@t@s@hAy@TUP]dAsC??FSVy@|@eD^cAh@gAl@iAf@mAj@aAZs@??HS~@wBXu@??JU\\eAR`ALn@`@`BjApDn@lBFVBFd@fBTbA??FXJt@ZfBR~@XbAFL??Z|@f@zAZbARv@@Jj@lCf@dBd@`AtA|BVd@|@fApAkA????d@]`@Ud@[TMz@[~@Q\\EXCXChAMfAK??lAKr@IjAK??PAd@I^Kr@]hCeAhAi@XM??n@Wl@S?eDA{ABsC???WFi@DSFMFMXYtAeATSz@o@~@u@PI??h@[z@]z@[t@[r@a@x@[f@[^Ul@i@FE?A??NIZSf@g@n@i@`@a@n@[RZ??Zd@nBhDXv@Xz@TvAPvAXlBf@zCFV^zBTlA`@dC@D??HRNxAD^D`@?D?^?DETGZc@fAYp@KXC\\Cb@?^Df@FVL\\PZb@`@TLXJn@JdAJTHXVRXJRH^BhA?d@?|@Bx@Fr@Ff@J`@Nd@HNJRHPNRJLPRTLTHL@P?P?L?J?J@J?N@H@P@XBXBl@ZP@dC???L@LGHODYE{BAqAxA@r@IT]LA|@OT?x@[j@]hBgAdEsCTrAh@`C\\pAF\\??FZTnADZJd@TtBH|@VlED|@?DBnADpC@x@?v@@b@??@VCr@?XHt@DNFXT`AF\\\\xA?^?V??AD@Jc@Be@Jo@Tu@Zs@Vo@Xk@T??MDm@XYRm@n@OP??MNsA`BCBk@t@SRu@~@m@x@mBnC??MNcB~Bi@p@_AvAe@n@??MNoBrC}@jAs@bA??GHU\\}@jAaAzAgBlCo@fA??KPGHy@zAsBvE[x@g@jA_@vAWp@GLCF??IRWl@YTk@b@}@v@mAdA??k@d@eEdDwAdAe@c@a@Qa@AYJc@\\_DvD[P[DOAMD_@@YBWCMEIIIMMQ??MOOCW@OJgCrC_@o@Q_@SOGAK?MDSLm@l@MLQ?UAw@IOAe@?cAEK\\Ct@@J"
+  },
+  {
+    "id": "2380272",
+    "lineKey": "Bus",
+    "routeId": "238",
+    "name": "Quincy Center Station - Holbrook/Randolph Station",
+    "polyline": "ei{`GzdkpLFCNUDO?OEQIGOCYHgC|ASBS_AQk@z@i@n@c@b@WvAuAd@}@Fc@L}@ZoB~B|ALAVE`CeANDp@Vj@Up@]zDkCd@[??VQrAs@^Q`Bg@~@YfCaA\\Kh@UBEf@vA??b@lAh@zA??FRRj@lAjD`@lAPRPL\\Nl@FrATdAFnADv@DX???P?nCW\\EVC??fBMzBMxA?r@F`@HJD??NHbBbAv@^??NHlAn@nBbAfB`A??TLr@Zn@\\l@XzAv@D@PH??`@Rt@TjAPjAHr@A??PAbAGjEs@??NCx@EzASbAOLC^Gl@IvBY??jFs@pAO??NCzFg@?jAC^EZKb@M^Q`@eAzBc@dAMb@St@Op@O~@e@lBOh@Ol@]jAOd@Q\\MXKRMVWVe@Z]R]Pi@RuAt@i@N[JoA^E@g@FO@_@@]CYGUKWMgA}@s@_AISi@aAb@k@xA}AiDiHe@cAWI??KCu@DWFWRc@d@QRn@vAhB|Dr@xAh@rAmA`AuAtAsAvAURMN{@z@??OLeBhBYZa@`@kAdAwAxA??GFEFkBlBSTmAjAEFQPgAfAWV??mCrCeA~@w@v@MLs@t@??MLuA|Ak@`AuBvF[`AG\\??WpAGn@_@jBSx@Yb@m@j@Jv@???@NnBVv@`@~A??DNDFTj@`@r@d@p@d@h@RN??LLfAv@D@PPpAz@x@n@h@d@??LLb@Zf@Hz@?NA??v@Ef@BXJZXZb@p@hA??BDLTXh@x@rA^l@l@hAj@v@t@|@@B??h@`AxABtAB??P@`@BbAPZH^NXPPHrIfErC|Af@RhBj@dDl@^HJB??xEbAxATd@H??VD^LnBf@~@PR@rADb@@??@?bB@v@Ch@G\\ETGv@Qj@MPEjCcAVIj@[`Aq@t@u@LKhBqBl@s@`F_Hz@qAX_@??zAuBlEcGPUtAcBjDmElBqBJM`BwA??LMvCiCpA_A`@Ye@c@a@Qa@AYJc@\\_DvD[P[DOAMD_@@YBWCMEIIIMMQ??MOOCW@OJgCrC_@o@Q_@SOGAK?MDSLm@l@MLQ?UAw@IOAe@?cAEK\\Ct@@J??@^Fd@L`@Nb@LRPPRLPF^D|@HTHTNPNf@z@PZp@dALPPUtAcBjDmElBqBJM`BwA??LMvCiCpA_A`@YvAeAdEeDNK??hB_B|@w@j@c@~AAP?|@D^D\\Jb@N??VJjGlC^N~EzBnBz@z@^lAd@NHLDv@^??JDd@PpAh@t@XtIlDjAf@~@^??NFjCfAFBDBlAd@`Br@t@X`CbArAh@jAj@x@`@??RJr@Zl@Zn@X~@j@~@n@`@`@f@b@d@d@t@b@VJ??NFp@NhAPb@FfBPhANb@DVBh@JbAXh@V??PFdChAb@Pz@b@|@`@|@^jBl@B@v@Rh@H??PBXF^DpBZj@Hf@Bp@?d@A`@Ez@MjBY??PCdDi@f@M`@M??LG^S|@g@hAc@bA]fAQnAEjAKd@G`@IzAc@r@SXGXC??PC`@CR@T@R?dAJvA^h@PhDvAxBfA`@T`Al@??NHjBnAJHRPZTxAvAPN??b@`@p@|@dA`BRf@Th@tAxDBF??DTjAlDR`@V^FH??LNTXHF`@VRJj@JT@XBD???PAZAjAEbBKn@Cd@CdDO??LAdBDt@Dj@FjBVf@FbAVh@N??PDh@Pr@\\hAj@F@xDlCjBnA??`@XrAbAp@f@lDtC??\\Vt@p@`DdCXT??ZXxBhBPN??NJpC~B\\V??f@`@ZRRJ~BqE???AnByDj@gAnCeFf@aAtAeCvAqClBoD|BeEZq@x@kC|@{CDM??\\oAnAeEH[f@uAh@gAT_@h@}@??JOHOt@sATm@FUHYDQ@UDg@wCq@Ds@_@K"
+  },
+  {
+    "id": "2400285",
+    "lineKey": "Bus",
+    "routeId": "240",
+    "name": "Ashmont Station - Avon Square",
+    "polyline": "asaaGttvpL}@`@a@b@SZ[PVDdB^t@LfANzBd@B@xCh@\\F??D?pAVxCj@`BZ??zAVnAXhCb@rCj@??d@H~E~@bBZ??hCf@??PDxDp@tB^??PBbAPz@P`APzAT??b@BL?A^Gh@CTWdBSdAZ|@TdA`@pAJd@??@LNjBDv@Bn@DbABfCF\\Tf@Zf@d@z@pBi@p@Op@K^G??bAQ^APBXFLFPLd@f@f@v@l@dA??Tb@fAnBlBbDXb@??HJn@l@vF~D??NJdD~B^ZfAt@??LJhAz@f@\\z@f@jB|@hBv@??NFLLz@^tAp@dBv@f@Vl@VdAR??PBhBX??PB`AL`Cb@DDLF??B@\\DR@XGJGHI??DGVc@xB}B`B_B`AcApBoB??LOjAkAnDwDb@_@??^]hBgB|EqFl@s@??v@_AzAaB|BcC??LOjBqBp@{@l@k@fBqBZg@N[Vu@DM??FWJ]RyA@WRoA@]R_C?MtAH??B?jCBvEHhED??P?`DDl@?`GH??P?~ABzJHD???`GH|AD??P?|BBrHP`BB??P?pAFxBTb@H??NBd@H\\HvAZJDj@L~Ab@tBf@B?fAZ??PDbAXz@R??PDPDx@HJ?ZBr@?`@@rBKpAG`@CdACRA??PAzDKlCMr@???JAhEOh@EdEU??PAjDQbDIpLm@|Jg@rLq@zJi@~DWfBOfAIh@K`AStB}@xDuBxBkA`@S~BqAfBaAn@QjAo@|IqEtCyAbCmAnGaD`G{C|Aw@n@a@VM??XQvBkA|@a@fA_@r@UhAW|@Sl@M??PEn@M^Kn@M`@I\\Ip@K??PElAQr@IbCWlBM??NARAZEVG`@KTGdBe@\\K`Be@HC??PErBo@dCw@xAg@??NGPMt@c@??d@YpEkCv@a@RM??\\S~CmBnAq@??NKbBcAlDuBxDyBvA_AJG??nAy@tGkErA}@??TOjD}BTKdFsC??PKdFgCnDeBHE??b@WrDaBf@UhB}@dD{A??hDaBBCpBy@DA??v@]v@_@|Ao@hAa@??PEhDmAt@W??XKb@Sj@U`CcAZSPI??NGrE{BTM~@i@??DCJEfBeAlAo@??xAw@hAm@h@Wb@W??bBaAnBaA?API??XO^SDAHGlAm@~@e@??NKlCwA??ZQ|Au@|@g@l@_@NKNSrA`@~BbA??^NnD~AxDdBVL??HDtAd@hA\\??PDjDbAVHd@N~@Z??NF|Af@h@Nb@N??NF`@LzAb@bB`@XF??TD\\H`AJn@B\\@dAARCRC??B?j@M~@Yr@YxAe@TG??NEt@MdC]~@O??b@IrBc@~@OnC{@jAk@l@[VM??|DuBhCkAl@Sr@Q??@AdASdDu@??NEx@UB?rA[??PErD{@dC_@??PClBYb@Kj@OhBe@p@Ot@Mr@I|@E|AA`B@F???pAC~@?hB???N?@?fBErAG~@KpBOdD]J?p@E|@Ad@@??H?R@TDh@F~@R`Dp@n@Dl@EB?"
+  },
+  {
+    "id": "2400286",
+    "lineKey": "Bus",
+    "routeId": "240",
+    "name": "Ashmont Station - Holbrook/Randolph Station",
+    "polyline": "asaaGttvpL}@`@a@b@SZ[PVDdB^t@LfANzBd@B@xCh@\\F??D?pAVxCj@`BZ??zAVnAXhCb@rCj@??d@H~E~@bBZ??hCf@??PDxDp@tB^??PBbAPz@P`APzAT??b@BL?A^Gh@CTWdBSdAZ|@TdA`@pAJd@??@LNjBDv@Bn@DbABfCF\\Tf@Zf@d@z@pBi@p@Op@K^G??bAQ^APBXFLFPLd@f@f@v@l@dA??Tb@fAnBlBbDXb@??HJn@l@vF~D??NJdD~B^ZfAt@??LJhAz@f@\\z@f@jB|@hBv@??NFLLz@^tAp@dBv@f@Vl@VdAR??PBhBX??PB`AL`Cb@DDLF??B@\\DR@XGJGHI??DGVc@xB}B`B_B`AcApBoB??LOjAkAnDwDb@_@??^]hBgB|EqFl@s@??v@_AzAaB|BcC??LOjBqBp@{@l@k@fBqBZg@N[Vu@DM??FWJ]RyA@WRoA@]R_C?MtAH??B?jCBvEHhED??P?`DDl@?`GH??P?~ABzJHD???`GH|AD??P?|BBrHP`BB??P?pAFxBTb@H??NBd@H\\HvAZJDj@L~Ab@tBf@B?fAZ??PDbAXz@R??PDPDx@HJ?ZBr@?`@@rBKpAG`@CdACd@CzDKlCMr@???JAhEOh@EdEU??PAjDQbDIpLm@|Jg@rLq@zJi@~DWfBOfAIh@K`AStB}@xDuBxBkA`@S~BqAfBaAn@QjAo@|IqEtCyAbCmAnGaD`G{C|Aw@n@a@VM??XQvBkA|@a@fA_@r@UhAW|@Sl@M??PEn@M^Kn@M`@I\\Ip@K??PElAQr@IbCWlBM??NARAZEVG`@KTGdBe@\\K`Be@HC??PErBo@dCw@xAg@??NGPMt@c@??d@YpEkCv@a@RM??\\S~CmBnAq@??NKbBcAlDuBxDyBvA_AJG??nAy@tGkErA}@??TOjD}BTKdFsC??PKdFgCnDeBHE??b@WrDaBf@UhB}@dD{A??hDaBBCpBy@DA??v@]v@_@|Ao@hAa@??PEhDmAt@W??XKb@Sj@U`CcAZSPI??NGrE{BTM~@i@??DCJEfBeAlAo@??xAw@hAm@h@Wb@W??bBaAnBaA?API??XO^SDAHGlAm@~@e@??NKlCwA??ZQ|Au@|@g@l@_@NKNS~BqE???AnByDj@gAnCeFf@aAtAeCvAqClBoD|BeEZq@x@kC|@{CDM??\\oAnAeEH[f@uAh@gAT_@h@}@??JOHOt@sATm@FUHYDQ@UDg@wCq@Ds@_@K"
+  },
+  {
+    "id": "240175",
+    "lineKey": "Bus",
+    "routeId": "24",
+    "name": "Ashmont Station - Wakefield Ave & Truman Pkwy",
+    "polyline": "asaaGttvpL}@`@a@b@SZ[PVDdB^t@LfANzBd@B@xCh@\\F??D?pAVxCj@`BZ??zAVnAXhCb@rCj@??d@H~E~@bBZ??hCf@??PDxDp@tB^??PBbAPz@P`APzAT??b@BL?A^Gh@CTWdBSdAZ|@TdA`@pAJd@??@LNjBDv@Bn@DbABfCF\\Tf@Zf@d@z@Ld@BX?\\Ah@Iz@Gv@??CXU~BE|@?`A@tAAt@Cp@Eh@OtAIp@Ah@?H??@V@TJr@PfAN|AHxADnA@j@??Bf@BvA@|C?f@???TApAPbDVhC??DXTxBFj@V~A`BbH??Px@Jr@Hx@Bn@?n@Er@C|@AR@f@Hl@DLNZ??JTP\\bAxBdAxBFN^|@d@~@^j@Z`@j@h@VTnAiCCU??]}COI]Z_C|C^j@Z`@j@h@VTNNLRPZFXd@lAD`@DRPd@HPBF??R\\j@vARd@Xx@Pv@J`AFtABTHz@Lt@FRBD??LVV\\n@j@^\\V\\f@~@t@`Bd@|@n@xA??HRf@bA\\t@FJJPn@tATb@\\z@\\hA??DLPdA@T@L@bA?fE?v@@zA@h@AL?H?XBx@??@T@JJrCDj@Fh@N~@`@|AVr@Lf@@Db@lAd@r@b@j@NT??P\\^z@Nr@TdBt@fF??DVVbBRhARzAPjBDv@??Bd@Hz@TxA\\vAZdAh@vA??HRl@`Bh@dAn@jAhA|Ax@`A`@^RN??PLdAf@VPRPLTXl@nA~CL^LP??BFZ^TP\\N^Xx@d@f@VNL??NJRZv@bArCmDFGVQXO??FEdAc@j@[XQZQFEb@_@PO^YXYFILOTSRSjAkARUCWEU???AIU]s@a@}@y@}AqAmCi@kAQ_@??m@mAy@cBqBiE}A}C??Yi@p@s@xCsCZYdBiB??NQlBqBz@}@t@u@~@_Ad@e@R^??BB~B~EvBlE??JRyA~Au@t@y@x@iAjAg@f@STML??WXbApBR^??`B`Dt@~A??HP~AjDP`@??@@^b@`@b@RDRANGTOh@e@NKNEN?FB??JBZT`@ZTLTBh@?`ACDWJUx@eA??LOvArCd@bA??JTn@rAnAjC??P^nAlCZr@h@dA??HPn@vAb@|@??JR|AjD`@x@??JRn@zA`@~@f@bA??JPbAxB??JR~@vBb@|@Td@d@bAL\\BPDb@_@?"
+  },
+  {
+    "id": "2450117",
+    "lineKey": "Bus",
+    "routeId": "245",
+    "name": "Mattapan Station - Quincy Center Station via Edge Hill Rd",
+    "polyline": "kl~`Gld|pL]}COI]Z_C|C^j@Z`@j@h@VTNNLRPZFXd@lAD`@n@BVBX@nABT@n@JZJ\\RVJPHTDb@Fb@CXAZA`@K`@I??~A_@b@IlCk@PC|@GJ???NA`@?TINMJSMuBEo@OkCQuBEq@A]@YFm@P_AViAHW??ZgAVw@j@oArBmD??DIXu@VqAVgAVq@Xc@NQ??z@iAx@_AjAyAp@aA\\_A??L]`AaDd@oB`@gCZ{B?KPUJy@XGJGHI??DGVc@xB}B`B_B`AcApBoB??LOjAkAnDwDb@_@??^]hBgB|EqFl@s@??v@_AzAaB|BcC??LOjBqBp@{@l@k@fBqBZg@N[Vu@DM??FWJ]RyA@WRoA@]R_C?MFc@@A??DO`@o@bAwA~@mAZe@^Ug@W??GCSO[Y[a@U_@Wc@IKc@u@w@sAS[??CECGc@w@g@gA}@}BWm@??KSq@eBa@eASm@Km@UoCk@aDKa@Mq@AMEc@Ce@??AY@i@D_ADa@Dw@?q@?c@Y{BCWGc@AO??Ec@A_A?aAC]Ea@UkAkAmF??GUs@qC[w@c@{@sA{BaA{AiBkD??Uc@kBaD]o@qAaC??IMAEuAaCUi@Oa@[gAAI??GWQ}@Qw@SiAe@yBYqAS{@I[??i@oBq@sCo@oCGYm@oCKS??MSG_@CQcAkDg@kBULKIMOEQ@y@NmA^mCD]@I??PcBPoAD]ZsBBG??DUBMjA}F`@sB??FWHa@VqAToAJe@Nu@ZoA??FUd@sBZoAJe@??BMFUTiATaANo@??FUf@wBp@sC??DU\\qANs@Pu@@IXqA??DUH]z@iEb@mB??DSNg@J]n@qA\\aABEb@aBhBf@??`@JdB`@nARx@JfEN`@BJe@??r@uDp@}CJi@FWh@cCT{@Vs@JS??p@}A`@eAXaADQNm@dAyDdA}D\\mAnAcD\\u@d@u@XY??\\_@vA{A^g@^m@\\y@Ps@Ny@BMDi@NoBN{@XcAd@{AFc@RyCHs@Lm@d@_BFc@DqAF]A_A??CoCGe@Ai@I[EWa@uDGe@]gAQSs@o@s@k@oCuBYO??aCoAcAo@_Aw@UPSTMdAEf@??Ij@c@tCk@bDKf@Kj@Id@??[fBg@|CId@??Y|AgAtG??SdA[`BGd@??Mr@q@xCCFo@rCAH??WnAU~@[`Ay@jBw@|As@nAUX??w@z@u@r@m@d@a@NY@s@JKi@U{@????Qk@[o@c@w@iDoE{AmBo@y@IMQ[WYCGSe@Q}@My@A{@?aG?[Ai@Go@{@kE?CMs@C{@?Q?u@@g@DWDOLU??JQzAqCxGaNHSl@o@x@}@z@k@ZWPj@R~@FLFJJLPDVCtAo@b@QNU@E"
+  },
+  {
+    "id": "260063",
+    "lineKey": "Bus",
+    "routeId": "26",
+    "name": "Gallivan Blvd - Ashmont Station via Washington St",
+    "polyline": "{o`aG~pypLLoC\\qG@G??Bu@HkBRgD??Bi@Bg@FeDBiBAs@??A[GkB]HU_DM{Ae@yBUeAMk@Q[YKg@V??OH{BhAYN??YP{At@eAj@a@N??UF_Ct@??QFkBNo@@u@DmAL??QBeALUBc@?_@?]EMCOE??sAe@SIc@MIAUA??K?uAAw@Ba@?s@?g@FgA@OAmAAm@E]C??m@Ec@Ai@@{@Lq@R??ODeBd@cAPHeBB}@VcD??@UJg@X}BZqAFa@DQl@}Bj@gBPe@`@}@FK??f@{@b@s@|AeBx@o@t@k@bCgATI??RINEb@_@Hs@@IPDz@L\\HvAVjATVDdB^t@LfAN@yA?a@A]CSGOKIOEO?SB_@P"
+  },
+  {
+    "id": "280211",
+    "lineKey": "Bus",
+    "routeId": "28",
+    "name": "Ruggles Station - Mattapan Station",
+    "polyline": "}ykaG`q{pLfB`CfAvA`@`@PO`CiB\\Q\\v@h@hAbCbFpBxEL\\|AjDZn@T\\`@f@nBvBBi@NuBDaADsB?i@???sBBaBF}B@Y??DaAJoAZoCLq@??TkAb@uBPm@Pg@j@cAfC{F??Te@bAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABU`@sBJ]N_@RWVSPIVEXAp@?hAL`BHhCVn@Hn@KDA??r@S~F}ARG??hDu@xBi@zCu@ZG??vAWlAWnCg@JA??b@GT?h@@l@F`@Fb@LhBp@j@P??JDZLtAj@f@VhAj@dAd@f@@\\J??VHtCz@vBl@fAXb@H\\AfBM^CRE????RGp@SZU`Ak@x@]d@IT?VAF@??N@f@NRD^LjAZR@PAXEBA??r@]vAy@j@Yf@T`Al@r@Tp@d@XRxCfBb@Xj@^b@TXJ??PHd@Ll@Lr@Lb@Dt@F??H?`@D`@BpBTv@Lp@NpCp@\\H??~Cr@jB`@bB`@??`Dx@xEhAtCt@dAR|@RlAR??PDpFhAjDt@??j@LtAXx@Pj@Nz@R??hK~BXH??`Dv@|Cr@`Ch@\\H??XFfBb@vAZbCj@`Ch@LB??lBd@fB`@hBb@jB^tCv@bAV??D@jAXvDz@b@J??fH~AfCn@pAZ??pAZdCh@f@N\\D|AHlCF`CD??b@@z@?lDBpDF^@??`D@V?R???B?nA?pEFbB@hED??P?fGJ??P@hBBfB@n@BVBX@nABT@n@JZJNHN@JADADEBK@KGUEEGEICUAcBA??G?iACg@ASOMOCM`AqAZi@H_@?i@MqAYoBMQWEOPIZ@L"
+  },
+  {
+    "id": "290158",
+    "lineKey": "Bus",
+    "routeId": "29",
+    "name": "Jackson Square Station - Mattapan Station",
+    "polyline": "cfiaGzr}pL`A\\RqDFk@bDMJ?xFGfCA??j@AhBA~BCv@A|BA??xBCzDE\\?NAPEJCJIPSh@w@t@iAFI??HOhAgBr@iAr@gApAsBPU??`@m@h@aARg@XeAN_@LYTWXUd@S???Af@Mt@ErAQjA]t@a@f@c@p@s@pAgBR[??RYxBaDt@iAxBaDhBeCHK??JSz@_Bd@iAZ}@`@_A??JWXk@tAiCn@qAbAwBVs@`@g@LQPIPEPC~A@p@NpCp@\\H??~Cr@jB`@bB`@??`Dx@xEhAtCt@dAR|@RlAR??PDpFhAjDt@??j@LtAXx@Pj@Nz@R??hK~BXH??`Dv@|Cr@`Ch@\\H??XFfBb@vAZbCj@`Ch@LB??lBd@fB`@hBb@jB^tCv@bAV??D@jAXvDz@b@J??fH~AfCn@pAZ??pAZdCh@f@N\\D|AHlCF`CD??b@@z@?lDBpDF^@??`D@V?R???B?nA?pEFbB@hED??P?fGJ??P@hBBfB@n@BVBX@nABT@n@JZJNHN@JADADEBK@KGUEEGEICUAcBA??G?iACg@ASOMOCM`AqAZi@H_@?i@MqAYoBMQWEOPIZ@L"
+  },
+  {
+    "id": "290163",
+    "lineKey": "Bus",
+    "routeId": "29",
+    "name": "Jackson Square Station - Mattapan Station via Franklin Field",
+    "polyline": "cfiaGzr}pL`A\\RqDFk@bDMJ?xFGfCA??j@AhBA~BCv@A|BA??xBCzDE\\?NAPEJCJIPSh@w@t@iAFI??HOhAgBr@iAr@gApAsBPU??`@m@h@aARg@XeAN_@LYTWXUd@S???Af@Mt@ErAQjA]t@a@f@c@p@s@pAgBR[??RYxBaDt@iAxBaDhBeCHK??JSz@_Bd@iAZ}@`@_A??JWXk@tAiCn@qAbAwBVs@`@g@LQPIPEPC~A@p@NpCp@\\H??~Cr@jB`@bB`@??`Dx@xEhAtCt@dAR|@RlAR??PDpFhAjDt@??j@LtAXx@Pj@Nz@R??hK~BXH??`Dv@Fe@Ly@LgAZyCVoCFsAj@GVGVKb@U`@a@Va@Tq@P}@Du@?m@Ae@Gg@C[Su@Su@Qk@Ic@CSCo@UwFDQBK@IEIICIDAJ@HHJBLPnE??Bf@Bn@BRHb@Pj@Rt@Rt@BZFf@@d@?l@Et@Q|@Up@W`@a@`@c@TWJWFQB??YBGrAWnC[xCMfAMx@Gd@|Cr@`Ch@\\H??XFfBb@vAZbCj@`Ch@LB??lBd@fB`@hBb@jB^tCv@bAV??D@jAXvDz@b@J??fH~AfCn@pAZ??pAZdCh@f@N\\D|AHlCF`CD??b@@z@?lDBpDF^@??`D@V?R???B?nA?pEFbB@hED??P?fGJ??P@hBBfB@n@BVBX@nABT@n@JZJNHN@JADADEBK@KGUEEGEICUAcBA??G?iACg@ASOMOCM`AqAZi@H_@?i@MqAYoBMQWEOPIZ@L"
+  },
+  {
+    "id": "300087",
+    "lineKey": "Bus",
+    "routeId": "30",
+    "name": "Forest Hills Station - Mattapan Station",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@FLGBGFS@I_B_Bl@aA??r@iA`B{CbAoBr@qArAoBV[??d@m@v@s@f@Yp@Wn@Qh@U???ALKl@k@`@k@hAqBt@wA??LSv@sAzB{Dl@mALc@??`CqHFSj@}An@}BjAeEP]Zq@n@{@??rBsCdByB??^e@t@eAp@oAbBeEDIVq@`A_Cp@iBFMn@wAj@eA??JQz@oBPa@Ra@Vc@PU\\[??bB}A??\\[pAmAdAcAZYb@a@??p@o@HKh@k@HMLSHQ??DDD@HC??FIBO??AKCIIEbAsHHk@Ly@??h@_Eh@sDF]`@aDFu@??L}ADi@XkEBe@??B{@NyCJQFQFSTg@??Zq@Pc@zAaC~AaCjEqGx@mAFIRe@BELKXInABT@n@JZJNHN@JADADEBK@KGUEEGEICUAcBA??G?iACg@ASOMOCMIgAa@_ECU"
+  },
+  {
+    "id": "310123",
+    "lineKey": "Bus",
+    "routeId": "31",
+    "name": "Forest Hills Station - Mattapan Station",
+    "polyline": "yxdaGrj`qLl@ZR?Tc@w@a@wA_Ak@c@mAo@Ac@Ao@K}CCqCDaG???GDmAH{@Fi@Nw@VaApB}EFS??ZeALq@Hq@HcC@oAB{@De@Hc@Li@Ti@f@u@rAyAhBuBV[??zHqIdCcC~@cAt@u@zAcB`KoKr@i@FC??RK`@OxCiAdC{@~Bw@dBm@dFcBfC_A~Ak@XI??`@KzBu@jBe@VI??zDiA??b@M^OR]LOR]^y@f@kA^gAbAV??D@jAXvDz@b@J??fH~AfCn@pAZ??pAZdCh@f@N\\D|AHlCF`CD??b@@z@?lDBpDF^@??`D@V?R???B?nA?pEFbB@hED??P?fGJ??P@hBBfB@n@BVBX@nABT@n@JZJNHN@JADADEBK@KGUEEGEICUAcBA??G?iACg@ASOMOCM`AqAZi@H_@?i@MqAYoBMQWEOPIZ@L"
+  },
+  {
+    "id": "320272",
+    "lineKey": "Bus",
+    "routeId": "32",
+    "name": "Forest Hills Station - Wolcott Square",
+    "polyline": "yxdaGrj`qLl@ZR?Tc@NHLHnAt@fAj@PJx@d@~A~@z@l@nClBdAp@fCvA??ZPTVtGbD`Ab@n@TdB^`Ed@??VB`DZxAP~AJtAN??P@`MbApE\\??hGd@|AN??j@FzD@jFG??lHIvCAxAJNB??zBX|BRdJhA??bFl@rCVlEZlCL??~BLbGVbDr@??D@^?pAZv@Jl@DzFLd@@??V?rGNtAFPB\\D??|D`@dCR??P@b@DzEf@x@RdAd@dBv@NH??fCnAhAf@bAh@v@TpDj@??f@HfC^bDf@xAVPB??\\D~@JtAXlALjAJ^B\\B??PBP?n@?fAJZHr@Xj@RrAh@HD`@N~Al@^L??n@TjAd@~@ZdA`@zAh@vBx@lAb@^LxBx@PL??LHrAfAx@h@h@d@tBbB~@r@RN??TP`@Xd@Z|Af@fCp@dAZ??nCx@fCt@jGhBB@??zA`@nCx@dA\\TJ|@n@VT??n@j@j@h@z@t@^^^ZNHH@NCt@_@DEXMv@g@Ld@T`@"
+  },
+  {
+    "id": "320316-1",
+    "lineKey": "Bus",
+    "routeId": "39",
+    "name": "Ave Louis Pasteur - Forest Hills Station via Brigham Cir",
+    "polyline": "g`laGfh~pL_@Sm@a@xDgMqBkAg@WV}@b@eBr@qC\\Il@YrA|ET~@n@pB??Nd@^dAX~@VfAhAtEPp@??ZnAt@jCt@dCd@zAh@pAh@z@Zr@??\\r@Pd@HZH`@B\\@t@@bDArC?ZBt@@l@??@RBl@Fv@Ll@HZNb@h@lAR`@h@lAv@dBHVPHJBZK??vAc@vBo@nCy@rAg@n@W??^M`@OZIx@M^@l@Dt@J`APvBn@fA`@NF??NHPHpCxAj@Tx@Rn@Nl@Fb@Dl@@rAAL???p@CzAG`DI??b@AhBI^GzAQFEbAMhC_@^EVAP@RJ??bAh@z@h@bAn@lBjAtA~@l@\\`@VLH??~@j@h@XRNb@Tb@LZFb@Df@?b@?fCDdB?zACD?f@AV@??P?h@?bBHj@D\\HhB`@\\F??n@Jp@Ll@Ph@R\\Rv@t@b@^??LLd@TNFz@LfA?zACrAEnACt@EXEb@Gl@Mh@QbA]XM??j@UNITKPGJETMb@Cd@?t@Bx@D^???b@@~@At@?P?dBU`@IdAMb@C^Bp@?FA\\?Pm@ZyALs@LsA@eBlAn@KhAnBbA"
+  },
+  {
+    "id": "330193",
+    "lineKey": "Bus",
+    "routeId": "33",
+    "name": "Mattapan Station - River St & Milton St (PM Route)",
+    "polyline": "kl~`Gld|pL]}COI]Z_C|C^j@Z`@j@h@VTNNLRPZFXd@lAD`@DRPd@HPBF??R\\j@vARd@Xx@Pv@J`AFtABTHz@Lt@FRBD??LVV\\n@j@^\\V\\f@~@t@`Bd@|@n@xA??HRf@bA\\t@FJJPn@tATb@\\z@\\hA??DLPdA@T@L@bA?fE?v@@zA@h@AL?H?XBx@??@T@JJrCDj@Fh@N~@`@|AVr@Lf@@Db@lAd@r@b@j@NT??P\\^z@Nr@TdBt@fF??DVVbBRhARzAPjBDv@??Bd@Hz@TxA\\vAZdAh@vA??HRl@`Bh@dAn@jAhA|Ax@`A`@^RN??PLdAf@VPRPLTXl@nA~CL^LP??BFZ^TP\\N^Xx@d@f@VNL??NJRZJhBBf@C\\AjA@RLhCRjDDhADf@??TzCFx@Dd@J|@NvAN|ANhATlANj@Pj@BJ????JTT\\^^XRb@TZRHF^\\v@v@d@f@b@b@x@`ATX??@@`@f@x@fA^b@VRYR??UNYXoA~@aAr@q@l@EF??ONMRSb@Ob@GLSbAOv@O`AG`@??GV_@bCg@rCG`@IdA?ZBj@TvATnA\\xBHn@BhA@VDNFP^rATvAR`BDZ??DXFhAF|ABxCCp@?@??CVMz@Yr@a@h@{AtAIL??MNm@_@{Ao@OE??YIgAo@qAu@w@_@}@]q@[e@]_@YWY[c@yAoCUk@K_@Em@j@e@h@i@z@w@p@_@h@UrBg@p@S`@UNOh@c@j@e@p@c@f@Sd@Gd@B`@Fb@P^Zd@n@d@t@XPb@PZHJ@ZF??@?v@@XDTHb@R\\Hd@Jb@?^CZIrAs@RGTCJAr@Ep@Fh@Nl@Vj@Tb@D\\@`@ELCTE^M`@WZ[LO??Zc@xFeId@o@Z]JG??PMx@e@ZMNENE\\Br@Dt@D\\Cr@KVAH@JFHJl@tAJX??j@zAnA`D??HRLZvApDXbAHj@Bb@??BVDhBF~AHbEJ`DBh@??@V@\\Tz@`@zA\\tBF~@DhAH~B@|@Bj@"
+  },
+  {
+    "id": "330197",
+    "lineKey": "Bus",
+    "routeId": "33",
+    "name": "Mattapan Station - River St & Milton St via West Milton St (AM Route)",
+    "polyline": "kl~`Gld|pL]}COI]Z_C|C^j@Z`@j@h@VTNNLRPZFXd@lAD`@DRPd@HPBF??R\\j@vARd@Xx@Pv@J`AFtABTHz@Lt@FRBD??LVV\\n@j@^\\V\\f@~@t@`Bd@|@n@xA??HRf@bA\\t@FJJPn@tATb@\\z@\\hA??DLPdA@T@L@bA?fE?v@@zA@h@AL?H?XBx@??@T@JJrCDj@Fh@N~@`@|AVr@Lf@@Db@lAd@r@b@j@NT??P\\^z@Nr@TdBt@fF??DVVbBRhARzAPjBDv@??Bd@Hz@TxA\\vAZdAh@vA??HRl@`Bh@dAn@jAhA|Ax@`A`@^RN??PLdAf@VPRPLTXl@nA~CL^LP??BFZ^TP\\N^Xx@d@f@VNL??NJRZJhBBf@C\\AjA@RLhCRjDDhADf@??TzCFx@Dd@J|@NvAN|ANhATlANj@Pj@BJ????JTT\\^^XRb@TZRHF^\\v@v@d@f@b@b@x@`ATX??@@`@f@x@fA^b@VRYR??UNYXoA~@aAr@q@l@EF??ONMRSb@Ob@GLSbAOv@O`AG`@??GV_@bCg@rCG`@IdA?ZBj@TvATnA\\xBHn@BhA@VDNFP^rATvAR`BDZ??DXFhAF|ABxCCp@?@??CVMz@Yr@a@h@{AtAIL??MNm@_@{Ao@OE??YIgAo@qAu@w@_@}@]q@[e@]_@YWY[c@yAoCUk@K_@Em@j@e@h@i@z@w@p@_@h@UrBg@p@S`@UNOh@c@j@e@p@c@f@Sd@Gd@B`@Fb@P^Zd@n@d@t@XPb@PZHJ@ZF??@?v@@XDTHb@R\\Hd@Jb@?^CZIrAs@RGTCJAr@Ep@Fh@Nl@Vj@Tb@D\\@`@ELCTE^M`@WZ[LO??Zc@xFeId@o@Z]JG??PMx@e@ZMNENE\\Br@Dt@D\\Cr@KVAJUFOJUR[b@k@Vc@L_@Pu@\\wBVuA??Hg@xA\\rA\\zAd@`@Nd@Nl@XZN??ZPp@\\vBbAfB|@fAf@??PHj@Tb@L`@Bh@C\\G^I~A[`@E??RCKh@qAvF_AzDMh@??m@jCuAdGWhAAJ??aAbEiA|Ek@bC??GVaBjH{@rD{@fDo@`B[@MEOa@?I"
+  },
+  {
+    "id": "340315",
+    "lineKey": "Bus",
+    "routeId": "34",
+    "name": "Forest Hills Station - Dedham Mall",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@F`@B|@R|BfC`CjC`EnEXX??hBpB`BhB??LNjAlAbAjA??LLnBvB`@d@d@j@jAjA`BhB??LNTXrAbBt@|@bApA??PTZ\\`BrBjAvAZ\\t@`AfArA??LLnA~AbBbC`@p@??PV`@r@bAzAvFbIxBvCRZ??DD`BxBTZdAzARV??xHjKZ`@h@p@??`BtB`AnAv@~@??~CvD|@~@^b@??tClDzAbB??NPhBtBbBpBvBfCvA`B??`@d@bDzD??`@d@rArAhBfBhC~BTV??n@n@^`@^f@bBbCnCvDdBbCd@n@l@x@??f@p@jA~AxEfGbAtARX??RXxAnBpAjB|@pAlA~AfAzA~@lANRm@z@SPy@b@gAf@KHSVQXq@fAEJELIv@An@C^?b@Lt@`BfIJTJJJDj@LPDbFfAJANUBgA?a@I???cF@K@CFALCN?NQEk@MKEKKKUaBgIMu@}Ap@KaAG_@m@uCUiAuB~@iDxAGHKVIBq@Zc@Lg@R"
+  },
+  {
+    "id": "340316",
+    "lineKey": "Bus",
+    "routeId": "34",
+    "name": "Forest Hills Station - Dedham Line",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@F`@B|@R|BfC`CjC`EnEXX??hBpB`BhB??LNjAlAbAjA??LLnBvB`@d@d@j@jAjA`BhB??LNTXrAbBt@|@bApA??PTZ\\`BrBjAvAZ\\t@`AfArA??LLnA~AbBbC`@p@??PV`@r@bAzAvFbIxBvCRZ??DD`BxBTZdAzARV??xHjKZ`@h@p@??`BtB`AnAv@~@??~CvD|@~@^b@??tClDzAbB??NPhBtBbBpBvBfCvA`B??`@d@bDzD??`@d@rArAhBfBhC~BTV??n@n@^`@^f@bBbCnCvDdBbCd@n@l@x@??f@p@jA~AxEfGbAtARX??RXxAnBpAjB|@pAlA~AfAzA~@lANRRX??|ChElBhC`FxG"
+  },
+  {
+    "id": "34E0282",
+    "lineKey": "Bus",
+    "routeId": "34E",
+    "name": "Forest Hills Station - Walpole Center",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@F`@B|@R|BfC`CjC`EnEXX??hBpB`BhB??LNjAlAbAjA??LLnBvB`@d@d@j@jAjA`BhB??LNTXrAbBt@|@bApA??PTZ\\`BrBjAvAZ\\t@`AfArA??LLnA~AbBbC`@p@??PV`@r@bAzAvFbIxBvCRZ??DD`BxBTZdAzARV??xHjKZ`@h@p@??`BtB`AnAv@~@??~CvD|@~@^b@??tClDzAbB??NPhBtBbBpBvBfCvA`B??`@d@bDzD??`@d@rArAhBfBhC~BTV??n@n@^`@^f@bBbCnCvDdBbCd@n@l@x@??f@p@jA~AxEfGbAtARX??RXxAnBpAjB|@pAlA~AfAzA~@lANRRX??|ChElBhC`FxG??RZfClD^j@HPH\\BT?d@?L@PFXFJHHJFJ@J?HAVANCN?H@HDNLv@fA??LR~DnFRTXTd@Th@P??PFp@TlA^JBb@P^Rb@Xf@b@??XTlBfB|BpB|BfBp@j@??LLzAlA??LJXVxBhBpC~BfDlC??fA|@tDbDfCjBDPVJ??`@Pn@ZlB~@r@XpB`A~@b@lAb@fChAfDtA|At@JDNF??nAh@fDrANFfFxBp@X??xEnBrAd@n@RXF??PDhAVfBZ??@?LB|Cf@dEl@\\D??|AR|BVv@JnAN??NBrC`@j@JhD^VFjBR??PBjAN`BTb@F??TBtBTrAPhBX|BX??PBPB|Bj@rHtBlCv@ZFrBv@PDlA`@d@TFD??NHZXfBvA?c@@i@F_@?QHFNH^JZLb@N|@TD@??v@XjEnApDlA??D@J@ZNp@^pBzAjBpAfAt@nCpB??LJ`Ar@vA`AtEfDbDvB??NJt@^l@d@LNPXHHBJBNCXQ\\p@DVFP@v@J??VDp@Fl@Jh@JlFvA??PDdBb@p@PxGdB~Ad@??NF^HxA`@NFrA`@TJLHnAn@nCtAZP??d@VvBdArBhA`ErB??NHrB`A\\RjAr@|@d@tAr@VP^^Tb@Xa@\\@??zDLtBRl@D??\\BbAH~CJnAJ??\\B|DXhALZ@lCR|AHhAFT@??|BFj@Ef@L@KHCX?B@pATd@PTDx@GvA]N???J?TDVHd@b@l@z@|@rARb@??Rd@NPf@P^Pb@L`A^h@V??NH`Bp@`@N\\NrAf@??JDZLtB~@pAf@??l@Vd@P|@`@dA^f@T??NFhAf@vB`A??NFpAl@zCrAxCtAlBx@zAt@??NFj@^`@TbEbCbEtB|@d@??z@`@VLFDxCrAbAf@f@Tz@h@jAl@rFtD??LJ|FzD`CzA??VP~EfDDB??v@j@`Ax@pAdA??v@n@zE~D`At@??NLjCpB`BrAz@t@f@^PN??vFzEn@h@fDrC??HFBDh@^f@b@jCvBvBdBfGjFf@b@??`DpCbBxAbAx@bA`AJHrAlAzAnAfA`AhA~@TP\\XhBbBp@h@??VTdB|AtBhB_HpX_AnDk@fCUjAUnALn@z@xHN|ARbCBp@??@VB~@BbBFfDCPBLA\\@zA@jB??@`@?d@HzODfB???VD|D@z@?H?LBxD?|A?F??BfEBhA?rA@`A??B~BXNRLDFzB`BdAz@"
+  },
+  {
+    "id": "3500258",
+    "lineKey": "Bus",
+    "routeId": "350",
+    "name": "Alewife Station - North Burlington via Burlington Mall",
+    "polyline": "{lwaG~xeqL~B}@LFFP?PIJ{F|BMDf@~CFVa@NMCGGqAgJKcASyAIOKKCAKAKBq@POHMNITGVA^G\\GRGJIDMBk@Iw@Qi@S[Ka@]k@w@Wg@Yq@SaAQeAI_BOuDKkAOaAY{@[s@i@q@k@m@m@q@O\\}@tBSV??_AtAkAtAY`@mAzAMP??IJu@~@i@r@Y^cAtAa@h@w@fAe@n@KN??e@l@m@x@g@r@}@nAY\\w@hAg@p@OR??kBjCeB`CiA|AuAlBQV??Y^{AvBy@hAY`@w@fA??UZ]`@[\\k@b@u@^_ChAwBfAQH??uAr@{@b@uAv@yAz@a@`@??CBWXiApAaApAo@t@kAdBMX??a@~@[`AEPe@pAc@`BcAqBeAmBk@kAOSOe@SUWOSEm@Ok@Kq@Eg@B_@H]P_@R??wAx@]RiAv@m@d@{@n@g@`@]l@]d@Qh@CF??KRe@f@k@^k@Z_@Xa@L??UFc@Ja@?q@Gy@Cc@E??SCg@Oc@UmA}@{AkA??OMgBqAqAo@EC{@UgAQE?m@@}@@q@D??S@}AP_B^c@NaA\\gAf@iBl@eAd@WJ??QF_@NG@mAj@m@XkCrAkAh@uAb@gFjAkBb@oEbAKB??QFcAVy@Pk@D_@Ca@IQKa@a@W[CCYm@W{@W_AWaAOi@SYiBeBu@s@i@We@QaBOqCW??SC{D]cD_@oASg@Ek@A_@@w@Ca@Ee@G??UCmAOi@C_@@sAZoCr@gCn@k@Le@Ny@f@o@p@UV??IHqAzAcAbAWV??k@h@a@^{@n@m@\\cCfA??SJw@\\qEpBkAp@g@^iAt@_@X??OJoGtE_DxBwA`A}Ar@uAd@}ARm@F??S@mATMDQFYLk@^{@~@wDnEUHo@x@o@hA{@`By@jBS^{AfDUh@e@~@s@pAa@p@_@n@g@fAS^Sn@??Of@Q|@OrAEpA@V@d@DdAFh@Db@??BRFzBBrA?d@?T?~@Gz@KhACL??O~@WbAu@jBe@dAg@`AY^]^oAx@}An@[L??]Lw@`@_At@w@t@MJ??}@z@y@`Aq@|@m@p@STkAjA??MN_FbFUX}AfB??MNaBhBs@p@i@^o@`@eBz@o@RoAVq@H??A?OBoCPaAHqAHsAHaALOBg@LcAXq@Vm@Xo@Zq@\\_Av@aBzA??WTk@j@c@^}@z@eAt@UNkAp@??g@VsDtBmJlF??WLY\\qDvDWT??GFs@l@WXkAnA??WV_ClCCDQR??OTm@l@SPc@Te@RsBz@k@PmBp@}@^cAh@a@PD`@FJJXNr@BR@R@bA@T@ZJn@HZ`@rAHVLXP\\R\\zA~BT`@|A|BgAnB??QX]p@m@bAU^[^u@|@}ApB_@b@U^Wb@g@dAYr@}@xB??k@vAq@zAa@x@CHe@r@gCjDk@x@ILOVLNn@`Av@rAl@nANb@Tn@Nh@tA`GXtA??Hb@h@`Cf@tBP~@RtAJ|@BRJvAFjAJzDJxCDdCHfC@hA??@ZVfJ??@`@@n@@TDl@NfBNpAJx@Lr@R~@RbAH`@??DNLx@f@hCNn@`B`I_@TkCbByBzAyBrAuBlAs@`@m@XoD`BcDrAgCjAkErBmClAbBtG`ApDBF??Vt@zAdCDILMr@g@`CqAHGJMPYJYZ}@L]NY^Yz@k@LG??hBkABNBBF?FCFGFNFFL@NANG~A_AdEiC`CsA??DC|@o@l@c@pEgDq@aC??GUmAsECW[{AIg@ESMs@Gc@g@iCU_AOy@i@cCAC??a@aCe@{BMw@Kk@U{BIy@Co@Ci@AYEeBCy@??G}AEmBAs@AWGiBC_BKyBKmDEsAEaBCcAOiBGo@SuAe@oCWaA_@cB??Qw@Ow@U}@o@sCWeAe@gB??M_@Sm@_@aAYk@UYQYw@cA{@kA??u@aAu@gAYc@g@}@a@aA]_Ag@yAQm@m@gCKi@Gg@My@??CKo@_ESuAYcBQyAC]UwE?MGm@SNaAt@e@\\YRQJSNEB??QNUHcB`@i@LcAZQB????uCv@c@HUBS@_@?_BA_@CsDe@oAQq@IwB[??QCgAKi@Ce@AoADy@JaATmA`@}C`Ac@L??YHe@NcBf@cBd@_B`@e@HeALsANoBNcBNW@u@CEAMC??{@Ke@Ec@CS@WBg@HaA`@c@^c@`@SR??OL}@t@eEtCi@d@_@ZMLa@b@Y^SV[f@Wb@Q^??GL[r@Uh@_A`Cg@lAk@dA??ABQX_@h@YZ_@\\]VSJMF}@b@eBt@EB_@TUPYX??eD|CKLw@r@[`@Y`@MRUb@GNKTOb@e@xAM\\Sl@??K^c@pA[p@S\\e@v@UZyB|CcAtA??mBpCaApAc@p@m@x@{@lAaCcAw@[GVU~AKlAGtA?b@C`AAR"
+  },
+  {
+    "id": "350209",
+    "lineKey": "Bus",
+    "routeId": "35",
+    "name": "Forest Hills Station - Dedham Mall",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\EVCNKt@??ALM^Yv@DZTfAVnAFX??@@B^\\`AJf@RjAH^JtANfC??@VB~@D|A@jA@nD???VHtL?T??@PBrBDxADfC?h@??DhEBnGBnD??@pADfF?jB@\\??@V?|B@jC@vABfD@d@??BdADp@Dh@?d@q@nA_@f@ST]Vk@T[H??u@PSBGlBKpASrBEdA?n@?T@V??@NHh@Ld@DNVd@b@p@l@~@h@v@T\\\\j@Pj@Rp@Ld@??^rAVf@Xd@LLt@z@h@j@\\V\\Nr@RbANd@F??ZFb@HhBf@XH^Nb@LpAn@ZPl@V|@ZhBd@ZBv@CXB??H@XH\\Nh@^vAlAl@f@jAv@??XRjAbAR\\P^PIV?n@Jl@P|@VrAVx@FL???P?rAW|AS`AKb@?NB??VBP?NDtDr@`@Hh@P^N??JFbB~@j@Zv@Z??NFvBx@z@Xf@J`CJ^@??`CDn@?b@G`@S??@AL@^NZVz@x@h@b@r@b@XL@@??`ARhAFd@@tAAhAC\\???d@?xC?F@??r@Bl@FbDt@hB^Pa@??Tg@~@oBrA}CvCoGP[??h@mAl@qAz@gBZm@??Rc@nCvDdBbCd@n@l@x@??f@p@jA~AxEfGbAtARX??RXxAnBpAjB|@pAlA~AfAzA~@lANRm@z@SPy@b@gAf@KHSVQXq@fAEJELIv@An@C^?b@Lt@`BfIJTJJJDj@LPDbFfAJANUBgA?a@I???cF@K@CFALCN?NQEk@MKEKKKUaBgIMu@}Ap@KaAG_@m@uCUiAuB~@iDxAGHKVIBq@Zc@Lg@R"
+  },
+  {
+    "id": "3510120",
+    "lineKey": "Bus",
+    "routeId": "351",
+    "name": "Third Ave - Bedford Woods Dr",
+    "polyline": "amibGrwuqLV`APj@~@fDDRKDEF?H?HHLwBrA{@j@A???]XOXM\\[|@KXQXKLIFaCpAs@f@MLEH{AeC[}@k@wB??Uy@cBuGeBr@oBx@sB~@gEdBo@X_@Ps@H[N[Pa@XUPa@f@UX]l@Ud@Wn@Yx@m@fBSn@a@xAa@hB{AvHKb@GPITc@`AMT[b@QRONe@\\wIrGkAt@y@`@QHm@R[Fa@H]@YAQAm@C]W][WWU[SWaBgCm@w@WWYUu@]c@Me@K[As@GaCA{@HmAPc@L_F~BcCnAWN[Ve@b@e@f@sAbBmA|A_EdFOMQUc@w@MMIIMIQEqDOYISMUWU[Oa@Ke@CWCs@@i@Di@Jw@VkAZaALAHIDG?A??@GAGAIECECC?EBCFCF?T@L[`AWjAKv@Eh@Ah@Br@BVJd@N`@TZTVRLXHzAXbAN`@HJFNP|@~AkErFMNgDjEqAfBmA|AqA`Bm@r@U\\iAvAwBlCQT}@hAiB`CW^qBhCsCtDa@n@qCpDsFnHeJ~LwDdFnBtEVd@p@t@vAx@jBNpCGPHRRTb@Xn@EP?FEXc@jAMZrAxCRWRW`@e@PS`@OKaFc@H"
+  },
+  {
+    "id": "3510121",
+    "lineKey": "Bus",
+    "routeId": "351",
+    "name": "Third Ave - Bedford Woods Dr via EMD Serono",
+    "polyline": "amibGrwuqLV`APj@~@fDDRKDEF?H?HHLwBrA{@j@A???]XOXM\\[|@KXQXKLIFaCpAs@f@MLEH{AeC[}@k@wB??Uy@cBuGeBr@oBx@sB~@gEdBo@X_@Ps@H[N[Pa@XUPa@f@UX]l@Ud@Wn@Yx@m@fBSn@a@xAa@hB{AvHKb@GPJXh@\\J@J?j@b@j@^L`@Fb@BZBXHJPBPG?A??HO@QAQGMWWu@g@k@_@k@c@GWMK_@YWBITc@`AMT[b@QRONe@\\wIrGkAt@y@`@QHm@R[Fa@H]@YAQAm@CKvBEl@Ej@Gr@SnBCTYrDe@tFMnAq@Ye@QWGWEOAS@QBSLMNINKVE^AV?^Fb@Hj@Db@?B??@TAPM^KLWTc@Rs@ReB^aBb@b@lCVtBgA^E@??s@PmBh@mEpAQBcBh@eBf@wF~Aw@V??GBaAHy@T}Br@e@Nm@FqA@i@Kg@So@c@wA}@_@]uAuAgD}C_@_@[a@{@mAiB`CW^qBhCsCtDa@n@qCpDsFnHN`@j@dAv@pA^ZT^??NT`@d@^`@j@f@p@p@r@x@bBjBd@b@~@r@HTBT@VBXBP??HPp@j@^VN@LIJKHIJYDM?OAMG_@U[??GGk@c@SC[@WF]?_As@e@c@cBkBs@y@q@q@k@g@_@a@a@e@e@u@Sg@ISeAiBW_@MEIIeJ~LwDdFnBtEVd@p@t@vAx@jBNpCGPHRRTb@Xn@EP?FEXc@jAMZrAxCRWRW`@e@PS`@OKaFc@H"
+  },
+  {
+    "id": "3540173",
+    "lineKey": "Bus",
+    "routeId": "354",
+    "name": "State St, Boston - North Burlington via Woburn",
+    "polyline": "qepaGblupL@LAx@MnAQjAWhA_@fBk@b@cA\\e@R?@??g@Ta@^]^e@v@Yl@Qh@Kd@OIOQMYK[s@gBOc@i@wAeAiC??IQc@sAKYq@yCGUK_@Oa@IMQQSII?APERQZg@n@g@j@m@f@wCzBi@f@mBpBcE|DgCjCyA~AeBpBkKbMy@bA}@fA{@nAiAfBmAxBkAtBy@`Bk@hAaBvDe@hAy@xBsAbDm@vAo@rAs@vA}@xAeA`By@lA}@dA_A|@cA|@wAjAo@b@k@b@aAn@gAv@q@b@MH}Ax@c@Tc@Pc@Ne@Lg@Je@Hc@DaBJoAD{BIg@CuCWcBG[?{BFy@J{@RYF}@Vw@Vi@Ty@`@y@f@WRw@l@}@v@}@z@u@z@k@r@wApBiAbBcAzAoAbBaDvE}@jAeApAm@n@eB~AoEtDgA~@w@|@o@v@c@n@_AlAiJ~Mg@t@cCnDsJlNkA`ByAlBgDrDeAbAcA|@sE|DaGdFmC|BoCbC_DnCeAbAYRqC|BaA`A_CpBoDxB_A^a@Ng@LkANe@Bs@AgE_@eDMk@Bg@Hi@Pi@Va@Xu@z@S\\Q\\Up@YrAWrAe@zBw@|DSt@O^Wj@Ud@eBrC{AbBoA~As@z@k@z@e@n@i@z@]|@]~@_AlDwAu@e@]WSIMEOASb@_Cf@qCn@uCRaA^wAwAMa@E{@C??kAE@WSu@EIa@w@_@k@KOM]?U@QFYBMHSV[R]La@@W@{@C]I_@Yo@W_@SKUGYAY@]F[Tc@NWDq@BKEuA@u@AwBDm@Bo@?}BDoF_@iCOqBGi@A_NO_HGsBIoAMcAO}B_@iAU_BW_BSmAIeBGcA?aBDgBNuARkB\\kH`Ba[`HeB^_C`@iBTcBLk@Di@@sABiB?sACiBKyBUu@KqASiFcAoHyAqCm@gUoEuCm@{Bc@_BYaC[eAIuBKeAAcAAy@@_BDq@BcAFsCZkBZmB`@aBd@o@R_C|@q@Xw@^cB~@}@h@oTdNeIhFiDtBaEfCeC`B{DbCsChBmMdIaCzA}AbA{DzAoA\\YHaE|@}@VWHZlGT~CVpE??@VJhBNlCH|@@fDGxG???Vi@fNKxAiCy@??OE_AWsAa@aCq@yDgAw@Q??QEa@`@q@p@k@t@Q\\Sf@GTYjB[fCY~ACT??CVk@bC]bBMb@K\\OZg@l@sAlASP??{@v@eA`AOLoAjAc@b@o@j@kAnAwAxAaBdBUXIPEJGTCNCZ?P@x@FzA^lADPZfAb@tA`@fABLrApELb@??VbAh@zBHd@DZ@TBfAAxC@|@@R@f@@V??Bf@@vA@pB@x@AtAAfArCArA@B???~@?z@IjBYbBWpAYx@QdAQ`@Ah@BVBPDjBv@XP@B??NLFnAJfBHl@PxAXpBDVHd@Jp@@RNbB@B??N|BHpA@PJz@XrAXfAJVFNHTX`@FLtA`D\\z@@B??Tl@Tj@h@rA`@fAVl@??LZHVDT@HBXTdFFfA??B^o@Ns@J]JGB_@\\IHP`@d@`ALXPd@`@~@??BF\\^^|@d@`ApApC`AlBf@|@N`@BF??Pl@Pt@DNVtALz@RzAHt@Hv@\\dCFh@LlADl@Bx@@f@@pB???HALCvBCdBAf@?RBl@Fb@\\hAVz@lBdGPp@^zAR`An@lEH`@VtAFd@r@lDV~@h@bBh@vApCrHzAfENd@??HT^nAPf@\\rAPn@Tr@d@dAVd@??@BHPh@p@t@n@nG|En@h@??jCtB`BvAb@ZLHZ\\f@d@XTX\\??DBFLaBhBs@p@i@^o@`@eBz@o@RoAVq@H??A?OBoCPaAHqAHsAHaALOBg@LcAXq@Vm@Xo@Zq@\\_Av@aBzA??WTk@j@c@^}@z@eAt@UNkAp@??g@VsDtBmJlF??WLY\\qDvDWT??GFs@l@WXkAnA??WV_ClCCDQR??OTm@l@SPc@Te@RsBz@k@PaA\\??k@R}@^cAh@a@Pk@Zk@XeAf@]P]P}@^}Bx@gA\\}FpBy@Xc@P{@X}Aj@iAl@YR??C@s@h@SNaAt@e@\\YRQJSNEB??QNUHcB`@i@LcAZQB????uCv@c@HUBS@_@?_BA_@CsDe@oAQq@IwB[??QCgAKi@Ce@AoADy@JaATmA`@}C`Ac@L??YHe@NcBf@cBd@_B`@e@HeALsANoBNcBNW@u@CEAMC??{@Ke@Ec@CS@WBg@HaA`@c@^c@`@SR??OL}@t@eEtCi@d@_@ZMLa@b@Y^SV[f@Wb@Q^??GL[r@Uh@_A`Cg@lAk@dA??ABQX_@h@YZ_@\\]VSJMF}@b@eBt@EB_@TUPYX??eD|CKLw@r@[`@Y`@MRUb@GNKTOb@e@xAM\\Sl@??K^c@pA[p@S\\e@v@UZyB|CcAtA??mBpCaApAc@p@m@x@{@lAaCcAw@[GVU~AKlAGtA?b@C`AAR"
+  },
+  {
+    "id": "3540174",
+    "lineKey": "Bus",
+    "routeId": "354",
+    "name": "State St, Boston - North Burlington via Medford Sq, West Cummings Park & Woburn",
+    "polyline": "qepaGblupL@LAx@MnAQjAWhA_@fBk@b@cA\\e@R?@??g@Ta@^]^e@v@Yl@Qh@Kd@OIOQMYK[s@gBOc@i@wAeAiC??IQc@sAKYq@yCGUK_@Oa@IMQQSII?APERQZg@n@g@j@m@f@wCzBi@f@mBpBcE|DgCjCyA~AeBpBkKbMy@bA}@fA{@nAiAfBmAxBkAtBy@`Bk@hAaBvDe@hAy@xBsAbDm@vAo@rAs@vA}@xAeA`By@lA}@dA_A|@cA|@wAjAo@b@k@b@aAn@gAv@q@b@MH}Ax@c@Tc@Pc@Ne@Lg@Je@Hc@DaBJoAD{BIg@CuCWcBG[?{BFy@J{@RYF}@Vw@Vi@Ty@`@y@f@WRw@l@}@v@}@z@u@z@k@r@wApBiAbBcAzAoAbBaDvE}@jAeApAm@n@eB~AoEtDgA~@w@|@o@v@c@n@_AlAiJ~Mg@t@cCnDsJlNkA`ByAlBgDrDeAbAcA|@sE|DaGdFmC|BoCbC_DnCeAbAYRqC|BaA`A_CpBoDxB_A^a@Ng@LkANe@Bs@AgE_@eDMk@Bg@Hi@Pi@Va@Xu@z@S\\Q\\Up@YrAWrAe@zBw@|DSt@O^Wj@Ud@eBrC{AbBoA~As@z@k@z@e@n@i@z@]|@]~@_AlDwAu@e@]WSIMEOASb@_Cf@qCn@uCRaA^wAwAMa@E{@C??kAE@WSu@EIa@w@_@k@KOM]?U@QFYBMHSV[R]La@@W@{@C]I_@Yo@W_@SKUGYAY@]F[Tc@NWDq@BKEuA@u@AwBDm@Bo@?}BDoF_@iCOqBGi@A_NO_HGsBIoAMcAO}B_@iAU_BW_BSmAIeBGcA?aBDgBNuARkB\\kH`Ba[`HeB^_C`@iBTcBLk@Di@@sABiB?sACiBKyBUu@KqASiFcAoHyAqCm@gUoEuCm@{Bc@_BYaC[eAIuBKeAAcAAy@@_BDq@BcAFsCZkBZmB`@aBd@o@R_C|@q@Xw@^cB~@}@h@oTdNeIhFiDtBaEfCeC`B{DbCsChBmMdIaCzA}AbA{DzAoA\\YHaE|@}@VWHZlGT~CVpE??@VJhBNlCH|@@fDGxG???Vi@GsBO{CQkAKkE]u@G{Hg@iBO}DW]A??YA_A@Y@aARUHcCbAoChA{Ap@[LaCbA_@NmBz@sAl@k@VgH~C{Ap@i@NKFsBd@SD_@HSF??i@PwAb@u@Nt@v@`AdA~@tApAhB`@l@v@nA^p@s@~@QPMB[C[SgAi@y@kA_Ay@gAm@MPSf@CJiD|@M@K?sBh@WuB??Q{AYsAKYKw@fCm@x@SxAQpBAb@CZ?PBJBTB`AdA~@tApAhB`@l@v@nA^p@lAxBT`@V^NTd@f@dAdALFbBbBZZLRvAfDTb@j@x@~@lA|AnBj@v@Vf@Vh@Vj@^lADPZfAb@tA`@fABLrApELb@??VbAh@zBHd@DZ@TBfAAxC@|@@R@f@@V??Bf@@vA@pB@x@AtAAfArCArA@B???~@?z@IjBYbBWpAYx@QdAQ`@Ah@BVBPDjBv@XP@B??NLFnAJfBHl@PxAXpBDVHd@Jp@@RNbB@B??N|BHpA@PJz@XrAXfAJVFNHTX`@FLtA`D\\z@@B??Tl@Tj@h@rA`@fAVl@??LZHVDT@HBXTdFFfA??B^o@Ns@J]JGB_@\\IHP`@d@`ALXPd@`@~@??BF\\^^|@d@`ApApC`AlBf@|@N`@BF??Pl@Pt@DNVtALz@RzAHt@Hv@\\dCFh@LlADl@Bx@@f@@pB???HALCvBCdBAf@?RBl@Fb@\\hAVz@lBdGPp@^zAR`An@lEH`@VtAFd@r@lDV~@h@bBh@vApCrHzAfENd@??HT^nAPf@\\rAPn@Tr@d@dAVd@??@BHPh@p@t@n@nG|En@h@??jCtB`BvAb@ZLHZ\\f@d@XTX\\??DBFLaBhBs@p@i@^o@`@eBz@o@RoAVq@H??A?OBoCPaAHqAHsAHaALOBg@LcAXq@Vm@Xo@Zq@\\_Av@aBzA??WTk@j@c@^}@z@eAt@UNkAp@??g@VsDtBmJlF??WLY\\qDvDWT??GFs@l@WXkAnA??WV_ClCCDQR??OTm@l@SPc@Te@RsBz@k@PaA\\??k@R}@^cAh@a@Pk@Zk@XeAf@]P]P}@^}Bx@gA\\}FpBy@Xc@P{@X}Aj@iAl@YR??C@s@h@SNaAt@e@\\YRQJSNEB??QNUHcB`@i@LcAZQB????uCv@c@HUBS@_@?_BA_@CsDe@oAQq@IwB[??QCgAKi@Ce@AoADy@JaATmA`@}C`Ac@L??YHe@NcBf@cBd@_B`@e@HeALsANoBNcBNW@u@CEAMC??{@Ke@Ec@CS@WBg@HaA`@c@^c@`@SR??OL}@t@eEtCi@d@_@ZMLa@b@Y^SV[f@Wb@Q^??GL[r@Uh@_A`Cg@lAk@dA??ABQX_@h@YZ_@\\]VSJMF}@b@eBt@EB_@TUPYX??eD|CKLw@r@[`@Y`@MRUb@GNKTOb@e@xAM\\Sl@??K^c@pA[p@S\\e@v@UZyB|CcAtA??mBpCaApAc@p@m@x@{@lAaCcAw@[GVU~AKlAGtA?b@C`AAR"
+  },
+  {
+    "id": "360415",
+    "lineKey": "Bus",
+    "routeId": "36",
+    "name": "Forest Hills Station - VA Hospital, West Roxbury",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\EVCNKt@??ALM^Yv@DZTfAVnAFX??@@B^\\`AJf@RjAH^JtANfC??@VB~@D|A@jA@nD???VHtL?T??@PBrBDxADfC?h@??DhEBnGBnD??@pADfF?jB@\\??@V?|B@jC@vABfD@d@??BdADp@Dh@?d@q@nA_@f@ST]Vk@T[H??u@PSBGlBKpASrBEdA?n@?T@V??@NHh@Ld@DNVd@b@p@l@~@h@v@T\\\\j@Pj@Rp@Ld@??^rAVf@Xd@LLt@z@h@j@\\V\\Nr@RbANd@F??ZFb@HhBf@XH^Nb@LpAn@ZPl@V|@ZhBd@ZBv@CXB??H@XH\\Nh@^vAlAl@f@jAv@??XRjAbAR\\P^BFDRFZ??Jd@`@rCHh@??T~APjAZjB??DXHf@XfBPbATxAJh@FTZfAL^??HV`@z@h@lAb@z@`@r@??JR\\j@zBhDtAtBd@r@??X`@p@`AX^tB|CvAlBRV??LPc@l@SRWNKHINO^TTFLDRBd@ARIXUf@m@^_AGa@HEBSI_@OaDeB"
+  },
+  {
+    "id": "370157",
+    "lineKey": "Bus",
+    "routeId": "37",
+    "name": "Forest Hills Station - Baker St & Vermont St",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\EVCNKt@??ALM^Yv@DZTfAVnAFX??@@B^\\`AJf@RjAH^JtANfC??@VB~@D|A@jA@nD???VHtL?T??@PBrBDxADfC?h@??DhEBnGBnD??@pADfF?jB@\\??@V?|B@jC@vABfD@d@??BdADp@Dh@?d@q@nA_@f@ST]Vk@T[H??u@PSBGlBKpASrBEdA?n@?T@V??@NHh@Ld@DNVd@b@p@l@~@h@v@T\\\\j@Pj@Rp@Ld@??^rAVf@Xd@LLt@z@h@j@\\V\\Nr@RbANd@F??ZFb@HhBf@XH^Nb@LpAn@ZPl@V|@ZhBd@ZBv@CUr@??g@~A]t@Q`@i@dA]p@sA~Ag@^m@^SJ??QH}BnAwAt@]N??OHc@`@_@`@]b@w@~@??KNuA|AYZw@bAeAnA??KLuAxAwBhBgAz@??OJx@zAvA|BnAlB??DFzApCt@lAf@~@??JPxA~BPVv@rA"
+  },
+  {
+    "id": "380198",
+    "lineKey": "Bus",
+    "routeId": "38",
+    "name": "Forest Hills Station - Wren St",
+    "polyline": "sudaGro`qLMIOTGPKLKFUHc@E{AK_ACoAO]?G@q@?_@Cc@BeALa@HeBTQ?W???]?_A@cAAy@Eu@Ce@?c@BULKDQFUJOHeAb@q@T??QFi@Pm@Lc@FYDu@DoABsADY???aABgA?{@MOG@d@DN??DP`@l@V\\Rh@Vz@TxAD\\\\fCFr@@X?NAb@?B??Cf@Er@KpAOtBEh@??E^?l@WrASj@KVCVA\\D\\FNDJHHNH`CxAHDZR??r@d@dBjAhAv@tAdAh@\\??PLh@V`@NZJt@Zl@P`@DxALbAFf@D??`@Bl@H|@Tz@`@|@n@h@`@??VPl@^rAbARPf@f@~BfC^\\??`C`CVZrCpCnBtBf@l@DD??d@n@Xb@@B`@v@@DXh@Xr@f@tAn@zBJV`@nA??DJf@~Al@~@h@`ADDlAhB??NRzAjB~@nAfCzC|@`Al@v@??JP~AvBTX??nAzAdBxBTZ??FJlAxAtAdB??JNjB|BhB|BDD??NT~ApBn@|@Z^??`BjBDHN\\JVt@|ER~AF\\Hl@??DTTlATfADHf@pBVbADV??RfAKHQPG^?N@VFVFRLNNHJ@PCJCJMBCL]RQXG^CJ@R?b@Bv@?jBG??jAC`@R@@??hBvBhC~CPT??nB`Cv@`AtAjB\\i@Rc@??JW^k@Te@fAiBb@q@`AaB??JQRa@~AgChCkE??JQZ\\f@|@Rj@Jr@Df@@dAWd@ZVDSAUAG"
+  },
+  {
+    "id": "390165",
+    "lineKey": "Bus",
+    "routeId": "39",
+    "name": "Back Bay Station - Forest Hills Station",
+    "polyline": "s~maGzvxpLFCHWCw@MSUSCm@VIj@UkCmDiCgDiAb@eBp@oDpAd@nC??fAxGp@xEXjBJ`@??DRJZHRVx@Vh@pBdCh@r@dAlA|AhBjAvAzC~DbAnAnApBX`@TZ??fDjE^b@~A~BfExFpDnEzAfBLT??`@r@N`@vA`Fj@rB??FTdCnI`@jA^dAx@rC??BL@FRl@|@`DxBfHDLfAxDPp@??hA|D~AlFrA|ET~@n@pB??Nd@^dAX~@VfAhAtEPp@??ZnAt@jCt@dCd@zAh@pAh@z@Zr@??\\r@Pd@HZH`@B\\@t@@bDArC?ZBt@@l@??@RBl@Fv@Ll@HZNb@h@lAR`@h@lAv@dBHVPHJBZK??vAc@vBo@nCy@rAg@n@W??^M`@OZIx@M^@l@Dt@J`APvBn@fA`@NF??NHPHpCxAj@Tx@Rn@Nl@Fb@Dl@@rAAL???p@CzAG`DI??b@AhBI^GzAQFEbAMhC_@^EVAP@RJ??bAh@z@h@bAn@lBjAtA~@l@\\`@VLH??~@j@h@XRNb@Tb@LZFb@Df@?b@?fCDdB?zACD?f@AV@??P?h@?bBHj@D\\HhB`@\\F??n@Jp@Ll@Ph@R\\Rv@t@b@^??LLd@TNFz@LfA?zACNA??bACnACt@EXEb@Gl@Mh@QbA]XM??j@UNITKPGJETMb@Cd@?t@Bx@D^???b@@~@At@?P?dBU`@IdAMb@C^Bp@?FA\\?nAN~@BzAJb@Df@N^LVFPJZPRH\\P\\RBu@ASIMaCyA"
+  },
+  {
+    "id": "400129",
+    "lineKey": "Bus",
+    "routeId": "40",
+    "name": "Forest Hills Station - Georgetowne via Alwin St (PM Route)",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@F`@B|@R|BfC`CjC`EnEXX??hBpB`BhB??LNjAlAbAjA??LLnBvB`@d@d@j@jAjA`BhB??LNTXrAbBt@|@bApA??PTZ\\`BrBjAvAZ\\t@`AfArA??LLnA~AbBbC`@p@??PV`@r@bAzAvFbIxBvCRZ??DD`BxBTZdAzARV??xHjKZ`@h@p@??`BtB`AnAv@~@??~CvD|@~@LUP[??R]`@m@d@_@l@WxBoA`@_@j@m@TU\\q@`@_Ad@gBTw@Tc@R]t@q@t@_@n@Kj@?xALxBV|@LZJ??`AXtB`Af@F\\E??NCRGXUV]b@uAv@oDJ[HKD?VD|Af@ZL??NH`@k@HI`@]f@_@`@MFAJCT@XBFB??b@JNDPB`@@@xAArAD^J\\P^LLNLVFTDp@G@|@AX???XKp@Qp@]`AW\\]T_@Hk@Gm@W]UUa@Gs@Dy@??@CLYLINMNEd@MZMRS\\w@MMQ_@K]E_@@sAAyA`@E^GXM~@u@~BeBFEh@g@n@_@??JWN[??\\y@zAn@l@^T[??@AzAuA`@i@Xs@L{@BY?K??Be@CyCG}AGiAKu@OiA??CWUwA_@sAe@o@_@[c@Qa@Ge@Ce@Fg@Rq@b@k@d@i@b@ONa@Tq@RsBf@i@Tq@^{@v@i@h@k@d@Dl@J^Tj@xAnCZb@VX^Xd@\\p@Z|@\\v@^pAt@|@f@??HFKx@Qh@LXBN\\z@LZPVNPVRd@VRRPXHTHV@d@IVCXDxABRJFF?FAFI@SG_BIQIM"
+  },
+  {
+    "id": "400130",
+    "lineKey": "Bus",
+    "routeId": "40",
+    "name": "Forest Hills Station - Georgetowne (AM Route)",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@F`@B|@R|BfC`CjC`EnEXX??hBpB`BhB??LNjAlAbAjA??LLnBvB`@d@d@j@jAjA`BhB??LNTXrAbBt@|@bApA??PTZ\\`BrBjAvAZ\\t@`AfArA??LLnA~AbBbC`@p@??PV`@r@bAzAvFbIxBvCRZ??DD`BxBTZdAzARV??xHjKZ`@h@p@??`BtB`AnAv@~@??~CvD|@~@LUP[??R]`@m@d@_@l@WxBoA`@_@j@m@TU\\q@`@_Ad@gBTw@Tc@R]t@q@t@_@n@Kj@?xALxBV|@LZJ??`AXtB`Af@F\\E??NCRGXUV]b@uAv@oDJ[HKD?VD|Af@ZL??NH`@k@HI`@]f@_@`@MFAJCT@XBFB??b@JNDPB`@@`@E^GXM~@u@~BeBFEh@g@n@_@BN\\z@LZPVNPVRd@VRRPXHTHV@d@IVCXDxABRJFF?FAFI@SG_BIQIM"
+  },
+  {
+    "id": "410115",
+    "lineKey": "Bus",
+    "routeId": "41",
+    "name": "JFK/UMass Station - Centre St & Eliot St",
+    "polyline": "cvhaGfitpL}@DMJOLKBMCMIKSWTMFmD`@gBRKQAOBQLO\\Kr@[d@UVGb@?ZLVTJJHTJl@@dCGr@AxE@z@FrAH|@Lx@R`AJXRj@??f@rA\\Xb@~@Tr@ZbANn@TzADl@Dp@Dx@@~B?@??GbAGn@Gd@YzASj@]j@Fb@Lb@JRXf@Zf@^f@\\^b@`@d@^d@ZxA~@??XNpBpAp@b@^\\r@`AXl@JV??Th@Uj@_AjC??GR[bAYv@a@nAMd@o@jBUt@_AjDEL??e@hBSt@Un@Q\\ORm@h@m@f@{@`A??ONuBbCUPQLQHWDg@DM???K@[Fg@Nq@`@y@`@m@^c@`@IF{@t@k@j@i@f@g@b@ML??_Ap@m@b@g@^a@RmAd@??KDYJ}Bx@]P_@j@W^??}@nAqAdBi@p@sAnBMT??[n@Qd@Qf@e@tAYfAG`@??CXA^?pB?p@D~B@xA?b@WtFCj@??E~AIBOA}BSKlA???JvCd@En@C`@CTKjAKf@k@r@{@lA_@t@O\\??m@vAcAzB[|@Kj@Qf@Ql@T\\NXD\\Br@HdCN|CXtCHn@??DTPbBRlBb@tCThARx@N\\@@??^p@\\n@l@z@ZXJL`@\\f@XrBbAXP??TNj@X|@f@z@`@nAb@\\P??FBv@Zn@`@\\VdA|@??DDRXBR@NANCd@Gx@EZpAXd@HZDN@@J@XJPVLn@PXj@`@Nt@TDB??`A\\Cx@GrAAl@ADGnCEpACfA?`@??Ad@?lABfABx@@RHpARhDBx@JlB??@XLpCFv@NfE?ZF~@??@Zl@`DHf@P~AFHNDJB~@HxAjA??LJp@`@v@n@\\VzCxBRJ??bAh@z@h@bAn@lBjAtA~@l@\\`@VLH??~@j@h@XRNb@Tb@LZFb@Df@?b@?fCDdB?zACD?f@AV@??P?h@?bBHj@D\\HhB`@\\F??n@Jp@Ll@Ph@R\\Rv@t@b@^"
+  },
+  {
+    "id": "4110183",
+    "lineKey": "Bus",
+    "routeId": "411",
+    "name": "Malden Center Station - Jack Satter House via Kennedy Dr",
+    "polyline": "{l}aGnsxpL`AXNe@Ji@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@mBc@gBcAsD??GSu@_Cw@oB[{@q@cBm@wAsAkDMY??c@cAy@sBo@eBGO??IUk@cBs@uBOc@??Y{@Kk@UeAK_ACiA?wBDyCBcB???_@IuAG}@O}BOkCCg@??IcAw@{H[kBOc@??]aAEMk@oAo@_Bs@cBw@uC??GU_@wAW}@U_AKc@??CKC[OiBCSM{BA_@EgACwA??AWGiH?o@??CeCAiACsAIoAE_@AG??AQKiAOmA}Ac@??QEuDcA}Aq@oAo@[i@_@kA{ByH??g@aBi@iBs@{BMYSY????c@_@aEuDcB{A???AOGq@_@uBgA_Ag@??k@Y@ERi@`@a@x@YtAa@`@OREJIRWNOLINCL@J?d@Rf@t@^x@??JRn@y@n@y@zAiB??LOh@hATZKPYXw@fAi@~@GbARpA`@j@d@r@tArAjA`Av@b@HAZ?f@Q??BAd@i@TaA@cAOk@Se@??Ue@w@mAsAsAy@}@GG??m@}@U[i@iAQ_@??KQUy@?aAl@}CRiADs@Gu@e@sBGk@Hy@x@cCZe@??@Ah@UEUCc@Fq@\\uAj@sAjBqDJ_@La@Pm@d@wAFO??LYPDnBd@n@XFDPJ??NJPLp@r@l@n@tB`C??LLt@z@f@l@x@t@f@p@f@r@XZLV??Xj@Zf@`AyC??FSRc@Je@BGPy@Nu@v@_Ed@oBR_A^uBF[@K??BOFaADg@Fc@H_@P_@^]b@Sd@Mh@EZIXO\\Uf@m@Pa@Rs@Hc@Do@?cAEeAKg@Iy@Ac@?a@B_@D]Lg@Pi@Va@rAaBC@p@}@rBoCzAmBtAeB|AqB|AsBjAwAV[OUo@_Ao@aAQW??MQuAkB]g@}CrGOB]d@KJoAbB??_@f@dBvC~AnCc@n@{GtIo@l@s@^[HYB[A[Om@a@u@u@[Qa@I[C[@a@H[PURUVU^M^Mr@E|@@h@Fh@TzAXlAPr@l@xBZ|@Fl@Bj@?p@@fBCfAKhAE^WpA??c@xB[xAg@fCGZGRc@|BCNNIFCJGRQRQVWl@o@`@c@z@_AZ[VSRKZM??RIfA[n@SfCw@\\MXGl@APBNFNJ^Z`@d@j@r@hAoB??LQtAgCVe@x@_Bh@w@TY??NUh@u@HMd@m@~AoBrAcBV]bAsA`AmAPO@APGJA??NEf@Et@AL?z@C`BGLA??@AP?|@?j@HN}@XaA?EBSd@{BNo@^iB??DUVkADSV{@Ri@??`@eAXq@lAsCXq@bAcBR]??DIhAiB~AgCRa@??v@eBVe@b@{@v@o@HK\\]|@g@LK^WP[b@XrBtAf@ZfAl@??\\P`Ah@jAr@dAh@NJ??pAt@v@b@z@b@pC|AzBnA`Af@??tAt@~BaH??vAaEvA}D@k@SmBYgBGc@]}A??EWMsACcA@m@HwAXaBV}AF}@@e@?i@??A}DNy@Zy@DKDU@O@]CWEWEOOYc@UWSMUIQo@qBSw@Uo@EK??KU[a@HcAFs@P{@XgAf@iB\\wAXmA??HWd@iBb@iBRgADs@DeAB}ABq@??DaAs@KgB_@gAS}ASsAGuA?kAB]Ac@Aa@C_@GQG?OEYEe@KQGI}B]??_C_@SJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@EQCSI_@Uu@m@k@_@??WSqA{@_D_C??OKm@e@kJ{G??OKwIkGoAaA??KICCxAsAbBeBfAgA"
+  },
+  {
+    "id": "4110184",
+    "lineKey": "Bus",
+    "routeId": "411",
+    "name": "Malden Center Station - Kennedy Dr",
+    "polyline": "{l}aGnsxpL`AXNe@Ji@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@mBc@gBcAsD??GSu@_Cw@oB[{@q@cBm@wAsAkDMY??c@cAy@sBo@eBGO??IUk@cBs@uBOc@??Y{@Kk@UeAK_ACiA?wBDyCBcB???_@IuAG}@O}BOkCCg@??IcAw@{H[kBOc@??]aAEMk@oAo@_Bs@cBw@uC??GU_@wAW}@U_AKc@??CKC[OiBCSM{BA_@EgACwA??AWGiH?o@??CeCAiACsAIoAE_@AG??AQKiAOmA}Ac@??QEuDcA}Aq@oAo@[i@_@kA{ByH??g@aBi@iBs@{BMYSY????c@_@aEuDcB{A???AOGq@_@uBgA_Ag@??k@Y@ERi@`@a@x@YtAa@`@OREJIRWNOLINCL@J?d@Rf@t@^x@??JRn@y@n@y@zAiB??LOh@hATZKPYXw@fAi@~@GbARpA`@j@d@r@tArAjA`Av@b@HAZ?f@Q"
+  },
+  {
+    "id": "420102",
+    "lineKey": "Bus",
+    "routeId": "42",
+    "name": "Nubian Station - Forest Hills Station",
+    "polyline": "cnjaGlpzpL?JGl@CVK|A`Bt@\\XHLHPlA`EPj@Rf@V^VVb@RLFz@X??~@XbEvA\\J??~@Xz@Zj@Tf@N`@Nf@XZTd@b@??NLp@l@|@x@r@x@^l@??@@tDxF|@pAp@fA??JNV\\t@lAV`@bAvA??FJdAvA|@hA??LN~@~@bCfCt@t@TR??lEhEfAjA`@`@??XVh@j@lAlAbB`BXVXXRP??vAvAb@d@bA~@PN??\\ZxCzCnBnBNP??VTfA`AZXlDlDdBbBn@j@JJ??LNv@v@z@x@r@t@|@x@^^??jAlAxBxBfB~Ab@b@TV??TRrArARRfAdAVV??hDhD|@x@hAjA^^VRrClCNN??pClCpArAbDdDr@t@^f@lAn@KhAnBbA"
+  },
+  {
+    "id": "4240101",
+    "lineKey": "Bus",
+    "routeId": "424",
+    "name": "Wonderland Station - Eastern Ave & Essex St",
+    "polyline": "}wzaGxthpL_C_@SJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@E@X@vA@d@??BrCBnC@j@?\\@fBBtCFnE?H??@rCFtC@nA?r@BzA?d@??@V@nADrAHt@B?N`@d@`@`Bv@ZN??r@ZrAn@\\j@JTHn@A~@?L??CfC?l@Cx@c@U??UKwFeCqAo@a@Ok@MA???_@Cg@Ca@@YDODOB[J[Pq@f@Y\\[b@KTSf@o@lB??GNMTQRMJYLWHSDK@]?OCMG{JwGkGcEeD{BgOeKcEsCsFsDq@e@iUuO{R_NaH}EwAgAaCwB{@}@cMsMwCcDgBkB_BaBmAqAq@o@sAyAmAoAcAgAwDaEiCwCuAwA_AcA_CwB??OM}AgBoCkDMOQKs@s@_AeAeFkGyDsESW??_@e@c@g@qA}A}BoCi@o@??kCeD]c@??cBqBcCsCu@y@[a@??q@}@eAkAY[q@eA}@aAII??{@cAu@_Ao@u@m@q@_@_@m@k@SWs@s@??QQk@k@{A}AKM??g@o@m@i@{@}@MUKc@?Q?QCUMWKMECQCSKEA_@_@KM??_AuAiCcD}A}B{AmBo@w@??KMmBcCGI??gB{BqAeBw@_AIMKM??KQqAaBaDcE??MOgFyG??KOuCuDm@u@??sAeB_BsBUY??MO_BuBW[??o@{@mC{C_@a@UUII??SQoCiCc@e@s@o@WU??q@o@o@m@gAcA??QQgBaBm@m@aA}@??OOyAsAwAsAcB_BsAmAMM??MMcA_AeBaB[[??wAqAc@c@}@w@??MMyAuAMOYWuAoA_@_@[YeB_BgAeA_ByAk@k@H[J}@??vAmMl@eA~B{DT]??bCaEvC_F??P[rAwBp@iAd@u@f@q@\\a@??JOj@q@~@eA|AgB??LKtBaCdBoBtBaCVYxBgC??nEaF"
+  },
+  {
+    "id": "4260316",
+    "lineKey": "Bus",
+    "routeId": "426",
+    "name": "Haymarket Station - Central Square, Lynn",
+    "polyline": "ixpaGdnupLc@^k@f@s@n@q@yCGUK_@Oa@IMQQSII?Yj@}AhBqB|AYTw@D_BFgCJi@DiBFg@D[@QHc@TyNbJ{@j@eAv@]\\QRSVMVWf@Sh@IXs@jCs@vBUp@Yn@Od@y@nB]|@KT\\XnAdAZRXNt@Tj@DV?d@I`@Q`@a@\\g@Pe@Je@Da@?e@Ai@Ee@Ks@Mo@Ok@i@_Bo@_BuAcCUc@qAqBqBmC}AwBgEiGgDmEgDgEcBqBwBeCqCwCuBuBgBaBkFqEeFsEoLcKaCuB??e@c@iHiG_EmDkAaA[YyCyCuA_BqBkCeAyAgBmCe@w@k@cAqBaEkAgC}B{EwAwCoAkCi@kAu@aBWk@mBiDe@o@m@m@o@a@i@UcASeACgAFg@J[Ja@Ts@j@kArAaBdCs@`AoArAi@d@i@`@i@^k@Zu@V]Js@Lq@HeADqAKs@Ma@Km@SeAm@w@q@]]c@g@y@gAw@kAy@wAc@iAg@{A[uAUeAQmAMcBe@{I]iHQoB_@cCs@gC_AmB}@yAaAsAgAkAkA{@y@c@cA[cASw@IgABo@Hm@Nk@Vm@Xg@b@c@`@k@n@wBpCs@x@s@|@w@~@w@`Ao@r@m@n@k@f@g@b@mAz@_B|@m@Zs@Xy@Xo@Rw@TaARw@Ls@Fw@Fq@Bq@By@?q@Cg@Co@Gq@Mw@Oq@Sc@Ok@WkB{@gAm@gAo@oAw@sA}@sAaAgA{@iC{Bk@g@g@g@eAeAwA_B}AiB{@gAs@aAsCaEoC}Ds@iAw@eA_BaCq@aAaBcCs@eA}@mAk@mA]s@]eAo@}AwAqDK_@Q{@UoAKg@]{@Wm@Yi@{@uA{@mAu@u@[Qa@I[C[@a@H[PURUVU^M^Mr@E|@@h@Fh@TzAXlAPr@l@xBZ|@Fl@Bj@?p@@fBCfAKhAE^WpA??c@xB[xAg@fCGZGRc@|BCNGBIBcAD_@?Y?iAGUA??S?y@u@g@m@g@k@??MOcCoCm@o@q@s@QMYS??GCGEo@YoBe@QEMCo@[u@g@WOUOu@k@MUQ[Sy@??Me@CSOeBIuAOeCMm@YSoAGE?w@UeBiAa@Y??a@[OK]_@EE[_AKwAGc@CMo@}@QKg@]??UMkD{BOI??OIsFkDcBcAs@e@??OKs@c@q@e@oBqAYS??oFqDeCcB??MKeD{B??MIu@i@OGcAu@Mc@KYGw@??YsDWsDMyAEg@???AQm@[_@m@q@WYa@a@??GGMWGOS}@MgAAaB?Y?SJwEBcA@U?q@?kA?G??E}D?G???Y?yCFeD@g@??@SFwBFcBBu@J{AJiB@O??@Y@a@Ck@IcASmAc@aBUm@EMKU??ISa@o@kBqBWW??gBkBYUYS??OKy@k@uBqAYQ??aAm@uGaEi@S{@G]E??a@GmDo@]G??w@OwASkAW]G??yE}@??UGs@Q]KgAe@m@[IA??SEo@Oo@Se@QOMEE]c@k@{@q@yAg@yAEOW}@I_@Ek@A_@??CkA?cACgAAkA??AYC_DAm@Ci@E_AAc@b@y@Xi@??P]x@eB|@kB??HQZo@Zq@h@kAdA{B??JQxBwE??HQvAyC^y@NY??Re@`AsBNa@??j@oAXyAZeAXkBBgAAgAKkBC{@??AWrB}Du@y@[a@??q@}@eAkAY[q@eA}@aAII??{@cAu@_Ao@u@m@q@_@_@m@k@SWs@s@??QQk@k@{A}AKM??g@o@m@i@{@}@MUKc@?Q?QCUMWG_@AQ?M@Q@_@Gs@??IiAYkD?a@D}@FaAAkAEeEKsB????AuB[eES_C]mDWgDMiBAW??ImAIaBU}CMgBy@iFc@{B??CMMgALwAJu@h@kAlBwDnAuC??LWnAmCl@yA^s@|A{Cy@}B"
+  },
+  {
+    "id": "4280066",
+    "lineKey": "Bus",
+    "routeId": "428",
+    "name": "Haymarket Station - Oaklandvale",
+    "polyline": "ixpaGdnupLc@^k@f@s@n@q@yCGUK_@Oa@IMQQSII?Yj@}AhBqB|AYTw@D_BFgCJi@DiBFg@D[@QHc@TyNbJ{@j@eAv@]\\QRSVMVWf@Sh@IXs@jCs@vBUp@Yn@Od@y@nB]|@KT\\XnAdAZRXNt@Tj@DV?d@I`@Q`@a@\\g@Pe@Je@Da@?e@Ai@Ee@Ks@Mo@Ok@i@_Bo@_BuAcCUc@qAqBqBmC}AwBgEiGgDmEgDgEcBqBwBeCqCwCuBuBgBaBkFqEeFsEoLcKaCuB??e@c@iHiG_EmDkAaA[YyCyCuA_BqBkCeAyAgBmCe@w@k@cAqBaEkAgC}B{EwAwCoAkCi@kAu@aBWk@mBiDe@o@m@m@o@a@i@UcASeACgAFg@J[Ja@Ts@j@kArAaBdCs@`AoArAi@d@i@`@i@^k@Zu@V]Js@Lq@HeADqAKs@Ma@Km@SeAm@w@q@]]c@g@y@gAw@kAy@wAc@iAg@{A[uAUeAQmAMcBe@{I]iHQoB_@cCs@gC_AmB}@yAaAsAgAkAkA{@y@c@cA[cASw@IgABo@Hm@Nk@Vm@Xg@b@c@`@k@n@wBpCs@x@s@|@w@~@w@`Ao@r@m@n@k@f@g@b@mAz@_B|@m@Zs@Xy@Xo@Rw@TaARw@Ls@Fw@Fq@Bq@By@?q@Cg@Co@Gq@Mw@Oq@Sc@Ok@WkB{@gAm@gAo@oAw@sA}@sAaAgA{@iC{Bk@g@g@g@eAeAwA_B}AiB{@gAs@aAsCaEoC}Ds@iAw@eA_BaCq@aAaBcCs@eA}@mAk@mA]s@]eAo@}AwAqDK_@Q{@UoAKg@]{@Wm@Yi@{@uA{@mAu@u@[Qa@I[C[@a@H[PURUVU^M^Mr@E|@@h@Fh@TzAXlAPr@l@xBZ|@Fl@Bj@?p@@fBCfAKhAE^WpA??c@xB[xAg@fCGZGRc@|BCNGBIBcAD_@?Y?iAGUA??S?y@u@g@m@g@k@??MOcCoCm@o@q@s@QMYS??GCGEo@YoBe@QEUh@e@vAQl@M`@K^kBpDk@rA]tAGp@Bb@DTi@TKL??QXy@bCIx@Fj@d@rBFt@Er@ShAm@|C?`ATx@R^??HPh@hATZKPYXw@fAi@~@GbARpA`@j@d@r@tArAjA`Av@b@HAZ?f@Q??BAd@i@TaA@cAOk@Se@??Ue@w@mAsAsAy@}@GG??m@}@U[i@iAQ_@??KQUy@?aAl@}CRiADs@Gu@e@sBGk@Hy@x@cCZe@??@Ah@UEUCc@Fq@\\uAj@sAjBqDJ_@La@Pm@d@wAFO??LYMCo@[u@g@WOUOu@k@MUQ[Sy@??Me@CSOeBIuAOeCMm@YSoAGE?w@UeBiAa@Y??a@[OK]_@EE[_AKwAGc@CMo@}@QKg@]??UMkD{BOI??OIsFkDcBcAs@e@??OKs@c@q@e@oBqAYS??oFqDeCcB??MKeD{B??MIu@i@OGcAu@Mc@KYGw@??YsDWsDMyAEg@???AQm@[_@m@q@WYa@a@??GGMWGOS}@MgAAaB?Y?SJwEBcA@U?q@?kA?G??E}D?G???Y?yCFeD@g@??@SFwBFcBBu@J{AJiB@O??@Y@a@Ck@IcASmAc@aBUm@EMKU??ISa@o@kBqBWW??gBkBYUYS??OKy@k@uBqAYQ??aAm@uGaEi@S{@Ge@v@c@r@KNk@`A]h@Qh@Ib@??EXaAtDWbA??GTYvAKx@GnA?NOhA[vAw@`DGTERg@pB{BhJa@~A??ERQl@{@nDGTQp@UdAMbACPS|BGj@KdB??AH?L?f@@\\BXTxBBd@BZ@X?XAXAXGh@CPIVIRIPINWZ[h@IPMb@EPStAKn@EPGRM^?@??Sd@k@fA_A|A_A|AONY`@??A?KJWLM?uBFi@DsAP??SDsANs@JaALWD}AC??CC_@C??E?YB?l@Fl@??HxAB`B@z@@n@BxABj@??@VFrBVxH??PnF@ZDpA@`A??@J?tB@pF?XAr@???HE|BGzCGfC???@CTGdAE`@OnAC\\??Ef@Ch@CfAAPDh@E|CEpCCdBALGl@If@Mb@KVGLYf@GHc@f@UNULSH[Jg@DUBy@HC@??kBVM@oAXc@JYJUJYLm@b@ONWVc@j@SZQZO^KZYx@e@xAi@lB??GTUr@s@`CQd@wCxF??_CnEWh@Wf@Yv@u@bCGP"
+  },
+  {
+    "id": "4290333",
+    "lineKey": "Bus",
+    "routeId": "429",
+    "name": "Central Sq - Northgate Ctr via Square One & Garfield Ave",
+    "polyline": "{idbGls_pLc@iA]iACg@Hc@i@]iBkAoBeAS@GFINo@bBQhBC`@S|D\\f@VV??v@~@|AbBpAxA?@??n@n@oAlC}AlDU`@??wAtCi@jAO@]FAZEX@vAGnACb@Cd@?n@Yt@??Yv@s@bBcArBKN}A`C??KPiCdDk@l@??ONqBhC??MN_AnAe@l@wAjB??MPeBtBq@x@yA`BUTIP??IPdClCv@z@bAhAr@z@^`@j@p@~ApBNPJJ\\`@??RV~@hAb@n@XfA@B??BTHx@@r@N|D??@b@LxCDz@AjB?h@???V?RFr@N|@HVTl@n@bAf@j@X\\LTb@bBNj@Np@Nn@VjA??FVn@pCDN\\xAN~@TtAT`B??DVZ~CNrARnB??BVoFZ}BPSBA???}@BsAF??S@eEL}DPiAL??UBX~@r@jC??FRPr@n@|BJ\\Xx@d@p@~@v@`At@`@v@^~AZrAHZ??`@lBLl@^hARp@`AdB?@??d@t@_@v@yAfCU^c@b@??KHw@t@cBpBMJm@`@eBv@??o@VNbABRf@fCFZNb@??@DVn@PZRXVVZTXNh@TTHRLRLj@d@RRVVNRJPJPHRDPBL?`@CVGVELIJIHMFKD]FO@KAYC[Kw@Y??KEEAQCKAY?MBODYNKHw@n@YP[HUB]A??W?W?M?[DWJ_@P[POFIBM@wANYLIFUXKPa@hASf@??a@lAmAbDUf@GDKJYR??iCpBuAdA??UP_At@{AlA[R????MJILk@tB??GVoBtI??EVaC{A??OKo@pC{ArG_@zAW~@y@dD_@lAa@nASb@Q`@INi@z@kDdFaCnDU^kBnDiAzB}@fBa@p@]h@OPa@b@MJcBjAuBxAiAjAwA~BqAfC_AbCi@jAOXCF??s@hAyAlCgAtBg@j@QTiAv@cBj@eBh@WP{@f@CB_A`A??CDc@v@kAtBy@xAWf@q@rAmBlDIP]`@Y\\_@\\_@V{Ar@YTd@zANJROzA{@lAzD??DLpBuAl@eBdCsB]cAr@c@`Cx@nBv@xElBtMbFrAh@z@Z|B~@bSbJbEjB`@P\\Pn@Vd@N|Bd@nEz@nKpBzKxBlDp@v@P|@L|@LtAJh@@f@@xA?hAGnHu@dEc@^Eb@EbEa@lCW`Fe@pBS`AFPDHFHLBP?NGlA?L@F@JBJBFJPp@`ADBH@H?FALC??t@Sl@QFAF@D@BHB^@ZRlBDT^~C?NCHIDIDo@LAL?R@PB^p@I^Op@MLGE{@@E?{@H_ANy@Xu@b@s@dBoBj@aA\\w@JYLg@No@RcBf@kFH}@Jq@FUd@uAJQXc@|@{@FEXW??r@g@PMlBoAZS??FEfAa@zAa@f@KJCfAU~@[@???LQh@m@t@uA\\q@BCb@sAf@wAJ]??HUd@uAXu@p@aBHSbAaB??JQdA{A`@a@rDwB??NItAy@\\_@DGTu@HeAC_@??AYASS_C?}BJgB??@WPeB^e@RSLCLCd@ANFt@h@nCjB??b@XrCnBxFxD??NJnBpAp@d@`@V??PJbAp@bBbArFjD^RzCnB??NJ|@j@PJn@|@BLFb@JvAZ~@DD\\^NJl@b@??TPdBhAv@TD?nAFXRLl@NdCHtALtA??@NBR`@~APZLTt@j@TNVNt@f@n@ZLBPDnBd@n@XFDPJ??NJPLp@r@l@n@tB`C??LLt@z@f@l@x@t@f@p@PV??TZXZf@bAZf@`AyC??FSRc@Je@BGPy@Nu@v@_Ed@oBR_A^uBF[@K??BOFaADg@Fc@H_@P_@^]b@Sd@Mh@EZIXO\\Uf@m@Pa@Rs@Hc@Do@?cAEeAKg@Iy@Ac@?a@B_@D]Lg@Pi@Va@rAaBC@p@}@rBoCzAmBtAeB|AqB|AsBjAwAV[OUo@_Ao@aAQW??MQuAkB]g@}CrGOB]d@KJoAbB"
+  },
+  {
+    "id": "4300223",
+    "lineKey": "Bus",
+    "routeId": "430",
+    "name": "Malden Center Station - Saugus Center",
+    "polyline": "{l}aGnsxpL`AXNe@Ji@bAVTFP}@JeAHy@DiA@}@F}CByADcC??H_FHkHYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@mBc@gBcAsD??GSu@_Cw@oB[{@q@cBm@wAsAkDMY??c@cAy@sBo@eBGO??IUk@cBs@uBOc@??Y{@Kk@UeAK_ACiA?wBDyCBcB???_@IuAG}@O}BOkCCg@??IcAw@{H[kBOc@??]aAEMk@oAo@_Bs@cBw@uC??GU_@wAW}@U_AKc@??CKC[OiBCSM{BA_@EgACwA??AWGiH?o@??CeCAiACsAIoAE_@AG??AQKiAOmA}Ac@??QEuDcA}Aq@oAo@[i@_@kA{ByH??g@aBi@iBs@{BMYSY????c@_@aEuDcB{A???AOGq@_@uBgA_Ag@??k@YeB_Ak@YqB}A_@[_@Y??kAaAaEeD]Y_Aw@m@a@??[SwBy@QIwCy@OEkCs@g@O}E}AmE{Ai@O??yAg@m@a@SSMM[{@K{@Cw@QaEE_@I[IUYa@[Y[Q]GYAi@FaCX[Bg@JwBV_DZgDZeCJoCLaDLcBHgADaDNo@DuALyLjAkGt@sEf@{@Hy@HUIECCI?OZuAd@aBFAF?HBDDBHFh@EpCCdBALGl@If@Mb@KVYNKBM@MAIEKGIOIMCWAWBWFWFSLSNSPKn@U^Eb@EbEa@lCW`Fe@pBS`AFPDHFHLBP?NGlA?L@F@JBJBFJPp@`ADBH@H?FALC??t@Sl@QFAF@D@BHB^@ZRlBDT^~C?NCHIDIDo@LAL?R@PB^p@I^Op@MLGE{@@E?{@H_ANy@Xu@b@s@dBoBj@aA\\w@JYLg@No@RcBf@kFPc@HILEL?NDRb@Ft@Bb@ATIZKR_@\\aDLcBHgADaDNo@DuALyLjAkGt@mAASEOI_@[g@gAQg@Wo@GYOgA@Q@g@??@_@Bi@HeANoADa@Dm@??@WBUFiCF{CD}B@c@???YfBEn@AX@dCFd@@??r@@X@`@DPDND^T\\TVTvArAXPNDJBL@^?\\El@Sl@WXKVIn@Iz@G~@CP?????N@PDJDXNp@f@vAdAZVZZ\\`@r@dANTZf@V@|ADXW??r@g@PMlBoAZS??FEfAa@zAa@f@KJCfAU~@[@???LQh@m@t@uA\\q@BCb@sAf@wAJ]??HUd@uAXu@p@aBHSbAaB??JQdA{A`@a@rDwB??NItAy@\\_@DGTu@HeAEy@ASS_C?}BJgB??@WPeB^e@RSFQ?QI[Mc@KYGw@??YsDWsDMyAEg@???AQm@[_@m@q@WYa@a@??GGMWoAb@sCjA{Bz@cA`@}@b@??C@GB}A`AsBjAq@^gAj@kAf@}@ZwCdAKD]J??uAf@_AX]J??eBh@wDjAMDe@LeCb@i@HU@W?e@A??C?OA_@Gs@QgCk@gBa@i@G[CM?uBFi@DsAP??SDsANs@JaALWD}AC??CC_@C"
+  },
+  {
+    "id": "430065",
+    "lineKey": "Bus",
+    "routeId": "43",
+    "name": "Park St Station - Ruggles Station",
+    "polyline": "}qoaG|mvpLFFXXb@`@d@\\NJz@`@|CnArBp@\\J??b@LjCf@`C^zBd@`B\\zCj@j@H??dEf@Y|D??CVjApCPf@~@`BDHNTR\\PRf@`@PHtAn@RJl@Xt@Z??~Ar@lAj@j@Xd@`@h@f@l@n@RZZp@Xn@x@dBZv@b@fA??FPt@bBb@bA`AvBvAfDnAtC`A|BP`@??n@vApApCnAvCVh@??l@tAJXnAtCjAnCFPpAvCLV??nAfCr@dBr@bBP`@??LZx@dBRd@f@dAn@vA??FLx@hBz@nBr@xAX~@Tj@??LXw@x@}@z@YP}@t@EN?PAHA`@TDJFn@|@"
+  },
+  {
+    "id": "4350302",
+    "lineKey": "Bus",
+    "routeId": "435",
+    "name": "Neptune Towers - Salem Depot",
+    "polyline": "uadbGhhapLUwASRa@qBg@yBO_@Qo@i@cAi@gAm@cAeB_D??Ye@mCaDnAuC??LWnAmCl@yA^s@|A{Cy@}B??c@iA]iACg@Hc@i@]iBkAoBeAS@GFINo@bBQhBC`@S|DQbCe@dAmAzCkAnCcA`Cq@vAMX??mBlEkAhCSZcA`Cm@vAiAbC??IRcAvBQ^{AxCm@lAcAnBuAjC_@p@??_@p@aCfEiA`CaAk@cBw@iASWA]Aq@@u@@I?uBGYC??OAWCk@M}Ag@{B{@kA]i@?c@?u@QoAi@y@_@gAi@WM??mDgByIiEWIa@IXW??@?~@oAb@m@JKZYhAaA??NMPOPUJSJYNm@BMf@qB??FUHa@v@gDj@eCNy@??DUJm@OGQQqAqAYWOQe@e@KM[e@a@i@u@iAU[kAaBa@g@m@u@KMs@s@o@o@_@[KIqA_AKEQK[MC???SGeAUk@Mo@IeAIU?U@I@MDYR_@`@INGNGNMn@YbA???@GPSf@M\\[p@SVKNSPOHSHc@HQDQFIFEBMNAB??Sd@EXE^?D?RBzAHlE@b@Bh@F`@@D??@Df@jBFXBLDr@Cp@Q|@}@bBeAtB_@r@_@n@UP??a@\\a@\\mAz@OF??OHKpAEX_@lFOtB??CXYxD]bE??Gt@MN_CsAqBkAoAc@[G??GAa@AoA?s@FiAH??O@kBLGAeAC[A_AMoAo@??MGeCwA[M??g@UuA[eCYWC??gCSoB]??A?OG[Gu@[s@w@cA_BkAgBaA{A_@s@c@qAQo@Qu@m@wBi@sAo@_As@k@cAc@KC_AOcACeAEeBCqCEoBE??O?{CC{CE_CEiBEm@AeAKWG]Ii@YSKg@_@??iBoAuC{B]Wu@i@e@]kA}@]U{AgAgAy@c@[a@]KIOQ??KMQYS_@QYS[UYYWUUQMoBq@_Bk@[K??ECcBk@_A[kAa@a@QeAe@[QWSg@c@UQCE_@a@kAoAs@u@_AcA??sAwAQOSOOI]OsBu@a@UKGWSQO_@g@KKIO??]o@_@_A{@{BuAyDc@mA{AkEQi@Oa@??i@aBSw@SaAUqAEa@GkAIcBCoAAS?_B@_B??@]DsBXoD@g@TqA\\cBBQJy@@WBo@?cB?M@gA???u@?sBAw@Ck@Gu@I]EQ_@uAOe@Uw@Mc@w@eD]}A??Qu@Oq@GOGKKMUWc@a@oF}EkAgA??q@o@kAaAsBvGSn@{@nCu@dCOd@e@rAOLSJKBe@Hs@RaAH[L??C@a@Hi@Dk@Fi@@o@@o@Aq@EiBOe@CI?s@BmBJeAFO?aCFqB@??Q?_@@e@Bo@Hg@Ji@Ls@T_AZkBr@g@RQHw@b@IFSREJEJGRCJq@~CSt@??]lAMd@sBlHiAzDEJ??IROXMR{A~BmAjBwAvBUXc@t@e@b@oBtCuB|CUXa@x@[\\a@h@ORy@hAe@b@gDfE{D~ESXaAhAs@v@UT}BnBs@p@@d@DHDNBXHzCFvDFbCHvDF`BBp@J~Ap@bAFJ`AjAn@lAl@lAPVxBhDVb@Z[FIDCJKHG??HEFEHEHCRGMWGOEQGa@Ec@GiAEq@G_@Sy@xEcGg@cA|AqBeAiBEIICE@GDOP??o@z@GL?F?B@DBDFL~@~Af@bAFEHENCPAd@CNCPERMTQJKLOnBgCZ_@HMFOHUFSHm@Hu@F[FSLWPYtAeBRObCbJ`BhGuAdB??uCnDi@r@OPOPKHm@^YPMJOPKN??u@`A_BrBKLIFEDOHIDIBM@G?E?eCHO?I?GAGEIKQYWg@SFIBIDGDID??IFKJEBGH[ZWc@yBiDQWm@mAo@mAaAkAGKq@cAK_BCq@DeC@_BCu@C_AGqDKqEAa@CSCSEQYO{AvAUVSVe@x@gB~CKT[^[`@k@h@UNYPc@Ry@N??C@aDZg@Lc@NULq@kKWwEYH[F??iB`@aBv@s@XwA{KIc@I_@[cCU{BIwBMgDEyACa@Ae@Ge@Ua@UOa@K{A[aAS]SMIYSk@c@UfBh@~IbAK??xGo@LfDHvBTzBZbCH^D@D?LArHqAVGWgE]yFA]WyCUwDEs@_@gFKqBCYYcDOkBK{A??AKCYGgAWiECu@GcA[oGCi@??GkACgAOcFAYIkCC_@Eq@S}BI}AEaA?kA?gAAu@OsAU_BbBkAxAcAj@UXM??fBu@z@_@t@[RIXKx@Yl@KbAGzAOrEcAX?nB[lAQ??hBWbCa@??hB[vAUt@KnAQ??BAdC]fBUpBY??PCnBYjC]fBW^GfBU^G`BWVIPMHG^a@dAoAtAeBTY??~@kAtAeBfByBdBwBlBcC??@ALORUZe@\\g@Ts@@A??Ng@ZiAb@yA\\iA\\mA^sA\\oAdAoD~@_D??BKfAsDLg@x@oCh@kB??HYt@cCh@gBz@}C??FWT_@`@w@NYjBiC??NSHKv@aAVa@Zc@pAiBvAeB~@kATY??x@cA\\[Z[~@i@`Aw@HGROr@e@`@YDATITCPAR?`@@t@DPLHLFP@PAh@GRINMJOBs@GWcAKm@Aa@C_A]K]UKKKYaA}C`@qB@OCGGIKESI"
+  },
+  {
+    "id": "4360306",
+    "lineKey": "Bus",
+    "routeId": "436",
+    "name": "Central Square, Lynn - Liberty Tree Mall",
+    "polyline": "{idbGls_pLc@iA]iACg@Hc@i@]iBkAoBeAUM??a@UqA_@oBe@QEs@[u@k@QM??w@q@aAu@kAiAuA_B??MO]i@g@eACGUu@EYWkAm@uCc@sAKU??}@{BgAoCs@gB??ISgAj@q@\\uAfAy@l@YV??w@t@wB|Bo@n@a@p@e@~@S\\??Wb@GJ_@f@e@d@WRy@j@}@l@QLONINQ`@CFI\\??}@`DoApE{@|C??k@nBUz@Ur@K`@ITg@`Ae@z@??EHoA`CMVMT??s@tAOX}B`FO^??{AlDUn@Kl@UnAG\\??c@fBq@tC??EPI`@o@fCCLOl@KXKRQTC@??MLyAnA[XKJc@l@_AnAQN??IFQNaAr@w@n@}@n@??IDqBvAe@\\s@p@qApA{@z@???@IJuAtBQV??y@pAuAvB??U\\o@`A]v@IXGXQp@e@bBe@dB_@dAm@pBOd@??e@~AWl@g@nAq@bAy@|@IJCB??gAt@e@ZMH[X{@`BiAbD_ClG??IRiAxCSh@mBrDg@~@EFe@hA]bAIZ??WdAGRU`@Ub@{@Zo@?MC}B]a@Iy@QSE??UGuBgAi@UkAg@MGWGs@O??g@McAWm@_@{@k@oAs@GCqAA_AVgAfA}@hB????GRwArE_AdD??GT]fAeF~L_@|@??IPi@jAWd@s@rAKPyFnJ[b@??qAhBs@h@QLuAl@s@Z??QHwB`Ae@Xe@`@MR??ORSXgAfBaA~Au@nA??MTMPaBnCgG`K??KPgAhBQZ}@bBgA`C??IRc@dAeB~DSd@m@pA??KRoBdE]t@QTcA\\YFUDU?QEOEMISSW_@EKKSOWQQUMYYIGGKMWEME]Gk@Be@Bc@F[HYzBaFL_@VgAL_ADi@Bg@Bo@@k@Ag@Ag@Ci@Eg@Is@AOWiBwAuJKk@Ii@{@wFIc@?A??GUOq@]cA[u@EMS_@i@}@]c@_@c@uAqAw@w@u@gAa@y@i@mAiA{COa@S{@Q_AG_@MiACYI_BAy@?_BDaAB_@Di@ZkC[GICI@IDMFIF??OL}DtB]R{BvAkBtACB??qDfCqC}JUm@a@eAq@uBcCsH??kAmDu@}BIUKg@COAW@S@UFYp@}AZw@Le@Po@Py@PaAJ{@Fw@D}@Bs@?i@AmAEgAA[KeAQqAW}AiAaHYcB??Ga@QeAOq@yDaNGg@??]sAKa@Ga@C_@A}@?A@Y@SDq@@]Aa@Cc@GYGWEIOM]q@KOGOGQOa@K_@CI??Qe@I[M_@@a@?W@WQDM?i@C?qAF{BAsAa@eAq@_@q@Nk@j@w@xB??ABu@`BUVWVUN]NiAd@_@ZSZKZIf@A`@?\\D^H^LX^`@h@h@DB??z@j@b@PZJd@@X?ZCZIf@SRMf@e@V_@LWPa@Jg@Fg@Bk@?w@?e@r@A?v@@j@Az@KbAETKb@Q^ILGLi@r@kBbBcCtB_FjEoAt@[JWDS@a@Ae@Cq@QWMEEGECICO@a@LsAB[Bu@?i@E{@Eq@?c@BSD[BYBU@MAMEKCGQWg@m@]]m@g@a@YoBgAwA}@}BuAaAi@m@UWESAQ@MDUR_AdA{A|AMJMDE@G@O?QAM?EhCCj@G`@Kd@ENO`@OTGHIJYPKFSFyAJqCRu@F]FSBUJ??_AJOAGAc@m@??[y@c@qAk@eACEo@}@wAiA_FmC_CsAmAkAkBuB{@oAs@cAIUk@iAZ[FIDCJKHG??HEFEHEHCRGVf@PXHJFDF@H?N?dCID?F?LAHCHENIDEHGJM~AsBp@{@??NUNQLKXQl@_@JINQNQh@s@pCkD??xAiBaBiGcCcJSNuAdBQXMVGRGZIt@Il@GRITGNIL[^oBfCMNKJUPSLQDOBe@BQ@OBIDGDg@cA|AqBeAiBEIICE@GDOP??o@z@GL?F?B@DBDFL~@~Af@bAyEbGRx@F^Dp@FhADb@?b@?PANAHQh@??IFKJEBGH[ZWc@yBiDQWm@mAo@mAaAkAGKq@cAK_BCq@DeC@_BCu@C_AGqDKqEAa@CSCSEQYO{AvAUVSVe@x@gB~CKT[^[`@k@h@UNYPc@Ry@N??C@aDZg@Lc@NULq@kKWwEYH[F??iB`@aBv@s@XwA{KIc@I_@[cCU{BIwBMgDEyACa@Ae@Ge@Ua@UOa@K{A[aAS]SMIYSk@c@UfBh@~IbAK"
+  },
+  {
+    "id": "4390109",
+    "lineKey": "Bus",
+    "routeId": "439",
+    "name": "Central Square, Lynn - Nahant",
+    "polyline": "{idbGls_pLc@iA]iACg@Hc@i@]iBkAoBeAUM??a@Uh@}Cj@eCb@gCVw@Ii@Oa@CIMaAI}A_@}FlAc@RW~@}@~@{@x@{@rAcA??NKrAcAz@q@\\]hA}@|@{@|@aAbAmAT[??^g@\\a@hCdB??NJfBlAXP??JFPNX`@@TAXEd@Mf@Cj@BTHVLRFJ`@T^JLDT@NAPEFC??VMXG\\Ah@JlAVtBf@`H~An@JbCVdK|@xCXtMhA`Gj@nDZ|BTrEl@j@DfKZ`A@`AA~@Gz@M~@SbAW~@_@`Ac@x@g@nA}@tC_ClA}@z@i@lAq@n@c@??p@e@pBaAfAq@`C_B~@m@vA}@??PMLIvAo@t@ShB[`Ba@l@Qr@]|@i@jA}@^?^@d@N??PFp@p@j@p@h@z@b@^TJ"
+  },
+  {
+    "id": "4390112",
+    "lineKey": "Bus",
+    "routeId": "439",
+    "name": "Wonderland Station - Nahant",
+    "polyline": "myzaGlthpLoASSJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@EQCSI_@Uu@m@k@_@??WSqA{@_D_C??OKm@e@kJ{G??OKwIkGoAaA??KICC]_@e@i@sAeBkA}AcCkDcJ{LuG_J{A{BiAgBiGyKqDkGiAqB??U_@eEqH}@}A_AsA}@kAy@y@s@o@iAu@u@c@}@e@qAc@gA[??SGw@SaAa@oAo@uAkAoAwAkBiCe@o@]c@Mg@?a@DOHKLEL?ZTx@l@FP@P?LEBSPK@AA??A?EEEIAIAI@]?]KU[Uk@Y_BMs@OwA]g@Q{GmBkJqCiBg@WKiAc@wAi@IE??kAg@oAg@}Aq@kAm@{@Yk@U??KEgA_@gA[iBg@}Ai@g@M??o@SqBk@_Bg@_AYu@[u@c@WU??g@a@y@_Am@_Ac@m@g@_Ai@oAk@_BYeAu@cDWuA??EUk@yCGc@c@uCQuA[aEOsBKeBGoAAOEU??OgAYwBWmAWw@]oA??GUk@{As@cBq@qAs@gAGIkA}AkAuAu@{@_@k@i@y@g@eA_@gAWgAOaAKyA?Gc@DeAN_Aj@qAfA}@`By@}B??c@iA]iACg@Hc@i@]iBkAoBeAUM??a@Uh@}Cj@eCb@gCVw@Ii@Oa@CIMaAI}A_@}FlAc@RW~@}@~@{@x@{@rAcA??NKrAcAz@q@\\]hA}@|@{@|@aAbAmAT[??^g@\\a@hCdB??NJfBlAXP??JFPNX`@@TAXEd@Mf@Cj@BTHVLRFJ`@T^JLDT@NAPEFC??VMXG\\Ah@JlAVtBf@`H~An@JbCVdK|@xCXtMhA`Gj@nDZ|BTrEl@j@DfKZ`A@`AA~@Gz@M~@SbAW~@_@`Ac@x@g@nA}@tC_ClA}@z@i@lAq@n@c@??p@e@pBaAfAq@`C_B~@m@vA}@??PMLIvAo@t@ShB[`Ba@l@Qr@]|@i@jA}@^?^@d@N??PFp@p@j@p@h@z@b@^TJ"
+  },
+  {
+    "id": "440181",
+    "lineKey": "Bus",
+    "routeId": "44",
+    "name": "Ruggles Station - Jackson Square Station",
+    "polyline": "kxkaG~p{pL`@l@BNNdAfAvA`@`@PO`CiB\\Q\\v@h@hAbCbFpBxEL\\|AjDZn@T\\`@f@nBvBBi@NuBDaADsB?i@???sBBaBF}B@Y??DaAJoAZoCLq@??TkAb@uBPm@Pg@j@cAfC{F??Te@bAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABU`@sBJ]N_@RWVSPIVEXAp@?hAL`BHhCVn@Hn@KDA??r@S~F}AL`BPx@Vf@DF??RVRR\\VnBjAp@d@??PLrBpAj@\\hAp@~@p@????JDVJN?V@V?bCG~@?L@??v@DZBxB\\b@F`AJ??fALr@N??l@L`Ad@`Af@`@XlA|@xEnD??XT^VvAfAxAdA`@X??ZTzBhBzB`B??VPrCtBxBzAv@r@ZT??b@\\{@lA_@b@k@j@a@Za@TYLcCd@uARg@NC@??a@T_@`@OX{@`CKRi@|@o@dA??aC~D}BtD{@pA??INc@l@OLGDKDc@HYDiDD_A???o@?aDDe@?{EF??W@_D?s@@_FF}ADgA@y@@iFLO?A^@J@XJPVLn@PXj@`@Nt@TDB"
+  },
+  {
+    "id": "4410249",
+    "lineKey": "Bus",
+    "routeId": "441",
+    "name": "Wonderland Station - Marblehead via Paradise Rd",
+    "polyline": "myzaGlthpLoASSJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@EQCSI_@Uu@m@k@_@??WSqA{@_D_C??OKm@e@kJ{G??OKwIkGoAaA??KICC]_@e@i@sAeBkA}AcCkDcJ{LuG_J{A{BiAgBiGyKqDkGiAqB??U_@eEqH}@}A_AsA}@kAy@y@s@o@iAu@u@c@}@e@qAc@gA[??SGw@SaAa@oAo@uAkAoAwAkBiCe@o@]c@Mg@?a@DOHKLEL?ZTx@l@FP@P?LEBSPK@AA??A?EEEIAIAI@]?]KU[Uk@Y_BMs@OwA]g@Q{GmBkJqCiBg@WKiAc@wAi@IE??kAg@oAg@}Aq@kAm@{@Yk@U??KEgA_@gA[iBg@}Ai@g@M??o@SqBk@_Bg@_AYu@[u@c@WU??g@a@y@_Am@_Ac@m@g@_Ai@oAk@_BYeAu@cDWuA??EUk@yCGc@c@uCQuA[aEOsBKeBGoAAOEU??OgAYwBWmAWw@]oA??GUk@{As@cBq@qAs@gAGIkA}AkAuAu@{@_@k@i@y@g@eA_@gAWgAOaAKyA?Gc@DeAN_Aj@qAfA}@`By@}B??c@iA]iACg@Hc@i@]iBkAoBeAUM??a@Uh@}Cj@eCb@gCVw@Ii@Oa@CIMaAI}A_@}FEc@??Q{AWeD_@sDUsCOiAMy@YgBGU??Qw@q@y@o@q@k@s@EE[k@GMCIIYCY??QcBUiBWuBYmBESWqBESWmBMuAGa@OoAE_@??CWEQYaCOcAMgAS_B_@aDa@eAcA}@IK??s@w@WWWa@k@iAc@s@_@m@]_@IG[We@M]A??s@CYKgAwAo@}@m@w@QM??_@[w@o@Yi@Sc@MYeAyB_AwAKQ??QYmBaD??QYaDoF??IO}EeIy@sAS]??qC}EKUQk@GYAM??Ge@Ea@OsBIu@Mo@Qy@e@gBs@uC??GUe@cBYcAK]M[Q[EI??ISiA_C??KQcAwBgAuBaDsG??iBuDk@_Aq@_AW]??g@m@y@aA{@cAi@m@QQe@s@aAoAa@e@uAeBm@o@m@i@YS]QYOSGME??EAOGYEq@Kc@CA?k@MMIIUCa@??HwAlA[fCsA??PIdB_AvAu@r@c@nAaAr@m@lL{J`Aw@n@m@|BmBh@c@VS|AqAtCcCnAkAz@q@??LMcAqAk@m@w@s@_@]q@q@o@i@YW[U[Oq@Ww@Ig@Iu@Ku@Ou@Q]O_Ac@OG??MGcEw@]Gc@IUIUKaA_@a@Qg@S[KUKw@o@????QQc@e@UYa@a@W[??{@aAgBsBUY??eAoAiA}AcBsB??MQMQcAiBIQ??KW{AkC??IQo@iAqAaC{@_B??KQkAsBsA_CkA{B??IQc@yAk@qBSoAOk@Qi@y@wBaAyB??KS{AaDs@}AEO??IUoAmCgAoCUk@i@{A??GSg@uAa@iAaAuCsAqD???CY{@Wq@]w@]wBw@qF_@qBEYCQ??Im@Gk@Iy@E_AMiAQcAQaAScAWyAG[??GUOe@Uw@Ws@Y}@m@kAi@k@??KMc@WeAs@OOYUUYMQEIm@yAOc@Mk@Q]??AAESOUYe@CCk@[YUe@UuB_AQIo@[g@]}@u@]]YSUW??MMY_@Y_@OUSe@w@_A??MM{@iA_B{BeCaDm@u@??KO_AwAo@}@e@{@Wa@CG]w@WcA_@_B??CQe@qBSmASeBOsBGqABu@FU??FUm@c@m@_@cAkAS]??KQc@y@c@q@QWSUSMMG]S??OKs@g@k@g@k@i@k@i@????]e@Yi@_@s@W_@h@qCXiA"
+  },
+  {
+    "id": "4420299",
+    "lineKey": "Bus",
+    "routeId": "442",
+    "name": "Wonderland Station - Marblehead via Humphrey St",
+    "polyline": "myzaGlthpLoASSJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@EQCSI_@Uu@m@k@_@??WSqA{@_D_C??OKm@e@kJ{G??OKwIkGoAaA??KICC]_@e@i@sAeBkA}AcCkDcJ{LuG_J{A{BiAgBiGyKqDkGiAqB??U_@eEqH}@}A_AsA}@kAy@y@s@o@iAu@u@c@}@e@qAc@gA[??SGw@SaAa@oAo@uAkAoAwAkBiCe@o@]c@Mg@?a@DOHKLEL?ZTx@l@FP@P?LEBSPK@AA??A?EEEIAIAI@]?]KU[Uk@Y_BMs@OwA]g@Q{GmBkJqCiBg@WKiAc@wAi@IE??kAg@oAg@}Aq@kAm@{@Yk@U??KEgA_@gA[iBg@}Ai@g@M??o@SqBk@_Bg@_AYu@[u@c@WU??g@a@y@_Am@_Ac@m@g@_Ai@oAk@_BYeAu@cDWuA??EUk@yCGc@c@uCQuA[aEOsBKeBGoAAOEU??OgAYwBWmAWw@]oA??GUk@{As@cBq@qAs@gAGIkA}AkAuAu@{@_@k@i@y@g@eA_@gAWgAOaAKyA?Gc@DeAN_Aj@qAfA}@`By@}B??c@iA]iACg@Hc@i@]iBkAoBeAUM??a@Uh@}Cj@eCb@gCVw@Ii@Oa@CIMaAI}A_@}FEc@??Q{AWeD_@sDUsCOiAMy@YgBGU??Qw@q@y@o@q@k@s@EE[k@GMCIIYCY??QcBUiBWuBYmBESWqBESWmBMuAGa@OoAE_@??CWEQYaCOcAMgAS_B_@aDa@eAcA}@IK??s@w@d@}APk@Vw@Po@?a@KaBEWWaBSiAQgAMy@_@aB_@mB?A??a@mCMoACmA@o@DuAp@kBBIj@mAd@kAPe@??DMPw@Ny@TeBFe@JeA@{@?y@GcAKw@??CYWgBOkAa@wCKgAKeB??AYAmB@sAC{C@cC???c@@uE@sBAcB???YIaBC}@EmAG{AAi@???SKcBYyCKgAI}@K{@OmB??CWE{@G}@Cc@M{@My@??CWEWGa@Mk@I_@??EUQu@_@uAG[EQk@sBEQQm@Sm@OY??IOQ_@]q@e@y@m@mA??IQu@u@sA@mAHm@Du@?s@?y@C]???YAyAIc@I{@]WQYOAA??UOcAg@e@Y[M??SM_@SYQKMSOWWe@o@_BcBU[??m@u@k@m@w@s@_@]q@q@o@i@YW[U[Oq@Ww@Ig@Iu@Ku@Ou@Q]O_Ac@OG??MGcEw@]Gc@IUIUKaA_@a@Qg@S[KUKw@o@????QQc@e@UYa@a@W[??{@aAgBsBUY??eAoAiA}AcBsB??MQMQcAiBIQ??KW{AkC??IQo@iAqAaC{@_B??KQkAsBsA_CkA{B??IQc@yAk@qBSoAOk@Qi@y@wBaAyB??KS{AaDs@}AEO??IUoAmCgAoCUk@i@{A??GSg@uAa@iAaAuCsAqD???CY{@Wq@]w@]wBw@qF_@qBEYCQ??Im@Gk@Iy@E_AMiAQcAQaAScAWyAG[??GUOe@Uw@Ws@Y}@m@kAi@k@??KMc@WeAs@OOYUUYMQEIm@yAOc@Mk@Q]??AAESOUYe@CCk@[YUe@UuB_AQIo@[g@]}@u@]]YSUW??MMY_@Y_@OUSe@w@_A??MM{@iA_B{BeCaDm@u@??KO_AwAo@}@e@{@Wa@CG]w@WcA_@_B??CQe@qBSmASeBOsBGqABu@FU??FUm@c@m@_@cAkAS]??KQc@y@c@q@QWSUSMMG]S??OKs@g@k@g@k@i@k@i@????]e@Yi@_@s@W_@h@qCXiA"
+  },
+  {
+    "id": "4420300",
+    "lineKey": "Bus",
+    "routeId": "441442",
+    "name": "Wonderland Station - Ocean St, Lynn",
+    "polyline": "myzaGlthpLoASSJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@EQCSI_@Uu@m@k@_@??WSqA{@_D_C??OKm@e@kJ{G??OKwIkGoAaA??KICC]_@e@i@sAeBkA}AcCkDcJ{LuG_J{A{BiAgBiGyKqDkGiAqB??U_@eEqH}@}A_AsA}@kAy@y@s@o@iAu@u@c@}@e@qAc@gA[??SGw@SaAa@oAo@uAkAoAwAkBiCe@o@]c@Mg@?a@DOHKLEL?ZTx@l@FP@P?LEBSPK@AA??A?EEEIAIAI@]?]KU[Uk@Y_BMs@OwA]g@Q{GmBkJqCiBg@WKiAc@wAi@IE??kAg@oAg@}Aq@kAm@{@Yk@U??KEgA_@gA[iBg@}Ai@g@M??o@SqBk@_Bg@_AYu@[u@c@WU??g@a@y@_Am@_Ac@m@g@_Ai@oAk@_BYeAu@cDWuA??EUk@yCGc@c@uCQuA[aEOsBKeBGoAAOEU??OgAYwBWmAWw@]oA??GUk@{As@cBq@qAs@gAGIkA}AkAuAu@{@_@k@i@y@g@eA_@gAWgAOaAKyA?Gc@DeAN_Aj@qAfA}@`By@}B??c@iA]iACg@Hc@i@]iBkAoBeAUM??a@Uh@}Cj@eCb@gCVw@Ii@Oa@CIMaAI}A_@}FEc@??Q{AWeD_@sDUsCOiAMy@YgBGU??Qw@q@y@o@q@k@s@EE[k@GMCIIYCY??QcBUiBWuBYmBESWqBESWmBMuAGa@OoAE_@??CWEQYaCOcAMgAS_B_@aDa@eAcA}@IK"
+  },
+  {
+    "id": "4500256",
+    "lineKey": "Bus",
+    "routeId": "450",
+    "name": "Haymarket Station - Salem Depot",
+    "polyline": "ixpaGdnupLc@^k@f@s@n@UTS\\Qb@g@lBGb@EQuB}DIWW?bAmAnAgBXc@nAiBj@gA\\u@Ne@Pw@Hs@@]Cg@Gc@Oi@We@a@q@s@cAqA{ByAiCmi@q}@mDeGsF}JiAiB]e@g@m@c@k@Mc@Ue@K_@Kg@C_@Ca@@]@UAWB_@Nw@\\w@~@oBPc@Zu@Vu@Rs@Jk@Fc@FaAAe@Aa@Eg@U_AQe@Qa@Y_@yBeCgEeFiHeIqLuNu@{@s@u@m@i@iA_AgAy@iDiCe@a@iE}EoB_CgE_FYY[WYSg@YyCoA}@c@cAs@uC{BYU??gDkCYY[_@g@w@w@kBOe@c@eBW}@Mc@e@kAQ_@g@w@]c@WYi@c@aBoA{AgAmG{EYS??}@s@iFyDmA_AcFwDeDkC[UuDmCaCiBSQ??g[oUo@e@??iAy@}BcBgEyCiBsA[Um@_@e@Q_@Ke@Gk@A_AHe@Lu@VqA`@]HYBU@YCWEa@SYSWUw@}@USa@]SGc@E]?c@@o@H[F{@PA@e@B??_@Ds@He@Jm@Ne@LoAb@wFrB??QFyAj@YHqAd@o@Ri@L[Fo@Fk@Bm@?i@C_@C}@Ko@Mk@Qi@Sg@Uc@U??UKwFeCqAo@a@Ok@MA???_@Cg@Ca@@YDODOB[J[Pq@f@Y\\[b@KTSf@o@lB??GNMTQRMJYLWHSDK@]?OCMG{JwGkGcEeD{BgOeKcEsCsFsDq@e@iUuO{R_NaH}EwAgAaCwB{@}@cMsMwCcDgBkB_BaBmAqAq@o@sAyAmAoAcAgAwDaEiCwCuAwA_AcA_CwB??OM}AgBoCkDMOQKs@s@_AeAeFkGyDsESW??_@e@c@g@qA}A}BoCi@o@??kCeD]c@??cBqBcCsCu@y@[a@??q@}@eAkAY[q@eA}@aAII??{@cAu@_Ao@u@m@q@_@_@m@k@SWs@s@??QQk@k@{A}AKM??g@o@m@i@{@}@MUKc@?Q?QCUMWKMECQCSKEA_@_@KM??_AuAiCcD}A}B{AmBo@w@??KMmBcCGI??gB{BqAeBw@_AIMKM??KQqAaBaDcE??MOgFyG??KOuCuDm@u@??sAeB_BsBUY??MO_BuBW[??o@{@mC{C_@a@UUII??SQoCiCc@e@s@o@WU??q@o@o@m@gAcA??QQgBaBm@m@aA}@??OOyAsAwAsAcB_BsAmAMM??MMcA_AeBaB[[??wAqAc@c@}@w@??MMyAuAMOYWuAoA_@_@[YeB_BgAeA_ByAk@k@UY??mBqB[[e@g@WYUW??QSiBqBsC{CSU??s@w@}AcBWY??qAwAYYsDaEII??e@i@cAeAi@g@USmAq@{BeAi@Us@YOU]Sa@Qa@U_DcBa@S}BaAaBm@??s@Wc@QcAe@e@Wy@i@[Uy@u@e@g@??MOUWsEqFeAgAuCyCSSQU??WYi@u@uGqKwAaCa@s@y@uAy@cA??EGQQm@o@u@s@oAmAII_@_@OOW[aAoAcAyAS[}@mBgAaCOYYm@??{A}CyE{JmAgCe@gAUo@c@oAQq@_@gBMo@aAwFOUyAeIWgAa@wAM_@[{@w@eBa@q@EISYAC??W[[_@][k@e@OIkC}Aq@a@cAy@QQq@o@]]q@m@[_@??WWg@g@eBeBk@i@??KK}A{AmAmAEC??MKa@[WOYM_@KgBa@mB_@}@S}A]}@QUG??WIuCm@SEQIg@Qc@k@yCsDMO??qA_Bi@s@s@kAIM??KQMWMa@Ma@Ke@E[E]CY???C?e@AkAG{@EYc@}ASs@Wu@Y_A??GU@WBUHQLINKjBMtAOF]Eq@B_BHiCBqANqAJm@Lk@Lc@U?e@???QAYBw@HyBPc@Dc@PmALaBJWD[B??[BcAGyCRD`@Ff@?^?b@A`@E\\GvAMdBG|@Cv@?F]K]UKKKYaA}C`@qB@OCGGIKESI"
+  },
+  {
+    "id": "450189",
+    "lineKey": "Bus",
+    "routeId": "45",
+    "name": "Ruggles Station - Franklin Park",
+    "polyline": "owkaGdr{pLDFBNNdAfAvA`@`@PO`CiB\\Q\\v@h@hAbCbFpBxEL\\|AjDZn@T\\`@f@nBvBBi@NuBDaADsB?i@???sBBaBF}B@Y??DaAJoAZoCLq@??TkAb@uBPm@Pg@j@cAfC{F??Te@bAeBb@gAJg@JkABUBa@Do@@MH_BIBOA}BSKlA???JGl@CVK|A`Bt@\\XHLJg@JkABUBa@Do@@MH_BHkCVuF?c@?C??AuAE_C?q@?qB@_@J{@XgAd@uAPg@Pe@h@eANU??bAyAh@q@pAeB`AuA??RY^k@\\Q|By@TXd@V??LFvAx@jAt@b@XbAj@ZP??v@d@|@l@hAr@n@`@PHHB??`ATlBh@ZJ??v@Rh@Jf@FF@b@?bA?X@zACV???R?j@?R?Z@|@J`BNrALd@FD@??t@FdCPr@H??PBd@JZH|@\\jBz@??PFlBdAjAl@^Rh@X??NHhBpAt@j@hBtAxAdA??NJhBtAb@XhA~@ZV??~AjAXTf@T`Al@r@Tp@d@XRxCfBb@Xj@^b@TXJ??PHd@Ll@Lr@Lb@Dt@F??H?`@D`@BpBTv@Lp@NpCp@Zz@f@fA??v@`BNZh@bAJRNSDSDQ?YAC"
+  },
+  {
+    "id": "4510083",
+    "lineKey": "Bus",
+    "routeId": "451",
+    "name": "Salem Depot - North Beverly Station via Cabot St",
+    "polyline": "srpbGr~uoLi@QG?KFdAlD`A|CJXJJ\\T\\JB~@@`@Jl@VbAPl@N?TITQPWHYJcAL]LMXGJ?|@QhACv@GZCHA??t@EnAKjBMtAOF]Eq@B_BHiCBqANqAJm@Lk@Lc@Fa@De@Am@Hy@@Q??D[HwA@]A_@E_@Oy@c@aBq@oCOs@Qm@Y}@s@iBK[G[Ga@[F??qATq@LcD^a@DiAN??M@uAL]BS?KCOGGEg@c@_B}Aa@a@QMSKgA\\SJoAr@CB{ArA??oBfBKKOIYOuAk@_C{@MG]MsAe@qAc@uAe@c@MkAa@w@[wAg@]M}CeAOG??cBi@??OGa@Oa@Os@YwAi@kC_A_A[kAc@q@U{@YSGIA??MCSAO@YHOFWNQRYl@Wf@Yb@UP[NUFSBW?SAQCc@ImFqA{EkAWGWMUM]Ua@]Y_@U[c@}@m@oAQ]Uc@[_@g@c@e@s@SWUOGGU]u@cA{@oAOY??IMe@m@W[e@w@Q_@cAsBi@kA_AeBs@}@gAs@]Q[Q??aB}@g@W??KGKGoBkAMKSMe@S_Bu@_A]??MEcAa@}@c@a@UMKa@Yg@Y??UM]OSGUESCU?[?m@Dm@Pc@Pk@b@cAl@ID_@Na@Lu@JK@??Y@uCIi@C??c@C_AEw@`D}@`Ec@hBo@lCq@|C{ApG_@vACPs@`DSz@gBzHm@Ua@I_@AQ?YFYHUBO?gAB?n@??AvAfAA?eC@CN?TCXIXGP?^@`@Hl@TfB{HR{@r@aDBQ^wAzAqGp@}CLg@??`@eBb@iBJc@??p@}Cv@aDcFm@??UCo@GaAIq@E??QAoAIG?q@BYFQDOJ??OJKDs@d@_@^]n@IP[t@AF??CJCPCN?NAL?N?L@R?FBHMFIFCBGFINELO`@_@jAw@~Aa@t@OXm@~@}@rA??GHUTSPc@PQF[HiCr@kBf@mBj@WF??uCv@??A?_AXuBx@_CjAa@Tg@Za@X??OL}@t@uArA??qBpBSTkAnAu@z@??UVo@z@y@bAkAvA??[\\mA|AWZ??oA|A_AlAQT??IHc@l@yAjB??WZm@v@s@|@a@b@??STi@j@}@v@cCpB]B}@Mu@U??cAYa@MmBk@aAYiA]u@Ya@O}@YaAa@m@Se@[mAk@o@]]WOSeBwC[m@??GK{A_Co@eA]q@??KQk@gAWg@]i@WYWY??CAo@o@wAoAyAwA??MMkAgAkAiAq@k@kAaAUQy@q@a@Y_@SCA??WMQGSGSCWAWAQA[BgFl@sBX??s@J[FYD]iDoDjAW@"
+  },
+  {
+    "id": "4510085",
+    "lineKey": "Bus",
+    "routeId": "451",
+    "name": "Salem Depot - North Beverly Station via Tozer Rd",
+    "polyline": "srpbGr~uoLi@QG?KFdAlD`A|CJXJJ\\T\\JB~@@`@Jl@VbAPl@N?TITQPWHYJcAL]LMXGJ?|@QhACv@GZCHA??t@EnAKjBMtAOF]Eq@B_BHiCBqANqAJm@Lk@Lc@Fa@De@Am@Hy@@Q??D[HwA@]A_@E_@Oy@c@aBq@oCOs@Qm@Y}@s@iBK[G[Ga@[F??qATq@LcD^a@DiAN??M@uAL]BS?KCOGGEg@c@_B}Aa@a@QMSKgA\\SJoAr@CB{ArA??oBfBKKOIYOuAk@_C{@MG]MsAe@qAc@uAe@c@MkAa@w@[wAg@]M}CeAOG??cBi@??OGa@Oa@Os@YwAi@kC_A_A[kAc@q@U{@YSGIA??MCSAO@YHOFWNQRYl@Wf@Yb@UP[NUFSBW?SAQCc@ImFqA{EkAWGWMUM]Ua@]Y_@U[c@}@m@oAQ]Uc@[_@g@c@e@s@SWUOGGU]u@cA{@oAOY??IMe@m@W[e@w@Q_@cAsBi@kA_AeBs@}@gAs@]Q[Q??aB}@g@W??KGKGoBkAMKSMe@S_Bu@_A]??MEcAa@}@c@a@UMKa@Yg@Y??UM]OSGUESCU?[?m@Dm@Pc@Pk@b@cAl@ID_@Na@Lu@JK@??Y@uCIi@C??c@C_AEw@`D}@`Ec@hBo@lCq@|C{ApG_@vACPs@`DSz@gBzHm@Ua@I_@AQ?YFYHUBO?gAB?n@??AvAfAA?eC@CN?TCXIXGP?^@`@Hl@TfB{HR{@r@aDBQ^wAzAqGp@}CLg@??`@eBb@iBJc@??p@}Cv@aDcFm@??UCo@GaAIq@E??QAoAIG?q@BYFQDOJ??OJKDs@d@_@^]n@IP[t@AF??CJCPCN?NAL?N?L@R?FBHMFIFCBGFINEL{@i@??u@iB[`@CBC@C@C?C@kBOIA??sBQgCUiCQ_AIo@EsD]]E??oBQ}CW??c@C}Fg@oAEW?oALo@J??y@JKv@Kj@Q^[\\iAv@YT{CtC{C|C[XmAhA}@v@cBhAoAv@aBx@yBbA}FhCaC`A]H]F_@Be@By@CqBK]Eg@Mk@WYO[I[Ca@?YB]FYNmBbAsAl@w@`@aAd@cEpB}Av@kAgAkAiAq@k@kAaAUQy@q@a@Y_@SCA??WMQGSGSCWAWAQA[BgFl@sBX??s@J[FYD]iDoDjAW@"
+  },
+  {
+    "id": "4550335",
+    "lineKey": "Bus",
+    "routeId": "455",
+    "name": "Wonderland Station - Salem Depot (Omits Shetland Park)",
+    "polyline": "}wzaGxthpL_C_@SJITSl@MGmG}CaCmAsAo@ICSG]I[Ai@?gBFoBF{AB_@E@X@vA@d@??BrCBnC@j@?\\@fBBtCFnE?H??@rCFtC@nA?r@BzA?d@??@V@nADrAHt@B?N`@d@`@`Bv@ZN??r@ZrAn@\\j@JTHn@A~@?L??CfC?l@Cx@c@U??UKwFeCqAo@a@Ok@MA???_@Cg@Ca@@YDODOB[J[Pq@f@Y\\[b@KTSf@o@lB??GNMTQRMJYLWHSDK@]?OCMG{JwGkGcEeD{BgOeKcEsCsFsDq@e@iUuO{R_NaH}EwAgAaCwB{@}@cMsMwCcDgBkB_BaBmAqAq@o@sAyAmAoAcAgAwDaEiCwCuAwA_AcA_CwB??OM}AgBoCkDMOQKs@s@_AeAeFkGyDsESW??_@e@c@g@qA}A}BoCi@o@??kCeD]c@??cBqBcCsCu@y@[a@??q@}@eAkAY[q@eA}@aAII??{@cAu@_Ao@u@m@q@_@_@m@k@SWs@s@??QQk@k@{A}AKM??g@o@m@i@{@}@MUKc@?Q?QCUMWG_@AQ?M@Q@_@Gs@??IiAYkD?a@D}@FaAAkAEeEKsB????AuB[eES_C]mDWgDMiBAW??ImAIaBU}CMgBy@iFc@{B??CMMgALwAJu@h@kAlBwDnAuC??LWnAmCl@yA^s@|A{Cy@}B??c@iA]iACg@Hc@i@]iBkAoBeAUM??a@UqA_@oBe@QEs@[u@k@QM??w@q@aAu@kAiAuA_B??MO]i@g@eACGUu@EYWkAm@uCc@sAKU??}@{BgAoCs@gB??ISgAj@q@\\oA}@}@c@e@ZIU??]aAoAcDUg@Q_@s@cBM[??IS{@wBYu@c@eAQg@EM??GSMe@I]Qu@g@yB_@qAIYGQo@eBa@{@]s@??We@Q_@aCqE??KS_AgBq@mA_@u@a@u@??We@COAO?W?e@@u@ByBHgJ???u@BcB?i@Cs@Ee@Km@Og@CI??GQ]cAy@eCM_@????ISWe@IMy@}@MMUYKUkAgBg@w@mDaFuAmBkBkCAE??EICGGOCYE[CQEIEGUQWM_CwA??a@We@Y}A}@wAy@a@YMMOQMOGK??CEKSSq@K]M{@Ko@WwB??EWc@eD??CWMcAWmBKo@_@iCsAwIG]I_@??AII]Qk@a@aAq@gBYy@IUQw@ESKw@Eo@Ce@Gg@??OuACa@[wDO_AUy@KUQ_@QYU[??{@gAgB_Cq@aA_AgAIK??AAy@eAu@cAg@o@y@gAWY??u@aAm@u@]e@??sAgBkA{Ac@g@KQ??k@y@y@cAoAaB[e@QUCE??q@gAc@}@O]a@gAm@oB??IUMUa@k@QQOKMIc@QUEUCU@UBUFQHa@VQPS\\??MRoA|BEF{@bAa@f@yA|Aq@l@IHOFOBW@W???M@g@?e@AkDYSC??OAs@GYCI?K@k@N????IDiAn@[RWLUJWJmCx@SF??OFE@QDWB}@@a@]s@c@WQm@]y@q@QU??]g@CEi@_A_AaB[g@[k@??KQe@y@mAsBWa@OUe@g@uAkAGE??_CoBa@m@EESUKCCUs@LG@??a@N}@HuD`@??Q@uFl@??QB_Gn@??O@s@JaFh@??QBiCXaAJqBR??OByD`@yANw@J??I?qAPs@Hc@D??Q@_BRs@Fq@FuANgALu@F??[D{APcAHgBVsALS?D^@^A\\IvAGl@Eh@??CNa@tBw@AYBw@HyBPc@Dc@PmALaBJWD[B??[BcAGyCRD`@Ff@?^?b@A`@E\\GvAMdBG|@Cv@?F]K]UKKKYaA}C`@qB@OCGGIKESI"
+  },
+  {
+    "id": "4560095",
+    "lineKey": "Bus",
+    "routeId": "456",
+    "name": "Central Square, Lynn - Salem Depot",
+    "polyline": "{idbGls_pLc@iA]iACg@Hc@i@]iBkAoBeAUM??a@UqA_@oBe@QEs@[u@k@QM??w@q@aAu@kAiAuA_B??MO]i@g@eACGUu@EYWkAm@uCc@sAKU??}@{BgAoCs@gB??IS|@]z@g@q@kFI_@??GW}@`A??MLmA_CgAqBk@}Ai@{A??IUsA}Bs@sA??KQ{@wAuAoC??o@sAeBqD??IQwEqJ??IOuA|AuA|AUX??sAzAiDxD??iDzDIH??MNaBhB??SVeBnBuB`CWV??sAzA_AdAk@p@SX??UVg@p@e@t@q@hAsAvBYf@??oCrEyC~E[h@??cBpCm@dAcAbBiEzGe@g@WYUW??QSiBqBsC{CSU??s@w@}AcBWY??qAwAYYsDaEII??e@i@cAeAi@g@USmAq@{BeAi@Us@YOU]Sa@Qa@U_DcBa@S}BaAaBm@??s@Wc@QcAe@e@Wy@i@[Uy@u@e@g@??MOUWsEqFeAgAuCyCSSQU??WYi@u@uGqKwAaCa@s@y@uAy@cA??EGQQm@o@u@s@oAmAII_@_@OOW[aAoAcAyAS[}@mBgAaCOYYm@??{A}CyE{JmAgCe@gAUo@c@oAQq@_@gBMo@aAwFOUyAeIWgAa@wAM_@[{@w@eBa@q@EISYAC??W[[_@][k@e@OIkC}Aq@a@cAy@QQq@o@]]q@m@[_@??WWg@g@eBeBk@i@??KK}A{AmAmAEC??MKa@[WOYM_@KgBa@mB_@}@S}A]}@QUG??WIuCm@SEQIg@Qc@k@yCsDMO??qA_Bi@s@s@kAIM??KQMWMa@Ma@Ke@E[E]CY???C?e@AkAG{@EYc@}ASs@Wu@Y_A??GU@WBUHQLINKjBMtAOF]Eq@B_BHiCBqANqAJm@Lk@Lc@U?e@???QAYBw@HyBPc@Dc@PmALaBJWD[B??[BcAGyCRD`@Ff@?^?b@A`@E\\GvAMdBG|@Cv@?F]K]UKKKYaA}C`@qB@OCGGIKESI"
+  },
+  {
+    "id": "470206",
+    "lineKey": "Bus",
+    "routeId": "47",
+    "name": "Broadway Station - Central Square, Cambridge",
+    "polyline": "_`maGviupLO?KLm@Ds@DcAB}BBY?MdA??fBv@pB~@j@Hh@qCZiATJdECc@bCi@fDe@rCGb@YhBYxAa@hCY~Ai@xCnAb@l@TpAd@rBv@pAh@jClA@NR`@DF??\\h@Zd@r@fAtAvBdC`ET^??z@tAtArBT\\??fAfB~AdCb@r@tB`DeBbCsErFTZ??|ApB\\b@|@fALNpAhBTZ??n@|@b@l@h@p@h@|@NRp@bAf@v@f@t@vA`Cn@bARZ??NRd@v@tAzBdApB`AbB??FHQf@oAfDaAxBMVLHXJl@Nt@Zr@p@??LJd@h@jAvA|@dALN??`@d@\\h@NZXjA^`AX`@TR\\XJqB??JyB{@Mi@Ge@I]Gc@O_@e@??OO}@eAkAwAe@i@aA}@a@_@MKYOc@UOGMV{@jB??eBtD}AbDw@lBa@lAK`@??Uz@YlAg@lCSz@Md@Ob@]|@G\\ILw@x@}@z@YP}@t@EN?PAHA`@TDJF^h@??lAdBBNNdAfAvA`@`@SNKLGJGHIJGLCDMZIVGRYz@q@nCg@`Bc@|AELQn@??YhAo@tBu@tCET??GVQp@Mb@EN[~@a@hAe@rAi@~AUZGLGPQx@CXETKb@]dAWr@_@|@g@~@i@x@o@fAmA|ABV@PBFFHJHBB??dDvBhBdAhDtB??DDl@`@dAl@CL@LBNDFHHRFg@dBm@|B@@m@tBSp@Qf@e@bA??O\\iCnFw@{@??uA{AwB}B[_@YY??iBoB_B_BmBqBmBuBKM??KMu@w@OOo@q@aBxBq@h@y@x@s@j@SLOFc@T_@POH??[LQHs@`@kDvAYLoAb@??KDmAb@iAf@iAd@YNc@`DCLi@tI???@I`@MZGLGH]XQDc@JeBJ[BODQDq@v@En@Cn@??QxCqAMsAMsDUq@GqAKw@Ia@G]GUIMCUIOEOAG@MBk@RWAc@E_@@s@OWM[[GE??}A_BsC{CqCyCWW??yBaCiBoBgBmBUU??y@}@GGmAqAk@o@mAqAWYkAqAQO??GGqAmA]]kBaBkBeB_BuA??MMiCdF??KRwCxF"
+  },
+  {
+    "id": "500073",
+    "lineKey": "Bus",
+    "routeId": "50",
+    "name": "Forest Hills Station - Cleary Square",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\JRJJFDL?D@l@D??p@F`@B|@R|BfC`CjC`EnEXX??hBpB`BhB??LNjAlAbAjA??LLrA}B|C}F??JQv@aBh@uAbCgGP]??JUj@cAb@m@f@y@|@gAdAqA??LQp@q@fBoBp@k@rB}BR^??vArCXh@Xz@Pt@Pj@VZb@^??LL~@|@Z\\h@t@t@zA^|@Jl@ZdA??J\\b@lAn@zAx@vA^f@ZJ??@@t@HlAHpAV\\F??^FnBXn@?n@I??HAhBe@jAe@tAy@rA{@r@e@p@m@hAaAh@i@BC??tCyCp@s@n@u@b@k@T_@??v@mAh@}@LMFM??h@y@|@qARY@A??fAsAd@o@Tk@`@_APc@dAgC??JWnAmCRm@`@mAl@iBp@sBNH??fCnAhAf@bAh@v@TpDj@??f@HfC^bDf@xAVPB??\\D~@JtAXlALjAJ^B\\B"
+  },
+  {
+    "id": "5010175",
+    "lineKey": "Bus",
+    "routeId": "501",
+    "name": "Federal St & Franklin St - Brighton Center via Copley Sq",
+    "polyline": "mooaGffupLq@HJzCXDTLp@t@tC~C??ZZv@v@bB~AJFJDfBK^EPwCL}BL^Xp@Vb@\\d@b@b@j@`@f@Vd@NtAb@??lBj@_@fBe@~Bc@bCUxAGb@AJG^O|BIfBWnGA|AChB@V@THx@L`A??BRiDjA@v@JnANfCL`A^xCHb@LXZd@TNHd@??XvAh@`Dr@xDd@nC??fAxGp@xEXjBJ`@??DRJZHRr@nA|@jAvAnBHNR\\d@vAHh@Dl@Bt@DhAPv]DlJ@jC?j@C`AKjBUdDG`DCtGD|i@BlEAd@ApBCx@Cj@KjAKhAYtCkDxZYxBM|@UlAc@pBg@`By@|B[t@ITeChFa@|@Q`@a@bAKX[bA{@xCY`A]|@yAjDkAjCaA|BaA|Bm@nAYd@a@h@k@n@o@h@_Af@_EtBe@Zg@^WTa@^w@hAq@xAs@dC]tBET??G`@Gh@KhAEdAE~@AhA?jA@vAFfALzAJbANdAX`B^bBn@jCXxATlARlBLhBHnC?|@A~@C~@Ct@GdAI|@oC|`@wDbl@]|FCx@ClB?hB@dADvAJ`CR`DLnAF`AFvAJpCFdDLjLL~LRrPf@hh@@fDCjGMzI[lTUxMEzCAbCAbD@vADlABp@L|ATpBxAtKFv@Dh@Ah@?ZAT]bCMtAAb@?`@@ZDTDXNzA^pB??DVj@rCb@`CPnAZh@NNLBNBX?PG\\ONMHKFWBY?e@Eo@[mC[sD_@aDSmB??CUOgDAw@Bg@D]P]TSRKRA`@GRA??bACx@EVyBPmB@I??j@_FDSJ[fA{B??JQRg@^iAdAmCrAyD??@CBKDIfBkEbAkCHQBIb@kAt@oBHS??jB_Fh@{A????Zw@Nc@Ry@d@{BLa@Ju@Bq@Cs@Kw@YcA[y@??IUi@eAHYDk@LsA??E_@LeC??Bk@LgBVsBF_@Rs@Xu@PYx@{Ar@uAXc@BK??N_@FUDSBSD}@DkA@y@DeABaBHmD@_A??@i@?{@Aw@Aa@C_@GcAKsACi@Ak@EsA?}@?K??AkBAqCAgBAuA?]?i@?s@???_@@qBHeDBuA???S@QDqD?cBXPdB`A??h@XhB`Al@Zd@Vj@Zd@Vv@`@z@h@"
+  },
+  {
+    "id": "5040144",
+    "lineKey": "Bus",
+    "routeId": "504",
+    "name": "Federal & Franklin - Watertown via Copley Sq and Newton Crnr",
+    "polyline": "mooaGffupLq@HJzCXDTLp@t@tC~C??ZZv@v@bB~AJFJDfBK^EPwCL}BL^Xp@Vb@\\d@b@b@j@`@f@Vd@NtAb@??lBj@_@fBe@~Bc@bCUxAGb@AJG^O|BIfBWnGA|AChB@V@THx@L`A??BRiDjA@v@JnANfCL`A^xCHb@LXZd@TNHd@??XvAh@`Dr@xDd@nC??fAxGp@xEXjBJ`@??DRJZHRr@nA|@jAvAnBHNR\\d@vAHh@Dl@Bt@DhAPv]DlJ@jC?j@C`AKjBUdDG`DCtGD|i@BlEAd@ApBCx@Cj@KjAKhAYtCkDxZYxBM|@UlAc@pBg@`By@|B[t@ITeChFa@|@Q`@a@bAKX[bA{@xCY`A]|@yAjDkAjCaA|BaA|Bm@nAYd@a@h@k@n@o@h@_Af@_EtBe@Zg@^WTa@^w@hAq@xAs@dC]tBET??G`@Gh@KhAEdAE~@AhA?jA@vAFfALzAJbANdAX`B^bBn@jCXxATlARlBLhBHnC?|@A~@C~@Ct@GdAI|@oC|`@wDbl@]|FCx@ClB?hB@dADvAJ`CR`DLnAF`AFvAJpCFdDLjLL~LRrPf@hh@@fDCjGMzI[lTUxMEzCAbCAbD@vADlABp@L|ATpBxAtKFv@Dh@Ah@?ZAT]bCMtAAb@?`@@ZDTDXNzA^pB??DVj@rCb@`CPnAZh@NNLBNBX?PG\\ONMHKFWBY?e@Eo@[mC[sDK{@??SeBWcCUq@IQIMIIOEOCM?SD}@p@s@n@i@n@_@\\q@`@??OJ{@ZqAb@{@TOBc@FoBR_@D??Q@{BVG?sATq@J}B`@{@Hs@Jm@JeAJ]AcAM"
+  },
+  {
+    "id": "5050093",
+    "lineKey": "Bus",
+    "routeId": "505",
+    "name": "Federal St & Franklin St - Waltham Center via School St",
+    "polyline": "mooaGffupLq@HJzCXDTLp@t@tC~C??ZZv@v@bB~AJFJDfBK^EPwCL}BL^Xp@Vb@\\d@b@b@j@`@f@Vd@NtAb@??lBj@tFhB`@VtAdA`DrBh@d@RRLRN\\Pl@Db@Dd@A^UhCMpAUtB}@xFWvBQ|BOvBOtBM`CAJCh@ChAAzB@dG?rA@jLFdMBzCJzJDdGPv]DlJ@jC?j@C`AKjBUdDG`DCtGD|i@BlEAd@ApBCx@Cj@KjAKhAYtCkDxZYxBM|@UlAc@pBg@`By@|B[t@ITeChFa@|@Q`@a@bAKX[bA{@xCY`A]|@yAjDkAjCaA|BaA|Bm@nAYd@a@h@k@n@o@h@_Af@_EtBe@Zg@^WTa@^w@hAq@xAs@dC]tBET??G`@Gh@KhAEdAE~@AhA?jA@vAFfALzAJbANdAX`B^bBn@jCXxATlARlBLhBHnC?|@A~@C~@Ct@GdAI|@oC|`@wDbl@]|FCx@ClB?hB@dADvAJ`CR`DLnAF`AFvAJpCFdDLjLL~LRrPf@hh@@fDCjGMzI[lTUxMEzCAbCHpDFx@DbADz@H|@LlA^bDR|Az@bGr@xF~@jH`@jDfAxKbAhJxCnUVhBZvB`@`ChCzMfDdQXnA`@|Bl@|C~@hFP`Af@dDf@xDd@tDRjBXpC`@pETbDJnAXzD^bG`A`NNlBRzBXfCR`BhAdIpCbS^tDHz@JlAPnCZzFp@tQHvAHhCX`GNlCFdDFdBNpB\\tDDp@Af@C`@Kb@Q\\SPQHU@SAQEQMQQGSIg@Ca@@a@NmCPuEDs@Hg@FSFIJMXBT@f@Ct@K`@IR?HBHDLLV\\h@f@^j@d@x@r@|A??JPf@dA\\d@VXTRXT??HFl@`@b@XRNVZ`ArAr@lAf@t@X^NR??RTpArAhBhBrApA|@|@d@j@LN??JN}A|BK^Ib@G\\i@pAwB~Cc@h@WTi@\\GB??KDg@N]DY?a@C]Ee@Mo@SeAc@[I??IA[C[BUD_Ad@m@`@[ZOL]^eC`DUb@M^Gd@Cd@?X?l@@l@?n@G~@Mx@]zBCT??W~Am@bEAJCb@eALq@DOFiBL]@_@?UCq@W_@OKG??uBgAiAg@eAm@_CiA??OIc@SwAu@_Ac@qAk@_Ai@k@c@c@c@_@k@i@kAcAqC[w@??Sk@k@}AYs@w@iBWe@??KS[g@QW_AcA_@[o@e@u@c@gAe@_AY??QGi@IeCSs@Ei@C??eAG{AKq@Gq@EsBQWC??kBOcAI]EeAI}AM[C??a@CKAg@CSEe@Eo@Kk@O]I??oBc@qAY??m@MYIaB]iAY}@W{Be@@T@TIpA]xCc@`EOxA[dCMxAQbBO|AcBcB??QSq@s@_DeDWY??c@k@oBgC[g@??MS]k@Yo@]aAQu@Ki@Ek@Cy@BmAHoA]E??eJcAi@@A???m@Fc@Fm@FaARs@HaB\\sB`@YCyAMe@E??u@Eo@EuBQFuBBcBh@CdCD??P?dCFYwCAMV?XGb@K??PEj@MnCk@r@O^tD"
+  },
+  {
+    "id": "510173",
+    "lineKey": "Bus",
+    "routeId": "51",
+    "name": "Forest Hills Station - Reservoir Station",
+    "polyline": "sudaGro`qLMIAPFh@FVJXPJZPRH\\P\\R`Ad@~BrAb@Vx@b@t@l@r@r@f@f@hAjArAxAb@d@??nBrB~@bANTnBnBn@t@??NNVX|@`A\\ZpAxAxA~A??LLdBhBdBlB\\\\??nAxA`BhBvAzA??NN~AdB|DfE??\\`@X\\`AbAdBhBb@h@dAdBJTJ^HXFX@^?P?P?\\EVCNKt@??ALM^Yv@DZTfAVnAFX??@@B^?J@^Af@Op@??Kb@i@hAc@`As@|A]n@Sh@S`AYnC[`CKRIBG@GCQOIWQk@W}@M]a@_@WW??s@o@g@a@mAeAg@_@mAeA[Uk@u@S_@??IQg@oA_@cAc@cAW_@_@_@_@MaAAe@C??SA{AAk@Be@J_BJG???o@@e@E}@[`@pOZfKRdDDXJrAN|@??DTj@rCf@pCPtAFn@??BVDn@HpBB`@??@Vb@dGd@|FLbC??@XYlC??E^IbAIx@Ov@CNUx@Uz@UhACd@??Ch@Cf@F~@Fj@H`@Pf@Tj@Th@BHPb@h@jC??DTRbAJh@Db@Bd@@`@B`C?b@?f@Ab@Gj@Ib@GZ??ENQb@M`@IXGZCT?T?^Dd@DVH`@Ld@Rn@??FRd@jAh@bAnAjB??LPlAfBLTTt@Bj@Af@Cd@??APSvAMp@OzAET?F??AXApADlADb@J|@VjB??DTa@Zi@n@}DlEy@bA??OPeFoMaCeG]aAYaAa@qBg@Lo@R]Du@@u@CSE??MCsA_@u@_@}ByAGE??c@U}C_CeCkC??OOgBsB}@eAeByBEG??eB_Co@{@c@m@cAkAUY??m@u@M]EOGMBY@UASASCIKOQGKCQ?c@BMCMEKIqBgC??KMg@o@oA{Aa@m@Wg@Sg@Og@YiAOk@Qg@K[??IQMYc@e@{@c@eCeA]QQSOa@??EIS[g@_A[k@[_@SQ]SwDwBe@_@U]OWO_@s@mCMm@]}AMq@OuAQD]?cBh@gAZ??SHq@ZgA`@c@N[H_@DY?WCSCcHiC]M??s@WgBk@aG}B}Ae@_@GwASu@Ki@Cm@@??M?gA@g@DmACy@I]Ew@QeBi@i@Yg@[c@Yg@e@c@a@u@iAa@q@]u@c@qAWm@?S??Cm@Cc@GSISIGe@OOCeBGa@?a@FQDOJQDCBo@j@[`@EF??OVSb@Sb@Sl@k@|A]|@QXOZSXUXU^sAfBGH??ONWR]RMXWJ\\xCFfABh@?f@w@pAIL??MN}BzCw@`A_CfC_A`AUPo@`@aAd@aBj@[H??QDm@J_AHo@DeAH{@JWFYJYT}@j@YR??mCdBc@T[LmA\\]PSLSTQVa@bAWt@]bAi@M]l@CZ"
+  },
+  {
+    "id": "520230",
+    "lineKey": "Bus",
+    "routeId": "52",
+    "name": "Watertown - Dedham Mall via Meadowbrook Rd",
+    "polyline": "abqaGdnnqLR|@dAKl@Kr@Kz@I|Ba@p@KrAUF?zBW^C??PCnBSb@GNCz@U`A[??NGz@[XEXGR?PBRFNLFPJ^Tr@^pB??DVj@rCb@`CPnAZh@NNLBNBX?PG\\ONMHKFWBY?e@Eo@[mCPm@JIDEFATATFv@Lj@HtBT??PBl@BxA@l@?^BX@r@g@f@[XKXGd@Gp@Cn@@??P?hC@\\?VD^PVRd@d@t@|@??LNdA`Ar@r@b@Zh@^n@^b@R??RHxBbBLLd@`@`@h@Z`@h@VHB??~@Z`@PPFhElAr@R??n@PnBf@HB~Al@xAd@hA^ZLd@Z^b@rAxA\\b@d@b@@@??NLTR\\TXHb@H??NBj@Hj@FxCXVBrALvDXn@F??lCTbCRdAF^BZ@??V@lEFl@DhDDf@B@???ZDVFx@j@tArA^PZNRHfAX~@N`@D`DZ~@F^F??H@v@Nr@HXCZKzAo@fAi@ZO??f@Wl@]h@U\\I^EnAEX???dEE^@|@Bp@B`AB|FP~AD^@Z@??`ADlABd@BhBH??P@dA?~@DhBDzAH??D@L?PBH@d@FRBPDdC\\hBT??PBtCd@vAV\\F??xB`@fB\\v@NrBn@??NDfA`@lBh@jA`@dAZx@V??NDz@uA`ByCj@_A|@iBLUv@mBj@cBLi@bAsDt@}C??FS^mAL?JAFGdB`Ab@RTFRBZB\\ALClACZ@XFt@\\Z^LVN\\r@pBRd@^r@\\j@lBfCVY??d@g@`C_CbBiB`AeAVY??`BqBT]??FId@y@p@aB`@_AVY??V[rAuAxD_Er@o@pAeAj@c@`@c@R]`AuB??JQTi@d@aAnBuE??HSj@LlATZJ??PDl@RRPZ^X`@nBtEJ`@??DJN`@v@hB\\f@t@|@f@f@v@t@j@l@LJ??RRz@x@fAdAdAfAv@x@??LLv@v@LLdA`A~A`BjBjBJJ??NLfAeA~BoBl@e@Ag@??CeAImCG}AIsACWO_BGe@??[uBQs@UgAI[Q{@Qe@g@_BSg@??KWQa@}@mBm@kAMOa@q@S[g@o@??MQW[W[oAqAmBwBpBaEXq@??JSyDoEoBsBs@q@]_@??SWX]Ze@dA_Cb@qAt@qBBI`@u@f@w@Zc@`@Yt@g@t@g@h@q@f@_A`AcB`@q@RUPS`@]x@o@|@o@jEcDvD}Cd@[NE??FAzAc@l@S\\M??~Bu@h@QfCcAXK??nBu@pCwAd@Yb@Q`@Kj@QNA??l@IPChAU|@Ud@Of@Ih@I\\GVIZQ??XSv@k@~AiAn@]d@Q??zE_BHCJEfF}AVEXCF???X@p@?t@D`DNZ@??hADzBhDtAtBd@r@??X`@p@`AX^tB|CvAlBRV??LPrBnCf@l@`@h@LNz@hAXXp@g@`@Qd@Q`ASrD]p@Gr@KZG`@OZOXSVUj@q@NYXk@\\cAt@qBVm@NWZk@Xa@p@y@j@g@v@i@d@Wd@Sj@Q^In@Kl@EdAAh@Bh@HxAX|Bf@lB`@`@Hh@JlAXdDr@|D~@pWxFDc@ZiD@Y@k@?g@AYEe@|Aq@Lt@`BfIJTJJJDj@LPDbFfAJANUBgA?a@I???cF@K@CFALCN?NQEk@MKEKKKUaBgIMu@}Ap@KaAG_@m@uCUiAuB~@iDxAGHKVIBq@Zc@Lg@R"
+  },
+  {
+    "id": "550103",
+    "lineKey": "Bus",
+    "routeId": "55",
+    "name": "Arlington Station - West Fenway",
+    "polyline": "wtnaGn}wpLXvAh@`Dr@xDd@nC??fAxGp@xEXjBJ`@??DRJZHRVx@Vh@pBdCh@r@dAlA|AhBjAvAzC~DbAnAnApBX`@e@v@QZGZI`@Eh@C\\??ALIvAIpASrBGl@UROJE@c@RSF??_@NcFpBz@bFRfA??DZFTTpAnA~GYR??YPm@VOPENAN?jC@xE?zK@l@@TDJBFNVf@l@hAnA??XZz@`A`@n@Nb@`@Aj@MnAm@??NIR`AbAjGf@vC??DVXxAbAlFV`BvAo@~@_@B???NILGfA]bA[??NGc@{Bs@cEW{A"
+  },
+  {
+    "id": "5530155",
+    "lineKey": "Bus",
+    "routeId": "553",
+    "name": "Newton Corner - Roberts",
+    "polyline": "yzoaG~nnqLDVj@rCb@`CPnABd@Nv@VpAP^DNPbAXjBJd@??TpAd@|CJt@??NfA\\rCRtALnAJ~@Fz@PvDL|@NpAR~AF`@??r@vENr@hAhF\\rANj@??J\\Xt@v@bBLZJZ`@jBBN??r@zDv@~DRlADZRlAP|APtA\\xDr@pGLfA??LpAThBPfB`@vE????NnAHlAHhBFxA@t@?bB?d@?`B@r@JdBFn@Jh@Rr@Pr@XjAHh@@???h@~DdAbIr@hF??Hd@h@fEDz@D\\@dB?bBA|DAlAIzBQ|DCx@Ab@??Cl@Cv@Dv@Hx@`@dDL|@??DZPn@Vt@Hj@\\lAwA|@_@VkAv@m@Z[L??IBw@XwBr@{G~Bm@N??KBKx@Ij@Mh@IXc@z@{@zAc@x@gA~A??KPsBzC_A`BYj@Yj@??KP_BvCu@lA[f@SV??KP_ApAYf@KTYt@]v@Qb@??KRq@vAo@vAUb@??KPi@IeCSs@Ei@C??eAG{AKq@Gq@EsBQWC??kBOcAI]EeAI}AM[C??a@CKAg@CSEe@Eo@Kk@O]I??oBc@qAY??m@MYIaB]iAY}@W{Be@@T@TIpA]xCc@`EOxA[dCMxAQbBO|AcBcB??QSq@s@_DeDWY??c@k@oBgC[g@??MS]k@Yo@]aAQu@Ki@Ek@Cy@BmAHoA]E??eJcAi@@A???m@Fc@FOQKUGa@OcB??Gk@c@oEs@NoCj@k@L_@H??UFYFW?@LXvCTpCFz@Bv@@fB?J??@hA?tAChB?X?jDAf@??ClCGnDAjE?lA??@lC?hEArDAxCAT??AV?rD?h@?`B@J?XBbADn@Jt@XfAJj@nAB??x@@vDAp@Cx@I??F?dCYbAGP?b@FLDxCn@ZF??l@Nd@HPBN?fCCC}@IsAEaAE{@Km@|@IdAM`@Ef@I??p@Kh@Ob@I|@Yt@[LAPBNJp@|@Nf@@\\APETKLkB~Aa@ZWZMVKd@]rBLHPR`@f@Xf@??JPN\\b@t@Th@x@`C`@x@HPZf@|@pAdCjDbApANT\\h@Xn@Tn@d@~Av@lCXdA`AnDd@pABF??HTTZX\\\\ZxDxC~@t@|@r@dAx@fAv@z@r@??b@ZTXHJw@vHpEdA|@eF??DO]K]Qw@c@w@c@q@a@IKUYYS"
+  },
+  {
+    "id": "5540103",
+    "lineKey": "Bus",
+    "routeId": "554",
+    "name": "Newton Corner - Waverly Square",
+    "polyline": "yzoaG~nnqLDVj@rCb@`CPnABd@Nv@VpAP^DNPbAXjBJd@??TpAd@|CJt@??NfA\\rCRtALnAJ~@Fz@PvDL|@NpAR~AF`@??r@vENr@hAhF\\rANj@??J\\Xt@v@bBLZJZ`@jBBN??r@zDv@~DRlADZRlAP|APtA\\xDr@pGLfA??LpAThBPfB`@vE????NnAHlAHhBFxA@t@?bB?d@?`B@r@JdBFn@Jh@Rr@Pr@XjAHh@@???h@~DdAbIr@hF??Hd@h@fEDz@D\\@dB?bBA|DAlAIzBQ|DCx@Ab@??Cl@Cv@Dv@Hx@`@dDL|@??DZPn@Vt@Hj@\\lAwA|@_@VkAv@m@Z[L??IBw@XwBr@{G~Bm@N??KBKx@Ij@Mh@IXc@z@{@zAc@x@gA~A??KPsBzC_A`BYj@Yj@??KP_BvCu@lA[f@SV??KP_ApAYf@KTYt@]v@Qb@??KRq@vAo@vAUb@??KPi@IeCSs@Ei@C??eAG{AKq@Gq@EsBQWC??kBOcAI]EeAI}AM[C??a@CKAg@CSEe@Eo@Kk@O]I??oBc@qAY??m@MYIaB]iAY}@W{Be@@T@TIpA]xCc@`EOxA[dCMxAQbBO|AcBcB??QSq@s@_DeDWY??c@k@oBgC[g@??MS]k@Yo@]aAQu@Ki@Ek@Cy@BmAHoA]E??eJcAi@@A???m@Fc@FOQKUGa@OcB??Gk@c@oEs@NoCj@k@L_@H??UFYFW?o@?g@CGAa@K]O{@c@WKOGYMCjACjA??EjB}BF}@Jw@JsBXs@JuARUDa@H??ODkBZy@NoATiB^eBZ{@R_Cd@wKfC]k@KUKa@E[BiARoBx@gIZuCRaBNy@Nc@N[b@u@r@eA`AsAb@q@NY??LSVk@HYNUNOVUJIFM@K?OEYMWUOu@q@qBeDs@uAa@kAUaAQcAIu@Gs@???CCu@?iABcAHmBN{DN{E??@Y`AcWFgBFsB@kA@qACoD???W?gD@qGBaBH}APeBNuANkAd@yBpAyD??Pi@f@}A~BgG??d@mAj@{BXwAFi@RoATsAPy@d@iB~@mD^qA??Lg@l@kBGKKUKc@OgAOqAMiAEu@C[??EWEk@_@wBU_AQi@]uAGWIg@Iw@??CWGw@CgA@aAHaANmANo@Vw@\\aAZcA`@{Ad@wBj@_D\\sBBO??FYZcBZiBRmARuA@gB?}@GgBMw@Ie@AMAI@Q??{@Ie@E??G?uBGg@AcCCU?g@Dk@Hy@Po@T[J??ODoB`AmAt@_An@sAp@YP??OJ{@^u@X[Hi@J]D}@N]FSBe@Mc@WHUVkAJc@@KTiA?C"
+  },
+  {
+    "id": "5560075",
+    "lineKey": "Bus",
+    "routeId": "556",
+    "name": "Newton Corner - Waltham Highlands",
+    "polyline": "yzoaG~nnqLDVj@rCb@`CPnABd@Nv@VpAP^DNPbAXjBJd@??TpAd@|CJt@??NfA\\rCRtALnAJ~@Fz@PvDL|@NpAR~AF`@??r@vENr@hAhF\\rANj@??J\\Xt@v@bBLZJZ`@jBBN??r@zDv@~DRlADZRlAP|APtA\\xDr@pG]J??{Ah@EB}Bn@sBj@??QDiBf@u@VwAb@_Bb@_Bh@??MD_@Rg@`@y@z@sBrBoBlBWX??_A`AmAhAg@h@_@Ii@|AeAxCMb@??IXId@Ed@QhDCbAGbAC|@Cx@OfD??AXC`AElACd@Gh@Ih@}@hFOx@M~@Cj@At@Bj@Fx@Z`E@V??@XAj@ATE\\I\\KZYZiB|@g@b@[Z??MLe@f@oApBm@~@eAhAe@^m@h@??OJ}@r@YZo@r@m@p@??STaAjA}@fA{@jAy@vAQb@Q\\??IR_AvCW`A??ITeAjDM^??Qn@Ur@K`@WjAWfBMbAOvBI`A??WhDYlDEf@??Gz@SlCAZ@`A@b@???PHj@@T@TIpA]xCc@`EOxA[dCMxAQbBO|AcBcB??QSq@s@_DeDWY??c@k@oBgC[g@??MS]k@Yo@]aAQu@Ki@Ek@Cy@BmAHoA]E??eJcAi@@A???m@Fc@FOQKUGa@OcB??Gk@c@oEs@NoCj@k@L_@H??UFYFW?o@?g@CGAa@K]O{@c@WKOGYMCjACjA??EjB}BF}@Jw@JsBXs@JuARUDa@H??ODkBZy@NoATiB^eBZEf@???Le@fDm@zE[jC_@nC]tC??CVk@tDSlAg@fDGb@?@??g@nCYjBOn@??ETo@jDETO~@O`AGl@OnAe@|DETRHHB??h@NlCh@\\F\\?b@Cp@Kp@IVG"
+  },
+  {
+    "id": "5580096",
+    "lineKey": "Bus",
+    "routeId": "558",
+    "name": "Newton Corner - Riverside Station",
+    "polyline": "yzoaG~nnqLDVj@rCb@`CPnABd@Nv@VpAP^DNPbAXjBJd@??TpAd@|CJt@??NfA\\rCRtALnAJ~@Fz@PvDL|@NpAU\\??a@h@oAdBs@dA_AnA[d@m@z@g@n@??KNMNy@hAYb@IL}@rAKNsAdBg@v@]h@oAdBeBbCi@v@s@bAYb@??KNQWeAqBEKK_@Mm@Ow@UaBGi@??AICQ[L??EBaAd@yB~@uAp@C@??oEvBgAf@eAf@wDlBQ`I?P@L??@BFNoAJs@Hw@Je@Ju@JDf@D~@??L~BLbEDnB@dAFrCAz@?VC`@Eh@?@??K~@OlAo@xD??Ox@o@|D[`B_@~BMt@AH??G\\Mn@YfBu@fEs@bEM`AO`AW|@Mb@??g@bBe@zAkA`EcA~C[fAa@pA}@tCuAxEOb@K\\??Q`@i@fAWl@_AnB??IPs@zAWp@oAtC_A~B??IRiApCa@~@Sj@MT??IPQr@KhAEx@El@Gd@]|AWrAW~ACf@??CZC`A?|@HnCPpB?VARK^e@rAIPIJID_@J]D^tD??BXVnCF`@JTNPb@Gn@Gh@AbKhAInAAl@??A^Bx@Dj@Jh@Pt@\\`AXn@\\j@h@z@VX??vAlBz@dAxAzA??dAhAp@r@tBvBn@h@\\L~@V??NFt@JtBf@t@RbB`@d@J??lBd@|@Pf@Fh@@j@CTE^Qf@]FG??NKj@fA`@bAT`@XTZJ\\D|@HD@??NBJDZPZZh@r@l@j@\\^z@|@R_@??FIn@oAd@{@|@kArAkA|B{Bj@k@?A??^a@X[`@u@TqAb@kCPiAJiAP{APmAJ_@Lc@\\J??r@TfAd@t@b@n@d@^Z~@bAPVZf@b@x@v@hBXr@j@|Ad@nA??HRbApCh@jA^j@b@b@j@b@~@h@pAj@~@b@vAt@RJ??NFnCrAdAl@hAf@`CnANF??NFp@VTB^?\\AhBMNGp@EdAMG\\Gz@Cr@@jBDxA@xA@|ABn@BVDTPr@X|@XhAFV??FZRrAL|@NdBJ`BFhA??B^LrAX|BXjAFb@NfAR|@FT\\r@Xf@p@fAJP??PTv@bAl@~Aj@r@h@z@\\p@Z`AZzAl@vC\\nEFrAHhCFzBDxABv@NxANx@FTRKr@YVMLIZGXARCTENKLOLWDULc@N]PYVSbAi@pAu@`Aa@rAu@n@a@^Wl@c@|@u@pEkEvAyArGoGlBiBhAeA|@u@tBaBtBwA|AcAdBgAfCkAjAs@TKTGh@CV@VBXHZHb@b@N`@Hd@Ah@CXM\\QZSNUJWDYESG_@WWUg@eAGOUa@qAsDSg@Yi@[a@s@w@_@[_@Us@_@mC}AcE}Bg@xBSNSHO?KCeBcAMMMCIBCL@PBHt@^"
+  },
+  {
+    "id": "570323",
+    "lineKey": "Bus",
+    "routeId": "57",
+    "name": "Kenmore Station - Watertown Yard",
+    "polyline": "}gnaGry|pL?SEOGGU?@pA@f@RvAFv@@v@Ax@Cp@M|Bw@zNEf@??eAzPEf@??[bFe@zHCR??Y~EWrDCd@??WbDEn@UhEaArPo@pKCf@??k@dJQzCSxCMfC_@`GCf@??a@lGIlAE`A??Er@KtA?d@A`@Bv@A^Ab@IvA??_@xG]bGk@jJCX??k@hJi@bJ??m@pJAr@Ap@Cp@C`AIzALb@^tA??^xAl@`CPv@Rv@r@lCr@tCj@tBBJ??Rr@Lj@Rv@RfAFh@F\\^dDP|@Rr@`@pAl@lB??FTdA~Cx@bCNl@??DNp@~BHX`@zAXnAJ`@??BPPp@Lp@Rx@Jv@Fr@?bBEfD???HAPChBIdDApB?B???nA?h@?\\@tA@fB@pC@vB?Z???`@DrA@j@Bh@JrAFbAB^@`@@v@?z@ChBAZ??GpCC`BEdAAx@EjAE|@CRERGTSj@Yb@s@tAg@|@??Q\\QXYt@Sr@G^WrBMfBAX??OvCSz@??Cd@Gz@FZh@dA@D??b@hAXbAJv@Br@Cp@Kt@M`@e@zBSx@Ob@[v@Sj@??Un@uBrFO`@??e@lAc@jACHIPcAjC_BzD??GNEHCJuA|DeAlC_@hACF??O^sAlCKZERm@hFCT??MvAWxBy@DcAB??S@_@EYBUHSNWZIRGZStAGVKRQTWP}@p@s@n@i@n@_@\\q@`@??OJ{@ZqAb@{@TOBc@FoBR_@D??Q@{BVG?sATq@J}B`@{@Hs@Jm@JeAJ]AcAM"
+  },
+  {
+    "id": "570324-2",
+    "lineKey": "Bus",
+    "routeId": "8",
+    "name": "Kenmore Station - Ruggles Station",
+    "polyline": "}gnaGry|pL???SEOGGU?@pA@f@RvAFv@@v@L|@VBh@@D@DBHD\\`@n@n@??rDvDx@z@??LNhAlA`@\\h@f@tBzBvA~ARX??HHbChCZ^~@bA??xA~An@p@NNt@v@VZz@~@??p@t@lBpB~A~A|BbC??DDZ^vB|BlCvC`@{@??fBsDt@aBPg@Rq@l@uBAAFY??d@cBf@eBX{@OKQIMAGBGHe@Y??_@Sm@a@oD{BiBeAgDyB??AAKIGICGAQCWlA}An@gAh@y@f@_A^}@Vs@\\eAJc@DUBYPy@FQFMT[h@_Bd@sA`@iAZ_ADOLc@Pq@Jc@??@It@uCn@uB`@}A??H[DMb@}Af@aBp@oCX{@FSHWL[YWMG{@{@qAwAi@q@"
+  },
+  {
+    "id": "590128",
+    "lineKey": "Bus",
+    "routeId": "59",
+    "name": "Watertown Square - Needham Junction",
+    "polyline": "ooqaGxlnqLGCG?KD??MGU[KOrAaBRCNDLBVLFf@??Pp@JFNVBBb@`@\\TRJCpAClA?~@?t@Bx@B\\VlCBH??FXj@hBnAlDlAhDX~@??FTZx@Vt@HVLX??HRf@|APj@\\rALl@ZbBJt@B\\??BTDZFn@HvAHrAB\\Hp@VpB??BVPnA`@xCL~AVdC`@lDBP?B??Hn@T`BNv@Ll@J^DJLX??v@vAPVbCzDzBpDX^hAdBxBdDf@z@??LN`BbC\\h@R\\??DFVr@t@xCr@hCN`@t@W??v@W~Ac@vAc@t@WhBg@\\I??fBg@|Bo@DCxBu@x@UfB_@XG??PC`@E|AIvAGdAId@En@EjAId@C??PAbAIPAn@GXE~Bg@xCo@RE??pBe@hB]b@CV?`@Ff@LXJTDND\\@d@AF???P?RBTFTJzB`Al@Tn@Rr@JR@??F@zCJ`ERnAD|A?T@??P@v@FxA?|BBj@BzAH??T@v@FfARxAXnBb@z@Pp@L??f@H~@Rf@B^CNCXEdBa@??NEtAWfE}@z@Sr@Mz@S??f@KrEaAtBc@d@Kb@Gf@A^???TAnAF`AHlAPbB^\\F|Bf@??PBfB\\h@Hb@F~Df@\\@P?NENKbAy@|AoAFE??`@[xAsAdCwBf@]|@zAjA~B`@z@\\t@Zx@Xj@Rf@FL??Vh@Xh@^h@DDHHtA`Ad@RZHbAPfB@h@PJJPZP`@Vb@PVHHRR??VV|@v@bIbGZR??|B`B\\TjBvAr@f@NHZVXR??~AlAhAt@pAv@f@VdAj@vAr@hAj@ZP???@fB|@j@ZfAt@rBvAZVMj@i@dD??_@zB]pBOz@UrAMl@Qj@Uf@Wf@MNQPe@^QH??QH]J]FHv@JpATrCHjA?\\IhAIXKZS\\]d@}AlA]R??k@ZEDi@PUFoCXwCd@_BP??QB@ZBZZ~AZzALz@Bp@@x@?~@?j@@V@P@DBJFJn@t@TVx@t@h@h@JH??d@f@VTX\\LXxAnEj@jB\\dALb@??FTvBrG??FR`A~BtB~DXn@\\~@??FR\\bAXr@X\\XVjAt@b@ZHLd@SFA??f@I|C]lC_@n@On@UrBy@??NIvCgAp@W`Bs@ZOjDqAvAk@??TKD\\BFBFBDHHLJ^Vv@b@pGhE??NJnA~@n@ZlAh@n@RrCt@|@P??NB~C{CJMRSf@m@dAqAVBj@@hAA??hAArBC~@ClCI|BKnBGhCI??PAlCIdCGxEId@@F@??N@f@Lf@NvGfBt@P??NDnD~@\\F^BlA@hCB??P?PRtAnAh@LtGf@`BN\\D??RDz@Hz@H`@BzBL`BPhAHxAJnAHbAJj@F??pALp@Hl@BlBNfCTdCTBAd@Bp@H?U"
+  },
+  {
+    "id": "600251",
+    "lineKey": "Bus",
+    "routeId": "60",
+    "name": "Kenmore Station - Chestnut Hill",
+    "polyline": "}gnaGry|pL?SEOGGU?@pA@f@RvAFv@@v@L|@VBh@@D@DBHD\\`@n@n@??rDvDx@z@??LNhAlA`@\\h@f@tBzBvA~ARX??HHbChCZ^~@bA??xA~An@p@NNt@v@VZz@~@??p@t@lBpB~A~A|BbC??DDZ^vB|BlCvCv@z@`BfBd@h@l@p@??nCzCXV??dAhAf@j@rCvCdBjBr@t@??LLlEzEvDfE??FFY`A}@rC?BAD?DAB@D?D@H@D?D|ArEBJDHFFB@D?DAD?NC??nB[Z?Z@HBFDFDFFLTHVBJD`@DjC??Br@jDr@dE|@XFb@Pn@XVPjCtA|@`@??NHbDbBx@d@f@TDB??LHl@Xd@\\v@h@\\Rb@XHJNPVTJVDJ??DTk@Ti@ZQLSZ??MPm@jAK^y@|BKTWZ_@Z[TcAt@w@p@??OJOLKRMXOb@Q`@Wj@Wb@KJaAz@_@^CB??OJWNYFe@ByA?eA@q@AU?RtBXzB`@jEFf@??@JTlCTjCZrCPbBFr@H|@R`BP`B??BXL~@RnBNdBN~AFl@ZfBNl@jAxD~@~Cj@~BNl@Nt@TvAXvBZxBZzBD\\\\xCFfABh@?f@?VBhB?p@???R@~AAvDApAAz@???DAzA?VE|AC|@MlCAfA?`@??AxA[|HIvFBjAFv@XlBx@zDXjAZfA^pAt@`CXnABLFd@p@pDr@dEf@rDFf@??ThBj@hEj@dDx@fFX~Ab@jC??DTHf@j@|CG^APA^Db@l@xD??Lt@r@bEfBpJNh@Pb@^|@JlABn@Bh@Ft@\\tCAPCPCJILQLe@R[T[b@Q`@I`@Ch@A^B^Jj@Jz@Fv@@z@Cv@Gh@Ot@[x@Ub@w@x@s@`@a@J}@BU?QAUG?h@Cd@QpBKfB@ZDJDLFFLDdAB`D@@qBdDC?e@"
+  },
+  {
+    "id": "610038",
+    "lineKey": "Bus",
+    "routeId": "61",
+    "name": "Waltham Center - North Waltham",
+    "polyline": "{gsaGbfxqLGk@c@oEs@NoCj@k@L_@H??UFYFW?@LXvCTpCFz@Bv@@fB?J??@hA?tAChB?X?jDAf@??ClCGnDAjEwCW{CSuBO_@C??wBOsAMiCMgAGUAeCI??QAy@Ei@GcFcAsD_AiBa@q@O??a@ImBe@}D{@??QE}Cu@{A[??QEe@Gk@QyCwA{@a@i@OgFnK??m@nAkB|CqIdNyAdCeC~Do@bAe@t@eC~DwDhGk@`Ai@dA_@z@Qj@_@nAId@GVQxAKhAIxAC|A?f@FrA??@RTtCZ`F`@hFFr@?J??NhEMjDKlA??YAM@KAK@SDo@TE@??OBo@DiHiBk@OiCo@c@IWAwA@]Dk@Ho@DYBy@Ac@Ce@Ee@Kg@OaA_@??i@U}BcAgBs@_Aa@}DcBuD_B[M??{BaA_CaAkCkAuBy@_@I[GyBWSGYKJGDK??@?HQHKJMHIlAyAj@i@jAeA`CuBdBuAxAgAj@a@"
+  },
+  {
+    "id": "620223",
+    "lineKey": "Bus",
+    "routeId": "62",
+    "name": "Alewife Station - Bedford VA Hospital",
+    "polyline": "ijwaGxweqLl@WLFFP?PIJ{F|BMDf@~CFVa@NMCGGqAgJKcASyAIOKKCAKAKBq@POHMNITGVA^AhAC|AB`@[zCoAdGo@bDeA`FWdA??]~AaBbIuBfKoBpJk@rA[x@u@bBs@bBi@fAeAdCe@hAa@v@UX??MPUd@M^}@~Ci@bBwApDKVw@~BmAnBYx@g@`Bm@`Ci@xBe@dBq@pCOdAG`@S~@??CL[nBgAfFq@lD]~AS~@q@fCUx@m@vBe@~Ao@xBg@|Ag@~Aa@|A[zAYbB_BnIKd@??ETa@rBe@tB]bB??SbAWxAQnAGf@??K`A}@~IGn@??AV_AdJ??CXs@FwAL_CX??Q@eCV??A@o@@[E]Qe@a@m@}@_@i@_@c@e@g@}@q@o@c@??ECy@a@s@UcAMYCgAFu@Ni@V_Al@m@d@??OJeA|@cAv@}AjAeAv@??OJcAj@_A^oAd@oAZcB^iBb@cBd@??G@eAVm@Ji@?I?a@IiAi@sAw@[tDOpBAJShCy@O?]??@]d@u@d@GShCOvBq@tIAPMbA??Gd@EPMr@m@~D???DCPALAr@DvB@hA?JC|BElBCzAElB??Cn@IfCMzACR??CTWrBa@lC?D??GROr@UfAWfAK\\Oj@w@bC_AvCOd@??Up@]tAYvA]|CS~B??Gl@Cn@?f@@TBXX~ATlABNDV??DTDt@@x@Gp@Kn@Sn@s@hAcA|A]j@Yb@_@f@QXm@n@??UV]R}@f@KDm@R}@Zw@TWHOB}AXy@LI@??YB[Fw@R]Nw@Z_Af@eAj@s@`@mAl@SNWNu@r@o@v@Wb@u@dAYh@??ABk@rAUb@}@zBEJo@jAIHi@d@a@T??{@d@w@^e@LaANkDV_ANcAVu@VwAb@u@V]J??i@RYNe@h@UZSd@Ux@Sl@IV_@nAi@tAs@bBINS\\??Yf@q@lAk@|@wA~Bg@x@??eAdB{AbCe@r@{@pA_@d@e@h@UX??e@j@c@d@w@x@_@h@Sb@EFUr@Mf@CJEX??Y~Am@fEQrA??Gh@OrAUfASbAU`AGTi@tA[p@iAnCYp@e@dAMZ??Sd@u@fBc@bAU\\GFa@Ze@RgAXm@DQBOBI?UIM@KJCLGNKHa@T??E@QTEBaAt@_BdAcAv@y@j@iCjBa@X??OJmAx@_@V??QL{B~A_@X_BtAWT??MNgBjBONcCdC??OLwDlDaCpBWV??cB|Ae@\\QNy@`@aBr@y@\\??w@ZsCvAOH??kBdAy@b@yCdB[P??GDk@VaBp@{@XOF??aAX]LsAj@y@f@cBz@QJqAh@[NgAj@[P????i@`@iA~@aBfA_Bt@]TiD|ByChBoBrAqBrAwAhAwCnCwAfBeAlAUXY^i@p@aAnA??qDtECB??k@t@s@`Ai@z@sAtBi@|@KL??ORm@bAs@nAeA`Bc@l@s@hA}@hA]^iGxGu@x@KJ??IHKL}CvCmEtDqGpFiA`AqBbByAhAUR??aBrAaDnC]d@KT]`Aw@fDKd@c@jB??g@nBSbAS~@o@|Cs@lDId@??a@nBk@|COx@Gf@??Kn@Kx@In@Q`AY|A[fBYzA]dBTl@??Rh@bAlC`@fA`@dAf@pAf@rAh@vAd@jAh@zAtBzF^x@FP??JX^t@JTBPIFQRo@j@q@`@i@Vs@Zo@Rw@R[Fe@J??I@_Cd@uAT??]FmBZ}Dd@_@?G@SCu@O{@]??WKUQOIsG{AO]??_@u@_A{BQg@Mk@a@_CAE??K[q@eASK]Uw@c@QK_E_BsBcAk@[cDaBoBaA_FwBm@UgAc@MC??SGsDcAMC_@IYCQAkAJe@FUDsCR_AN??QDo@F[@a@Ce@Ea@?UBc@Pk@^QNUEo@c@OC}@G{BCYDMHYZIRGTIj@REl@C~BAXC"
+  },
+  {
+    "id": "640199",
+    "lineKey": "Bus",
+    "routeId": "64",
+    "name": "Kendall/MIT Station - Oak Square",
+    "polyline": "e|paGp}zpLs@zSF?KrCSOqB[mGgAKCA\\M`@{@vCw@rCGT??}@dDi@vBSp@m@nB{@vCe@fBQh@c@tAMb@??}@|CmA`EMb@??q@`C_A`Du@jCUr@Ql@??[dAc@|AxDfC??NJ`BdAtA~@~DdC??NJZ^pA`Bb@p@`@f@NXDRFd@F`ABn@??DpAHdB@\\H|BH`BDv@DrAJvC??BXBf@JdCJtC??@XL~CHtCNzCLxCBn@??HjCDlANhDJnDLrD@`ArA@HArBEjBMfCSlBS??jAKDVVhBJt@RxALpARrBNpAH`@\\rARj@Rf@dAbCh@fAh@fAZx@Rf@XhA??HTp@zC\\vAvAjGnBnH??FVf@bBl@~Bl@vBj@nBX|@r@bC~@bDLd@b@fABJ??f@xAZ|@b@tA^jAFRp@rBt@~BFP??Nf@Tt@b@nA\\nARh@K~CAH??UxDkCm@WG{A_@UEO?OBS?W?i@IUtA_@tAa@nBYnD??OtBq@jIAJ??]dE_@lEMbBo@vIMnBK~@dAh@??PHfDdBUxAo@xD??[hB}@rFa@zB??G\\Kj@Sp@M\\QZU^OTe@|@QZ??GL]`@YPQnG?V?z@@nAC|@Ej@G^IZO^GL??CF[d@MTMXGRIb@E\\Kr@?n@Bd@J`ARn@Rx@b@pALVl@nA\\n@HZJJLHx@PvB`@|@Lv@Hf@HfATtAVJB??RDlBb@zANxGn@lBLB\\??Hx@H`ALjARlATnA~A`IZlATz@??J\\BTVnAJz@HHXFV?HYDk@AWCSEKEKQMSK{@Oa@yA?A"
+  },
+  {
+    "id": "650151",
+    "lineKey": "Bus",
+    "routeId": "65",
+    "name": "Kenmore Station - Brighton Center",
+    "polyline": "}gnaGry|pL?SEOGGU?@pA@f@RvAFv@@v@L|@VBh@@D@DBHD\\`@n@n@??rDvDx@z@??LNhAlA`@\\h@f@tBzBvA~ARX??HHbChCZ^~@bA??xA~An@p@NNt@v@VZz@~@??p@t@lBpB~A~A|BbC??DDZ^vB|BlCvCv@z@`BfBd@h@l@p@??nCzCXV??dAhAf@j@rCvCdBjBr@t@??LLlEzEvDfE??FFdAnA^r@R\\LVFNLp@HlAFrCLjC??BTAr@?RAJ?JCHOh@O`@KREFCDEDYRSPs@f@SPc@XSRQX??IHQ`@QpAMrAQjAKf@Yv@mAjBUl@a@pAYrA??c@lBEVI^Mh@UlA]xAO^MZW\\[ZA@??e@\\_At@u@t@y@x@qAnAuAxA??OLUXm@z@c@r@c@~@_@~@Of@Ij@Ch@Ah@@Z??@L?LHb@Hh@Hp@Dh@@r@Aj@?f@Cr@En@??CVa@bFAZGv@I~@G|@KbAMr@GVGR[~@KV??_@v@m@hAcCxD{@lAaAlA]n@ELWj@Qh@Mb@??u@tB[z@g@hAe@x@EHSd@q@vAIR??KXa@dAw@dBo@nAQd@Yh@]p@??MTGLELCBMVO\\e@jAeB~D??IPcAdBo@x@i@j@cAz@m@n@WZKTMZ??ABcA`D_@rAUz@Uh@??KRc@z@q@nA{@~@gA~@??MLm@f@wAfAWFGp@XPdB`A??h@XhB`Al@Zd@Vj@Zd@Vv@`@z@h@??TNUxAI`@QLsAx@}AbAy@^SF[@]A_@Ee@UIE"
+  },
+  {
+    "id": "660327",
+    "lineKey": "Bus",
+    "routeId": "66",
+    "name": "Nubian Station - Harvard Station via Allston",
+    "polyline": "cnjaGlpzpL?JvCd@En@C`@CTKjAKf@k@r@{@lA_@t@O\\??m@vAcAzB[|@Kj@Qf@Ql@Or@??S`Ac@|B[nCKnAAL??ElAG|BC`B?|CCrA??A^E`AOtBCh@Gx@MfA??APKpBEj@[pEQbBEh@c@lC??SpAQz@Ot@EXS~@i@rBu@jCER??St@Ux@o@dCm@fCg@vB??m@pCQp@h@pAh@z@Zr@??\\r@Pd@HZH`@B\\@t@@bDArC?ZBt@@l@??@RBl@Fv@Ll@HZNb@h@lAR`@h@lAv@dBHVPz@B`@Bj@DpA??Dl@DdAD`BEzAARAtCFrCLjC??BTAr@?RAJ?JCHOh@O`@KREFCDEDYRSPs@f@SPe@H}@LI@??kBVg@Hi@Lc@Py@\\_@P{@j@a@`@u@|@mAbBUZ??]d@KPQNc@b@m@\\]Jc@Hq@DaAEw@Cs@E??G?eAK{@SOGe@OoA_@YGkA]YCu@ByAZkBZqAZ??QDo@TKLg@|@k@hA[x@iBpDkB`E_@|@KXM\\KP??OXSj@s@nBcApC]t@k@hA_@j@s@t@GHGF??qA`Ae@^{@d@cB~@qBhA{BfAED??y@h@KD]V_@XEFw@z@cAz@_@V??UNYLMHSHMDaCjAy@\\qBh@iAVE@??iBZWDi@bJ??m@pJAr@Ap@Cp@Or@IFIBOEKUYw@FCyI_XEBMc@_AcDs@cCUeBq@mCkBiHoBkHEUWLyAt@SH??YLs@`@IFm@v@SZmAbBq@|@o@z@??IL]d@aApAOVy@fA}@`Am@b@_@NWF??KBa@Am@I_@K]KOKWQa@[_@e@[]_@m@[g@??iDeFmAmB{BiDYc@Y[CGu@_AgAkAkAgAk@m@WU??w@w@iD}Cg@c@q@i@m@g@}@u@qB_BaCmBoAcAUQ}AgAg@f@{@x@]T??GDMDQBGl@g@fB_AtCU[kAo@ZmAJa@??J]SWQ[Os@C}@Es@@q@Ck@G{@G}@I}@EY"
+  },
+  {
+    "id": "660338-2",
+    "lineKey": "Bus",
+    "routeId": "66",
+    "name": "Nubian Station - Union Square, Boston",
+    "polyline": "cnjaGlpzpL???JvCd@En@C`@CTKjAKf@k@r@{@lA_@t@O\\??m@vAcAzB[|@Kj@Qf@Ql@Or@??S`Ac@|B[nCKnAAL??ElAG|BC`B?|CCrA??A^E`AOtBCh@Gx@MfA??APKpBEj@[pEQbBEh@c@lC??SpAQz@Ot@EXS~@i@rBu@jCER??St@Ux@o@dCm@fCg@vB??m@pCQp@h@pAh@z@Zr@??\\r@Pd@HZH`@B\\@t@@bDArC?ZBt@@l@??@RBl@Fv@Ll@HZNb@h@lAR`@h@lAv@dBHVPz@B`@Bj@DpA??Dl@DdAD`BEzAARAtCFrCLjC??BTAr@?RAJ?JCHOh@O`@KREFCDEDYRSPs@f@SPe@H}@LI@??kBVg@Hi@Lc@Py@\\_@P{@j@a@`@u@|@mAbBUZ??]d@KPQNc@b@m@\\]Jc@Hq@DaAEw@Cs@E??G?eAK{@SOGe@OoA_@YGkA]YCu@ByAZkBZqAZ??QDo@TKLg@|@k@hA[x@iBpDkB`E_@|@KXM\\KP??OXSj@s@nBcApC]t@k@hA_@j@s@t@GHGF??qA`Ae@^{@d@cB~@qBhA{BfAED??y@h@KD]V_@XEFw@z@cAz@_@V??UNYLMHSHMDaCjAy@\\qBh@iAVE@??iBZWDi@bJ??m@pJAr@Ap@Cp@C`AIzALb@^tA"
+  },
+  {
+    "id": "660338-3",
+    "lineKey": "Bus",
+    "routeId": "57",
+    "name": "Union Square, Boston - Watertown Yard",
+    "polyline": "qcoaGzbeqL??^xAl@`CPv@Rv@r@lCr@tCj@tBBJ??Rr@Lj@Rv@RfAFh@F\\^dDP|@Rr@`@pAl@lB??FTdA~Cx@bCNl@??DNp@~BHX`@zAXnAJ`@??BPPp@Lp@Rx@Jv@Fr@?bBEfD???HAPChBIdDApB?B???nA?h@?\\@tA@fB@pC@vB?Z???`@DrA@j@Bh@JrAFbAB^@`@@v@?z@ChBAZ??GpCC`BEdAAx@EjAE|@CRERGTSj@Yb@s@tAg@|@??Q\\QXYt@Sr@G^WrBMfBAX??OvCSz@??Cd@Gz@FZh@dA@D??b@hAXbAJv@Br@Cp@Kt@M`@e@zBSx@Ob@[v@Sj@??Un@uBrFO`@??e@lAc@jACHIPcAjC_BzD??GNEHCJuA|DeAlC_@hACF??O^sAlCKZERm@hFCT??MvAWxBy@DcAB??S@_@EYBUHSNWZIRGZStAGVKRQTWP}@p@s@n@i@n@_@\\q@`@??OJ{@ZqAb@{@TOBc@FoBR_@D??Q@{BVG?sATq@J}B`@{@Hs@Jm@JeAJ]AcAM"
+  },
+  {
+    "id": "660339-3",
+    "lineKey": "Bus",
+    "routeId": "23",
+    "name": "Nubian Station - Franklin Park",
+    "polyline": "cnjaGlpzpL???JGl@CVK|A`Bt@\\XHLJg@JkABU`@sBJ]N_@RWVSPIVEXAp@?hAL`BHhCVn@Hn@KDA??r@S~F}ARG??hDu@xBi@zCu@ZG??vAWlAWnCg@JA??b@GT?h@@l@F`@Fb@LhBp@j@P??JDZLtAj@f@VhAj@dAd@f@@\\J??VHtCz@vBl@fAXb@H\\AfBM^CRE????RGp@SZU`Ak@x@]d@IT?VAF@??N@f@NRD^LjAZR@PAXEBA??r@]vAy@j@Yf@T`Al@r@Tp@d@XRxCfBb@Xj@^b@TXJ??PHd@Ll@Lr@Lb@Dt@F??H?`@D`@BpBTv@Lp@NpCp@Zz@~AhDNZh@bAJRNSDSDQ?YAC"
+  },
+  {
+    "id": "670075",
+    "lineKey": "Bus",
+    "routeId": "67",
+    "name": "Alewife Station - Turkey Hill",
+    "polyline": "wkwaGnxeqLzAm@LFFP?PIJ{F|BMDf@~CFVa@NMCGGqAgJKcASyAIOKKCAKAKBq@POHMNITGVA^AhAC|AB`@[zCoAdGo@bDeA`FWdA??]~AaBbIuBfKoBpJk@rA[x@u@bBs@bBi@fAeAdCe@hAa@v@UX??MPUd@M^}@~Ci@bBwApDKVw@~BmAnBYx@g@`Bm@`Ci@xBe@dBq@pCKHMFK@UCgA_Aa@k@c@y@Sc@??i@qA_AaCc@}@_@i@WYmDeE??MO_B_B}@aAm@]WEYGq@Eq@?aA???M?UAg@A_@Eg@QaA{@a@u@s@}ASa@[q@g@y@[c@u@cA??KM_BuBYe@_@k@i@o@uAqBkBwBMo@IZQr@??Sv@_@zAOfAAZAl@S`C]xECh@??]lEiAAs@I??QCg@IE?G?mAOi@ScBg@k@Se@KQC?PKrAIb@??CNO`AOt@SdAa@dC_@bB_@`Aa@p@EF{@|@yCvCc@n@??QXaAxBqBdEk@jA??KV}AwAY_@Sk@Mi@Ek@Bo@^aCDo@?_@O_@[e@]YMKYSm@o@eA}@O@EDC@ILKNGLGLCDGPEN?L@JDFCPCJEZA\\?\\DZHFAT@J@FBBHHJFj@\\XNTJLAJADALIDIR_@Hw@??BUFo@?s@?[@WLJ\\XZd@N^?^En@_@`CCn@Dj@Lh@Rj@X^|AvA_@bAKd@ETQxAAHExACbBGpAW~Ae@vA{ApDe@lAEH??EJcFE??S?k@A{@@}@Ns@LuAd@}Bn@}Aj@??OF}DdA_D`A_Bb@oBl@eA^??KBq@Ry@\\iAb@uA^sBn@q@L}@J}AVWJYPm@t@OR[b@_@b@UZ??qAfBw@bAt@hAj@n@t@n@x@h@b@T\\PZJ??n@PpAHbAFv@HTD??PD^P^Pd@Xh@Lh@BJC"
+  },
+  {
+    "id": "680061",
+    "lineKey": "Bus",
+    "routeId": "68",
+    "name": "Kendall/MIT Station - Harvard Square",
+    "polyline": "e|paGp}zpLs@zSF?KrCSOqB[mGgAKCA\\M`@{@vCw@rCGT??}@dDi@vBSp@m@nB{@vCe@fBQh@c@tAMb@??}@|CmA`EMb@??q@`C_A`Du@jCUr@Ql@??[dAc@|AmA`EiA|D_A|CUx@??Sr@i@fBkA|DW~@{@xCMb@??_@lAi@lBs@dCo@rBa@rA??ITs@lCa@tAi@fBuArEQn@??GPe@bBc@~@aBjD\\H??nAVjItA??|@NUrA_@fBUx@?FQt@WxAMp@O|@"
+  },
+  {
+    "id": "690141",
+    "lineKey": "Bus",
+    "routeId": "69",
+    "name": "Lechmere Station - Harvard Square",
+    "polyline": "}wraG`iypLBG@QCGGGMFS\\{@lB}A{A|DaI|CtCRJ`Bf@a@lGG`AOrB??OfCk@fICf@??c@|GSzCQvC??CVSrCOvBQrCGh@E~@IfA???HMzACj@M|ASxCCj@??SlCKlBQxBQhCO~B??CX_@pFSdDS|C??CVUlDYpD??AV[lEIbBUtC??CVC|@KpAC^QdCWdEIjAShCGhA??El@ItAUtCCj@UzDWbDAP??IlAM`BM`CMxA??CVWpEMfBOvB\\D??l@F|@NbAl@f@^e@bBc@~@aBjD\\H??nAVjItA??|@NUrA_@fBUx@?FQt@WxAMp@O|@"
+  },
+  {
+    "id": "700291",
+    "lineKey": "Bus",
+    "routeId": "70",
+    "name": "University Park - Market Place Dr",
+    "polyline": "gxpaGhz}pLKReBqBw@tAuC~FiCdF??KRwCxF??Q^KRSb@GNGHBn@??DpAHdB@\\H|BH`BDv@DrAJvC??BXBf@JdCJtC??@XL~CHtCNzCLxCBn@??HjCDlANhDJnDLrD@`ABhAHvBF~@Bn@??D|@JbCL|DHtBLfD@v@XzGDr@???BDtAJlCFnATbHJtCDhA??JzBDr@FbBFhBA|AMt@K|@??CTQvAIvAAbB@j@J~AFt@TxCDf@??VnDT~DFz@JpB??FlA^jEJnATrBXnC??v@nHVxBRdB??RhBV|B?x@Ct@Ab@C|@EdAM|BKdBIzAI~AChAC`AKvC_@hGo@dLKf@IvA??e@lIc@|Hi@|J??E~@_@rG?fBa@hGIzA??IzAYjGO|DStDGlB??SxESzEMdD???PCNI|BAJ_@jK??AXIxAQdEQxF??C`A[rLEbB??MvDUnHCbAC`AEnAYzHu@`BsA`BEF??}A`CqAvBuBxDWd@A@??Ub@SZ_AlBa@r@c@r@Y^UV??GFmBlBaAhAOPMTITEZEj@EdAEt@??MzCAx@MhBKv@Mr@Ur@m@|AQZEHMR??U\\Sb@Qb@[bBShA[rBKx@UtBKt@[fCET??ERKl@Kl@GZSv@IVCH[r@_@z@k@tAWt@GNSv@Q|@??EVObAU~AIl@E`@ItAQ~DQtDAx@IbB??AXIjDCd@??A^M|AOzAOpAOz@K^Yx@m@zAOZ??Uj@Qd@O`@c@~@KTgA|Ck@pBUz@Kl@????O|@g@nDs@~Ew@`F??ET_@bCe@lCk@dDe@fCi@nCW~AKf@??QdAEj@Cj@?v@@jAJfHH~ELhBRvCBh@??TpEJ~AHfA??Fr@L~A^vFLvBTnDLpCDp@??@ZFn@RtBNbBVvBV?XGt@Qj@MnCk@r@O^tD??BX?RDv@Bp@BbBaARs@HaB\\sB`@Cw@G{@UqCYwCAMV?XGb@K??PEj@MnCk@r@Ob@nE?RDv@Bp@BbBaARs@HaB\\sB`@@fB?J??@hA?tAChB?X?jDAf@??ClCGnDAjE?lA??@lC?hEArDAxCAT??AV?rD?h@?`B@J?XEjC?VAdC???RAbADz@AvCApB?pA??A~CAvA@vCA`C??AVEvH?xC?hBC`C???`@IdJAd@???\\O|HCvFEnECj@??C~Am@Cw@Gi@I]Iq@Wy@_@eEeCiHmCaHcC[OQIIGIIGICIMSGSESCQASAc@J_CD_@n@X"
+  },
+  {
+    "id": "7080098",
+    "lineKey": "Bus",
+    "routeId": "708",
+    "name": "Andrew Station - Brookline Ave",
+    "polyline": "arjaGfmupL?gCd@?n@?^Jk@rFm@jEER[jDUnBQ~ASbBADi@lECVIt@AJCHCNGj@m@hFk@zEk@xEa@~CELC^Ef@a@nDc@~Dq@zFWhAUpA_@Jm@`Aw@lAM\\}@hAmAsBa@o@??oAqBOWcAyAyAaCeAcBYe@eBbCsErFTZ??|ApB\\b@|@fALNpAhBTZ??n@|@b@l@h@p@h@|@NRp@bAf@v@f@t@vA`Cn@bAb@n@d@v@tAzBdApBhAlBQf@oAfDaAxBMV{@jB??eBtD}AbDw@lBa@lAa@|AYlAg@lCSz@Md@Ob@]|@G\\ILw@x@}@z@YP}@t@EN?PAHA`@TDJFRZ??xArBBNNdAfAvA`@`@SNKLGJGHIJGLCDMZIVGRYz@q@nCg@`Bc@|AELk@xBo@tBu@tCET??GVQp@Mb@EN[~@a@hAe@rAi@~AUZGLGPQx@CXETKb@]dAWr@_@|@g@~@i@x@o@fAmA|ABV@PBFFHJHhDzBhBdAhDtB??DDl@`@dAl@CL@LBNDFHHRFg@dBm@|B@@m@tBSp@Qf@e@bA??O\\iCnFmCwCwB}B[_@YY"
+  },
+  {
+    "id": "7080099",
+    "lineKey": "Bus",
+    "routeId": "708",
+    "name": "Andrew Station - Ave Louis Pasteur",
+    "polyline": "arjaGfmupL?gCd@?n@?^Jk@rFm@jEER[jDUnBQ~ASbBADi@lECVIt@AJCHCNGj@m@hFlB~@JHzBnA`Af@xDtBnBuATEP?TBd@RfAj@^ZNXJ^Jb@SRGDe@^yAjAoAbA??OJqAbAaCjBwAfAmBxAWWOGWu@OWa@u@[c@][YQg@Yg@WQ?M@IDIHa@nDc@~Dq@zFWhAUpA_@Jm@`Aw@lAM\\}@hAmAsBa@o@??oAqBOWcAyAyAaCeAcBYe@eBbCsErFTZ??|ApB\\b@|@fALNpAhBTZ??n@|@b@l@h@p@h@|@NRp@bAf@v@f@t@vA`Cn@bAb@n@d@v@tAzBdApBhAlBQf@oAfDaAxBMV{@jB??eBtD}AbDw@lBa@lAa@|AYlAg@lCSz@Md@Ob@]|@G\\ILw@x@}@z@YP}@t@EN?PAHA`@TDJFRZ??xArBBNNdAfAvA`@`@SNKLGJGHIJGLCDMZIVGRYz@q@nCg@`Bc@|AELk@xBo@tBu@tCET??GVQp@Mb@EN[~@a@hAe@rAi@~AUZGLGPQx@CXETKb@]dAWr@_@|@g@~@i@x@o@fAmA|ABV@PBFFHJHhDzBhBdAhDtB"
+  },
+  {
+    "id": "710168",
+    "lineKey": "Bus",
+    "routeId": "71",
+    "name": "Harvard Station, Upper Busway - Watertown Square",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@G}@Gs@??AIIe@Qa@a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNLRDF`Bm@t@[bAUxBo@d@ONBf@HNFLHf@V`@`@Rj@Lx@BXL~ATlAT|@P`@Xb@[`BQv@W~@[lA]jA??K\\U`ASv@ELQp@e@hBi@jBGf@??Mx@G`BSvGEvBYtK??AVGtBCpAGlBCzAE|AKjE??AXErBG~AKhF?h@???d@Dv@DTT|BDf@LxAItAGbAKvAGt@??OlBo@~GMpBEhA?J??@fA@xADrCB`@?hAB\\Al@Ft@Bh@NpBLpBX|DFp@??T`DFl@F\\DXR~@BRDVRn@hAhFh@xBNl@??Nn@Pz@b@xATt@b@~A|@vCHT??r@vBj@lBb@rARf@v@hBd@v@??DD^h@|AzBp@jAHVXv@N|@Fn@Dp@?r@A^Cf@??E`AMhBCZ_@|CMhAStAGl@??AJCn@?l@@TFt@P|@XfAdApDNb@V`AD\\?J??@RBb@?vBAfCCrDCtD?tBAfA?F??@XB`@D`@FXVlATv@X`Ar@fC`AxC??HXVr@XvAJn@VjBJ`AFl@??@JBd@H`BPzCFdAHf@F\\Nf@@D\\|@??HR\\x@l@zAVl@bAjB`AfBP^??FP`@hALf@Px@l@jCXz@Rf@v@`B??p@rARtBFf@??@\\CTGHIZGDEBI@QLe@I"
+  },
+  {
+    "id": "7120107",
+    "lineKey": "Bus",
+    "routeId": "712",
+    "name": "Orient Heights Station, South Busway - Point Shirley",
+    "polyline": "ktuaGpakpLb@lBHNHLRBn@Ct@aCxBmIfC_KRu@dBmG??FSJc@zAaGbA_EViARuALoADu@JgCBMFgBRgE\\yH@S??HiCBs@FaCBm@HqBDo@NoD@]??HiBPkEBm@NkDRaF@k@JuBNuC??@YCSaAuC]gAc@mASm@??GUOc@Yi@Wm@q@g@oAiAu@s@aA{@gCyBOO??s@q@SWGGu@}BOa@MOKO???AMKMKWMc@Qq@i@k@_@R[??fCmDZe@zA_CbAuAf@q@\\i@??JQLSXYTKvA_@^EJ@JBJDNNTZX`@Rp@\\lA????JTPZLVhAfB^p@LRPRJJLLRNbAt@~@eBBE??DIJITIRE\\C`@?`@@dBJrBH??P@\\@|AOv@GfBi@??NEdA[r@_@lBcAXQ??NKhAu@PMj@c@RQfAeAv@y@PK??LI~AgAZS|BuA|AaA??PIdA_At@q@TOHGLK^QJEJENC`@KPARAL@NBLDl@Z??BBtAx@r@h@JFv@d@d@T??@?xAt@LF^HND^@V@TARENKNKFGJMtBoCPp@gAzAQb@hAv@PB??~@Pj@cBcB{AIMQq@NYBGLUDIvAoDFK@CBEDGDEDEHGJGh@YLGFCFAH?LBJBPHtAh@??PHr@XtAf@jAh@|Al@??NHRFt@Nr@L??l@JrCb@zB\\zAV??PBr@XLF^TbDhBXONGHGJKJIHQJQDODOBSBWB[??C[LG??v@Wf@SdA_@h@SbA_@lBq@jBq@TMPSVi@Z_Av@aCFUBGKo@"
+  },
+  {
+    "id": "7120108",
+    "lineKey": "Bus",
+    "routeId": "712",
+    "name": "Orient Heights Station, South Busway - Winthrop Beach",
+    "polyline": "ktuaGpakpLb@lBHNHLRBn@Ct@aCxBmIfC_KRu@dBmG??FSJc@zAaGbA_EViARuALoADu@JgCBMFgBRgE\\yH@S??HiCBs@FaCBm@HqBDo@NoD@]??HiBPkEBm@NkDRaF@k@JuBNuC??@YCSaAuC]gAc@mASm@??GUOc@Yi@Wm@q@g@oAiAu@s@aA{@gCyBOO??s@q@SWGGu@}BOa@MOKO???AMKMKWMc@Qq@i@k@_@R[??fCmDZe@zA_CbAuAf@q@\\i@??JQLSXYTKvA_@^EJ@JBJDNNTZX`@Rp@\\lA????JTPZLVhAfB^p@LRPRJJLLRNbAt@~@eBBE??DIJITIRE\\C`@?`@@dBJrBH??P@\\@|AOv@GfBi@??NEdA[r@_@lBcAXQ??NKhAu@PMj@c@RQfAeAv@y@PK??LI~AgAZS|BuA|AaA"
+  },
+  {
+    "id": "7130076",
+    "lineKey": "Bus",
+    "routeId": "713",
+    "name": "Orient Heights Station, South Busway - Winthrop Beach",
+    "polyline": "msuaGpdkpLDLHNHLRBn@Ct@aCxBmIfC_KRu@dBmG??FSJc@zAaGbA_EViARuALoADu@JgCBMFgBRgE\\yH@S??HiCBs@FaCBm@HqBDo@NoD@]??HiBdFMpBEnDIZ@??pBF`EK??lIUd@hBFX??n@lC\\hAZ`@d@f@d@f@NXLb@Nh@Fd@z@dF??DVfDoARQPu@JeCBU??LuBNwCL_CJyA??@W`@eHL{BHwA??BYTeEN}B??BWLcCDaALgC??@W@cB?sC?oE@g@???W@SD{ATiE??@WXcFFeAD}@Gu@Ie@??EU_@_D[uBm@iE??MaAOJ"
+  },
+  {
+    "id": "7130081",
+    "lineKey": "Bus",
+    "routeId": "713",
+    "name": "Orient Heights Station  - Point Shirley (South Busway)",
+    "polyline": "msuaGpdkpLDLHNHLRBn@Ct@aCxBmIfC_KRu@dBmG??FSJc@zAaGbA_EViARuALoADu@JgCBMFgBRgE\\yH@S??HiCBs@FaCBm@HqBDo@NoD@]??HiBdFMpBEnDIZ@??pBF`EK??lIUd@hBFX??n@lC\\hAZ`@d@f@d@f@NXLb@Nh@Fd@z@dF??DVfDoARQPu@JeCBU??LuBNwCL_CJyA??@W`@eHL{BHwA??BYTeEN}B??BWLcCDaALgC??@W@cB?sC?oE@g@???W@SD{ATiE??@WXcFFeAD}@Gu@Ie@??EU_@_D[uBm@iE??MaAUyAdA_At@q@TOHGLK^QJEJENC`@KPARAL@NBLDl@Z??BBtAx@r@h@JFv@d@d@T??@?xAt@LF^HND^@V@TARENKNKFGJMtBoCPp@gAzAQb@hAv@PB??~@Pj@cBcB{AIMQq@NYBGLUDIvAoDFK@CBEDGDEDEHGJGh@YLGFCFAH?LBJBPHtAh@??PHr@XtAf@jAh@|Al@??NHRFt@Nr@L??l@JrCb@zB\\zAV??PBHmAFkA`@CrBI\\Cv@GV`@dBtALG??v@Wf@SdA_@h@SbA_@lBq@jBq@TMPSVi@Z_Av@aCFUBGKo@"
+  },
+  {
+    "id": "7140023",
+    "lineKey": "Bus",
+    "routeId": "714",
+    "name": "Hingham Depot - Hull Ferry",
+    "polyline": "{xy`GxosoL?iAo@@W?]D_@@WEUEQGWM_@Qs@eC??GU_@yAEg@GYAS@QDWDKBS?QE_@EKIKIEOEUGKGKMOW_@oAoAwDq@}BeAeECMKm@Ea@Ac@?e@?c@Bq@FwA?s@AKCe@KaAEWBe@OmBGm@Gc@CWMs@Ik@Gc@Ke@UsAGYgCwL}@qEYsASw@Yu@]w@Yc@Gk@AQ@WBQL_@Im@[eAWuA_CuLk@sCOy@ScAwAmHm@uCy@kEAOOm@m@yCMk@e@kB[cAkB{GGS[eAU_As@_Cw@uBYm@Ym@IMWg@i@y@IMsAyB??MQm@eAk@{@m@}@We@Ya@}CaF[g@mAqBu@uA_@w@aAeBiAqB_@w@yB{EMMQa@GYAO?KBM@KOCcAIWCkAI]@Q?QD{@Z_@R}@f@eAh@c@Tq@`@i@VcAl@k@`@SPUVkAa@UOSI??QE]Qg@Oo@Wq@Ye@Yg@[[YDx@?d@ARAjA??AnBApBAfBArEAl@ElAi@`@EBsB`A??IBk@XULSTOTQ\\mAdESp@g@rAUh@iA`CUj@c@|@i@fAq@jAeAfBkAnB{CbF??U^cG`Ja@t@a@Lw@^_@T{ArAgAbAiAnAmAvA??eBtB{DrEUXIZG^C^?p@Ah@AZEXKXOTW\\y@~@cAnAeD|Ds@v@e@l@a@n@Uf@Sh@Qp@Y|AUdAs@bDc@tBQ|@]tAa@rB??A@Md@O^MXa@d@eAdA{@x@aCbCc@`@o@h@}CrBu@h@eAp@k@^??IFeAl@i@Z]Pe@T}Ax@}C~AuBfAi@X}@b@u@`@??e@TqCxAwCzAm@\\gBz@gDpA_@R_@PA?gAt@gA|@SLUJ{@X??[J_AX_AXuBl@s@T_AZw@Ty@V_AXq@PkBh@??IBsBn@uBn@qBn@_Bf@??UFsBn@uBl@oBn@uBp@sBj@aBh@??SFqBn@sBl@sBn@wBl@i@Pg@VMNw@v@Y\\??UTUf@Ib@G`@Ej@Cn@CzAAdAC`AStBOt@Ut@Wr@[l@U^U\\[^m@l@iAz@YXYZ[n@Q^ITKl@Ij@Eh@Ev@?zA@f@Dj@Jp@Jr@V`APb@f@bAv@bAlAtAZh@Xp@Rr@Nx@Jt@Fx@Bt@@v@?p@Cr@Gx@E|@?FDnAJv@L^PZTZxCrCx@r@X\\NPZf@Xl@Nd@Rt@lAvFr@vCNt@Fb@??LbA^hDRjC?j@AVDjB@d@?LERYt@MZSj@u@zBk@rAUh@Sp@a@lBOv@Kr@Gf@Eb@AZJ~BHzBH~AR~CF`@?P?XAJGZYl@U`@KRM\\Qp@??i@xBm@~Bw@hDOr@CNA^?d@?\\DZN|@Pz@P`ARz@Ld@f@nBX|@X~@HNDFF@FAHEDI@O@MCKKU"
+  },
+  {
+    "id": "7160031",
+    "lineKey": "Bus",
+    "routeId": "716",
+    "name": "Mattapan Station - Canton Village Shoppes (Omits Royall St)",
+    "polyline": "kl~`Gld|pL]}COI]Z_C|C^j@Z`@j@h@VTNNLRPZFXd@lAD`@n@BVBX@nABT@n@JZJ\\RVJPHTDb@F`@JZ@TD|@R`@HbKbEz@Z|Ar@n@V??f@RpEnB|CrAhBt@pAh@h@T??z@\\pAf@fAd@d@Xr@PdBv@TJxAj@??^NxBx@t@^pCjA|Ar@~Ap@nAl@p@VtAl@f@NnAl@??ZNvAj@dCdAZJfCfAv@Zx@^~An@~@`@jBt@??l@V|CtArDhBbBz@`Bx@tKzFbGzC|KzFrFrCvDnBjE|BfDdB??h@XBBbB|@vFrCxBjAdDbBhAh@lLhGhB|@dB`ApDfBJHLFdEzBjBbAXN|CzAv@b@`@R??pB~@nAr@fA`@j@NF?t@LpJtAb@FdANtG`AdBRlEd@nAJf@Fj@B??D@vBNdBP~AJj@@^BbA@p@?v@AdA?|C@lBDr@BdBDhBBv@A^?`AI|@ElAKxCYVElAIjAG~BMXFn@A`@GfDQ|GWlAClBK~BKlBMbAG|CIfA?fADdCAv@E~CJ~BD`@?fDMv@Iv@GbC[|B_@|Bg@f@IVIpBa@bASlCo@j@I??^Il@?VFRJf@ZbAlAb@l@TRPTZVTJpAp@~BfA\\NhD|Ax@^jAr@~@p@`ChB|ApApCnC|A~A^\\NN??v@v@j@l@b@l@n@hAdAxB`@fAh@pAj@lA\\f@RP??l@l@jB~AjAbA|ApAlBbB\\VrDhCnAx@zBxAxA~@^Vh@^~@|@z@`At@l@V^j@z@^t@v@dBj@nAzBrE\\v@??p@bBbCtFp@zA^bAxAhE^fA`@nA??d@xA|@tCXr@N^x@hAf@^RLt@ZxC`A`APbAFfCB|BFpB@??h@@x@H~@Rx@ZbAl@\\Vl@l@p@h@b@Z\\L`@Jj@DvADvABf@D`AFlATh@L??@?b@Tl@b@t@j@p@Nl@B\\CNAV?pBAd@JnA\\j@b@zAhAHDtB`Av@^??j@XhAb@n@PTBl@D`@?lB?d@CfAA??Z?bAChA?l@@v@DH@b@Hh@Px@d@v@r@l@n@|@jAj@f@HLZd@`@n@??RZ^x@FH^l@Vd@^\\|@n@b@XfAl@tAf@HBfB`@XF??|AV`A\\x@f@jA|@f@\\HD??NF^Jj@Bh@Al@GtBa@|Bi@t@Sf@QTQFC`@a@\\Y~@y@PIREPCVEJ?dACdA?lCI~@Kp@MhAMbBU|AOt@Kv@K`@C\\AZBx@NDWP{GrASjBOIoAP]QuBc@FUoDsFx@_@?"
+  },
+  {
+    "id": "730194",
+    "lineKey": "Bus",
+    "routeId": "73",
+    "name": "Harvard Station, Upper Busway - Waverley Square",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@G}@Gs@??AIIe@Qa@a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNLRDF`Bm@t@[bAUxBo@d@ONBf@HNFLHf@V`@`@Rj@Lx@BXL~ATlAT|@P`@Xb@[`BQv@W~@[lA]jA??K\\U`ASv@ELQp@e@hBi@jBGf@??Mx@G`BSvGEvBYtK??AVGtBCpAGlBCzAE|AKjE??AXErBG~AKhF?h@???d@Dv@DTT|BDf@LxAItAGbAKvAGt@??OlBo@~GMpBEhA?J??@fA@xADrCB`@?hAB\\Al@Ft@Bh@NpBLpBX|DFp@??T`DFl@F\\DXBpACn@WlCGhACf@??Q|DC`AE|@OrCCf@??EdAATCt@AVEx@Ez@EXId@Mn@YnAOj@U|@_@`BEV??I`@e@~BIf@_@lCe@xCET]fCAR????Cr@EhBAj@ErBA`@E|B???HARAx@I~AEn@Ex@Gp@OxBAJO|B??CVu@lIa@pEKn@ETAF??Mh@i@lAsAdC_AnBq@lA_@r@q@tA??MVi@fAyC`Iq@fB]`AUx@??ADK`@s@jDcApFAF??g@nCKf@Wz@Ql@[r@KTUd@]f@??A@[b@mBtB{AbBuB`Cs@v@??ML[Z]b@e@z@Ud@Qb@Wp@I\\Kb@??K`@i@vBiAdEo@fC_@tA_ArDOt@??QbAUlAs@vDb@rA`@hA"
+  },
+  {
+    "id": "740097",
+    "lineKey": "Bus",
+    "routeId": "74",
+    "name": "Harvard Station - Belmont Center",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@Cg@??CUI}@Ie@Qa@a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNLRDF`Bm@^PN^DX?LEZGLqAzDi@xA_@lASf@QVk@h@SP??WTaAv@aAz@s@j@a@\\u@h@kAjC??KRs@zAcA`C??IT{@bBoBpEMV??IRqBpEUd@??ITm@pAa@t@]n@]v@_AbB]v@??Ub@k@vAk@`BsAtDOb@aBpEGP??m@dBaB|E_ArCaArC{@fC??IXgAzC_AnC??GTg@vAUt@c@tAKTCLGZY`AKT??EHe@z@a@v@aAfBOPKJUPWJUD[DQHIDKLERCTF^DT?VATE`@QdAUlA??i@rCMjAYtBq@rFOv@Ih@????[rCWdC]bD??CT]tEYrEQfC??OnBKx@o@tJ??UpDCf@?LCr@c@hGSnB]|CETWpA[zA??ETO~@c@bCo@jDe@`C??AHw@|De@bCiBfJKj@??cAhFoBhJ??ETwBdKw@bEAF??uA`ICP?N@VLlDDTPLPJRFTBHIBIAICIs@w@Yk@IQGWIs@D[H_@f@gCDW"
+  },
+  {
+    "id": "7410062",
+    "lineKey": "SL",
+    "routeId": "741",
+    "name": "South Station - Logan Airport Terminals",
+    "polyline": "i}naGp_upLOMuAkAW]aBaEMYEQEMCOAM?U?U?WpByZPqBH]Ng@zBgG??fC_Hp@u@RY\\[pAaAHCbGc@r@]h@o@d@e@b@m@`@eAFS??lCiJFUt@yBNm@Fq@Au@?o@?cBCyA@c@???i@@MBKz@uB|DrDNPJRN`@HXBV@X@^CZI^I\\g@dA}@pBo@nA]t@Uj@sC~HUXu@`A[\\[f@o@~AQp@QdAGz@Av@@x@Hh@JNJFJ@NANIFMDQAy@DeAF}AJeATeB`ByHdAmF`@kBT{ALmAFcABiA@eB?_BAO??QoBOqA[aBUiAe@wAc@qA_ByDs@{AcAmBeBoCoAeBm@w@q@u@u@w@}@{@}@w@cAy@{@m@aAk@}A}@yBmAaYaOoAm@o@Wm@Um@Wm@UoA_@m@O{AYw@M_JuAgDi@wAO_BOoDS[Aw@Am@?eBDs@FaAJ??A?q@Jm@LuG~AgBXa@Je@RMHONQVQXYx@G`@EZAd@?R@T@TFXFXJVLTXZHHLFXHXD\\?LCPEPGNKLK^i@HSNc@vAcF@ENe@rB{GPi@FSHg@DS`AkEDMFMFIJIRE`@@LALGHQHSpByF"
+  },
+  {
+    "id": "7420075",
+    "lineKey": "SL",
+    "routeId": "742",
+    "name": "South Station - Design Center (PM Route)",
+    "polyline": "__oaG`~tpLo@i@W]aBaEMYEQEMCOAM?U?U?WpByZPqBH]Ng@zBgG??fC_Hp@u@RY\\[pAaAHCbGc@r@]h@o@d@e@b@m@`@eAFS??lCiJFUt@yBNm@Fq@Au@?o@?cBCyA@c@???i@@MBKz@uByCoCBM?YBODMx@o@jBcB??HML]`BmE|AoEzAkE??JWhAz@EqJ"
+  },
+  {
+    "id": "7430059",
+    "lineKey": "SL",
+    "routeId": "743",
+    "name": "South Station - Chelsea Station",
+    "polyline": "__oaG`~tpLo@i@W]aBaEMYEQEMCOAM?U?U?WpByZPqBH]Ng@zBgG??fC_Hp@u@RY\\[pAaAHCbGc@r@]h@o@d@e@b@m@`@eAFS??lCiJFUt@yBNm@Fq@Au@?o@?cBCyA@c@???i@@MBKz@uB|DrDNPJRN`@HXBV@X@^CZI^I\\g@dA}@pBo@nA]t@Uj@sC~HUXu@`A[\\[f@o@~AQp@QdAGz@Av@@x@Hh@JNJFJ@NANIFMDQAy@DeAF}AJeATeB`ByHdAmF`@kBT{ALmAFcABiA@eB?_BAO??QoBOqA[aBUiAe@wAc@qA_ByDs@{AcAmBeBoCoAeBm@w@q@u@u@w@}@{@}@w@cAy@{@m@aAk@}A}@yBmAaYaOoAm@o@Wm@Um@Wm@UoA_@m@O{AYw@M_JuAgDi@wAO_BOoDS[AeDQi@?U@mAHUD??u@JmFbAuAXM@M?OCGAKMI[KJg@f@qAjBc@TSDW@O?QCw@[wAk@UBq@dA_@n@[f@aObPSPQNUJSDSBU?c@C]AmBMEj@LH??rAbARINI@AHKBUCq@]AmBMsAIc@MMIKK}CuDUYKS]s@IQY]mDoEyAq@]SUQoAnCcJeGkEqF{E_GOKKAQ?I@KFMJmApAc@a@m@a@]Sm@YcA]w@Qw@Ig@D}Al@aB~@_B|@qDvBOpAuB[SH??qLrEk@d@]XWRi@X_G|C[RYT]Z]^}@z@m@|@Qn@]nAYdACFCAQr@Y|@YpAWzAOn@GVmD|Y??mFvc@"
+  },
+  {
+    "id": "7460035",
+    "lineKey": "SL",
+    "routeId": "746",
+    "name": "South Station - Silver Line Way",
+    "polyline": "__oaG`~tpLo@i@W]aBaEMYEQEMCOAM?U?U?WpByZPqBH]Ng@zBgG??fC_Hp@u@RY\\[pAaAHCbGc@r@]h@o@d@e@b@m@`@eAFS??lCiJFUt@yBNm@Fq@Au@?o@?cBCyA@mATBFBBF@LAd@ANCJOd@I`@?j@"
+  },
+  {
+    "id": "7490040",
+    "lineKey": "SL",
+    "routeId": "749",
+    "name": "Temple Place - Nubian Station",
+    "polyline": "sooaGhjvpLaAzBXXb@`@d@\\NJz@`@|CnArBp@\\J??b@LjCf@`C^zBd@VoGHgBx@\\f@XjBv@??vAj@hAZfCd@rB\\~ATpCd@\\D??F@v@Np@N\\NzCvAr@^tC`Bj@XDB??h@ZRRd@l@b@l@h@p@hCjDT^Xf@LXPh@J\\|@jDNd@Tn@hA~Bp@jAR\\??lAtBvAfCrC~ET\\??bAdBbBhCzAdC\\d@??bA~AvAzBJNV^??bAxA~DjFRT??~@nAFF~@|ANTd@p@l@r@XXTRlBnALHXJTF??VFt@Z`A|@d@h@jAvA|@dAn@t@\\h@NZXjA^`AX`@TR\\XJqB"
+  },
+  {
+    "id": "750121",
+    "lineKey": "Bus",
+    "routeId": "75",
+    "name": "Harvard Station - Belmont Center",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@Cg@??CUI}@Ie@Qa@a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNLRDF`Bm@^PN^DX?LEZGLqAzDi@xA_@lASf@QVk@h@SP??WTaAv@aAz@s@j@a@\\u@h@kAjC??KRs@zAcA`C??IT{@bBoBpEMV??IRqBpEUd@??ITm@pAa@t@]n@]v@_AbB]v@??Ub@b@p@l@v@t@fAj@r@Vt@@l@EjAIrAK|B?Z???T?ZF~ALdDHvCJvCHfC??@ZBf@HvAVrBV`CFd@??f@tEh@lEl@pFFd@??LbAb@~AJj@Rp@f@jA`@n@l@x@\\h@JV??JV@BTbABTD|@B|@Il@Ef@Q~Ao@lHG\\Ml@CJ??KTKPe@x@_@l@Sx@MbAGnAE`@Kj@Up@w@lAS`@Od@CRG\\??CROf@Wd@k@x@_@n@Un@O|@i@tDQnAWhAs@bCKd@Y^S@UBUF[L{BrAWPgCxA}@d@oBhAwCbBs@l@u@\\INIZCV?l@}BF??U@}CBmDK]A??sHWo@GgCQMC[zA??ETO~@c@bCo@jDe@`C??AHw@|De@bCiBfJKj@??cAhFoBhJ??ETwBdKw@bEAF??uA`ICP?N@VLlDDTPLPJRFTBHIBIAICIs@w@Yk@IQGWIs@D[H_@f@gCDW"
+  },
+  {
+    "id": "7510045",
+    "lineKey": "SL",
+    "routeId": "751",
+    "name": "South Station - Nubian Station",
+    "polyline": "_znaGvbupLDS{Ao@UKm@a@c@xBSp@HPLf@v@pENr@L^L^Xp@Vb@\\d@b@b@j@`@f@Vd@NtAb@??lBj@_@fBe@~Bc@bCUxAGb@AJG^O|Bx@\\f@XjBv@??vAj@hAZfCd@rB\\~ATpCd@\\D??F@v@Np@N\\NzCvAr@^tC`Bj@XDB??h@ZRRd@l@b@l@h@p@hCjDT^Xf@LXPh@J\\|@jDNd@Tn@hA~Bp@jAR\\??lAtBvAfCrC~ET\\??bAdBbBhCzAdC\\d@??bA~AvAzBJNV^??bAxA~DjFRT??~@nAFF~@|ANTd@p@l@r@XXTRlBnALHXJTF??VFt@Z`A|@d@h@jAvA|@dAn@t@\\h@NZXjA^`AX`@TR\\XJqB"
+  },
+  {
+    "id": "760175",
+    "lineKey": "Bus",
+    "routeId": "76",
+    "name": "Alewife Station - Lincoln Lab via Hanscom Civil Air Terminal",
+    "polyline": "ciwaGdweqLFCLFFP?PIJ{F|BMDf@~CFVa@NMCGGqAgJKcASyAIOKKCAKAKBq@POHMNITGVA^AhAC|AB`@[zCoAdGo@bDeA`FWdA??]~AaBbIuBfKoBpJk@rA[x@u@bBs@bBi@fAeAdCe@hAa@v@UX??MPUd@M^}@~Ci@bBwApDKVw@~BmAnBYx@g@`Bm@`Ci@xBe@dBq@pCOdAG`@S~@??CL[nBgAfFq@lD]~AS~@q@fCUx@m@vBe@~Ao@xBg@|Ag@~Aa@|A[zAYbB_BnIKd@??ETa@rBe@tB]bB??SbAWxAQnAGf@??K`A}@~IGn@??AV_AdJ??CXUlB[pB_@jBKd@k@bCCN??q@dCsDzNk@|B}AnGk@vBi@lBm@fBg@tAYl@EJ??GL[x@O`@St@i@rBy@dDKd@??_@`BUlAQjAI~@Kp@C\\[lBCL??GXq@vDkA~GId@??Id@UbBUpBOpAMz@Qh@MZa@f@m@f@{@l@WN_@ZQRQ`@IZGXAj@BbAHl@Hf@^`BDP??Lj@HRF\\@T?XAPE^Id@_@z@Qf@GR??{@dC_@jAYr@OZS\\o@x@KNe@^YT]Ra@Nw@Pu@HkAD}@GcAY[Ss@a@q@]s@Os@Qy@Qg@SIC??YIoAq@{@Si@GcBGk@Gy@OoFoAiAU??w@Q}AWe@SMGOMEEEIQWQXm@n@??UV]R}@f@KDm@R}@Zw@TWHOB}AXy@LI@??YB[Fw@R]Nw@Z_Af@eAj@s@`@mAl@SNWNu@r@o@v@Wb@u@dAYh@??ABk@rAUb@}@zBEJo@jAIHi@d@a@T??{@d@w@^e@LaANkDV_ANcAVu@VwAb@u@V]J??i@RYNe@h@UZSd@Ux@Sl@IV_@nAi@tAs@bBINS\\??Yf@q@lAk@|@wA~Bg@x@??eAdB{AbCe@r@{@pA_@d@e@h@UX??e@j@c@d@w@x@_@h@Sb@EFUr@Mf@CJEX??Y~Am@fEQrA??Gh@OrAUfASbAU`AGTi@tA[p@iAnCYp@e@dAMZ??Sd@u@fBc@bAU\\GF?h@Qx@mAlEUdAQnAGrA?h@?l@DlBFdB@f@??D`B@nB@bAF~@Hv@f@rDlAA~@Ev@Dr@B|AX??d@JlBb@hATfA@rAIlA]\\O`@Wr@o@r@y@~EgGjGuHx@cA~@sA|@sA@A??FMTR|AhAl@VPFbBh@~@h@p@l@`A`AjAnAZVTJTL^D`@@hDUdAITCx@K@r@Br@BX??JjBJnALvAXhBF`@??BJv@zDfAzFJb@??jA~FL`A@`@Et@YdBOz@??a@|BqAfH_@jBIj@UrBE^??Gl@SfC??Gr@Kn@GVIRMNSVMLsEbEyAnAk@b@WPo@ZcDnAuBt@_@NUL[LSJA@??UPSX_@`@[h@aApAWX??c@f@w@dA[h@CFc@bAK^??Uz@Wt@O`@S|@WlAiBzIkBdJy@vD{@nDENUtAQn@]dAEH??ILa@p@_B~BmBrC{GvJi@z@Sb@ADQr@U~AUpB[zCGf@WfD[fFYhDKpAq@hIQpCAhAM|EInDSdGEdB@h@Bn@P~BXlCJpADvA?tG@zG?`DB~DKn@ETIR]b@]Tk@VaAj@_Al@oBzAuGlF}@n@}@f@cA^iAXeARu@Fi@@a@@k@B_@PiAb@uBZu@N??_ATqAb@y@P_@EKSMES@IJILeCf@_Bd@y@`@[LuAd@gDzAa@Ni@Ny@HI@g@B}@C}@GWAcAM}BSKlC??E`AbBPfBhBL]PiG|@F|@Bf@CHAx@Ih@O`@OfD{AtAe@ZMt@MzA]rA[??TGf@HDJNHN@LGJOb@MxC{@hFw@vAOtDe@v@M|@UjAa@hAk@fAu@vCaClC{BxC}BbBeATU\\SVGPOAuBC_E?aDA{G?uGEwAKqAYmCQ_CCo@Ai@DeBReGHoDL}E@iAPqCp@iIJqAXiDZgFVgDFg@Z{CTqBT_BPs@@ERw@B[Gu@Cs@KgA]aBe@qAwAqDuBqF]}@Sm@UwAGsB@_@Bo@Fo@Lq@Ry@\\s@h@_AvCsEh@mAYKc@Me@Gm@Cm@?_AJ[Hk@J{Aj@q@b@SP[Xc@h@Yb@a@`Ag@tAa@nA??CBqA`E}AxEaBbFOZ??MVUd@[d@o@r@YTm@Zo@Tk@Ji@BiACkAK??QCyAMo@?q@FuAZuDlAcA\\eATC?e@Be@?SCi@K??A?EROPc@p@GHEJITCRAT?RDRHPHPLLl@`@LLHJLTLVL\\H`@Hn@}@Rj@`F|@YQwA"
+  },
+  {
+    "id": "760177",
+    "lineKey": "Bus",
+    "routeId": "76",
+    "name": "Alewife Station - Lincoln Lab",
+    "polyline": "ciwaGdweqLFCLFFP?PIJ{F|BMDf@~CFVa@NMCGGqAgJKcASyAIOKKCAKAKBq@POHMNITGVA^AhAC|AB`@[zCoAdGo@bDeA`FWdA??]~AaBbIuBfKoBpJk@rA[x@u@bBs@bBi@fAeAdCe@hAa@v@UX??MPUd@M^}@~Ci@bBwApDKVw@~BmAnBYx@g@`Bm@`Ci@xBe@dBq@pCOdAG`@S~@??CL[nBgAfFq@lD]~AS~@q@fCUx@m@vBe@~Ao@xBg@|Ag@~Aa@|A[zAYbB_BnIKd@??ETa@rBe@tB]bB??SbAWxAQnAGf@??K`A}@~IGn@??AV_AdJ??CXUlB[pB_@jBKd@k@bCCN??q@dCsDzNk@|B}AnGk@vBi@lBm@fBg@tAYl@EJ??GL[x@O`@St@i@rBy@dDKd@??_@`BUlAQjAI~@Kp@C\\[lBCL??GXq@vDkA~GId@??Id@UbBUpBOpAMz@Qh@MZa@f@m@f@{@l@WN_@ZQRQ`@IZGXAj@BbAHl@Hf@^`BDP??Lj@HRF\\@T?XAPE^Id@_@z@Qf@GR??{@dC_@jAYr@OZS\\o@x@KNe@^YT]Ra@Nw@Pu@HkAD}@GcAY[Ss@a@q@]s@Os@Qy@Qg@SIC??YIoAq@{@Si@GcBGk@Gy@OoFoAiAU??w@Q}AWe@SMGOMEEEIQWQXm@n@??UV]R}@f@KDm@R}@Zw@TWHOB}AXy@LI@??YB[Fw@R]Nw@Z_Af@eAj@s@`@mAl@SNWNu@r@o@v@Wb@u@dAYh@??ABk@rAUb@}@zBEJo@jAIHi@d@a@T??{@d@w@^e@LaANkDV_ANcAVu@VwAb@u@V]J??i@RYNe@h@UZSd@Ux@Sl@IV_@nAi@tAs@bBINS\\??Yf@q@lAk@|@wA~Bg@x@??eAdB{AbCe@r@{@pA_@d@e@h@UX??e@j@c@d@w@x@_@h@Sb@EFUr@Mf@CJEX??Y~Am@fEQrA??Gh@OrAUfASbAU`AGTi@tA[p@iAnCYp@e@dAMZ??Sd@u@fBc@bAU\\GF?h@Qx@mAlEUdAQnAGrA?h@?l@DlBFdB@f@??D`B@nB@bAF~@Hv@f@rDlAA~@Ev@Dr@B|AX??d@JlBb@hATfA@rAIlA]\\O`@Wr@o@r@y@~EgGjGuHx@cA~@sA|@sA@A??FMTR|AhAl@VPFbBh@~@h@p@l@`A`AjAnAZVTJTL^D`@@hDUdAITCx@K@r@Br@BX??JjBJnALvAXhBF`@??BJv@zDfAzFJb@??jA~FL`A@`@Et@YdBOz@??a@|BqAfH_@jBIj@UrBE^??Gl@SfC??Gr@Kn@GVIRMNSVMLsEbEyAnAk@b@WPo@ZcDnAuBt@_@NUL[LSJA@??UPSX_@`@[h@aApAWX??c@f@w@dA[h@CFc@bAK^??Uz@Wt@O`@S|@WlAiBzIkBdJy@vD{@nDENUtAQn@]dAEH??ILa@p@_B~BmBrC[m@o@wASqAAcAJ_CHuAF}AF{@@u@?i@E_AGg@Ig@Ka@_@iAM]cAsCOm@OaAYBQ?[KYOOI_@SYKc@Me@Gm@Cm@?_AJ[Hk@J{Aj@q@b@SP[Xc@h@Yb@a@`Ag@tAa@nA??CBqA`E}AxEaBbFOZ??MVUd@[d@o@r@YTm@Zo@Tk@Ji@BiACkAK??QCyAMo@?q@FuAZuDlAcA\\eATC?e@Be@?SCi@K??A?EROPc@p@GHEJITCRAT?RDRHPHPLLl@`@LLHJLTLVL\\H`@Hn@}@Rj@`F|@YQwA"
+  },
+  {
+    "id": "770155",
+    "lineKey": "Bus",
+    "routeId": "77",
+    "name": "Harvard Station - Arlington Heights",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@G}@I}@Ie@Qa@a@c@g@SWG??SG_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNEQAOU`@c@`@EBC@[PeCn@g@HM@??[@cBG_BKmBIq@Eq@GyAGoAGcDQ??OAiDQoFYcCO_AEM?OA??yAIyAIeBK}AK_ACy@FiAP}@P??QDa@FSDo@La@NUFSJQJSLSP??A?URuAzAm@r@e@n@Sb@_@|@gAxCq@hBIT]fACDGL??cAhBc@j@k@n@m@v@MNg@j@WX??q@v@oBxBiArA}@fAc@f@??STSTwAbBq@t@eAnAaAjA]b@YX??w@~@MNuA~AaAlA_BhB??ST{@jAgBbCgA~Ag@x@mA`C??IR[x@}@pCw@bC[x@??e@nAGf@O\\}@tBSV??_AtAkAtAY`@mAzAMP??IJu@~@i@r@Y^cAtAa@h@w@fAe@n@KN??e@l@m@x@g@r@}@nAY\\w@hAg@p@OR??kBjCeB`CiA|AuAlBQV??Y^{AvBy@hAY`@w@fA??UZ]`@[\\k@b@u@^_ChAwBfAQH??uAr@{@b@uAv@yAz@a@`@??CBWXiApAaApAo@t@kAdBMX??a@~@[`AEPe@pAc@`BIZQr@??Sv@_@zAOfAAZAl@S`C]xECh@??]lEShCOjBMjB?H??UhCWfDOlBYxDMlAIf@Kd@s@lCg@zAEN??Uj@sAjDi@xAy@vBKRO`@??IT{@nBO^u@bBiAlCw@nBYh@??KRq@jBwA`DsBzE[b@KP??}@tAORc@l@o@~@uApBS`@IRMl@SnCEf@??AV}@`FQ`AOv@MhAEp@CvA?~AAl@???VCtBC|BC~CEbEAf@??Ad@[tDOpBAJShCy@O?]"
+  },
+  {
+    "id": "780160",
+    "lineKey": "Bus",
+    "routeId": "78",
+    "name": "Harvard Station - Arlmont Village",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@Cg@??CUI}@Ie@Qa@a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNLRDF`Bm@^PN^DX?LEZGLqAzDi@xA_@lASf@QVk@h@SP??WTaAv@aAz@s@j@a@\\u@h@kAjC??KRs@zAcA`C??IT{@bBoBpEMV??IRqBpEUd@??ITm@pAa@t@]n@]v@_AbB]v@??Ub@k@vAk@`BsAtDOb@aBpEGP??m@dBaB|E_ArCaArC{@fC??IXgAzC_AnC??GTg@vAUt@c@tAKTCLGZY`AKT??EHe@z@a@v@aAfBOPKJUPWJUD[DQHIDKLERCTF^DT?VATE`@QdAUlA??i@rCMjAYtBq@rFOv@Ih@????[rCWdC]bD??CT]tEYrEQfC??OnBKx@o@tJ??UpDCf@uCl@gAV??_@HsAXuAVc@JeAVo@L??]HqAXqB`@yA\\c@H??i@LeCj@e@Fm@LWJa@Re@j@QV]x@i@vAaAfCc@nA[x@??IRQ\\QVURi@X[PwAl@cAb@[N??YLcBr@y@d@We@g@_A??KQkDaGmAqBUe@q@qA??OY]i@g@u@KTGV{@nBWdAq@`DObAEx@Sz@a@v@a@j@S`@_@|@[~@MV??Ud@_@s@cBeCG`@S~@??CL[nBgAfFq@lD]~AS~@q@fCUx@m@vBe@~Ao@xBg@|Ag@~Aa@|A[zAYbB_BnIKd@??ETa@rBe@tB]bB??SbAWxAQnAGf@??K`A}@~IGn@??AV_AdJ??CXs@FwAL_CX??Q@eCV??A@o@@[E]Qe@a@m@}@_@i@ESCW?W@SDO?ENSLa@Da@?e@Ee@Ma@M[QC??c@KWBYJURO\\K\\Gb@@`@?B??FZRZ|@p@d@f@^b@^h@l@|@d@`@\\Ps@^{@p@{AfAYT??eA|@gEfD??UPmInG??OLoDhB}@^oA^y@PID??]NWjAUz@K~@Dl@XjAl@tBLb@??\\|@xAjEpA`DTz@Bx@AT??Cf@?DYv@o@lAYr@??IRIz@F|@`@bDFbA@zAAf@??Ap@?hAB`@Jh@BFL`@Rj@`@`Ab@x@b@\\\\Rp@f@ZZ??LL\\\\^h@b@p@b@v@Vf@Id@??Id@UbBUpBOpAMz@Qh@MZa@f@m@f@{@l@WN_@ZQRQ`@IZGXAj@BbAHl@Hf@^`BDP??Lj@HRHTHPNJPBPAf@i@j@g@PM\\Qb@S~@[\\?\\DRFPLLLPXN`@Hf@Fj@Db@?b@Ch@It@GXYt@W^SPWLMBMASESMQUIUI]Ca@EqBAaBOqB^mCP{BtAsORwBXyBHg@Ly@BQ??f@wCjAcGj@uC`@uBHe@Ji@??Pu@Nq@Rs@gCoAKd@"
+  },
+  {
+    "id": "800136",
+    "lineKey": "Bus",
+    "routeId": "80",
+    "name": "Lechmere Station - Arlington Center",
+    "polyline": "}wraG`iypLBG@QCGGGMFS\\{@lB`@^^ZLLNRgBpEiFxMMXg@tA??sBvFcBlEu@`ByAhDEJS\\c@`@]^]p@w@nB_@dAi@xACD??i@fAc@Za@Pc@Lo@LmBXyCf@SDMBa@B]?WA]IW?IB_@VsAt@e@H??KB{A^eAh@u@n@s@]_@O??ICMESIc@Uy@a@iAm@YQ??WS}@y@uBeBuAoA_@Uu@g@Kd@??w@tDg@zBWjAYtA??GTG^I^a@hB??ENa@vBKd@Sx@c@pB??GVc@xBMj@g@dCOp@??o@tCa@vBuC|C??MNwC~CkBhB}A~AeAhA??ONqBtBsBrBYP??gCfB{@p@gBnAYR??{AbAcBtAeBlAiCnBgAv@??]T{AdAg@`Ci@bCMn@??GTs@|Cm@tC??GTMt@k@bCo@lCu@|COl@Op@w@~Cg@vBAB??m@dCw@nDQp@??I^UdAw@rCOr@Gb@CXCt@AH??Eb@EPCJGJU\\Y^YR_@N????_AJiCN_Gf@gDVeAJ??m@Di@Fc@CA?aAc@cBkAKE??OICAe@Ga@HeAp@??UNqA|@iAz@}@v@aA|@y@|@{@bAsBpCeAjBeArBgArBg@x@??KPeAlBqC|Ea@r@??KRwAfCyA`CkArB??IReBxCiAlBkAnBS^??GJS^{AjC??wAbCm@fAkB~C_BlC??KR{@xAo@fAmAbC??KRgDbH??IPgBvDwC~FMX??i@pAp@xGFz@Ff@??`@bEFl@NtBVhCAD?PCP??EV?P@PD\\BT@X?V?n@@^?\\CXAV?F@JLnA@JBJTr@P^??BB`@`@rA~@p@h@p@f@jBxA\\V??~@t@tBzB~@~@FH|@lAFJJRt@pAJV??JPRl@Lf@@HD`@Bt@EbASnCG\\Ih@Mp@Sl@K\\hAdCb@t@hBfDVR^aBp@}B^mAj@mAOU}@oA"
+  },
+  {
+    "id": "830138",
+    "lineKey": "Bus",
+    "routeId": "83",
+    "name": "Central Square, Cambridge - Rindge Ave",
+    "polyline": "smqaGvv~pLDpAHdBp@uASc@GUKc@CS??Iy@MaAIe@M]g@q@_A{@_AcA[_@QM??}DcCuA_AqAy@??OKyDgC??OKoG{DWQ??OIgAq@eBgAyAcAmB`CUXc@l@mA~A??IJq@x@KpAC^i@CG?I?G@G@CBC@EDEDMNwC`EmChD??{@fAY^mA~AaBpBW`@??IL_@f@aCzC??a@h@iCjDwBlCgAzAc@h@??OPyBeDa@o@q@y@e@c@cA_@}@]aFgBWlBId@??i@xDMz@S`B_@dCGj@????i@~DUbAa@bBWx@Yv@??KTSh@m@lAUf@y@nBQ`@gA`C??gEfJ}@pBm@vAKR??}@dBqAzCq@x@??IJMRQZCLANAHAFGNKTUFSJQJSLSP??A?URuAzAm@r@e@n@Sb@_@|@gAxCq@hBIT]fACDGL??cAhBc@j@k@n@m@v@MNg@j@FZLp@@f@??BvABnBDhBGv@Kt@WdBg@zC??Ij@e@|Ca@~BM`ABj@ClA??E|BG~CEp@GfDAP???VKlESlEA`@??EnAAh@QpEmA?GMIKM?M?IHEJ?NDNHDL?LEFKHO??t@?"
+  },
+  {
+    "id": "850091",
+    "lineKey": "Bus",
+    "routeId": "85",
+    "name": "Ruggles Station - Assembly Row",
+    "polyline": "czkaGxn{pLxArBBNNdAfAvA`@`@SNKLGJGHIJGLCDMZIVGRYz@q@nCg@`Bc@|AELQn@??YhAo@tBu@tCMl@Qp@Mb@ENPp@??hA|D~AlFrA|ET~@n@pB??Nd@k@pBENo@`C]nAqAtEYz@g@dBm@|B@@m@tBSp@Qf@e@bA??O\\iCnFw@{@??uA{AwB}B[_@YY??iBoB_B_BmBqBmBuBKM??KMu@w@OOo@q@aBxBq@h@y@x@s@j@SLOFc@T_@POH??[LQHs@`@kDvAYLoAb@??KDmAb@iAf@iAd@YNc@`DCLi@tI???@I`@MZGLGH]XQDc@JeBJ[BODQDq@v@En@Cn@??QxCqAMsAMsDUq@GqAKw@Ia@GUOGGMc@NqAPgBDa@?IDm@?e@A{ADiC?_ABkACyAK}EIwBa@Fa@Dg@D_@LcA^YPMJe@j@Ww@_AyBg@qA??aAmCgCeGmCiHaBsEq@aBu@gB??c@gAiAoCWo@kCsGuAmDyAkD??Ui@wCuHkA_DuBoFGSQYIGQESOyAU??WEmGgAKCA\\M`@{@vCw@rCWUKAKB_@f@{AlBs@~@??e@p@m@r@cBzBw@dAa@f@aBtB_AnAgBzB??OPqBjCeHkDq@Yu@]qAo@o@[o@[??SI_AMoATeCj@aDr@uCl@eB^??wBd@_Ak@YSQKSMsA}@oAu@??i@]]Sw@c@i@Wa@YOUAa@?k@HaADqBAe@??AYKeAQkAw@uCBiC???S?YCUI_@OUOQs@]U]a@eAEMAMw@{DY{Ac@yC??CSK_AGm@UoCKmAKgB??Eg@S{CYgCMuAMwAEe@??KoAAMMwAKuCKuAAOE[??OiAUoAaAgD}@kDIYKi@w@_DGWw@Dm@CKA}@JE?CD??kAvBDLDNF?fE???f@@FIBKi@}BWOm@CKAc@Cq@M}Ac@w@~B]t@g@j@wAhBmAxAILiA|AYk@WQa@?w@B}BHo@@c@Fa@Ha@Pk@Z[VkAtAcApAeDhEQRQNULc@T[J_@HyDr@??{@N_Et@w@N"
+  },
+  {
+    "id": "860191",
+    "lineKey": "Bus",
+    "routeId": "86",
+    "name": "Reservoir Station - Harvard Station",
+    "polyline": "iqkaGhkgqL?t@]x@EJSb@Yb@OPg@n@e@Ta@Ve@l@qAfB_AlA??Y\\sBdCm@n@a@ZUX??Y\\gG~Ge@b@KFMBO@Q?QC[Mc@W??oBiAeAi@y@e@wCeBaAk@w@_@QGa@C_@?UB??M@k@FY?a@Ga@M]M_Bm@SKSIIAICKAYA]@O@a@H????q@TQLsAx@}AbAy@^SF[@]A_@Ee@UIE??YQa@W[QQGs@E_@A??a@CYQ}@s@[Ui@[cCwAuAw@}@c@YQ??a@UwBeAeAm@{As@q@a@w@c@c@S??YMsAu@e@Wk@_@uAu@_@S??kBgAgDeBgAi@??OI{EeC_Ae@{A{@??ICmE_CUM??kAo@yBoA?]Ec@M{@W}BCQ??c@}DWyBg@uE??i@iFUsBKoAI_A??UkCS_EG{@U_ECU??YaEUyCGu@K_BAk@@cBHwAPwAFe@??Fm@Lu@@}AGiBGcBEs@[]_@m@[g@??iDeFmAmB{BiDYc@Y[CGu@_AgAkAkAgAk@m@WU??w@w@iD}Cg@c@q@i@m@g@}@u@qB_BaCmBoAcAUQ}AgAg@f@{@x@]T??GDMDQBGl@g@fB_AtCU[kAo@ZmAJa@??J]SWQ[Os@C}@Es@@q@Ck@G{@G}@I}@EY"
+  },
+  {
+    "id": "870212",
+    "lineKey": "Bus",
+    "routeId": "87",
+    "name": "Lechmere Station - Arlington Center",
+    "polyline": "}wraG`iypLBG@QCGGGMFS\\{@lB`@^^ZLLNRgBpEiFxMMXg@tA??sBvFcBlEu@`ByAhDEJS\\c@`@]^]p@w@nB_@dAi@xACD??i@fAc@Za@Pc@Lo@LmBXyCf@SDI`@@XTZp@KtFw@vAUp@WyAbECH]rA[pAq@dC??GVs@vCa@bBa@|Ag@pBcAlDQh@??Qj@Kh@A@Qx@Mh@q@dAUTKHA@??ONqAr@w@^y@l@a@TW^MRCP?JAJ@P@N@JFTNrAFz@LbBLpBOp@??Kd@o@tC[rAI`@??I\\m@bCi@jCm@fC??ETUnAWhBM`Ag@pDWlBId@??i@xDMz@S`B_@dCGj@????i@~DUbAa@bBWx@Yv@??KTSh@m@lA]\\mAnAWXa@b@k@f@YV??cDnC{ChC??MJqAdA{@t@kAjAi@d@[Xq@v@QL??MHaB`B{@~@gAfAiAxASVc@h@SR[X??MJ{AtAwAnAIH}@j@eB|@??_@Rs@u@m@k@WY{@}@eBiB{ApEgAk@??c@Uo@jDI|AQrA??Kt@b@ZCn@}@h@qDrCi@`@q@j@eAt@eBpAYT[V??mBvAqBxA{BzAA@g@P??gBp@cCv@wAj@UL}@b@IV??Up@q@fBa@dAMP??INcA|AsApBeAzAY`@????w@jAUn@g@hAOd@??MZ_@bAGPk@rAGPAB??Sh@gApC[~@Wx@i@vA??GRq@hBc@hAe@pA??ITs@jBg@nAc@lAO`@??kAzCGP_@bAo@`B??IRaAhCaAhC{@|B??IRsA|DaA~C}@tC??Y|@y@fCw@hCY`A??_@nA_AtCy@jC}AhF"
+  },
+  {
+    "id": "880174",
+    "lineKey": "Bus",
+    "routeId": "88",
+    "name": "Lechmere Station - Clarendon Hill",
+    "polyline": "}wraG`iypLBG@QCGGGMFS\\{@lB`@^^ZLLNRgBpEiFxMMXg@tA??sBvFcBlEu@`ByAhDEJS\\c@`@]^]p@w@nB_@dAi@xACD??i@fAc@Za@Pc@Lo@LmBXyCf@SDMBa@B]?WA]IW?IB_@VsAt@e@H??KB{A^eAh@u@n@g@`@IJy@|@gAl@WTQJWHe@HOHGHMV[b@SPSb@UTSRc@fAM^??IRi@nBm@tB??GTuAvE}@|Co@xB??Qj@_A|Du@|C??EToAlFUbAq@tC??IXs@vCu@~Co@pCGR??s@|Cu@|C??GVi@lBc@zAs@nBk@|As@pB??IRcAxCu@vB??IRgA~Cs@pB??IRaAvCgAtCMb@??o@tBkAlDMb@??}@hCw@dCy@~Bo@vBO`@??i@|A[|@gAhDcAbD{ApEgAk@??c@Uo@jDI|AQrA??Kt@b@ZCn@}@h@qDrCi@`@q@j@eAt@eBpAYT[V??mBvAqBxA{BzAA@g@P??gBp@cCv@wAj@UL}@b@IV??Up@q@fBa@dAMP??INcA|AsApBeAzAY`@????w@jAUn@g@hAOd@??MZ_@bAGPk@rAGPb@J`@CZYPo@AMOO"
+  },
+  {
+    "id": "890236",
+    "lineKey": "Bus",
+    "routeId": "89",
+    "name": "Sullivan Square Station - Davis Station",
+    "polyline": "geuaGx`ypLpC@FIBKi@}BWOm@CKAc@Cq@M}Ac@w@~B]t@g@j@wAhBmAxAILiA|A~@tCT^XNVPYrBo@hDUnAGX??CLYxAMd@Mr@AH_@lBYlAc@hB??I^UbAW~@i@bBQZ_@pAWr@_@`AM\\??IVgAtCWp@K^]`Ay@bCS`@mAhD}@zBg@nA??IRg@nAs@tAe@x@u@bA[f@??s@hAc@`A_@~@o@pAo@hBYn@a@bAm@tACB??e@jAm@tAa@`Ao@zAc@z@y@rB??AD_@|@eA~Dk@hBa@lAg@|AWx@y@lC??ITAFg@xBc@tBq@vCWdAg@`C??Op@g@`Ci@bCMn@??GTs@|Cm@tC??GTMt@k@bCo@lCu@|COl@Op@w@~Cg@vBAB??m@dCw@nDQp@??I^UdAw@rCOr@Gb@CXCt@AH??Eb@EPCJGJU\\ERCJ@L@PBRHLJHLDLBXAF?P@NFFDVZPV??DFlBtCzAhCh@vA`@nAPf@??p@xBR`@P^Xb@X\\XNf@VtAr@~@d@^Pl@X??VLb@Zt@N^U^SpB}@h@_@??lAw@^Sr@eAn@gAm@k@WY{@}@eBiB{ApEgAk@"
+  },
+  {
+    "id": "900130",
+    "lineKey": "Bus",
+    "routeId": "90",
+    "name": "Assembly Row - Davis Station",
+    "polyline": "_fwaGl_zpL|Ck@tCi@??h@KtFcA^IZKb@UTMPOPSdDiEbAqAjAuAZWj@[`@Q`@Ib@Gn@A|BIv@C`@?VPXj@~@tCT^XNVPVPJg@??b@wBToALq@@KXuARk@\\y@Te@NWf@VFD\\Pz@f@xAA??pA?^CM{@G_@i@}BWOm@CKAc@Cq@M}Ac@w@~B]t@g@j@wAhBmAxAILiA|A~@tCT^XNVPYrBo@hDUnAGX??CLYxAMd@Mr@AH_@lBYlAc@hB??I^UbAW~@i@bBQZ_@pAWr@_@`AWt@TFZP??tAv@zA|@\\J~@h@??NJxBnAr@\\nAr@??NHt@f@^TtAnAtBdB|@x@`@X??NJhAl@x@`@b@TRHLDVJ??PFFR@F@NAHAHEJy@|@gAl@WTQJWHe@HOHGHMV[b@SPSb@UTSRc@fAM^??IRi@nBm@tB??GTuAvE}@|Co@xB??Qj@_A|Du@|C??EToAlFUbAq@tC??IXs@vCu@~Co@pCGR??s@|Cu@|C??GVi@lBc@zAs@nBk@|As@pB??IRcAxCu@vB??IRgA~Cs@pB??IRaAvCgAtCMb@??o@tBkAlDMb@??}@hCw@dCy@~Bo@vBO`@??i@|A[|@gAhDcAbD{ApEgAk@??c@Uo@jDI|AQrA"
+  },
+  {
+    "id": "910160",
+    "lineKey": "Bus",
+    "routeId": "91",
+    "name": "Central Square, Cambridge - Sullivan Square Station",
+    "polyline": "smqaGvv~pLDpAHdBp@uASc@GUKc@CS??Iy@MaAIe@M]g@q@_A{@_AcA[_@QM??}DcCuA_AqAy@??OKyDgC??OKoG{DWQ??OIgAq@eBgAyAcAqAu@_Ai@{AmAw@c@??g@YqBkAu@k@{DcCsA}@mAs@u@e@??q@e@_Ak@YSQKSMsA}@oAu@??i@]]Sw@c@i@Wa@YOUAa@?k@HaADqBAe@??AYKeAQkAw@uCBiC???S?YCUI_@OUOQs@]U]a@eAEMAMw@{DY{Ac@yC??CSK_AGm@UoCKmAKgB??Eg@S{CYgCMuAMwAEe@??KoAAMMwAKuCKuAAOE[??OiAUoAaAgD}@kDIYKi@w@_DGWw@Dm@CKA}@JE?CD??kAvBGZ?NFD\\Pd@X"
+  },
+  {
+    "id": "920183",
+    "lineKey": "Bus",
+    "routeId": "92",
+    "name": "Downtown - Sullivan Square Station (Detour)",
+    "polyline": "eyoaGjkupLNBGmBC}AG_AIs@[^sAnA??A@UN[D_ARwAZ{@T??OFa@CmFbA_@H??iDr@w@\\s@ZGF??c@^k@f@s@n@q@yCGUK_@Oa@IMQQSII?Yj@}AhBqB|AYTQ@??e@B_BFgCJi@DiBFg@D[@QHc@TyNbJ{@j@eAv@]\\QRSVMVWf@Sh@uBeD]g@u@qAQLwAp@eAh@_@Pm@p@i@p@??KNe@r@w@jAiAdBg@z@a@l@i@`A??EHc@t@c@dAOZg@v@}@pA]d@eA`Bo@~@??ORg@x@e@j@kApA[^c@f@W\\[`@??ST??]`@_AbAs@v@gAfAsApAa@`@C@??y@x@}A|Am@j@m@j@??ML]\\qAx@m@Va@Pg@Nm@N_@Fa@DSAMA??A?o@Q_@dAg@v@e@LOFi@f@QL??C@YJwAOKLMZQb@CZ?\\J\\PXp@VtAf@HFd@XRRJJJPHVn@pCw@Dm@CKA}@JE?CD??kAvBGZ?NFD\\Pd@X"
+  },
+  {
+    "id": "930267",
+    "lineKey": "Bus",
+    "routeId": "93",
+    "name": "Downtown - Sullivan Square Station via Navy Yard",
+    "polyline": "eyoaGjkupLNBGmBC}AG_AIs@[^sAnA??A@UN[D_ARwAZ{@T??OFa@CmFbA_@H??iDr@w@\\s@ZGF??c@^k@f@s@n@q@yCGUK_@Oa@IMQQSII?Yj@}AhBqB|AYTQ@??e@B_BFgCJi@DiBFg@D[@QHc@TyNbJ{@j@eAv@]\\QRSVMVWf@Sh@uBeD]g@u@qAS[??{BwD}@oAeAiAk@m@MOGI??sAcB}@mA_AoAg@{@c@_A??KQVa@`@o@r@w@z@_A{@iB??GQyAoCe@eAiAqB_AkBS_@??gAmByAmCeAnAy@z@w@`AWH??i@RiAd@Wh@LLz@x@t@p@rAtATVxCbDzB`CWb@a@z@MX]~@CDU`@??KR]tBCLUx@cAhEW~@YbAI^??Qr@WhAWhAYnAY`AUz@Md@??IVMh@q@hDg@bBGNa@~@??KVk@tAg@pAiArC??IRu@hBi@rAa@bAc@dA??ITGPcAjCw@lB??M\\GJ_AdCm@zA??KVq@dBM\\{@vB_@bA??Wp@_@dAg@v@e@LOFi@f@QL??C@YJwAOKLMZQb@CZ?\\J\\PXp@VtAf@HFd@XRRJJJPHVn@pCw@Dm@CKA}@JE?CD??kAvBGZ?NFD\\Pd@X"
+  },
+  {
+    "id": "940204",
+    "lineKey": "Bus",
+    "routeId": "94",
+    "name": "Davis Station - Medford Square",
+    "polyline": "wqwaGz~aqLKt@eAg@_@Q_Ae@uAs@g@WYOY]Yc@Q_@Sa@cAaDQk@??Oc@i@wA{AiCmBuCIM??MQsA{B?CKYOQEAI?SLY^YR_@N????_AJiCN_Gf@gDVeAJ??m@Di@Fc@CA?aAc@cBkAKE??OICAe@Ga@HeAp@??UNqA|@iAz@}@v@aA|@y@|@{@bAsBpCeAjBeArBgArBg@x@??KPeAlBqC|Ea@r@??KRwAfCyA`CkArB??IReBxCiAlBkAnBS^??GJS^{AjC??wAbCm@fAkB~C_BlC??KR{@xAo@fAmAbC??KRgDbH??IPgBvDwC~FMX??i@pAEi@K]CGWa@G_@Oy@?w@J{AXeDTsCDc@??PsB@MLgCPyCBaA@q@OwA??S{BGi@Mi@[sCEg@??MuAGs@IgAGaC?}A???W@cCCqCEuDG}B?{@??AWBw@@ML{@X}@PY\\i@\\g@\\}@TmAXsD??Dg@DwAGi@Os@s@yAMy@@K?ICGKs@H]??FQXcAdCcIZeAPa@??dAcCXs@j@kAz@oBTm@Ro@N{@NwA??Fe@f@sDPw@j@{CJg@b@_CRiA??RgAn@uCRaA`DjBp@aCBu@C[EUYe@??wAqAm@]e@]_@JMRERAXGrA"
+  },
+  {
+    "id": "950345",
+    "lineKey": "Bus",
+    "routeId": "95",
+    "name": "Sullivan Square Station - West Medford",
+    "polyline": "kcuaGvaypL|A@DGDKG_@i@}BWOm@CKAc@Cq@M}Ac@w@~B]t@g@j@wAhBmAxAILiA|A}@jAk@t@??QT]h@sBpCiAhB[d@??qBpCc@l@{@nAc@p@u@jAs@|@IHu@h@k@d@_An@a@`@k@h@eAv@a@^k@d@??URo@l@c@d@g@n@{@nAo@z@UZU^Ub@Of@Of@I`@w@rEC^kAtBKNcA|AIH??MNwApBw@jA_B~Bm@~@_@h@??OTi@d@}@rA{@jA{@pAkA`B[f@Sd@o@fBc@nAm@vAi@fA{@`Bo@rA_@l@Y`@m@p@u@z@{@~@oCjC??GFGFuChCoCjCYR??IHm@j@a@`@oBhBeB|Ac@`@_@^??a@`@[XaAdAs@p@??cA~@yA~AmBhByAlA??MLgB`BmBfBmAhAWT??{BpBoAhAgB~AoBfB??MLaA~@eDxCu@r@??ONoAfAs@v@k@`@aAv@[JOHa@JSDM?}@???oCAU?}@Kk@KSGwAu@e@]WSIMEOASb@_CRiA??RgAn@uCRaA`DjBp@aCBu@C[EUYe@??wAqA{@|CwAMa@EgCI@vBFvC??@V?j@PhBLlBXzAk@zCER??Kb@g@rDW|BOz@Sn@MZ??GP{@nBk@jAYr@kApC??KR[dAeCbIYbAMd@??CHUp@AP?HDNl@l@r@xANr@Fh@EvAEf@??YrDUlA]|@]f@]h@QXY|@Mz@ALCv@@f@???j@F|BDtDBpCAhB???X?tBF`CHfAFr@NdB??BVZrCLh@Fh@b@rEA^???PC`AQxC}@z@y@dA??KNgCvCy@z@i@h@??KHCB[Ra@Pm@Jo@CqAOy@A_Cn@gAHq@C??QAgA_@qA][Gq@QcA[IGSK??OIqBcAiAu@oA_AgCaCc@a@??GGy@q@kA_A}A}@aBu@e@i@g@X_@P`@F"
+  },
+  {
+    "id": "950346",
+    "lineKey": "Bus",
+    "routeId": "95",
+    "name": "Sullivan Square Station - Arlington Center",
+    "polyline": "kcuaGvaypL|A@DGDKG_@i@}BWOm@CKAc@Cq@M}Ac@w@~B]t@g@j@wAhBmAxAILiA|A}@jAk@t@??QT]h@sBpCiAhB[d@??qBpCc@l@{@nAc@p@u@jAs@|@IHu@h@k@d@_An@a@`@k@h@eAv@a@^k@d@??URo@l@c@d@g@n@{@nAo@z@UZU^Ub@Of@Of@I`@w@rEC^kAtBKNcA|AIH??MNwApBw@jA_B~Bm@~@_@h@??OTi@d@}@rA{@jA{@pAkA`B[f@Sd@o@fBc@nAm@vAi@fA{@`Bo@rA_@l@Y`@m@p@u@z@{@~@oCjC??GFGFuChCoCjCYR??IHm@j@a@`@oBhBeB|Ac@`@_@^??a@`@[XaAdAs@p@??cA~@yA~AmBhByAlA??MLgB`BmBfBmAhAWT??{BpBoAhAgB~AoBfB??MLaA~@eDxCu@r@??ONoAfAs@v@k@`@aAv@[JOHa@JSDM?}@???oCAU?}@Kk@KSGwAu@e@]WSIMEOASb@_CRiA??RgAn@uCRaA`DjBp@aCBu@C[EUYe@??wAqA{@|CwAMa@EgCI@vBFvC??@V?j@PhBLlBXzAk@zCER??Kb@g@rDW|BOz@Sn@MZ??GP{@nBk@jAYr@kApC??KR[dAeCbIYbAMd@??CHUp@AP?HDNl@l@r@xANr@Fh@EvAEf@??YrDUlA]|@]f@]h@QXY|@Mz@ALCv@@f@???j@F|BDtDBpCAhB???X?tBF`CHfAFr@NdB??BVZrCLh@Fh@b@rEA^???PC`AQxCMfCALWvCUrCEf@??S|BKzA?v@Nx@F^V`@BFJ\\Dh@p@xGFz@Ff@??`@bEFl@NtBVhCAD?PCP??EV?P@PD\\BT@X?V?n@@^?\\CXAV?F@JLnA@JBJTr@P^??BB`@`@rA~@p@h@p@f@jBxA\\V??~@t@tBzB~@~@FH|@lAFJJRt@pAJV??JPRl@Lf@@HD`@Bt@EbASnCG\\Ih@Mp@Sl@K\\hAdCb@t@hBfDVR^aBp@}B^mAj@mAOU}@oA"
+  },
+  {
+    "id": "960174",
+    "lineKey": "Bus",
+    "routeId": "96",
+    "name": "Harvard Station - Medford Square",
+    "polyline": "_~raGfabqLUMSWQ[Os@C}@Es@@q@Ck@G{@G}@I}@Ie@Qa@????a@c@g@Sk@O_@Gk@Ck@A[?]BU?sAHg@DWDODKJMPM\\KNEQAOU`@c@`@EBC@[PeCn@g@HM@??[@cBG_BKmBIq@Eq@GyAGoAGcDQ??OAiDQoFYcCO_AEM?OA??yAIyAIeBK}AK_ACy@FiAP}@P??QDa@FSDo@La@NUFSJQJSLSP??A?URuAzAm@r@e@n@eCgEs@iA_AaBSR[X??MJ{AtAwAnAIH}@j@eB|@??_@Rs@u@m@k@WY{@}@eBiB{ApEgAk@??c@Uo@jDI|AQrA??Kt@eAg@_@Q_Ae@uAs@g@WYOY]Yc@Q_@Sa@cAaDQk@??Oc@i@wA{AiCmBuCIM??MQsA{B?CKYOQEAI?SLY^YR_@N????_AJiCN_Gf@gDVeAJ??m@Di@Fc@CA?aAc@cBkAKE??OICAe@Ga@HeAp@??UNqA|@iAz@}@v@aA|@y@|@{@bAsBpCeAjBeArBgArBg@x@??KPwA{@UM}@g@_@WqAq@UM??qAw@{BqA_@ULe@??h@sBTk@dBeGf@iBt@aC??HS~@yCVeApAaEl@qB??FOBq@Cs@OgDS{CW{C??AW{@J}@F_ABw@?e@?a@Ag@C??OAyBMs@Ck@?K[IQEMOHa@JSDM?}@???oCAU?}@Kk@KSGwAu@e@]WSIMEOASb@_CRiA??RgAn@uCRaA`DjBp@aCBu@C[EUYe@??wAqAm@]e@]_@JMRERAXGrA"
+  },
+  {
+    "id": "970111",
+    "lineKey": "Bus",
+    "routeId": "97",
+    "name": "Wellington Station - Malden Center Station",
+    "polyline": "_wxaGz}xpL??YIKA??OC]CgAIy@c@OOUMCIMOQ_@Kc@E}APoBRwAf@cDl@eEZqBb@uALc@LWNQPMPGNCT?l@?XDTDNDLFLNZTdEhFf@r@bCkE\\m@??j@eAtEvF??|BpCeE~HuDoEi@s@{BeCg@s@eEiFMe@COAQ@SD[Nc@Fi@H]Bg@AYCSIYKSKMGEKIKGIC]CUA]MMGOMKQKUOs@@UJoABW??Hw@Do@D}@FkB?eACeCKkEA]EcB?a@BiABs@Fm@J_@P]f@u@NQHGVc@DMBIDSBc@?]Ga@IYKUSWSIQGQA[AWIOGOKOSMOWg@[_@kBcBYU??_CyB{AyAaAy@YWiBeB??g@g@gAu@cA}@]WqAsAe@e@_@]??MMg@_@qAmAyAsAmBcBq@s@_CqBe@e@??MOa@[g@t@u@nA}@rAaA~A[f@W^m@~@aBhCU\\??eA~AUZcAbBwAxBU\\??a@n@}@tA[f@}BtDsArB{@tA??GLABn@|@JRN\\Rz@^rAP~@??BNRnCr@nK??Dl@mDfBg@TUJcAT]D??UB{BJgBJAf@??KtCGnAClBFhD??@`@HnEJlF@N??F~BDxCJp@PnBNrCZfGHfC}CAc@@??}A?sAAgACo@CaAK}Fk@k@Im@Kq@Oq@S{Bm@}Ac@EA??{A_@}Bu@{C}@UGcAWsAe@a@KcAIJh@RPdAX"
+  },
+  {
+    "id": "990191",
+    "lineKey": "Bus",
+    "routeId": "99",
+    "name": "Wellington Station - Woodland Rd",
+    "polyline": "wvxaGp`ypL@cAIQYIKA??OC]CgAIy@c@OOUMCIMOQ_@Kc@E}APoBRwAf@cDl@eEZqBPgAJo@Jc@J]N_@R_@Ve@bCkCr@mAKIKGIC]CUA]MMGOMKQKUOs@@UJoABW??Hw@Do@D}@FkB?eACeCKkEA]EcB?a@BiABs@Fm@J_@P]f@u@NQHGVc@DMBIDSBc@?]Ga@IYKUSWSIQGQA[ASFWT]h@Mt@ILQZ_@VaAr@GFKTc@Nc@RMB??WF[Dc@Be@Di@@SD??QDWF]Pg@Xe@NOH[Hc@Fw@FuAH]B??]@iBDmBN_@BoBJ??S@gCTsAJ??QBaBZs@Ry@T??QFcBb@q@RiB`@iBZ]HM@??SDu@Pi@VmB`AeBbA??SJmDfBg@TUJcAT]D??UB{BJgBJ_BL]F??a@Fq@NeC|@sAr@i@\\??OJkBnAs@\\WHUH??G@e@Fk@FeCDoAB??]@q@TeAb@k@ReAHgAD[A??o@AYC{@I_@Ek@Ue@U??WOg@]iAo@Yo@c@h@a@JUBSB??O@yAJiAH_@fD??CVIpAAb@ErA?x@DnCNdDDf@??J`BNhCJh@Nh@Tf@PRl@j@n@P`AJ~@@bAH`@JrAd@bAVYdAS|@Md@c@v@eBk@??mBo@Eq@e@Ko@U}@Wy@KY?S@YBgAPk@LiAP{AX??QBuCf@_BZuAT??QDN`Bl@dHNfB??BVDj@FpANhG??@VNtELtE???VbDYTxF??BVLrFAb@OpAE\\Gn@ClA@~@D~@Jr@@J??Ln@Xt@RXLPn@j@j@XPDf@BXINId@[FGJIHGHGREG[m@DEJFh@GFe@ZIF??E@YHg@CQEk@Yo@k@MQSYYu@O{@Ks@?A??E}@A_ABmAFo@D]NqA@c@MsFCg@??UiFcDXgCRK?{Bl@sA`@QD??OFQPSVq@|@g@l@??MPQR]XQJIHGHELUf@??Wl@{@dAu@bAu@fAe@h@SZ??IJk@~@aArAaAtAe@l@??{ApBc@n@gAvAaApAgBbC_@f@??MNW\\{@jAsD|Eo@x@UX??_@d@w@|@k@t@cArA[d@_@b@MN??MNy@d@m@XOFIF{CtAe@Re@Li@JqDf@mARu@LeAX_ARy@J[?U@q@Au@Gc@O_CeA_Ac@o@c@a@_@]e@Yi@Yy@k@iBOi@[{@[o@m@{@u@w@u@g@{BcBIm@?s@J_@c@e@y@A"
+  }
+]

@@ -1,12 +1,17 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { lineColor, lineLabel } from '../lib/lines';
+import { isBusLine, lineColor, lineLabel } from '../lib/lines';
 import { decodePolyline } from '../lib/polyline';
 import { buildTrackIndex, projectVehicle, sampleAlong } from '../lib/trackPaths';
 
 const BOSTON_CENTER = [42.3601, -71.0589];
 const DEFAULT_ZOOM = 12;
+
+// 176 bus route shapes drawn over the whole region is an unreadable grey web, and
+// most of them are off screen anyway. Below this zoom bus geometry is hidden and
+// only the vehicles show.
+const BUS_ROUTE_MIN_ZOOM = 14;
 
 // Movement smaller than this is GPS noise rather than travel, and animating it
 // makes stationary trains shimmer.
@@ -40,24 +45,31 @@ function esc(value) {
     .replace(/"/g, '&quot;');
 }
 
-function vehicleIconHtml(vehicle) {
+function vehicleIconHtml(vehicle, isBus) {
   const color = lineColor(vehicle.lineKey);
   const hasBearing = typeof vehicle.bearing === 'number';
   const bearing = hasBearing ? vehicle.bearing : 0;
   const heading = hasBearing ? '<span class="vehicle__heading"></span>' : '';
-  return `<div class="vehicle" style="--line-color:${esc(color)};--bearing:${bearing}deg">
+  // "B" fits inside a marker; "116" and "SL3" do not, and there are hundreds of
+  // buses, so they stay as plain dots and carry the number in the popup instead.
+  const badge = !isBus && vehicle.badge?.length === 1 ? esc(vehicle.badge) : '';
+  return `<div class="vehicle${isBus ? ' vehicle--bus' : ''}" style="--line-color:${esc(
+    color,
+  )};--bearing:${bearing}deg">
     ${heading}
-    <span class="vehicle__body">${esc(vehicle.badge ?? '')}</span>
+    <span class="vehicle__body">${badge}</span>
   </div>`;
 }
 
 function vehicleIcon(vehicle) {
+  const isBus = isBusLine(vehicle.lineKey);
+  const size = isBus ? 14 : 26;
   return L.divIcon({
     className: 'vehicle-icon',
-    html: vehicleIconHtml(vehicle),
-    iconSize: [26, 26],
-    iconAnchor: [13, 13],
-    popupAnchor: [0, -14],
+    html: vehicleIconHtml(vehicle, isBus),
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2 - 1],
   });
 }
 
@@ -77,8 +89,14 @@ function vehiclePopup(vehicle) {
     ? `<p class="popup__row"><span>Car</span> ${esc(vehicle.label)}</p>`
     : '';
 
+  // A bus is known by its number, so lead with that rather than the long
+  // "Wonderland Station - Maverick Station" name.
+  const title = isBusLine(vehicle.lineKey) && vehicle.badge
+    ? `${esc(vehicle.badge)} · ${esc(vehicle.routeName)}`
+    : esc(vehicle.routeName);
+
   return `<div class="popup">
-    <p class="popup__title" style="--line-color:${esc(color)}">${esc(vehicle.routeName)}</p>
+    <p class="popup__title" style="--line-color:${esc(color)}">${title}</p>
     <p class="popup__lead">${where}</p>
     ${headsign}
     ${label}
@@ -141,6 +159,7 @@ export default function MapView({
   // marker instead of clearing and re-creating every marker on the map.
   const markersRef = useRef(new Map());
   const frameRef = useRef(null);
+  const [zoom, setZoom] = useState(DEFAULT_ZOOM);
 
   // Track geometry in a planar frame, for snapping vehicles onto the rails.
   const trackIndex = useMemo(() => (shapes ? buildTrackIndex(shapes) : null), [shapes]);
@@ -175,15 +194,25 @@ export default function MapView({
     map.createPane('routes');
     map.getPane('routes').style.zIndex = 350;
 
+    // Buses outnumber trains four to one. Their own pane below markerPane keeps
+    // them from burying the rail network they are meant to sit behind.
+    map.createPane('busVehicles');
+    map.getPane('busVehicles').style.zIndex = 550;
+
     routeLayerRef.current = L.layerGroup().addTo(map);
     stationLayerRef.current = L.layerGroup().addTo(map);
     mapRef.current = map;
+
+    // Bus geometry is gated on zoom, so the effect below needs to know it.
+    const onZoom = () => setZoom(map.getZoom());
+    map.on('zoomend', onZoom);
 
     return () => {
       // Without this, a remount (StrictMode, hot reload) throws
       // "Map container is already initialized".
       if (frameRef.current) cancelAnimationFrame(frameRef.current);
       frameRef.current = null;
+      map.off('zoomend', onZoom);
       map.remove();
       mapRef.current = null;
       vehicleLayersRef.current.clear();
@@ -265,7 +294,7 @@ export default function MapView({
       const hit = trackIndex
         ? projectVehicle(
             trackIndex,
-            vehicle.lineKey,
+            vehicle.routeId,
             vehicle.latitude,
             vehicle.longitude,
             existing?.pathId,
@@ -279,6 +308,7 @@ export default function MapView({
           icon: vehicleIcon(vehicle),
           keyboard: false,
           riseOnHover: true,
+          pane: isBusLine(vehicle.lineKey) ? 'busVehicles' : 'markerPane',
         }).bindPopup(vehiclePopup(vehicle));
         marker.addTo(layerFor(vehicle.lineKey));
         markers.set(vehicle.id, {
@@ -434,8 +464,12 @@ export default function MapView({
     layer.clearLayers();
     if (!showRoutes || !shapes) return;
 
+    const busVisible = zoom >= BUS_ROUTE_MIN_ZOOM;
+
     for (const shape of shapes) {
       if (!activeLines.has(shape.lineKey)) continue;
+      const isBus = isBusLine(shape.lineKey);
+      if (isBus && !busVisible) continue;
 
       const path = decodedPaths.get(shape.id) ?? decodePolyline(shape.polyline);
       decodedPaths.set(shape.id, path);
@@ -444,8 +478,10 @@ export default function MapView({
       L.polyline(path, {
         pane: 'routes',
         color: lineColor(shape.lineKey),
-        weight: 4,
-        opacity: 0.75,
+        // Bus routes are thinner and fainter: there are far more of them, and
+        // they should read as context behind the rail network, not compete with it.
+        weight: isBus ? 2.5 : 4,
+        opacity: isBus ? 0.55 : 0.75,
         // Branches share a trunk, so rounded joins keep the overlap from
         // showing hard corners where two colors meet.
         lineCap: 'round',
@@ -454,7 +490,7 @@ export default function MapView({
         .bindPopup(routePopup(shape))
         .addTo(layer);
     }
-  }, [shapes, activeLines, showRoutes]);
+  }, [shapes, activeLines, showRoutes, zoom]);
 
   // Stations are fetched once and only rebuilt when the filter or the toggle
   // changes, never on a vehicle poll.

@@ -4,8 +4,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
  * Polls a fetcher on an interval, keeping the last successful payload on screen
  * when a refresh fails so a transient upstream error never blanks the map.
  * `fetcher` must be referentially stable (a module-level function).
+ * `enabled` false means no request at all, which is how the bus feed stays free
+ * until someone turns a bus line on.
  */
-export function usePolledResource(fetcher, intervalMs = 0) {
+export function usePolledResource(fetcher, intervalMs = 0, enabled = true) {
   const [state, setState] = useState({
     data: null,
     error: null,
@@ -15,6 +17,7 @@ export function usePolledResource(fetcher, intervalMs = 0) {
   const abortRef = useRef(null);
 
   const load = useCallback(async () => {
+    if (!enabled) return;
     abortRef.current?.abort();
     const controller = new AbortController();
     abortRef.current = controller;
@@ -27,9 +30,10 @@ export function usePolledResource(fetcher, intervalMs = 0) {
       if (controller.signal.aborted || error.name === 'AbortError') return;
       setState((prev) => ({ ...prev, error, isLoading: false }));
     }
-  }, [fetcher]);
+  }, [fetcher, enabled]);
 
   useEffect(() => {
+    if (!enabled) return undefined;
     load();
     if (!intervalMs) return () => abortRef.current?.abort();
 
@@ -61,7 +65,7 @@ export function usePolledResource(fetcher, intervalMs = 0) {
       document.removeEventListener('visibilitychange', onVisibilityChange);
       abortRef.current?.abort();
     };
-  }, [load, intervalMs]);
+  }, [load, intervalMs, enabled]);
 
   return { ...state, refresh: load };
 }

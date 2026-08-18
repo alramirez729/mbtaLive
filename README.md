@@ -4,8 +4,8 @@ A live map of MBTA rail vehicles plus current service alerts. Data comes from th
 [MBTA v3 API](https://api-v3.mbta.com/docs/swagger/index.html) through a small
 caching proxy.
 
-Covers Red, Orange, Blue, Green (all four branches), Mattapan, and Commuter Rail.
-Buses and ferries are out of scope.
+Covers Red, Orange, Blue, Green (all four branches), Mattapan, Commuter Rail, the
+Silver Line, and bus. Ferries are out of scope.
 
 ## Layout
 
@@ -13,7 +13,8 @@ Buses and ferries are out of scope.
 frontend/            Vite + React single-page app
 backend/server/      Express caching proxy for the MBTA API
   data/stations.json   committed station snapshot (see below)
-  data/shapes.json     committed track geometry snapshot
+  data/shapes.json     committed rail track geometry snapshot
+  data/bus-shapes.json committed bus route geometry snapshot
   .env                 MBTA_API_KEY lives here (see .env.example)
 api/[path].js   Vercel entry point; hands the same Express app to a function
 _archive/            the old user accounts feature, kept for reference only
@@ -35,6 +36,40 @@ in development Vite forwards that to the proxy, so there is no environment-speci
 base URL to configure.
 
 Run the two halves separately with `npm run dev:proxy` and `npm run dev:web`.
+
+## Bus
+
+Bus is off by default and costs nothing until switched on. It is a different scale
+from rail: **400 vehicles off peak against 110 rail**, 149 routes against 21, and
+6,892 stops against 232 stations.
+
+That shapes three decisions:
+
+- **Separate feeds.** `/api/buses` and `/api/bus-shapes` are only requested once
+  the Silver Line or Bus filter is enabled, so a rail-only visit never pays for
+  them. Bus geometry alone is 83KB gzipped.
+- **Bus geometry is zoom-gated** to zoom 14 and above. All 176 shapes drawn over
+  the region is an unreadable grey web, and nearly all of it is off screen.
+- **Bus stops are not drawn at all.** 6,892 markers would bury the map.
+
+Buses render smaller, softer, and in their own map pane below the rail markers.
+Without that they outnumber trains four to one and visually bury the network they
+are meant to sit behind. Their markers carry no label, because a route number like
+`116` does not fit in a marker; the popup leads with it instead.
+
+The Silver Line is bus rapid transit, so it arrives on the bus feed as route_type
+3, but MBTA brands it separately and it gets its own filter entry and its official
+`#7C878E`. MBTA distinguishes its six routes (741, 742, 743, 746, 749, 751) from
+the other 143 only by colour.
+
+Two upstream quirks worth knowing:
+
+- **Bus route patterns are never `canonical`.** Only rail is, so
+  `filter[canonical]=true` returns nothing for bus. Bus uses `typicality: 1`, the
+  pattern MBTA treats as the route's normal service.
+- **`Shuttle-*` routes are excluded.** These are replacement buses run during a
+  diversion, and MBTA attaches them to the line they replace, so including them
+  drew an Orange Line shape along the roads a shuttle happened to use.
 
 ## Motion
 
@@ -105,7 +140,8 @@ the last known positions.
 | `GET /api/vehicles` | 2.5s | Normalized live positions |
 | `GET /api/alerts` | 60s | Alerts currently in effect |
 | `GET /api/stations` | 24h | Served from the committed snapshot, no upstream call |
-| `GET /api/shapes` | 24h | Track geometry as encoded polylines, also from a snapshot |
+| `GET /api/shapes` | 24h | Rail track geometry as encoded polylines, also from a snapshot |
+| `GET /api/bus-shapes` | 24h | Bus route geometry, 176 shapes, also opt-in |
 
 Responses are normalized, so the browser never parses JSON:API relationships.
 Each endpoint also sets `s-maxage`, which lets Vercel's CDN serve most repeat hits.

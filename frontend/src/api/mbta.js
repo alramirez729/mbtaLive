@@ -29,3 +29,8 @@ export const fetchVehicles = (signal) => get('/vehicles', signal);
 export const fetchStations = (signal) => get('/stations', signal);
 export const fetchAlerts = (signal) => get('/alerts', signal);
 export const fetchShapes = (signal) => get('/shapes', signal);
+
+// Fetched only once a bus line is switched on. Bus is ~400 vehicles off peak and
+// its geometry is 176 shapes, so neither is loaded for a rail-only visit.
+export const fetchBuses = (signal) => get('/buses', signal);
+export const fetchBusShapes = (signal) => get('/bus-shapes', signal);
