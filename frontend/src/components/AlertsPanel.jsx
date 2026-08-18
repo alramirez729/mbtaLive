@@ -20,7 +20,8 @@ function formatEffect(effect) {
   return effect.toLowerCase().replace(/_/g, ' ');
 }
 
-export default function AlertsPanel({ alerts, isLoading, error, activeLines, onClose }) {
+/** Contents of the Alerts panel. The panel itself supplies the chrome. */
+export default function AlertsPanel({ alerts, isLoading, error, activeLines }) {
   const [tierKey, setTierKey] = useState('all');
   const minSeverity = SEVERITY_TIERS.find((tier) => tier.key === tierKey)?.min ?? 0;
 
@@ -35,14 +36,7 @@ export default function AlertsPanel({ alerts, isLoading, error, activeLines, onC
   }, [alerts, minSeverity, activeLines]);
 
   return (
-    <aside className="alerts" aria-label="MBTA service alerts">
-      <header className="alerts__head">
-        <h2 className="alerts__title">Service alerts</h2>
-        <button type="button" className="icon-button" onClick={onClose} aria-label="Close alerts">
-          &times;
-        </button>
-      </header>
-
+    <div className="alerts">
       <div className="alerts__controls">
         <label className="field">
           <span className="field__label">Severity</span>
@@ -54,11 +48,11 @@ export default function AlertsPanel({ alerts, isLoading, error, activeLines, onC
             ))}
           </select>
         </label>
-        <p className="alerts__hint">Alerts follow the line filter above.</p>
+        <p className="alerts__hint">Follows the line filter.</p>
       </div>
 
       <div className="alerts__list">
-        {isLoading && <p className="alerts__empty">Loading alerts...</p>}
+        {isLoading && !alerts && <p className="alerts__empty">Loading alerts...</p>}
 
         {error && !alerts && (
           <p className="alerts__empty alerts__empty--error">Could not load alerts. {error.message}</p>
@@ -96,6 +90,6 @@ export default function AlertsPanel({ alerts, isLoading, error, activeLines, onC
           );
         })}
       </div>
-    </aside>
+    </div>
   );
 }
