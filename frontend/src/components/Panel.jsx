@@ -17,6 +17,7 @@ const DISMISS_DRAG_PX = 90;
 export default function Panel({
   label,
   badge,
+  badgeTitle,
   icon,
   side = 'right',
   open,
@@ -100,6 +101,7 @@ export default function Panel({
         className="panel__trigger"
         aria-expanded={open}
         aria-controls={panelId}
+        title={badge > 0 && badgeTitle ? badgeTitle : undefined}
         onClick={() => {
           if (open && pinned) {
             onOpenChange(false);
@@ -115,7 +117,14 @@ export default function Panel({
           </span>
         )}
         <span className="panel__label">{label}</span>
-        {badge > 0 && <span className="panel__badge">{badge}</span>}
+        {badge > 0 && (
+          // aria-hidden so the button is announced as "Filters" rather than
+          // "Filters 2"; a bare number reads as noise. The title carries the
+          // meaning for anyone who wants it.
+          <span className="panel__badge" aria-hidden="true">
+            {badge}
+          </span>
+        )}
       </button>
 
       {open && (

@@ -1,0 +1,5453 @@
+[
+  {
+    "id": "741",
+    "lineKey": "SL",
+    "shortName": "SL1",
+    "longName": "Logan Airport Terminals - South Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Logan Airport Terminals",
+      "South Station"
+    ],
+    "sortOrder": 10051,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 11
+  },
+  {
+    "id": "742",
+    "lineKey": "SL",
+    "shortName": "SL2",
+    "longName": "Design Center - South Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Design Center",
+      "South Station"
+    ],
+    "sortOrder": 10052,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 12
+  },
+  {
+    "id": "743",
+    "lineKey": "SL",
+    "shortName": "SL3",
+    "longName": "Chelsea Station - South Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Chelsea Station",
+      "South Station"
+    ],
+    "sortOrder": 10053,
+    "municipalities": [
+      "Boston",
+      "Chelsea"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Airport"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Chelsea",
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 11
+  },
+  {
+    "id": "751",
+    "lineKey": "SL",
+    "shortName": "SL4",
+    "longName": "Nubian Station - South Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Nubian Station",
+      "South Station"
+    ],
+    "sortOrder": 10055,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Chinatown",
+          "Tufts Medical Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 22
+  },
+  {
+    "id": "749",
+    "lineKey": "SL",
+    "shortName": "SL5",
+    "longName": "Nubian Station - Temple Place",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Nubian Station",
+      "Temple Place"
+    ],
+    "sortOrder": 10056,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Boylston",
+          "Park Street"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Chinatown",
+          "Downtown Crossing",
+          "Tufts Medical Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing",
+          "Park Street"
+        ]
+      }
+    ],
+    "stopCount": 22
+  },
+  {
+    "id": "746",
+    "lineKey": "SL",
+    "shortName": "SLW",
+    "longName": "Silver Line Way - South Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Silver Line Way",
+      "South Station"
+    ],
+    "sortOrder": 10057,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 4
+  },
+  {
+    "id": "708",
+    "lineKey": "Bus",
+    "shortName": "CT3",
+    "longName": "Beth Israel Deaconess Hospital - Andrew Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Beth Israel Deaconess Hospital",
+      "Andrew Station"
+    ],
+    "sortOrder": 40030,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Museum of Fine Arts"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew"
+        ]
+      }
+    ],
+    "stopCount": 17
+  },
+  {
+    "id": "1",
+    "lineKey": "Bus",
+    "shortName": "1",
+    "longName": "Harvard Square - Nubian Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Harvard Square",
+      "Nubian Station"
+    ],
+    "sortOrder": 50010,
+    "municipalities": [
+      "Boston",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Hynes Convention Center",
+          "Symphony"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Massachusetts Avenue"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Central",
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 46
+  },
+  {
+    "id": "4",
+    "lineKey": "Bus",
+    "shortName": "4",
+    "longName": "North Station - Design Center",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "North Station",
+      "Design Center"
+    ],
+    "sortOrder": 50040,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Aquarium",
+          "State"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "North Station",
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket",
+          "North Station"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket",
+          "North Station",
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 44
+  },
+  {
+    "id": "7",
+    "lineKey": "Bus",
+    "shortName": "7",
+    "longName": "City Point - Otis Street & Summer Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "City Point",
+      "Otis Street & Summer Street"
+    ],
+    "sortOrder": 50070,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Downtown Crossing"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing",
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 33
+  },
+  {
+    "id": "8",
+    "lineKey": "Bus",
+    "shortName": "8",
+    "longName": "Harbor Point - Kenmore Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Harbor Point",
+      "Kenmore Station"
+    ],
+    "sortOrder": 50080,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "JFK/UMass",
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Kenmore",
+          "Museum of Fine Arts"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "JFK/UMass"
+        ]
+      }
+    ],
+    "stopCount": 83
+  },
+  {
+    "id": "9",
+    "lineKey": "Bus",
+    "shortName": "9",
+    "longName": "City Point - Copley Square",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "City Point",
+      "Copley Square"
+    ],
+    "sortOrder": 50090,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Arlington",
+          "Copley",
+          "Kenmore",
+          "Museum of Fine Arts",
+          "Northeastern University",
+          "Prudential"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew",
+          "Broadway"
+        ]
+      }
+    ],
+    "stopCount": 80
+  },
+  {
+    "id": "10",
+    "lineKey": "Bus",
+    "shortName": "10",
+    "longName": "City Point - Arlington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "City Point",
+      "Arlington Station"
+    ],
+    "sortOrder": 50100,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Back Bay"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Arlington",
+          "Copley"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Back Bay"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew"
+        ]
+      }
+    ],
+    "stopCount": 96
+  },
+  {
+    "id": "11",
+    "lineKey": "Bus",
+    "shortName": "11",
+    "longName": "City Point - Chauncy Street & Summer Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "City Point",
+      "Chauncy Street & Summer Street"
+    ],
+    "sortOrder": 50110,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "South Station"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Chinatown",
+          "Downtown Crossing",
+          "Tufts Medical Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Broadway",
+          "Downtown Crossing",
+          "South Station"
+        ]
+      }
+    ],
+    "stopCount": 64
+  },
+  {
+    "id": "14",
+    "lineKey": "Bus",
+    "shortName": "14",
+    "longName": "Roslindale Square - Heath Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Roslindale Square",
+      "Heath Street"
+    ],
+    "sortOrder": 50140,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Roslindale Village"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Heath Street"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Jackson Square"
+        ]
+      }
+    ],
+    "stopCount": 89
+  },
+  {
+    "id": "15",
+    "lineKey": "Bus",
+    "shortName": "15",
+    "longName": "Fields Corner Station - Ruggles Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Fields Corner Station",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50150,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "State"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles",
+          "Uphams Corner"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Boylston",
+          "Haymarket",
+          "Park Street"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont",
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Chinatown",
+          "Downtown Crossing",
+          "Haymarket",
+          "Ruggles",
+          "State",
+          "Tufts Medical Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont",
+          "Downtown Crossing",
+          "Fields Corner",
+          "Park Street"
+        ]
+      }
+    ],
+    "stopCount": 141
+  },
+  {
+    "id": "16",
+    "lineKey": "Bus",
+    "shortName": "16",
+    "longName": "Forest Hills Station - Andrew Station or Harbor Point",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Forest Hills Station",
+      "Andrew Station or Harbor Point"
+    ],
+    "sortOrder": 50160,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills",
+          "JFK/UMass"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew",
+          "JFK/UMass"
+        ]
+      }
+    ],
+    "stopCount": 73
+  },
+  {
+    "id": "17",
+    "lineKey": "Bus",
+    "shortName": "17",
+    "longName": "Fields Corner Station - Andrew Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Fields Corner Station",
+      "Andrew Station"
+    ],
+    "sortOrder": 50170,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew",
+          "Fields Corner"
+        ]
+      }
+    ],
+    "stopCount": 48
+  },
+  {
+    "id": "18",
+    "lineKey": "Bus",
+    "shortName": "18",
+    "longName": "Ashmont Station - Andrew Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Ashmont Station",
+      "Andrew Station"
+    ],
+    "sortOrder": 50180,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew",
+          "Ashmont",
+          "Fields Corner"
+        ]
+      }
+    ],
+    "stopCount": 55
+  },
+  {
+    "id": "19",
+    "lineKey": "Bus",
+    "shortName": "19",
+    "longName": "Fields Corner Station - Kenmore or Ruggles Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Fields Corner Station",
+      "Kenmore or Ruggles Station"
+    ],
+    "sortOrder": 50190,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Four Corners/Geneva",
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Kenmore",
+          "Museum of Fine Arts"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Fields Corner"
+        ]
+      }
+    ],
+    "stopCount": 91
+  },
+  {
+    "id": "21",
+    "lineKey": "Bus",
+    "shortName": "21",
+    "longName": "Ashmont Station - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Ashmont Station",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50210,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills",
+          "Morton Street"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont"
+        ]
+      }
+    ],
+    "stopCount": 40
+  },
+  {
+    "id": "22",
+    "lineKey": "Bus",
+    "shortName": "22",
+    "longName": "Ashmont Station - Ruggles Station via Talbot Avenue",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Ashmont Station",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50220,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles",
+          "Talbot Avenue"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Museum of Fine Arts"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Jackson Square",
+          "Roxbury Crossing",
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont"
+        ]
+      }
+    ],
+    "stopCount": 64
+  },
+  {
+    "id": "23",
+    "lineKey": "Bus",
+    "shortName": "23",
+    "longName": "Ashmont Station - Ruggles Station via Washington Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Ashmont Station",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50230,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont"
+        ]
+      }
+    ],
+    "stopCount": 58
+  },
+  {
+    "id": "24",
+    "lineKey": "Bus",
+    "shortName": "24",
+    "longName": "Wakefield Avenue & Truman Parkway - Ashmont Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wakefield Avenue & Truman Parkway",
+      "Ashmont Station"
+    ],
+    "sortOrder": 50240,
+    "municipalities": [
+      "Boston",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Fairmount"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont",
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont"
+        ]
+      }
+    ],
+    "stopCount": 84
+  },
+  {
+    "id": "26",
+    "lineKey": "Bus",
+    "shortName": "26",
+    "longName": "Ashmont Station - Norfolk Street Loop",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Ashmont Station",
+      "Norfolk Street Loop"
+    ],
+    "sortOrder": 50260,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Morton Street"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont"
+        ]
+      }
+    ],
+    "stopCount": 31
+  },
+  {
+    "id": "28",
+    "lineKey": "Bus",
+    "shortName": "28",
+    "longName": "Mattapan Station - Ruggles Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Mattapan Station",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50280,
+    "municipalities": [
+      "Boston",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Longwood Medical Area",
+          "Museum of Fine Arts"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      }
+    ],
+    "stopCount": 76
+  },
+  {
+    "id": "29",
+    "lineKey": "Bus",
+    "shortName": "29",
+    "longName": "Mattapan Station - Jackson Square Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Mattapan Station",
+      "Jackson Square Station"
+    ],
+    "sortOrder": 50290,
+    "municipalities": [
+      "Boston",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Jackson Square"
+        ]
+      }
+    ],
+    "stopCount": 55
+  },
+  {
+    "id": "30",
+    "lineKey": "Bus",
+    "shortName": "30",
+    "longName": "Mattapan Station - Forest Hills Station via Cummins Highway and Roslindale Square",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Mattapan Station",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50300,
+    "municipalities": [
+      "Boston",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 47
+  },
+  {
+    "id": "31",
+    "lineKey": "Bus",
+    "shortName": "31",
+    "longName": "Mattapan Station - Forest Hills Station via Morton Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Mattapan Station",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50310,
+    "municipalities": [
+      "Boston",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 32
+  },
+  {
+    "id": "32",
+    "lineKey": "Bus",
+    "shortName": "32",
+    "longName": "Wolcott Square - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wolcott Square",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50320,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills",
+          "Hyde Park",
+          "Readville"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 75
+  },
+  {
+    "id": "33",
+    "lineKey": "Bus",
+    "shortName": "33",
+    "longName": "River Street & Milton Street - Mattapan Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "River Street & Milton Street",
+      "Mattapan Station"
+    ],
+    "sortOrder": 50330,
+    "municipalities": [
+      "Boston",
+      "Dedham",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 117
+  },
+  {
+    "id": "34",
+    "lineKey": "Bus",
+    "shortName": "34",
+    "longName": "Dedham Mall - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Dedham Mall",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50340,
+    "municipalities": [
+      "Boston",
+      "Dedham"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 86
+  },
+  {
+    "id": "34E",
+    "lineKey": "Bus",
+    "shortName": "34E",
+    "longName": "Walpole Center - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Walpole Center",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50341,
+    "municipalities": [
+      "Boston",
+      "Dedham",
+      "Norwood",
+      "Walpole",
+      "Westwood"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills",
+          "Norwood Depot"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 166
+  },
+  {
+    "id": "35",
+    "lineKey": "Bus",
+    "shortName": "35",
+    "longName": "Dedham Mall or Stimson Street - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Dedham Mall or Stimson Street",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50350,
+    "municipalities": [
+      "Boston",
+      "Dedham"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Bellevue",
+          "Forest Hills",
+          "Roslindale Village"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Back of the Hill",
+          "Brigham Circle",
+          "Fenwood Road",
+          "Longwood Medical Area",
+          "Mission Park",
+          "Riverway"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 143
+  },
+  {
+    "id": "36",
+    "lineKey": "Bus",
+    "shortName": "36",
+    "longName": "Millennium Park or VA Hospital - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Millennium Park or VA Hospital",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50360,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Bellevue",
+          "Forest Hills",
+          "Roslindale Village"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 92
+  },
+  {
+    "id": "37",
+    "lineKey": "Bus",
+    "shortName": "37",
+    "longName": "Baker Street & Vermont Street - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Baker Street & Vermont Street",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50370,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Bellevue",
+          "Forest Hills",
+          "Roslindale Village",
+          "West Roxbury"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 61
+  },
+  {
+    "id": "38",
+    "lineKey": "Bus",
+    "shortName": "38",
+    "longName": "Wren Street - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wren Street",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50380,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 70
+  },
+  {
+    "id": "39",
+    "lineKey": "Bus",
+    "shortName": "39",
+    "longName": "Forest Hills Station - Back Bay Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Forest Hills Station",
+      "Back Bay Station"
+    ],
+    "sortOrder": 50390,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "State"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Back Bay",
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Arlington",
+          "Back of the Hill",
+          "Boylston",
+          "Brigham Circle",
+          "Copley",
+          "Fenwood Road",
+          "Haymarket",
+          "Longwood Medical Area",
+          "Mission Park",
+          "Museum of Fine Arts",
+          "Northeastern University",
+          "Park Street",
+          "Prudential",
+          "Riverway"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Back Bay",
+          "Downtown Crossing",
+          "Forest Hills",
+          "Haymarket",
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing",
+          "Park Street"
+        ]
+      }
+    ],
+    "stopCount": 85
+  },
+  {
+    "id": "40",
+    "lineKey": "Bus",
+    "shortName": "40",
+    "longName": "Georgetowne - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Georgetowne",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50400,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 55
+  },
+  {
+    "id": "41",
+    "lineKey": "Bus",
+    "shortName": "41",
+    "longName": "Centre Street & Eliot Street - JFK/UMass Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Centre Street & Eliot Street",
+      "JFK/UMass Station"
+    ],
+    "sortOrder": 50410,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "JFK/UMass",
+          "Uphams Corner"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Jackson Square"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "JFK/UMass"
+        ]
+      }
+    ],
+    "stopCount": 62
+  },
+  {
+    "id": "42",
+    "lineKey": "Bus",
+    "shortName": "42",
+    "longName": "Forest Hills Station - Nubian Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Forest Hills Station",
+      "Nubian Station"
+    ],
+    "sortOrder": 50420,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 37
+  },
+  {
+    "id": "43",
+    "lineKey": "Bus",
+    "shortName": "43",
+    "longName": "Ruggles Station - Park Street Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Ruggles Station",
+      "Park Street Station"
+    ],
+    "sortOrder": 50430,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Boylston",
+          "Park Street"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles",
+          "Tufts Medical Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Park Street"
+        ]
+      }
+    ],
+    "stopCount": 26
+  },
+  {
+    "id": "44",
+    "lineKey": "Bus",
+    "shortName": "44",
+    "longName": "Jackson Square Station - Ruggles Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Jackson Square Station",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50440,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Jackson Square",
+          "Ruggles"
+        ]
+      }
+    ],
+    "stopCount": 46
+  },
+  {
+    "id": "45",
+    "lineKey": "Bus",
+    "shortName": "45",
+    "longName": "Franklin Park - Ruggles Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Franklin Park",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50450,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      }
+    ],
+    "stopCount": 51
+  },
+  {
+    "id": "47",
+    "lineKey": "Bus",
+    "shortName": "47",
+    "longName": "Central Square, Cambridge - Broadway Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Central Square, Cambridge",
+      "Broadway Station"
+    ],
+    "sortOrder": 50470,
+    "municipalities": [
+      "Boston",
+      "Brookline",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Fenway",
+          "Museum of Fine Arts"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Broadway",
+          "Central"
+        ]
+      }
+    ],
+    "stopCount": 61
+  },
+  {
+    "id": "50",
+    "lineKey": "Bus",
+    "shortName": "50",
+    "longName": "Cleary Square - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Cleary Square",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50500,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills",
+          "Hyde Park"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 56
+  },
+  {
+    "id": "51",
+    "lineKey": "Bus",
+    "shortName": "51",
+    "longName": "Reservoir Station - Forest Hills Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Reservoir Station",
+      "Forest Hills Station"
+    ],
+    "sortOrder": 50510,
+    "municipalities": [
+      "Boston",
+      "Brookline"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Forest Hills",
+          "Roslindale Village"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Reservoir"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Forest Hills"
+        ]
+      }
+    ],
+    "stopCount": 89
+  },
+  {
+    "id": "52",
+    "lineKey": "Bus",
+    "shortName": "52",
+    "longName": "Dedham Mall - Watertown Yard",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Dedham Mall",
+      "Watertown Yard"
+    ],
+    "sortOrder": 50520,
+    "municipalities": [
+      "Boston",
+      "Dedham",
+      "Newton",
+      "Watertown"
+    ],
+    "connections": [],
+    "stopCount": 111
+  },
+  {
+    "id": "55",
+    "lineKey": "Bus",
+    "shortName": "55",
+    "longName": "West Fenway - Arlington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "West Fenway",
+      "Arlington Station"
+    ],
+    "sortOrder": 50550,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Arlington",
+          "Copley",
+          "Hynes Convention Center"
+        ]
+      }
+    ],
+    "stopCount": 21
+  },
+  {
+    "id": "57",
+    "lineKey": "Bus",
+    "shortName": "57",
+    "longName": "Watertown Yard - Kenmore Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Watertown Yard",
+      "Kenmore Station"
+    ],
+    "sortOrder": 50570,
+    "municipalities": [
+      "Boston",
+      "Brookline",
+      "Newton",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Amory Street",
+          "Arlington",
+          "Babcock Street",
+          "Blandford Street",
+          "Boston University Central",
+          "Boston University East",
+          "Boylston",
+          "Copley",
+          "Fenway",
+          "Haymarket",
+          "Hynes Convention Center",
+          "Kenmore",
+          "Packard's Corner",
+          "Park Street"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Downtown Crossing",
+          "Haymarket",
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing",
+          "Park Street"
+        ]
+      }
+    ],
+    "stopCount": 94
+  },
+  {
+    "id": "59",
+    "lineKey": "Bus",
+    "shortName": "59",
+    "longName": "Needham Junction - Watertown Square",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Needham Junction",
+      "Watertown Square"
+    ],
+    "sortOrder": 50590,
+    "municipalities": [
+      "Needham",
+      "Newton",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Needham Center",
+          "Needham Heights",
+          "Needham Junction",
+          "Newtonville"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Newton Highlands"
+        ]
+      }
+    ],
+    "stopCount": 121
+  },
+  {
+    "id": "60",
+    "lineKey": "Bus",
+    "shortName": "60",
+    "longName": "Chestnut Hill - Kenmore Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Chestnut Hill",
+      "Kenmore Station"
+    ],
+    "sortOrder": 50600,
+    "municipalities": [
+      "Boston",
+      "Brookline",
+      "Newton"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Brookline Village",
+          "Kenmore"
+        ]
+      }
+    ],
+    "stopCount": 57
+  },
+  {
+    "id": "61",
+    "lineKey": "Bus",
+    "shortName": "61",
+    "longName": "North Waltham - Waltham Center",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "North Waltham",
+      "Waltham Center"
+    ],
+    "sortOrder": 50610,
+    "municipalities": [
+      "Waltham"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Waltham"
+        ]
+      }
+    ],
+    "stopCount": 42
+  },
+  {
+    "id": "62",
+    "lineKey": "Bus",
+    "shortName": "62",
+    "longName": "Bedford VA Hospital - Alewife Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Bedford VA Hospital",
+      "Alewife Station"
+    ],
+    "sortOrder": 50620,
+    "municipalities": [
+      "Arlington",
+      "Bedford",
+      "Belmont",
+      "Cambridge",
+      "Lexington"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Alewife"
+        ]
+      }
+    ],
+    "stopCount": 129
+  },
+  {
+    "id": "64",
+    "lineKey": "Bus",
+    "shortName": "64",
+    "longName": "Oak Square - Kendall/MIT Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Oak Square",
+      "Kendall/MIT Station"
+    ],
+    "sortOrder": 50640,
+    "municipalities": [
+      "Boston",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Central",
+          "Kendall/MIT"
+        ]
+      }
+    ],
+    "stopCount": 54
+  },
+  {
+    "id": "65",
+    "lineKey": "Bus",
+    "shortName": "65",
+    "longName": "Brighton Center - Kenmore Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Brighton Center",
+      "Kenmore Station"
+    ],
+    "sortOrder": 50650,
+    "municipalities": [
+      "Boston",
+      "Brookline"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Brookline Village",
+          "Kenmore",
+          "Washington Square",
+          "Washington Street"
+        ]
+      }
+    ],
+    "stopCount": 57
+  },
+  {
+    "id": "66",
+    "lineKey": "Bus",
+    "shortName": "66",
+    "longName": "Harvard Square - Nubian Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Harvard Square",
+      "Nubian Station"
+    ],
+    "sortOrder": 50660,
+    "municipalities": [
+      "Boston",
+      "Brookline",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Brigham Circle",
+          "Brookline Village",
+          "Coolidge Corner",
+          "Fenwood Road",
+          "Harvard Avenue",
+          "Mission Park",
+          "Riverway"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Roxbury Crossing"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 80
+  },
+  {
+    "id": "67",
+    "lineKey": "Bus",
+    "shortName": "67",
+    "longName": "Turkey Hill - Alewife Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Turkey Hill",
+      "Alewife Station"
+    ],
+    "sortOrder": 50670,
+    "municipalities": [
+      "Arlington",
+      "Belmont",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Alewife"
+        ]
+      }
+    ],
+    "stopCount": 39
+  },
+  {
+    "id": "68",
+    "lineKey": "Bus",
+    "shortName": "68",
+    "longName": "Harvard Square - Kendall/MIT Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Harvard Square",
+      "Kendall/MIT Station"
+    ],
+    "sortOrder": 50680,
+    "municipalities": [
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard",
+          "Kendall/MIT"
+        ]
+      }
+    ],
+    "stopCount": 23
+  },
+  {
+    "id": "69",
+    "lineKey": "Bus",
+    "shortName": "69",
+    "longName": "Harvard Square - Lechmere Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Harvard Square",
+      "Lechmere Station"
+    ],
+    "sortOrder": 50690,
+    "municipalities": [
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Lechmere"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 31
+  },
+  {
+    "id": "70",
+    "lineKey": "Bus",
+    "shortName": "70",
+    "longName": "Market Place Drive or Waltham Center - University Park",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Market Place Drive or Waltham Center",
+      "University Park"
+    ],
+    "sortOrder": 50700,
+    "municipalities": [
+      "Boston",
+      "Cambridge",
+      "Waltham",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Waltham"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Central"
+        ]
+      }
+    ],
+    "stopCount": 106
+  },
+  {
+    "id": "71",
+    "lineKey": "Bus",
+    "shortName": "71",
+    "longName": "Watertown Square - Harvard Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Watertown Square",
+      "Harvard Station"
+    ],
+    "sortOrder": 50710,
+    "municipalities": [
+      "Cambridge",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 45
+  },
+  {
+    "id": "73",
+    "lineKey": "Bus",
+    "shortName": "73",
+    "longName": "Waverley Square - Harvard Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Waverley Square",
+      "Harvard Station"
+    ],
+    "sortOrder": 50730,
+    "municipalities": [
+      "Belmont",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Waverley"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 45
+  },
+  {
+    "id": "74",
+    "lineKey": "Bus",
+    "shortName": "74",
+    "longName": "Belmont Center - Harvard via Concord Avenue",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Belmont Center",
+      "Harvard"
+    ],
+    "sortOrder": 50740,
+    "municipalities": [
+      "Belmont",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Belmont"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 43
+  },
+  {
+    "id": "75",
+    "lineKey": "Bus",
+    "shortName": "75",
+    "longName": "Belmont Center - Harvard via Huron Avenue",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Belmont Center",
+      "Harvard"
+    ],
+    "sortOrder": 50750,
+    "municipalities": [
+      "Belmont",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Belmont"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 48
+  },
+  {
+    "id": "76",
+    "lineKey": "Bus",
+    "shortName": "76",
+    "longName": "Lincoln Lab - Alewife Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Lincoln Lab",
+      "Alewife Station"
+    ],
+    "sortOrder": 50760,
+    "municipalities": [
+      "Arlington",
+      "Belmont",
+      "Cambridge",
+      "Lexington",
+      "Lincoln"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Alewife"
+        ]
+      }
+    ],
+    "stopCount": 92
+  },
+  {
+    "id": "77",
+    "lineKey": "Bus",
+    "shortName": "77",
+    "longName": "Arlington Heights - Harvard Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Arlington Heights",
+      "Harvard Station"
+    ],
+    "sortOrder": 50770,
+    "municipalities": [
+      "Arlington",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Porter"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard",
+          "Porter"
+        ]
+      }
+    ],
+    "stopCount": 65
+  },
+  {
+    "id": "78",
+    "lineKey": "Bus",
+    "shortName": "78",
+    "longName": "Arlmont Village - Harvard Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Arlmont Village",
+      "Harvard Station"
+    ],
+    "sortOrder": 50780,
+    "municipalities": [
+      "Arlington",
+      "Belmont",
+      "Cambridge",
+      "Lexington"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 89
+  },
+  {
+    "id": "80",
+    "lineKey": "Bus",
+    "shortName": "80",
+    "longName": "Arlington Center - Lechmere Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Arlington Center",
+      "Lechmere Station"
+    ],
+    "sortOrder": 50800,
+    "municipalities": [
+      "Arlington",
+      "Cambridge",
+      "Medford",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Ball Square",
+          "Gilman Square",
+          "Lechmere",
+          "Medford/Tufts"
+        ]
+      }
+    ],
+    "stopCount": 75
+  },
+  {
+    "id": "83",
+    "lineKey": "Bus",
+    "shortName": "83",
+    "longName": "Rindge Avenue - Central Square, Cambridge",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Rindge Avenue",
+      "Central Square, Cambridge"
+    ],
+    "sortOrder": 50830,
+    "municipalities": [
+      "Cambridge",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Porter"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Central",
+          "Porter"
+        ]
+      }
+    ],
+    "stopCount": 56
+  },
+  {
+    "id": "85",
+    "lineKey": "Bus",
+    "shortName": "85",
+    "longName": "Assembly Row - Ruggles Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Assembly Row",
+      "Ruggles Station"
+    ],
+    "sortOrder": 50850,
+    "municipalities": [
+      "Boston",
+      "Brookline",
+      "Cambridge",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Ruggles"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "East Somerville",
+          "Fenway",
+          "Longwood Medical Area",
+          "Museum of Fine Arts",
+          "Union Square"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Ruggles",
+          "Sullivan Square"
+        ]
+      }
+    ],
+    "stopCount": 61
+  },
+  {
+    "id": "86",
+    "lineKey": "Bus",
+    "shortName": "86",
+    "longName": "Harvard Square - Reservoir Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Harvard Square",
+      "Reservoir Station"
+    ],
+    "sortOrder": 50860,
+    "municipalities": [
+      "Boston",
+      "Brookline",
+      "Cambridge"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Chestnut Hill Avenue",
+          "Reservoir"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 44
+  },
+  {
+    "id": "87",
+    "lineKey": "Bus",
+    "shortName": "87",
+    "longName": "Arlington Center - Lechmere Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Arlington Center",
+      "Lechmere Station"
+    ],
+    "sortOrder": 50870,
+    "municipalities": [
+      "Arlington",
+      "Cambridge",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Lechmere"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Davis"
+        ]
+      }
+    ],
+    "stopCount": 67
+  },
+  {
+    "id": "88",
+    "lineKey": "Bus",
+    "shortName": "88",
+    "longName": "Clarendon Hill - Lechmere Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Clarendon Hill",
+      "Lechmere Station"
+    ],
+    "sortOrder": 50880,
+    "municipalities": [
+      "Cambridge",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Lechmere"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Davis"
+        ]
+      }
+    ],
+    "stopCount": 51
+  },
+  {
+    "id": "89",
+    "lineKey": "Bus",
+    "shortName": "89",
+    "longName": "Clarendon Hill or Davis Station - Sullivan Square Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Clarendon Hill or Davis Station",
+      "Sullivan Square Station"
+    ],
+    "sortOrder": 50890,
+    "municipalities": [
+      "Boston",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Ball Square"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Sullivan Square"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Davis"
+        ]
+      }
+    ],
+    "stopCount": 50
+  },
+  {
+    "id": "90",
+    "lineKey": "Bus",
+    "shortName": "90",
+    "longName": "Davis Station - Assembly Row",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Davis Station",
+      "Assembly Row"
+    ],
+    "sortOrder": 50900,
+    "municipalities": [
+      "Boston",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Sullivan Square"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Davis"
+        ]
+      }
+    ],
+    "stopCount": 52
+  },
+  {
+    "id": "91",
+    "lineKey": "Bus",
+    "shortName": "91",
+    "longName": "Sullivan Square Station - Central Square, Cambridge",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Sullivan Square Station",
+      "Central Square, Cambridge"
+    ],
+    "sortOrder": 50910,
+    "municipalities": [
+      "Boston",
+      "Cambridge",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "East Somerville",
+          "Union Square"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Sullivan Square"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Central"
+        ]
+      }
+    ],
+    "stopCount": 31
+  },
+  {
+    "id": "92",
+    "lineKey": "Bus",
+    "shortName": "92",
+    "longName": "Sullivan Square Station - Downtown via Main Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Sullivan Square Station",
+      "Downtown"
+    ],
+    "sortOrder": 50920,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket",
+          "State",
+          "Sullivan Square"
+        ]
+      }
+    ],
+    "stopCount": 29
+  },
+  {
+    "id": "93",
+    "lineKey": "Bus",
+    "shortName": "93",
+    "longName": "Sullivan Square Station - Downtown via Bunker Hill Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Sullivan Square Station",
+      "Downtown"
+    ],
+    "sortOrder": 50930,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket",
+          "State",
+          "Sullivan Square"
+        ]
+      }
+    ],
+    "stopCount": 47
+  },
+  {
+    "id": "94",
+    "lineKey": "Bus",
+    "shortName": "94",
+    "longName": "Medford Square - Davis Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Medford Square",
+      "Davis Station"
+    ],
+    "sortOrder": 50940,
+    "municipalities": [
+      "Medford",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "West Medford"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Medford/Tufts"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Davis"
+        ]
+      }
+    ],
+    "stopCount": 65
+  },
+  {
+    "id": "95",
+    "lineKey": "Bus",
+    "shortName": "95",
+    "longName": "West Medford or Arlington Center - Sullivan Square Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "West Medford or Arlington Center",
+      "Sullivan Square Station"
+    ],
+    "sortOrder": 50950,
+    "municipalities": [
+      "Arlington",
+      "Boston",
+      "Medford",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "West Medford"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Sullivan Square"
+        ]
+      }
+    ],
+    "stopCount": 96
+  },
+  {
+    "id": "96",
+    "lineKey": "Bus",
+    "shortName": "96",
+    "longName": "Medford Square - Harvard Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Medford Square",
+      "Harvard Station"
+    ],
+    "sortOrder": 50960,
+    "municipalities": [
+      "Cambridge",
+      "Medford",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Porter"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Medford/Tufts"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Davis",
+          "Harvard",
+          "Porter"
+        ]
+      }
+    ],
+    "stopCount": 53
+  },
+  {
+    "id": "97",
+    "lineKey": "Bus",
+    "shortName": "97",
+    "longName": "Malden Center Station - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Malden Center Station",
+      "Wellington Station"
+    ],
+    "sortOrder": 50970,
+    "municipalities": [
+      "Everett",
+      "Malden",
+      "Medford"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 38
+  },
+  {
+    "id": "99",
+    "lineKey": "Bus",
+    "shortName": "99",
+    "longName": "Woodland Road - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Woodland Road",
+      "Wellington Station"
+    ],
+    "sortOrder": 50990,
+    "municipalities": [
+      "Everett",
+      "Malden",
+      "Medford",
+      "Stoneham"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 70
+  },
+  {
+    "id": "100",
+    "lineKey": "Bus",
+    "shortName": "100",
+    "longName": "Elm Street - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Elm Street",
+      "Wellington Station"
+    ],
+    "sortOrder": 51000,
+    "municipalities": [
+      "Malden",
+      "Medford"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 34
+  },
+  {
+    "id": "101",
+    "lineKey": "Bus",
+    "shortName": "101",
+    "longName": "Malden Center Station - Sullivan Square Station via Winter Hill",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Malden Center Station",
+      "Sullivan Square Station"
+    ],
+    "sortOrder": 51010,
+    "municipalities": [
+      "Boston",
+      "Malden",
+      "Medford",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "West Medford"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Sullivan Square"
+        ]
+      }
+    ],
+    "stopCount": 105
+  },
+  {
+    "id": "104",
+    "lineKey": "Bus",
+    "shortName": "104",
+    "longName": "Malden Center Station - Airport Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Malden Center Station",
+      "Airport Station"
+    ],
+    "sortOrder": 51040,
+    "municipalities": [
+      "Boston",
+      "Chelsea",
+      "Everett",
+      "Malden"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Airport"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center"
+        ]
+      }
+    ],
+    "stopCount": 61
+  },
+  {
+    "id": "105",
+    "lineKey": "Bus",
+    "shortName": "105",
+    "longName": "Malden Center Station - Sullivan Square Station via Newland Street Housing",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Malden Center Station",
+      "Sullivan Square Station"
+    ],
+    "sortOrder": 51050,
+    "municipalities": [
+      "Boston",
+      "Everett",
+      "Malden"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Sullivan Square"
+        ]
+      }
+    ],
+    "stopCount": 79
+  },
+  {
+    "id": "106",
+    "lineKey": "Bus",
+    "shortName": "106",
+    "longName": "Lebanon Loop - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Lebanon Loop",
+      "Wellington Station"
+    ],
+    "sortOrder": 51060,
+    "municipalities": [
+      "Everett",
+      "Malden",
+      "Medford",
+      "Melrose"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 63
+  },
+  {
+    "id": "108",
+    "lineKey": "Bus",
+    "shortName": "108",
+    "longName": "Linden Square - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Linden Square",
+      "Wellington Station"
+    ],
+    "sortOrder": 51080,
+    "municipalities": [
+      "Malden",
+      "Medford",
+      "Revere"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 81
+  },
+  {
+    "id": "109",
+    "lineKey": "Bus",
+    "shortName": "109",
+    "longName": "Linden Square - Harvard Square via Sullivan",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Linden Square",
+      "Harvard Square"
+    ],
+    "sortOrder": 51090,
+    "municipalities": [
+      "Boston",
+      "Cambridge",
+      "Everett",
+      "Malden",
+      "Somerville"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "East Somerville"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Sullivan Square"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Harvard"
+        ]
+      }
+    ],
+    "stopCount": 83
+  },
+  {
+    "id": "110",
+    "lineKey": "Bus",
+    "shortName": "110",
+    "longName": "Wonderland Station - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wonderland Station",
+      "Wellington Station"
+    ],
+    "sortOrder": 51100,
+    "municipalities": [
+      "Everett",
+      "Medford",
+      "Revere"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 62
+  },
+  {
+    "id": "111",
+    "lineKey": "Bus",
+    "shortName": "111",
+    "longName": "Woodlawn - Haymarket Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Woodlawn",
+      "Haymarket Station"
+    ],
+    "sortOrder": 51110,
+    "municipalities": [
+      "Boston",
+      "Chelsea",
+      "Everett",
+      "Revere"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket"
+        ]
+      }
+    ],
+    "stopCount": 47
+  },
+  {
+    "id": "112",
+    "lineKey": "Bus",
+    "shortName": "112",
+    "longName": "Wellington Station - Wood Island Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wellington Station",
+      "Wood Island Station"
+    ],
+    "sortOrder": 51120,
+    "municipalities": [
+      "Boston",
+      "Chelsea",
+      "Everett",
+      "Medford"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wood Island"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Chelsea"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 71
+  },
+  {
+    "id": "114",
+    "lineKey": "Bus",
+    "shortName": "114",
+    "longName": "Market Basket - Maverick Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Market Basket",
+      "Maverick Station"
+    ],
+    "sortOrder": 51140,
+    "municipalities": [
+      "Boston",
+      "Chelsea"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Maverick"
+        ]
+      }
+    ],
+    "stopCount": 30
+  },
+  {
+    "id": "116",
+    "lineKey": "Bus",
+    "shortName": "116",
+    "longName": "Wonderland Station - Maverick Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wonderland Station",
+      "Maverick Station"
+    ],
+    "sortOrder": 51160,
+    "municipalities": [
+      "Boston",
+      "Chelsea",
+      "Lynn",
+      "Revere",
+      "Saugus"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Government Center",
+          "Maverick",
+          "State",
+          "Wonderland"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Government Center",
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket",
+          "State"
+        ]
+      }
+    ],
+    "stopCount": 75
+  },
+  {
+    "id": "119",
+    "lineKey": "Bus",
+    "shortName": "119",
+    "longName": "Northgate Shopping Center - Beachmont Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Northgate Shopping Center",
+      "Beachmont Station"
+    ],
+    "sortOrder": 51190,
+    "municipalities": [
+      "Malden",
+      "Revere"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Beachmont"
+        ]
+      }
+    ],
+    "stopCount": 64
+  },
+  {
+    "id": "120",
+    "lineKey": "Bus",
+    "shortName": "120",
+    "longName": "Orient Heights Station - Jeffries Point",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Orient Heights Station",
+      "Jeffries Point"
+    ],
+    "sortOrder": 51200,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Maverick",
+          "Orient Heights",
+          "Wood Island"
+        ]
+      }
+    ],
+    "stopCount": 57
+  },
+  {
+    "id": "121",
+    "lineKey": "Bus",
+    "shortName": "121",
+    "longName": "Wood Island Station - Maverick Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Wood Island Station",
+      "Maverick Station"
+    ],
+    "sortOrder": 51210,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Maverick",
+          "Wood Island"
+        ]
+      }
+    ],
+    "stopCount": 21
+  },
+  {
+    "id": "131",
+    "lineKey": "Bus",
+    "shortName": "131",
+    "longName": "Melrose Highlands - Malden Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Melrose Highlands",
+      "Malden Center Station"
+    ],
+    "sortOrder": 51310,
+    "municipalities": [
+      "Malden",
+      "Melrose"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Oak Grove"
+        ]
+      }
+    ],
+    "stopCount": 93
+  },
+  {
+    "id": "132",
+    "lineKey": "Bus",
+    "shortName": "132",
+    "longName": "Redstone Shopping Center - Malden Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Redstone Shopping Center",
+      "Malden Center Station"
+    ],
+    "sortOrder": 51320,
+    "municipalities": [
+      "Malden",
+      "Melrose",
+      "Stoneham"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Oak Grove"
+        ]
+      }
+    ],
+    "stopCount": 62
+  },
+  {
+    "id": "134",
+    "lineKey": "Bus",
+    "shortName": "134",
+    "longName": "North Woburn - Wellington Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "North Woburn",
+      "Wellington Station"
+    ],
+    "sortOrder": 51340,
+    "municipalities": [
+      "Medford",
+      "Wilmington",
+      "Winchester",
+      "Woburn"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Wellington"
+        ]
+      }
+    ],
+    "stopCount": 139
+  },
+  {
+    "id": "137",
+    "lineKey": "Bus",
+    "shortName": "137",
+    "longName": "Reading Depot - Malden Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Reading Depot",
+      "Malden Center Station"
+    ],
+    "sortOrder": 51370,
+    "municipalities": [
+      "Malden",
+      "Melrose",
+      "Reading",
+      "Wakefield"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center",
+          "Oak Grove"
+        ]
+      }
+    ],
+    "stopCount": 100
+  },
+  {
+    "id": "171",
+    "lineKey": "Bus",
+    "shortName": "171",
+    "longName": "Logan Airport Terminals - Nubian Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Logan Airport Terminals",
+      "Nubian Station"
+    ],
+    "sortOrder": 51710,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Airport"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Andrew"
+        ]
+      }
+    ],
+    "stopCount": 16
+  },
+  {
+    "id": "201",
+    "lineKey": "Bus",
+    "shortName": "201",
+    "longName": "Fields Corner Loop via Neponset Avenue",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Fields Corner Loop",
+      "Fields Corner Loop"
+    ],
+    "sortOrder": 52010,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Fields Corner"
+        ]
+      }
+    ],
+    "stopCount": 35
+  },
+  {
+    "id": "202",
+    "lineKey": "Bus",
+    "shortName": "202",
+    "longName": "Fields Corner Loop via Adams Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Fields Corner Loop",
+      "Fields Corner Loop"
+    ],
+    "sortOrder": 52020,
+    "municipalities": [
+      "Boston"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Fields Corner"
+        ]
+      }
+    ],
+    "stopCount": 34
+  },
+  {
+    "id": "210",
+    "lineKey": "Bus",
+    "shortName": "210",
+    "longName": "Quincy Center Station - Fields Corner Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Quincy Center Station",
+      "Fields Corner Station"
+    ],
+    "sortOrder": 52100,
+    "municipalities": [
+      "Boston",
+      "Braintree",
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Braintree",
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Braintree",
+          "Fields Corner",
+          "North Quincy",
+          "Quincy Adams",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 61
+  },
+  {
+    "id": "211",
+    "lineKey": "Bus",
+    "shortName": "211",
+    "longName": "Quincy Center Station - Squantum",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Quincy Center Station",
+      "Squantum"
+    ],
+    "sortOrder": 52110,
+    "municipalities": [
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "North Quincy",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 79
+  },
+  {
+    "id": "215",
+    "lineKey": "Bus",
+    "shortName": "215",
+    "longName": "Quincy Center Station - Ashmont Station via West Quincy",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Quincy Center Station",
+      "Ashmont Station"
+    ],
+    "sortOrder": 52150,
+    "municipalities": [
+      "Boston",
+      "Milton",
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont",
+          "North Quincy",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 108
+  },
+  {
+    "id": "216",
+    "lineKey": "Bus",
+    "shortName": "216",
+    "longName": "Houghs Neck - Quincy Center Station via Germantown",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Houghs Neck",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52160,
+    "municipalities": [
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 81
+  },
+  {
+    "id": "217",
+    "lineKey": "Bus",
+    "shortName": "217",
+    "longName": "Quincy Center Station - Ashmont Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Quincy Center Station",
+      "Ashmont Station"
+    ],
+    "sortOrder": 52170,
+    "municipalities": [
+      "Boston",
+      "Milton",
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont",
+          "Milton"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont",
+          "North Quincy",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 147
+  },
+  {
+    "id": "220",
+    "lineKey": "Bus",
+    "shortName": "220",
+    "longName": "Hingham Depot - Quincy Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Hingham Depot",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52200,
+    "municipalities": [
+      "Hingham",
+      "Quincy",
+      "Weymouth"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 89
+  },
+  {
+    "id": "222",
+    "lineKey": "Bus",
+    "shortName": "222",
+    "longName": "East Weymouth - Quincy Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "East Weymouth",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52220,
+    "municipalities": [
+      "Hingham",
+      "Quincy",
+      "Weymouth"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 105
+  },
+  {
+    "id": "225",
+    "lineKey": "Bus",
+    "shortName": "225",
+    "longName": "Weymouth Landing - Quincy Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Weymouth Landing",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52250,
+    "municipalities": [
+      "Braintree",
+      "Quincy",
+      "Weymouth"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 74
+  },
+  {
+    "id": "226",
+    "lineKey": "Bus",
+    "shortName": "226",
+    "longName": "Columbian Square - Braintree Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Columbian Square",
+      "Braintree Station"
+    ],
+    "sortOrder": 52260,
+    "municipalities": [
+      "Braintree",
+      "Weymouth"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Braintree"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Braintree"
+        ]
+      }
+    ],
+    "stopCount": 54
+  },
+  {
+    "id": "230",
+    "lineKey": "Bus",
+    "shortName": "230",
+    "longName": "Montello Station - Quincy Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Montello Station",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52300,
+    "municipalities": [
+      "Braintree",
+      "Brockton",
+      "Holbrook",
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Braintree",
+          "Montello",
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Braintree",
+          "Quincy Adams",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 134
+  },
+  {
+    "id": "236",
+    "lineKey": "Bus",
+    "shortName": "236",
+    "longName": "South Shore Plaza - Quincy Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "South Shore Plaza",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52360,
+    "municipalities": [
+      "Braintree",
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Braintree",
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Braintree",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 80
+  },
+  {
+    "id": "238",
+    "lineKey": "Bus",
+    "shortName": "238",
+    "longName": "Holbrook/Randolph Station - Quincy Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Holbrook/Randolph Station",
+      "Quincy Center Station"
+    ],
+    "sortOrder": 52380,
+    "municipalities": [
+      "Avon",
+      "Braintree",
+      "Quincy",
+      "Randolph"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Holbrook/Randolph",
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Quincy Adams",
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 138
+  },
+  {
+    "id": "240",
+    "lineKey": "Bus",
+    "shortName": "240",
+    "longName": "Avon Square - Ashmont Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Avon Square",
+      "Ashmont Station"
+    ],
+    "sortOrder": 52400,
+    "municipalities": [
+      "Avon",
+      "Boston",
+      "Milton",
+      "Randolph"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Holbrook/Randolph"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Ashmont",
+          "Central Avenue"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Ashmont"
+        ]
+      }
+    ],
+    "stopCount": 162
+  },
+  {
+    "id": "245",
+    "lineKey": "Bus",
+    "shortName": "245",
+    "longName": "Quincy Center Station - Mattapan Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Quincy Center Station",
+      "Mattapan Station"
+    ],
+    "sortOrder": 52450,
+    "municipalities": [
+      "Boston",
+      "Milton",
+      "Quincy"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Quincy Center"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Quincy Center"
+        ]
+      }
+    ],
+    "stopCount": 111
+  },
+  {
+    "id": "350",
+    "lineKey": "Bus",
+    "shortName": "350",
+    "longName": "North Burlington - Alewife Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "North Burlington",
+      "Alewife Station"
+    ],
+    "sortOrder": 53500,
+    "municipalities": [
+      "Arlington",
+      "Burlington",
+      "Cambridge",
+      "Winchester",
+      "Woburn"
+    ],
+    "connections": [
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Alewife"
+        ]
+      }
+    ],
+    "stopCount": 119
+  },
+  {
+    "id": "351",
+    "lineKey": "Bus",
+    "shortName": "351",
+    "longName": "Bedford Woods Drive - Third Avenue, Burlington",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Bedford Woods Drive",
+      "Third Avenue, Burlington"
+    ],
+    "sortOrder": 53510,
+    "municipalities": [
+      "Bedford",
+      "Billerica",
+      "Burlington"
+    ],
+    "connections": [],
+    "stopCount": 21
+  },
+  {
+    "id": "354",
+    "lineKey": "Bus",
+    "shortName": "354",
+    "longName": "North Burlington - State Street, Boston",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "North Burlington",
+      "State Street, Boston"
+    ],
+    "sortOrder": 53540,
+    "municipalities": [
+      "Boston",
+      "Burlington",
+      "Medford",
+      "Woburn"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Government Center",
+          "State"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Government Center",
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket",
+          "State"
+        ]
+      }
+    ],
+    "stopCount": 88
+  },
+  {
+    "id": "411",
+    "lineKey": "Bus",
+    "shortName": "411",
+    "longName": "Kennedy Drive or Jack Satter House - Malden Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Kennedy Drive or Jack Satter House",
+      "Malden Center Station"
+    ],
+    "sortOrder": 54110,
+    "municipalities": [
+      "Malden",
+      "Revere"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center"
+        ]
+      }
+    ],
+    "stopCount": 108
+  },
+  {
+    "id": "424",
+    "lineKey": "Bus",
+    "shortName": "424",
+    "longName": "Eastern Avenue & Essex Street - Wonderland Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Eastern Avenue & Essex Street",
+      "Wonderland Station"
+    ],
+    "sortOrder": 54240,
+    "municipalities": [
+      "Lynn",
+      "Revere",
+      "Saugus"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      }
+    ],
+    "stopCount": 79
+  },
+  {
+    "id": "426",
+    "lineKey": "Bus",
+    "shortName": "426",
+    "longName": "Central Square, Lynn - Haymarket or Wonderland Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Central Square, Lynn",
+      "Haymarket or Wonderland Station"
+    ],
+    "sortOrder": 54260,
+    "municipalities": [
+      "Boston",
+      "Lynn",
+      "Malden",
+      "Revere",
+      "Saugus"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket"
+        ]
+      }
+    ],
+    "stopCount": 109
+  },
+  {
+    "id": "428",
+    "lineKey": "Bus",
+    "shortName": "428",
+    "longName": "Oaklandvale - Haymarket Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Oaklandvale",
+      "Haymarket Station"
+    ],
+    "sortOrder": 54280,
+    "municipalities": [
+      "Boston",
+      "Malden",
+      "Revere",
+      "Saugus"
+    ],
+    "connections": [
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket"
+        ]
+      }
+    ],
+    "stopCount": 93
+  },
+  {
+    "id": "429",
+    "lineKey": "Bus",
+    "shortName": "429",
+    "longName": "Northgate Shopping Center - Central Square, Lynn",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Northgate Shopping Center",
+      "Central Square, Lynn"
+    ],
+    "sortOrder": 54290,
+    "municipalities": [
+      "Lynn",
+      "Malden",
+      "Revere",
+      "Saugus"
+    ],
+    "connections": [],
+    "stopCount": 128
+  },
+  {
+    "id": "430",
+    "lineKey": "Bus",
+    "shortName": "430",
+    "longName": "Saugus Center - Malden Center Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Saugus Center",
+      "Malden Center Station"
+    ],
+    "sortOrder": 54300,
+    "municipalities": [
+      "Malden",
+      "Melrose",
+      "Saugus"
+    ],
+    "connections": [
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Malden Center"
+        ]
+      }
+    ],
+    "stopCount": 99
+  },
+  {
+    "id": "435",
+    "lineKey": "Bus",
+    "shortName": "435",
+    "longName": "Salem Depot or Liberty Tree Mall - Central Square, Lynn via Peabody Square",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Salem Depot or Liberty Tree Mall",
+      "Central Square, Lynn"
+    ],
+    "sortOrder": 54350,
+    "municipalities": [
+      "Danvers",
+      "Lynn",
+      "Peabody",
+      "Salem"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Salem"
+        ]
+      }
+    ],
+    "stopCount": 121
+  },
+  {
+    "id": "436",
+    "lineKey": "Bus",
+    "shortName": "436",
+    "longName": "Liberty Tree Mall - Central Square, Lynn via Goodwin Circle",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Liberty Tree Mall",
+      "Central Square, Lynn"
+    ],
+    "sortOrder": 54360,
+    "municipalities": [
+      "Danvers",
+      "Lynn",
+      "Peabody"
+    ],
+    "connections": [],
+    "stopCount": 116
+  },
+  {
+    "id": "439",
+    "lineKey": "Bus",
+    "shortName": "439",
+    "longName": "Nahant - Wonderland Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Nahant",
+      "Wonderland Station"
+    ],
+    "sortOrder": 54390,
+    "municipalities": [
+      "Lynn",
+      "Nahant",
+      "Revere"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      }
+    ],
+    "stopCount": 67
+  },
+  {
+    "id": "441",
+    "lineKey": "Bus",
+    "shortName": "441",
+    "longName": "Marblehead - Wonderland Station via Paradise Road",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Marblehead",
+      "Wonderland Station"
+    ],
+    "sortOrder": 54410,
+    "municipalities": [
+      "Lynn",
+      "Marblehead",
+      "Revere",
+      "Swampscott"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      }
+    ],
+    "stopCount": 135
+  },
+  {
+    "id": "442",
+    "lineKey": "Bus",
+    "shortName": "442",
+    "longName": "Marblehead - Wonderland Station via Humphrey Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Marblehead",
+      "Wonderland Station"
+    ],
+    "sortOrder": 54420,
+    "municipalities": [
+      "Lynn",
+      "Marblehead",
+      "Revere",
+      "Swampscott"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      }
+    ],
+    "stopCount": 147
+  },
+  {
+    "id": "450",
+    "lineKey": "Bus",
+    "shortName": "450",
+    "longName": "Salem Depot - Wonderland or Haymarket Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Salem Depot",
+      "Wonderland or Haymarket Station"
+    ],
+    "sortOrder": 54500,
+    "municipalities": [
+      "Boston",
+      "Lynn",
+      "Revere",
+      "Salem",
+      "Saugus"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Salem"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Haymarket"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Haymarket"
+        ]
+      }
+    ],
+    "stopCount": 112
+  },
+  {
+    "id": "451",
+    "lineKey": "Bus",
+    "shortName": "451",
+    "longName": "North Beverly Station - Salem Depot",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "North Beverly Station",
+      "Salem Depot"
+    ],
+    "sortOrder": 54510,
+    "municipalities": [
+      "Beverly",
+      "Salem"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "North Beverly",
+          "Salem"
+        ]
+      }
+    ],
+    "stopCount": 89
+  },
+  {
+    "id": "455",
+    "lineKey": "Bus",
+    "shortName": "455",
+    "longName": "Salem Depot - Wonderland Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Salem Depot",
+      "Wonderland Station"
+    ],
+    "sortOrder": 54550,
+    "municipalities": [
+      "Lynn",
+      "Revere",
+      "Salem",
+      "Saugus",
+      "Swampscott"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Wonderland"
+        ]
+      },
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Salem"
+        ]
+      }
+    ],
+    "stopCount": 138
+  },
+  {
+    "id": "456",
+    "lineKey": "Bus",
+    "shortName": "456",
+    "longName": "Salem Depot - Central Square, Lynn",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Salem Depot",
+      "Central Square, Lynn"
+    ],
+    "sortOrder": 54560,
+    "municipalities": [
+      "Lynn",
+      "Salem"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Salem"
+        ]
+      }
+    ],
+    "stopCount": 77
+  },
+  {
+    "id": "501",
+    "lineKey": "Bus",
+    "shortName": "501",
+    "longName": "Brighton Center - Federal Street & Franklin Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Brighton Center",
+      "Federal Street & Franklin Street"
+    ],
+    "sortOrder": 55010,
+    "municipalities": [
+      "Boston",
+      "Newton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Back Bay"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Arlington",
+          "Copley"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Back Bay",
+          "Downtown Crossing"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing"
+        ]
+      }
+    ],
+    "stopCount": 58
+  },
+  {
+    "id": "504",
+    "lineKey": "Bus",
+    "shortName": "504",
+    "longName": "Watertown Yard - Federal Street & Franklin Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Watertown Yard",
+      "Federal Street & Franklin Street"
+    ],
+    "sortOrder": 55040,
+    "municipalities": [
+      "Boston",
+      "Newton",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Back Bay"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Arlington",
+          "Copley"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Back Bay",
+          "Downtown Crossing"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing"
+        ]
+      }
+    ],
+    "stopCount": 19
+  },
+  {
+    "id": "505",
+    "lineKey": "Bus",
+    "shortName": "505",
+    "longName": "Waltham Center - Federal Street & Franklin Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Waltham Center",
+      "Federal Street & Franklin Street"
+    ],
+    "sortOrder": 55050,
+    "municipalities": [
+      "Boston",
+      "Newton",
+      "Waltham"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Waltham"
+        ]
+      },
+      {
+        "lineKey": "Orange",
+        "stations": [
+          "Downtown Crossing"
+        ]
+      },
+      {
+        "lineKey": "Red",
+        "stations": [
+          "Downtown Crossing"
+        ]
+      }
+    ],
+    "stopCount": 51
+  },
+  {
+    "id": "553",
+    "lineKey": "Bus",
+    "shortName": "553",
+    "longName": "Roberts - Newton Corner",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Roberts",
+      "Newton Corner"
+    ],
+    "sortOrder": 55530,
+    "municipalities": [
+      "Newton",
+      "Waltham"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Newtonville",
+          "Waltham",
+          "West Newton"
+        ]
+      }
+    ],
+    "stopCount": 84
+  },
+  {
+    "id": "554",
+    "lineKey": "Bus",
+    "shortName": "554",
+    "longName": "Waverley Square - Newton Corner",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Waverley Square",
+      "Newton Corner"
+    ],
+    "sortOrder": 55540,
+    "municipalities": [
+      "Belmont",
+      "Newton",
+      "Waltham",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Newtonville",
+          "Waltham",
+          "Waverley",
+          "West Newton"
+        ]
+      }
+    ],
+    "stopCount": 91
+  },
+  {
+    "id": "556",
+    "lineKey": "Bus",
+    "shortName": "556",
+    "longName": "Waltham Highlands - Newton Corner",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Waltham Highlands",
+      "Newton Corner"
+    ],
+    "sortOrder": 55560,
+    "municipalities": [
+      "Newton",
+      "Waltham"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Newtonville",
+          "Waltham"
+        ]
+      }
+    ],
+    "stopCount": 71
+  },
+  {
+    "id": "558",
+    "lineKey": "Bus",
+    "shortName": "558",
+    "longName": "Riverside Station - Newton Corner",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Riverside Station",
+      "Newton Corner"
+    ],
+    "sortOrder": 55580,
+    "municipalities": [
+      "Newton",
+      "Waltham",
+      "Watertown"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Waltham"
+        ]
+      },
+      {
+        "lineKey": "Green",
+        "stations": [
+          "Riverside"
+        ]
+      }
+    ],
+    "stopCount": 79
+  },
+  {
+    "id": "712",
+    "lineKey": "Bus",
+    "shortName": "712",
+    "longName": "Point Shirley - Orient Heights Station via Revere Street",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Point Shirley",
+      "Orient Heights Station"
+    ],
+    "sortOrder": 57120,
+    "municipalities": [
+      "Boston",
+      "Winthrop"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Orient Heights"
+        ]
+      }
+    ],
+    "stopCount": 50
+  },
+  {
+    "id": "713",
+    "lineKey": "Bus",
+    "shortName": "713",
+    "longName": "Point Shirley - Orient Heights Station via Winthrop Center",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Point Shirley",
+      "Orient Heights Station"
+    ],
+    "sortOrder": 57130,
+    "municipalities": [
+      "Boston",
+      "Winthrop"
+    ],
+    "connections": [
+      {
+        "lineKey": "Blue",
+        "stations": [
+          "Orient Heights"
+        ]
+      }
+    ],
+    "stopCount": 52
+  },
+  {
+    "id": "714",
+    "lineKey": "Bus",
+    "shortName": "714",
+    "longName": "Hull Ferry - Hingham Depot",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Hull Ferry",
+      "Hingham Depot"
+    ],
+    "sortOrder": 57140,
+    "municipalities": [
+      "Hingham",
+      "Hull"
+    ],
+    "connections": [],
+    "stopCount": 40
+  },
+  {
+    "id": "716",
+    "lineKey": "Bus",
+    "shortName": "716",
+    "longName": "Canton Village Shoppes - Mattapan Station",
+    "directionNames": [
+      "Outbound",
+      "Inbound"
+    ],
+    "directionDestinations": [
+      "Canton Village Shoppes",
+      "Mattapan Station"
+    ],
+    "sortOrder": 57160,
+    "municipalities": [
+      "Boston",
+      "Canton",
+      "Milton"
+    ],
+    "connections": [
+      {
+        "lineKey": "CR",
+        "stations": [
+          "Canton Center",
+          "Canton Junction"
+        ]
+      },
+      {
+        "lineKey": "Mattapan",
+        "stations": [
+          "Mattapan"
+        ]
+      }
+    ],
+    "stopCount": 45
+  }
+]

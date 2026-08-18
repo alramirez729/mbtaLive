@@ -22,12 +22,16 @@ const toLng = (x) => x / METRES_PER_DEG_LNG;
 const toLat = (y) => y / METRES_PER_DEG_LAT;
 
 /**
- * Precomputes, for every line, the planar vertices of each of its shapes plus
- * the cumulative distance to each vertex. The cumulative array is what makes
- * "the point 900m along this track" an O(log n) lookup.
+ * Precomputes, per route, the planar vertices of each of its shapes plus the
+ * cumulative distance to each vertex. The cumulative array is what makes "the
+ * point 900m along this track" an O(log n) lookup.
+ *
+ * Keyed by route rather than by line so a vehicle is only ever matched against
+ * its own route's geometry. With 149 bus routes under one Bus line, a per-line
+ * index would mean scanning every bus route in the city for every bus.
  */
 export function buildTrackIndex(shapes) {
-  const byLine = new Map();
+  const byRoute = new Map();
 
   for (const shape of shapes) {
     const latlngs = decodePolyline(shape.polyline);
@@ -48,11 +52,11 @@ export function buildTrackIndex(shapes) {
     }
 
     const entry = { id: shape.id, xs, ys, cumulative, length: cumulative[count - 1] };
-    if (!byLine.has(shape.lineKey)) byLine.set(shape.lineKey, []);
-    byLine.get(shape.lineKey).push(entry);
+    if (!byRoute.has(shape.routeId)) byRoute.set(shape.routeId, []);
+    byRoute.get(shape.routeId).push(entry);
   }
 
-  return byLine;
+  return byRoute;
 }
 
 /** Squared perpendicular distance to a segment, plus how far along it fell. */
@@ -100,11 +104,11 @@ const MAX_SNAP_METRES = 150;
 const GOOD_ENOUGH_METRES = 25;
 
 /**
- * Finds where a vehicle sits on its line's track.
+ * Finds where a vehicle sits on its own route's track.
  * `preferredPathId` is the shape it matched last time, checked first.
  */
-export function projectVehicle(index, lineKey, lat, lng, preferredPathId) {
-  const paths = index.get(lineKey);
+export function projectVehicle(index, routeId, lat, lng, preferredPathId) {
+  const paths = index.get(routeId);
   if (!paths || paths.length === 0) return null;
 
   const px = toX(lng);

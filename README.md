@@ -4,16 +4,21 @@ A live map of MBTA rail vehicles plus current service alerts. Data comes from th
 [MBTA v3 API](https://api-v3.mbta.com/docs/swagger/index.html) through a small
 caching proxy.
 
-Covers Red, Orange, Blue, Green (all four branches), Mattapan, and Commuter Rail.
-Buses and ferries are out of scope.
+Covers Red, Orange, Blue, Green (all four branches), Mattapan, Commuter Rail, the
+Silver Line, and bus. Ferries are out of scope.
 
 ## Layout
 
+Two pages: `/subway` for rail, `/bus` for bus. `/` redirects to `/subway`.
+
 ```
 frontend/            Vite + React single-page app
+  src/pages/           SubwayPage and BusPage
+  src/components/      MapView, Panel and panel contents, shared by both pages
 backend/server/      Express caching proxy for the MBTA API
   data/stations.json   committed station snapshot (see below)
-  data/shapes.json     committed track geometry snapshot
+  data/shapes.json     committed rail track geometry snapshot
+  data/bus-shapes.json committed bus route geometry snapshot
   .env                 MBTA_API_KEY lives here (see .env.example)
 api/[path].js   Vercel entry point; hands the same Express app to a function
 _archive/            the old user accounts feature, kept for reference only
@@ -35,6 +40,109 @@ in development Vite forwards that to the proxy, so there is no environment-speci
 base URL to configure.
 
 Run the two halves separately with `npm run dev:proxy` and `npm run dev:web`.
+
+## Bus
+
+`/bus` is its own page, because bus needs a route directory and a drill-down that
+rail has no use for, and one combined filter list served neither well.
+
+The page opens showing every bus. Pick a route from the searchable directory
+(searchable by number, name, or town) and the map narrows to that route: its path,
+its stops, its live buses, and the view frames itself to the route. The selection
+lives in the URL as `?route=111`, so a route is linkable and the back button steps
+out of it.
+
+Each route's detail shows:
+
+- **Direction**, named the way the route names it. Bus is Outbound/Inbound, but
+  rail is not (the Red Line is South/North), so the label is read from the route
+  rather than assumed. Live count per direction, and either can be isolated.
+- **Rail connections**, and which stations they happen at. Route 1 meets Red at
+  Central and Harvard, Orange at Massachusetts Avenue, Green at Hynes and Symphony.
+  144 of 149 routes have at least one.
+- **Towns served**, from the stops' `municipality`. Neighbourhood-level geography
+  (Allston, Roxbury) is not in the MBTA API and would need city open data.
+
+Connections are computed with no extra requests, by intersecting each route's stops
+against the rail station snapshot, which already records the lines at each station.
+Two sources are needed and neither alone is enough: MBTA's `connecting_stops`
+covers a street stop outside a station (route 1 at Harvard), while a route that
+pulls into the station itself is not "connecting" because the rider is already
+there (SL1 stops at `place-sstat`). It is an exact id match, not a distance guess.
+Bus stops carry no `parent_station`, which closes the obvious route to the answer.
+
+Bus is a different scale from rail: **400 vehicles off peak against 110 rail**,
+149 routes against 21, and 6,892 stops against 232 stations. That shapes several
+decisions:
+
+- **Separate feeds.** `/api/buses`, `/api/bus-shapes`, and `/api/bus-routes` are
+  only requested on `/bus`, so a visit to `/subway` never pays for them. Bus
+  geometry alone is 83KB gzipped.
+- **Stops are fetched per route**, on selection. All 149 routes together is 10,500
+  stops and 1.2MB, and the page only ever shows the one route in view.
+- **In the overview, bus geometry is zoom-gated** to zoom 14 and above: all 176
+  shapes at region scale is an unreadable web, but it is useful once you are down
+  at neighbourhood level. A route you have actually chosen draws at any zoom.
+- **Bus stops are not drawn in the overview.** 6,892 markers would bury the map.
+
+Buses render smaller, softer, and in their own map pane below the rail markers.
+Without that they outnumber trains four to one and visually bury the network they
+are meant to sit behind. Their markers carry no label, because a route number like
+`116` does not fit in a marker; the popup leads with it instead.
+
+The Silver Line is bus rapid transit, so it arrives on the bus feed as route_type
+3, but MBTA brands it separately and it gets its own colour, the official
+`#7C878E`. MBTA distinguishes its six routes (741, 742, 743, 746, 749, 751) from
+the other 143 only by colour.
+
+Two upstream quirks worth knowing:
+
+- **Bus route patterns are never `canonical`.** Only rail is, so
+  `filter[canonical]=true` returns nothing for bus. Bus uses `typicality: 1`, the
+  pattern MBTA treats as the route's normal service.
+- **`Shuttle-*` routes are excluded.** These are replacement buses run during a
+  diversion, and MBTA attaches them to the line they replace, so including them
+  drew an Orange Line shape along the roads a shuttle happened to use.
+
+## Focusing one line
+
+Clicking a line row on `/subway` isolates that line and frames the whole of it,
+the same move as picking a bus route. Each row carries two actions, because the two
+are genuinely different questions:
+
+- **The row** isolates the line and zooms to fit it, from Bowdoin to Wonderland for
+  Blue, or out to Providence and Worcester for Commuter Rail.
+- **The checkbox** shows or hides that line without moving the map, so several
+  lines can be compared at once.
+
+Hand-picking with the checkboxes clears the focus highlight, since the view is then
+no longer focused on any one line. "All lines" restores everything.
+
+The extent comes from the stations already loaded, not from the geometry, and a
+counter in the focus state means clicking the same line again re-frames it rather
+than doing nothing.
+
+## Station labels
+
+Station names appear beside their dots on `/subway` once you zoom past 15, the same
+progressive-disclosure idea as the bus geometry gate. Below that they are hidden;
+without the gate 232 names collide into mush at region scale.
+
+The threshold is one step tighter than the bus gate (15 against 14) because names
+need more room than lines do. At 14 the Green Line surface stops through Brookline
+and Longwood sit a couple of hundred metres apart and their labels pile onto each
+other.
+
+Labels are permanent Leaflet tooltips bound once and shown or hidden in CSS, rather
+than markers being rebuilt on every zoom change. Two details worth knowing if you
+touch them:
+
+- **Leaflet writes tooltip opacity as an inline style**, so hiding them needs
+  `!important`. No selector specificity can outrank an inline style.
+- They are `pointer-events: none`, so a click belongs to the dot underneath.
+
+Bus stops deliberately get no labels: names like "Massachusetts Ave opp Holyoke St"
+are far too long to sit beside a dot.
 
 ## Motion
 
@@ -105,7 +213,10 @@ the last known positions.
 | `GET /api/vehicles` | 2.5s | Normalized live positions |
 | `GET /api/alerts` | 60s | Alerts currently in effect |
 | `GET /api/stations` | 24h | Served from the committed snapshot, no upstream call |
-| `GET /api/shapes` | 24h | Track geometry as encoded polylines, also from a snapshot |
+| `GET /api/shapes` | 24h | Rail track geometry as encoded polylines, also from a snapshot |
+| `GET /api/bus-shapes` | 24h | Bus route geometry, 176 shapes, also opt-in |
+| `GET /api/bus-routes` | 24h | Route directory: towns served and rail connections |
+| `GET /api/bus-stops?route=1` | 24h | Stops for one route, fetched on selection |
 
 Responses are normalized, so the browser never parses JSON:API relationships.
 Each endpoint also sets `s-maxage`, which lets Vercel's CDN serve most repeat hits.

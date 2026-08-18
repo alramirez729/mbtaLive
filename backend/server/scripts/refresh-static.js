@@ -10,7 +10,12 @@
 
 const fs = require('node:fs/promises');
 const path = require('node:path');
-const { fetchStationsFromApi, fetchShapesFromApi } = require('../lib/mbta');
+const {
+  fetchStationsFromApi,
+  fetchShapesFromApi,
+  fetchBusRoutesFromApi,
+} = require('../lib/mbta');
+const { RAIL_ROUTE_TYPES, BUS_ROUTE_TYPE } = require('../lib/lines');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
@@ -30,7 +35,13 @@ const SNAPSHOTS = [
   {
     file: 'shapes.json',
     minimum: 15,
-    fetch: fetchShapesFromApi,
+    fetch: () => fetchShapesFromApi(RAIL_ROUTE_TYPES),
+    normalize: (shapes) => shapes.sort((a, b) => a.id.localeCompare(b.id)),
+  },
+  {
+    file: 'bus-shapes.json',
+    minimum: 100,
+    fetch: () => fetchShapesFromApi(BUS_ROUTE_TYPE),
     normalize: (shapes) => shapes.sort((a, b) => a.id.localeCompare(b.id)),
   },
 ];
@@ -52,6 +63,22 @@ async function main() {
   for (const snapshot of SNAPSHOTS) {
     await write(snapshot);
   }
+
+  // The bus directory needs the station snapshot that was just written, since
+  // rail connections are computed by intersecting against it. It is also one
+  // request per bus route, ~149 of them, so it needs the API key.
+  const stations = JSON.parse(await fs.readFile(path.join(DATA_DIR, 'stations.json'), 'utf8'));
+  const directory = await fetchBusRoutesFromApi(stations);
+  if (directory.length < 100) {
+    throw new Error(`bus-routes.json: refusing to write ${directory.length} routes`);
+  }
+  await fs.writeFile(
+    path.join(DATA_DIR, 'bus-routes.json'),
+    `${JSON.stringify(directory, null, 2)}
+`,
+  );
+  console.log(`Wrote ${directory.length} records to data/bus-routes.json`);
+
 }
 
 main().catch((error) => {
