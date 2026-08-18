@@ -1,0 +1,571 @@
+:root {
+  --ink: #0f172a;
+  --ink-soft: #4a5768;
+  --ink-faint: #7b879a;
+  --surface: #ffffff;
+  --surface-sunk: #f2f4f8;
+  --line: #dfe4ec;
+  --accent: #1d4ed8;
+  --danger: #b42318;
+  --warn: #b54708;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.08);
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--surface-sunk);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- shell ---------- */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.stage {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  background: var(--surface-sunk);
+}
+
+/* ---------- top bar ---------- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.6rem 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  /* Above Leaflet's own panes and controls. */
+  z-index: 1100;
+}
+
+.topbar__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-right: auto;
+}
+
+.topbar__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.topbar__status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.topbar__time {
+  color: var(--ink-faint);
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.pulse--stale {
+  background: var(--warn);
+  box-shadow: 0 0 0 3px rgba(181, 71, 8, 0.18);
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}
+
+/* ---------- line filter ---------- */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.chip:hover {
+  border-color: var(--ink-faint);
+}
+
+.chip__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--line-color);
+  opacity: 0.35;
+}
+
+.chip[aria-pressed='true'] {
+  /* The line's own color carries the active state, so no extra accent is needed. */
+  border-color: var(--line-color);
+  background: color-mix(in srgb, var(--line-color) 10%, white);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.chip[aria-pressed='true'] .chip__dot {
+  opacity: 1;
+}
+
+.chip__count {
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: var(--surface-sunk);
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.chip--action {
+  color: var(--ink-faint);
+}
+
+/* ---------- controls ---------- */
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1740b4;
+}
+
+.button__badge {
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle input {
+  accent-color: var(--accent);
+}
+
+.icon-button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.field select {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+/* ---------- banners ---------- */
+
+.banner {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background: #fffaeb;
+  border-bottom: 1px solid #fedf89;
+  color: var(--warn);
+  font-size: 0.8rem;
+  z-index: 1100;
+}
+
+.banner--error {
+  background: #fef3f2;
+  border-bottom-color: #fecdca;
+  color: var(--danger);
+}
+
+/* ---------- vehicle markers ---------- */
+
+.vehicle-icon {
+  background: none;
+  border: none;
+}
+
+.vehicle {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.vehicle__heading {
+  position: absolute;
+  inset: 0;
+  transform: rotate(var(--bearing, 0deg));
+  /* Purely decorative, and it covers the whole marker box. Without this it
+     becomes the hit target instead of the marker underneath it. */
+  pointer-events: none;
+}
+
+.vehicle__heading::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  translate: -50% 0;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-bottom: 6px solid var(--line-color);
+}
+
+.vehicle__body {
+  position: absolute;
+  inset: 4px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: var(--line-color);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.4);
+}
+
+/* ---------- leaflet overrides ---------- */
+
+.leaflet-container {
+  font-family: var(--font);
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.leaflet-popup-content {
+  margin: 0.7rem 0.85rem;
+  min-width: 170px;
+}
+
+.popup p {
+  margin: 0;
+}
+
+.popup__title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.popup__title::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line-color);
+  flex: none;
+}
+
+.popup__title--plain::before {
+  display: none;
+}
+
+.popup__lead {
+  margin-top: 0.15rem !important;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+.popup__row {
+  margin-top: 0.3rem !important;
+  font-size: 0.78rem;
+  color: var(--ink);
+}
+
+.popup__row span {
+  color: var(--ink-faint);
+}
+
+/* ---------- alerts panel ---------- */
+
+.alerts {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  width: min(380px, calc(100% - 1.5rem));
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  /* Leaflet controls sit at 1000; this must clear them. */
+  z-index: 1050;
+  overflow: hidden;
+}
+
+.alerts__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.alerts__title {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.alerts__controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--surface-sunk);
+  border-bottom: 1px solid var(--line);
+}
+
+.alerts__hint {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  text-align: right;
+}
+
+.alerts__list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0.6rem 0.85rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.alerts__empty {
+  margin: 1rem 0;
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.alerts__empty--error {
+  color: var(--danger);
+}
+
+.alert {
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--line-color);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.alert__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.sev {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.sev--high {
+  background: #fef3f2;
+  color: var(--danger);
+}
+
+.sev--mid {
+  background: #fffaeb;
+  color: var(--warn);
+}
+
+.sev--low {
+  background: var(--surface-sunk);
+  color: var(--ink-faint);
+}
+
+.alert__effect {
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+.alert__header {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.alert__body {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  /* Some MBTA descriptions are very long; cap them so the list stays scannable. */
+  max-height: 8.5em;
+  overflow-y: auto;
+}
+
+.alert__lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.alert__lines li {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--line-color) 12%, white);
+  color: color-mix(in srgb, var(--line-color) 70%, black);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 720px) {
+  .topbar {
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .topbar__brand {
+    margin-right: 0;
+    width: 100%;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .filter {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.15rem;
+  }
+
+  .chip {
+    flex: none;
+  }
+
+  .alerts {
+    top: auto;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: auto;
+    max-height: 65%;
+  }
+}

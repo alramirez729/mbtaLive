@@ -1,4 +1,14 @@
+node_modules/
+dist/
+build/
+coverage/
+
+.env
+.env.local
+.env.*.local
+
+.vercel/
+
 .DS_Store
 **/.DS_Store
-/node_modules
-backend/server/.env copy
+npm-debug.log*

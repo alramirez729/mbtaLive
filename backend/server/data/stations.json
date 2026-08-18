@@ -1,0 +1,2570 @@
+[
+  {
+    "id": "place-alfcl",
+    "name": "Alewife",
+    "description": null,
+    "municipality": "Cambridge",
+    "latitude": 42.39583,
+    "longitude": -71.141287,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-alsgr",
+    "name": "Allston Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.348701,
+    "longitude": -71.137955,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-amory",
+    "name": "Amory Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.350992,
+    "longitude": -71.114748,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-andrw",
+    "name": "Andrew",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.330154,
+    "longitude": -71.057655,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-aport",
+    "name": "Airport",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.374262,
+    "longitude": -71.030395,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-aqucl",
+    "name": "Aquarium",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.359784,
+    "longitude": -71.051652,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-armnl",
+    "name": "Arlington",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.351902,
+    "longitude": -71.070893,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-asmnl",
+    "name": "Ashmont",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.28452,
+    "longitude": -71.063777,
+    "lineKeys": [
+      "Mattapan",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-astao",
+    "name": "Assembly",
+    "description": null,
+    "municipality": "Somerville",
+    "latitude": 42.392811,
+    "longitude": -71.077257,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-babck",
+    "name": "Babcock Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.351616,
+    "longitude": -71.119924,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-balsq",
+    "name": "Ball Square",
+    "description": null,
+    "municipality": "Medford",
+    "latitude": 42.399889,
+    "longitude": -71.111003,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-bbsta",
+    "name": "Back Bay",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.34735,
+    "longitude": -71.075727,
+    "lineKeys": [
+      "CR",
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-bckhl",
+    "name": "Back of the Hill",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.330139,
+    "longitude": -71.111313,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-bcnfd",
+    "name": "Beaconsfield",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.335765,
+    "longitude": -71.140455,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-bcnwa",
+    "name": "Washington Square",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.339394,
+    "longitude": -71.13533,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-bland",
+    "name": "Blandford Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.349293,
+    "longitude": -71.100258,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-bmmnl",
+    "name": "Beachmont",
+    "description": null,
+    "municipality": "Revere",
+    "latitude": 42.3975423,
+    "longitude": -70.9923194,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-bndhl",
+    "name": "Brandon Hall",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.340023,
+    "longitude": -71.129082,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-bomnl",
+    "name": "Bowdoin",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.361365,
+    "longitude": -71.062037,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-boyls",
+    "name": "Boylston",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.35302,
+    "longitude": -71.06459,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-brdwy",
+    "name": "Broadway",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.342622,
+    "longitude": -71.056967,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-brico",
+    "name": "Packard's Corner",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.351967,
+    "longitude": -71.125031,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-brkhl",
+    "name": "Brookline Hills",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.331316,
+    "longitude": -71.126683,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-brmnl",
+    "name": "Brigham Circle",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.334229,
+    "longitude": -71.104609,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-brntn",
+    "name": "Braintree",
+    "description": null,
+    "municipality": "Braintree",
+    "latitude": 42.2078543,
+    "longitude": -71.0011385,
+    "lineKeys": [
+      "CR",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-bucen",
+    "name": "Boston University Central",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.350082,
+    "longitude": -71.106865,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-buest",
+    "name": "Boston University East",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.349735,
+    "longitude": -71.103889,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-butlr",
+    "name": "Butler",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.272429,
+    "longitude": -71.062519,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-bvmnl",
+    "name": "Brookline Village",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.332608,
+    "longitude": -71.116857,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-capst",
+    "name": "Capen Street",
+    "description": null,
+    "municipality": "Milton",
+    "latitude": 42.267563,
+    "longitude": -71.087338,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-ccmnl",
+    "name": "Community College",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.373622,
+    "longitude": -71.069533,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-cedgr",
+    "name": "Cedar Grove",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.279629,
+    "longitude": -71.060394,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-cenav",
+    "name": "Central Avenue",
+    "description": null,
+    "municipality": "Milton",
+    "latitude": 42.270027,
+    "longitude": -71.073444,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-chels",
+    "name": "Chelsea",
+    "description": null,
+    "municipality": "Chelsea",
+    "latitude": 42.397024,
+    "longitude": -71.041314,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-chhil",
+    "name": "Chestnut Hill",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.326753,
+    "longitude": -71.164699,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-chill",
+    "name": "Chestnut Hill Avenue",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.338169,
+    "longitude": -71.15316,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-chmnl",
+    "name": "Charles/MGH",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.361166,
+    "longitude": -71.070628,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-chncl",
+    "name": "Chinatown",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.352547,
+    "longitude": -71.062752,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-chswk",
+    "name": "Chiswick Road",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.340805,
+    "longitude": -71.150711,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-clmnl",
+    "name": "Cleveland Circle",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.336142,
+    "longitude": -71.149326,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-cntsq",
+    "name": "Central",
+    "description": null,
+    "municipality": "Cambridge",
+    "latitude": 42.365486,
+    "longitude": -71.103802,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-coecl",
+    "name": "Copley",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.349974,
+    "longitude": -71.077447,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-cool",
+    "name": "Coolidge Corner",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.342116,
+    "longitude": -71.121263,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-davis",
+    "name": "Davis",
+    "description": null,
+    "municipality": "Somerville",
+    "latitude": 42.39674,
+    "longitude": -71.121815,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-DB-0095",
+    "name": "Readville",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.238405,
+    "longitude": -71.133246,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2205",
+    "name": "Fairmount",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.253638,
+    "longitude": -71.11927,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2222",
+    "name": "Blue Hill Avenue",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.271466,
+    "longitude": -71.095782,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2230",
+    "name": "Morton Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.280994,
+    "longitude": -71.085475,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2240",
+    "name": "Talbot Avenue",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.292246,
+    "longitude": -71.07814,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2249",
+    "name": "Four Corners/Geneva",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.305037,
+    "longitude": -71.076833,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2258",
+    "name": "Uphams Corner",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.319125,
+    "longitude": -71.068627,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-DB-2265",
+    "name": "Newmarket",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.327415,
+    "longitude": -71.065674,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-denrd",
+    "name": "Dean Road",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.337807,
+    "longitude": -71.141853,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-dwnxg",
+    "name": "Downtown Crossing",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.355518,
+    "longitude": -71.060225,
+    "lineKeys": [
+      "Orange",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-eliot",
+    "name": "Eliot",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.319045,
+    "longitude": -71.216684,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-engav",
+    "name": "Englewood Avenue",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.337104,
+    "longitude": -71.144852,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-ER-0099",
+    "name": "River Works",
+    "description": "GE Employees Only",
+    "municipality": "Lynn",
+    "latitude": 42.449927,
+    "longitude": -70.969848,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0117",
+    "name": "Lynn Interim",
+    "description": null,
+    "municipality": "Lynn",
+    "latitude": 42.4652901,
+    "longitude": -70.9404344,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0128",
+    "name": "Swampscott",
+    "description": null,
+    "municipality": "Swampscott",
+    "latitude": 42.473743,
+    "longitude": -70.922537,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0168",
+    "name": "Salem",
+    "description": null,
+    "municipality": "Salem",
+    "latitude": 42.524792,
+    "longitude": -70.895876,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0183",
+    "name": "Beverly",
+    "description": null,
+    "municipality": "Beverly",
+    "latitude": 42.547276,
+    "longitude": -70.885432,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0208",
+    "name": "North Beverly",
+    "description": null,
+    "municipality": "Beverly",
+    "latitude": 42.583779,
+    "longitude": -70.883851,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0227",
+    "name": "Hamilton/Wenham",
+    "description": null,
+    "municipality": "Hamilton",
+    "latitude": 42.609212,
+    "longitude": -70.874801,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0276",
+    "name": "Ipswich",
+    "description": null,
+    "municipality": "Ipswich",
+    "latitude": 42.676921,
+    "longitude": -70.840589,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0312",
+    "name": "Rowley",
+    "description": null,
+    "municipality": "Rowley",
+    "latitude": 42.726845,
+    "longitude": -70.859034,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-ER-0362",
+    "name": "Newburyport",
+    "description": null,
+    "municipality": "Newburyport",
+    "latitude": 42.797837,
+    "longitude": -70.87797,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-esomr",
+    "name": "East Somerville",
+    "description": null,
+    "municipality": "Somerville",
+    "latitude": 42.379467,
+    "longitude": -71.086625,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-FB-0109",
+    "name": "Endicott",
+    "description": null,
+    "municipality": "Dedham",
+    "latitude": 42.233249,
+    "longitude": -71.158647,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0118",
+    "name": "Dedham Corporate Center",
+    "description": null,
+    "municipality": "Dedham",
+    "latitude": 42.227079,
+    "longitude": -71.174254,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0125",
+    "name": "Islington",
+    "description": null,
+    "municipality": "Westwood",
+    "latitude": 42.22105,
+    "longitude": -71.183961,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0143",
+    "name": "Norwood Depot",
+    "description": null,
+    "municipality": "Norwood",
+    "latitude": 42.196857,
+    "longitude": -71.196688,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0148",
+    "name": "Norwood Central",
+    "description": null,
+    "municipality": "Norwood",
+    "latitude": 42.188775,
+    "longitude": -71.199665,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0166",
+    "name": "Windsor Gardens",
+    "description": null,
+    "municipality": "Norwood",
+    "latitude": 42.172127,
+    "longitude": -71.219366,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0191",
+    "name": "Walpole",
+    "description": null,
+    "municipality": "Walpole",
+    "latitude": 42.145477,
+    "longitude": -71.25779,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0230",
+    "name": "Norfolk",
+    "description": null,
+    "municipality": "Norfolk",
+    "latitude": 42.120694,
+    "longitude": -71.325217,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0275",
+    "name": "Franklin",
+    "description": null,
+    "municipality": "Franklin",
+    "latitude": 42.083238,
+    "longitude": -71.396102,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FB-0303",
+    "name": "Forge Park/495",
+    "description": null,
+    "municipality": "Franklin",
+    "latitude": 42.089941,
+    "longitude": -71.43902,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-fbkst",
+    "name": "Fairbanks Street",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.339725,
+    "longitude": -71.131073,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-fenwd",
+    "name": "Fenwood Road",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.333706,
+    "longitude": -71.105728,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-fenwy",
+    "name": "Fenway",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.345403,
+    "longitude": -71.104213,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-fldcr",
+    "name": "Fields Corner",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.300093,
+    "longitude": -71.061667,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-forhl",
+    "name": "Forest Hills",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.300713,
+    "longitude": -71.113943,
+    "lineKeys": [
+      "CR",
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-FR-0064",
+    "name": "Belmont",
+    "description": null,
+    "municipality": "Belmont",
+    "latitude": 42.395896,
+    "longitude": -71.17619,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0074",
+    "name": "Waverley",
+    "description": null,
+    "municipality": "Belmont",
+    "latitude": 42.3876,
+    "longitude": -71.190744,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0098",
+    "name": "Waltham",
+    "description": null,
+    "municipality": "Waltham",
+    "latitude": 42.374296,
+    "longitude": -71.235615,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0115",
+    "name": "Brandeis/Roberts",
+    "description": null,
+    "municipality": "Waltham",
+    "latitude": 42.361898,
+    "longitude": -71.260065,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0132",
+    "name": "Kendal Green",
+    "description": null,
+    "municipality": "Weston",
+    "latitude": 42.37897,
+    "longitude": -71.282411,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0147",
+    "name": "Silver Hill",
+    "description": null,
+    "municipality": "Weston",
+    "latitude": 42.395625,
+    "longitude": -71.302357,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0167",
+    "name": "Lincoln",
+    "description": null,
+    "municipality": "Lincoln",
+    "latitude": 42.413641,
+    "longitude": -71.325512,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0201",
+    "name": "Concord",
+    "description": null,
+    "municipality": "Concord",
+    "latitude": 42.456565,
+    "longitude": -71.357677,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0219",
+    "name": "West Concord",
+    "description": null,
+    "municipality": "Concord",
+    "latitude": 42.457043,
+    "longitude": -71.392892,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0253",
+    "name": "South Acton",
+    "description": null,
+    "municipality": "Acton",
+    "latitude": 42.460375,
+    "longitude": -71.457744,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0301",
+    "name": "Littleton/Route 495",
+    "description": null,
+    "municipality": "Littleton",
+    "latitude": 42.519236,
+    "longitude": -71.502643,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0361",
+    "name": "Ayer",
+    "description": null,
+    "municipality": "Ayer",
+    "latitude": 42.559074,
+    "longitude": -71.588476,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0394",
+    "name": "Shirley",
+    "description": null,
+    "municipality": "Shirley",
+    "latitude": 42.545089,
+    "longitude": -71.648004,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0451",
+    "name": "North Leominster",
+    "description": null,
+    "municipality": "Leominster",
+    "latitude": 42.539017,
+    "longitude": -71.739186,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-0494",
+    "name": "Fitchburg",
+    "description": null,
+    "municipality": "Fitchburg",
+    "latitude": 42.58072,
+    "longitude": -71.792611,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FR-3338",
+    "name": "Wachusett",
+    "description": null,
+    "municipality": "Fitchburg",
+    "latitude": 42.553477,
+    "longitude": -71.848488,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FRS-0054",
+    "name": "Freetown",
+    "description": null,
+    "municipality": "Freetown",
+    "latitude": 41.773672,
+    "longitude": -71.090733,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FRS-0109",
+    "name": "Fall River Depot",
+    "description": null,
+    "municipality": "Fall River",
+    "latitude": 41.713982,
+    "longitude": -71.154182,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-FS-0049",
+    "name": "Foxboro",
+    "description": null,
+    "municipality": "Foxborough",
+    "latitude": 42.0951,
+    "longitude": -71.26151,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-GB-0198",
+    "name": "Montserrat",
+    "description": null,
+    "municipality": "Beverly",
+    "latitude": 42.562171,
+    "longitude": -70.869254,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-GB-0229",
+    "name": "Beverly Farms",
+    "description": null,
+    "municipality": "Beverly",
+    "latitude": 42.561651,
+    "longitude": -70.811405,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-GB-0254",
+    "name": "Manchester",
+    "description": null,
+    "municipality": "Manchester-by-the-Sea",
+    "latitude": 42.573687,
+    "longitude": -70.77009,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-GB-0296",
+    "name": "West Gloucester",
+    "description": null,
+    "municipality": "Gloucester",
+    "latitude": 42.611933,
+    "longitude": -70.705417,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-GB-0316",
+    "name": "Gloucester",
+    "description": null,
+    "municipality": "Gloucester",
+    "latitude": 42.616799,
+    "longitude": -70.668345,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-GB-0353",
+    "name": "Rockport",
+    "description": null,
+    "municipality": "Rockport",
+    "latitude": 42.655491,
+    "longitude": -70.627055,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-gilmn",
+    "name": "Gilman Square",
+    "description": null,
+    "municipality": "Somerville",
+    "latitude": 42.387928,
+    "longitude": -71.096766,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-gover",
+    "name": "Government Center",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.359705,
+    "longitude": -71.059215,
+    "lineKeys": [
+      "Blue",
+      "Green"
+    ]
+  },
+  {
+    "id": "place-grigg",
+    "name": "Griggs Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.348545,
+    "longitude": -71.134949,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-grnst",
+    "name": "Green Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.310525,
+    "longitude": -71.107414,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-haecl",
+    "name": "Haymarket",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.363021,
+    "longitude": -71.05829,
+    "lineKeys": [
+      "Green",
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-harsq",
+    "name": "Harvard",
+    "description": null,
+    "municipality": "Cambridge",
+    "latitude": 42.373362,
+    "longitude": -71.118956,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-harvd",
+    "name": "Harvard Avenue",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.350243,
+    "longitude": -71.131355,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-hsmnl",
+    "name": "Heath Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.328316,
+    "longitude": -71.110252,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-hwsst",
+    "name": "Hawes Street",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.344906,
+    "longitude": -71.111145,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-hymnl",
+    "name": "Hynes Convention Center",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.347888,
+    "longitude": -71.087903,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-jaksn",
+    "name": "Jackson Square",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.323132,
+    "longitude": -71.099592,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-jfk",
+    "name": "JFK/UMass",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.320685,
+    "longitude": -71.052391,
+    "lineKeys": [
+      "CR",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-kencl",
+    "name": "Kenmore",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.348949,
+    "longitude": -71.095169,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-knncl",
+    "name": "Kendall/MIT",
+    "description": null,
+    "municipality": "Cambridge",
+    "latitude": 42.3624908,
+    "longitude": -71.0861765,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-kntst",
+    "name": "Kent Street",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.344074,
+    "longitude": -71.114197,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-lake",
+    "name": "Boston College",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.340081,
+    "longitude": -71.166769,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-lech",
+    "name": "Lechmere",
+    "description": null,
+    "municipality": "Cambridge",
+    "latitude": 42.371572,
+    "longitude": -71.076584,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-lngmd",
+    "name": "Longwood Medical Area",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.33596,
+    "longitude": -71.100052,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-longw",
+    "name": "Longwood",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.341702,
+    "longitude": -71.109956,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-masta",
+    "name": "Massachusetts Avenue",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.341512,
+    "longitude": -71.083423,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-matt",
+    "name": "Mattapan",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.26762,
+    "longitude": -71.092486,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-MBS-0350",
+    "name": "Middleborough",
+    "description": null,
+    "municipality": "Middleborough",
+    "latitude": 41.887,
+    "longitude": -70.923209,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-mdftf",
+    "name": "Medford/Tufts",
+    "description": null,
+    "municipality": "Medford",
+    "latitude": 42.407975,
+    "longitude": -71.117044,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-mfa",
+    "name": "Museum of Fine Arts",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.337711,
+    "longitude": -71.095512,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-mgngl",
+    "name": "Magoun Square",
+    "description": null,
+    "municipality": "Somerville",
+    "latitude": 42.393682,
+    "longitude": -71.1063879,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-miltt",
+    "name": "Milton",
+    "description": null,
+    "municipality": "Milton",
+    "latitude": 42.270349,
+    "longitude": -71.067266,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-mispk",
+    "name": "Mission Park",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.333195,
+    "longitude": -71.109756,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-mlmnl",
+    "name": "Malden Center",
+    "description": null,
+    "municipality": "Malden",
+    "latitude": 42.426632,
+    "longitude": -71.07411,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-MM-0150",
+    "name": "Holbrook/Randolph",
+    "description": null,
+    "municipality": "Randolph",
+    "latitude": 42.156343,
+    "longitude": -71.027371,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-MM-0186",
+    "name": "Montello",
+    "description": null,
+    "municipality": "Brockton",
+    "latitude": 42.106555,
+    "longitude": -71.022001,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-MM-0200",
+    "name": "Brockton",
+    "description": null,
+    "municipality": "Brockton",
+    "latitude": 42.084659,
+    "longitude": -71.016534,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-MM-0219",
+    "name": "Campello",
+    "description": null,
+    "municipality": "Brockton",
+    "latitude": 42.060951,
+    "longitude": -71.011004,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-MM-0277",
+    "name": "Bridgewater",
+    "description": null,
+    "municipality": "Bridgewater",
+    "latitude": 41.984916,
+    "longitude": -70.96537,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-mvbcl",
+    "name": "Maverick",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.3691186,
+    "longitude": -71.0395296,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-NB-0064",
+    "name": "Roslindale Village",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.287442,
+    "longitude": -71.130283,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0072",
+    "name": "Bellevue",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.286588,
+    "longitude": -71.145557,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0076",
+    "name": "Highland",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.284969,
+    "longitude": -71.153937,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0080",
+    "name": "West Roxbury",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.281358,
+    "longitude": -71.160065,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0109",
+    "name": "Hersey",
+    "description": null,
+    "municipality": "Needham",
+    "latitude": 42.275648,
+    "longitude": -71.215528,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0120",
+    "name": "Needham Junction",
+    "description": null,
+    "municipality": "Needham",
+    "latitude": 42.273187,
+    "longitude": -71.235559,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0127",
+    "name": "Needham Center",
+    "description": null,
+    "municipality": "Needham",
+    "latitude": 42.280775,
+    "longitude": -71.237686,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NB-0137",
+    "name": "Needham Heights",
+    "description": null,
+    "municipality": "Needham",
+    "latitude": 42.293444,
+    "longitude": -71.236027,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NBM-0374",
+    "name": "East Taunton",
+    "description": null,
+    "municipality": "Taunton",
+    "latitude": 41.868197,
+    "longitude": -71.061694,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NBM-0523",
+    "name": "Church Street",
+    "description": null,
+    "municipality": "New Bedford",
+    "latitude": 41.674308,
+    "longitude": -70.939322,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NBM-0546",
+    "name": "New Bedford",
+    "description": null,
+    "municipality": "New Bedford",
+    "latitude": 41.643703,
+    "longitude": -70.9252,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-1659",
+    "name": "Wickford Junction",
+    "description": null,
+    "municipality": "North Kingstown",
+    "latitude": 41.581289,
+    "longitude": -71.491147,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-1768",
+    "name": "TF Green Airport",
+    "description": null,
+    "municipality": "Warwick",
+    "latitude": 41.726599,
+    "longitude": -71.442453,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-1851",
+    "name": "Providence",
+    "description": null,
+    "municipality": "Providence",
+    "latitude": 41.829293,
+    "longitude": -71.413301,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-1891",
+    "name": "Pawtucket/Central Falls",
+    "description": null,
+    "municipality": "Pawtucket",
+    "latitude": 41.878762,
+    "longitude": -71.392,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-1919",
+    "name": "South Attleboro",
+    "description": null,
+    "municipality": "Attleboro",
+    "latitude": 41.897943,
+    "longitude": -71.354621,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-1969",
+    "name": "Attleboro",
+    "description": null,
+    "municipality": "Attleboro",
+    "latitude": 41.940739,
+    "longitude": -71.285094,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-2040",
+    "name": "Mansfield",
+    "description": null,
+    "municipality": "Mansfield",
+    "latitude": 42.032787,
+    "longitude": -71.219917,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-2108",
+    "name": "Sharon",
+    "description": null,
+    "municipality": "Sharon",
+    "latitude": 42.124553,
+    "longitude": -71.184468,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-2139",
+    "name": "Canton Junction",
+    "description": null,
+    "municipality": "Canton",
+    "latitude": 42.163204,
+    "longitude": -71.15376,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-2173",
+    "name": "Route 128",
+    "description": null,
+    "municipality": "Westwood",
+    "latitude": 42.210308,
+    "longitude": -71.147134,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NEC-2203",
+    "name": "Hyde Park",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.25503,
+    "longitude": -71.125526,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-newtn",
+    "name": "Newton Highlands",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.322381,
+    "longitude": -71.205509,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-newto",
+    "name": "Newton Centre",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.329443,
+    "longitude": -71.192414,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-NHRML-0055",
+    "name": "West Medford",
+    "description": null,
+    "municipality": "Medford",
+    "latitude": 42.421776,
+    "longitude": -71.133342,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NHRML-0073",
+    "name": "Wedgemere",
+    "description": null,
+    "municipality": "Winchester",
+    "latitude": 42.444948,
+    "longitude": -71.140169,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NHRML-0078",
+    "name": "Winchester Center",
+    "description": null,
+    "municipality": "Winchester",
+    "latitude": 42.451088,
+    "longitude": -71.13783,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NHRML-0127",
+    "name": "Anderson/Woburn",
+    "description": null,
+    "municipality": "Woburn",
+    "latitude": 42.516987,
+    "longitude": -71.144475,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NHRML-0152",
+    "name": "Wilmington",
+    "description": null,
+    "municipality": "Wilmington",
+    "latitude": 42.546624,
+    "longitude": -71.174334,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NHRML-0218",
+    "name": "North Billerica",
+    "description": null,
+    "municipality": "Billerica",
+    "latitude": 42.593248,
+    "longitude": -71.280995,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-NHRML-0254",
+    "name": "Lowell",
+    "description": null,
+    "municipality": "Lowell",
+    "latitude": 42.63535,
+    "longitude": -71.314543,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-north",
+    "name": "North Station",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.365577,
+    "longitude": -71.06129,
+    "lineKeys": [
+      "CR",
+      "Green",
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-nqncy",
+    "name": "North Quincy",
+    "description": null,
+    "municipality": "Quincy",
+    "latitude": 42.275275,
+    "longitude": -71.029583,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-nuniv",
+    "name": "Northeastern University",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.340401,
+    "longitude": -71.088806,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-ogmnl",
+    "name": "Oak Grove",
+    "description": null,
+    "municipality": "Malden",
+    "latitude": 42.43668,
+    "longitude": -71.071097,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-orhte",
+    "name": "Orient Heights",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.386867,
+    "longitude": -71.004736,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-pktrm",
+    "name": "Park Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.3563946,
+    "longitude": -71.0624242,
+    "lineKeys": [
+      "Green",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-portr",
+    "name": "Porter",
+    "description": null,
+    "municipality": "Cambridge",
+    "latitude": 42.3884,
+    "longitude": -71.119149,
+    "lineKeys": [
+      "CR",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-prmnl",
+    "name": "Prudential",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.34557,
+    "longitude": -71.081696,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-qamnl",
+    "name": "Quincy Adams",
+    "description": null,
+    "municipality": "Quincy",
+    "latitude": 42.233391,
+    "longitude": -71.007153,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-qnctr",
+    "name": "Quincy Center",
+    "description": null,
+    "municipality": "Quincy",
+    "latitude": 42.251809,
+    "longitude": -71.005409,
+    "lineKeys": [
+      "CR",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-rbmnl",
+    "name": "Revere Beach",
+    "description": null,
+    "municipality": "Revere",
+    "latitude": 42.4078425,
+    "longitude": -70.9925332,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-rcmnl",
+    "name": "Roxbury Crossing",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.331397,
+    "longitude": -71.095451,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-river",
+    "name": "Riverside",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.337352,
+    "longitude": -71.252685,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-rsmnl",
+    "name": "Reservoir",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.335088,
+    "longitude": -71.148758,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-rugg",
+    "name": "Ruggles",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.336377,
+    "longitude": -71.088961,
+    "lineKeys": [
+      "CR",
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-rvrwy",
+    "name": "Riverway",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.331684,
+    "longitude": -71.111931,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-SB-0156",
+    "name": "Canton Center",
+    "description": null,
+    "municipality": "Canton",
+    "latitude": 42.157095,
+    "longitude": -71.14628,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-SB-0189",
+    "name": "Stoughton",
+    "description": null,
+    "municipality": "Stoughton",
+    "latitude": 42.124084,
+    "longitude": -71.103627,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-sbmnl",
+    "name": "Stony Brook",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.317062,
+    "longitude": -71.104248,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-sdmnl",
+    "name": "Suffolk Downs",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.3905007,
+    "longitude": -70.9971226,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-shmnl",
+    "name": "Savin Hill",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.31129,
+    "longitude": -71.053331,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-smary",
+    "name": "Saint Mary's Street",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.345974,
+    "longitude": -71.107353,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-smmnl",
+    "name": "Shawmut",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.2931258,
+    "longitude": -71.065738,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-sougr",
+    "name": "South Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.3396,
+    "longitude": -71.157661,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-spmnl",
+    "name": "Science Park/West End",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.366664,
+    "longitude": -71.067666,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-sstat",
+    "name": "South Station",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.352271,
+    "longitude": -71.055242,
+    "lineKeys": [
+      "CR",
+      "Red"
+    ]
+  },
+  {
+    "id": "place-state",
+    "name": "State",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.358978,
+    "longitude": -71.057598,
+    "lineKeys": [
+      "Blue",
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-sthld",
+    "name": "Sutherland Road",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.341614,
+    "longitude": -71.146202,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-stpul",
+    "name": "Saint Paul Street",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.343327,
+    "longitude": -71.116997,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-sull",
+    "name": "Sullivan Square",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.383975,
+    "longitude": -71.076994,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-sumav",
+    "name": "Summit Avenue",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.34111,
+    "longitude": -71.12561,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-symcl",
+    "name": "Symphony",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.342687,
+    "longitude": -71.085056,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-tapst",
+    "name": "Tappan Street",
+    "description": null,
+    "municipality": "Brookline",
+    "latitude": 42.338459,
+    "longitude": -71.138702,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-tumnl",
+    "name": "Tufts Medical Center",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.349662,
+    "longitude": -71.063917,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-unsqu",
+    "name": "Union Square",
+    "description": null,
+    "municipality": "Somerville",
+    "latitude": 42.377359,
+    "longitude": -71.094761,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-valrd",
+    "name": "Valley Road",
+    "description": null,
+    "municipality": "Milton",
+    "latitude": 42.268347,
+    "longitude": -71.081343,
+    "lineKeys": [
+      "Mattapan"
+    ]
+  },
+  {
+    "id": "place-waban",
+    "name": "Waban",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.325845,
+    "longitude": -71.230609,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-wascm",
+    "name": "Washington Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.343864,
+    "longitude": -71.142853,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-welln",
+    "name": "Wellington",
+    "description": null,
+    "municipality": "Medford",
+    "latitude": 42.40237,
+    "longitude": -71.077082,
+    "lineKeys": [
+      "Orange"
+    ]
+  },
+  {
+    "id": "place-wimnl",
+    "name": "Wood Island",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.3796403,
+    "longitude": -71.0228654,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-wlsta",
+    "name": "Wollaston",
+    "description": null,
+    "municipality": "Quincy",
+    "latitude": 42.2665139,
+    "longitude": -71.0203369,
+    "lineKeys": [
+      "Red"
+    ]
+  },
+  {
+    "id": "place-WML-0025",
+    "name": "Lansdowne",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.347581,
+    "longitude": -71.099974,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0035",
+    "name": "Boston Landing",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.357293,
+    "longitude": -71.139883,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0081",
+    "name": "Newtonville",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.351702,
+    "longitude": -71.205408,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0091",
+    "name": "West Newton",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.347878,
+    "longitude": -71.230528,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0102",
+    "name": "Auburndale",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.345833,
+    "longitude": -71.250373,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0125",
+    "name": "Wellesley Farms",
+    "description": null,
+    "municipality": "Wellesley",
+    "latitude": 42.323608,
+    "longitude": -71.272288,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0135",
+    "name": "Wellesley Hills",
+    "description": null,
+    "municipality": "Wellesley",
+    "latitude": 42.31037,
+    "longitude": -71.277044,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0147",
+    "name": "Wellesley Square",
+    "description": null,
+    "municipality": "Wellesley",
+    "latitude": 42.297526,
+    "longitude": -71.294173,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0177",
+    "name": "Natick Center",
+    "description": null,
+    "municipality": "Natick",
+    "latitude": 42.285719,
+    "longitude": -71.347133,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0199",
+    "name": "West Natick",
+    "description": null,
+    "municipality": "Natick",
+    "latitude": 42.283064,
+    "longitude": -71.391797,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0214",
+    "name": "Framingham",
+    "description": null,
+    "municipality": "Framingham",
+    "latitude": 42.276108,
+    "longitude": -71.420055,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0252",
+    "name": "Ashland",
+    "description": null,
+    "municipality": "Ashland",
+    "latitude": 42.26149,
+    "longitude": -71.482161,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0274",
+    "name": "Southborough",
+    "description": null,
+    "municipality": "Southborough",
+    "latitude": 42.267024,
+    "longitude": -71.524371,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0340",
+    "name": "Westborough",
+    "description": null,
+    "municipality": "Westborough",
+    "latitude": 42.269644,
+    "longitude": -71.647076,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0364",
+    "name": "Grafton",
+    "description": null,
+    "municipality": "Grafton",
+    "latitude": 42.2466,
+    "longitude": -71.685325,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-WML-0442",
+    "name": "Worcester",
+    "description": null,
+    "municipality": "Worcester",
+    "latitude": 42.261291,
+    "longitude": -71.794927,
+    "lineKeys": [
+      "CR"
+    ]
+  },
+  {
+    "id": "place-wondl",
+    "name": "Wonderland",
+    "description": null,
+    "municipality": "Revere",
+    "latitude": 42.41342,
+    "longitude": -70.991648,
+    "lineKeys": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "place-woodl",
+    "name": "Woodland",
+    "description": null,
+    "municipality": "Newton",
+    "latitude": 42.332902,
+    "longitude": -71.243362,
+    "lineKeys": [
+      "Green"
+    ]
+  },
+  {
+    "id": "place-wrnst",
+    "name": "Warren Street",
+    "description": null,
+    "municipality": "Boston",
+    "latitude": 42.348343,
+    "longitude": -71.140457,
+    "lineKeys": [
+      "Green"
+    ]
+  }
+]
