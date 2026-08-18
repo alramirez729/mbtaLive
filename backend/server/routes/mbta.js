@@ -1,8 +1,9 @@
 const express = require('express');
 const { cached } = require('../lib/cache');
 const mbta = require('../lib/mbta');
-// Committed snapshot; see scripts/refresh-stations.js for why it is not fetched.
+// Committed snapshots; see scripts/refresh-static.js for why these are not fetched.
 const stations = require('../data/stations.json');
+const shapes = require('../data/shapes.json');
 
 const router = express.Router();
 
@@ -30,10 +31,16 @@ function handler(key, ttlMs, seconds, producer) {
 router.get('/vehicles', handler('vehicles', TTL.vehicles, 5, mbta.getVehicles));
 router.get('/alerts', handler('alerts', TTL.alerts, 60, mbta.getAlerts));
 
-// Served straight from the snapshot: no upstream call, no cache to warm.
+// Served straight from the snapshots: no upstream call, no cache to warm.
 router.get('/stations', (req, res) => {
   edgeCache(res, 86400);
   res.json({ data: stations });
+});
+
+// Track geometry, as encoded polylines the browser decodes.
+router.get('/shapes', (req, res) => {
+  edgeCache(res, 86400);
+  res.json({ data: shapes });
 });
 
 module.exports = router;

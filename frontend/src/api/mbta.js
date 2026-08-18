@@ -28,3 +28,4 @@ async function get(path, signal) {
 export const fetchVehicles = (signal) => get('/vehicles', signal);
 export const fetchStations = (signal) => get('/stations', signal);
 export const fetchAlerts = (signal) => get('/alerts', signal);
+export const fetchShapes = (signal) => get('/shapes', signal);

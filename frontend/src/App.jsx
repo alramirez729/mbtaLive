@@ -3,12 +3,13 @@ import MapView from './components/MapView';
 import LineFilter from './components/LineFilter';
 import AlertsPanel from './components/AlertsPanel';
 import { usePolledResource } from './hooks/usePolledResource';
-import { fetchAlerts, fetchStations, fetchVehicles } from './api/mbta';
+import { fetchAlerts, fetchShapes, fetchStations, fetchVehicles } from './api/mbta';
 import { LINE_KEYS } from './lib/lines';
 
 // Vehicle positions update roughly every 5 seconds upstream, so polling faster
-// than this only burns rate limit. Alerts change on the order of minutes, and
-// station geometry is effectively static so it is fetched once per page load.
+// than this only burns rate limit. Alerts change on the order of minutes. Station
+// and track geometry are static, so they are fetched once per page load with no
+// interval at all.
 const VEHICLE_INTERVAL_MS = 10000;
 const ALERT_INTERVAL_MS = 60000;
 
@@ -20,11 +21,13 @@ function formatClock(timestamp) {
 export default function App() {
   const [activeLines, setActiveLines] = useState(() => new Set(LINE_KEYS));
   const [showStations, setShowStations] = useState(true);
+  const [showRoutes, setShowRoutes] = useState(true);
   const [alertsOpen, setAlertsOpen] = useState(false);
 
   const vehicles = usePolledResource(fetchVehicles, VEHICLE_INTERVAL_MS);
   const alerts = usePolledResource(fetchAlerts, ALERT_INTERVAL_MS);
   const stations = usePolledResource(fetchStations);
+  const shapes = usePolledResource(fetchShapes);
 
   const toggleLine = useCallback((lineKey) => {
     setActiveLines((previous) => {
@@ -91,6 +94,14 @@ export default function App() {
           <label className="toggle">
             <input
               type="checkbox"
+              checked={showRoutes}
+              onChange={(event) => setShowRoutes(event.target.checked)}
+            />
+            <span>Routes</span>
+          </label>
+          <label className="toggle">
+            <input
+              type="checkbox"
               checked={showStations}
               onChange={(event) => setShowStations(event.target.checked)}
             />
@@ -124,8 +135,10 @@ export default function App() {
         <MapView
           vehicles={vehicles.data}
           stations={stations.data}
+          shapes={shapes.data}
           activeLines={activeLines}
           showStations={showStations}
+          showRoutes={showRoutes}
         />
         {alertsOpen && (
           <AlertsPanel

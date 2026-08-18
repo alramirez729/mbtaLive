@@ -89,8 +89,10 @@ async function getVehicles() {
       // Green-B reads better as "B" on a marker than "Green-B".
       badge: routeId.startsWith('Green') ? routeId.slice(-1) : null,
       routeName: route?.attributes?.long_name || routeId,
-      // MBTA publishes the official hex without the leading #.
-      color: route?.attributes?.color ? `#${route.attributes.color}` : null,
+      // No colour here on purpose: the frontend palette is the single source of
+      // truth. MBTA reports Mattapan as #DA291C, identical to the Red Line,
+      // which would make the trolley's markers disagree with its own route line
+      // and filter chip.
       label: vehicle.attributes.label ?? null,
       status: humanizeStatus(vehicle.attributes.current_status),
       stopName: stop?.attributes?.name ?? null,
@@ -124,28 +126,36 @@ async function getRoutesByLine() {
   return byLine;
 }
 
-async function fetchStationsFromApi() {
-  // Filtering stops by route_type returns individual platforms with no route
-  // association, while filtering by route returns the parent stations directly.
-  // So the routes are grouped by line first, then queried one line at a time.
+/**
+ * Requests `path` once per line, tagging each response with its lineKey.
+ *
+ * filter[route] accepts a comma-separated list, but silently returns a wrong,
+ * truncated result once the list exceeds four ids, so the ids are chunked.
+ * That matters only for Commuter Rail, which has thirteen routes.
+ */
+async function requestPerLine(path, extraParams = {}) {
   const byLine = await getRoutesByLine();
 
-  // filter[route] accepts a comma-separated list, but silently returns a wrong,
-  // truncated result once the list exceeds four ids, so requests are chunked.
-  // That matters only for Commuter Rail, which has thirteen routes.
   const requests = [];
   for (const [lineKey, routeIds] of byLine) {
     for (let i = 0; i < routeIds.length; i += ROUTE_FILTER_CHUNK) {
       const chunk = routeIds.slice(i, i + ROUTE_FILTER_CHUNK);
       requests.push(
-        request('/stops', { 'filter[route]': chunk.join(',') }).then((payload) => [
+        request(path, { ...extraParams, 'filter[route]': chunk.join(',') }).then((payload) => [
           lineKey,
-          payload.data ?? [],
+          payload,
         ]),
       );
     }
   }
-  const results = await Promise.all(requests);
+  return Promise.all(requests);
+}
+
+async function fetchStationsFromApi() {
+  // Filtering stops by route_type returns individual platforms with no route
+  // association, while filtering by route returns the parent stations directly.
+  const responses = await requestPerLine('/stops');
+  const results = responses.map(([lineKey, payload]) => [lineKey, payload.data ?? []]);
 
   // Downtown transfer stations are returned once per line that serves them, so
   // they collapse into one marker that remembers every line.
@@ -178,6 +188,54 @@ async function fetchStationsFromApi() {
   return [...stations.values()];
 }
 
+/**
+ * Track geometry for each line, as encoded polylines.
+ *
+ * A route has many raw shapes (twelve for Red), most of them near-duplicate
+ * variants. Canonical route patterns are the small representative set instead:
+ * two for Red, one per Green branch. Only direction 0 is kept, because
+ * direction 1 is the same track described backwards.
+ *
+ * Polylines stay encoded over the wire. Decoded coordinate arrays are several
+ * times larger as JSON, and the browser has to walk them anyway.
+ */
+async function fetchShapesFromApi() {
+  const responses = await requestPerLine('/route_patterns', {
+    'filter[canonical]': 'true',
+    include: 'representative_trip.shape',
+  });
+
+  const shapes = [];
+  const seen = new Set();
+
+  for (const [lineKey, payload] of responses) {
+    const included = indexIncluded(payload.included);
+
+    for (const pattern of payload.data ?? []) {
+      if (pattern.attributes?.direction_id !== 0) continue;
+
+      const trip = included.get(`trip:${relatedId(pattern, 'representative_trip')}`);
+      if (!trip) continue;
+      const shape = included.get(`shape:${relatedId(trip, 'shape')}`);
+      const polyline = shape?.attributes?.polyline;
+      if (!polyline) continue;
+
+      // Branches can share a representative shape; draw each one once.
+      if (seen.has(shape.id)) continue;
+      seen.add(shape.id);
+
+      shapes.push({
+        id: shape.id,
+        lineKey,
+        routeId: relatedId(pattern, 'route'),
+        name: pattern.attributes?.name ?? null,
+        polyline,
+      });
+    }
+  }
+  return shapes;
+}
+
 async function getAlerts() {
   const payload = await request('/alerts', {
     'filter[route_type]': ROUTE_TYPES,
@@ -203,4 +261,10 @@ async function getAlerts() {
   });
 }
 
-module.exports = { getVehicles, fetchStationsFromApi, getAlerts, UpstreamError };
+module.exports = {
+  getVehicles,
+  fetchStationsFromApi,
+  fetchShapesFromApi,
+  getAlerts,
+  UpstreamError,
+};

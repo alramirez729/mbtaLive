@@ -7,6 +7,9 @@ export const LINES = [
   { key: 'Orange', label: 'Orange', color: '#ED8B00' },
   { key: 'Blue', label: 'Blue', color: '#003DA5' },
   { key: 'Green', label: 'Green', color: '#00843D' },
+  // MBTA publishes Mattapan as #DA291C, the same as the Red Line, since it is
+  // officially a Red Line branch. It gets its own shade here so its chip, its
+  // track, and its trolleys are tellable apart from Red on the map.
   { key: 'Mattapan', label: 'Mattapan', color: '#B5493F' },
   { key: 'CR', label: 'Commuter Rail', color: '#80276C' },
 ];

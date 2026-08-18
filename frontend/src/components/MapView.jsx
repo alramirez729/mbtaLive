@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { lineColor } from '../lib/lines';
+import { lineColor, lineLabel } from '../lib/lines';
+import { decodePolyline } from '../lib/polyline';
 
 const BOSTON_CENTER = [42.3601, -71.0589];
 const DEFAULT_ZOOM = 12;
@@ -18,7 +19,7 @@ function esc(value) {
 }
 
 function vehicleIconHtml(vehicle) {
-  const color = vehicle.color || lineColor(vehicle.lineKey);
+  const color = lineColor(vehicle.lineKey);
   const hasBearing = typeof vehicle.bearing === 'number';
   const bearing = hasBearing ? vehicle.bearing : 0;
   const heading = hasBearing ? '<span class="vehicle__heading"></span>' : '';
@@ -39,7 +40,7 @@ function vehicleIcon(vehicle) {
 }
 
 function vehiclePopup(vehicle) {
-  const color = vehicle.color || lineColor(vehicle.lineKey);
+  const color = lineColor(vehicle.lineKey);
   // "stopped at" plus "Park Street" reads as one sentence, so the two are joined.
   const where = vehicle.stopName
     ? `${esc(vehicle.status)} ${esc(vehicle.stopName)}`
@@ -77,13 +78,35 @@ function stationPopup(station) {
   </div>`;
 }
 
-export default function MapView({ vehicles, stations, activeLines, showStations }) {
+function routePopup(shape) {
+  const branch = shape.name ? `<p class="popup__lead">${esc(shape.name)}</p>` : '';
+  return `<div class="popup">
+    <p class="popup__title" style="--line-color:${esc(lineColor(shape.lineKey))}">${esc(
+      lineLabel(shape.lineKey),
+    )}</p>
+    ${branch}
+  </div>`;
+}
+
+// Decoding 16k coordinates is not free, and the geometry never changes, so the
+// results are cached at module scope rather than per mount.
+const decodedPaths = new Map();
+
+export default function MapView({
+  vehicles,
+  stations,
+  shapes,
+  activeLines,
+  showStations,
+  showRoutes,
+}) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
   // One layer group per line, so toggling a line is a single add/remove of a
   // group rather than a rebuild of its markers.
   const vehicleLayersRef = useRef(new Map());
   const stationLayerRef = useRef(null);
+  const routeLayerRef = useRef(null);
   // id -> { marker, lineKey, bearing } so each refresh moves existing markers
   // instead of clearing and re-creating every marker on the map.
   const markersRef = useRef(new Map());
@@ -108,6 +131,12 @@ export default function MapView({ vehicles, stations, activeLines, showStations 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
     L.control.scale({ position: 'bottomleft', imperial: true, metric: false }).addTo(map);
 
+    // Track geometry belongs above the tiles but below the station dots
+    // (overlayPane, 400) and the trains (markerPane, 600).
+    map.createPane('routes');
+    map.getPane('routes').style.zIndex = 350;
+
+    routeLayerRef.current = L.layerGroup().addTo(map);
     stationLayerRef.current = L.layerGroup().addTo(map);
     mapRef.current = map;
 
@@ -119,6 +148,7 @@ export default function MapView({ vehicles, stations, activeLines, showStations 
       vehicleLayersRef.current.clear();
       markersRef.current.clear();
       stationLayerRef.current = null;
+      routeLayerRef.current = null;
     };
   }, []);
 
@@ -203,6 +233,37 @@ export default function MapView({ vehicles, stations, activeLines, showStations 
       else if (!shouldShow && map.hasLayer(layer)) map.removeLayer(layer);
     }
   }, [activeLines]);
+
+  // Track geometry is fetched once. Decoding is the only real work here, so the
+  // decoded paths are cached per shape id and survive filter and toggle changes.
+  useEffect(() => {
+    const layer = routeLayerRef.current;
+    if (!layer) return;
+
+    layer.clearLayers();
+    if (!showRoutes || !shapes) return;
+
+    for (const shape of shapes) {
+      if (!activeLines.has(shape.lineKey)) continue;
+
+      const path = decodedPaths.get(shape.id) ?? decodePolyline(shape.polyline);
+      decodedPaths.set(shape.id, path);
+      if (path.length < 2) continue;
+
+      L.polyline(path, {
+        pane: 'routes',
+        color: lineColor(shape.lineKey),
+        weight: 4,
+        opacity: 0.75,
+        // Branches share a trunk, so rounded joins keep the overlap from
+        // showing hard corners where two colors meet.
+        lineCap: 'round',
+        lineJoin: 'round',
+      })
+        .bindPopup(routePopup(shape))
+        .addTo(layer);
+    }
+  }, [shapes, activeLines, showRoutes]);
 
   // Stations are fetched once and only rebuilt when the filter or the toggle
   // changes, never on a vehicle poll.

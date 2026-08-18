@@ -13,6 +13,7 @@ Buses and ferries are out of scope.
 frontend/            Vite + React single-page app
 backend/server/      Express caching proxy for the MBTA API
   data/stations.json   committed station snapshot (see below)
+  data/shapes.json     committed track geometry snapshot
 api/[[...path]].js   Vercel entry point; hands the same Express app to a function
 _archive/            the old user accounts feature, kept for reference only
 ```
@@ -58,22 +59,41 @@ the last known positions.
 | `GET /api/mbta/vehicles` | 5s | Normalized live positions |
 | `GET /api/mbta/alerts` | 60s | Alerts currently in effect |
 | `GET /api/mbta/stations` | 24h | Served from the committed snapshot, no upstream call |
+| `GET /api/mbta/shapes` | 24h | Track geometry as encoded polylines, also from a snapshot |
 
 Responses are normalized, so the browser never parses JSON:API relationships.
 Each endpoint also sets `s-maxage`, which lets Vercel's CDN serve most repeat hits.
 
-### The station snapshot
+### The static snapshots
 
-Station geometry changes on the order of years, but building it costs ten
-upstream requests, because `filter[route]` returns wrong results past four route
-ids and Commuter Rail has thirteen routes. Paying that on every cold start is
-what `backend/server/data/stations.json` avoids.
+`data/stations.json` (232 stations) and `data/shapes.json` (26 track polylines)
+change on the order of years, but building them costs about twenty upstream
+requests, because `filter[route]` returns wrong results past four route ids and
+Commuter Rail has thirteen routes. Paying that on every cold start is what the
+snapshots avoid.
 
-Regenerate it after a service change (a line extension, a new infill stop):
+Regenerate both after a service change (a line extension, a new infill stop):
 
 ```bash
-npm run refresh:stations --workspace @mbtalive/proxy
+npm run refresh:static --workspace @mbtalive/proxy
 ```
+
+Track geometry comes from canonical route patterns rather than raw shapes. A
+route has many near-duplicate shape variants (twelve for the Red Line), while the
+canonical patterns are the small representative set: two for Red, one per Green
+branch. Only direction 0 is kept, since direction 1 is the same track backwards.
+
+Polylines stay encoded over the wire and are decoded in the browser by
+[frontend/src/lib/polyline.js](frontend/src/lib/polyline.js). Decoded coordinate
+arrays are several times larger as JSON, and the browser walks them anyway.
+
+### Line colors
+
+[frontend/src/lib/lines.js](frontend/src/lib/lines.js) is the single source of
+truth for line color, and the proxy deliberately does not send one per vehicle.
+MBTA reports Mattapan as `#DA291C`, identical to the Red Line, because it is
+officially a Red Line branch. It gets its own shade here so its filter chip, its
+track, and its trolleys are tellable apart from Red.
 
 ## Deploying
 
