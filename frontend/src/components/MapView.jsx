@@ -147,6 +147,12 @@ export default function MapView({
   showRoutes,
   showMotion,
   motionDurationMs,
+  // Points to frame when the selection changes. Without this, picking a route
+  // that runs through Chelsea leaves you staring at Brookline.
+  fitPoints,
+  // The bus page draws one route at a time, which is legible at any zoom. The
+  // gate exists for the region-wide view, not for a single route.
+  alwaysShowRoutes = false,
 }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
@@ -444,6 +450,12 @@ export default function MapView({
     }
   }, [showMotion]);
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !fitPoints || fitPoints.length === 0) return;
+    map.fitBounds(L.latLngBounds(fitPoints), { padding: [60, 60], animate: true });
+  }, [fitPoints]);
+
   // Show or hide whole line groups when the filter changes.
   useEffect(() => {
     const map = mapRef.current;
@@ -464,7 +476,7 @@ export default function MapView({
     layer.clearLayers();
     if (!showRoutes || !shapes) return;
 
-    const busVisible = zoom >= BUS_ROUTE_MIN_ZOOM;
+    const busVisible = alwaysShowRoutes || zoom >= BUS_ROUTE_MIN_ZOOM;
 
     for (const shape of shapes) {
       if (!activeLines.has(shape.lineKey)) continue;
@@ -478,10 +490,11 @@ export default function MapView({
       L.polyline(path, {
         pane: 'routes',
         color: lineColor(shape.lineKey),
-        // Bus routes are thinner and fainter: there are far more of them, and
-        // they should read as context behind the rail network, not compete with it.
-        weight: isBus ? 2.5 : 4,
-        opacity: isBus ? 0.55 : 0.75,
+        // Bus routes are thin and faint in the region-wide view, where there are
+        // far more of them and they are context behind the rail network. A single
+        // focused route is the subject, so it gets full weight.
+        weight: isBus && !alwaysShowRoutes ? 2.5 : 4,
+        opacity: isBus && !alwaysShowRoutes ? 0.55 : 0.8,
         // Branches share a trunk, so rounded joins keep the overlap from
         // showing hard corners where two colors meet.
         lineCap: 'round',
@@ -490,7 +503,7 @@ export default function MapView({
         .bindPopup(routePopup(shape))
         .addTo(layer);
     }
-  }, [shapes, activeLines, showRoutes, zoom]);
+  }, [shapes, activeLines, showRoutes, zoom, alwaysShowRoutes]);
 
   // Stations are fetched once and only rebuilt when the filter or the toggle
   // changes, never on a vehicle poll.
@@ -502,8 +515,9 @@ export default function MapView({
     if (!showStations || !stations) return;
 
     for (const station of stations) {
-      const keys = station.lineKeys;
-      // A station with no resolvable line still belongs on the map.
+      // Bus stops carry no lines of their own, so they arrive without the field
+      // and render neutral. A rail station with no resolvable line still shows.
+      const keys = station.lineKeys ?? [];
       if (keys.length && !keys.some((key) => activeLines.has(key))) continue;
 
       L.circleMarker([station.latitude, station.longitude], {

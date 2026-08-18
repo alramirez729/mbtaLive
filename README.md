@@ -9,8 +9,12 @@ Silver Line, and bus. Ferries are out of scope.
 
 ## Layout
 
+Two pages: `/subway` for rail, `/bus` for bus. `/` redirects to `/subway`.
+
 ```
 frontend/            Vite + React single-page app
+  src/pages/           SubwayPage and BusPage
+  src/components/      MapView, Panel and panel contents, shared by both pages
 backend/server/      Express caching proxy for the MBTA API
   data/stations.json   committed station snapshot (see below)
   data/shapes.json     committed rail track geometry snapshot
@@ -39,18 +43,47 @@ Run the two halves separately with `npm run dev:proxy` and `npm run dev:web`.
 
 ## Bus
 
-Bus is off by default and costs nothing until switched on. It is a different scale
-from rail: **400 vehicles off peak against 110 rail**, 149 routes against 21, and
-6,892 stops against 232 stations.
+`/bus` is its own page, because bus needs a route directory and a drill-down that
+rail has no use for, and one combined filter list served neither well.
 
-That shapes three decisions:
+The page opens showing every bus. Pick a route from the searchable directory
+(searchable by number, name, or town) and the map narrows to that route: its path,
+its stops, its live buses, and the view frames itself to the route. The selection
+lives in the URL as `?route=111`, so a route is linkable and the back button steps
+out of it.
 
-- **Separate feeds.** `/api/buses` and `/api/bus-shapes` are only requested once
-  the Silver Line or Bus filter is enabled, so a rail-only visit never pays for
-  them. Bus geometry alone is 83KB gzipped.
-- **Bus geometry is zoom-gated** to zoom 14 and above. All 176 shapes drawn over
-  the region is an unreadable grey web, and nearly all of it is off screen.
-- **Bus stops are not drawn at all.** 6,892 markers would bury the map.
+Each route's detail shows:
+
+- **Direction**, named the way the route names it. Bus is Outbound/Inbound, but
+  rail is not (the Red Line is South/North), so the label is read from the route
+  rather than assumed. Live count per direction, and either can be isolated.
+- **Rail connections**, and which stations they happen at. Route 1 meets Red at
+  Central and Harvard, Orange at Massachusetts Avenue, Green at Hynes and Symphony.
+  144 of 149 routes have at least one.
+- **Towns served**, from the stops' `municipality`. Neighbourhood-level geography
+  (Allston, Roxbury) is not in the MBTA API and would need city open data.
+
+Connections are computed with no extra requests, by intersecting each route's stops
+against the rail station snapshot, which already records the lines at each station.
+Two sources are needed and neither alone is enough: MBTA's `connecting_stops`
+covers a street stop outside a station (route 1 at Harvard), while a route that
+pulls into the station itself is not "connecting" because the rider is already
+there (SL1 stops at `place-sstat`). It is an exact id match, not a distance guess.
+Bus stops carry no `parent_station`, which closes the obvious route to the answer.
+
+Bus is a different scale from rail: **400 vehicles off peak against 110 rail**,
+149 routes against 21, and 6,892 stops against 232 stations. That shapes several
+decisions:
+
+- **Separate feeds.** `/api/buses`, `/api/bus-shapes`, and `/api/bus-routes` are
+  only requested on `/bus`, so a visit to `/subway` never pays for them. Bus
+  geometry alone is 83KB gzipped.
+- **Stops are fetched per route**, on selection. All 149 routes together is 10,500
+  stops and 1.2MB, and the page only ever shows the one route in view.
+- **In the overview, bus geometry is zoom-gated** to zoom 14 and above: all 176
+  shapes at region scale is an unreadable web, but it is useful once you are down
+  at neighbourhood level. A route you have actually chosen draws at any zoom.
+- **Bus stops are not drawn in the overview.** 6,892 markers would bury the map.
 
 Buses render smaller, softer, and in their own map pane below the rail markers.
 Without that they outnumber trains four to one and visually bury the network they
@@ -58,7 +91,7 @@ are meant to sit behind. Their markers carry no label, because a route number li
 `116` does not fit in a marker; the popup leads with it instead.
 
 The Silver Line is bus rapid transit, so it arrives on the bus feed as route_type
-3, but MBTA brands it separately and it gets its own filter entry and its official
+3, but MBTA brands it separately and it gets its own colour, the official
 `#7C878E`. MBTA distinguishes its six routes (741, 742, 743, 746, 749, 751) from
 the other 143 only by colour.
 
@@ -142,6 +175,8 @@ the last known positions.
 | `GET /api/stations` | 24h | Served from the committed snapshot, no upstream call |
 | `GET /api/shapes` | 24h | Rail track geometry as encoded polylines, also from a snapshot |
 | `GET /api/bus-shapes` | 24h | Bus route geometry, 176 shapes, also opt-in |
+| `GET /api/bus-routes` | 24h | Route directory: towns served and rail connections |
+| `GET /api/bus-stops?route=1` | 24h | Stops for one route, fetched on selection |
 
 Responses are normalized, so the browser never parses JSON:API relationships.
 Each endpoint also sets `s-maxage`, which lets Vercel's CDN serve most repeat hits.

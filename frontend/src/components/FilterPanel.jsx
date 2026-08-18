@@ -1,10 +1,9 @@
-import { LINES } from '../lib/lines';
-
 /**
  * Contents of the Filters panel: which lines to show, plus the map layer
  * switches. The layers used to sit in the top bar, which no longer exists.
  */
 export default function FilterPanel({
+  lines,
   activeLines,
   counts,
   onToggle,
@@ -12,7 +11,7 @@ export default function FilterPanel({
   layers,
   onLayerChange,
 }) {
-  const allActive = activeLines.size === LINES.length;
+  const allActive = lines.every((line) => activeLines.has(line.key));
 
   return (
     <div className="filters">
@@ -25,7 +24,7 @@ export default function FilterPanel({
         </div>
 
         <ul className="lines">
-          {LINES.map((line) => {
+          {lines.map((line) => {
             const isActive = activeLines.has(line.key);
             const count = counts.get(line.key) ?? 0;
             return (

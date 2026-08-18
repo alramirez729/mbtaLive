@@ -111,6 +111,11 @@ async function getVehicles(routeTypes) {
         trip?.attributes?.headsign ||
         route?.attributes?.direction_destinations?.[directionId] ||
         null,
+      directionId: typeof directionId === 'number' ? directionId : null,
+      // Bus routes name their directions "Outbound"/"Inbound", but rail does not
+      // (the Red Line is "South"/"North"), so the label comes from the route
+      // rather than being assumed.
+      directionName: route?.attributes?.direction_names?.[directionId] ?? null,
       bearing: vehicle.attributes.bearing ?? null,
       latitude,
       longitude,
@@ -276,6 +281,111 @@ async function fetchShapesFromApi(routeTypes = RAIL_ROUTE_TYPES) {
   return shapes;
 }
 
+/**
+ * The bus route directory: every route with the towns it runs through and the
+ * rail lines it meets.
+ *
+ * Connections come from MBTA's own `connecting_stops`, which lists the stops a
+ * rider can transfer to, plus the route's own stops. Both are needed:
+ * `connecting_stops` covers a street stop outside a station (route 1 at Harvard),
+ * while a route that pulls into the station itself is not "connecting" because
+ * the rider is already there (SL1 stops at place-sstat). Bus stops carry no
+ * `parent_station`, so that route to the answer is closed.
+ *
+ * Either way it is an exact id match against the rail station snapshot, not a
+ * distance guess, and costs no extra requests.
+ *
+ * Stops are fetched one route at a time: filter[route] accepts several ids, but
+ * the response does not say which stop belongs to which route.
+ */
+async function fetchBusRoutesFromApi(railStations = []) {
+  const stationLines = new Map(railStations.map((s) => [s.id, s.lineKeys]));
+  const stationNames = new Map(railStations.map((s) => [s.id, s.name]));
+
+  const payload = await request('/routes', { 'filter[type]': BUS_ROUTE_TYPE });
+  const routes = payload.data ?? [];
+
+  const CONCURRENCY = 8;
+  const directory = [];
+  const queue = [...routes];
+
+  async function worker() {
+    for (;;) {
+      const route = queue.shift();
+      if (!route) return;
+
+      const stopsPayload = await request('/stops', {
+        'filter[route]': route.id,
+        include: 'connecting_stops',
+      });
+
+      const municipalities = new Set();
+      for (const stop of stopsPayload.data ?? []) {
+        if (stop.attributes?.municipality) municipalities.add(stop.attributes.municipality);
+      }
+
+      // Any stop, served or connecting, that is a rail station we know about.
+      const connections = new Map();
+      const candidateIds = [
+        ...(stopsPayload.data ?? []).map((stop) => stop.id),
+        ...(stopsPayload.included ?? []).map((record) => record.id),
+      ];
+      for (const stopId of candidateIds) {
+        const lines = stationLines.get(stopId);
+        if (!lines) continue;
+        for (const lineKey of lines) {
+          if (!connections.has(lineKey)) connections.set(lineKey, new Set());
+          connections.get(lineKey).add(stationNames.get(stopId));
+        }
+      }
+
+      directory.push({
+        id: route.id,
+        lineKey: lineKeyForRoute(route.id, BUS_ROUTE_TYPE),
+        shortName: route.attributes?.short_name || route.id,
+        longName: route.attributes?.long_name || '',
+        directionNames: route.attributes?.direction_names ?? [],
+        directionDestinations: route.attributes?.direction_destinations ?? [],
+        sortOrder: route.attributes?.sort_order ?? 0,
+        municipalities: [...municipalities].sort(),
+        connections: [...connections]
+          .map(([lineKey, names]) => ({ lineKey, stations: [...names].filter(Boolean).sort() }))
+          .sort((a, b) => a.lineKey.localeCompare(b.lineKey)),
+        stopCount: (stopsPayload.data ?? []).length,
+      });
+    }
+  }
+
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+
+  directory.sort((a, b) => a.sortOrder - b.sortOrder);
+  return directory;
+}
+
+/**
+ * Stops for one bus route, fetched on demand.
+ *
+ * Not snapshotted: all 149 routes together is 10,500 stops and 1.2MB, and the
+ * page only ever shows the route the rider picked. One cached request per
+ * selection is cheaper than carrying that around.
+ */
+async function getBusRouteStops(routeId) {
+  const payload = await request('/stops', { 'filter[route]': routeId });
+
+  return (payload.data ?? [])
+    .filter((stop) => {
+      const a = stop.attributes ?? {};
+      return typeof a.latitude === 'number' && typeof a.longitude === 'number';
+    })
+    .map((stop) => ({
+      id: stop.id,
+      name: stop.attributes.name || 'Unnamed stop',
+      municipality: stop.attributes.municipality ?? null,
+      latitude: stop.attributes.latitude,
+      longitude: stop.attributes.longitude,
+    }));
+}
+
 async function getAlerts() {
   const payload = await request('/alerts', {
     'filter[route_type]': `${RAIL_ROUTE_TYPES},${BUS_ROUTE_TYPE}`,
@@ -307,6 +417,8 @@ module.exports = {
   getVehicles,
   fetchStationsFromApi,
   fetchShapesFromApi,
+  fetchBusRoutesFromApi,
+  getBusRouteStops,
   getAlerts,
   UpstreamError,
 };

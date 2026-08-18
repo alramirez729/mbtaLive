@@ -23,13 +23,12 @@ export const LINES = [
 
 export const LINE_KEYS = LINES.map((line) => line.key);
 
-// Bus is several times the rail fleet and is off until asked for, so the feed is
-// only fetched when one of these is enabled.
-export const BUS_LINE_KEYS = LINES.filter((line) => line.mode === 'bus').map((line) => line.key);
+// The two pages offer different lines: rail on /subway, bus on /bus.
+export const RAIL_LINES = LINES.filter((line) => line.mode !== 'bus');
+export const BUS_LINES = LINES.filter((line) => line.mode === 'bus');
 
-// What the map shows on a first visit: rail only, which keeps the opening view
-// fast and readable.
-export const DEFAULT_LINE_KEYS = LINES.filter((line) => line.mode !== 'bus').map((line) => line.key);
+export const RAIL_LINE_KEYS = RAIL_LINES.map((line) => line.key);
+export const BUS_LINE_KEYS = BUS_LINES.map((line) => line.key);
 
 const BY_KEY = new Map(LINES.map((line) => [line.key, line]));
 

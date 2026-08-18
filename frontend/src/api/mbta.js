@@ -34,3 +34,10 @@ export const fetchShapes = (signal) => get('/shapes', signal);
 // its geometry is 176 shapes, so neither is loaded for a rail-only visit.
 export const fetchBuses = (signal) => get('/buses', signal);
 export const fetchBusShapes = (signal) => get('/bus-shapes', signal);
+
+// The route directory: every bus route with its towns and rail connections.
+export const fetchBusRoutes = (signal) => get('/bus-routes', signal);
+
+// Stops for one route, fetched when a route is selected rather than all 10,500.
+export const fetchBusStops = (routeId, signal) =>
+  get(`/bus-stops?route=${encodeURIComponent(routeId)}`, signal);
