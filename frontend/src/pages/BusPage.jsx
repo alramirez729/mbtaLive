@@ -5,6 +5,7 @@ import Panel from '../components/Panel';
 import AlertsPanel from '../components/AlertsPanel';
 import BusRoutePanel from '../components/BusRoutePanel';
 import ModeNav from '../components/ModeNav';
+import HelpPanel from '../components/HelpPanel';
 import { usePolledResource } from '../hooks/usePolledResource';
 import {
   fetchAlerts,
@@ -193,6 +194,17 @@ export default function BusPage() {
             error={alerts.error}
             activeLines={selectedRoute ? new Set([selectedRoute.lineKey]) : BUS_LINES_ACTIVE}
           />
+        </Panel>
+
+        <Panel
+          label="Help"
+          icon="?"
+          iconOnly
+          side="right"
+          open={openPanel === 'help'}
+          onOpenChange={(open) => setPanel('help', open)}
+        >
+          <HelpPanel mode="bus" />
         </Panel>
       </div>
 

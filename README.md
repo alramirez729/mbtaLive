@@ -104,6 +104,16 @@ Two upstream quirks worth knowing:
   diversion, and MBTA attaches them to the line they replace, so including them
   drew an Orange Line shape along the roads a shuttle happened to use.
 
+## Help
+
+A `?` beside Filters and Alerts opens a panel explaining how to drive the map. It is
+page-aware: the subway version covers focusing a line and the checkboxes, the bus
+version covers searching routes and splitting by direction, and a shared section
+covers switching networks, popups, heading arrows, alerts, and smooth motion.
+
+It reuses the same Panel as Filters and Alerts, so it is a card on desktop and a
+sheet on a phone, and only one of the three is open at a time.
+
 ## The first view
 
 `/subway` opens focused on the Blue Line with the Filters panel showing, rather than

@@ -755,11 +755,15 @@ body {
     height: 20px;
   }
 
-  /* An open sheet rises from the bottom edge, straight over the triggers that
-     sit there. The sheet carries its own title and close button, so the
-     triggers step aside rather than floating on top of the content. */
-  .hud--controls:has(.panel--sheet.is-open) .panel__trigger {
-    visibility: hidden;
+  /* An open sheet rises from the bottom edge, straight over the triggers that sit
+     there. Hiding them is not an option: Filters opens by default, and that would
+     leave Alerts and Help unreachable on a first visit. So the row moves to the
+     top instead, where the sheet cannot reach it, and drops back to thumb height
+     once the sheet is dismissed. */
+  .hud--controls:has(.panel--sheet.is-open) {
+    top: 0.5rem;
+    bottom: auto;
+    margin-bottom: 0;
   }
 
   .banner {
@@ -1001,4 +1005,45 @@ body {
    inline style, which no amount of selector specificity can outrank. */
 .map:not(.is-labeled) .station-label.leaflet-tooltip {
   opacity: 0 !important;
+}
+
+/* ---------- help ---------- */
+
+.help__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.help__item dt {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.help__item dd {
+  margin: 0.1rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.help__note {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--ink-faint);
+}
+
+.help__note a {
+  color: var(--accent);
+}
+
+/* A single "?" reads as a glyph rather than a word, so it gets a round trigger
+   the same height as the labelled ones beside it. */
+.panel--help .panel__trigger {
+  width: 2.1rem;
+  padding: 0.5rem 0;
+  justify-content: center;
 }

@@ -5,6 +5,7 @@ import FilterPanel from '../components/FilterPanel';
 import AlertsPanel from '../components/AlertsPanel';
 import { usePolledResource } from '../hooks/usePolledResource';
 import ModeNav from '../components/ModeNav';
+import HelpPanel from '../components/HelpPanel';
 import { fetchAlerts, fetchShapes, fetchStations, fetchVehicles } from '../api/mbta';
 import { RAIL_LINES, RAIL_LINE_KEYS } from '../lib/lines';
 
@@ -181,6 +182,17 @@ export default function SubwayPage() {
             error={alerts.error}
             activeLines={activeLines}
           />
+        </Panel>
+
+        <Panel
+          label="Help"
+          icon="?"
+          iconOnly
+          side="right"
+          open={openPanel === 'help'}
+          onOpenChange={(open) => setPanel('help', open)}
+        >
+          <HelpPanel mode="subway" />
         </Panel>
       </div>
 

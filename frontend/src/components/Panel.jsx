@@ -19,6 +19,9 @@ export default function Panel({
   badge,
   badgeTitle,
   icon,
+  // A trigger whose icon says everything ("?"), where repeating the word would
+  // just take space. The label still names the button for assistive tech.
+  iconOnly = false,
   side = 'right',
   open,
   onOpenChange,
@@ -55,7 +58,13 @@ export default function Panel({
   useEffect(() => {
     if (!open || !compact) return;
     const onPointerDown = (event) => {
-      if (!rootRef.current?.contains(event.target)) onOpenChange(false);
+      if (rootRef.current?.contains(event.target)) return;
+      // Another panel's trigger is not "outside" in the sense that matters. If this
+      // closed on pointerdown, the controls row would move out from under the
+      // finger before the click landed, and the tap would miss the button it was
+      // aimed at. Switching panels is handled by only one being open at a time.
+      if (event.target.closest?.('.panel__trigger')) return;
+      onOpenChange(false);
     };
     document.addEventListener('pointerdown', onPointerDown);
     return () => document.removeEventListener('pointerdown', onPointerDown);
@@ -94,8 +103,8 @@ export default function Panel({
     <div
       ref={rootRef}
       className={`panel panel--${side} ${compact ? 'panel--sheet' : 'panel--card'} ${
-        open ? 'is-open' : ''
-      }`}
+        iconOnly ? 'panel--help' : ''
+      } ${open ? 'is-open' : ''}`}
       {...hoverProps}
     >
       <button
@@ -103,7 +112,8 @@ export default function Panel({
         className="panel__trigger"
         aria-expanded={open}
         aria-controls={panelId}
-        title={badge > 0 && badgeTitle ? badgeTitle : undefined}
+        title={iconOnly ? label : badge > 0 && badgeTitle ? badgeTitle : undefined}
+        aria-label={iconOnly ? label : undefined}
         onClick={() => {
           if (open && pinned) {
             onOpenChange(false);
@@ -118,7 +128,7 @@ export default function Panel({
             {icon}
           </span>
         )}
-        <span className="panel__label">{label}</span>
+        {!iconOnly && <span className="panel__label">{label}</span>}
         {badge > 0 && (
           // aria-hidden so the button is announced as "Filters" rather than
           // "Filters 2"; a bare number reads as noise. The title carries the
