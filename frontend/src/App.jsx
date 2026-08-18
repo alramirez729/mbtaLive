@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import MapView from './components/MapView';
-import LineFilter from './components/LineFilter';
+import Panel from './components/Panel';
+import FilterPanel from './components/FilterPanel';
 import AlertsPanel from './components/AlertsPanel';
 import { usePolledResource } from './hooks/usePolledResource';
 import { fetchAlerts, fetchShapes, fetchStations, fetchVehicles } from './api/mbta';
@@ -15,15 +16,19 @@ const ALERT_INTERVAL_MS = 60000;
 
 function formatClock(timestamp) {
   if (!timestamp) return null;
-  return new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  return new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
 export default function App() {
   const [activeLines, setActiveLines] = useState(() => new Set(LINE_KEYS));
-  const [showStations, setShowStations] = useState(true);
-  const [showRoutes, setShowRoutes] = useState(true);
-  const [showMotion, setShowMotion] = useState(true);
-  const [alertsOpen, setAlertsOpen] = useState(false);
+  const [layers, setLayers] = useState({
+    showRoutes: true,
+    showStations: true,
+    showMotion: true,
+  });
+  // Only one panel at a time: two open cards would cover most of a phone screen,
+  // and on desktop the second would sit on top of the first.
+  const [openPanel, setOpenPanel] = useState(null);
 
   const vehicles = usePolledResource(fetchVehicles, VEHICLE_INTERVAL_MS);
   const alerts = usePolledResource(fetchAlerts, ALERT_INTERVAL_MS);
@@ -42,6 +47,14 @@ export default function App() {
 
   const setAllLines = useCallback((enabled) => {
     setActiveLines(enabled ? new Set(LINE_KEYS) : new Set());
+  }, []);
+
+  const setLayer = useCallback((key, value) => {
+    setLayers((previous) => ({ ...previous, [key]: value }));
+  }, []);
+
+  const setPanel = useCallback((name, open) => {
+    setOpenPanel(open ? name : (current) => (current === name ? null : current));
   }, []);
 
   const counts = useMemo(() => {
@@ -69,64 +82,68 @@ export default function App() {
 
   const lastUpdated = formatClock(vehicles.updatedAt);
   const isStale = Boolean(vehicles.error && vehicles.data);
+  const hiddenLines = LINE_KEYS.length - activeLines.size;
 
   return (
     <div className="app">
-      <header className="topbar">
-        <div className="topbar__brand">
-          <h1 className="topbar__title">MBTA Live</h1>
-          <p className="topbar__status">
-            <span className={`pulse ${isStale ? 'pulse--stale' : ''}`} aria-hidden="true" />
+      <MapView
+        vehicles={vehicles.data}
+        stations={stations.data}
+        shapes={shapes.data}
+        activeLines={activeLines}
+        showStations={layers.showStations}
+        showRoutes={layers.showRoutes}
+        showMotion={layers.showMotion}
+        motionDurationMs={VEHICLE_INTERVAL_MS}
+      />
+
+      <div className="hud hud--top-left">
+        <div className="status">
+          <span className={`pulse ${isStale ? 'pulse--stale' : ''}`} aria-hidden="true" />
+          <span className="status__text">
             {vehicles.isLoading && !vehicles.data
               ? 'Connecting'
               : `${visibleVehicleCount} train${visibleVehicleCount === 1 ? '' : 's'}`}
-            {lastUpdated && <span className="topbar__time">as of {lastUpdated}</span>}
-          </p>
+          </span>
+          {lastUpdated && <span className="status__time">{lastUpdated}</span>}
         </div>
+      </div>
 
-        <LineFilter
-          activeLines={activeLines}
-          counts={counts}
-          onToggle={toggleLine}
-          onSetAll={setAllLines}
-        />
+      <div className="hud hud--controls">
+        <Panel
+          label="Filters"
+          icon="☰"
+          side="right"
+          badge={hiddenLines}
+          open={openPanel === 'filters'}
+          onOpenChange={(open) => setPanel('filters', open)}
+        >
+          <FilterPanel
+            activeLines={activeLines}
+            counts={counts}
+            onToggle={toggleLine}
+            onSetAll={setAllLines}
+            layers={layers}
+            onLayerChange={setLayer}
+          />
+        </Panel>
 
-        <div className="topbar__actions">
-          <label className="toggle">
-            <input
-              type="checkbox"
-              checked={showRoutes}
-              onChange={(event) => setShowRoutes(event.target.checked)}
-            />
-            <span>Routes</span>
-          </label>
-          <label className="toggle">
-            <input
-              type="checkbox"
-              checked={showStations}
-              onChange={(event) => setShowStations(event.target.checked)}
-            />
-            <span>Stations</span>
-          </label>
-          <label className="toggle" title="Glide trains along the track between updates">
-            <input
-              type="checkbox"
-              checked={showMotion}
-              onChange={(event) => setShowMotion(event.target.checked)}
-            />
-            <span>Motion</span>
-          </label>
-          <button
-            type="button"
-            className="button"
-            aria-expanded={alertsOpen}
-            onClick={() => setAlertsOpen((open) => !open)}
-          >
-            Alerts
-            {alertCount > 0 && <span className="button__badge">{alertCount}</span>}
-          </button>
-        </div>
-      </header>
+        <Panel
+          label="Alerts"
+          icon="!"
+          side="right"
+          badge={alertCount}
+          open={openPanel === 'alerts'}
+          onOpenChange={(open) => setPanel('alerts', open)}
+        >
+          <AlertsPanel
+            alerts={alerts.data}
+            isLoading={alerts.isLoading}
+            error={alerts.error}
+            activeLines={activeLines}
+          />
+        </Panel>
+      </div>
 
       {isStale && (
         <p className="banner" role="status">
@@ -139,28 +156,6 @@ export default function App() {
           Could not reach the MBTA feed. {vehicles.error.message}
         </p>
       )}
-
-      <main className="stage">
-        <MapView
-          vehicles={vehicles.data}
-          stations={stations.data}
-          shapes={shapes.data}
-          activeLines={activeLines}
-          showStations={showStations}
-          showRoutes={showRoutes}
-          showMotion={showMotion}
-          motionDurationMs={VEHICLE_INTERVAL_MS}
-        />
-        {alertsOpen && (
-          <AlertsPanel
-            alerts={alerts.data}
-            isLoading={alerts.isLoading}
-            error={alerts.error}
-            activeLines={activeLines}
-            onClose={() => setAlertsOpen(false)}
-          />
-        )}
-      </main>
     </div>
   );
 }

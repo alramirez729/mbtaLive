@@ -8,9 +8,11 @@
   --accent: #1d4ed8;
   --danger: #b42318;
   --warn: #b54708;
-  --radius: 10px;
-  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.08);
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.08), 0 10px 30px rgba(15, 23, 42, 0.14);
   --font: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Leaflet's own controls sit at 1000, so all app furniture clears that. */
+  --z-hud: 1100;
 }
 
 * {
@@ -31,73 +33,60 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ---------- shell ---------- */
+/* ---------- shell: the map is the page, everything else floats ---------- */
 
 .app {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.stage {
   position: relative;
-  flex: 1;
-  min-height: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .map {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  inset: 0;
   background: var(--surface-sunk);
 }
 
-/* ---------- top bar ---------- */
-
-.topbar {
+.hud {
+  position: absolute;
+  z-index: var(--z-hud);
   display: flex;
+  gap: 0.5rem;
+}
+
+.hud--top-left {
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+.hud--controls {
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+/* ---------- status pill ---------- */
+
+.status {
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0.6rem 1rem;
+  gap: 0.45rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
   background: var(--surface);
-  border-bottom: 1px solid var(--line);
   box-shadow: var(--shadow);
-  /* Above Leaflet's own panes and controls. */
-  z-index: 1100;
-}
-
-.topbar__brand {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  margin-right: auto;
-}
-
-.topbar__title {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.topbar__status {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
-.topbar__time {
+.status__text {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.status__time {
   color: var(--ink-faint);
-}
-
-.topbar__actions {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
 }
 
 .pulse {
@@ -107,6 +96,7 @@ body {
   background: #16a34a;
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
   animation: pulse 2.4s ease-in-out infinite;
+  flex: none;
 }
 
 .pulse--stale {
@@ -120,115 +110,299 @@ body {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .pulse {
-    animation: none;
-  }
+/* ---------- panel: floating card on desktop, bottom sheet when compact ------ */
+
+.panel {
+  position: relative;
 }
 
-/* ---------- line filter ---------- */
-
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.chip {
+.panel__trigger {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.3rem 0.6rem;
-  border: 1px solid var(--line);
+  padding: 0.5rem 0.8rem;
+  border: 1px solid transparent;
   border-radius: 999px;
   background: var(--surface);
-  color: var(--ink-soft);
-  font: inherit;
-  font-size: 0.78rem;
-  cursor: pointer;
-  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
-}
-
-.chip:hover {
-  border-color: var(--ink-faint);
-}
-
-.chip__dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--line-color);
-  opacity: 0.35;
-}
-
-.chip[aria-pressed='true'] {
-  /* The line's own color carries the active state, so no extra accent is needed. */
-  border-color: var(--line-color);
-  background: color-mix(in srgb, var(--line-color) 10%, white);
+  box-shadow: var(--shadow);
   color: var(--ink);
+  font: inherit;
+  font-size: 0.83rem;
   font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease;
 }
 
-.chip[aria-pressed='true'] .chip__dot {
-  opacity: 1;
+.panel__trigger:hover {
+  background: var(--surface-sunk);
 }
 
-.chip__count {
+.panel.is-open .panel__trigger {
+  background: var(--accent);
+  color: #fff;
+}
+
+.panel__icon {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.panel__badge {
+  min-width: 1.15rem;
   padding: 0 0.3rem;
   border-radius: 999px;
   background: var(--surface-sunk);
-  color: var(--ink-faint);
-  font-size: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
   font-variant-numeric: tabular-nums;
+  text-align: center;
 }
 
-.chip--action {
+.panel.is-open .panel__badge {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.panel__body {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Card: anchored under its own trigger. */
+.panel--card .panel__body {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  width: 320px;
+  max-height: min(70vh, 560px);
+  animation: card-in 0.14s ease-out;
+}
+
+.panel--card.panel--right .panel__body {
+  right: 0;
+}
+
+.panel--card.panel--left .panel__body {
+  left: 0;
+}
+
+/* The gap between the trigger and the card is dead space: crossing it fires
+   pointerleave on the panel and the card closes before the pointer arrives.
+   This bridges the gap so the pointer never leaves the panel's subtree. */
+.panel--card .panel__body::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.5rem;
+  height: 0.5rem;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+/* Sheet: pinned to the bottom edge, full width, draggable. */
+.panel--sheet .panel__body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  max-height: 72vh;
+  border: none;
+  border-top: 1px solid var(--line);
+  border-radius: 16px 16px 0 0;
+  /* Keeps content clear of the home indicator on a modern phone. */
+  padding-bottom: env(safe-area-inset-bottom);
+  animation: sheet-in 0.18s ease-out;
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+.panel__grip {
+  padding: 0.55rem 0 0.3rem;
+  display: flex;
+  justify-content: center;
+  cursor: grab;
+  /* The drag handler owns vertical gestures, so the browser must not scroll. */
+  touch-action: none;
+}
+
+.panel__grip-bar {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel--sheet .panel__head {
+  padding-top: 0.2rem;
+}
+
+.panel__title {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.panel__content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---------- filters ---------- */
+
+.filters__section {
+  padding: 0.7rem 0.85rem;
+}
+
+.filters__section + .filters__section {
+  border-top: 1px solid var(--line);
+}
+
+.filters__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--ink-faint);
 }
 
-/* ---------- controls ---------- */
+.lines,
+.switches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
 
-.button {
-  position: relative;
-  display: inline-flex;
+.line {
+  display: flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.5rem 0.55rem;
   border: 1px solid transparent;
-  border-radius: var(--radius);
-  background: var(--accent);
-  color: #fff;
+  border-radius: 8px;
+  background: none;
+  color: var(--ink-faint);
   font: inherit;
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: left;
   cursor: pointer;
+  transition: background 0.12s ease;
 }
 
-.button:hover {
-  background: #1740b4;
+.line:hover {
+  background: var(--surface-sunk);
 }
 
-.button__badge {
+.line__dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--line-color);
+  opacity: 0.28;
+  flex: none;
+  transition: opacity 0.12s ease;
+}
+
+.line__name {
+  flex: 1;
+}
+
+.line__count {
   padding: 0 0.35rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.22);
+  background: var(--surface-sunk);
   font-size: 0.72rem;
   font-variant-numeric: tabular-nums;
 }
 
-.toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.8rem;
-  color: var(--ink-soft);
-  cursor: pointer;
-  user-select: none;
+.line[aria-pressed='true'] {
+  color: var(--ink);
+  font-weight: 600;
+  background: color-mix(in srgb, var(--line-color) 8%, white);
 }
 
-.toggle input {
-  accent-color: var(--accent);
+.line[aria-pressed='true'] .line__dot {
+  opacity: 1;
 }
+
+.link-button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.switch {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.switch:hover {
+  background: var(--surface-sunk);
+}
+
+.switch input {
+  margin-top: 0.15rem;
+  accent-color: var(--accent);
+  flex: none;
+}
+
+.switch__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch__label {
+  font-size: 0.85rem;
+}
+
+.switch__hint {
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+/* ---------- shared controls ---------- */
 
 .icon-button {
   width: 28px;
@@ -240,14 +414,15 @@ body {
   font-size: 1.1rem;
   line-height: 1;
   cursor: pointer;
+  flex: none;
 }
 
 .field {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  font-size: 0.75rem;
-  color: var(--ink-soft);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
 }
 
 .field select {
@@ -257,24 +432,32 @@ body {
   background: var(--surface);
   color: var(--ink);
   font: inherit;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
 }
 
 /* ---------- banners ---------- */
 
 .banner {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  translate: -50% 0;
   margin: 0;
-  padding: 0.5rem 1rem;
+  max-width: min(92vw, 480px);
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
   background: #fffaeb;
-  border-bottom: 1px solid #fedf89;
+  border: 1px solid #fedf89;
   color: var(--warn);
-  font-size: 0.8rem;
-  z-index: 1100;
+  font-size: 0.78rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  z-index: var(--z-hud);
 }
 
 .banner--error {
   background: #fef3f2;
-  border-bottom-color: #fecdca;
+  border-color: #fecdca;
   color: var(--danger);
 }
 
@@ -376,70 +559,36 @@ body {
 .popup__row {
   margin-top: 0.3rem !important;
   font-size: 0.78rem;
-  color: var(--ink);
 }
 
 .popup__row span {
   color: var(--ink-faint);
 }
 
-/* ---------- alerts panel ---------- */
-
-.alerts {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  width: min(380px, calc(100% - 1.5rem));
-  display: flex;
-  flex-direction: column;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  /* Leaflet controls sit at 1000; this must clear them. */
-  z-index: 1050;
-  overflow: hidden;
-}
-
-.alerts__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.7rem 0.85rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.alerts__title {
-  margin: 0;
-  font-size: 0.95rem;
-}
+/* ---------- alerts ---------- */
 
 .alerts__controls {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: 0.7rem 0.85rem;
+  padding: 0.6rem 0.85rem;
   background: var(--surface-sunk);
   border-bottom: 1px solid var(--line);
 }
 
 .alerts__hint {
   margin: 0;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--ink-faint);
   text-align: right;
 }
 
 .alerts__list {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
   padding: 0.6rem 0.85rem 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.55rem;
 }
 
 .alerts__empty {
@@ -454,24 +603,23 @@ body {
 }
 
 .alert {
-  padding: 0.7rem 0.75rem;
+  padding: 0.65rem 0.7rem;
   border: 1px solid var(--line);
   border-left: 3px solid var(--line-color);
   border-radius: 8px;
-  background: var(--surface);
 }
 
 .alert__meta {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .sev {
   padding: 0.05rem 0.4rem;
   border-radius: 999px;
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -499,17 +647,17 @@ body {
 
 .alert__header {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   line-height: 1.35;
 }
 
 .alert__body {
-  margin: 0.35rem 0 0;
+  margin: 0.3rem 0 0;
   font-size: 0.78rem;
   line-height: 1.45;
   color: var(--ink-soft);
-  /* Some MBTA descriptions are very long; cap them so the list stays scannable. */
+  /* Some MBTA descriptions run very long; cap them so the list stays scannable. */
   max-height: 8.5em;
   overflow-y: auto;
 }
@@ -518,7 +666,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
-  margin: 0.5rem 0 0;
+  margin: 0.45rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -532,40 +680,51 @@ body {
   font-weight: 600;
 }
 
-/* ---------- narrow screens ---------- */
+/* ---------- compact: controls move to the thumb, panels become sheets ------- */
 
-@media (max-width: 720px) {
-  .topbar {
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-  }
-
-  .topbar__brand {
-    margin-right: 0;
-    width: 100%;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-
-  .filter {
-    order: 3;
-    width: 100%;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 0.15rem;
-  }
-
-  .chip {
-    flex: none;
-  }
-
-  .alerts {
+@media (max-width: 900px) {
+  .hud--controls {
     top: auto;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    /* Clear the home indicator on a phone. */
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+
+  .hud--top-left {
+    top: 0.5rem;
     left: 0.5rem;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    width: auto;
-    max-height: 65%;
+  }
+
+  .panel__trigger {
+    padding: 0.6rem 0.95rem;
+    font-size: 0.88rem;
+  }
+
+  /* An open sheet rises from the bottom edge, straight over the triggers that
+     sit there. The sheet carries its own title and close button, so the
+     triggers step aside rather than floating on top of the content. */
+  .hud--controls:has(.panel--sheet.is-open) .panel__trigger {
+    visibility: hidden;
+  }
+
+  .banner {
+    bottom: 4.5rem;
+  }
+
+  /* Leaflet's zoom buttons would sit under the sheet triggers. */
+  .leaflet-bottom.leaflet-right {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+
+  .panel--card .panel__body,
+  .panel--sheet .panel__body {
+    animation: none;
   }
 }
